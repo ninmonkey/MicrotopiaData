@@ -17,7 +17,7 @@ Main entry point.
 Todo: refactor
 #>
 
-. ( Get-Item -ea 'stop' (Join-Path '.' './MdUtils.ps1'))
+. ( Get-Item -ea 'stop' (Join-Path ($PSScriptRoot) './MdUtils.ps1'))
 
 $pkg = Open-ExcelPackage -Path $Paths.xlsx_Prefabs
 # $pkg.Workbook.Worksheets | %{ $_.Name }
