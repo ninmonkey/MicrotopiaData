@@ -1,0 +1,790 @@
+[
+  {
+    "CODE": null,
+    "English": null
+  },
+  {
+    "CODE": "V1.0.6a_0",
+    "English": "V1.0.6a"
+  },
+  {
+    "CODE": "V1.0.6a_1",
+    "English": "- Fixed broken wafer recipe."
+  },
+  {
+    "CODE": "V1.0.6a_2",
+    "English": null
+  },
+  {
+    "CODE": "V1.0.6_0",
+    "English": "V1.0.6"
+  },
+  {
+    "CODE": "V1.0.6_1",
+    "English": "- Fixed two instances of possible savegame corruption"
+  },
+  {
+    "CODE": "V1.0.6_2",
+    "English": "- Added settings: VSync, FPS Limit, World Volume, Invert Cam"
+  },
+  {
+    "CODE": "V1.0.6_3",
+    "English": "- Render scale setting isn't ignored anymore on game start"
+  },
+  {
+    "CODE": "V1.0.6_4",
+    "English": "- Can now scroll to top part of the tech tree when using small/tiny UI Scale"
+  },
+  {
+    "CODE": "V1.0.6_5",
+    "English": "- Floor Tile Eraser now also removes incomplete floortiles"
+  },
+  {
+    "CODE": "V1.0.6_6",
+    "English": null
+  },
+  {
+    "CODE": "V1.0.5_0",
+    "English": "V1.0.5"
+  },
+  {
+    "CODE": "V1.0.5_1",
+    "English": "- Fixed a few wrong translations"
+  },
+  {
+    "CODE": "V1.0.5_2",
+    "English": "- Added missing credits"
+  },
+  {
+    "CODE": "V1.0.5_3",
+    "English": "- Fixed a bug with the counter gate not working and causing not being able to save after having started a new colony without first quitting the game. "
+  },
+  {
+    "CODE": "V1.0.5_4",
+    "English": "- Fixed a bug with empty pod workers being able to block the gyne cocoon, halting its progress."
+  },
+  {
+    "CODE": "V1.0.5_5",
+    "English": "- Fixed the tech tree showing a black screen on small resolutions."
+  },
+  {
+    "CODE": "V1.0.5_6",
+    "English": "- Rearranged some things in the tech tree, timer gate and caste gate are easier to unlock."
+  },
+  {
+    "CODE": "V1.0.5_7",
+    "English": "- Made \"Flying larvae\" objective easier."
+  },
+  {
+    "CODE": "V1.0.5_8",
+    "English": "- Fixed workshop collider"
+  },
+  {
+    "CODE": "V1.0.5_9",
+    "English": "- Fixed \"new\" UI element displayed on gate while it should be gone."
+  },
+  {
+    "CODE": "V1.0.5_10",
+    "English": null
+  },
+  {
+    "CODE": "V1.0.4_0",
+    "English": "V1.0.4"
+  },
+  {
+    "CODE": "V1.0.4_1",
+    "English": "- Added a missing splash screen"
+  },
+  {
+    "CODE": "V1.0.4_2",
+    "English": "- Fixed an issue with settings fond in Asian languages."
+  },
+  {
+    "CODE": "V1.0.4_3",
+    "English": "- Fixed a bug causing a crash."
+  },
+  {
+    "CODE": "V1.0.4_4",
+    "English": null
+  },
+  {
+    "CODE": "V1.0.3_0",
+    "English": "V1.0.3"
+  },
+  {
+    "CODE": "V1.0.3_1",
+    "English": "- Updated a few tutorial videos"
+  },
+  {
+    "CODE": "V1.0.3_2",
+    "English": "- Greatly reduced larva booster process time."
+  },
+  {
+    "CODE": "V1.0.3_3",
+    "English": "- Added Chinese logo in game"
+  },
+  {
+    "CODE": "V1.0.3_4",
+    "English": "- Rebalanced queen energy requirement and added more steps"
+  },
+  {
+    "CODE": "V1.0.3_5",
+    "English": "- Other smaller fixes and tweaks"
+  },
+  {
+    "CODE": "V1.0.3_6",
+    "English": null
+  },
+  {
+    "CODE": "V1.0.2_0",
+    "English": "V1.0.2"
+  },
+  {
+    "CODE": "V1.0.2_1",
+    "English": "- Fixed several bugs causing crashes"
+  },
+  {
+    "CODE": "V1.0.2_2",
+    "English": "- Buffed ant launcher strength"
+  },
+  {
+    "CODE": "V1.0.2_3",
+    "English": "- Buffed desert plants fruit"
+  },
+  {
+    "CODE": "V1.0.2_4",
+    "English": "- Nerfed inventor tower"
+  },
+  {
+    "CODE": "V1.0.2_5",
+    "English": "- Changed pod workers old timing"
+  },
+  {
+    "CODE": "V1.0.2_6",
+    "English": "- Fixed tooltip sometimes not dissappearing"
+  },
+  {
+    "CODE": "V1.0.2_7",
+    "English": "- Many UI fixes"
+  },
+  {
+    "CODE": "V1.0.2_8",
+    "English": "- Fixed other smaller bugs"
+  },
+  {
+    "CODE": "V1.0.2_9",
+    "English": null
+  },
+  {
+    "CODE": "V1.0.1_0",
+    "English": "V1.0.1"
+  },
+  {
+    "CODE": "V1.0.1_1",
+    "English": "- Added render scale setting"
+  },
+  {
+    "CODE": "V1.0.1_2",
+    "English": "- Updated some UI elements"
+  },
+  {
+    "CODE": "V1.0.1_3",
+    "English": "- Added hotkeys for trail drag lock and send pickups from stockpile"
+  },
+  {
+    "CODE": "V1.0.1_4",
+    "English": "- Changed a few key bindings"
+  },
+  {
+    "CODE": "V1.0.1_5",
+    "English": "- Rebalanced the later population objectives"
+  },
+  {
+    "CODE": "V1.0.1_6",
+    "English": "- Some tweaks in the concrete biome"
+  },
+  {
+    "CODE": "V1.0.1_7",
+    "English": "- Tweaked some visual stuff"
+  },
+  {
+    "CODE": "V1.0.1_8",
+    "English": "- More smaller tweaks and fixes"
+  },
+  {
+    "CODE": "V1.0.1_9",
+    "English": null
+  },
+  {
+    "CODE": "V1.0.0_0",
+    "English": "V1.0.0"
+  },
+  {
+    "CODE": "V1.0.0_1",
+    "English": "- Optimized build size."
+  },
+  {
+    "CODE": "V1.0.0_2",
+    "English": "- Improved performance with trail rendering."
+  },
+  {
+    "CODE": "V1.0.0_3",
+    "English": "- Some changes in the instinct progression."
+  },
+  {
+    "CODE": "V1.0.0_4",
+    "English": "- Several UI updates."
+  },
+  {
+    "CODE": "V1.0.0_5",
+    "English": "- Rebalanced queen energy requirement for later stages"
+  },
+  {
+    "CODE": "V1.0.0_6",
+    "English": "- Added additional sound effects"
+  },
+  {
+    "CODE": "V1.0.0_7",
+    "English": "- Updated a few meshes"
+  },
+  {
+    "CODE": "V1.0.0_8",
+    "English": "- Final batch of translation in"
+  },
+  {
+    "CODE": "V1.0.0_9",
+    "English": "- Changed up some things in the toxic waste and concrete biome."
+  },
+  {
+    "CODE": "V1.0.0_10",
+    "English": "- Lots of smaller tweaks and fixes."
+  },
+  {
+    "CODE": "V1.0.0_11",
+    "English": null
+  },
+  {
+    "CODE": "V0.3.6_0",
+    "English": "V0.3.6"
+  },
+  {
+    "CODE": "V0.3.6_1",
+    "English": "- Updated factory mesh"
+  },
+  {
+    "CODE": "V0.3.6_2",
+    "English": "- Buffed small beacon range"
+  },
+  {
+    "CODE": "V0.3.6_3",
+    "English": "- Fixed princesses and gynes being able to pickup items from buildings"
+  },
+  {
+    "CODE": "V0.3.6_4",
+    "English": "- Rearranged some things in the tech tree, ant launcher and catapult unlocked earlier"
+  },
+  {
+    "CODE": "V0.3.6_5",
+    "English": "- Rebalanced queen energy requirement, makes for faster feedback on how much energy per second you're giving (stage will be much higher on old saves but it will balance out eventually)"
+  },
+  {
+    "CODE": "V0.3.6_6",
+    "English": "- Updated some tutorial videos"
+  },
+  {
+    "CODE": "V0.3.6_7",
+    "English": "- Fixed some tutorials not showing at the right time"
+  },
+  {
+    "CODE": "V0.3.6_8",
+    "English": "- Fixed some canvas scaling issues with ultra wide"
+  },
+  {
+    "CODE": "V0.3.6_9",
+    "English": "- Tweaked some UI elements"
+  },
+  {
+    "CODE": "V0.3.6_10",
+    "English": "- More smaller changes..."
+  },
+  {
+    "CODE": "V0.3.6_11",
+    "English": null
+  },
+  {
+    "CODE": "V0.3.5_0",
+    "English": "V0.3.5"
+  },
+  {
+    "CODE": "V0.3.5_1",
+    "English": "- Fix for the send items button not working."
+  },
+  {
+    "CODE": "V0.3.5_2",
+    "English": "- Added an extra recipe to create digger ants."
+  },
+  {
+    "CODE": "V0.3.5_3",
+    "English": "- Updated new meshes found in the concrete biome."
+  },
+  {
+    "CODE": "V0.3.5_4",
+    "English": null
+  },
+  {
+    "CODE": "V0.3.4_0",
+    "English": "V0.3.4"
+  },
+  {
+    "CODE": "V0.3.4_1",
+    "English": "- Made some UI updates"
+  },
+  {
+    "CODE": "V0.3.4_2",
+    "English": "- Fixed a bug with stockpile gate interface."
+  },
+  {
+    "CODE": "V0.3.4_3",
+    "English": "- Fixed other smaller interface bugs."
+  },
+  {
+    "CODE": "V0.3.4_4",
+    "English": "- Added and edited some objects found in later biomes"
+  },
+  {
+    "CODE": "V0.3.4_5",
+    "English": null
+  },
+  {
+    "CODE": "V0.3.3_0",
+    "English": "V0.3.3"
+  },
+  {
+    "CODE": "V0.3.3_1",
+    "English": "- Some updates and fixes in the UI."
+  },
+  {
+    "CODE": "V0.3.3_2",
+    "English": null
+  },
+  {
+    "CODE": "V0.3.2_0",
+    "English": "V0.3.2"
+  },
+  {
+    "CODE": "V0.3.2_1",
+    "English": "- Changed small beacon model and cost."
+  },
+  {
+    "CODE": "V0.3.2_2",
+    "English": "- Fixed a bug with buildings not finding action points after relocating."
+  },
+  {
+    "CODE": "V0.3.2_3",
+    "English": "- Fixed a bug with counter gates giving an error unexpectedly."
+  },
+  {
+    "CODE": "V0.3.2_4",
+    "English": "- Made a lot of buildings fit better on a grid (might look weird if build before this update, to fix: please demolish building and place again)."
+  },
+  {
+    "CODE": "V0.3.2_5",
+    "English": "- Tweaked stockpile highlight shader to save performance with full stockpiles."
+  },
+  {
+    "CODE": "V0.3.2_6",
+    "English": "- Added some missing icons."
+  },
+  {
+    "CODE": "V0.3.2_7",
+    "English": "- Fixed several other bugs."
+  },
+  {
+    "CODE": "V0.3.2_8",
+    "English": null
+  },
+  {
+    "CODE": "V0.3.1_0",
+    "English": "V0.3.1"
+  },
+  {
+    "CODE": "V0.3.1_1",
+    "English": "- Fixed a bug with the interface."
+  },
+  {
+    "CODE": "V0.3.1_2",
+    "English": null
+  },
+  {
+    "CODE": "V0.3_0",
+    "English": "V0.3"
+  },
+  {
+    "CODE": "V0.3_1",
+    "English": "- Update the on-click UI for many objects."
+  },
+  {
+    "CODE": "V0.3_2",
+    "English": "- Added the possibility to manually send materials from one stockpile to the other."
+  },
+  {
+    "CODE": "V0.3_3",
+    "English": "- Enabled French, German, Polish, Russian, Chinese Simplified, Korean and Japanese languages."
+  },
+  {
+    "CODE": "V0.3_4",
+    "English": "- New models for T2 and T3 gynes."
+  },
+  {
+    "CODE": "V0.3_5",
+    "English": "- Renamed bulb ants to \"pod ants\""
+  },
+  {
+    "CODE": "V0.3_6",
+    "English": "- When their lifespan runs out, pod ants turn back into the empty variant, alowing them to be equipped with a new energy pod."
+  },
+  {
+    "CODE": "V0.3_7",
+    "English": "- Loads of balance tweaks."
+  },
+  {
+    "CODE": "V0.3_8",
+    "English": "- Added achievements."
+  },
+  {
+    "CODE": "V0.3_9",
+    "English": null
+  },
+  {
+    "CODE": "V0.2.6_0",
+    "English": "V0.2.6"
+  },
+  {
+    "CODE": "V0.2.6_1",
+    "English": "- Added 3 new types of gates"
+  },
+  {
+    "CODE": "V0.2.6_2",
+    "English": "- Added the main trail"
+  },
+  {
+    "CODE": "V0.2.6_3",
+    "English": "- Improved trail button flow"
+  },
+  {
+    "CODE": "V0.2.6_4",
+    "English": "- Added the deconstructor"
+  },
+  {
+    "CODE": "V0.2.6_5",
+    "English": "- Rearranged the development tree a bit"
+  },
+  {
+    "CODE": "V0.2.6_6",
+    "English": "- Added missing meshes, replaced a few"
+  },
+  {
+    "CODE": "V0.2.6_7",
+    "English": "- Glass deposits can now be found in the Toxic Wasteland"
+  },
+  {
+    "CODE": "V0.2.6_8",
+    "English": "- Loads of balance changes"
+  },
+  {
+    "CODE": "V0.2.6_9",
+    "English": "- Gynes required for progressing through the development tree, using a new currency"
+  },
+  {
+    "CODE": "V0.2.6_10",
+    "English": "- Added some extra tutorials"
+  },
+  {
+    "CODE": "V0.2.6_11",
+    "English": "- Added map mode hotkey 'M'"
+  },
+  {
+    "CODE": "V0.2.6_12",
+    "English": "- Added a floortile eraser"
+  },
+  {
+    "CODE": "V0.2.6_13",
+    "English": "- Lots of smaller fixes"
+  },
+  {
+    "CODE": "V0.2.6_14",
+    "English": null
+  },
+  {
+    "CODE": "V0.2.5_0",
+    "English": "V0.2.5"
+  },
+  {
+    "CODE": "V0.2.5_1",
+    "English": "- Fixed gate trails sometimes not spawning with a gate, causing a save error"
+  },
+  {
+    "CODE": "V0.2.5_2",
+    "English": "- Fixed floortiles not propperly attaching to eachother"
+  },
+  {
+    "CODE": "V0.2.5_3",
+    "English": "- Visual tweaks in the development tree"
+  },
+  {
+    "CODE": "V0.2.5_4",
+    "English": "- Added an objective to find the jungle"
+  },
+  {
+    "CODE": "V0.2.5_5",
+    "English": null
+  },
+  {
+    "CODE": "V0.2.4_0",
+    "English": "V0.2.4"
+  },
+  {
+    "CODE": "V0.2.4_1",
+    "English": "- Updated logic gates on click UI"
+  },
+  {
+    "CODE": "V0.2.4_2",
+    "English": "- Logic gates can now be configured before placement"
+  },
+  {
+    "CODE": "V0.2.4_3",
+    "English": "- Rearranged some things in the development tree"
+  },
+  {
+    "CODE": "V0.2.4_4",
+    "English": "- Added an objective to bring larvae to the second island"
+  },
+  {
+    "CODE": "V0.2.4_5",
+    "English": "- Updated material icons"
+  },
+  {
+    "CODE": "V0.2.4_6",
+    "English": "- Lots of smaller fixes"
+  },
+  {
+    "CODE": "V0.2.4_7",
+    "English": null
+  },
+  {
+    "CODE": "V0.2.3a_0",
+    "English": "V0.2.3a"
+  },
+  {
+    "CODE": "V0.2.3a_1",
+    "English": "- Fixed the combiner not satisfying the instinct objective."
+  },
+  {
+    "CODE": "V0.2.3a_2",
+    "English": null
+  },
+  {
+    "CODE": "V0.2.3_0",
+    "English": "V0.2.3"
+  },
+  {
+    "CODE": "V0.2.3_1",
+    "English": "- Fixed the combiner not appearing."
+  },
+  {
+    "CODE": "V0.2.3_2",
+    "English": "- Added old gate, sort ants based on whether they're old or not."
+  },
+  {
+    "CODE": "V0.2.3_3",
+    "English": "- Added big eraser."
+  },
+  {
+    "CODE": "V0.2.3_4",
+    "English": "- Added counter end."
+  },
+  {
+    "CODE": "V0.2.3_5",
+    "English": "- Switched some things around in the development tree, life gate is now unlocked in Tier 2."
+  },
+  {
+    "CODE": "V0.2.3_6",
+    "English": "- Counter gate is now unlocked through instinct and not with the development tree anymore."
+  },
+  {
+    "CODE": "V0.2.3_7",
+    "English": "- Changed some icons."
+  },
+  {
+    "CODE": "V0.2.3_8",
+    "English": "- Smaller fixes."
+  },
+  {
+    "CODE": "V0.2.3_9",
+    "English": null
+  },
+  {
+    "CODE": "V0.2.2_0",
+    "English": "V0.2.2"
+  },
+  {
+    "CODE": "V0.2.2_1",
+    "English": "- Hotfix for an error causing to not loading a save."
+  },
+  {
+    "CODE": "V0.2.2_2",
+    "English": "- Adjusted all buildings to fit on the grid."
+  },
+  {
+    "CODE": "V0.2.2_3",
+    "English": "- Increased drone move speed a bit."
+  },
+  {
+    "CODE": "V0.2.2_4",
+    "English": null
+  },
+  {
+    "CODE": "V0.2.1_0",
+    "English": "V0.2.1"
+  },
+  {
+    "CODE": "V0.2.1_1",
+    "English": "- Fixed some problems with the feedback input field."
+  },
+  {
+    "CODE": "V0.2.1_2",
+    "English": "- Fixed the island scanners spawning an outdated biome."
+  },
+  {
+    "CODE": "V0.2.1_3",
+    "English": "- Better looking graph UI."
+  },
+  {
+    "CODE": "V0.2.1_4",
+    "English": "- Added some UI to notice the player about the ant inventory."
+  },
+  {
+    "CODE": "V0.2.1_5",
+    "English": "- Some smaller fixes..."
+  },
+  {
+    "CODE": "V0.2.1_6",
+    "English": null
+  },
+  {
+    "CODE": "V0.2.0_0",
+    "English": "V0.2.0"
+  },
+  {
+    "CODE": "V0.2.0_1",
+    "English": "- Added Tier 2 and Tier 3 back to the development tree, more than doubling its size."
+  },
+  {
+    "CODE": "V0.2.0_2",
+    "English": "- Improved the development tree with new background effects."
+  },
+  {
+    "CODE": "V0.2.0_3",
+    "English": "- Added upgraded gynes for Tier 2 en Tier 3"
+  },
+  {
+    "CODE": "V0.2.0_4",
+    "English": "- Added several new ant castes that double as requirements for the new gynes."
+  },
+  {
+    "CODE": "V0.2.0_5",
+    "English": "- Added objective buildings."
+  },
+  {
+    "CODE": "V0.2.0_6",
+    "English": "- New islands are now always revealed using the island scanner buildings."
+  },
+  {
+    "CODE": "V0.2.0_7",
+    "English": "- Added the inventor tower, allowing you to harvest inventor points without having to click them."
+  },
+  {
+    "CODE": "V0.2.0_8",
+    "English": "- Added the population graph where you map out to populations of individual ant castes."
+  },
+  {
+    "CODE": "V0.2.0_9",
+    "English": "- Added a nuptial flight UI element that tracks the time until next flight and how many gynes you've flown out."
+  },
+  {
+    "CODE": "V0.2.0_10",
+    "English": "- Added enhanced audio effects for the nuptial flight."
+  },
+  {
+    "CODE": "V0.2.0_11",
+    "English": "- Ants that are now at the end of their lifespan now gain the old status effect, making them visually distinctive."
+  },
+  {
+    "CODE": "V0.2.0_12",
+    "English": "- The UI when clicked on ants now appears at the bottom of the screen (to be implemented for all other objects)."
+  },
+  {
+    "CODE": "V0.2.0_13",
+    "English": "- Many bug fixes"
+  },
+  {
+    "CODE": "V0.2.0_14",
+    "English": "- Smaller stuff.."
+  },
+  {
+    "CODE": "V0.2.0_15",
+    "English": null
+  },
+  {
+    "CODE": "V0.1.2_0",
+    "English": "V0.1.2"
+  },
+  {
+    "CODE": "V0.1.2_1",
+    "English": "- Rearranged Tier 1 development tree."
+  },
+  {
+    "CODE": "V0.1.2_2",
+    "English": "- Added the slinger, a smaller catapult with a shorter range (mesh still WIP)."
+  },
+  {
+    "CODE": "V0.1.2_3",
+    "English": "- Fixed the expired Discord link."
+  },
+  {
+    "CODE": "V0.1.2_4",
+    "English": null
+  },
+  {
+    "CODE": "V0.1.1_0",
+    "English": "V0.1.1"
+  },
+  {
+    "CODE": "V0.1.1_1",
+    "English": "- Revamped the UI."
+  },
+  {
+    "CODE": "V0.1.1_2",
+    "English": "- Rearranged the development tree to be focussed around the population of the colony. Features content up to Tier 1."
+  },
+  {
+    "CODE": "V0.1.1_3",
+    "English": "- Added a major objective; the production of gynes, which is introduced via the Instinct progression."
+  },
+  {
+    "CODE": "V0.1.1_4",
+    "English": "- A report screen is shown after every nuptial flight, which gives you insight over your performance over the last cycle."
+  },
+  {
+    "CODE": "V0.1.1_5",
+    "English": "- Added concrete floortiles, a floortile that can be build for free but requires to be adjacent to a concrete core."
+  },
+  {
+    "CODE": "V0.1.1_6",
+    "English": "- Added a smaller energy storage and moved small beacons back to Tier 1."
+  },
+  {
+    "CODE": "V0.1.1_7",
+    "English": "- Added version history UI element"
+  }
+]
