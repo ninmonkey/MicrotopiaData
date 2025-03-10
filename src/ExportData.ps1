@@ -6,8 +6,11 @@ $Paths = [ordered]@{
     AppRoot = ($AppRoot = Get-Item $PSScriptRoot)
     ExportRoot = Join-Path $AppRoot '../export'
 }
-
+if( -not $function:Hr ) {    
+    function Hr { "`n`n######`n`n" }
+}
 $Paths.ExportRoot_CurrentVersion = Join-Path $Paths.ExportRoot 'v1.0.6a'
+$Paths.ExportRoot_CurrentVersion = Join-Path $Paths.ExportRoot 'v1.0.7a'
 
 $Paths.Xlsx_Prefabs   = Join-Path $Paths.ExportRoot_CurrentVersion 'prefabs.xlsx'
 $Paths.Xlsx_ChangeLog = Join-Path $Paths.ExportRoot_CurrentVersion 'changelog.xlsx'
@@ -15,6 +18,9 @@ $Paths.Md_ChangeLog   = Join-Path $Paths.ExportRoot_CurrentVersion 'changelog.md
 $Paths.Csv_ChangeLog  = Join-Path $Paths.ExportRoot_CurrentVersion 'csv/changelog.csv'
 $Paths.json_ChangeLog = Join-Path $Paths.ExportRoot_CurrentVersion 'json/changelog.json'
 
+$Paths.Game = [ordered]@{
+    'ProgramData_Root' = Join-Path 'C:\Program Files (x86)\Steam\steamapps\common\Microtopia' 'Microtopia_Data'
+}
 <#
 Main entry point.
 Todo: refactor
@@ -75,4 +81,4 @@ Close-ExcelPackage -ExcelPackage $pkg -NoSave
 
 $Paths | ft -AutoSize
 hr;
-$imxl | Select -Prop Code, English | Json
+$imxl | Select -Prop Code, English | ConvertTo-Json

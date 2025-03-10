@@ -1,3 +1,4 @@
+#Requires -Version 7
 function md.Workbook.ListItems {
     <#
     .SYNOPSIS
