@@ -9,6 +9,9 @@
 		"terminal.integrated.shellIntegration.showCommandGuide": false,
 		"editor.snippetSuggestions": "none",
 		"editor.suggest.showSnippets": false,
+		// "powershell.startAsLoginShell.osx": false,
+		"terminal.integrated.defaultProfile.windows": "PowerShell-NoProfile",
+		// "terminal.integrated.defaultProfile.windows": "PowerShell",
 		// "powershell.trace.server": "verbose",
 
 	}, 

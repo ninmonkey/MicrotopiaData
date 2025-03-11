@@ -5,11 +5,19 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "PowerShell Launch Current File",
+            "type": "PowerShell",
+            "request": "launch",
+            "script": "${file}",
+            "cwd": "${cwd}"
+        },
+        {
             "name": "run ExportData.ps1",
             "type": "PowerShell",
             "request": "launch",
             "script": "${workspaceFolder}/src/ExportData.ps1",
             "args": []
-        }
+        },
+
     ]
 }
