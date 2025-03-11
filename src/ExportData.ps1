@@ -50,14 +50,20 @@ function md.Export.Changelog {
     .SYNOPSIS
         Exports changelog as '.csv', '.json', and '.md'
     #>
+    [CmdletBinding()]
     param()
 
     # $rawPath = $Paths.xlsx_Changelog 
     # $rawFullJoin-Path $rawPath.DirectoryName "$( $_.baseName )-raw.xlsx"
+    $curOutput = $Paths.Xlsx_ChangeLog
+    $rawSrc = md.GetRawPath $curOutput
 
-    # $imXl = Import-Excel -path "$( $Paths.Xlsx_ChangeLog. )" -WorksheetName 'Changelog' -ImportColumns 1, 3 -HeaderName 'Version', 'English'
-    $imXL
+    "md.Export.Changelog => Parse: $( $rawSrc ), Output: $( $curOutput )" | Write-Host -fg 'gray60' -bg 'gray30'
+
+    $imXl = Import-Excel -path $rawSrc -WorksheetName 'Changelog' -ImportColumns 1, 3 -HeaderName 'Version', 'English'
+    
     # using BOM for best results when using Excel csv
+    $imXL
         | ConvertTo-Csv
         | Set-Content -Path ($Paths.Csv_ChangeLog) -Encoding utf8BOM
 
