@@ -8,7 +8,8 @@
 		"terminal.integrated.shellIntegration.enabled": false,
 		"terminal.integrated.shellIntegration.showCommandGuide": false,
 		"editor.snippetSuggestions": "none",
-		"editor.suggest.showSnippets": false
+		"editor.suggest.showSnippets": false,
+		// "powershell.trace.server": "verbose",
 
 	}, 
 	"launch": {

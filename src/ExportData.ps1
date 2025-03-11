@@ -18,13 +18,32 @@ $Paths.Md_ChangeLog   = Join-Path $Paths.ExportRoot_CurrentVersion 'changelog.md
 $Paths.Csv_ChangeLog  = Join-Path $Paths.ExportRoot_CurrentVersion 'csv/changelog.csv'
 $Paths.json_ChangeLog = Join-Path $Paths.ExportRoot_CurrentVersion 'json/changelog.json'
 
-$Paths.Game = [ordered]@{
-    'ProgramData_Root' = Join-Path 'C:\Program Files (x86)\Steam\steamapps\common\Microtopia' 'Microtopia_Data'
-}
+# $Paths.Game = [ordered]@{
+#     'ProgramData_Root' = Join-Path 'C:\Program Files (x86)\Steam\steamapps\common\Microtopia' 'Microtopia_Data'
+# }
 <#
 Main entry point.
 Todo: refactor
 #>
+function md.GetRawPath {
+    <#
+    .Synopsis 
+        Path or object, modifies path: 'foo.xlsx' => 'foo-raw.xlsx'
+    #>
+    [CmdletBinding()]
+    param( 
+        [object] $Path )
+
+    $File = Get-Item -ea 'ignore' $Path
+    if( -not $File ) {
+        $File = [System.IO.FileInfo]::new( $Path ) 
+    }
+    if( -not $File) {
+        throw "Unhandled path type: $( $Path )"
+    }
+    $rawPath = Join-Path $File.DirectoryName "$( $File.BaseName )-raw.xlsx"
+    $rawPath
+}
 
 function md.Export.Changelog {
     <#
@@ -32,9 +51,13 @@ function md.Export.Changelog {
         Exports changelog as '.csv', '.json', and '.md'
     #>
     param()
-    $imXl = Import-Excel -path $Paths.Xlsx_ChangeLog -WorksheetName 'Changelog' -ImportColumns 1, 3 -HeaderName 'Version', 'English'
+
+    # $rawPath = $Paths.xlsx_Changelog 
+    # $rawFullJoin-Path $rawPath.DirectoryName "$( $_.baseName )-raw.xlsx"
+
+    # $imXl = Import-Excel -path "$( $Paths.Xlsx_ChangeLog. )" -WorksheetName 'Changelog' -ImportColumns 1, 3 -HeaderName 'Version', 'English'
     $imXL
-        # using BOM for best results when using Excel csv
+    # using BOM for best results when using Excel csv
         | ConvertTo-Csv
         | Set-Content -Path ($Paths.Csv_ChangeLog) -Encoding utf8BOM
 
@@ -56,8 +79,12 @@ function md.Export.Changelog {
     # @( foreach($record in $imXl) { $record.'Code', $record.'English' -join ' ' } ) | Join-String -sep "`n"
 }
 
+'done'
 . ( Get-Item -ea 'stop' (Join-Path ($PSScriptRoot) './MdUtils.ps1'))
 hr
+
+
+return
 
 $pkg = Open-ExcelPackage -Path $Paths.xlsx_Prefabs
 # $pkg.Workbook.Worksheets | %{ $_.Name }
