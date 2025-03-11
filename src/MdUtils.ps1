@@ -133,8 +133,15 @@ function md.Export.WorkbookSchema {
     #>
     [CmdletBinding()]
     param(
+        # Paths, if not in $Paths.Values
         [object[]] $Path,
-        $Destination
+        $Destination,
+
+        # always write a fresh export
+        [switch] $Force,
+
+        # also return the objects
+        [switch] $PassThru
     )
     $Source = @( 
         if( $Path ) { $Path }
@@ -143,10 +150,17 @@ function md.Export.WorkbookSchema {
     if( -not $Destination ) {
         $Destination = $Paths.json_WorkbookSchema
     }
-    $found = md.Workbook.Schema -Path $Source # $Paths.Values
-    $found 
-        | ConvertTo-Json -Depth 9 
-        | Set-Content -Path $Destination
+    if( -not $Force -and (Test-Path $Destination) ) {
+        "Using cached schema: $( $Destination ) " | Write-Verbose
+    } else {
+        $found = md.Workbook.Schema -Path $Source # $Paths.Values
+        $found 
+            | ConvertTo-Json -Depth 9 
+            | Set-Content -Path $Destination
+    }
+
+    if( -not $PassThru ) { return }
+    Get-Content -path $Destination | ConvertFrom-Json -Depth 9
 }
 
 function md.EnsureSubdirsExist {
@@ -160,7 +174,7 @@ function md.EnsureSubdirsExist {
         # Root path of version directory
         $Path,
 
-        [Parameter(Mandatory)]
+        [Parameter()]
         [string[]] $RequiredNames = @('json', 'csv')
     )
         # mkdir (join-path $Paths.ExportRoot_CurrentVersion -ChildPath 'json') -ea 'ignore'
