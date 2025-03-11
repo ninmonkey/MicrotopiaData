@@ -46,6 +46,8 @@ $Paths.json_WorkbookSchema = Join-Path $Paths.ExportRoot_CurrentVersion 'json/wo
 #>
 # hr
 
+md.Export.WorkbookSchema -verbose 
+
 'export excel XLSX' | out-host ; #  Write-Host -fg 'orange'
 $pkg = Open-ExcelPackage -Path $Paths.Raw_Biome
 $book = $pkg.Workbook
@@ -55,6 +57,13 @@ $sheets = $pkg.workbook.Worksheets
 # detect column counts
 $curSheet = $pkg.Workbook.Worksheets['Biome Objects']
 
+write-warning 'left off here'
+
+return
+
+($one =  Import-Excel -ExcelPackage $pkg -WorksheetName 'Biome Objects')
+$one | Export-Excel -Path $Paths.Xlsx_Biome -Show -WorksheetName 'Biome_Objects' -TableName 'Biome_Objects_Data'
+ 
 Close-ExcelPackage -ExcelPackage $pkg -NoSave
 
 
