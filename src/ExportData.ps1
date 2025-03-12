@@ -88,15 +88,6 @@ $exportExcel_Splat = @{
 
 Export-Excel @exportExcel_Splat
 
-# ($src -split ',\s+').ForEach({
-#   $segs = $_ -split '\s+', 2
-#   [pscustomobject]@{ Name = $segs[0]; Quantity = $segs[1]  }
-# })
-
-# $record.PICKUPS     = @( $record.PICKUPS -split ',\s*' )
-
-
-
 # json specific transforms
 $sort_splat = @{
     Property = 'title', 'code', 'exchange_types'
@@ -151,18 +142,20 @@ $forJson
 
 $Paths.json_Biome_Objects_Expanded | Join-String -f 'wrote: "{0}"' | write-host -fg 'gray50'
 
-$exportExcel_Splat = @{
-    InputObject   = @( $forJson )
-    Path          = $Paths.Xlsx_Biome
-    Show          = $false
-    WorksheetName = 'Biome_Objects_Expanded'
-    TableName     = 'Biome_Objects_Expanded_Data'
-    TableStyle    = 'Light5'
-    Title         = 'From Json'
-    AutoSize      = $True
-}
+if( $false ) { <# test coercion from json to sheet #>
+    $exportExcel_Splat = @{
+        InputObject   = @( $forJson )
+        Path          = $Paths.Xlsx_Biome
+        Show          = $false
+        WorksheetName = 'Biome_Objects_Expanded'
+        TableName     = 'Biome_Objects_Expanded_Data'
+        TableStyle    = 'Light5'
+        Title         = 'From Json'
+        AutoSize      = $True
+    }
 
-Export-Excel @exportExcel_Splat
+    Export-Excel @exportExcel_Splat
+}
 
  Close-ExcelPackage -ExcelPackage $pkg -NoSave
 
