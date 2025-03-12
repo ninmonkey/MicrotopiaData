@@ -114,6 +114,7 @@ $forJson = @(
         $record.'exchange_types'      = md.Parse.ItemsFromList $record.'exchange_types'
         $record.'unclickable'         = md.Parse.Checkbox $record.'unclickable'
         $record.'trails_pass_through' = md.Parse.Checkbox $record.'trails_pass_through'
+        $record
     }
 ) | Sort-Object @sortObjectSplat
 
@@ -129,16 +130,17 @@ $forJson = @(
     $Rows | %{
         $record = $_
         $expandProp = 'exchange_types'
-        if( $record.$expandProp.count -gt 0) {
-            $record.$expandProp | %{
-                $curType            = $_
-                $newObj             = $record | Select-Object -Prop *
-                $newObj.$expandProp = $curType
-                $newObj
-            }
-        } else {
-            $record
-        }
+        md.Convert.ExpandProperty $Record -Prop $expandProp
+        # if( $record.$expandProp.count -gt 0) {
+        #     $record.$expandProp | %{
+        #         $curType            = $_
+        #         $newObj             = $record | Select-Object -Prop *
+        #         $newObj.$expandProp = $curType
+        #         $newObj
+        #     }
+        # } else {
+        #     $record
+        # }
     }
 )| Sort-Object @sortObjectSplat
 
@@ -162,7 +164,7 @@ $exportExcel_Splat = @{
 
 Export-Excel @exportExcel_Splat
 
-Close-ExcelPackage -ExcelPackage $pkg -NoSave
+ Close-ExcelPackage -ExcelPackage $pkg -NoSave
 
 
 return

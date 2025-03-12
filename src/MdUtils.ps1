@@ -281,6 +281,53 @@ function md.Convert.KeyNames {
         [pscustomobject]$newObj
     }
 }
+
+function _Convert.ExpandSingleProperty {
+    param(
+        $InputObject,
+        [string] $Property
+    )
+    if( $InputObject.$expandProp.count -gt 0) {
+        $InputObject.$expandProp | %{
+            $curType            = $_
+            $newObj             = $InputObject | Select-Object -Prop *
+            $newObj.$expandProp = $curType
+            $newObj
+        }
+    } else {
+        $InputObject
+    }
+}
+
+function md.Convert.ExpandProperty {
+     <#
+    .synopsis
+        Expand nested lists to tables. Emits n-records for a list of n
+    .NOTES
+        future: [1] coerce casing. Maybe [TextInfo.ToTitleCase] [2] tolower
+    #>
+    [CmdletBinding()]
+    param(
+        [Parameter(ValueFromPipeline)]
+        [object] $InputObject,
+
+        # How many properties to expand ?
+        [string] $PropertyName
+    )
+
+    process {
+        _Convert.ExpandSingleProperty -InputObject $InputObject -Property @($PropertyName)[0]
+        # $newObj = [ordered]@{}
+        # $InputObject.PSObject.Properties  | % {
+        #       $newName         = $_.Name -replace '[ ]+', '_'
+        #       $newName         = $newName.toLower()
+        #       $newObj.$newName = $_.Value
+        # }
+        # [pscustomobject]$newObj
+
+    }
+}
+
 # function md.Convert.TruthyProps {
 #      <#
 #     .synopsis
