@@ -1,5 +1,8 @@
 #Requires -Version 7
 
+Import-Module Pansies -ea 'stop'
+Import-Module ImportExcel -ea 'stop'
+
 function md.Log.WroteFile {
     <#
     .SYNOPSIS
@@ -576,4 +579,93 @@ function md.Export.Biome.Plants {
     )| Sort-Object @sortObjectSplat
 
     Close-ExcelPackage -ExcelPackage $pkg -NoSave
+}
+
+function md.Invoke.FdFind {
+    <#
+    .SYNOPSIS
+        call 'fd' find
+    .LINK
+        https://github.com/sharkdp/fd
+    #>
+    [CmdletBinding()]
+    param(
+        # filter by File types
+        [ArgumentCompletions('xlsx', 'csv', 'json', 'log')]
+        [string[]] $Extension,
+
+        # extra args
+        [string[]] $ArgsList,
+
+        # test cli generated arguments
+        [switch] $WhatIf
+    )
+    begin {
+        $binFd = Get-Command 'fd' -CommandType Application -TotalCount 1 -ea 'stop'
+    }
+    end {
+        $binArgs = @(
+            if( $Extension ) {
+                foreach ($ext in $Extension) {
+                    "-e", $ext
+                }
+            }
+            $ArgsList
+        )
+        $binArgs | Join-String -op 'fd => ' -sep ' '  | Write-verbose
+        if( $WhatIf ) {
+            $binArgs | Join-String -op 'fd => ' -sep ' '  | Write-host -fg 'skyblue'
+            return
+        }
+        # ...
+        & $binFd @binArgs
+    }
+}
+
+function md.Export.Readme.FileListing {
+    <#
+    .SYNOPSIS
+        build markdown file using the 'fd' command
+    .LINK
+        https://github.com/sharkdp/fd
+    #>
+    [CmdletBinding()]
+    param(
+        # Root path to search
+        [Parameter(Mandatory)]
+        $Path
+    )
+    $PSCmdlet.MyInvocation.MyCommand.Name
+        | Join-String -f 'Enter: {0}' | Write-verbose
+
+    pushd -StackName 'export' $Paths.ExportRoot_CurrentVersion
+
+    $Shared = @(
+        '--path-separator=/'
+        '--strip-cwd-prefix=never'
+    )
+
+    md.Invoke.FdFind -WhatIf -Extension 'json' -ArgsList $Shared
+
+    popd -StackName 'export'
+    return
+
+    # new: Automatically build an index of all files generated
+    return
+    fd -e json --path-separator=/ --strip-cwd-prefix=never
+
+    $Listing = [ordered]@{}
+    $Listing.xlsx = @(
+        callFd -Params '-e', 'xlsx'
+        # & fd -e xlsx
+    )
+    fd -e xlsx
+    fd -e csv
+    fd -e json
+    fd -e md
+
+
+    fd -e xlsx -e json -e csv -e log
+    # the usage to `fd [OPTIONS] --search-path <path> --search-path <path2> [<pattern>]`
+    fd -e xlsx  --base-directory  '' --strip-cwd-prefix=never --search-path './src'
 }
