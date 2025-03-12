@@ -215,3 +215,14 @@ function md.Parse.Checkbox {
     if( $Text -match '\s*x\s*') { return $true }
     return $false
 }
+function md.Format.NullAsString {
+     <#
+    .synopsis
+        If null values, emit an empty string instead. For non-blanky, emit original value
+    #>i
+    param( $Value )
+    if($null -eq $Value){ return "" }
+    if( [string]::IsNullOrWhiteSpace( $Value ) ) { return $false }
+
+    return $value
+}

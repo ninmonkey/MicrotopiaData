@@ -94,9 +94,17 @@ Export-Excel @exportExcel_Splat
 $forJson = @(
     $Rows | %{
         $record             = $_
-        if( $record.CODE -match 'slide' ) {
-            'sdfds' | write-host -fg 'orange'
+        # if( $record.CODE -match 'slide' ) {
+        #     'sdfds' | write-host -fg 'orange'
+        # }
+
+        # coerce blankables into empty strings for json
+        $record.psobject.properties  | %{
+            if( [string]::IsNullOrWhiteSpace( $_.value ) ) {
+                $record.($_.Name) = ""
+            }
         }
+
 
 
         $record.PICKUPS     = md.Parse.IngredientsFromCsv $record.PICKUPS
