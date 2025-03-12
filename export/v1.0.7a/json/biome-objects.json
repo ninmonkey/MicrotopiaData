@@ -5,10 +5,26 @@
     "description": "",
     "unclickable": false,
     "trails_pass_through": true,
-    "exchange_types": [
-      "PLANT_CUT",
-      "FORAGE"
+    "exchange_types": "PLANT_CUT",
+    "pickups": [
+      {
+        "Name": "FIBER_SPIKETREE",
+        "Quantity": "8"
+      }
     ],
+    "infinite": "",
+    "hardness": "",
+    "fruit": "ENERGY_POD",
+    "prefab": "Spike Tree",
+    "pollution": ""
+  },
+  {
+    "code": "SPIKE_TREE",
+    "title": "BOB_SPIKE_TREE",
+    "description": "",
+    "unclickable": false,
+    "trails_pass_through": true,
+    "exchange_types": "FORAGE",
     "pickups": [
       {
         "Name": "FIBER_SPIKETREE",
@@ -27,10 +43,26 @@
     "description": "",
     "unclickable": false,
     "trails_pass_through": true,
-    "exchange_types": [
-      "PLANT_CUT",
-      "FORAGE"
+    "exchange_types": "PLANT_CUT",
+    "pickups": [
+      {
+        "Name": "FIBER_SPIKETREE",
+        "Quantity": "3"
+      }
     ],
+    "infinite": "",
+    "hardness": "",
+    "fruit": "ENERGY_POD",
+    "prefab": "Scrapara Cactus",
+    "pollution": ""
+  },
+  {
+    "code": "SCRAPARA_CACTUS",
+    "title": "BOB_SCRAPARA_CACTUS",
+    "description": "",
+    "unclickable": false,
+    "trails_pass_through": true,
+    "exchange_types": "FORAGE",
     "pickups": [
       {
         "Name": "FIBER_SPIKETREE",
@@ -49,9 +81,7 @@
     "description": "",
     "unclickable": false,
     "trails_pass_through": true,
-    "exchange_types": [
-      "PLANT_CUT"
-    ],
+    "exchange_types": "PLANT_CUT",
     "pickups": [
       {
         "Name": "FIBER_SPIKETREE",
@@ -70,9 +100,7 @@
     "description": "",
     "unclickable": false,
     "trails_pass_through": true,
-    "exchange_types": [
-      "PLANT_CUT"
-    ],
+    "exchange_types": "PLANT_CUT",
     "pickups": [
       {
         "Name": "FIBER_SPIKETREE",
@@ -91,9 +119,7 @@
     "description": "",
     "unclickable": false,
     "trails_pass_through": true,
-    "exchange_types": [
-      "PLANT_CUT"
-    ],
+    "exchange_types": "PLANT_CUT",
     "pickups": [
       {
         "Name": "FIBER_SPIKETREE",
@@ -112,9 +138,7 @@
     "description": "",
     "unclickable": false,
     "trails_pass_through": true,
-    "exchange_types": [
-      "PLANT_CUT"
-    ],
+    "exchange_types": "PLANT_CUT",
     "pickups": [
       {
         "Name": "FIBER_SPIKETREE",
@@ -133,10 +157,26 @@
     "description": "",
     "unclickable": false,
     "trails_pass_through": true,
-    "exchange_types": [
-      "PLANT_CUT",
-      "FORAGE"
+    "exchange_types": "PLANT_CUT",
+    "pickups": [
+      {
+        "Name": "FIBER_SPIKETREE",
+        "Quantity": "10"
+      }
     ],
+    "infinite": "",
+    "hardness": "",
+    "fruit": "ENERGY_POD2",
+    "prefab": "Cable Tree",
+    "pollution": ""
+  },
+  {
+    "code": "CABLE_TREE",
+    "title": "BOB_CABLE_TREE",
+    "description": "",
+    "unclickable": false,
+    "trails_pass_through": true,
+    "exchange_types": "FORAGE",
     "pickups": [
       {
         "Name": "FIBER_SPIKETREE",
@@ -155,10 +195,26 @@
     "description": "",
     "unclickable": false,
     "trails_pass_through": true,
-    "exchange_types": [
-      "PLANT_CUT",
-      "FORAGE"
+    "exchange_types": "PLANT_CUT",
+    "pickups": [
+      {
+        "Name": "FIBER_SPIKETREE",
+        "Quantity": "25"
+      }
     ],
+    "infinite": "",
+    "hardness": "",
+    "fruit": "ENERGY_POD",
+    "prefab": "Wire Tree",
+    "pollution": ""
+  },
+  {
+    "code": "WIRE_TREE",
+    "title": "BOB_WIRE_TREE",
+    "description": "",
+    "unclickable": false,
+    "trails_pass_through": true,
+    "exchange_types": "FORAGE",
     "pickups": [
       {
         "Name": "FIBER_SPIKETREE",
@@ -177,10 +233,26 @@
     "description": "",
     "unclickable": false,
     "trails_pass_through": true,
-    "exchange_types": [
-      "PLANT_CUT",
-      "FORAGE"
+    "exchange_types": "PLANT_CUT",
+    "pickups": [
+      {
+        "Name": "FIBER_SPIKETREE",
+        "Quantity": "25"
+      }
     ],
+    "infinite": "",
+    "hardness": "",
+    "fruit": "ENERGY_POD",
+    "prefab": "Wire Tree",
+    "pollution": ""
+  },
+  {
+    "code": "WIRE_TREE1",
+    "title": "BOB_WIRE_TREE",
+    "description": "",
+    "unclickable": false,
+    "trails_pass_through": true,
+    "exchange_types": "FORAGE",
     "pickups": [
       {
         "Name": "FIBER_SPIKETREE",
@@ -199,10 +271,26 @@
     "description": "",
     "unclickable": false,
     "trails_pass_through": true,
-    "exchange_types": [
-      "PLANT_CUT",
-      "FORAGE"
+    "exchange_types": "PLANT_CUT",
+    "pickups": [
+      {
+        "Name": "FIBER_SPIKETREE",
+        "Quantity": "25"
+      }
     ],
+    "infinite": "",
+    "hardness": "",
+    "fruit": "ENERGY_POD",
+    "prefab": "Wire Tree",
+    "pollution": ""
+  },
+  {
+    "code": "WIRE_TREE2",
+    "title": "BOB_WIRE_TREE",
+    "description": "",
+    "unclickable": false,
+    "trails_pass_through": true,
+    "exchange_types": "FORAGE",
     "pickups": [
       {
         "Name": "FIBER_SPIKETREE",
@@ -221,10 +309,26 @@
     "description": "",
     "unclickable": false,
     "trails_pass_through": true,
-    "exchange_types": [
-      "PLANT_CUT",
-      "FORAGE"
+    "exchange_types": "PLANT_CUT",
+    "pickups": [
+      {
+        "Name": "FIBER_SPIKETREE",
+        "Quantity": "25"
+      }
     ],
+    "infinite": "",
+    "hardness": "",
+    "fruit": "",
+    "prefab": "Wire Tree No Fruit",
+    "pollution": ""
+  },
+  {
+    "code": "WIRE_TREE_NO_FRUIT",
+    "title": "BOB_WIRE_TREE",
+    "description": "",
+    "unclickable": false,
+    "trails_pass_through": true,
+    "exchange_types": "FORAGE",
     "pickups": [
       {
         "Name": "FIBER_SPIKETREE",
@@ -243,9 +347,7 @@
     "description": "",
     "unclickable": false,
     "trails_pass_through": false,
-    "exchange_types": [
-      "PLANT_CUT"
-    ],
+    "exchange_types": "PLANT_CUT",
     "pickups": [
       {
         "Name": "FIBER_SPIKETREE",
@@ -264,9 +366,7 @@
     "description": "",
     "unclickable": false,
     "trails_pass_through": false,
-    "exchange_types": [
-      "PLANT_CUT"
-    ],
+    "exchange_types": "PLANT_CUT",
     "pickups": [
       {
         "Name": "FIBER_SPIKETREE",
@@ -289,9 +389,7 @@
     "description": "",
     "unclickable": false,
     "trails_pass_through": false,
-    "exchange_types": [
-      "PLANT_CUT"
-    ],
+    "exchange_types": "PLANT_CUT",
     "pickups": [
       {
         "Name": "FIBER_SPIKETREE",
@@ -310,9 +408,7 @@
     "description": "",
     "unclickable": false,
     "trails_pass_through": false,
-    "exchange_types": [
-      "PLANT_CUT"
-    ],
+    "exchange_types": "PLANT_CUT",
     "pickups": [
       {
         "Name": "FIBER_SPIKETREE",
@@ -331,10 +427,26 @@
     "description": "",
     "unclickable": false,
     "trails_pass_through": true,
-    "exchange_types": [
-      "PLANT_CUT",
-      "FORAGE"
+    "exchange_types": "PLANT_CUT",
+    "pickups": [
+      {
+        "Name": "FIBER_SPIKETREE",
+        "Quantity": "10"
+      }
     ],
+    "infinite": "",
+    "hardness": "",
+    "fruit": "ENERGY_POD2",
+    "prefab": "JunglePlant",
+    "pollution": ""
+  },
+  {
+    "code": "JUNGLE_PLANT",
+    "title": "BOB_JUNGLE_PLANT",
+    "description": "",
+    "unclickable": false,
+    "trails_pass_through": true,
+    "exchange_types": "FORAGE",
     "pickups": [
       {
         "Name": "FIBER_SPIKETREE",
@@ -353,9 +465,7 @@
     "description": "",
     "unclickable": false,
     "trails_pass_through": true,
-    "exchange_types": [
-      "PLANT_CUT"
-    ],
+    "exchange_types": "PLANT_CUT",
     "pickups": [
       {
         "Name": "RESIN",
@@ -378,10 +488,26 @@
     "description": "",
     "unclickable": false,
     "trails_pass_through": false,
-    "exchange_types": [
-      "PLANT_CUT",
-      "FORAGE"
+    "exchange_types": "PLANT_CUT",
+    "pickups": [
+      {
+        "Name": "FIBER_SPIKETREE",
+        "Quantity": "60"
+      }
     ],
+    "infinite": "",
+    "hardness": "",
+    "fruit": "ENERGY_POD2",
+    "prefab": "Bottle Tree",
+    "pollution": ""
+  },
+  {
+    "code": "BOTTLE_TREE",
+    "title": "BOB_BOTTLE_TREE",
+    "description": "",
+    "unclickable": false,
+    "trails_pass_through": false,
+    "exchange_types": "FORAGE",
     "pickups": [
       {
         "Name": "FIBER_SPIKETREE",
@@ -400,9 +526,7 @@
     "description": "",
     "unclickable": false,
     "trails_pass_through": false,
-    "exchange_types": [
-      "PLANT_CUT"
-    ],
+    "exchange_types": "PLANT_CUT",
     "pickups": [
       {
         "Name": "CHEM_WASTE",
@@ -421,9 +545,7 @@
     "description": "",
     "unclickable": false,
     "trails_pass_through": true,
-    "exchange_types": [
-      "PLANT_CUT"
-    ],
+    "exchange_types": "PLANT_CUT",
     "pickups": [
       {
         "Name": "FIBER_SPIKETREE",
@@ -442,9 +564,7 @@
     "description": "",
     "unclickable": false,
     "trails_pass_through": true,
-    "exchange_types": [
-      "PLANT_CUT"
-    ],
+    "exchange_types": "PLANT_CUT",
     "pickups": [],
     "infinite": "",
     "hardness": "",
@@ -458,9 +578,7 @@
     "description": "",
     "unclickable": false,
     "trails_pass_through": false,
-    "exchange_types": [
-      "MINE"
-    ],
+    "exchange_types": "MINE",
     "pickups": [
       {
         "Name": "IRON_RAW",
@@ -479,10 +597,26 @@
     "description": "",
     "unclickable": false,
     "trails_pass_through": false,
-    "exchange_types": [
-      "MINE",
-      "FORAGE"
+    "exchange_types": "MINE",
+    "pickups": [
+      {
+        "Name": "IRON_RAW",
+        "Quantity": "25"
+      }
     ],
+    "infinite": "",
+    "hardness": 5.0,
+    "fruit": "ENERGY_POD4",
+    "prefab": "ConcreteScrapPoles Fruitplant",
+    "pollution": ""
+  },
+  {
+    "code": "SCRAP_POLES_FRUITPLANT",
+    "title": "BOB_CONCRETE_SCRAP_POLES",
+    "description": "",
+    "unclickable": false,
+    "trails_pass_through": false,
+    "exchange_types": "FORAGE",
     "pickups": [
       {
         "Name": "IRON_RAW",
@@ -543,9 +677,7 @@
     "description": "",
     "unclickable": false,
     "trails_pass_through": true,
-    "exchange_types": [
-      "PLANT_CUT"
-    ],
+    "exchange_types": "PLANT_CUT",
     "pickups": [],
     "infinite": "",
     "hardness": "",
@@ -587,9 +719,7 @@
     "description": "",
     "unclickable": false,
     "trails_pass_through": false,
-    "exchange_types": [
-      "PLANT_CUT"
-    ],
+    "exchange_types": "PLANT_CUT",
     "pickups": [
       {
         "Name": "FIBER_SPIKETREE",
@@ -608,9 +738,7 @@
     "description": "",
     "unclickable": false,
     "trails_pass_through": false,
-    "exchange_types": [
-      "PLANT_CUT"
-    ],
+    "exchange_types": "PLANT_CUT",
     "pickups": [
       {
         "Name": "FIBER_SPIKETREE",
@@ -633,9 +761,7 @@
     "description": "",
     "unclickable": false,
     "trails_pass_through": false,
-    "exchange_types": [
-      "PLANT_CUT"
-    ],
+    "exchange_types": "PLANT_CUT",
     "pickups": [
       {
         "Name": "FIBER_SPIKETREE",
@@ -654,9 +780,7 @@
     "description": "",
     "unclickable": false,
     "trails_pass_through": false,
-    "exchange_types": [
-      "PICKUP"
-    ],
+    "exchange_types": "PICKUP",
     "pickups": [
       {
         "Name": "IRON_RAW",
@@ -675,9 +799,7 @@
     "description": "",
     "unclickable": false,
     "trails_pass_through": false,
-    "exchange_types": [
-      "PICKUP"
-    ],
+    "exchange_types": "PICKUP",
     "pickups": [
       {
         "Name": "COPPER_RAW",
@@ -696,9 +818,7 @@
     "description": "",
     "unclickable": false,
     "trails_pass_through": false,
-    "exchange_types": [
-      "PICKUP"
-    ],
+    "exchange_types": "PICKUP",
     "pickups": [
       {
         "Name": "GLASS_RAW",
@@ -717,9 +837,7 @@
     "description": "",
     "unclickable": false,
     "trails_pass_through": false,
-    "exchange_types": [
-      "PICKUP"
-    ],
+    "exchange_types": "PICKUP",
     "pickups": [
       {
         "Name": "GOLD_RAW",
@@ -738,9 +856,7 @@
     "description": "",
     "unclickable": false,
     "trails_pass_through": false,
-    "exchange_types": [
-      "MINE"
-    ],
+    "exchange_types": "MINE",
     "pickups": [
       {
         "Name": "IRON_RAW",
@@ -759,9 +875,7 @@
     "description": "",
     "unclickable": false,
     "trails_pass_through": false,
-    "exchange_types": [
-      "MINE"
-    ],
+    "exchange_types": "MINE",
     "pickups": [
       {
         "Name": "IRON_RAW",
@@ -780,9 +894,7 @@
     "description": "",
     "unclickable": false,
     "trails_pass_through": false,
-    "exchange_types": [
-      "MINE"
-    ],
+    "exchange_types": "MINE",
     "pickups": [
       {
         "Name": "IRON_RAW",
@@ -801,9 +913,7 @@
     "description": "",
     "unclickable": false,
     "trails_pass_through": false,
-    "exchange_types": [
-      "MINE"
-    ],
+    "exchange_types": "MINE",
     "pickups": [
       {
         "Name": "IRON_RAW",
@@ -822,9 +932,7 @@
     "description": "",
     "unclickable": false,
     "trails_pass_through": false,
-    "exchange_types": [
-      "MINE"
-    ],
+    "exchange_types": "MINE",
     "pickups": [
       {
         "Name": "COPPER_RAW",
@@ -843,9 +951,7 @@
     "description": "",
     "unclickable": false,
     "trails_pass_through": false,
-    "exchange_types": [
-      "MINE"
-    ],
+    "exchange_types": "MINE",
     "pickups": [
       {
         "Name": "CONCRETE_RAW",
@@ -864,9 +970,7 @@
     "description": "",
     "unclickable": false,
     "trails_pass_through": false,
-    "exchange_types": [
-      "MINE"
-    ],
+    "exchange_types": "MINE",
     "pickups": [
       {
         "Name": "CONCRETE_RAW",
@@ -885,9 +989,7 @@
     "description": "",
     "unclickable": false,
     "trails_pass_through": false,
-    "exchange_types": [
-      "MINE"
-    ],
+    "exchange_types": "MINE",
     "pickups": [
       {
         "Name": "CONCRETE_RAW",
@@ -906,9 +1008,7 @@
     "description": "",
     "unclickable": false,
     "trails_pass_through": false,
-    "exchange_types": [
-      "MINE"
-    ],
+    "exchange_types": "MINE",
     "pickups": [
       {
         "Name": "GLASS_RAW",
@@ -927,9 +1027,7 @@
     "description": "",
     "unclickable": false,
     "trails_pass_through": false,
-    "exchange_types": [
-      "MINE"
-    ],
+    "exchange_types": "MINE",
     "pickups": [
       {
         "Name": "GLASS_RAW",
@@ -948,9 +1046,7 @@
     "description": "",
     "unclickable": false,
     "trails_pass_through": false,
-    "exchange_types": [
-      "MINE"
-    ],
+    "exchange_types": "MINE",
     "pickups": [
       {
         "Name": "CHEM_WASTE",
@@ -969,9 +1065,7 @@
     "description": "",
     "unclickable": false,
     "trails_pass_through": false,
-    "exchange_types": [
-      "MINE"
-    ],
+    "exchange_types": "MINE",
     "pickups": [
       {
         "Name": "IRON_RAW",
@@ -1002,9 +1096,7 @@
     "description": "",
     "unclickable": false,
     "trails_pass_through": false,
-    "exchange_types": [
-      "MINE"
-    ],
+    "exchange_types": "MINE",
     "pickups": [
       {
         "Name": "GOLD_RAW",
@@ -1023,9 +1115,7 @@
     "description": "",
     "unclickable": false,
     "trails_pass_through": false,
-    "exchange_types": [
-      "MINE"
-    ],
+    "exchange_types": "MINE",
     "pickups": [
       {
         "Name": "IRON_PLATE",
@@ -1072,9 +1162,7 @@
     "description": "",
     "unclickable": false,
     "trails_pass_through": false,
-    "exchange_types": [
-      "MINE"
-    ],
+    "exchange_types": "MINE",
     "pickups": [
       {
         "Name": "CLAY",
@@ -1093,9 +1181,7 @@
     "description": "",
     "unclickable": false,
     "trails_pass_through": false,
-    "exchange_types": [
-      "MINE"
-    ],
+    "exchange_types": "MINE",
     "pickups": [
       {
         "Name": "CONCRETE_RAW",
@@ -1114,9 +1200,7 @@
     "description": "",
     "unclickable": false,
     "trails_pass_through": false,
-    "exchange_types": [
-      "MINE"
-    ],
+    "exchange_types": "MINE",
     "pickups": [
       {
         "Name": "CONCRETE_RAW",
@@ -1135,9 +1219,7 @@
     "description": "",
     "unclickable": false,
     "trails_pass_through": false,
-    "exchange_types": [
-      "MINE"
-    ],
+    "exchange_types": "MINE",
     "pickups": [
       {
         "Name": "CONCRETE_RAW",
@@ -1156,9 +1238,7 @@
     "description": "",
     "unclickable": false,
     "trails_pass_through": false,
-    "exchange_types": [
-      "MINE"
-    ],
+    "exchange_types": "MINE",
     "pickups": [
       {
         "Name": "CONCRETE_RAW",
@@ -1177,9 +1257,7 @@
     "description": "",
     "unclickable": true,
     "trails_pass_through": false,
-    "exchange_types": [
-      "MINE"
-    ],
+    "exchange_types": "MINE",
     "pickups": [],
     "infinite": "",
     "hardness": "",
@@ -1193,9 +1271,7 @@
     "description": "",
     "unclickable": true,
     "trails_pass_through": false,
-    "exchange_types": [
-      "MINE"
-    ],
+    "exchange_types": "MINE",
     "pickups": [],
     "infinite": "",
     "hardness": "",
@@ -1209,9 +1285,7 @@
     "description": "",
     "unclickable": true,
     "trails_pass_through": false,
-    "exchange_types": [
-      "MINE"
-    ],
+    "exchange_types": "MINE",
     "pickups": [],
     "infinite": "",
     "hardness": "",
@@ -1225,9 +1299,7 @@
     "description": "",
     "unclickable": true,
     "trails_pass_through": false,
-    "exchange_types": [
-      "MINE"
-    ],
+    "exchange_types": "MINE",
     "pickups": [],
     "infinite": "",
     "hardness": "",
@@ -1241,9 +1313,7 @@
     "description": "",
     "unclickable": true,
     "trails_pass_through": false,
-    "exchange_types": [
-      "MINE"
-    ],
+    "exchange_types": "MINE",
     "pickups": [],
     "infinite": "",
     "hardness": "",
@@ -1257,9 +1327,7 @@
     "description": "",
     "unclickable": true,
     "trails_pass_through": false,
-    "exchange_types": [
-      "MINE"
-    ],
+    "exchange_types": "MINE",
     "pickups": [],
     "infinite": "",
     "hardness": "",
@@ -1273,9 +1341,7 @@
     "description": "",
     "unclickable": true,
     "trails_pass_through": false,
-    "exchange_types": [
-      "MINE"
-    ],
+    "exchange_types": "MINE",
     "pickups": [],
     "infinite": "",
     "hardness": "",
