@@ -4,6 +4,8 @@ function md.Log.WroteFile {
     <#
     .SYNOPSIS
         Write host? Log to logfile? writes to "temp:\last.log" by default
+    .EXAMPLE
+        > $Paths.Json_Biome_Objects | md.Log.WroteFile
     #>
     param(
         [Parameter(ValueFromPipeline)]
@@ -12,7 +14,7 @@ function md.Log.WroteFile {
     process {
         $msg = $InputObject | Join-String -f 'wrote: "{0}"'
         $msg | write-host -fg 'gray50'
-        $msg | Add-Content -Path 'temp:last.log'
+        $msg | Add-Content -Path ($Paths.Log ?? 'temp:\last.log')
     }
 }
 function md.Workbook.ListItems {
@@ -95,6 +97,8 @@ function md.Export.Changelog {
         | ConvertTo-Csv
         | Set-Content -Path ($Paths.Csv_ChangeLog) -Encoding utf8BOM
 
+    $Paths.Csv_ChangeLog | md.Log.WroteFile
+
     @( foreach($x in $imXl) {
         '| {0} | {1} |' -f @(
             $x.Version
@@ -102,10 +106,14 @@ function md.Export.Changelog {
         )
     }) | Set-Content -Path $Paths.Md_ChangeLog -Encoding utf8
 
+    $Paths.Md_ChangeLog | md.Log.WroteFile
+
     $imxl
         | Select-Object -Prop Code, English
         | ConvertTo-Json
         | Set-Content -Path $Paths.json_ChangeLog
+
+    $Paths.json_ChangeLog | md.Log.WroteFile
 
     # $imXL | Join-String -p { $_.Version, $_.English } -sep "`n"
 
@@ -173,6 +181,8 @@ function md.Export.WorkbookSchema {
         $found
             | ConvertTo-Json -Depth 9
             | Set-Content -Path $Destination
+
+        $Destination | md.Log.WroteFile
     }
 
     if( -not $PassThru ) { return }
@@ -443,8 +453,7 @@ function md.Export.Biome.Biome_Objects {
         | ConvertTo-Json -depth 9
         | Set-Content -path $Paths.Json_Biome_Objects # -Confirm
 
-    $Paths.Json_Biome_Objects | Join-String -f 'wrote: "{0}"' | write-host -fg 'gray50'
-
+    $Paths.Json_Biome_Objects | md.Log.WroteFile
 
     # also emit expanded records
     $forJson = @(
@@ -460,7 +469,7 @@ function md.Export.Biome.Biome_Objects {
         | ConvertTo-Json -depth 9
         | Set-Content -path $Paths.json_Biome_Objects_Expanded # -Confirm
 
-    $Paths.json_Biome_Objects_Expanded | Join-String -f 'wrote: "{0}"' | write-host -fg 'gray50'
+    $Paths.json_Biome_Objects_Expanded | md.Log.WroteFile
 
     if( $false ) { <# test coercion from json to sheet #>
         $exportExcel_Splat = @{
@@ -507,6 +516,7 @@ function md.Export.Biome.Plants {
     # column descriptions are inline
     $description = $rows | ? Code -Match '^\s*//\s*$' | Select -First 1
     $description | ConvertTo-Json | Set-Content -path $Paths.json_Biome_Plants_ColumnDesc
+    $paths.json_Biome_Plants_ColumnDesc | md.Log.WroteFile
 
     # skip empty and non-data rows
     $rows = @(
@@ -551,6 +561,8 @@ function md.Export.Biome.Plants {
     $forJson
         | ConvertTo-Json -depth 9
         | Set-Content -path $Paths.Json_Biome_Plants # -Confirm
+
+    $Paths.json_Biome_Plants | md.Log.WroteFile
 
 
 

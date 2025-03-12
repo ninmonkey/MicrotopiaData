@@ -18,6 +18,7 @@ if($true) {
 if( -not $function:Hr ) {
     function Hr { "`n`n######`n`n" }
 }
+$paths.Log = Join-Path $Paths.ExportRoot '../log.log'
 $Paths.ExportRoot_CurrentVersion = Join-Path $Paths.ExportRoot 'v1.0.6a'
 $Paths.ExportRoot_CurrentVersion = Join-Path $Paths.ExportRoot 'v1.0.7a'
 
@@ -50,11 +51,16 @@ md.Export.WorkbookSchema -verbose
 
 # never cache
 Remove-Item $Paths.Xlsx_Biome -ea 'Ignore'
+Clear-Content -path $Paths.Log -ea Ignore
 md.Export.Biome.Biome_Objects -Paths $Paths -Verbose
 md.Export.Biome.Plants -Paths $Paths -Verbose
 
 # md.Export.Biome.Biome_Plants -Paths $Paths -Verbose
 # md.Export.Biome.Plants
+
+$Paths.Log
+    | Join-String -f 'See log for a list of changed files: "{0}"'
+    | Write-Host -fg 'skyblue'
 
 return
 
