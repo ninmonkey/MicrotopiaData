@@ -74,7 +74,7 @@ $rows = @(
 $exportExcel_Splat = @{
     InputObject   = @( $rows )
     Path          = $Paths.Xlsx_Biome
-    Show          = $true
+    Show          = $false
     WorksheetName = 'Biome_Objects'
     TableName     = 'Biome_Objects_Data'
     TableStyle    = 'Light5'
@@ -101,10 +101,10 @@ $forJson = @(
         # $record = md.Convert.TruthyProps $Record
 
         # coerce blankables into empty strings for json
-        $record.'PICKUPS'             = md.Parse.IngredientsFromCsv $record.'PICKUPS'
-        $record.'EXCHANGE_TYPES'      = md.Parse.ItemsFromList $record.'EXCHANGE_TYPES'
-        $record.'UNCLICKABLE'         = md.Parse.Checkbox $record.'UNCLICKABLE'
-        $record.'TRAILS_PASS_THROUGH' = md.Parse.Checkbox $record.'TRAILS_PASS_THROUGH'
+        $record.'pickups'             = md.Parse.IngredientsFromCsv $record.'pickups'
+        $record.'exchange_types'      = md.Parse.ItemsFromList $record.'exchange_types'
+        $record.'unclickable'         = md.Parse.Checkbox $record.'unclickable'
+        $record.'trails_pass_through' = md.Parse.Checkbox $record.'trails_pass_through'
         $record
     }
 )

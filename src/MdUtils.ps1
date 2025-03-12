@@ -272,12 +272,13 @@ function md.Convert.KeyNames {
     )
 
     process {
+        $newObj = [ordered]@{}
         $InputObject.PSObject.Properties  | % {
-            $newName               = $_.Name -replace '[ ]+', '_'
-            $newName               = $newName.toLower()
-            $InputObject.($_.Name) = $newName
+              $newName         = $_.Name -replace '[ ]+', '_'
+              $newName         = $newName.toLower()
+              $newObj.$newName = $_.Value
         }
-        $InputObject
+        [pscustomobject]$newObj
     }
 }
 # function md.Convert.TruthyProps {
