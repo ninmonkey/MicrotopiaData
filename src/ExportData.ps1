@@ -6,20 +6,20 @@ $Paths = [ordered]@{
     AppRoot = ($AppRoot = Get-Item $PSScriptRoot)
     ExportRoot = Join-Path $AppRoot '../export'
 }
-if($true) { 
-    # todo: refactor as module 
+if($true) {
+    # todo: refactor as module
     $toImport = (Join-Path ($PSScriptRoot) './MdUtils.ps1')
     "DotSrc: `"$toImport`"" | Out-Host
     . ( Get-Item -ea 'stop' (Join-Path ($PSScriptRoot) './MdUtils.ps1'))
 }
 
-if( -not $function:Hr ) {    
+if( -not $function:Hr ) {
     function Hr { "`n`n######`n`n" }
 }
 $Paths.ExportRoot_CurrentVersion = Join-Path $Paths.ExportRoot 'v1.0.6a'
 $Paths.ExportRoot_CurrentVersion = Join-Path $Paths.ExportRoot 'v1.0.7a'
 
-md.EnsureSubdirsExist -Path $paths.ExportRoot_CurrentVersion -verbose 
+md.EnsureSubdirsExist -Path $paths.ExportRoot_CurrentVersion -verbose
 
 $Paths.Xlsx_Biome = Join-Path $Paths.ExportRoot_CurrentVersion 'biome.xlsx'
 $Paths.Raw_Biome  = md.GetRawPath $Paths.Xlsx_Biome
@@ -46,7 +46,7 @@ $Paths.json_WorkbookSchema = Join-Path $Paths.ExportRoot_CurrentVersion 'json/wo
 #>
 # hr
 
-md.Export.WorkbookSchema -verbose 
+md.Export.WorkbookSchema -verbose
 
 'export excel XLSX' | out-host ; #  Write-Host -fg 'orange'
 $pkg = Open-ExcelPackage -Path $Paths.Raw_Biome
@@ -57,14 +57,33 @@ $sheets = $pkg.workbook.Worksheets
 # detect column counts
 $curSheet = $pkg.Workbook.Worksheets['Biome Objects']
 
-write-warning 'left off here'
+$importExcel_Splat = @{
+    ExcelPackage  = $pkg
+    WorksheetName = 'Biome Objects'
+}
+$rows =  Import-Excel @importExcel_Splat
+# skip empty and non-data rows
+$rows = @(
+    $rows
+        | ? { -not [string]::IsNullOrWhiteSpace( $_.CODE ) }
+        | ? { $_.CODE -notmatch '^\s*//' }
+        | ? { $_.CODE -notmatch '^\s*\?+\s*$' } # skip "???"
+)
 
-return
+$exportExcel_Splat = @{
+    InputObject   = @( $rows )
+    Path          = $Paths.Xlsx_Biome
+    Show          = $true
+    WorksheetName = 'Biome_Objects'
+    TableName     = 'Biome_Objects_Data'
+    TableStyle    = 'Light5'
+    AutoSize      = $True
+}
 
-($one =  Import-Excel -ExcelPackage $pkg -WorksheetName 'Biome Objects')
-$one | Export-Excel -Path $Paths.Xlsx_Biome -Show -WorksheetName 'Biome_Objects' -TableName 'Biome_Objects_Data'
- 
-Close-ExcelPackage -ExcelPackage $pkg -NoSave
+Export-Excel @exportExcel_Splat
+
+
+Close-ExcelPackage -ExcelPackage $pkg # -NoSave
 
 
 return
