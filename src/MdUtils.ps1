@@ -193,8 +193,8 @@ function md.Parse.IngredientsFromCsv {
         converts inputs like 'FIBER_SPIKETREE 100, CONCRETE_RAW 25' into ingredient lists
     #>
     param( [string]$Text )
-    if( [string]::IsNullOrWhiteSpace( $Text ) ) { return @() }
-    @(
+    if( [string]::IsNullOrWhiteSpace( $Text ) ) { return ,@() }
+    ,@(
         ($Text -split ',\s+').ForEach({
             $segs = $_ -split '\s+', 2
             [pscustomobject]@{
@@ -202,6 +202,17 @@ function md.Parse.IngredientsFromCsv {
                 Quantity = $segs[1]
             }
         })
+    )
+}
+function md.Parse.ItemsFromList {
+    <#
+    .synopsis
+        converts inputs like 'FIBER_SPIKETREE 100, CONCRETE_RAW 25' into ingredient lists
+    #>
+    param( [string]$Text )
+    if( [string]::IsNullOrWhiteSpace( $Text ) ) { return ,@() }
+    ,@(
+        $Text -split ',\s+'
     )
 }
 
@@ -245,12 +256,52 @@ function md.Convert.BlankPropsToEmpty {
             }
         }
         $InputObject
-        # if($null -eq $Value){ return "" }
-        # if( [string]::IsNullOrWhiteSpace( $Value ) ) { return $false }
-
-        # return $value
     }
-
-
-
 }
+function md.Convert.KeyNames {
+     <#
+    .synopsis
+        partially sanitize names, making it more json-ic
+    .NOTES
+        future: [1] coerce casing. Maybe [TextInfo.ToTitleCase] [2] tolower
+    #>
+    [CmdletBinding()]
+    param(
+        [Parameter(ValueFromPipeline)]
+        [object] $InputObject
+    )
+
+    process {
+        $InputObject.PSObject.Properties  | % {
+            $newName               = $_.Name -replace '[ ]+', '_'
+            $newName               = $newName.toLower()
+            $InputObject.($_.Name) = $newName
+        }
+        $InputObject
+    }
+}
+# function md.Convert.TruthyProps {
+#      <#
+#     .synopsis
+#         converts boolean style inputs like 'x' or blank as true / false
+#     #>
+#     [CmdletBinding()]
+#     param(
+#         [Parameter(ValueFromPipeline)]
+#         [object] $InputObject
+#     )
+
+#     process {
+#         $InputObject.PSObject.Properties  | % {
+#             if( $_.Value -match '^\s*x\s*$' ) {
+#                 $InputObject.($_.Name) = $true
+#             } elseif( $_.Value -is 'string' and $_.Value.Length -eq 0 )  {
+#                 $InputObject.($_.Name) = $false
+#             }
+#             if( [string]::IsNullOrWhiteSpace( $_.Value ) ) {
+
+#             }
+#         }
+#         $InputObject
+#     }
+# }

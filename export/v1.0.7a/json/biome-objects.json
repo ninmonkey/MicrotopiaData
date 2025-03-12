@@ -4,12 +4,14 @@
     "TITLE": "BOB_SPIKE_TREE",
     "DESCRIPTION": "",
     "UNCLICKABLE": false,
-    "TRAILS PASS THROUGH": "X",
+    "TRAILS PASS THROUGH": true,
     "EXCHANGE TYPES": "PLANT_CUT, FORAGE",
-    "PICKUPS": {
-      "Name": "FIBER_SPIKETREE",
-      "Quantity": "8"
-    },
+    "PICKUPS": [
+      {
+        "Name": "FIBER_SPIKETREE",
+        "Quantity": "8"
+      }
+    ],
     "INFINITE": "",
     "HARDNESS": "",
     "FRUIT": "ENERGY_POD",
@@ -21,12 +23,14 @@
     "TITLE": "BOB_SCRAPARA_CACTUS",
     "DESCRIPTION": "",
     "UNCLICKABLE": false,
-    "TRAILS PASS THROUGH": "X",
+    "TRAILS PASS THROUGH": true,
     "EXCHANGE TYPES": "PLANT_CUT, FORAGE",
-    "PICKUPS": {
-      "Name": "FIBER_SPIKETREE",
-      "Quantity": "3"
-    },
+    "PICKUPS": [
+      {
+        "Name": "FIBER_SPIKETREE",
+        "Quantity": "3"
+      }
+    ],
     "INFINITE": "",
     "HARDNESS": "",
     "FRUIT": "ENERGY_POD",
@@ -38,12 +42,14 @@
     "TITLE": "BOB_WORM_TREE",
     "DESCRIPTION": "",
     "UNCLICKABLE": false,
-    "TRAILS PASS THROUGH": "X",
+    "TRAILS PASS THROUGH": true,
     "EXCHANGE TYPES": "PLANT_CUT",
-    "PICKUPS": {
-      "Name": "FIBER_SPIKETREE",
-      "Quantity": "5"
-    },
+    "PICKUPS": [
+      {
+        "Name": "FIBER_SPIKETREE",
+        "Quantity": "5"
+      }
+    ],
     "INFINITE": "",
     "HARDNESS": "",
     "FRUIT": "",
@@ -55,12 +61,14 @@
     "TITLE": "BOB_HALM",
     "DESCRIPTION": "",
     "UNCLICKABLE": false,
-    "TRAILS PASS THROUGH": "X",
+    "TRAILS PASS THROUGH": true,
     "EXCHANGE TYPES": "PLANT_CUT",
-    "PICKUPS": {
-      "Name": "FIBER_SPIKETREE",
-      "Quantity": "15"
-    },
+    "PICKUPS": [
+      {
+        "Name": "FIBER_SPIKETREE",
+        "Quantity": "15"
+      }
+    ],
     "INFINITE": "",
     "HARDNESS": "",
     "FRUIT": "",
@@ -72,12 +80,14 @@
     "TITLE": "BOB_FLOWER",
     "DESCRIPTION": "",
     "UNCLICKABLE": false,
-    "TRAILS PASS THROUGH": "X",
+    "TRAILS PASS THROUGH": true,
     "EXCHANGE TYPES": "PLANT_CUT",
-    "PICKUPS": {
-      "Name": "FIBER_SPIKETREE",
-      "Quantity": "5"
-    },
+    "PICKUPS": [
+      {
+        "Name": "FIBER_SPIKETREE",
+        "Quantity": "5"
+      }
+    ],
     "INFINITE": "",
     "HARDNESS": "",
     "FRUIT": "",
@@ -89,12 +99,14 @@
     "TITLE": "BOB_PLUMBER_TREE",
     "DESCRIPTION": "",
     "UNCLICKABLE": false,
-    "TRAILS PASS THROUGH": "X",
+    "TRAILS PASS THROUGH": true,
     "EXCHANGE TYPES": "PLANT_CUT",
-    "PICKUPS": {
-      "Name": "FIBER_SPIKETREE",
-      "Quantity": "10"
-    },
+    "PICKUPS": [
+      {
+        "Name": "FIBER_SPIKETREE",
+        "Quantity": "10"
+      }
+    ],
     "INFINITE": "",
     "HARDNESS": "",
     "FRUIT": "",
@@ -106,12 +118,14 @@
     "TITLE": "BOB_CABLE_TREE",
     "DESCRIPTION": "",
     "UNCLICKABLE": false,
-    "TRAILS PASS THROUGH": "X",
+    "TRAILS PASS THROUGH": true,
     "EXCHANGE TYPES": "PLANT_CUT, FORAGE",
-    "PICKUPS": {
-      "Name": "FIBER_SPIKETREE",
-      "Quantity": "10"
-    },
+    "PICKUPS": [
+      {
+        "Name": "FIBER_SPIKETREE",
+        "Quantity": "10"
+      }
+    ],
     "INFINITE": "",
     "HARDNESS": "",
     "FRUIT": "ENERGY_POD2",
@@ -123,12 +137,14 @@
     "TITLE": "BOB_WIRE_TREE",
     "DESCRIPTION": "",
     "UNCLICKABLE": false,
-    "TRAILS PASS THROUGH": "X",
+    "TRAILS PASS THROUGH": true,
     "EXCHANGE TYPES": "PLANT_CUT, FORAGE",
-    "PICKUPS": {
-      "Name": "FIBER_SPIKETREE",
-      "Quantity": "25"
-    },
+    "PICKUPS": [
+      {
+        "Name": "FIBER_SPIKETREE",
+        "Quantity": "25"
+      }
+    ],
     "INFINITE": "",
     "HARDNESS": "",
     "FRUIT": "ENERGY_POD",
@@ -140,12 +156,14 @@
     "TITLE": "BOB_WIRE_TREE",
     "DESCRIPTION": "",
     "UNCLICKABLE": false,
-    "TRAILS PASS THROUGH": "X",
+    "TRAILS PASS THROUGH": true,
     "EXCHANGE TYPES": "PLANT_CUT, FORAGE",
-    "PICKUPS": {
-      "Name": "FIBER_SPIKETREE",
-      "Quantity": "25"
-    },
+    "PICKUPS": [
+      {
+        "Name": "FIBER_SPIKETREE",
+        "Quantity": "25"
+      }
+    ],
     "INFINITE": "",
     "HARDNESS": "",
     "FRUIT": "ENERGY_POD",
@@ -157,12 +175,14 @@
     "TITLE": "BOB_WIRE_TREE",
     "DESCRIPTION": "",
     "UNCLICKABLE": false,
-    "TRAILS PASS THROUGH": "X",
+    "TRAILS PASS THROUGH": true,
     "EXCHANGE TYPES": "PLANT_CUT, FORAGE",
-    "PICKUPS": {
-      "Name": "FIBER_SPIKETREE",
-      "Quantity": "25"
-    },
+    "PICKUPS": [
+      {
+        "Name": "FIBER_SPIKETREE",
+        "Quantity": "25"
+      }
+    ],
     "INFINITE": "",
     "HARDNESS": "",
     "FRUIT": "ENERGY_POD",
@@ -174,12 +194,14 @@
     "TITLE": "BOB_WIRE_TREE",
     "DESCRIPTION": "",
     "UNCLICKABLE": false,
-    "TRAILS PASS THROUGH": "X",
+    "TRAILS PASS THROUGH": true,
     "EXCHANGE TYPES": "PLANT_CUT, FORAGE",
-    "PICKUPS": {
-      "Name": "FIBER_SPIKETREE",
-      "Quantity": "25"
-    },
+    "PICKUPS": [
+      {
+        "Name": "FIBER_SPIKETREE",
+        "Quantity": "25"
+      }
+    ],
     "INFINITE": "",
     "HARDNESS": "",
     "FRUIT": "",
@@ -191,12 +213,14 @@
     "TITLE": "BOB_JUNGLE_GIANT_TREE",
     "DESCRIPTION": "",
     "UNCLICKABLE": false,
-    "TRAILS PASS THROUGH": "",
+    "TRAILS PASS THROUGH": false,
     "EXCHANGE TYPES": "PLANT_CUT",
-    "PICKUPS": {
-      "Name": "FIBER_SPIKETREE",
-      "Quantity": "100"
-    },
+    "PICKUPS": [
+      {
+        "Name": "FIBER_SPIKETREE",
+        "Quantity": "100"
+      }
+    ],
     "INFINITE": "",
     "HARDNESS": "",
     "FRUIT": "",
@@ -208,7 +232,7 @@
     "TITLE": "BOB_JUNGLE_CORRAL_TREE",
     "DESCRIPTION": "",
     "UNCLICKABLE": false,
-    "TRAILS PASS THROUGH": "",
+    "TRAILS PASS THROUGH": false,
     "EXCHANGE TYPES": "PLANT_CUT",
     "PICKUPS": [
       {
@@ -231,12 +255,14 @@
     "TITLE": "BOB_JUNGLE_STRANGLE_TREE",
     "DESCRIPTION": "",
     "UNCLICKABLE": false,
-    "TRAILS PASS THROUGH": "",
+    "TRAILS PASS THROUGH": false,
     "EXCHANGE TYPES": "PLANT_CUT",
-    "PICKUPS": {
-      "Name": "FIBER_SPIKETREE",
-      "Quantity": "100"
-    },
+    "PICKUPS": [
+      {
+        "Name": "FIBER_SPIKETREE",
+        "Quantity": "100"
+      }
+    ],
     "INFINITE": "",
     "HARDNESS": "",
     "FRUIT": "",
@@ -248,12 +274,14 @@
     "TITLE": "BOB_JUNGLE_WIRECUT_TREE",
     "DESCRIPTION": "",
     "UNCLICKABLE": false,
-    "TRAILS PASS THROUGH": "",
+    "TRAILS PASS THROUGH": false,
     "EXCHANGE TYPES": "PLANT_CUT",
-    "PICKUPS": {
-      "Name": "FIBER_SPIKETREE",
-      "Quantity": "100"
-    },
+    "PICKUPS": [
+      {
+        "Name": "FIBER_SPIKETREE",
+        "Quantity": "100"
+      }
+    ],
     "INFINITE": "",
     "HARDNESS": "",
     "FRUIT": "",
@@ -265,12 +293,14 @@
     "TITLE": "BOB_JUNGLE_PLANT",
     "DESCRIPTION": "",
     "UNCLICKABLE": false,
-    "TRAILS PASS THROUGH": "X",
+    "TRAILS PASS THROUGH": true,
     "EXCHANGE TYPES": "PLANT_CUT, FORAGE",
-    "PICKUPS": {
-      "Name": "FIBER_SPIKETREE",
-      "Quantity": "10"
-    },
+    "PICKUPS": [
+      {
+        "Name": "FIBER_SPIKETREE",
+        "Quantity": "10"
+      }
+    ],
     "INFINITE": "",
     "HARDNESS": "",
     "FRUIT": "ENERGY_POD2",
@@ -282,7 +312,7 @@
     "TITLE": "BOB_CIRCUITTREE",
     "DESCRIPTION": "",
     "UNCLICKABLE": false,
-    "TRAILS PASS THROUGH": "X",
+    "TRAILS PASS THROUGH": true,
     "EXCHANGE TYPES": "PLANT_CUT",
     "PICKUPS": [
       {
@@ -305,12 +335,14 @@
     "TITLE": "BOB_BOTTLE_TREE",
     "DESCRIPTION": "",
     "UNCLICKABLE": false,
-    "TRAILS PASS THROUGH": "",
+    "TRAILS PASS THROUGH": false,
     "EXCHANGE TYPES": "PLANT_CUT, FORAGE",
-    "PICKUPS": {
-      "Name": "FIBER_SPIKETREE",
-      "Quantity": "60"
-    },
+    "PICKUPS": [
+      {
+        "Name": "FIBER_SPIKETREE",
+        "Quantity": "60"
+      }
+    ],
     "INFINITE": "",
     "HARDNESS": "",
     "FRUIT": "ENERGY_POD2",
@@ -322,12 +354,14 @@
     "TITLE": "BOB_TOXIC_WASTE_BLUBBER",
     "DESCRIPTION": "",
     "UNCLICKABLE": false,
-    "TRAILS PASS THROUGH": "",
+    "TRAILS PASS THROUGH": false,
     "EXCHANGE TYPES": "PLANT_CUT",
-    "PICKUPS": {
-      "Name": "CHEM_WASTE",
-      "Quantity": "100"
-    },
+    "PICKUPS": [
+      {
+        "Name": "CHEM_WASTE",
+        "Quantity": "100"
+      }
+    ],
     "INFINITE": "",
     "HARDNESS": 1.0,
     "FRUIT": "",
@@ -339,12 +373,14 @@
     "TITLE": "BOB_MUSHROOM_TREE",
     "DESCRIPTION": "",
     "UNCLICKABLE": false,
-    "TRAILS PASS THROUGH": "X",
+    "TRAILS PASS THROUGH": true,
     "EXCHANGE TYPES": "PLANT_CUT",
-    "PICKUPS": {
-      "Name": "FIBER_SPIKETREE",
-      "Quantity": "3"
-    },
+    "PICKUPS": [
+      {
+        "Name": "FIBER_SPIKETREE",
+        "Quantity": "3"
+      }
+    ],
     "INFINITE": "",
     "HARDNESS": "",
     "FRUIT": "",
@@ -356,9 +392,9 @@
     "TITLE": "BOB_MUSHROOM_TREE_OLD",
     "DESCRIPTION": "",
     "UNCLICKABLE": false,
-    "TRAILS PASS THROUGH": "X",
+    "TRAILS PASS THROUGH": true,
     "EXCHANGE TYPES": "PLANT_CUT",
-    "PICKUPS": null,
+    "PICKUPS": [],
     "INFINITE": "",
     "HARDNESS": "",
     "FRUIT": "",
@@ -370,12 +406,14 @@
     "TITLE": "BOB_CONCRETE_SCRAP_POLES",
     "DESCRIPTION": "",
     "UNCLICKABLE": false,
-    "TRAILS PASS THROUGH": "",
+    "TRAILS PASS THROUGH": false,
     "EXCHANGE TYPES": "MINE",
-    "PICKUPS": {
-      "Name": "IRON_RAW",
-      "Quantity": "20"
-    },
+    "PICKUPS": [
+      {
+        "Name": "IRON_RAW",
+        "Quantity": "20"
+      }
+    ],
     "INFINITE": "",
     "HARDNESS": 5.0,
     "FRUIT": "ENERGY_POD4",
@@ -387,12 +425,14 @@
     "TITLE": "BOB_CONCRETE_SCRAP_POLES",
     "DESCRIPTION": "",
     "UNCLICKABLE": false,
-    "TRAILS PASS THROUGH": "",
+    "TRAILS PASS THROUGH": false,
     "EXCHANGE TYPES": "MINE, FORAGE",
-    "PICKUPS": {
-      "Name": "IRON_RAW",
-      "Quantity": "25"
-    },
+    "PICKUPS": [
+      {
+        "Name": "IRON_RAW",
+        "Quantity": "25"
+      }
+    ],
     "INFINITE": "",
     "HARDNESS": 5.0,
     "FRUIT": "ENERGY_POD4",
@@ -404,9 +444,9 @@
     "TITLE": "BOB_GRASS",
     "DESCRIPTION": "",
     "UNCLICKABLE": false,
-    "TRAILS PASS THROUGH": "X",
+    "TRAILS PASS THROUGH": true,
     "EXCHANGE TYPES": "",
-    "PICKUPS": null,
+    "PICKUPS": [],
     "INFINITE": "",
     "HARDNESS": "",
     "FRUIT": "",
@@ -418,9 +458,9 @@
     "TITLE": "BOB_MOSS_CONCRETE",
     "DESCRIPTION": "",
     "UNCLICKABLE": false,
-    "TRAILS PASS THROUGH": "X",
+    "TRAILS PASS THROUGH": true,
     "EXCHANGE TYPES": "",
-    "PICKUPS": null,
+    "PICKUPS": [],
     "INFINITE": "",
     "HARDNESS": "",
     "FRUIT": "",
@@ -432,9 +472,9 @@
     "TITLE": "BOB_TOXIC_BOTTOM_GROWER",
     "DESCRIPTION": "",
     "UNCLICKABLE": false,
-    "TRAILS PASS THROUGH": "X",
+    "TRAILS PASS THROUGH": true,
     "EXCHANGE TYPES": "",
-    "PICKUPS": null,
+    "PICKUPS": [],
     "INFINITE": "",
     "HARDNESS": "",
     "FRUIT": "",
@@ -446,9 +486,9 @@
     "TITLE": "BOB_NIRNROOT",
     "DESCRIPTION": "",
     "UNCLICKABLE": false,
-    "TRAILS PASS THROUGH": "X",
+    "TRAILS PASS THROUGH": true,
     "EXCHANGE TYPES": "PLANT_CUT",
-    "PICKUPS": null,
+    "PICKUPS": [],
     "INFINITE": "",
     "HARDNESS": "",
     "FRUIT": "",
@@ -460,9 +500,9 @@
     "TITLE": "BOB_JUNGLEGRASS",
     "DESCRIPTION": "",
     "UNCLICKABLE": false,
-    "TRAILS PASS THROUGH": "X",
+    "TRAILS PASS THROUGH": true,
     "EXCHANGE TYPES": "",
-    "PICKUPS": null,
+    "PICKUPS": [],
     "INFINITE": "",
     "HARDNESS": "",
     "FRUIT": "",
@@ -474,9 +514,9 @@
     "TITLE": "BOB_DESERTGRASS",
     "DESCRIPTION": "",
     "UNCLICKABLE": false,
-    "TRAILS PASS THROUGH": "X",
+    "TRAILS PASS THROUGH": true,
     "EXCHANGE TYPES": "",
-    "PICKUPS": null,
+    "PICKUPS": [],
     "INFINITE": "",
     "HARDNESS": "",
     "FRUIT": "",
@@ -488,12 +528,14 @@
     "TITLE": "BOB_JUNGLE_GIANT_TREE",
     "DESCRIPTION": "",
     "UNCLICKABLE": false,
-    "TRAILS PASS THROUGH": "",
+    "TRAILS PASS THROUGH": false,
     "EXCHANGE TYPES": "PLANT_CUT",
-    "PICKUPS": {
-      "Name": "FIBER_SPIKETREE",
-      "Quantity": "100"
-    },
+    "PICKUPS": [
+      {
+        "Name": "FIBER_SPIKETREE",
+        "Quantity": "100"
+      }
+    ],
     "INFINITE": "",
     "HARDNESS": "",
     "FRUIT": "",
@@ -505,7 +547,7 @@
     "TITLE": "BOB_JUNGLE_CORRAL_TREE",
     "DESCRIPTION": "",
     "UNCLICKABLE": false,
-    "TRAILS PASS THROUGH": "",
+    "TRAILS PASS THROUGH": false,
     "EXCHANGE TYPES": "PLANT_CUT",
     "PICKUPS": [
       {
@@ -528,12 +570,14 @@
     "TITLE": "BOB_JUNGLE_STRANGLE_TREE",
     "DESCRIPTION": "",
     "UNCLICKABLE": false,
-    "TRAILS PASS THROUGH": "",
+    "TRAILS PASS THROUGH": false,
     "EXCHANGE TYPES": "PLANT_CUT",
-    "PICKUPS": {
-      "Name": "FIBER_SPIKETREE",
-      "Quantity": "100"
-    },
+    "PICKUPS": [
+      {
+        "Name": "FIBER_SPIKETREE",
+        "Quantity": "100"
+      }
+    ],
     "INFINITE": "",
     "HARDNESS": "",
     "FRUIT": "",
@@ -545,12 +589,14 @@
     "TITLE": "BOB_IRON_PILE",
     "DESCRIPTION": "",
     "UNCLICKABLE": false,
-    "TRAILS PASS THROUGH": "",
+    "TRAILS PASS THROUGH": false,
     "EXCHANGE TYPES": "PICKUP",
-    "PICKUPS": {
-      "Name": "IRON_RAW",
-      "Quantity": "30"
-    },
+    "PICKUPS": [
+      {
+        "Name": "IRON_RAW",
+        "Quantity": "30"
+      }
+    ],
     "INFINITE": "",
     "HARDNESS": 1.0,
     "FRUIT": "",
@@ -562,12 +608,14 @@
     "TITLE": "BOB_COPPER_PILE",
     "DESCRIPTION": "",
     "UNCLICKABLE": false,
-    "TRAILS PASS THROUGH": "",
+    "TRAILS PASS THROUGH": false,
     "EXCHANGE TYPES": "PICKUP",
-    "PICKUPS": {
-      "Name": "COPPER_RAW",
-      "Quantity": "30"
-    },
+    "PICKUPS": [
+      {
+        "Name": "COPPER_RAW",
+        "Quantity": "30"
+      }
+    ],
     "INFINITE": "",
     "HARDNESS": 1.0,
     "FRUIT": "",
@@ -579,12 +627,14 @@
     "TITLE": "BOB_GLASS_PILE",
     "DESCRIPTION": "",
     "UNCLICKABLE": false,
-    "TRAILS PASS THROUGH": "",
+    "TRAILS PASS THROUGH": false,
     "EXCHANGE TYPES": "PICKUP",
-    "PICKUPS": {
-      "Name": "GLASS_RAW",
-      "Quantity": "30"
-    },
+    "PICKUPS": [
+      {
+        "Name": "GLASS_RAW",
+        "Quantity": "30"
+      }
+    ],
     "INFINITE": "",
     "HARDNESS": 1.0,
     "FRUIT": "",
@@ -596,12 +646,14 @@
     "TITLE": "BOB_GOLD_PILE",
     "DESCRIPTION": "",
     "UNCLICKABLE": false,
-    "TRAILS PASS THROUGH": "",
+    "TRAILS PASS THROUGH": false,
     "EXCHANGE TYPES": "PICKUP",
-    "PICKUPS": {
-      "Name": "GOLD_RAW",
-      "Quantity": "30"
-    },
+    "PICKUPS": [
+      {
+        "Name": "GOLD_RAW",
+        "Quantity": "30"
+      }
+    ],
     "INFINITE": "",
     "HARDNESS": 1.0,
     "FRUIT": "",
@@ -613,12 +665,14 @@
     "TITLE": "BOB_IRON_DEPOSIT",
     "DESCRIPTION": "",
     "UNCLICKABLE": false,
-    "TRAILS PASS THROUGH": "",
+    "TRAILS PASS THROUGH": false,
     "EXCHANGE TYPES": "MINE",
-    "PICKUPS": {
-      "Name": "IRON_RAW",
-      "Quantity": "250"
-    },
+    "PICKUPS": [
+      {
+        "Name": "IRON_RAW",
+        "Quantity": "250"
+      }
+    ],
     "INFINITE": "",
     "HARDNESS": 15.0,
     "FRUIT": "",
@@ -630,12 +684,14 @@
     "TITLE": "BOB_IRON_DEPOSIT",
     "DESCRIPTION": "",
     "UNCLICKABLE": false,
-    "TRAILS PASS THROUGH": "",
+    "TRAILS PASS THROUGH": false,
     "EXCHANGE TYPES": "MINE",
-    "PICKUPS": {
-      "Name": "IRON_RAW",
-      "Quantity": "250"
-    },
+    "PICKUPS": [
+      {
+        "Name": "IRON_RAW",
+        "Quantity": "250"
+      }
+    ],
     "INFINITE": "",
     "HARDNESS": 15.0,
     "FRUIT": "",
@@ -647,12 +703,14 @@
     "TITLE": "BOB_IRON_DEPOSIT",
     "DESCRIPTION": "",
     "UNCLICKABLE": false,
-    "TRAILS PASS THROUGH": "",
+    "TRAILS PASS THROUGH": false,
     "EXCHANGE TYPES": "MINE",
-    "PICKUPS": {
-      "Name": "IRON_RAW",
-      "Quantity": "1000"
-    },
+    "PICKUPS": [
+      {
+        "Name": "IRON_RAW",
+        "Quantity": "1000"
+      }
+    ],
     "INFINITE": "",
     "HARDNESS": 15.0,
     "FRUIT": "",
@@ -664,12 +722,14 @@
     "TITLE": "BOB_CONCRETE_SCRAP_POLES",
     "DESCRIPTION": "",
     "UNCLICKABLE": false,
-    "TRAILS PASS THROUGH": "",
+    "TRAILS PASS THROUGH": false,
     "EXCHANGE TYPES": "MINE",
-    "PICKUPS": {
-      "Name": "IRON_RAW",
-      "Quantity": "25"
-    },
+    "PICKUPS": [
+      {
+        "Name": "IRON_RAW",
+        "Quantity": "25"
+      }
+    ],
     "INFINITE": "",
     "HARDNESS": 25.0,
     "FRUIT": "",
@@ -681,12 +741,14 @@
     "TITLE": "BOB_COPPER_DEPOSIT",
     "DESCRIPTION": "",
     "UNCLICKABLE": false,
-    "TRAILS PASS THROUGH": "",
+    "TRAILS PASS THROUGH": false,
     "EXCHANGE TYPES": "MINE",
-    "PICKUPS": {
-      "Name": "COPPER_RAW",
-      "Quantity": "250"
-    },
+    "PICKUPS": [
+      {
+        "Name": "COPPER_RAW",
+        "Quantity": "250"
+      }
+    ],
     "INFINITE": "",
     "HARDNESS": 10.0,
     "FRUIT": "",
@@ -698,12 +760,14 @@
     "TITLE": "BOB_RUBBLE_DEPOSIT",
     "DESCRIPTION": "",
     "UNCLICKABLE": false,
-    "TRAILS PASS THROUGH": "",
+    "TRAILS PASS THROUGH": false,
     "EXCHANGE TYPES": "MINE",
-    "PICKUPS": {
-      "Name": "CONCRETE_RAW",
-      "Quantity": "150"
-    },
+    "PICKUPS": [
+      {
+        "Name": "CONCRETE_RAW",
+        "Quantity": "150"
+      }
+    ],
     "INFINITE": "",
     "HARDNESS": 30.0,
     "FRUIT": "",
@@ -715,12 +779,14 @@
     "TITLE": "BOB_RUBBLE_DEPOSIT",
     "DESCRIPTION": "",
     "UNCLICKABLE": false,
-    "TRAILS PASS THROUGH": "",
+    "TRAILS PASS THROUGH": false,
     "EXCHANGE TYPES": "MINE",
-    "PICKUPS": {
-      "Name": "CONCRETE_RAW",
-      "Quantity": "100"
-    },
+    "PICKUPS": [
+      {
+        "Name": "CONCRETE_RAW",
+        "Quantity": "100"
+      }
+    ],
     "INFINITE": "",
     "HARDNESS": 30.0,
     "FRUIT": "",
@@ -732,12 +798,14 @@
     "TITLE": "BOB_RUBBLE_DEPOSIT_CONCRETE",
     "DESCRIPTION": "",
     "UNCLICKABLE": false,
-    "TRAILS PASS THROUGH": "",
+    "TRAILS PASS THROUGH": false,
     "EXCHANGE TYPES": "MINE",
-    "PICKUPS": {
-      "Name": "CONCRETE_RAW",
-      "Quantity": "1"
-    },
+    "PICKUPS": [
+      {
+        "Name": "CONCRETE_RAW",
+        "Quantity": "1"
+      }
+    ],
     "INFINITE": "X",
     "HARDNESS": 30.0,
     "FRUIT": "",
@@ -749,12 +817,14 @@
     "TITLE": "BOB_GLASS_DEPOSIT",
     "DESCRIPTION": "",
     "UNCLICKABLE": false,
-    "TRAILS PASS THROUGH": "",
+    "TRAILS PASS THROUGH": false,
     "EXCHANGE TYPES": "MINE",
-    "PICKUPS": {
-      "Name": "GLASS_RAW",
-      "Quantity": "250"
-    },
+    "PICKUPS": [
+      {
+        "Name": "GLASS_RAW",
+        "Quantity": "250"
+      }
+    ],
     "INFINITE": "",
     "HARDNESS": 25.0,
     "FRUIT": "",
@@ -766,12 +836,14 @@
     "TITLE": "BOB_GLASS_DEPOSIT",
     "DESCRIPTION": "",
     "UNCLICKABLE": false,
-    "TRAILS PASS THROUGH": "",
+    "TRAILS PASS THROUGH": false,
     "EXCHANGE TYPES": "MINE",
-    "PICKUPS": {
-      "Name": "GLASS_RAW",
-      "Quantity": "1000"
-    },
+    "PICKUPS": [
+      {
+        "Name": "GLASS_RAW",
+        "Quantity": "1000"
+      }
+    ],
     "INFINITE": "",
     "HARDNESS": 25.0,
     "FRUIT": "",
@@ -783,12 +855,14 @@
     "TITLE": "BOB_TOXIC_WASTE",
     "DESCRIPTION": "",
     "UNCLICKABLE": false,
-    "TRAILS PASS THROUGH": "",
+    "TRAILS PASS THROUGH": false,
     "EXCHANGE TYPES": "MINE",
-    "PICKUPS": {
-      "Name": "CHEM_WASTE",
-      "Quantity": "250"
-    },
+    "PICKUPS": [
+      {
+        "Name": "CHEM_WASTE",
+        "Quantity": "250"
+      }
+    ],
     "INFINITE": "",
     "HARDNESS": 40.0,
     "FRUIT": "",
@@ -800,7 +874,7 @@
     "TITLE": "BOB_JUNGLE_DEPOSIT",
     "DESCRIPTION": "",
     "UNCLICKABLE": false,
-    "TRAILS PASS THROUGH": "",
+    "TRAILS PASS THROUGH": false,
     "EXCHANGE TYPES": "MINE",
     "PICKUPS": [
       {
@@ -831,12 +905,14 @@
     "TITLE": "BOB_GOLD_DEPOSIT ",
     "DESCRIPTION": "",
     "UNCLICKABLE": false,
-    "TRAILS PASS THROUGH": "",
+    "TRAILS PASS THROUGH": false,
     "EXCHANGE TYPES": "MINE",
-    "PICKUPS": {
-      "Name": "GOLD_RAW",
-      "Quantity": "50"
-    },
+    "PICKUPS": [
+      {
+        "Name": "GOLD_RAW",
+        "Quantity": "50"
+      }
+    ],
     "INFINITE": "",
     "HARDNESS": 10.0,
     "FRUIT": "",
@@ -848,7 +924,7 @@
     "TITLE": "BOB_GOLD_DEPOSIT_CONCRETE",
     "DESCRIPTION": "",
     "UNCLICKABLE": false,
-    "TRAILS PASS THROUGH": "",
+    "TRAILS PASS THROUGH": false,
     "EXCHANGE TYPES": "MINE",
     "PICKUPS": [
       {
@@ -895,12 +971,14 @@
     "TITLE": "BOB_ROCK",
     "DESCRIPTION": "",
     "UNCLICKABLE": false,
-    "TRAILS PASS THROUGH": "",
+    "TRAILS PASS THROUGH": false,
     "EXCHANGE TYPES": "MINE",
-    "PICKUPS": {
-      "Name": "CLAY",
-      "Quantity": "35"
-    },
+    "PICKUPS": [
+      {
+        "Name": "CLAY",
+        "Quantity": "35"
+      }
+    ],
     "INFINITE": "",
     "HARDNESS": 1.0,
     "FRUIT": "",
@@ -912,12 +990,14 @@
     "TITLE": "BOB_RUBBLE_DEPOSIT_CONCRETE",
     "DESCRIPTION": "",
     "UNCLICKABLE": false,
-    "TRAILS PASS THROUGH": "",
+    "TRAILS PASS THROUGH": false,
     "EXCHANGE TYPES": "MINE",
-    "PICKUPS": {
-      "Name": "CONCRETE_RAW",
-      "Quantity": "1"
-    },
+    "PICKUPS": [
+      {
+        "Name": "CONCRETE_RAW",
+        "Quantity": "1"
+      }
+    ],
     "INFINITE": "X",
     "HARDNESS": 30.0,
     "FRUIT": "",
@@ -929,12 +1009,14 @@
     "TITLE": "BOB_RUBBLE_DEPOSIT_CONCRETE",
     "DESCRIPTION": "",
     "UNCLICKABLE": false,
-    "TRAILS PASS THROUGH": "",
+    "TRAILS PASS THROUGH": false,
     "EXCHANGE TYPES": "MINE",
-    "PICKUPS": {
-      "Name": "CONCRETE_RAW",
-      "Quantity": "1"
-    },
+    "PICKUPS": [
+      {
+        "Name": "CONCRETE_RAW",
+        "Quantity": "1"
+      }
+    ],
     "INFINITE": "X",
     "HARDNESS": 30.0,
     "FRUIT": "",
@@ -946,12 +1028,14 @@
     "TITLE": "BOB_RUBBLE_DEPOSIT_CONCRETE",
     "DESCRIPTION": "",
     "UNCLICKABLE": false,
-    "TRAILS PASS THROUGH": "",
+    "TRAILS PASS THROUGH": false,
     "EXCHANGE TYPES": "MINE",
-    "PICKUPS": {
-      "Name": "CONCRETE_RAW",
-      "Quantity": "1"
-    },
+    "PICKUPS": [
+      {
+        "Name": "CONCRETE_RAW",
+        "Quantity": "1"
+      }
+    ],
     "INFINITE": "X",
     "HARDNESS": 30.0,
     "FRUIT": "",
@@ -963,12 +1047,14 @@
     "TITLE": "BOB_RUBBLE_DEPOSIT_CONCRETE",
     "DESCRIPTION": "",
     "UNCLICKABLE": false,
-    "TRAILS PASS THROUGH": "",
+    "TRAILS PASS THROUGH": false,
     "EXCHANGE TYPES": "MINE",
-    "PICKUPS": {
-      "Name": "CONCRETE_RAW",
-      "Quantity": "1"
-    },
+    "PICKUPS": [
+      {
+        "Name": "CONCRETE_RAW",
+        "Quantity": "1"
+      }
+    ],
     "INFINITE": "X",
     "HARDNESS": 30.0,
     "FRUIT": "",
@@ -980,9 +1066,9 @@
     "TITLE": "BOB_ROCK",
     "DESCRIPTION": "",
     "UNCLICKABLE": true,
-    "TRAILS PASS THROUGH": "",
+    "TRAILS PASS THROUGH": false,
     "EXCHANGE TYPES": "MINE",
-    "PICKUPS": null,
+    "PICKUPS": [],
     "INFINITE": "",
     "HARDNESS": "",
     "FRUIT": "",
@@ -994,9 +1080,9 @@
     "TITLE": "BOB_ROCK",
     "DESCRIPTION": "",
     "UNCLICKABLE": true,
-    "TRAILS PASS THROUGH": "",
+    "TRAILS PASS THROUGH": false,
     "EXCHANGE TYPES": "MINE",
-    "PICKUPS": null,
+    "PICKUPS": [],
     "INFINITE": "",
     "HARDNESS": "",
     "FRUIT": "",
@@ -1008,9 +1094,9 @@
     "TITLE": "BOB_ROCK",
     "DESCRIPTION": "",
     "UNCLICKABLE": true,
-    "TRAILS PASS THROUGH": "",
+    "TRAILS PASS THROUGH": false,
     "EXCHANGE TYPES": "MINE",
-    "PICKUPS": null,
+    "PICKUPS": [],
     "INFINITE": "",
     "HARDNESS": "",
     "FRUIT": "",
@@ -1022,9 +1108,9 @@
     "TITLE": "BOB_ROCK",
     "DESCRIPTION": "",
     "UNCLICKABLE": true,
-    "TRAILS PASS THROUGH": "",
+    "TRAILS PASS THROUGH": false,
     "EXCHANGE TYPES": "MINE",
-    "PICKUPS": null,
+    "PICKUPS": [],
     "INFINITE": "",
     "HARDNESS": "",
     "FRUIT": "",
@@ -1036,9 +1122,9 @@
     "TITLE": "BOB_ROCK",
     "DESCRIPTION": "",
     "UNCLICKABLE": true,
-    "TRAILS PASS THROUGH": "",
+    "TRAILS PASS THROUGH": false,
     "EXCHANGE TYPES": "MINE",
-    "PICKUPS": null,
+    "PICKUPS": [],
     "INFINITE": "",
     "HARDNESS": "",
     "FRUIT": "",
@@ -1050,9 +1136,9 @@
     "TITLE": "BOB_ROCK",
     "DESCRIPTION": "",
     "UNCLICKABLE": true,
-    "TRAILS PASS THROUGH": "",
+    "TRAILS PASS THROUGH": false,
     "EXCHANGE TYPES": "MINE",
-    "PICKUPS": null,
+    "PICKUPS": [],
     "INFINITE": "",
     "HARDNESS": "",
     "FRUIT": "",
@@ -1064,9 +1150,9 @@
     "TITLE": "BOB_ROCK",
     "DESCRIPTION": "",
     "UNCLICKABLE": true,
-    "TRAILS PASS THROUGH": "",
+    "TRAILS PASS THROUGH": false,
     "EXCHANGE TYPES": "MINE",
-    "PICKUPS": null,
+    "PICKUPS": [],
     "INFINITE": "",
     "HARDNESS": "",
     "FRUIT": "",
@@ -1078,9 +1164,9 @@
     "TITLE": "BOB_ROCK",
     "DESCRIPTION": "",
     "UNCLICKABLE": true,
-    "TRAILS PASS THROUGH": "",
+    "TRAILS PASS THROUGH": false,
     "EXCHANGE TYPES": "",
-    "PICKUPS": null,
+    "PICKUPS": [],
     "INFINITE": "",
     "HARDNESS": "",
     "FRUIT": "",
@@ -1092,9 +1178,9 @@
     "TITLE": "BOB_ROCK",
     "DESCRIPTION": "",
     "UNCLICKABLE": true,
-    "TRAILS PASS THROUGH": "",
+    "TRAILS PASS THROUGH": false,
     "EXCHANGE TYPES": "",
-    "PICKUPS": null,
+    "PICKUPS": [],
     "INFINITE": "",
     "HARDNESS": "",
     "FRUIT": "",
@@ -1106,9 +1192,9 @@
     "TITLE": "BOB_ROCK",
     "DESCRIPTION": "",
     "UNCLICKABLE": true,
-    "TRAILS PASS THROUGH": "",
+    "TRAILS PASS THROUGH": false,
     "EXCHANGE TYPES": "",
-    "PICKUPS": null,
+    "PICKUPS": [],
     "INFINITE": "",
     "HARDNESS": "",
     "FRUIT": "",
@@ -1120,9 +1206,9 @@
     "TITLE": "BOB_ROCK",
     "DESCRIPTION": "",
     "UNCLICKABLE": true,
-    "TRAILS PASS THROUGH": "",
+    "TRAILS PASS THROUGH": false,
     "EXCHANGE TYPES": "",
-    "PICKUPS": null,
+    "PICKUPS": [],
     "INFINITE": "",
     "HARDNESS": "",
     "FRUIT": "",

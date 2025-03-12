@@ -96,11 +96,15 @@ Export-Excel @exportExcel_Splat
 $forJson = @(
     $Rows | %{
         $record = $_
-        # coerce blankables into empty strings for json
+        $record = md.Convert.BlankPropsToEmpty $Record
+        $record = md.Convert.KeyNames $Record
+        # $record = md.Convert.TruthyProps $Record
 
-        $record             = md.Convert.BlankPropsToEmpty $Record
-        $record.PICKUPS     = md.Parse.IngredientsFromCsv $record.PICKUPS
-        $record.UNCLICKABLE = md.Parse.Checkbox $record.UNCLICKABLE
+        # coerce blankables into empty strings for json
+        $record.'PICKUPS'             = md.Parse.IngredientsFromCsv $record.'PICKUPS'
+        $record.'EXCHANGE_TYPES'      = md.Parse.ItemsFromList $record.'EXCHANGE_TYPES'
+        $record.'UNCLICKABLE'         = md.Parse.Checkbox $record.'UNCLICKABLE'
+        $record.'TRAILS_PASS_THROUGH' = md.Parse.Checkbox $record.'TRAILS_PASS_THROUGH'
         $record
     }
 )
