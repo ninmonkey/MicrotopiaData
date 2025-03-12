@@ -7,7 +7,7 @@ $Paths = [ordered]@{
     ExportRoot = Join-Path $AppRoot '../export'
 }
 if($true) {
-    Import-Module (Join-Path $PSScriptRoot 'Grouping.psm1') -ea 'stop'
+    # disable: Import-Module (Join-Path $PSScriptRoot 'Grouping.psm1') -ea 'stop'
 
     # todo: refactor as module
     $toImport = (Join-Path ($PSScriptRoot) './MdUtils.ps1')
@@ -26,16 +26,18 @@ md.EnsureSubdirsExist -Path $paths.ExportRoot_CurrentVersion -verbose
 $Paths.Xlsx_Biome = Join-Path $Paths.ExportRoot_CurrentVersion 'biome.xlsx'
 $Paths.Raw_Biome  = md.GetRawPath $Paths.Xlsx_Biome
 
-$Paths.Xlsx_Prefabs   = Join-Path $Paths.ExportRoot_CurrentVersion 'prefabs.xlsx'
-$Paths.Raw_Prefabs   = md.GetRawPath $Paths.Xlsx_Prefabs
+$Paths.Xlsx_Prefabs = Join-Path $Paths.ExportRoot_CurrentVersion 'prefabs.xlsx'
+$Paths.Raw_Prefabs  = md.GetRawPath $Paths.Xlsx_Prefabs
 
-$Paths.Xlsx_ChangeLog = Join-Path $Paths.ExportRoot_CurrentVersion 'changelog.xlsx'
-$Paths.Md_ChangeLog   = Join-Path $Paths.ExportRoot_CurrentVersion 'changelog.md'
-$Paths.Csv_ChangeLog  = Join-Path $Paths.ExportRoot_CurrentVersion 'csv/changelog.csv'
-$Paths.json_ChangeLog = Join-Path $Paths.ExportRoot_CurrentVersion 'json/changelog.json'
-$Paths.json_Biome_Objects = Join-Path $Paths.ExportRoot_CurrentVersion 'json/biome-objects.json'
-$Paths.json_Biome_Objects_Expanded = Join-Path $Paths.ExportRoot_CurrentVersion 'json/biome-objects-expanded.json'
-$Paths.json_WorkbookSchema = Join-Path $Paths.ExportRoot_CurrentVersion 'json/workbook-schema.json'
+$Paths.Xlsx_ChangeLog               = Join-Path $Paths.ExportRoot_CurrentVersion 'changelog.xlsx'
+$Paths.Md_ChangeLog                 = Join-Path $Paths.ExportRoot_CurrentVersion 'changelog.md'
+$Paths.Csv_ChangeLog                = Join-Path $Paths.ExportRoot_CurrentVersion 'csv/changelog.csv'
+$Paths.json_ChangeLog               = Join-Path $Paths.ExportRoot_CurrentVersion 'json/changelog.json'
+$Paths.json_Biome_Objects           = Join-Path $Paths.ExportRoot_CurrentVersion 'json/biome-objects.json'
+$Paths.json_Biome_Plants            = Join-Path $Paths.ExportRoot_CurrentVersion 'json/biome-plants.json'
+$Paths.json_Biome_Plants_ColumnDesc = Join-Path $Paths.ExportRoot_CurrentVersion 'json/biome-plants-column-desc.json'
+$Paths.json_Biome_Objects_Expanded  = Join-Path $Paths.ExportRoot_CurrentVersion 'json/biome-objects-expanded.json'
+$Paths.json_WorkbookSchema          = Join-Path $Paths.ExportRoot_CurrentVersion 'json/workbook-schema.json'
 
 # $Paths.Game = [ordered]@{
 #     'ProgramData_Root' = Join-Path 'C:\Program Files (x86)\Steam\steamapps\common\Microtopia' 'Microtopia_Data'
@@ -45,7 +47,13 @@ $Paths.json_WorkbookSchema = Join-Path $Paths.ExportRoot_CurrentVersion 'json/wo
 #>
 'export schemas for all *.xlsx' | Write-Host -fg 'gray60'
 md.Export.WorkbookSchema -verbose
+
+# never cache
+Remove-Item $Paths.Xlsx_Biome -ea 'Ignore'
 md.Export.Biome.Biome_Objects -Paths $Paths -Verbose
+md.Export.Biome.Plants -Paths $Paths -Verbose
+
+# md.Export.Biome.Biome_Plants -Paths $Paths -Verbose
 # md.Export.Biome.Plants
 
 return

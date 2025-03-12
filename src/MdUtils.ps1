@@ -1,4 +1,20 @@
 #Requires -Version 7
+
+function md.Log.WroteFile {
+    <#
+    .SYNOPSIS
+        Write host? Log to logfile? writes to "temp:\last.log" by default
+    #>
+    param(
+        [Parameter(ValueFromPipeline)]
+        $InputObject
+    )
+    process {
+        $msg = $InputObject | Join-String -f 'wrote: "{0}"'
+        $msg | write-host -fg 'gray50'
+        $msg | Add-Content -Path 'temp:last.log'
+    }
+}
 function md.Workbook.ListItems {
     <#
     .SYNOPSIS
@@ -358,8 +374,14 @@ function md.Export.Biome.Biome_Objects {
     [CmdletBinding()]
     param(
         # Paths hashtable
-        [Parameter(Mandatory)] $Paths
+        [Parameter(Mandatory)] $Paths,
+
+        # always write a fresh export
+        [ValidateScript({throw 'nyi'})]
+        [switch] $Force
     )
+    $PSCmdlet.MyInvocation.MyCommand.Name
+        | Join-String -f 'Enter: {0}' | Write-verbose
     # Section: Export item: biome/Biome_Objects
     # todo: refactor like 'md.Export.Changelog'
 
@@ -454,6 +476,92 @@ function md.Export.Biome.Biome_Objects {
 
         Export-Excel @exportExcel_Splat
     }
+
+    Close-ExcelPackage -ExcelPackage $pkg -NoSave
+}
+
+function md.Export.Biome.Plants {
+    [CmdletBinding()]
+    param(
+        # Paths hashtable
+        [Parameter(Mandatory)] $Paths,
+
+        # always write a fresh export
+        [ValidateScript({throw 'nyi'})]
+        [switch] $Force
+    )
+    $PSCmdlet.MyInvocation.MyCommand.Name
+        | Join-String -f 'Enter: {0}' | Write-verbose
+
+    # Section: Export item: biome/Plants
+    $pkg = Open-ExcelPackage -Path $Paths.Raw_Biome
+    $book = $pkg.Workbook
+    md.Workbook.ListItems $Book
+
+    $importExcel_Splat = @{
+        ExcelPackage  = $pkg
+        WorksheetName = 'Plants'
+    }
+    $rows =  Import-Excel @importExcel_Splat
+
+    # column descriptions are inline
+    $description = $rows | ? Code -Match '^\s*//\s*$' | Select -First 1
+    $description | ConvertTo-Json | Set-Content -path $Paths.json_Biome_Plants_ColumnDesc
+
+    # skip empty and non-data rows
+    $rows = @(
+        $rows
+            | ? { -not [string]::IsNullOrWhiteSpace( $_.CODE ) }
+            | ? { $_.CODE -notmatch '^\s*//' }
+            # | ? { $_.CODE -notmatch '^\s*\?+\s*$' } # skip "???"
+    )
+
+    $exportExcel_Splat = @{
+        InputObject   = @( $rows )
+        Path          = $Paths.Xlsx_Biome
+        Show          = $false
+        WorksheetName = 'Plants'
+        TableName     = 'Plants_Data'
+        TableStyle    = 'Light5'
+        AutoSize      = $True
+    }
+
+    Export-Excel @exportExcel_Splat
+
+    # json specific transforms
+    $sort_splat = @{
+        Property = 'code', 'mass'
+    }
+
+    $forJson = @(
+        $Rows | %{
+            $record = $_
+            $record = md.Convert.BlankPropsToEmpty $Record
+            $record = md.Convert.KeyNames $Record
+            # coerce blankables into empty strings for json
+            # $record.'pickups'             = md.Parse.IngredientsFromCsv $record.'pickups'
+            # $record.'exchange_types'      = md.Parse.ItemsFromList $record.'exchange_types'
+            $record.'ignore_grooves'         = md.Parse.Checkbox $record.'ignore_grooves'
+            $record.'even_cluster'         = md.Parse.Checkbox $record.'even_cluster'
+            # $record.'trails_pass_through' = md.Parse.Checkbox $record.'trails_pass_through'
+            $record
+        }
+    ) | Sort-Object @sortObjectSplat
+
+    $forJson
+        | ConvertTo-Json -depth 9
+        | Set-Content -path $Paths.Json_Biome_Plants # -Confirm
+
+
+
+
+    # also emit expanded records
+    $forJson = @(
+        $Rows | %{
+            $record = $_
+            $record # md.Convert.ExpandProperty $Record -Prop $expandProp
+        }
+    )| Sort-Object @sortObjectSplat
 
     Close-ExcelPackage -ExcelPackage $pkg -NoSave
 }
