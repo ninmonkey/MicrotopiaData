@@ -84,16 +84,32 @@ function md.Export.Changelog {
         Exports changelog as '.csv', '.json', and '.md'
     #>
     [CmdletBinding()]
-    param()
+    param(
+        # Paths hashtable
+        [Parameter(Mandatory)] $Paths,
+
+        # always write a fresh export
+        [ValidateScript({throw 'nyi'})]
+        [switch] $Force
+    )
+    $PSCmdlet.MyInvocation.MyCommand.Name
+        | Join-String -f 'Enter: {0}' | Write-verbose
 
     # $rawPath = $Paths.xlsx_Changelog
     # $rawFullJoin-Path $rawPath.DirectoryName "$( $_.baseName )-raw.xlsx"
     $curOutput = $Paths.Xlsx_ChangeLog
-    $rawSrc = md.GetRawPath $curOutput
+    $rawSrc    = md.GetRawPath $curOutput
 
     "md.Export.Changelog => Parse: $( $rawSrc ), Output: $( $curOutput )" | Write-Host -fg 'gray60' -bg 'gray30'
 
-    $imXl = Import-Excel -path $rawSrc -WorksheetName 'Changelog' -ImportColumns 1, 3 -HeaderName 'Version', 'English'
+    $importExcelSplat = @{
+        Path          = $rawSrc
+        WorksheetName = 'Changelog'
+        ImportColumns = 1,         3
+        HeaderName    = 'Code', 'English'
+    }
+
+    $imXl = Import-Excel @importExcelSplat
 
     # using BOM for best results when using Excel csv
     $imXL
@@ -104,7 +120,7 @@ function md.Export.Changelog {
 
     @( foreach($x in $imXl) {
         '| {0} | {1} |' -f @(
-            $x.Version
+            $x.Code
             $x.English
         )
     }) | Set-Content -Path $Paths.Md_ChangeLog -Encoding utf8
@@ -732,24 +748,24 @@ function md.Export.Readme.FileListing {
         Markdown.Write.Header -Depth 2 -Text "Files by Type"
 
         Markdown.Write.Header -Depth 3 -Text "Json"
-        Markdown.Format.LinksAsUL -Lines @(md.Invoke.FdFind -Extension json -PathsAsMarkdown)
+        Markdown.Format.LinksAsUL -Lines @(md.Invoke.FdFind -Extension json -PathsAsMarkdown -UsingNoIgnore)
 
         Markdown.Write.Header -Depth 3 -Text "Xlsx"
         Markdown.Format.LinksAsUL -Lines @(md.Invoke.FdFind -Extension xlsx -PathsAsMarkdown -UsingNoIgnore)
 
         Markdown.Write.Header -Depth 3 -Text "Csv"
-        Markdown.Format.LinksAsUL -Lines @(md.Invoke.FdFind -Extension csv -PathsAsMarkdown)
+        Markdown.Format.LinksAsUL -Lines @(md.Invoke.FdFind -Extension csv -PathsAsMarkdown -UsingNoIgnore)
 
         Markdown.Write.Header -Depth 3 -Text "Md"
-        Markdown.Format.LinksAsUL -Lines @(md.Invoke.FdFind -Extension md -PathsAsMarkdown)
+        Markdown.Format.LinksAsUL -Lines @(md.Invoke.FdFind -Extension md -PathsAsMarkdown -UsingNoIgnore)
 
         # Markdown.Write.Header -Depth 3 -Text "Log"
-        # Markdown.Format.LinksAsUL -Lines @(md.Invoke.FdFind -Extension log -PathsAsMarkdown)
+        # Markdown.Format.LinksAsUL -Lines @(md.Invoke.FdFind -Extension log -PathsAsMarkdown -UsingNoIgnore)
 
     ) | Join-String -sep "`n" | Set-Content -Path $Destination
     $Destination | md.Log.WroteFile
 
-    # md.Invoke.FdFind -WhatIf -Extension 'json' -ArgsList $Shared -PathsAsMarkdown
+    # md.Invoke.FdFind -WhatIf -Extension 'json' -ArgsList $Shared -PathsAsMarkdown -UsingNoIgnore
 
     popd -StackName 'export'
 }
