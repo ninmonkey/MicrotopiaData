@@ -90,25 +90,16 @@ Export-Excel @exportExcel_Splat
 
 # $record.PICKUPS     = @( $record.PICKUPS -split ',\s*' )
 
+
+
 # json specific transforms
 $forJson = @(
     $Rows | %{
-        $record             = $_
-        # if( $record.CODE -match 'slide' ) {
-        #     'sdfds' | write-host -fg 'orange'
-        # }
-
+        $record = $_
         # coerce blankables into empty strings for json
-        $record.psobject.properties  | %{
-            if( [string]::IsNullOrWhiteSpace( $_.value ) ) {
-                $record.($_.Name) = ""
-            }
-        }
 
-
-
+        $record             = md.Convert.BlankPropsToEmpty $Record
         $record.PICKUPS     = md.Parse.IngredientsFromCsv $record.PICKUPS
-        # $record.UNCLICKABLE = $record.UNCLICKABLE -match 'x'
         $record.UNCLICKABLE = md.Parse.Checkbox $record.UNCLICKABLE
         $record
     }

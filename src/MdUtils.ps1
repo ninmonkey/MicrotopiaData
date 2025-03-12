@@ -219,10 +219,38 @@ function md.Format.NullAsString {
      <#
     .synopsis
         If null values, emit an empty string instead. For non-blanky, emit original value
-    #>i
+    #>
     param( $Value )
     if($null -eq $Value){ return "" }
     if( [string]::IsNullOrWhiteSpace( $Value ) ) { return $false }
 
     return $value
+}
+
+function md.Convert.BlankPropsToEmpty {
+     <#
+    .synopsis
+        coerce blankables into empty strings for json
+    #>
+    [CmdletBinding()]
+    param(
+        [Parameter(ValueFromPipeline)]
+        [object] $InputObject
+    )
+
+    process {
+        $InputObject.PSObject.Properties  | % {
+            if( [string]::IsNullOrWhiteSpace( $_.Value ) ) {
+                $InputObject.($_.Name) = ""
+            }
+        }
+        $InputObject
+        # if($null -eq $Value){ return "" }
+        # if( [string]::IsNullOrWhiteSpace( $Value ) ) { return $false }
+
+        # return $value
+    }
+
+
+
 }
