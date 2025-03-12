@@ -108,27 +108,61 @@ function md.Export.Changelog {
         ImportColumns = 1,         3
         HeaderName    = 'Code', 'English'
     }
+    $regex = @{
+        isVersion  = '\s*v\d+'
+        dashPrefix = '^\s*?-\s*'
+    }
 
     $imXl = Import-Excel @importExcelSplat
 
-    # using BOM for best results when using Excel csv
-    $imXL
+    $curVersionGroup =
+        # $VersionGroup = $imxl[1].English
+        $imXl | ? English -Match $regex.isVersion | Select -First 1 | % English
+
+    $forJson = @(
+        $imXL | %{
+            $record = $_
+
+            if( [string]::IsNullOrWhiteSpace( $record.English ) ) { return }
+
+            if( $record.English -match $regex.isVersion ) {
+                $curVersionGroup = $record.English
+                return
+            }
+
+            [pscustomobject]@{
+                Version = $curVersionGroup
+                Code    = $record.Code
+                English = $record.English -replace $regex.dashPrefix, ''
+            }
+        }
+    )
+
+    $importExcelSplat.Path | md.Log.WroteFile
+
+    # tip: using BOM for best results when using Excel csv
+    $forJson
         | ConvertTo-Csv
         | Set-Content -Path ($Paths.Csv_ChangeLog) -Encoding utf8BOM
 
     $Paths.Csv_ChangeLog | md.Log.WroteFile
 
-    @( foreach($x in $imXl) {
-        '| {0} | {1} |' -f @(
-            $x.Code
-            $x.English
+    @(
+        '| Version | Code | English | '
+        '| - | - | - |'
+        @(foreach($x in $forJson) {
+            '| {0} | {1} | {2} |' -f @(
+                $x.Version
+                $x.Code
+                $x.English
+            )}
         )
-    }) | Set-Content -Path $Paths.Md_ChangeLog -Encoding utf8
+    ) | Set-Content -Path $Paths.Md_ChangeLog -Encoding utf8
 
     $Paths.Md_ChangeLog | md.Log.WroteFile
 
-    $imxl
-        | Select-Object -Prop Code, English
+    $forJson
+        # | Select-Object -Prop Code, English
         | ConvertTo-Json
         | Set-Content -Path $Paths.json_ChangeLog
 
@@ -194,7 +228,7 @@ function md.Export.WorkbookSchema {
         $Destination = $Paths.json_WorkbookSchema
     }
     if( -not $Force -and (Test-Path $Destination) ) {
-        "Using cached schema: $( $Destination ) " | Write-Verbose
+        "Using cached schema: $( $Destination ) " | Write-Host -fg 'gray60'
     } else {
         $found = md.Workbook.Schema -Path $Source # $Paths.Values
         $found

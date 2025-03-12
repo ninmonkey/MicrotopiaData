@@ -67,7 +67,7 @@ md.Export.Changelog -Verbose -Path $Paths
 
 
 
-md.Export.Readme.FileListing -Verbose -Path $Paths.ExportRoot_CurrentVersion
+md.Export.Readme.FileListing -Path $Paths.ExportRoot_CurrentVersion
 return
 
 $pkg = Open-ExcelPackage -Path $Paths.xlsx_Prefabs
