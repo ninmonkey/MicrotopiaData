@@ -1,6 +1,5 @@
 | Version | Code | English | 
 | - | - | - |
-| V1.0.7a | CODE | English |
 | V1.0.7a | V1.0.7a_1 | Fixed flight animation of later gynes. |
 | V1.0.7a | V1.0.7a_2 | Easier building requirements for the recycler. |
 | V1.0.7a | V1.0.7a_3 | Fixed a tiling problem in a toxic wasteland ground |

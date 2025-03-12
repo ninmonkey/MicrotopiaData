@@ -123,6 +123,8 @@ function md.Export.Changelog {
         $imXL | %{
             $record = $_
 
+            if( $record.English -eq 'English' ) { return }
+
             if( [string]::IsNullOrWhiteSpace( $record.English ) ) { return }
 
             if( $record.English -match $regex.isVersion ) {

@@ -1,11 +1,6 @@
 [
   {
     "Version": "V1.0.7a",
-    "Code": "CODE",
-    "English": "English"
-  },
-  {
-    "Version": "V1.0.7a",
     "Code": "V1.0.7a_1",
     "English": "Fixed flight animation of later gynes."
   },
