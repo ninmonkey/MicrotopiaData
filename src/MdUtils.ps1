@@ -353,3 +353,107 @@ function md.Convert.ExpandProperty {
 #         $InputObject
 #     }
 # }
+
+function md.Export.Biome.Biome_Objects {
+    [CmdletBinding()]
+    param(
+        # Paths hashtable
+        [Parameter(Mandatory)] $Paths
+    )
+    # Section: Export item: biome/Biome_Objects
+    # todo: refactor like 'md.Export.Changelog'
+
+    $pkg = Open-ExcelPackage -Path $Paths.Raw_Biome
+    $book = $pkg.Workbook
+    md.Workbook.ListItems $Book
+    # $sheets = $pkg.workbook.Worksheets
+    # # detect column counts
+    # $curSheet = $pkg.Workbook.Worksheets['Biome Objects']
+
+    remove-item $Paths.Xlsx_Biome -ea 'Ignore'
+
+    # Section: Export item: biome/Biome_Objects
+    $importExcel_Splat = @{
+        ExcelPackage  = $pkg
+        WorksheetName = 'Biome Objects'
+    }
+    $rows =  Import-Excel @importExcel_Splat
+    # skip empty and non-data rows
+    $rows = @(
+        $rows
+            | ? { -not [string]::IsNullOrWhiteSpace( $_.CODE ) }
+            | ? { $_.CODE -notmatch '^\s*//' }
+            | ? { $_.CODE -notmatch '^\s*\?+\s*$' } # skip "???"
+    )
+
+    $exportExcel_Splat = @{
+        InputObject   = @( $rows )
+        Path          = $Paths.Xlsx_Biome
+        Show          = $false
+        WorksheetName = 'Biome_Objects'
+        TableName     = 'Biome_Objects_Data'
+        TableStyle    = 'Light5'
+        AutoSize      = $True
+    }
+
+    Export-Excel @exportExcel_Splat
+
+    # json specific transforms
+    $sort_splat = @{
+        Property = 'title', 'code', 'exchange_types'
+    }
+
+    $forJson = @(
+        $Rows | %{
+            $record = $_
+            $record = md.Convert.BlankPropsToEmpty $Record
+            $record = md.Convert.KeyNames $Record
+            # coerce blankables into empty strings for json
+            $record.'pickups'             = md.Parse.IngredientsFromCsv $record.'pickups'
+            $record.'exchange_types'      = md.Parse.ItemsFromList $record.'exchange_types'
+            $record.'unclickable'         = md.Parse.Checkbox $record.'unclickable'
+            $record.'trails_pass_through' = md.Parse.Checkbox $record.'trails_pass_through'
+            $record
+        }
+    ) | Sort-Object @sortObjectSplat
+
+    $forJson
+        | ConvertTo-Json -depth 9
+        | Set-Content -path $Paths.Json_Biome_Objects # -Confirm
+
+    $Paths.Json_Biome_Objects | Join-String -f 'wrote: "{0}"' | write-host -fg 'gray50'
+
+
+    # also emit expanded records
+    $forJson = @(
+        $Rows | %{
+            $record = $_
+            $expandProp = 'exchange_types'
+            md.Convert.ExpandProperty $Record -Prop $expandProp
+        }
+    )| Sort-Object @sortObjectSplat
+    write-warning 'todo: auto expand all properties dynamically: exchange_types, pickups, etc...'
+
+    $forJson
+        | ConvertTo-Json -depth 9
+        | Set-Content -path $Paths.json_Biome_Objects_Expanded # -Confirm
+
+    $Paths.json_Biome_Objects_Expanded | Join-String -f 'wrote: "{0}"' | write-host -fg 'gray50'
+
+    if( $false ) { <# test coercion from json to sheet #>
+        $exportExcel_Splat = @{
+            InputObject   = @( $forJson )
+            Path          = $Paths.Xlsx_Biome
+            Show          = $false
+            WorksheetName = 'Biome_Objects_Expanded'
+            TableName     = 'Biome_Objects_Expanded_Data'
+            TableStyle    = 'Light5'
+            Title         = 'From Json'
+            AutoSize      = $True
+        }
+
+        Export-Excel @exportExcel_Splat
+    }
+
+    Close-ExcelPackage -ExcelPackage $pkg -NoSave
+}
