@@ -39,16 +39,16 @@ function md.Workbook.ListItems {
 
 function md.GetRawPath {
     <#
-    .Synopsis 
+    .Synopsis
         Path or object, modifies path: 'foo.xlsx' => 'foo-raw.xlsx'
     #>
     [CmdletBinding()]
-    param( 
+    param(
         [object] $Path )
 
     $File = Get-Item -ea 'ignore' $Path
     if( -not $File ) {
-        $File = [System.IO.FileInfo]::new( $Path ) 
+        $File = [System.IO.FileInfo]::new( $Path )
     }
     if( -not $File) {
         throw "Unhandled path type: $( $Path )"
@@ -65,7 +65,7 @@ function md.Export.Changelog {
     [CmdletBinding()]
     param()
 
-    # $rawPath = $Paths.xlsx_Changelog 
+    # $rawPath = $Paths.xlsx_Changelog
     # $rawFullJoin-Path $rawPath.DirectoryName "$( $_.baseName )-raw.xlsx"
     $curOutput = $Paths.Xlsx_ChangeLog
     $rawSrc = md.GetRawPath $curOutput
@@ -73,7 +73,7 @@ function md.Export.Changelog {
     "md.Export.Changelog => Parse: $( $rawSrc ), Output: $( $curOutput )" | Write-Host -fg 'gray60' -bg 'gray30'
 
     $imXl = Import-Excel -path $rawSrc -WorksheetName 'Changelog' -ImportColumns 1, 3 -HeaderName 'Version', 'English'
-    
+
     # using BOM for best results when using Excel csv
     $imXL
         | ConvertTo-Csv
@@ -110,26 +110,26 @@ function md.Workbook.Schema {
     )
 
     if($All) {
-        $sources = 
-            $Paths.GetEnumerator() 
+        $sources =
+            $Paths.GetEnumerator()
             | ?{ $_.Value -match '.*xlsx$' }
-    } else { 
-        $Sources = @( $Path ) 
+    } else {
+        $Sources = @( $Path )
     }
-    
+
     # emit
-    $Sources 
+    $Sources
         | ?{ Test-Path $_ }
-        | %{ 
-            Get-ExcelFileSchema -Path $_ 
-                | ConvertFrom-Json 
-        } 
+        | %{
+            Get-ExcelFileSchema -Path $_
+                | ConvertFrom-Json
+        }
 }
 
 function md.Export.WorkbookSchema {
     <#
     .synopsis
-        a quick summary of all worksheets, in all files as json. 
+        a quick summary of all worksheets, in all files as json.
     #>
     [CmdletBinding()]
     param(
@@ -143,7 +143,7 @@ function md.Export.WorkbookSchema {
         # also return the objects
         [switch] $PassThru
     )
-    $Source = @( 
+    $Source = @(
         if( $Path ) { $Path }
         else { $Paths.Values }
     )
@@ -154,8 +154,8 @@ function md.Export.WorkbookSchema {
         "Using cached schema: $( $Destination ) " | Write-Verbose
     } else {
         $found = md.Workbook.Schema -Path $Source # $Paths.Values
-        $found 
-            | ConvertTo-Json -Depth 9 
+        $found
+            | ConvertTo-Json -Depth 9
             | Set-Content -Path $Destination
     }
 
@@ -183,6 +183,35 @@ function md.EnsureSubdirsExist {
     foreach( $name in $RequiredNames ) {
         $newPath = Join-Path $versionRoot $name
         $newPath | Join-String -f 'create: "{0}"' -sep ', ' | Write-Verbose
-        mkdir -ea 'ignore' $newPath 
+        mkdir -ea 'ignore' $newPath
     }
+}
+
+function md.Parse.IngredientsFromCsv {
+    <#
+    .synopsis
+        converts inputs like 'FIBER_SPIKETREE 100, CONCRETE_RAW 25' into ingredient lists
+    #>
+    param( [string]$Text )
+    if( [string]::IsNullOrWhiteSpace( $Text ) ) { return @() }
+    @(
+        ($Text -split ',\s+').ForEach({
+            $segs = $_ -split '\s+', 2
+            [pscustomobject]@{
+                Name     = $segs[0];
+                Quantity = $segs[1]
+            }
+        })
+    )
+}
+
+function md.Parse.Checkbox {
+     <#
+    .synopsis
+        converts boolean style inputs, like 'x' vs blank
+    #>
+    param( [string]$Text )
+    if( $Text.Length -eq 0 ) { return $false }
+    if( $Text -match '\s*x\s*') { return $true }
+    return $false
 }

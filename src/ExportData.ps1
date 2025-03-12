@@ -31,6 +31,7 @@ $Paths.Xlsx_ChangeLog = Join-Path $Paths.ExportRoot_CurrentVersion 'changelog.xl
 $Paths.Md_ChangeLog   = Join-Path $Paths.ExportRoot_CurrentVersion 'changelog.md'
 $Paths.Csv_ChangeLog  = Join-Path $Paths.ExportRoot_CurrentVersion 'csv/changelog.csv'
 $Paths.json_ChangeLog = Join-Path $Paths.ExportRoot_CurrentVersion 'json/changelog.json'
+$Paths.json_Biome_Objects = Join-Path $Paths.ExportRoot_CurrentVersion 'json/biome-objects.json'
 $Paths.json_WorkbookSchema = Join-Path $Paths.ExportRoot_CurrentVersion 'json/workbook-schema.json'
 
 # $Paths.Game = [ordered]@{
@@ -82,8 +83,36 @@ $exportExcel_Splat = @{
 
 Export-Excel @exportExcel_Splat
 
+# ($src -split ',\s+').ForEach({
+#   $segs = $_ -split '\s+', 2
+#   [pscustomobject]@{ Name = $segs[0]; Quantity = $segs[1]  }
+# })
 
-Close-ExcelPackage -ExcelPackage $pkg # -NoSave
+# $record.PICKUPS     = @( $record.PICKUPS -split ',\s*' )
+
+# json specific transforms
+$forJson = @(
+    $Rows | %{
+        $record             = $_
+        if( $record.CODE -match 'slide' ) {
+            'sdfds' | write-host -fg 'orange'
+        }
+
+
+        $record.PICKUPS     = md.Parse.IngredientsFromCsv $record.PICKUPS
+        # $record.UNCLICKABLE = $record.UNCLICKABLE -match 'x'
+        $record.UNCLICKABLE = md.Parse.Checkbox $record.UNCLICKABLE
+        $record
+    }
+)
+
+$forJson
+    | ConvertTo-Json -depth 9
+    | Set-Content -path $Paths.Json_Biome_Objects # -Confirm
+
+$Paths.Json_Biome_Objects | Join-String -f 'wrote: "{0}"' | write-host -fg 'gray50'
+
+Close-ExcelPackage -ExcelPackage $pkg -NoSave
 
 
 return
