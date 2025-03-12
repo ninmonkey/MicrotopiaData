@@ -62,6 +62,9 @@ $Paths.Log
     | Join-String -f 'See log for a list of changed files: "{0}"'
     | Write-Host -fg 'skyblue'
 
+
+md.Export.Readme.FileListing -Verbose -Path $Paths.ExportRoot_CurrentVersion
+
 return
 
 $pkg = Open-ExcelPackage -Path $Paths.xlsx_Prefabs

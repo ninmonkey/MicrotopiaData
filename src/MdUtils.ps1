@@ -587,6 +587,9 @@ function md.Invoke.FdFind {
         call 'fd' find
     .LINK
         https://github.com/sharkdp/fd
+    .NOTES
+        # the usage to `fd [OPTIONS] --search-path <path> --search-path <path2> [<pattern>]`
+        fd -e xlsx  --base-directory  '' --strip-cwd-prefix=never --search-path './src'
     #>
     [CmdletBinding()]
     param(
@@ -598,7 +601,13 @@ function md.Invoke.FdFind {
         [string[]] $ArgsList,
 
         # test cli generated arguments
-        [switch] $WhatIf
+        [switch] $WhatIf,
+
+        # make paths relative, and linkable in markdown files
+        [switch]$PathsAsMarkdown,
+
+        # use '--no-ignore'
+        [switch] $UsingNoIgnore
     )
     begin {
         $binFd = Get-Command 'fd' -CommandType Application -TotalCount 1 -ea 'stop'
@@ -610,7 +619,13 @@ function md.Invoke.FdFind {
                     "-e", $ext
                 }
             }
+            if($UsingNoIgnore) { '--no-ignore' }
             $ArgsList
+
+            if( $PathsAsMarkdown ) {
+                '--path-separator=/'
+                '--strip-cwd-prefix=never'
+            }
         )
         $binArgs | Join-String -op 'fd => ' -sep ' '  | Write-verbose
         if( $WhatIf ) {
@@ -622,12 +637,79 @@ function md.Invoke.FdFind {
     }
 }
 
+function Markdown.Write.Header {
+    <#
+    .SYNOPSIS
+        Write a markdown H1-H6
+    #>
+    param(
+        [int]$Depth = 2,
+        [string] $Text = 'Default' )
+    $Prefix = '#' * $Depth -join ''
+    "`n${Prefix} ${Text}`n"
+}
+function Markdown.Write.Newline {
+    <#
+    .SYNOPSIS
+        Write newlines/padding
+    #>
+    param( [int]$Count = 1 )
+    "`n" * $Count -join ''
+}
+function Markdown.Write.Href {
+    <#
+    .SYNOPSIS
+        Write href
+    #>
+    param(
+        [string]$Text,
+        # Allow non [System.Uri] types
+        [Alias('Url', 'Href')]
+        [string]$Link = '#'
+    )
+    $Link = $Link -replace '[ ]', '%20' # for github markdown relative links to work
+    "[${Text}](${Link})"
+}
+
+function Markdown.Write.UL {
+    <#
+    .SYNOPSIS
+        Writes a markdown unordered list
+    #>
+    param(
+        [string[]] $Items
+    )
+    $Items | Join-String -f "- {0}" -sep "`n" -op "`n"
+}
+
+function Markdown.Format.LinksAsUL {
+    <#
+    .SYNOPSIS
+        Converts a list of files to a list of UL links
+    .EXAMPLE
+        > Markdown.Format.LinksAsUL -Lines @(md.Invoke.FdFind -Extension json -PathsAsMarkdown)
+    #>
+    param(
+        # list of relative paths, like "./json/biome-objects.json"
+        [string[]] $Lines
+    )
+    if( $Lines.Count -eq 0 ) { return }
+    Markdown.write.UL @(
+        $Lines
+        | %{
+            $Text = $_ -split '/' | Select -last 1
+            $Link = $_
+            Markdown.Write.Href -Text $Text -Link $Link
+        }
+    )
+}
+
 function md.Export.Readme.FileListing {
     <#
     .SYNOPSIS
-        build markdown file using the 'fd' command
+        Automatically build an index of all files generated as a markdown readme
     .LINK
-        https://github.com/sharkdp/fd
+        md.Invoke.FdFind
     #>
     [CmdletBinding()]
     param(
@@ -640,32 +722,34 @@ function md.Export.Readme.FileListing {
 
     pushd -StackName 'export' $Paths.ExportRoot_CurrentVersion
 
-    $Shared = @(
-        '--path-separator=/'
-        '--strip-cwd-prefix=never'
-    )
+    $Destination = Join-Path $Path 'readme.md'
 
-    md.Invoke.FdFind -WhatIf -Extension 'json' -ArgsList $Shared
+
+
+    @(
+        Markdown.Write.Header -Depth 2 -Text "About"
+        "Files generated on: $( (get-date).tostring('yyyy-MM-dd') )"
+        Markdown.Write.Header -Depth 2 -Text "Files by Type"
+
+        Markdown.Write.Header -Depth 3 -Text "Json"
+        Markdown.Format.LinksAsUL -Lines @(md.Invoke.FdFind -Extension json -PathsAsMarkdown)
+
+        Markdown.Write.Header -Depth 3 -Text "Xlsx"
+        Markdown.Format.LinksAsUL -Lines @(md.Invoke.FdFind -Extension xlsx -PathsAsMarkdown -UsingNoIgnore)
+
+        Markdown.Write.Header -Depth 3 -Text "Csv"
+        Markdown.Format.LinksAsUL -Lines @(md.Invoke.FdFind -Extension csv -PathsAsMarkdown)
+
+        Markdown.Write.Header -Depth 3 -Text "Md"
+        Markdown.Format.LinksAsUL -Lines @(md.Invoke.FdFind -Extension md -PathsAsMarkdown)
+
+        # Markdown.Write.Header -Depth 3 -Text "Log"
+        # Markdown.Format.LinksAsUL -Lines @(md.Invoke.FdFind -Extension log -PathsAsMarkdown)
+
+    ) | Join-String -sep "`n" | Set-Content -Path $Destination
+    $Destination | md.Log.WroteFile
+
+    # md.Invoke.FdFind -WhatIf -Extension 'json' -ArgsList $Shared -PathsAsMarkdown
 
     popd -StackName 'export'
-    return
-
-    # new: Automatically build an index of all files generated
-    return
-    fd -e json --path-separator=/ --strip-cwd-prefix=never
-
-    $Listing = [ordered]@{}
-    $Listing.xlsx = @(
-        callFd -Params '-e', 'xlsx'
-        # & fd -e xlsx
-    )
-    fd -e xlsx
-    fd -e csv
-    fd -e json
-    fd -e md
-
-
-    fd -e xlsx -e json -e csv -e log
-    # the usage to `fd [OPTIONS] --search-path <path> --search-path <path2> [<pattern>]`
-    fd -e xlsx  --base-directory  '' --strip-cwd-prefix=never --search-path './src'
 }
