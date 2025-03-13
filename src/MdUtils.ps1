@@ -772,6 +772,28 @@ function md.Export.TechTree.TechTree {
 
     Export-Excel @exportExcel_Splat
 
+
+    $importExcel_Splat = @{
+        ExcelPackage  = $pkg
+        WorksheetName = 'Research Recipes'
+
+    }
+    $rows2 =  Import-Excel @importExcel_Splat
+
+    $exportExcel_Splat = @{
+        InputObject   = @(
+            $rows2
+        )
+        Path          = $Paths.Xlsx_TechTree
+        Show          = $true
+        WorksheetName = 'ResearchRecipes'
+        TableName     = 'ResearchRecipes_Data'
+        TableStyle    = 'Light5'
+        AutoSize      = $True
+    }
+
+    Export-Excel @exportExcel_Splat
+
     # json specific transforms
     $sort_splat = @{
         Property = 'code'
@@ -794,9 +816,9 @@ function md.Export.TechTree.TechTree {
 
     $forJson
         | ConvertTo-Json -depth 9
-        | Set-Content -path $Paths.json_TechTree_TechTree # -Confirm
+        | Set-Content -path $Paths.json_TechTree_ResearchRecipes # -Confirm
 
-    $Paths.json_TechTree_TechTree | md.Log.WroteFile
+    $Paths.json_TechTree_ResearchRecipes | md.Log.WroteFile
 
 
     # also emit expanded records

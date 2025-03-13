@@ -14,6 +14,7 @@ Files generated on: 2025-03-13
 - [biome-plants-column-desc.json](./json/biome-plants-column-desc.json)
 - [biome-plants.json](./json/biome-plants.json)
 - [changelog.json](./json/changelog.json)
+- [techtree-researchrecipes.json](./json/techtree-researchrecipes.json)
 - [techtree-techtree.json](./json/techtree-techtree.json)
 - [workbook-schema.json](./json/workbook-schema.json)
 

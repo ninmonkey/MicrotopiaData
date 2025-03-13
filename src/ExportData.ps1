@@ -41,6 +41,7 @@ $Paths.Md_ChangeLog                 = Join-Path $Paths.ExportRoot_CurrentVersion
 $Paths.Csv_ChangeLog                = Join-Path $Paths.ExportRoot_CurrentVersion 'csv/changelog.csv'
 $Paths.json_ChangeLog               = Join-Path $Paths.ExportRoot_CurrentVersion 'json/changelog.json'
 $Paths.json_TechTree_TechTree                = Join-Path $Paths.ExportRoot_CurrentVersion 'json/techtree-techtree.json'
+$Paths.json_TechTree_ResearchRecipes                = Join-Path $Paths.ExportRoot_CurrentVersion 'json/techtree-researchrecipes.json'
 $Paths.json_Biome_Objects           = Join-Path $Paths.ExportRoot_CurrentVersion 'json/biome-objects.json'
 $Paths.json_Biome_Plants            = Join-Path $Paths.ExportRoot_CurrentVersion 'json/biome-plants.json'
 $Paths.json_Biome_Plants_ColumnDesc = Join-Path $Paths.ExportRoot_CurrentVersion 'json/biome-plants-column-desc.json'
