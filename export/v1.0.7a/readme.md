@@ -1,7 +1,7 @@
 
 ## About
 
-Files generated on: 2025-03-12
+Files generated on: 2025-03-13
 
 ## Files by Type
 
@@ -27,6 +27,7 @@ Files generated on: 2025-03-12
 - [prefabs-raw.xlsx](./prefabs-raw.xlsx)
 - [sequences-raw.xlsx](./sequences-raw.xlsx)
 - [techtree-raw.xlsx](./techtree-raw.xlsx)
+- [workbook-schema.xlsx](./workbook-schema.xlsx)
 
 ### Csv
 

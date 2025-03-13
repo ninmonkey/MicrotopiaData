@@ -30,6 +30,9 @@ $Paths.Raw_Biome  = md.GetRawPath $Paths.Xlsx_Biome
 $Paths.Xlsx_Prefabs = Join-Path $Paths.ExportRoot_CurrentVersion 'prefabs.xlsx'
 $Paths.Raw_Prefabs  = md.GetRawPath $Paths.Xlsx_Prefabs
 
+$Paths.Xlsx_Instinct = Join-Path $Paths.ExportRoot_CurrentVersion 'Instinct.xlsx'
+$Paths.Raw_Instinct  = md.GetRawPath $Paths.Xlsx_Instinct
+
 $Paths.Xlsx_ChangeLog               = Join-Path $Paths.ExportRoot_CurrentVersion 'changelog.xlsx'
 $Paths.Md_ChangeLog                 = Join-Path $Paths.ExportRoot_CurrentVersion 'changelog.md'
 $Paths.Csv_ChangeLog                = Join-Path $Paths.ExportRoot_CurrentVersion 'csv/changelog.csv'
@@ -39,6 +42,7 @@ $Paths.json_Biome_Plants            = Join-Path $Paths.ExportRoot_CurrentVersion
 $Paths.json_Biome_Plants_ColumnDesc = Join-Path $Paths.ExportRoot_CurrentVersion 'json/biome-plants-column-desc.json'
 $Paths.json_Biome_Objects_Expanded  = Join-Path $Paths.ExportRoot_CurrentVersion 'json/biome-objects-expanded.json'
 $Paths.json_WorkbookSchema          = Join-Path $Paths.ExportRoot_CurrentVersion 'json/workbook-schema.json'
+$Paths.xlsx_WorkbookSchema          = Join-Path $Paths.ExportRoot_CurrentVersion 'workbook-schema.xlsx'
 
 # $Paths.Game = [ordered]@{
 #     'ProgramData_Root' = Join-Path 'C:\Program Files (x86)\Steam\steamapps\common\Microtopia' 'Microtopia_Data'
@@ -47,16 +51,14 @@ $Paths.json_WorkbookSchema          = Join-Path $Paths.ExportRoot_CurrentVersion
     Main entry point. refactor
 #>
 'export schemas for all *.xlsx' | Write-Host -fg 'gray60'
-md.Export.WorkbookSchema -verbose
+
 
 # never cache
 Remove-Item $Paths.Xlsx_Biome -ea 'Ignore'
 Clear-Content -path $Paths.Log -ea Ignore
 md.Export.Biome.Biome_Objects -Paths $Paths -Verbose
 md.Export.Biome.Plants -Paths $Paths -Verbose
-
-# md.Export.Biome.Biome_Plants -Paths $Paths -Verbose
-# md.Export.Biome.Plants
+# <nyi>: md.Export.Instinct -Paths $Paths -Verbose
 
 $Paths.Log
     | Join-String -f 'See log for a list of changed files: "{0}"'
@@ -64,10 +66,10 @@ $Paths.Log
 
 md.Export.Changelog -Verbose -Path $Paths
 
-
-
-
+md.Export.WorkbookSchema
+md.Export.WorkbookSchema.Xlsx -Paths $Paths -Verbose
 md.Export.Readme.FileListing -Path $Paths.ExportRoot_CurrentVersion
+
 return
 
 $pkg = Open-ExcelPackage -Path $Paths.xlsx_Prefabs

@@ -244,6 +244,50 @@ function md.Export.WorkbookSchema {
     Get-Content -path $Destination | ConvertFrom-Json -Depth 9
 }
 
+function md.Export.WorkbookSchema.Xlsx {
+    <#
+    .synopsis
+        a quick summary of all worksheets, in all files as json.
+    #>
+    [CmdletBinding()]
+    param(
+        # Paths, if not in $Paths.Values
+        [object[]] $Paths
+        # $Destination,
+
+        # # always write a fresh export
+        # [switch] $Force,
+
+        # # also return the objects
+        # [switch] $PassThru
+    )
+    # also export schemas a an excel sheet
+    $schema = md.Export.WorkbookSchema -PassThru
+    remove-item $Paths.xlsx_WorkbookSchema -ea Ignore
+    $exportExcelSplat = @{
+        Path          = $Paths.xlsx_WorkbookSchema
+        WorksheetName = 'Schema'
+        AutoSize      = $true
+        TableName     = 'Schema_data'
+        TableStyle    = 'Light5'
+        # Show          = $true
+        Title         = 'Summary of xlsx schemas by file'
+    }
+
+    @(
+        $schema
+        | %{
+            $record = $_
+            $record.PropertyNames = $Record.PropertyNames | SOrt-Object -unique | Join-String -sep ', '
+            $record
+        }
+        | Sort-Object ExcelFile, WorksheetName
+    )
+    | Export-Excel @exportExcelSplat
+
+    md.Log.WroteFile $exportExcelSplat.Path
+}
+
 function md.EnsureSubdirsExist {
     <#
     .SYNOPSIS
