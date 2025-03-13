@@ -14,6 +14,7 @@ Files generated on: 2025-03-13
 - [biome-plants-column-desc.json](./json/biome-plants-column-desc.json)
 - [biome-plants.json](./json/biome-plants.json)
 - [changelog.json](./json/changelog.json)
+- [techtree-techtree.json](./json/techtree-techtree.json)
 - [workbook-schema.json](./json/workbook-schema.json)
 
 ### Xlsx
@@ -27,6 +28,7 @@ Files generated on: 2025-03-13
 - [prefabs-raw.xlsx](./prefabs-raw.xlsx)
 - [sequences-raw.xlsx](./sequences-raw.xlsx)
 - [techtree-raw.xlsx](./techtree-raw.xlsx)
+- [techtree.xlsx](./techtree.xlsx)
 - [workbook-schema.xlsx](./workbook-schema.xlsx)
 
 ### Csv

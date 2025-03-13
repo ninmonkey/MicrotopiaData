@@ -546,7 +546,7 @@ function md.Export.Biome.Biome_Objects {
             $record.'trails_pass_through' = md.Parse.Checkbox $record.'trails_pass_through'
             $record
         }
-    ) | Sort-Object @sortObjectSplat
+    ) | Sort-Object @sort_splat
 
     $forJson
         | ConvertTo-Json -depth 9
@@ -561,7 +561,7 @@ function md.Export.Biome.Biome_Objects {
             $expandProp = 'exchange_types'
             md.Convert.ExpandProperty $Record -Prop $expandProp
         }
-    )| Sort-Object @sortObjectSplat
+    )| Sort-Object @sort_splat
     write-warning 'todo: auto expand all properties dynamically: exchange_types, pickups, etc...'
 
     $forJson
@@ -655,7 +655,7 @@ function md.Export.Biome.Plants {
             # $record.'trails_pass_through' = md.Parse.Checkbox $record.'trails_pass_through'
             $record
         }
-    ) | Sort-Object @sortObjectSplat
+    ) | Sort-Object @sort_splat
 
     $forJson
         | ConvertTo-Json -depth 9
@@ -672,7 +672,140 @@ function md.Export.Biome.Plants {
             $record = $_
             $record # md.Convert.ExpandProperty $Record -Prop $expandProp
         }
-    )| Sort-Object @sortObjectSplat
+    )| Sort-Object @sort_splat
+
+    Close-ExcelPackage -ExcelPackage $pkg -NoSave
+}
+function md.Export.TechTree.TechTree {
+    <#
+    .SYNOPSIS
+        Parses and exports 'TechTree.xlsx/TechTree'
+    #>
+    [CmdletBinding()]
+    param(
+        # Paths hashtable
+        [Parameter(Mandatory)] $Paths,
+
+        # always write a fresh export
+        [ValidateScript({throw 'nyi'})]
+        [switch] $Force
+    )
+    $PSCmdlet.MyInvocation.MyCommand.Name
+        | Join-String -f 'Enter: {0}' | Write-verbose
+
+    $Regex = @{
+        isTierNumber     = '^\s*//\s+tier\s+\d+'
+        isGroupName      = '^\s*//' # '^\s*//\s*w\+' #  '^\s*//'
+        toIgnoreHeader   = '//\s*unique\s*code'
+        stripSlashPrefix = '\s*//\s+'
+    }
+
+    # Section: Export item: biome/Plants
+    $pkg = Open-ExcelPackage -Path $Paths.Raw_TechTree
+    $book = $pkg.Workbook
+    md.Workbook.ListItems $Book
+
+    remove-item $Paths.Xlsx_TechTree -ea 'Ignore'
+    $importExcel_Splat = @{
+        ExcelPackage  = $pkg
+        WorksheetName = 'TechTree'
+
+    }
+    $rows =  Import-Excel @importExcel_Splat
+
+    # column descriptions are inline
+    # $description = $rows | ? Code -Match '^\s*//\s*$' | Select -First 1
+    # $description | ConvertTo-Json | Set-Content -path $Paths.json_Biome_Plants_ColumnDesc
+
+    # $paths.json_Biome_Plants_ColumnDesc | md.Log.WroteFile
+
+    # skip empty and non-data rows
+    $curGroupName = 'missing'
+    $curTierNumber = 'missing'
+    $curOrder = -1
+    $rows = @(
+        $rows
+            | % {
+                # capture grouping records, else add them to the data
+                $record = $_
+                $curOrder++
+                if ($record.Code -match $Regex.isTierNumber) {
+                    $curTierNumber = $record.Code  -replace $regex.StripSlashPrefix, ''
+                    return
+                } elseif ( $record.Code -match $Regex.isGroupName ) {
+                    $curGroupName = $record.Code -replace $regex.stripSlashPrefix, ''
+                    return
+                } elseif ( $record.Code -match $Regex.toIgnoreHeader ) {
+                    return
+                }
+
+                $record.PSObject.Properties.Add( [psnoteproperty]::new(
+                    'Group', $curGroupName
+                ), $true )
+                $record.PSObject.Properties.Add( [psnoteproperty]::new(
+                    'Tier', $curTierNumber
+                ), $true )
+                $record.PSObject.Properties.Add( [psnoteproperty]::new(
+                    'Order', $curOrder
+                ), $true )
+
+                $record
+            }
+            | ? { $_.Code -notmatch $Regex.toIgnoreHeader }
+            | ? { -not [string]::IsNullOrWhiteSpace( $_.CODE ) }
+            # | ? { $_.CODE -notmatch  }
+            # | ? { $_.CODE -notmatch '^\s*//' }
+            # | ? { $_.CODE -notmatch '^\s*\?+\s*$' } # skip "???"
+    )
+
+
+
+    $exportExcel_Splat = @{
+        InputObject   = @( $rows )
+        Path          = $Paths.Xlsx_TechTree
+        Show          = $true
+        WorksheetName = 'TechTree'
+        TableName     = 'TechTree_Data'
+        TableStyle    = 'Light5'
+        AutoSize      = $True
+    }
+
+    Export-Excel @exportExcel_Splat
+
+    # json specific transforms
+    $sort_splat = @{
+        Property = 'code'
+    }
+
+    $forJson = @(
+        $Rows | %{
+            $record = $_
+            $record = md.Convert.BlankPropsToEmpty $Record
+            $record = md.Convert.KeyNames $Record
+            # coerce blankables into empty strings for json
+            # $record.'pickups'             = md.Parse.IngredientsFromCsv $record.'pickups'
+            # $record.'exchange_types'      = md.Parse.ItemsFromList $record.'exchange_types'
+            # $record.'ignore_grooves'         = md.Parse.Checkbox $record.'ignore_grooves'
+            # $record.'even_cluster'         = md.Parse.Checkbox $record.'even_cluster'
+            # $record.'trails_pass_through' = md.Parse.Checkbox $record.'trails_pass_through'
+            $record
+        }
+    ) | Sort-Object @sort_splat
+
+    $forJson
+        | ConvertTo-Json -depth 9
+        | Set-Content -path $Paths.json_TechTree_TechTree # -Confirm
+
+    $Paths.json_TechTree_TechTree | md.Log.WroteFile
+
+
+    # also emit expanded records
+    # $forJson = @(
+    #     $Rows | %{
+    #         $record = $_
+    #         $record # md.Convert.ExpandProperty $Record -Prop $expandProp
+    #     }
+    # )| Sort-Object @sort_splat
 
     Close-ExcelPackage -ExcelPackage $pkg -NoSave
 }

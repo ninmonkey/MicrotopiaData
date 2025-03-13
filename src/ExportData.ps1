@@ -33,10 +33,14 @@ $Paths.Raw_Prefabs  = md.GetRawPath $Paths.Xlsx_Prefabs
 $Paths.Xlsx_Instinct = Join-Path $Paths.ExportRoot_CurrentVersion 'Instinct.xlsx'
 $Paths.Raw_Instinct  = md.GetRawPath $Paths.Xlsx_Instinct
 
+$Paths.Xlsx_TechTree = Join-Path $Paths.ExportRoot_CurrentVersion 'techtree.xlsx'
+$Paths.Raw_TechTree  = md.GetRawPath $Paths.Xlsx_TechTree
+
 $Paths.Xlsx_ChangeLog               = Join-Path $Paths.ExportRoot_CurrentVersion 'changelog.xlsx'
 $Paths.Md_ChangeLog                 = Join-Path $Paths.ExportRoot_CurrentVersion 'changelog.md'
 $Paths.Csv_ChangeLog                = Join-Path $Paths.ExportRoot_CurrentVersion 'csv/changelog.csv'
 $Paths.json_ChangeLog               = Join-Path $Paths.ExportRoot_CurrentVersion 'json/changelog.json'
+$Paths.json_TechTree_TechTree                = Join-Path $Paths.ExportRoot_CurrentVersion 'json/techtree-techtree.json'
 $Paths.json_Biome_Objects           = Join-Path $Paths.ExportRoot_CurrentVersion 'json/biome-objects.json'
 $Paths.json_Biome_Plants            = Join-Path $Paths.ExportRoot_CurrentVersion 'json/biome-plants.json'
 $Paths.json_Biome_Plants_ColumnDesc = Join-Path $Paths.ExportRoot_CurrentVersion 'json/biome-plants-column-desc.json'
@@ -66,6 +70,13 @@ $Paths.Log
 
 md.Export.Changelog -Verbose -Path $Paths
 
+md.Export.TechTree.TechTree -Paths $Paths -Verbose
+
+
+
+
+
+# final exports. Ran last to iterate all new exports
 md.Export.WorkbookSchema
 md.Export.WorkbookSchema.Xlsx -Paths $Paths -Verbose
 md.Export.Readme.FileListing -Path $Paths.ExportRoot_CurrentVersion
