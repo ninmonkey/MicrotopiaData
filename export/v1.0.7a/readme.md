@@ -1,7 +1,7 @@
 
 ## About
 
-Files generated on: 2025-03-13
+Files generated on: 2025-03-14
 
 ## Files by Type
 
@@ -14,6 +14,8 @@ Files generated on: 2025-03-13
 - [biome-plants-column-desc.json](./json/biome-plants-column-desc.json)
 - [biome-plants.json](./json/biome-plants.json)
 - [changelog.json](./json/changelog.json)
+- [loc-objects.json](./json/loc-objects.json)
+- [loc-ui.json](./json/loc-ui.json)
 - [techtree-researchrecipes.json](./json/techtree-researchrecipes.json)
 - [techtree-techtree.json](./json/techtree-techtree.json)
 - [workbook-schema.json](./json/workbook-schema.json)
@@ -26,6 +28,7 @@ Files generated on: 2025-03-13
 - [biome-raw.xlsx](./biome-raw.xlsx)
 - [biome.xlsx](./biome.xlsx)
 - [loc-raw.xlsx](./loc-raw.xlsx)
+- [loc.xlsx](./loc.xlsx)
 - [prefabs-raw.xlsx](./prefabs-raw.xlsx)
 - [sequences-raw.xlsx](./sequences-raw.xlsx)
 - [techtree-raw.xlsx](./techtree-raw.xlsx)

@@ -434,6 +434,34 @@ function md.Convert.KeyNames {
         [pscustomobject]$newObj
     }
 }
+function md.Convert.RenameKeyName {
+     <#
+    .synopsis
+        partially sanitize names, making it more json-ic
+    .NOTES
+        future: [1] coerce casing. Maybe [TextInfo.ToTitleCase] [2] tolower
+    #>
+    [CmdletBinding()]
+    param(
+        [Parameter(ValueFromPipeline, Mandatory)]
+        [object] $InputObject,
+
+        [Parameter(Mandatory)]
+        [string] $OriginalName,
+
+        [Parameter(Mandatory)]
+        [string] $NewName
+    )
+
+    process {
+        $newObj = [ordered]@{}
+        $InputObject.PSObject.Properties  | % {
+            $newName = ($_.Name -eq $OriginalName) ? $NewName : $_.Name
+            $newObj.$newName = $_.Value
+        }
+        [pscustomobject]$newObj
+    }
+}
 
 function _Convert.ExpandSingleProperty {
     param(
@@ -586,8 +614,8 @@ function md.Export.Biome.Biome_Objects {
     $forJson = @(
         $Rows | %{
             $record = $_
-            $expandProp = 'exchange_types'
-            md.Convert.ExpandProperty $Record -Prop $expandProp
+            # $expandProp = 'exchange_types'
+            # md.Convert.ExpandProperty $Record -Prop $expandProp
         }
     )| Sort-Object @sort_splat
     write-warning 'todo: auto expand all properties dynamically: exchange_types, pickups, etc...'
@@ -791,7 +819,7 @@ function md.Export.TechTree.TechTree {
     $exportExcel_Splat = @{
         InputObject   = @( $rows )
         Path          = $Paths.Xlsx_TechTree
-        Show          = $true
+        # Show          = $true
         WorksheetName = 'TechTree'
         TableName     = 'TechTree_Data'
         TableStyle    = 'Light5'
@@ -813,7 +841,7 @@ function md.Export.TechTree.TechTree {
             $rows2
         )
         Path          = $Paths.Xlsx_TechTree
-        Show          = $true
+        # Show          = $true
         WorksheetName = 'ResearchRecipes'
         TableName     = 'ResearchRecipes_Data'
         TableStyle    = 'Light5'
@@ -852,6 +880,197 @@ function md.Export.TechTree.TechTree {
     # also emit expanded records
     # $forJson = @(
     #     $Rows | %{
+    #         $record = $_
+    #         $record # md.Convert.ExpandProperty $Record -Prop $expandProp
+    #     }
+    # )| Sort-Object @sort_splat
+
+    Close-ExcelPackage -ExcelPackage $pkg -NoSave
+}
+
+
+function md.Export.Loc {
+    <#
+    .SYNOPSIS
+        Parses and exports 'loc.xlsx/UI'
+    #>
+    [CmdletBinding()]
+    param(
+        # Paths hashtable
+        [Parameter(Mandatory)] $Paths,
+
+        # always write a fresh export
+        [ValidateScript({throw 'nyi'})]
+        [switch] $Force
+    )
+    $PSCmdlet.MyInvocation.MyCommand.Name
+        | Join-String -f 'Enter: {0}' | Write-verbose
+
+    $Regex = @{
+        # isTierNumber     = '^\s*//\s+tier\s+\d+'
+        # isGroupName      = '^\s*//' # '^\s*//\s*w\+' #  '^\s*//'
+        # toIgnoreHeader   = '//\s*unique\s*code'
+        # stripSlashPrefix = '\s*//\s+'
+    }
+
+    # Section: Export item: biome/Plants
+    $pkg = Open-ExcelPackage -Path $Paths.Raw_Loc
+    $book = $pkg.Workbook
+    md.Workbook.ListItems $Book
+
+    remove-item $Paths.Xlsx_Loc -ea 'Ignore'
+    $importExcel_Splat = @{
+        ExcelPackage  = $pkg
+        WorksheetName = 'UI'
+
+    }
+    $rows =  Import-Excel @importExcel_Splat
+
+    # column descriptions are inline
+    # $description = $rows | ? Code -Match '^\s*//\s*$' | Select -First 1
+    # $description | ConvertTo-Json | Set-Content -path $Paths.json_Biome_Plants_ColumnDesc
+
+    # $paths.json_Biome_Plants_ColumnDesc | md.Log.WroteFile
+
+    # skip empty and non-data rows
+
+    $curOrder = -1
+    $rows = @(
+        $rows
+            | % {
+                # capture grouping records, else add them to the data
+                $record = $_
+                $curOrder++
+                # if ($record.Code -match $Regex.isTierNumber) {
+                #     $curTierNumber = $record.Code  -replace $regex.StripSlashPrefix, ''
+                #     return
+                # } elseif ( $record.Code -match $Regex.isGroupName ) {
+                #     $curGroupName = $record.Code -replace $regex.stripSlashPrefix, ''
+                #     return
+                # } elseif ( $record.Code -match $Regex.toIgnoreHeader ) {
+                #     return
+                # }
+                # $record = md.Convert.RenameKeyName -Inp $Record -OriginalName '//note' -New 'code'
+
+                $record.PSObject.Properties.Add( [psnoteproperty]::new(
+                    'Order', $curOrder
+                ), $true )
+
+                $record
+            }
+            | ? { -not [string]::IsNullOrWhiteSpace( $_.CODE ) }
+    )
+
+
+
+    $exportExcel_Splat = @{
+        InputObject   = @( $rows )
+        Path          = $Paths.Xlsx_Loc
+        # Show          = $true
+        WorksheetName = 'UI'
+        TableName     = 'UI_Data'
+        TableStyle    = 'Light5'
+        AutoSize      = $True
+    }
+
+    Export-Excel @exportExcel_Splat
+
+    $importExcel_Splat = @{
+        ExcelPackage  = $pkg
+        WorksheetName = 'Objects'
+
+    }
+    $rows2 =  Import-Excel @importExcel_Splat
+    $curOrder = -1
+    $rows2 = @(
+        $rows2
+            | % {
+                # capture grouping records, else add them to the data
+                $record = $_
+                $curOrder++
+                # if ($record.Code -match $Regex.isTierNumber) {
+                #     $curTierNumber = $record.Code  -replace $regex.StripSlashPrefix, ''
+                #     return
+                # } elseif ( $record.Code -match $Regex.isGroupName ) {
+                #     $curGroupName = $record.Code -replace $regex.stripSlashPrefix, ''
+                #     return
+                # } elseif ( $record.Code -match $Regex.toIgnoreHeader ) {
+                #     return
+                # }
+
+                # $record = md.Convert.RenameKeyName -Inp $Record -OriginalName '//note' -New 'code'
+
+                $record.PSObject.Properties.Add( [psnoteproperty]::new(
+                    'Order', $curOrder
+                ), $true )
+
+                $record
+            }
+            | ? { -not [string]::IsNullOrWhiteSpace( $_.CODE ) }
+            | ? {
+                -not (
+                    [string]::IsNullOrWhiteSpace( $_.'//note' ) -and
+                    [string]::IsNullOrWhiteSpace( $_.English ) -and
+                    [string]::IsNullOrWhiteSpace( $_.Dutch )
+                )
+            }
+    )
+
+    $exportExcel_Splat = @{
+        InputObject   = @(
+            $rows2
+        )
+        Path          = $Paths.Xlsx_Loc
+        Show          = $true
+        WorksheetName = 'ResearchRecipes'
+        TableName     = 'ResearchRecipes_Data'
+        TableStyle    = 'Light5'
+        AutoSize      = $True
+    }
+
+    Export-Excel @exportExcel_Splat
+
+    # json specific transforms
+    $sort_splat = @{
+        Property = 'code'
+    }
+
+    $forJson = @(
+        $Rows | %{
+            $record = $_
+            # coerce blankables into empty strings for json
+            $record = md.Convert.BlankPropsToEmpty $Record
+            $record = md.Convert.KeyNames $Record
+
+            $record
+        }
+    ) | Sort-Object @sort_splat
+
+    $forJson
+        | ConvertTo-Json -depth 9
+        | Set-Content -path $Paths.Json_Loc_UI # -Confirm
+
+    $Paths.Json_Loc_UI | md.Log.WroteFile
+
+    $forJson2 = @(
+        $Rows2 | %{
+            $record = $_
+            $record = md.Convert.BlankPropsToEmpty $Record
+            $record = md.Convert.KeyNames $Record
+            $record
+        }
+    ) | Sort-Object @sort_splat
+
+    $forJson2
+        | ConvertTo-Json -depth 9
+        | Set-Content -path $Paths.Json_Loc_Objects # -Confirm
+
+    $Paths.Json_Loc_Objects | md.Log.WroteFile
+
+
+    # also emit expanded records
+    # $forJson = @(
+    #     $Rows2 | %{
     #         $record = $_
     #         $record # md.Convert.ExpandProperty $Record -Prop $expandProp
     #     }

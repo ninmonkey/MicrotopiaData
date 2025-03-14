@@ -36,18 +36,25 @@ $Paths.Raw_Instinct  = md.GetRawPath $Paths.Xlsx_Instinct
 $Paths.Xlsx_TechTree = Join-Path $Paths.ExportRoot_CurrentVersion 'techtree.xlsx'
 $Paths.Raw_TechTree  = md.GetRawPath $Paths.Xlsx_TechTree
 
-$Paths.Xlsx_ChangeLog               = Join-Path $Paths.ExportRoot_CurrentVersion 'changelog.xlsx'
-$Paths.Md_ChangeLog                 = Join-Path $Paths.ExportRoot_CurrentVersion 'changelog.md'
-$Paths.Csv_ChangeLog                = Join-Path $Paths.ExportRoot_CurrentVersion 'csv/changelog.csv'
-$Paths.json_ChangeLog               = Join-Path $Paths.ExportRoot_CurrentVersion 'json/changelog.json'
-$Paths.json_TechTree_TechTree                = Join-Path $Paths.ExportRoot_CurrentVersion 'json/techtree-techtree.json'
-$Paths.json_TechTree_ResearchRecipes                = Join-Path $Paths.ExportRoot_CurrentVersion 'json/techtree-researchrecipes.json'
-$Paths.json_Biome_Objects           = Join-Path $Paths.ExportRoot_CurrentVersion 'json/biome-objects.json'
-$Paths.json_Biome_Plants            = Join-Path $Paths.ExportRoot_CurrentVersion 'json/biome-plants.json'
-$Paths.json_Biome_Plants_ColumnDesc = Join-Path $Paths.ExportRoot_CurrentVersion 'json/biome-plants-column-desc.json'
-$Paths.json_Biome_Objects_Expanded  = Join-Path $Paths.ExportRoot_CurrentVersion 'json/biome-objects-expanded.json'
-$Paths.json_WorkbookSchema          = Join-Path $Paths.ExportRoot_CurrentVersion 'json/workbook-schema.json'
-$Paths.xlsx_WorkbookSchema          = Join-Path $Paths.ExportRoot_CurrentVersion 'workbook-schema.xlsx'
+$Paths.Xlsx_Loc = Join-Path $Paths.ExportRoot_CurrentVersion 'loc.xlsx'
+$Paths.Raw_Loc  = md.GetRawPath $Paths.Xlsx_Loc
+
+$Paths.Xlsx_ChangeLog                = Join-Path $Paths.ExportRoot_CurrentVersion 'changelog.xlsx'
+$Paths.Md_ChangeLog                  = Join-Path $Paths.ExportRoot_CurrentVersion 'changelog.md'
+$Paths.Csv_ChangeLog                 = Join-Path $Paths.ExportRoot_CurrentVersion 'csv/changelog.csv'
+$Paths.json_ChangeLog                = Join-Path $Paths.ExportRoot_CurrentVersion 'json/changelog.json'
+
+$Paths.json_Biome_Objects            = Join-Path $Paths.ExportRoot_CurrentVersion 'json/biome-objects.json'
+$Paths.json_Biome_Objects_Expanded   = Join-Path $Paths.ExportRoot_CurrentVersion 'json/biome-objects-expanded.json'
+$Paths.json_Biome_Plants             = Join-Path $Paths.ExportRoot_CurrentVersion 'json/biome-plants.json'
+$Paths.json_Biome_Plants_ColumnDesc  = Join-Path $Paths.ExportRoot_CurrentVersion 'json/biome-plants-column-desc.json'
+$Paths.json_Loc_UI                   = Join-Path $Paths.ExportRoot_CurrentVersion 'json/loc-ui.json'
+$Paths.json_Loc_Objects                   = Join-Path $Paths.ExportRoot_CurrentVersion 'json/loc-objects.json'
+$Paths.json_TechTree_ResearchRecipes = Join-Path $Paths.ExportRoot_CurrentVersion 'json/techtree-researchrecipes.json'
+$Paths.json_TechTree_TechTree        = Join-Path $Paths.ExportRoot_CurrentVersion 'json/techtree-techtree.json'
+
+$Paths.json_WorkbookSchema           = Join-Path $Paths.ExportRoot_CurrentVersion 'json/workbook-schema.json'
+$Paths.xlsx_WorkbookSchema           = Join-Path $Paths.ExportRoot_CurrentVersion 'workbook-schema.xlsx'
 
 # $Paths.Game = [ordered]@{
 #     'ProgramData_Root' = Join-Path 'C:\Program Files (x86)\Steam\steamapps\common\Microtopia' 'Microtopia_Data'
@@ -71,7 +78,10 @@ $Paths.Log
 
 md.Export.Changelog -Verbose -Path $Paths
 
+Remove-Item $Paths.Xlsx_TechTree -ea 'Ignore'
 md.Export.TechTree.TechTree -Paths $Paths -Verbose
+
+md.Export.Loc -Paths $Paths -Verbose
 
 
 
