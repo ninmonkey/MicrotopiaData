@@ -20,6 +20,34 @@ function md.Log.WroteFile {
         $msg | Add-Content -Path ($Paths.Log ?? 'temp:\last.log')
     }
 }
+function md.CopyObject {
+    <#
+    .SYNOPSIS
+        Create a copy of an object, ensuring it's not a reference
+    #>
+    [CmdletBinding()]
+    param(
+        [Parameter(Mandatory)]
+        $InputObject,
+
+        # Alpha sort? else first come
+        [switch] $AsAlpha
+    )
+
+    $props = [ordered]@{}
+    $fromProps = if( $AsAlpha ) {
+        $InputObject.PSObject.Properties | Sort-Object Name
+    } else {
+        $InputObject.PSObject.Properties
+    }
+
+    foreach( $prop in $fromProps) {
+        $props[ $prop.Name ] = $prop.Value
+    }
+
+    [pscustomobject]$props
+}
+
 function md.Workbook.ListItems {
     <#
     .SYNOPSIS
