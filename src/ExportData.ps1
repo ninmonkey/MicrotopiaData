@@ -44,6 +44,9 @@ $Paths.Md_ChangeLog                  = Join-Path $Paths.ExportRoot_CurrentVersio
 $Paths.Csv_ChangeLog                 = Join-Path $Paths.ExportRoot_CurrentVersion 'csv/changelog.csv'
 $Paths.json_ChangeLog                = Join-Path $Paths.ExportRoot_CurrentVersion 'json/changelog.json'
 
+$Paths.Json_Crusher_Output = Join-Path $Paths.ExportRoot_CurrentVersion 'json/crusher-output.json'
+$Paths.csv_Crusher_Output  = Join-Path $Paths.ExportRoot_CurrentVersion 'csv/crusher-output.csv'
+
 $Paths.json_Biome_Objects            = Join-Path $Paths.ExportRoot_CurrentVersion 'json/biome-objects.json'
 $Paths.json_Biome_Objects_Expanded   = Join-Path $Paths.ExportRoot_CurrentVersion 'json/biome-objects-expanded.json'
 $Paths.json_Biome_Plants             = Join-Path $Paths.ExportRoot_CurrentVersion 'json/biome-plants.json'
@@ -83,6 +86,8 @@ md.Export.TechTree.TechTree -Paths $Paths -Verbose
 
 md.Export.Loc -Paths $Paths -Verbose
 
+md.Export.Prefabs.Crusher -Paths $Paths -Verbose
+
 
 
 
@@ -92,9 +97,11 @@ md.Export.WorkbookSchema
 md.Export.WorkbookSchema.Xlsx -Paths $Paths -Verbose
 md.Export.Readme.FileListing -Path $Paths.ExportRoot_CurrentVersion
 
+
 return
 
-$pkg = Open-ExcelPackage -Path $Paths.xlsx_Prefabs
+# $pkg = Open-ExcelPackage -Path $Paths.Xlsx_Prefabs
+# $rows = ImportExcel -pkg $Pkg
 # $pkg.Workbook.Worksheets | %{ $_.Name }
 $book = $pkg.Workbook
 # $sheet = $pkg.workbook.Worksheets

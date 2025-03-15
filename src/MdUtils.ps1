@@ -809,9 +809,6 @@ function md.Export.TechTree.TechTree {
             }
             | ? { $_.Code -notmatch $Regex.toIgnoreHeader }
             | ? { -not [string]::IsNullOrWhiteSpace( $_.CODE ) }
-            # | ? { $_.CODE -notmatch  }
-            # | ? { $_.CODE -notmatch '^\s*//' }
-            # | ? { $_.CODE -notmatch '^\s*\?+\s*$' } # skip "???"
     )
 
 
@@ -876,15 +873,6 @@ function md.Export.TechTree.TechTree {
 
     $Paths.json_TechTree_ResearchRecipes | md.Log.WroteFile
 
-
-    # also emit expanded records
-    # $forJson = @(
-    #     $Rows | %{
-    #         $record = $_
-    #         $record # md.Convert.ExpandProperty $Record -Prop $expandProp
-    #     }
-    # )| Sort-Object @sort_splat
-
     Close-ExcelPackage -ExcelPackage $pkg -NoSave
 }
 
@@ -906,12 +894,7 @@ function md.Export.Loc {
     $PSCmdlet.MyInvocation.MyCommand.Name
         | Join-String -f 'Enter: {0}' | Write-verbose
 
-    $Regex = @{
-        # isTierNumber     = '^\s*//\s+tier\s+\d+'
-        # isGroupName      = '^\s*//' # '^\s*//\s*w\+' #  '^\s*//'
-        # toIgnoreHeader   = '//\s*unique\s*code'
-        # stripSlashPrefix = '\s*//\s+'
-    }
+    $Regex = @{}
 
     # Section: Export item: biome/Plants
     $pkg = Open-ExcelPackage -Path $Paths.Raw_Loc
@@ -929,11 +912,9 @@ function md.Export.Loc {
     # column descriptions are inline
     # $description = $rows | ? Code -Match '^\s*//\s*$' | Select -First 1
     # $description | ConvertTo-Json | Set-Content -path $Paths.json_Biome_Plants_ColumnDesc
-
     # $paths.json_Biome_Plants_ColumnDesc | md.Log.WroteFile
 
     # skip empty and non-data rows
-
     $curOrder = -1
     $rows = @(
         $rows
@@ -941,16 +922,6 @@ function md.Export.Loc {
                 # capture grouping records, else add them to the data
                 $record = $_
                 $curOrder++
-                # if ($record.Code -match $Regex.isTierNumber) {
-                #     $curTierNumber = $record.Code  -replace $regex.StripSlashPrefix, ''
-                #     return
-                # } elseif ( $record.Code -match $Regex.isGroupName ) {
-                #     $curGroupName = $record.Code -replace $regex.stripSlashPrefix, ''
-                #     return
-                # } elseif ( $record.Code -match $Regex.toIgnoreHeader ) {
-                #     return
-                # }
-                # $record = md.Convert.RenameKeyName -Inp $Record -OriginalName '//note' -New 'code'
 
                 $record.PSObject.Properties.Add( [psnoteproperty]::new(
                     'Order', $curOrder
@@ -960,8 +931,6 @@ function md.Export.Loc {
             }
             | ? { -not [string]::IsNullOrWhiteSpace( $_.CODE ) }
     )
-
-
 
     $exportExcel_Splat = @{
         InputObject   = @( $rows )
@@ -1021,7 +990,7 @@ function md.Export.Loc {
             $rows2
         )
         Path          = $Paths.Xlsx_Loc
-        Show          = $true
+        # Show          = $true
         WorksheetName = 'ResearchRecipes'
         TableName     = 'ResearchRecipes_Data'
         TableStyle    = 'Light5'
@@ -1066,6 +1035,116 @@ function md.Export.Loc {
         | Set-Content -path $Paths.Json_Loc_Objects # -Confirm
 
     $Paths.Json_Loc_Objects | md.Log.WroteFile
+
+
+    # also emit expanded records
+    # $forJson = @(
+    #     $Rows2 | %{
+    #         $record = $_
+    #         $record # md.Convert.ExpandProperty $Record -Prop $expandProp
+    #     }
+    # )| Sort-Object @sort_splat
+
+    Close-ExcelPackage -ExcelPackage $pkg -NoSave
+}
+function md.Export.Prefabs.Crusher {
+    <#
+    .SYNOPSIS
+        Parses and exports 'loc.xlsx/UI'
+    #>
+    [CmdletBinding()]
+    param(
+        # Paths hashtable
+        [Parameter(Mandatory)] $Paths,
+
+        # always write a fresh export
+        [ValidateScript({throw 'nyi'})]
+        [switch] $Force
+    )
+    $PSCmdlet.MyInvocation.MyCommand.Name
+        | Join-String -f 'Enter: {0}' | Write-verbose
+
+    $Regex = @{}
+
+    # Section: Export item: biome/Plants
+    $pkg = Open-ExcelPackage -Path $Paths.Raw_Prefabs
+    $book = $pkg.Workbook
+    md.Workbook.ListItems $Book
+
+    remove-item $Paths.Xlsx_Prefabs -ea 'Ignore'
+    $importExcel_Splat = @{
+        ExcelPackage  = $pkg
+        WorksheetName = 'Factory Recipes'
+
+    }
+    $rows =  Import-Excel @importExcel_Splat
+
+    # column descriptions are inline
+    # $description = $rows | ? Code -Match '^\s*//\s*$' | Select -First 1
+    # $description | ConvertTo-Json | Set-Content -path $Paths.json_Biome_Plants_ColumnDesc
+
+    # $paths.json_Biome_Plants_ColumnDesc | md.Log.WroteFile
+
+    # skip empty and non-data rows
+
+    $curOrder = -1
+    $rows = @(
+        $rows
+            | % {
+                # capture grouping records, else add them to the data
+                $record = $_
+                $curOrder++
+                $record.PSObject.Properties.Add( [psnoteproperty]::new(
+                    'Order', $curOrder
+                ), $true )
+
+                $record
+            }
+            | ? { -not [string]::IsNullOrWhiteSpace( $_.ENUM ) }
+            | ?  { $_.Enum -match 'Crusher|Grind' }
+    )
+
+
+
+    $exportExcel_Splat = @{
+        InputObject   = @( $rows )
+        Path          = $Paths.Xlsx_Prefabs
+        Show          = $true
+        WorksheetName = 'CrusherOutput'
+        TableName     = 'CrusherOutput_data'
+        TableStyle    = 'Light5'
+        AutoSize      = $True
+    }
+
+    Export-Excel @exportExcel_Splat
+
+    # json specific transforms
+    $sort_splat = @{
+        Property = 'code'
+    }
+
+    $forJson = @(
+        $Rows | %{
+            $record = $_
+            # coerce blankables into empty strings for json
+            $record = md.Convert.BlankPropsToEmpty $Record
+            $record = md.Convert.KeyNames $Record
+
+            $record
+        }
+    ) | Sort-Object @sort_splat
+
+    $forJson
+        | ConvertTo-Json -depth 9
+        | Set-Content -path $Paths.Json_Crusher_Output # -Confirm
+
+    $Paths.Json_Crusher_Output | md.Log.WroteFile
+
+    $forJson
+        | ConvertTo-Csv
+        | Set-Content -path $Paths.Csv_Crusher_Output # -Confirm
+
+    $Paths.Csv_Crusher_Output | md.Log.WroteFile
 
 
     # also emit expanded records
