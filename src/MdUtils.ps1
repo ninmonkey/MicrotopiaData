@@ -345,6 +345,7 @@ function md.Parse.IngredientsFromCsv {
     .synopsis
         converts inputs like 'FIBER_SPIKETREE 100, CONCRETE_RAW 25' into ingredient lists
     #>
+    [Alias('md.Table.TransformColumn.FromRecords')]
     param( [string]$Text )
     if( [string]::IsNullOrWhiteSpace( $Text ) ) { return ,@() }
     ,@(
@@ -361,7 +362,9 @@ function md.Parse.ItemsFromList {
     <#
     .synopsis
         converts inputs like 'FIBER_SPIKETREE 100, CONCRETE_RAW 25' into ingredient lists
+
     #>
+    [Alias('md.Table.TransformColumn.FromList')]
     param( [string]$Text )
     if( [string]::IsNullOrWhiteSpace( $Text ) ) { return ,@() }
     ,@(
