@@ -59,6 +59,18 @@ $Paths.json_TechTree_TechTree        = Join-Path $Paths.ExportRoot_CurrentVersio
 $Paths.json_WorkbookSchema           = Join-Path $Paths.ExportRoot_CurrentVersion 'json/workbook-schema.json'
 $Paths.xlsx_WorkbookSchema           = Join-Path $Paths.ExportRoot_CurrentVersion 'workbook-schema.xlsx'
 
+$Build ??= [ordered]@{ # auto 'show' certain files. nullish op lets you override defaults
+    AutoOpen = [ordered]@{
+        Loc = $false
+        Prefabs_Crusher = $false
+        WorkbookSchema           = $false
+        Biome_Objects            = $false
+        Biome_Objects_Expanded   = $false
+        Biome_Plants             = $false
+        TechTree_TechTree        = $false
+        TechTree_ResearchRecipes = $false
+    }
+}
 # $Paths.Game = [ordered]@{
 #     'ProgramData_Root' = Join-Path 'C:\Program Files (x86)\Steam\steamapps\common\Microtopia' 'Microtopia_Data'
 # }
@@ -97,7 +109,7 @@ md.Export.WorkbookSchema
 md.Export.WorkbookSchema.Xlsx -Paths $Paths -Verbose
 md.Export.Readme.FileListing -Path $Paths.ExportRoot_CurrentVersion
 
-
+1
 return
 
 # $pkg = Open-ExcelPackage -Path $Paths.Xlsx_Prefabs

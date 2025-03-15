@@ -298,7 +298,7 @@ function md.Export.WorkbookSchema.Xlsx {
         AutoSize      = $true
         TableName     = 'Schema_data'
         TableStyle    = 'Light5'
-        # Show          = $true
+        Show          = $Build.AutoOpen.WorkBookSchema ?? $false
         Title         = 'Summary of xlsx schemas by file'
     }
 
@@ -576,7 +576,7 @@ function md.Export.Biome.Biome_Objects {
     $exportExcel_Splat = @{
         InputObject   = @( $rows )
         Path          = $Paths.Xlsx_Biome
-        Show          = $false
+        Show          = $Build.AutoOpen.Biome_Objects ?? $false
         WorksheetName = 'Biome_Objects'
         TableName     = 'Biome_Objects_Data'
         TableStyle    = 'Light5'
@@ -630,7 +630,7 @@ function md.Export.Biome.Biome_Objects {
         $exportExcel_Splat = @{
             InputObject   = @( $forJson )
             Path          = $Paths.Xlsx_Biome
-            Show          = $false
+            Show          = $Build.AutoOpen.Biome_Objects_Expanded ?? $false
             WorksheetName = 'Biome_Objects_Expanded'
             TableName     = 'Biome_Objects_Expanded_Data'
             TableStyle    = 'Light5'
@@ -684,7 +684,7 @@ function md.Export.Biome.Plants {
     $exportExcel_Splat = @{
         InputObject   = @( $rows )
         Path          = $Paths.Xlsx_Biome
-        Show          = $false
+        Show          = $Build.AutoOpen.Biome_Plants ?? $false
         WorksheetName = 'Plants'
         TableName     = 'Plants_Data'
         TableStyle    = 'Light5'
@@ -816,7 +816,7 @@ function md.Export.TechTree.TechTree {
     $exportExcel_Splat = @{
         InputObject   = @( $rows )
         Path          = $Paths.Xlsx_TechTree
-        # Show          = $true
+        Show          = $Build.AutoOpen.TechTree_TechTree ?? $false
         WorksheetName = 'TechTree'
         TableName     = 'TechTree_Data'
         TableStyle    = 'Light5'
@@ -838,7 +838,7 @@ function md.Export.TechTree.TechTree {
             $rows2
         )
         Path          = $Paths.Xlsx_TechTree
-        # Show          = $true
+        Show          = $Build.AutoOpen.TechTree_ResearchRecipes ?? $false
         WorksheetName = 'ResearchRecipes'
         TableName     = 'ResearchRecipes_Data'
         TableStyle    = 'Light5'
@@ -935,7 +935,7 @@ function md.Export.Loc {
     $exportExcel_Splat = @{
         InputObject   = @( $rows )
         Path          = $Paths.Xlsx_Loc
-        # Show          = $true
+        Show          = $Build.AutoOpen.Loc ?? $false
         WorksheetName = 'UI'
         TableName     = 'UI_Data'
         TableStyle    = 'Light5'
@@ -991,6 +991,7 @@ function md.Export.Loc {
         )
         Path          = $Paths.Xlsx_Loc
         # Show          = $true
+        Show          = $Build.AutoOpen.Loc ?? $false
         WorksheetName = 'ResearchRecipes'
         TableName     = 'ResearchRecipes_Data'
         TableStyle    = 'Light5'
@@ -1109,7 +1110,7 @@ function md.Export.Prefabs.Crusher {
     $exportExcel_Splat = @{
         InputObject   = @( $rows )
         Path          = $Paths.Xlsx_Prefabs
-        Show          = $true
+        Show          = $Build.AutoOpen.Prefabs_Crusher ?? $false
         WorksheetName = 'CrusherOutput'
         TableName     = 'CrusherOutput_data'
         TableStyle    = 'Light5'
