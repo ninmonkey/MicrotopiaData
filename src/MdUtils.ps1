@@ -35,14 +35,20 @@ function md.CopyObject {
     )
 
     $props = [ordered]@{}
-    $fromProps = if( $AsAlpha ) {
-        $InputObject.PSObject.Properties | Sort-Object Name
+    if($true) {
+        foreach( $curProp in $InputObject.PsObject.Properties) {
+            $props[ $curProp.Name ] = $curProp.Value
+        }
     } else {
-        $InputObject.PSObject.Properties
-    }
+        $fromProps = if( $AsAlpha ) {
+            $InputObject.PSObject.Properties | Sort-Object Name
+        } else {
+            $InputObject.PSObject.Properties
+        }
 
-    foreach( $prop in $fromProps) {
-        $props[ $prop.Name ] = $prop.Value
+        foreach( $curProp in $fromProps) {
+            $props[ $curProp.Name ] = $curProp.Value
+        }
     }
 
     [pscustomobject]$props
@@ -469,7 +475,7 @@ function md.Convert.RenameKeyName {
 function _Convert.ExpandSingleProperty {
     param(
         $InputObject,
-        [string] $Property
+        [string] $expandProperty
     )
     if( $InputObject.$expandProp.count -gt 0) {
         $InputObject.$expandProp | %{
@@ -483,6 +489,71 @@ function _Convert.ExpandSingleProperty {
     }
 }
 
+<#
+$origObject = $record
+@( foreach($inner in $record.exchange_types ) {
+    $obj = md.CopyObject -InputObject $origObject
+    $obj.exchange_types = $inner
+    $obj
+ }) |Ft
+ #>
+function md.Table.ExpandListColumn {
+    <#
+    .SYNOPSIS
+        For a row that contains a nested list, convert that one record into one for every value. ( expands dimensions ). Preserves the column name.
+    #>
+    [CmdletBinding()]
+    param(
+        # object/row to expand
+        [Parameter(Mandatory, ValueFromPipeline)]
+        $InputObject,
+
+        [Alias('Name')]
+        [Parameter(Mandatory)]
+        [string] $PropertyName
+    )
+    process {
+        write-warning 'invalid implement'
+        $origObject = $InputObject
+        <#
+        if($true) {
+            "For '$PropertyName'" | write-host -fg 'gray80' -bg 'skyblue'
+            $null -eq $InputObject.$PropertyName
+                | Join-String -f 'prop is true null?'
+                | write-host -fg 'magenta'
+
+            $InputObject.$PropertyName.count -eq 0
+                | Join-String -f 'prop count is 0?'
+                | write-host -fg 'magenta'
+
+                ( $new = md.CopyObject -InputObject $record  )
+md.Table.ExpandListColumn -InputObject $new -PropertyName 'exchange_types'
+        #>
+
+
+        #
+        # try {
+            # write-warning 'Getting a SyncRoot for $obj instead of clone (or that''s a debugger state)'
+            foreach($CurrentChild in $record.$PropertyName ) {
+                $obj = md.CopyObject -InputObject $origObject
+                if ( $Obj.Psobject.Properties.Name -contains $PropertyName ) {
+                    # if( $currentChild -isnot [pscustomobject] ) {
+                        $obj.$PropertyName = $currentChild
+                    # }
+                } else {
+                    write-warning "Unexpected missing property: '${PropertyName}'"
+                    $x = 10
+                    # wait-debugger
+                }
+                $obj
+            }
+        # }catch {
+            # 'expandListFailed' | Write-host -fg 'orange'
+            # wait-debugger
+        # }
+    }
+
+}
 function md.Convert.ExpandProperty {
      <#
     .synopsis
@@ -552,6 +623,7 @@ function md.Export.Biome.Biome_Objects {
         | Join-String -f 'Enter: {0}' | Write-verbose
     # Section: Export item: biome/Biome_Objects
     # todo: refactor like 'md.Export.Changelog'
+    # return
 
     $pkg = Open-ExcelPackage -Path $Paths.Raw_Biome
     $book = $pkg.Workbook
@@ -607,6 +679,12 @@ function md.Export.Biome.Biome_Objects {
         }
     ) | Sort-Object @sort_splat
 
+    # $forJson = $forJson | %{
+    #     $record = $_
+    #     $record
+
+    # }
+
     $forJson
         | ConvertTo-Json -depth 9
         | Set-Content -path $Paths.Json_Biome_Objects # -Confirm
@@ -614,13 +692,39 @@ function md.Export.Biome.Biome_Objects {
     $Paths.Json_Biome_Objects | md.Log.WroteFile
 
     # also emit expanded records
+    # $forJson = @(
+    #     $forJson | %{
+    #         $record = $_
+    #         $record
+    #         # $expandProp = 'exchange_types'
+    #         # md.Convert.ExpandProperty $Record -Prop $expandProp
+    #         $record.'pickups'.count | Write-host -fg 'salmon' -bg 'gray60' -NoNewline
+    #         if($record.'pickups'.count ) {
+    #             'yes'
+    #         }
+
+    #     }
+    # )| Sort-Object @sort_splat
+
+
+    $startingCount = $forJson.count
     $forJson = @(
-        $Rows | %{
+        $forJson | %{
             $record = $_
-            # $expandProp = 'exchange_types'
-            # md.Convert.ExpandProperty $Record -Prop $expandProp
+            $new = md.CopyObject -InputObject $record
+            $newRows = @( md.Table.ExpandListColumn -ea 'break' -InputObject $new -PropertyName 'exchange_types' )
+            $newRows = @( md.Table.ExpandListColumn -ea 'break' -InputObject $newRows -PropertyName 'pickups' )
+            $newRows
         }
-    )| Sort-Object @sort_splat
+    )
+
+    "Count was: $startingCount, now: $( $forJson.count )"
+        | Write-verbose
+        # | Write-Host -fg 'gray60' -bg 'skyblue'
+
+
+
+
     write-warning 'todo: auto expand all properties dynamically: exchange_types, pickups, etc...'
 
     $forJson
@@ -629,20 +733,21 @@ function md.Export.Biome.Biome_Objects {
 
     $Paths.json_Biome_Objects_Expanded | md.Log.WroteFile
 
-    if( $false ) { <# test coercion from json to sheet #>
-        $exportExcel_Splat = @{
-            InputObject   = @( $forJson )
-            Path          = $Paths.Xlsx_Biome
-            Show          = $Build.AutoOpen.Biome_Objects_Expanded ?? $false
-            WorksheetName = 'Biome_Objects_Expanded'
-            TableName     = 'Biome_Objects_Expanded_Data'
-            TableStyle    = 'Light5'
-            Title         = 'From Json'
-            AutoSize      = $True
-        }
 
-        Export-Excel @exportExcel_Splat
+    $exportExcel_Splat = @{
+        InputObject   = @( $forJson )
+        Path          = $Paths.Xlsx_Biome
+        Show          = $Build.AutoOpen.Biome_Objects_Expanded ?? $false
+        WorksheetName = 'Biome_Objects_Expanded'
+        TableName     = 'Biome_Objects_Expanded_Data'
+        TableStyle    = 'Light5'
+        Title         = 'From Json'
+        AutoSize      = $True
     }
+
+    Export-Excel @exportExcel_Splat
+
+    $Paths.Xlsx_Biome | md.Log.WroteFile
 
     Close-ExcelPackage -ExcelPackage $pkg -NoSave
 }

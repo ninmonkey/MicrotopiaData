@@ -65,7 +65,7 @@ $Build ??= [ordered]@{ # auto 'show' certain files. nullish op lets you override
         Prefabs_Crusher = $false
         WorkbookSchema           = $false
         Biome_Objects            = $false
-        Biome_Objects_Expanded   = $false
+        Biome_Objects_Expanded   = $true
         Biome_Plants             = $false
         TechTree_TechTree        = $false
         TechTree_ResearchRecipes = $false
@@ -83,7 +83,13 @@ $Build ??= [ordered]@{ # auto 'show' certain files. nullish op lets you override
 # never cache
 Remove-Item $Paths.Xlsx_Biome -ea 'Ignore'
 Clear-Content -path $Paths.Log -ea Ignore
-md.Export.Biome.Biome_Objects -Paths $Paths -Verbose
+
+if($false) {
+    md.Export.Biome.Plants -Paths $Paths -Verbose
+    md.Export.Biome.Biome_Objects -Paths $Paths -Verbose
+} else {
+    'Skipping some exports..'
+}
 md.Export.Biome.Plants -Paths $Paths -Verbose
 # <nyi>: md.Export.Instinct -Paths $Paths -Verbose
 
@@ -91,25 +97,27 @@ $Paths.Log
     | Join-String -f 'See log for a list of changed files: "{0}"'
     | Write-Host -fg 'skyblue'
 
-md.Export.Changelog -Verbose -Path $Paths
+if( $false ) {
+    md.Export.Changelog -Verbose -Path $Paths
 
-Remove-Item $Paths.Xlsx_TechTree -ea 'Ignore'
-md.Export.TechTree.TechTree -Paths $Paths -Verbose
+    Remove-Item $Paths.Xlsx_TechTree -ea 'Ignore'
+    md.Export.TechTree.TechTree -Paths $Paths -Verbose
 
-md.Export.Loc -Paths $Paths -Verbose
+    md.Export.Loc -Paths $Paths -Verbose
 
-md.Export.Prefabs.Crusher -Paths $Paths -Verbose
+    md.Export.Prefabs.Crusher -Paths $Paths -Verbose
+
+    # final exports. Ran last to iterate all new exports
+    md.Export.WorkbookSchema
+    md.Export.WorkbookSchema.Xlsx -Paths $Paths -Verbose
+    md.Export.Readme.FileListing -Path $Paths.ExportRoot_CurrentVersion
+}
 
 
 
 
 
-# final exports. Ran last to iterate all new exports
-md.Export.WorkbookSchema
-md.Export.WorkbookSchema.Xlsx -Paths $Paths -Verbose
-md.Export.Readme.FileListing -Path $Paths.ExportRoot_CurrentVersion
-
-1
+'Done' | Write-Host -fg 'darkblue'
 return
 
 # $pkg = Open-ExcelPackage -Path $Paths.Xlsx_Prefabs

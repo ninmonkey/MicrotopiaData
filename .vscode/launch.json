@@ -12,10 +12,17 @@
             "cwd": "${cwd}"
         },
         {
-            "name": "run ExportData.ps1",
+            "name": "📌 run ExportData.ps1",
             "type": "PowerShell",
             "request": "launch",
             "script": "${workspaceFolder}/src/ExportData.ps1",
+            "args": []
+        },
+        {
+            "name": "📌 run Scratch.ps1",
+            "type": "PowerShell",
+            "request": "launch",
+            "script": "${workspaceFolder}/src/Scratch.ps1",
             "args": []
         },
 
