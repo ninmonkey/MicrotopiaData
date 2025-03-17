@@ -24,6 +24,8 @@ function md.CopyObject {
     <#
     .SYNOPSIS
         Create a copy of an object, ensuring it's not a reference
+    .LINK
+        md.Convert.KeyNames
     #>
     [CmdletBinding()]
     param(
@@ -33,6 +35,8 @@ function md.CopyObject {
         # Alpha sort? else first come
         [switch] $AsAlpha
     )
+
+    # todo: refactor using the same key sorting behavior as md.Convert.KeyNames
 
     $props = [ordered]@{}
     if($true) {
@@ -423,27 +427,47 @@ function md.Convert.BlankPropsToEmpty {
 function md.Convert.KeyNames {
      <#
     .synopsis
-        partially sanitize names, making it more json-ic
+        partially sanitize names, making it more json-ic. optionally re-order the names
     .NOTES
-        future: [1] coerce casing. Maybe [TextInfo.ToTitleCase] [2] tolower
     #>
     [CmdletBinding()]
     param(
         [Parameter(ValueFromPipeline)]
         [object] $InputObject,
 
-        # A list of columns to start with
+        # A list of columns to start with. these are moved to the front. the rest are alpha sorted
         [string[]] $StartWith
     )
 
     process {
         $newObj = [ordered]@{}
 
-        $InputObject.PSObject.Properties  | % {
-              $newName         = $_.Name -replace '[ ]+', '_'
-              $newName         = $newName.toLower()
-              $newObj.$newName = $_.Value
+        [List[Object]] $allNames = $InputObject.PSObject.Properties.Name | Sort-Object
+        [List[Object]] $sortedNames = @()
+        foreach( $curStart in $StartWith ) {
+            if( $allNames.IndexOf( $curStart ) -ne -1 ) {
+                $sortedNames.Add( $curStart )
+                $allNames.remove( $curStart )
+            }
         }
+        $sortedNames.AddRange( $allnames )
+
+
+
+        $sortedNames |  %{
+            $curName = $_
+            $record = $InputObject.psobject.properties[ $curName ]
+            $newName         = $record.Name -replace '[ ]+', '_'
+            $newName         = $newName.toLower()
+            $newObj.$newName = $record.Value
+        }
+        # $InputObject.PSObject.Properties  | % {
+        # }
+        # $InputObject.PSObject.Properties  | % {
+        #       $newName         = $_.Name -replace '[ ]+', '_'
+        #       $newName         = $newName.toLower()
+        #       $newObj.$newName = $_.Value
+        # }
         [pscustomobject]$newObj
     }
 }
@@ -725,7 +749,7 @@ function md.Export.Biome.Biome_Objects {
                 | md.Table.ExpandListColumn -PropertyName 'exchange_types'
                 | md.Table.ExpandListColumn -PropertyName 'pickups'
                 # | Json # | jq -C
-            $newRows
+            # $newRows
             # $new = md.CopyObject -InputObject $record
             # $newRows = @( md.Table.ExpandListColumn <# -ea 'break' #> -InputObject $new -PropertyName 'exchange_types' )
             # $newRows = @( md.Table.ExpandListColumn <# -ea 'break' #> -InputObject $newRows -PropertyName 'pickups' )
@@ -737,7 +761,7 @@ function md.Export.Biome.Biome_Objects {
     write-warning 'todo: auto expand all properties dynamically: exchange_types, pickups, etc...'
 
     $forJson
-        | ? -not { $null -eq $_ } # Somewhere nulls sometimes emit
+        # | ? -not { $null -eq $_ } # Somewhere nulls sometimes emit
         | ConvertTo-Json -depth 9
         | Set-Content -path $Paths.json_Biome_Objects_Expanded # -Confirm
 
@@ -932,7 +956,9 @@ function md.Export.TechTree.TechTree {
 
 
     $exportExcel_Splat = @{
-        InputObject   = @( $rows )
+        InputObject   = @(
+            $rows
+        )
         Path          = $Paths.Xlsx_TechTree
         Show          = $Build.AutoOpen.TechTree_TechTree ?? $false
         WorksheetName = 'TechTree'
