@@ -73,14 +73,14 @@ $Build ??= [ordered]@{ # auto 'show' certain files. nullish op lets you override
         WorkbookSchema           = $false
     }
     Export = [ordered]@{
-        Biome_Objects            = $false
-        Biome_Objects_Expanded   = $false
-        Biome_Plants             = $false
-        Loc                      = $false
-        Prefabs_Crusher          = $false
+        Biome_Objects            = $true
+        Biome_Objects_Expanded   = $true
+        Biome_Plants             = $true
+        Loc                      = $true
+        Prefabs_Crusher          = $true
         TechTree_ResearchRecipes = $true
         TechTree_TechTree        = $true
-        WorkbookSchema           = $false
+        WorkbookSchema           = $true
 
     }
 }
