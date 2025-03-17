@@ -975,7 +975,7 @@ function md.Export.TechTree.TechTree {
             $rows
         )
         Path          = $Paths.Xlsx_TechTree
-        Show          = $Build.AutoOpen.TechTree_TechTree ?? $false
+        Show          = $false # moved to end
         WorksheetName = 'TechTree'
         TableName     = 'TechTree_Data'
         TableStyle    = 'Light5'
@@ -984,38 +984,16 @@ function md.Export.TechTree.TechTree {
 
     Export-Excel @exportExcel_Splat
 
-
-    $importExcel_Splat = @{
-        ExcelPackage  = $pkg
-        WorksheetName = 'Research Recipes'
-
-    }
-    $rows2 =  Import-Excel @importExcel_Splat
-
-    $exportExcel_Splat = @{
-        InputObject   = @(
-            $rows2
-        )
-        Path          = $Paths.Xlsx_TechTree
-        Show          = $false # $Build.AutoOpen.TechTree_ResearchRecipes ?? $false
-        WorksheetName = 'ResearchRecipes'
-        TableName     = 'ResearchRecipes_Data'
-        TableStyle    = 'Light5'
-        AutoSize      = $True
-    }
-
-    Export-Excel @exportExcel_Splat
-
-    # json specific transforms
+     # json specific transforms
     $sort_splat = @{
-        Property = 'code'
+        Property = 'tier', 'group', 'code'
     }
 
     $forJson = @(
         $Rows | %{
             $record = $_
             $record = md.Convert.BlankPropsToEmpty $Record
-            $record = md.Convert.KeyNames $Record -StartWith 'Group', 'Tier', 'Order'
+            $record = md.Convert.KeyNames $Record -StartWith 'Tier', 'Group', 'Order'
             # coerce blankables into empty strings for json
             # $record.'pickups'             = md.Parse.IngredientsFromCsv $record.'pickups'
             # $record.'exchange_types'      = md.Parse.ItemsFromList $record.'exchange_types'
@@ -1028,40 +1006,69 @@ function md.Export.TechTree.TechTree {
 
     $forJson
         | ConvertTo-Json -depth 9
-        | Set-Content -path $Paths.json_TechTree_ResearchRecipes # -Confirm
+        | Set-Content -path $Paths.json_TechTree_TechTree # -Confirm
 
-    $Paths.json_TechTree_ResearchRecipes | md.Log.WroteFile
+    $Paths.json_TechTree_TechTree | md.Log.WroteFile
 
     $forJson = @(
         $forJson | %{
 
-            $record = $_1
+            $record = $_
             $record = md.Convert.BlankPropsToEmpty $Record
-            $record = md.Convert.KeyNames $Record # -StartWith 'Group', 'Tier', 'Order'
+            # $record = md.Convert.KeyNames $Record -StartWith 'cost', 'Order'
+            # $record
+            #     | md.Table.ExpandListColumn -PropertyName 'cost'
+            #     | md.Table.ExpandListColumn -PropertyName 'unlock_buildings'
             $record
-                | md.Table.ExpandListColumn -PropertyName 'unlock_recipes'
-                | md.Table.ExpandListColumn -PropertyName 'unlock_buildings'
         }
     )
-        | ConvertTo-Json -depth 9
-        | Set-Content -path $Paths.json_TechTree_ResearchRecipes_Expanded # -Confirm
 
-    $Paths.json_TechTree_ResearchRecipes_Expanded | md.Log.WroteFile
+    $forJson
+        | ConvertTo-Json -depth 9
+        | Set-Content -path $Paths.json_TechTree_TechTree_Expanded # -Confirm
+
+    $Paths.json_TechTree_TechTree_Expanded | md.Log.WroteFile
 
     $exportExcel_Splat = @{
         InputObject   = @( $forJson )
         Path          = $Paths.Xlsx_TechTree
-        Show          = $Build.AutoOpen.TechTree_ResearchRecipes ?? $false
-        WorksheetName = 'ResearchRecipes_Expanded'
-        TableName     = 'ResearchRecipes_Expanded_Data'
+        Show          = $false # moved to end
+        WorksheetName = 'TechTree_Expanded'
+        TableName     = 'TechTree_Expanded_Data'
         TableStyle    = 'Light5'
-        Title         = 'ResearchRecipes with columns expanded as multiple rows'
-        AutoSize      = $True
+        Title         = 'TechTree with columns expanded as multiple rows'
+        AutoSize      = $true
     }
 
     Export-Excel @exportExcel_Splat
 
     $Paths.Xlsx_TechTree | md.Log.WroteFile
+
+    # section worksheet: TechTree.Research_Recipes
+    $importExcel_Splat = @{
+        ExcelPackage  = $pkg
+        WorksheetName = 'Research Recipes'
+
+    }
+    $rows2 =  Import-Excel @importExcel_Splat
+
+    $exportExcel_Splat = @{
+        InputObject   = @(
+            $rows2
+        )
+        Path          = $Paths.Xlsx_TechTree
+        Show          = $false # moved to end
+        WorksheetName = 'ResearchRecipes'
+        TableName     = 'ResearchRecipes_Data'
+        TableStyle    = 'Light5'
+        AutoSize      = $True
+    }
+
+    Export-Excel @exportExcel_Splat
+
+    if( $Build.AutoOpen.TechTree_TechTree -or $Build.AutoOpen.TechTree_ResearchRecipes ) {
+        Get-Item $Paths.Xlsx_TechTree | Invoke-Item
+    }
 
     Close-ExcelPackage -ExcelPackage $pkg -NoSave
 }
