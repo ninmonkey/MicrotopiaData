@@ -411,12 +411,18 @@ function md.Convert.BlankPropsToEmpty {
     #>
     [CmdletBinding()]
     param(
+        [AllowNull()]
         [Parameter(ValueFromPipeline)]
         [object] $InputObject
     )
 
     process {
+        if($null -eq $InputObject ) { return }
+
         $InputObject.PSObject.Properties  | % {
+            if( $_.Name -eq '' ) {
+                write-error 'Property name was null?'
+            }
             if( [string]::IsNullOrWhiteSpace( $_.Value ) ) {
                 $InputObject.($_.Name) = ""
             }
@@ -432,6 +438,7 @@ function md.Convert.KeyNames {
     #>
     [CmdletBinding()]
     param(
+        [AllowNull()]
         [Parameter(ValueFromPipeline)]
         [object] $InputObject,
 
@@ -442,13 +449,21 @@ function md.Convert.KeyNames {
     process {
         $newObj = [ordered]@{}
 
-        [List[Object]] $allNames = $InputObject.PSObject.Properties.Name | Sort-Object
+        [List[Object]] $allNames = @( $InputObject.PSObject.Properties.Name | Sort-Object )
         [List[Object]] $sortedNames = @()
         foreach( $curStart in $StartWith ) {
             if( $allNames.IndexOf( $curStart ) -ne -1 ) {
                 $sortedNames.Add( $curStart )
                 $allNames.remove( $curStart )
             }
+        }
+        if( $null -eq $allNames ) {
+            write-warning 'should never reach'
+            $null = 10
+        }
+        if( $null -eq $InputObject ) {
+            write-error "Unhandled null input"
+            return
         }
         $sortedNames.AddRange( $allnames )
 
@@ -982,7 +997,7 @@ function md.Export.TechTree.TechTree {
             $rows2
         )
         Path          = $Paths.Xlsx_TechTree
-        Show          = $Build.AutoOpen.TechTree_ResearchRecipes ?? $false
+        Show          = $false # $Build.AutoOpen.TechTree_ResearchRecipes ?? $false
         WorksheetName = 'ResearchRecipes'
         TableName     = 'ResearchRecipes_Data'
         TableStyle    = 'Light5'
@@ -1019,7 +1034,10 @@ function md.Export.TechTree.TechTree {
 
     $forJson = @(
         $forJson | %{
-            $record = $_
+
+            $record = $_1
+            $record = md.Convert.BlankPropsToEmpty $Record
+            $record = md.Convert.KeyNames $Record # -StartWith 'Group', 'Tier', 'Order'
             $record
                 | md.Table.ExpandListColumn -PropertyName 'unlock_recipes'
                 | md.Table.ExpandListColumn -PropertyName 'unlock_buildings'
@@ -1029,6 +1047,21 @@ function md.Export.TechTree.TechTree {
         | Set-Content -path $Paths.json_TechTree_ResearchRecipes_Expanded # -Confirm
 
     $Paths.json_TechTree_ResearchRecipes_Expanded | md.Log.WroteFile
+
+    $exportExcel_Splat = @{
+        InputObject   = @( $forJson )
+        Path          = $Paths.Xlsx_TechTree
+        Show          = $Build.AutoOpen.TechTree_ResearchRecipes ?? $false
+        WorksheetName = 'ResearchRecipes_Expanded'
+        TableName     = 'ResearchRecipes_Expanded_Data'
+        TableStyle    = 'Light5'
+        Title         = 'ResearchRecipes with columns expanded as multiple rows'
+        AutoSize      = $True
+    }
+
+    Export-Excel @exportExcel_Splat
+
+    $Paths.Xlsx_TechTree | md.Log.WroteFile
 
     Close-ExcelPackage -ExcelPackage $pkg -NoSave
 }
