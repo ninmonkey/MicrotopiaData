@@ -513,7 +513,6 @@ function md.Table.ExpandListColumn {
         [string] $PropertyName
     )
     process {
-        write-warning 'invalid implement'
         $origObject = $InputObject
         <#
         if($true) {
@@ -706,28 +705,24 @@ function md.Export.Biome.Biome_Objects {
     #     }
     # )| Sort-Object @sort_splat
 
-
-    $startingCount = $forJson.count
     $forJson = @(
         $forJson | %{
             $record = $_
-            $new = md.CopyObject -InputObject $record
-            $newRows = @( md.Table.ExpandListColumn <# -ea 'break' #> -InputObject $new -PropertyName 'exchange_types' )
-            $newRows = @( md.Table.ExpandListColumn <# -ea 'break' #> -InputObject $newRows -PropertyName 'pickups' )
+            $record
+                | md.Table.ExpandListColumn -PropertyName 'exchange_types'
+                | md.Table.ExpandListColumn -PropertyName 'pickups'
+                # | Json # | jq -C
             $newRows
+            # $new = md.CopyObject -InputObject $record
+            # $newRows = @( md.Table.ExpandListColumn <# -ea 'break' #> -InputObject $new -PropertyName 'exchange_types' )
+            # $newRows = @( md.Table.ExpandListColumn <# -ea 'break' #> -InputObject $newRows -PropertyName 'pickups' )
         }
     )
-
-    "Count was: $startingCount, now: $( $forJson.count )"
-        | Write-verbose
-        # | Write-Host -fg 'gray60' -bg 'skyblue'
-
-
-
 
     write-warning 'todo: auto expand all properties dynamically: exchange_types, pickups, etc...'
 
     $forJson
+        | ? -not { $null -eq $_ } # Somewhere nulls sometimes emit
         | ConvertTo-Json -depth 9
         | Set-Content -path $Paths.json_Biome_Objects_Expanded # -Confirm
 
