@@ -712,8 +712,8 @@ function md.Export.Biome.Biome_Objects {
         $forJson | %{
             $record = $_
             $new = md.CopyObject -InputObject $record
-            $newRows = @( md.Table.ExpandListColumn -ea 'break' -InputObject $new -PropertyName 'exchange_types' )
-            $newRows = @( md.Table.ExpandListColumn -ea 'break' -InputObject $newRows -PropertyName 'pickups' )
+            $newRows = @( md.Table.ExpandListColumn <# -ea 'break' #> -InputObject $new -PropertyName 'exchange_types' )
+            $newRows = @( md.Table.ExpandListColumn <# -ea 'break' #> -InputObject $newRows -PropertyName 'pickups' )
             $newRows
         }
     )

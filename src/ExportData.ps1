@@ -30,7 +30,7 @@ $Paths.Raw_Biome  = md.GetRawPath $Paths.Xlsx_Biome
 $Paths.Xlsx_Prefabs = Join-Path $Paths.ExportRoot_CurrentVersion 'prefabs.xlsx'
 $Paths.Raw_Prefabs  = md.GetRawPath $Paths.Xlsx_Prefabs
 
-$Paths.Xlsx_Instinct = Join-Path $Paths.ExportRoot_CurrentVersion 'Instinct.xlsx'
+$Paths.Xlsx_Instinct = Join-Path $ Paths.ExportRoot_CurrentVersion 'Instinct.xlsx'
 $Paths.Raw_Instinct  = md.GetRawPath $Paths.Xlsx_Instinct
 
 $Paths.Xlsx_TechTree = Join-Path $Paths.ExportRoot_CurrentVersion 'techtree.xlsx'
@@ -61,14 +61,25 @@ $Paths.xlsx_WorkbookSchema           = Join-Path $Paths.ExportRoot_CurrentVersio
 
 $Build ??= [ordered]@{ # auto 'show' certain files. nullish op lets you override defaults
     AutoOpen = [ordered]@{
-        Loc = $false
-        Prefabs_Crusher = $false
-        WorkbookSchema           = $false
         Biome_Objects            = $false
         Biome_Objects_Expanded   = $true
         Biome_Plants             = $false
-        TechTree_TechTree        = $false
+        Loc                      = $false
+        Prefabs_Crusher          = $false
         TechTree_ResearchRecipes = $false
+        TechTree_TechTree        = $false
+        WorkbookSchema           = $false
+    }
+    Export = [ordered]@{
+        Biome_Objects            = $true
+        Biome_Objects_Expanded   = $true
+        Biome_Plants             = $true
+        Loc                      = $true
+        Prefabs_Crusher          = $true
+        TechTree_ResearchRecipes = $true
+        TechTree_TechTree        = $true
+        WorkbookSchema           = $true
+
     }
 }
 # $Paths.Game = [ordered]@{
@@ -79,43 +90,41 @@ $Build ??= [ordered]@{ # auto 'show' certain files. nullish op lets you override
 #>
 'export schemas for all *.xlsx' | Write-Host -fg 'gray60'
 
-
 # never cache
 Remove-Item $Paths.Xlsx_Biome -ea 'Ignore'
 Clear-Content -path $Paths.Log -ea Ignore
 
-if($false) {
-    md.Export.Biome.Plants -Paths $Paths -Verbose
-    md.Export.Biome.Biome_Objects -Paths $Paths -Verbose
-} else {
-    'Skipping some exports..'
-}
-md.Export.Biome.Plants -Paths $Paths -Verbose
 # <nyi>: md.Export.Instinct -Paths $Paths -Verbose
-
 $Paths.Log
     | Join-String -f 'See log for a list of changed files: "{0}"'
     | Write-Host -fg 'skyblue'
 
-if( $false ) {
-    md.Export.Changelog -Verbose -Path $Paths
-
+if( $Build.Export.Biome_Objects ) {
+    md.Export.Biome.Biome_Objects -Paths $Paths -Verbose
+}
+if( $Build.Export.Biome_Plants ) {
+    md.Export.Biome.Plants -Paths $Paths -Verbose
+}
+if( $Build.Export.Loc ) {
+    md.Export.Loc -Paths $Paths -Verbose
+}
+if($Build.Export.TechTree_TechTree) {
     Remove-Item $Paths.Xlsx_TechTree -ea 'Ignore'
     md.Export.TechTree.TechTree -Paths $Paths -Verbose
-
-    md.Export.Loc -Paths $Paths -Verbose
-
+}
+if($Build.Export.Changelog) {
+    md.Export.Changelog -Verbose -Path $Paths
+}
+if($Build.Export.Prefabs_Crusher) {
     md.Export.Prefabs.Crusher -Paths $Paths -Verbose
-
-    # final exports. Ran last to iterate all new exports
-    md.Export.WorkbookSchema
+}
+# final exports. Ran last to iterate all new exports
+if($Build.Export.WorkbookSchema) {
+    md.Export.WorkbookSchema -verbose # -Force #  -Paths $Paths -Verbose # -Force
     md.Export.WorkbookSchema.Xlsx -Paths $Paths -Verbose
-    md.Export.Readme.FileListing -Path $Paths.ExportRoot_CurrentVersion
 }
 
-
-
-
+md.Export.Readme.FileListing -Path $Paths.ExportRoot_CurrentVersion
 
 'Done' | Write-Host -fg 'darkblue'
 return
