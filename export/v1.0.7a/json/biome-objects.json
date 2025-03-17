@@ -19,7 +19,8 @@
     "hardness": "",
     "fruit": "ENERGY_POD2",
     "prefab": "Bottle Tree",
-    "pollution": ""
+    "pollution": "",
+    "order": 17
   },
   {
     "code": "CABLE_TREE",
@@ -41,7 +42,8 @@
     "hardness": "",
     "fruit": "ENERGY_POD2",
     "prefab": "Cable Tree",
-    "pollution": ""
+    "pollution": "",
+    "order": 6
   },
   {
     "code": "CIRCUITTREE",
@@ -66,7 +68,8 @@
     "hardness": "",
     "fruit": "",
     "prefab": "CircuitTree",
-    "pollution": ""
+    "pollution": "",
+    "order": 16
   },
   {
     "code": "CONCRETE_SCRAP_POLES",
@@ -87,7 +90,8 @@
     "hardness": 25.0,
     "fruit": "",
     "prefab": "ConcreteScrapPoles",
-    "pollution": ""
+    "pollution": "",
+    "order": 39
   },
   {
     "code": "SCRAP_POLES_FRUITPLANT",
@@ -109,7 +113,8 @@
     "hardness": 5.0,
     "fruit": "ENERGY_POD4",
     "prefab": "ConcreteScrapPoles Fruitplant",
-    "pollution": ""
+    "pollution": "",
+    "order": 22
   },
   {
     "code": "SCRAP_POLES_PLANT",
@@ -130,7 +135,8 @@
     "hardness": 5.0,
     "fruit": "ENERGY_POD4",
     "prefab": "ConcreteScrapPoles Plant",
-    "pollution": ""
+    "pollution": "",
+    "order": 21
   },
   {
     "code": "COPPER_DEPOSIT",
@@ -151,7 +157,8 @@
     "hardness": 10.0,
     "fruit": "",
     "prefab": "Copper Deposit",
-    "pollution": ""
+    "pollution": "",
+    "order": 40
   },
   {
     "code": "COPPER_PILE",
@@ -172,7 +179,8 @@
     "hardness": 1.0,
     "fruit": "",
     "prefab": "Copper Pile",
-    "pollution": ""
+    "pollution": "",
+    "order": 33
   },
   {
     "code": "DESERTGRASS",
@@ -186,7 +194,8 @@
     "hardness": "",
     "fruit": "",
     "prefab": "DesertGrass",
-    "pollution": ""
+    "pollution": "",
+    "order": 28
   },
   {
     "code": "FLOWER",
@@ -207,7 +216,8 @@
     "hardness": "",
     "fruit": "",
     "prefab": "Flower",
-    "pollution": ""
+    "pollution": "",
+    "order": 4
   },
   {
     "code": "GLASS_DEPOSIT",
@@ -228,7 +238,8 @@
     "hardness": 25.0,
     "fruit": "",
     "prefab": "Glass Deposit",
-    "pollution": ""
+    "pollution": "",
+    "order": 44
   },
   {
     "code": "GLASS_DEPOSIT_TOXIC",
@@ -249,7 +260,8 @@
     "hardness": 25.0,
     "fruit": "",
     "prefab": "Glass Deposit Toxic",
-    "pollution": ""
+    "pollution": "",
+    "order": 45
   },
   {
     "code": "GLASS_PILE",
@@ -270,7 +282,8 @@
     "hardness": 1.0,
     "fruit": "",
     "prefab": "Glass Pile",
-    "pollution": ""
+    "pollution": "",
+    "order": 34
   },
   {
     "code": "GOLD_DEPOSIT",
@@ -291,7 +304,8 @@
     "hardness": 10.0,
     "fruit": "",
     "prefab": "Gold Deposit",
-    "pollution": ""
+    "pollution": "",
+    "order": 48
   },
   {
     "code": "GOLD_DEPOSIT_CONCRETE",
@@ -340,7 +354,8 @@
     "hardness": 50.0,
     "fruit": "",
     "prefab": "Gold Deposit ConcreteBiome",
-    "pollution": ""
+    "pollution": "",
+    "order": 49
   },
   {
     "code": "GOLD_PILE",
@@ -361,7 +376,8 @@
     "hardness": 1.0,
     "fruit": "",
     "prefab": "Gold Pile",
-    "pollution": ""
+    "pollution": "",
+    "order": 35
   },
   {
     "code": "GRASS",
@@ -375,7 +391,8 @@
     "hardness": "",
     "fruit": "",
     "prefab": "Grass",
-    "pollution": ""
+    "pollution": "",
+    "order": 23
   },
   {
     "code": "HALM",
@@ -396,7 +413,8 @@
     "hardness": "",
     "fruit": "",
     "prefab": "Halm",
-    "pollution": ""
+    "pollution": "",
+    "order": 3
   },
   {
     "code": "IRON_DEPOSIT",
@@ -417,7 +435,8 @@
     "hardness": 15.0,
     "fruit": "",
     "prefab": "Iron Deposit",
-    "pollution": ""
+    "pollution": "",
+    "order": 36
   },
   {
     "code": "IRON_DEPOSIT_SCRAPA",
@@ -438,7 +457,8 @@
     "hardness": 15.0,
     "fruit": "",
     "prefab": "Iron Deposit Scrapara",
-    "pollution": ""
+    "pollution": "",
+    "order": 37
   },
   {
     "code": "IRON_DEPOSIT_TOXIC",
@@ -459,7 +479,8 @@
     "hardness": 15.0,
     "fruit": "",
     "prefab": "Iron Deposit ToxicWaste",
-    "pollution": ""
+    "pollution": "",
+    "order": 38
   },
   {
     "code": "IRON_PILE",
@@ -480,7 +501,8 @@
     "hardness": 1.0,
     "fruit": "",
     "prefab": "Iron Pile",
-    "pollution": ""
+    "pollution": "",
+    "order": 32
   },
   {
     "code": "JUNGLE_CORRAL_TREE",
@@ -505,7 +527,8 @@
     "hardness": "",
     "fruit": "",
     "prefab": "JungleCorralTree",
-    "pollution": ""
+    "pollution": "",
+    "order": 12
   },
   {
     "code": "JUNGLE_CORRAL_TREE_STATIC",
@@ -530,7 +553,8 @@
     "hardness": "",
     "fruit": "",
     "prefab": "JungleCorralTree Static",
-    "pollution": ""
+    "pollution": "",
+    "order": 30
   },
   {
     "code": "JUNGLE_DEPOSIT",
@@ -563,7 +587,8 @@
     "hardness": 20.0,
     "fruit": "",
     "prefab": "Jungle Deposit",
-    "pollution": ""
+    "pollution": "",
+    "order": 47
   },
   {
     "code": "JUNGLE_GIANT_TREE",
@@ -584,7 +609,8 @@
     "hardness": "",
     "fruit": "",
     "prefab": "JungleGiantTree",
-    "pollution": ""
+    "pollution": "",
+    "order": 11
   },
   {
     "code": "JUNGLE_GIANT_TREE_STATIC",
@@ -605,7 +631,8 @@
     "hardness": "",
     "fruit": "",
     "prefab": "JungleGiantTree Static",
-    "pollution": ""
+    "pollution": "",
+    "order": 29
   },
   {
     "code": "JUNGLE_PLANT",
@@ -627,7 +654,8 @@
     "hardness": "",
     "fruit": "ENERGY_POD2",
     "prefab": "JunglePlant",
-    "pollution": ""
+    "pollution": "",
+    "order": 15
   },
   {
     "code": "JUNGLE_STRANGLE_TREE",
@@ -648,7 +676,8 @@
     "hardness": "",
     "fruit": "",
     "prefab": "JungleStrangleTree",
-    "pollution": ""
+    "pollution": "",
+    "order": 13
   },
   {
     "code": "JUNGLE_STRANGLE_TREE_STATIC",
@@ -669,7 +698,8 @@
     "hardness": "",
     "fruit": "",
     "prefab": "JungleStrangleTree Static",
-    "pollution": ""
+    "pollution": "",
+    "order": 31
   },
   {
     "code": "JUNGLE_WIRECUT_TREE",
@@ -690,7 +720,8 @@
     "hardness": "",
     "fruit": "",
     "prefab": "JungleWireCutTree",
-    "pollution": ""
+    "pollution": "",
+    "order": 14
   },
   {
     "code": "JUNGLEGRASS",
@@ -704,7 +735,8 @@
     "hardness": "",
     "fruit": "",
     "prefab": "JungleGrass",
-    "pollution": ""
+    "pollution": "",
+    "order": 27
   },
   {
     "code": "MOSS_CONCRETE",
@@ -718,7 +750,8 @@
     "hardness": "",
     "fruit": "",
     "prefab": "MossConcrete",
-    "pollution": ""
+    "pollution": "",
+    "order": 24
   },
   {
     "code": "MUSHROOM_TREE",
@@ -739,7 +772,8 @@
     "hardness": "",
     "fruit": "",
     "prefab": "Mushroom Tree",
-    "pollution": ""
+    "pollution": "",
+    "order": 19
   },
   {
     "code": "MUSHROOM_TREE_OLD",
@@ -755,7 +789,8 @@
     "hardness": "",
     "fruit": "",
     "prefab": "MushroomTree_Old",
-    "pollution": ""
+    "pollution": "",
+    "order": 20
   },
   {
     "code": "NIRNROOT",
@@ -771,7 +806,8 @@
     "hardness": "",
     "fruit": "",
     "prefab": "Nirnroot",
-    "pollution": ""
+    "pollution": "",
+    "order": 26
   },
   {
     "code": "PLUMBER_TREE",
@@ -792,7 +828,8 @@
     "hardness": "",
     "fruit": "",
     "prefab": "PlumberTree",
-    "pollution": ""
+    "pollution": "",
+    "order": 5
   },
   {
     "code": "CLAY_DEPOSIT",
@@ -813,7 +850,8 @@
     "hardness": 1.0,
     "fruit": "",
     "prefab": "Clay Deposit",
-    "pollution": ""
+    "pollution": "",
+    "order": 50
   },
   {
     "code": "GROUND_CABLE",
@@ -827,7 +865,8 @@
     "hardness": "",
     "fruit": "",
     "prefab": "GroundCable",
-    "pollution": ""
+    "pollution": "",
+    "order": 65
   },
   {
     "code": "HARDDISK_MOUNTAIN1",
@@ -841,7 +880,8 @@
     "hardness": "",
     "fruit": "",
     "prefab": "Harddisk Mountain 1",
-    "pollution": ""
+    "pollution": "",
+    "order": 63
   },
   {
     "code": "JERRYCAN_MOUNTAIN",
@@ -855,7 +895,8 @@
     "hardness": "",
     "fruit": "",
     "prefab": "Jerrycan Mountain",
-    "pollution": ""
+    "pollution": "",
+    "order": 62
   },
   {
     "code": "ROCK_MOUNTAIN",
@@ -871,7 +912,8 @@
     "hardness": "",
     "fruit": "",
     "prefab": "Mountain",
-    "pollution": ""
+    "pollution": "",
+    "order": 59
   },
   {
     "code": "ROCK_SLIDE_MULTI",
@@ -887,7 +929,8 @@
     "hardness": "",
     "fruit": "",
     "prefab": "Rock Slide Multi",
-    "pollution": ""
+    "pollution": "",
+    "order": 55
   },
   {
     "code": "ROUND_ROCK_1",
@@ -903,7 +946,8 @@
     "hardness": "",
     "fruit": "",
     "prefab": "Round Rock 1",
-    "pollution": ""
+    "pollution": "",
+    "order": 57
   },
   {
     "code": "ROUND_ROCK_2",
@@ -919,7 +963,8 @@
     "hardness": "",
     "fruit": "",
     "prefab": "Round Rock 2",
-    "pollution": ""
+    "pollution": "",
+    "order": 58
   },
   {
     "code": "ROUND_ROCK_FLAT",
@@ -935,7 +980,8 @@
     "hardness": "",
     "fruit": "",
     "prefab": "Round Rock Flat",
-    "pollution": ""
+    "pollution": "",
+    "order": 56
   },
   {
     "code": "TRASHBAG_MOUNTAIN",
@@ -949,7 +995,8 @@
     "hardness": "",
     "fruit": "",
     "prefab": "Trashbag Mountain",
-    "pollution": ""
+    "pollution": "",
+    "order": 64
   },
   {
     "code": "WIRE_MOUNTAIN",
@@ -965,7 +1012,8 @@
     "hardness": "",
     "fruit": "",
     "prefab": "Wire Mountain",
-    "pollution": ""
+    "pollution": "",
+    "order": 60
   },
   {
     "code": "WIRE_MOUNTAIN2",
@@ -981,7 +1029,8 @@
     "hardness": "",
     "fruit": "",
     "prefab": "Wire Mountain 2",
-    "pollution": ""
+    "pollution": "",
+    "order": 61
   },
   {
     "code": "RUBBLE_DEPOSIT_BLUE",
@@ -1002,7 +1051,8 @@
     "hardness": 30.0,
     "fruit": "",
     "prefab": "Rubble Deposit BlueBiome2",
-    "pollution": ""
+    "pollution": "",
+    "order": 41
   },
   {
     "code": "RUBBLE_DEPOSIT_SCRAPA",
@@ -1023,7 +1073,8 @@
     "hardness": 30.0,
     "fruit": "",
     "prefab": "Rubble Deposit ScraparaBiome",
-    "pollution": ""
+    "pollution": "",
+    "order": 42
   },
   {
     "code": "RUBBLE_DEPOSIT_CONCRETE",
@@ -1044,7 +1095,8 @@
     "hardness": 30.0,
     "fruit": "",
     "prefab": "Rubble Deposit ConcreteBiome",
-    "pollution": ""
+    "pollution": "",
+    "order": 43
   },
   {
     "code": "RUBBLE_DEPOSIT_CONCRETE1",
@@ -1065,7 +1117,8 @@
     "hardness": 30.0,
     "fruit": "",
     "prefab": "Rubble Deposit ConcreteBiome1",
-    "pollution": ""
+    "pollution": "",
+    "order": 51
   },
   {
     "code": "RUBBLE_DEPOSIT_CONCRETE2",
@@ -1086,7 +1139,8 @@
     "hardness": 30.0,
     "fruit": "",
     "prefab": "Rubble Deposit ConcreteBiome2",
-    "pollution": ""
+    "pollution": "",
+    "order": 52
   },
   {
     "code": "RUBBLE_DEPOSIT_CONCRETE3",
@@ -1107,7 +1161,8 @@
     "hardness": 30.0,
     "fruit": "",
     "prefab": "Rubble Deposit ConcreteBiome3",
-    "pollution": ""
+    "pollution": "",
+    "order": 53
   },
   {
     "code": "RUBBLE_DEPOSIT_CONCRETE4",
@@ -1128,7 +1183,8 @@
     "hardness": 30.0,
     "fruit": "",
     "prefab": "Rubble Deposit ConcreteBiome4",
-    "pollution": ""
+    "pollution": "",
+    "order": 54
   },
   {
     "code": "SCRAPARA_CACTUS",
@@ -1150,7 +1206,8 @@
     "hardness": "",
     "fruit": "ENERGY_POD",
     "prefab": "Scrapara Cactus",
-    "pollution": ""
+    "pollution": "",
+    "order": 1
   },
   {
     "code": "SPIKE_TREE",
@@ -1172,7 +1229,8 @@
     "hardness": "",
     "fruit": "ENERGY_POD",
     "prefab": "Spike Tree",
-    "pollution": ""
+    "pollution": "",
+    "order": 0
   },
   {
     "code": "TOXIC_BOTTOM_GROWER",
@@ -1186,7 +1244,8 @@
     "hardness": "",
     "fruit": "",
     "prefab": "ToxicBottomGrower",
-    "pollution": ""
+    "pollution": "",
+    "order": 25
   },
   {
     "code": "TOXIC_WASTE",
@@ -1207,7 +1266,8 @@
     "hardness": 40.0,
     "fruit": "",
     "prefab": "ToxicWaste",
-    "pollution": ""
+    "pollution": "",
+    "order": 46
   },
   {
     "code": "TOXIC_WASTE_BLUBBER",
@@ -1228,7 +1288,8 @@
     "hardness": 1.0,
     "fruit": "",
     "prefab": "ToxicWaste Blubber",
-    "pollution": ""
+    "pollution": "",
+    "order": 18
   },
   {
     "code": "WIRE_TREE",
@@ -1250,7 +1311,8 @@
     "hardness": "",
     "fruit": "ENERGY_POD",
     "prefab": "Wire Tree",
-    "pollution": ""
+    "pollution": "",
+    "order": 7
   },
   {
     "code": "WIRE_TREE_NO_FRUIT",
@@ -1272,7 +1334,8 @@
     "hardness": "",
     "fruit": "",
     "prefab": "Wire Tree No Fruit",
-    "pollution": ""
+    "pollution": "",
+    "order": 10
   },
   {
     "code": "WIRE_TREE1",
@@ -1294,7 +1357,8 @@
     "hardness": "",
     "fruit": "ENERGY_POD",
     "prefab": "Wire Tree",
-    "pollution": ""
+    "pollution": "",
+    "order": 8
   },
   {
     "code": "WIRE_TREE2",
@@ -1316,7 +1380,8 @@
     "hardness": "",
     "fruit": "ENERGY_POD",
     "prefab": "Wire Tree",
-    "pollution": ""
+    "pollution": "",
+    "order": 9
   },
   {
     "code": "WORM_TREE",
@@ -1337,6 +1402,7 @@
     "hardness": "",
     "fruit": "",
     "prefab": "Worm Tree",
-    "pollution": ""
+    "pollution": "",
+    "order": 2
   }
 ]

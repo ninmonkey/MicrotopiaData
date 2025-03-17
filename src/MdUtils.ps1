@@ -513,6 +513,7 @@ function md.Table.ExpandListColumn {
         [string] $PropertyName
     )
     process {
+        if($null -eq $InputObject) { return }
         $origObject = $InputObject
         <#
         if($true) {
@@ -640,12 +641,19 @@ function md.Export.Biome.Biome_Objects {
     }
     $rows =  Import-Excel @importExcel_Splat
     # skip empty and non-data rows
+    $curOrder = 0
     $rows = @(
         $rows
             | ? { -not [string]::IsNullOrWhiteSpace( $_.CODE ) }
             | ? { $_.CODE -notmatch '^\s*//' }
             | ? { $_.CODE -notmatch '^\s*\?+\s*$' } # skip "???"
-    )
+            | %{
+                $_.PSObject.Properties.Add( [psnoteproperty]::new(
+                    'Order', ($curOrder++)
+                ), $true )
+                $_
+            }
+    ) | Sort-Object 'code', 'title', 'order'
 
     $exportExcel_Splat = @{
         InputObject   = @( $rows )
@@ -674,6 +682,7 @@ function md.Export.Biome.Biome_Objects {
             $record.'exchange_types'      = md.Parse.ItemsFromList $record.'exchange_types'
             $record.'unclickable'         = md.Parse.Checkbox $record.'unclickable'
             $record.'trails_pass_through' = md.Parse.Checkbox $record.'trails_pass_through'
+
             $record
         }
     ) | Sort-Object @sort_splat
@@ -718,6 +727,8 @@ function md.Export.Biome.Biome_Objects {
             # $newRows = @( md.Table.ExpandListColumn <# -ea 'break' #> -InputObject $newRows -PropertyName 'pickups' )
         }
     )
+    # ensure nulls are not emitted
+    $forJson = @( $forJson | ? { $null -ne $_ })
 
     write-warning 'todo: auto expand all properties dynamically: exchange_types, pickups, etc...'
 
