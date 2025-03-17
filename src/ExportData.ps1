@@ -54,6 +54,7 @@ $Paths.json_Biome_Plants_ColumnDesc  = Join-Path $Paths.ExportRoot_CurrentVersio
 $Paths.json_Loc_UI                   = Join-Path $Paths.ExportRoot_CurrentVersion 'json/loc-ui.json'
 $Paths.json_Loc_Objects                   = Join-Path $Paths.ExportRoot_CurrentVersion 'json/loc-objects.json'
 $Paths.json_TechTree_ResearchRecipes = Join-Path $Paths.ExportRoot_CurrentVersion 'json/techtree-researchrecipes.json'
+$Paths.json_TechTree_ResearchRecipes_Expanded = Join-Path $Paths.ExportRoot_CurrentVersion 'json/techtree-researchrecipes-expanded.json'
 $Paths.json_TechTree_TechTree        = Join-Path $Paths.ExportRoot_CurrentVersion 'json/techtree-techtree.json'
 
 $Paths.json_WorkbookSchema           = Join-Path $Paths.ExportRoot_CurrentVersion 'json/workbook-schema.json'

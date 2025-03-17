@@ -1017,6 +1017,19 @@ function md.Export.TechTree.TechTree {
 
     $Paths.json_TechTree_ResearchRecipes | md.Log.WroteFile
 
+    $forJson = @(
+        $forJson | %{
+            $record = $_
+            $record
+                | md.Table.ExpandListColumn -PropertyName 'unlock_recipes'
+                | md.Table.ExpandListColumn -PropertyName 'unlock_buildings'
+        }
+    )
+        | ConvertTo-Json -depth 9
+        | Set-Content -path $Paths.json_TechTree_ResearchRecipes_Expanded # -Confirm
+
+    $Paths.json_TechTree_ResearchRecipes_Expanded | md.Log.WroteFile
+
     Close-ExcelPackage -ExcelPackage $pkg -NoSave
 }
 
