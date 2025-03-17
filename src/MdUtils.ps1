@@ -430,11 +430,15 @@ function md.Convert.KeyNames {
     [CmdletBinding()]
     param(
         [Parameter(ValueFromPipeline)]
-        [object] $InputObject
+        [object] $InputObject,
+
+        # A list of columns to start with
+        [string[]] $StartWith
     )
 
     process {
         $newObj = [ordered]@{}
+
         $InputObject.PSObject.Properties  | % {
               $newName         = $_.Name -replace '[ ]+', '_'
               $newName         = $newName.toLower()
@@ -747,7 +751,7 @@ function md.Export.Biome.Biome_Objects {
         WorksheetName = 'Biome_Objects_Expanded'
         TableName     = 'Biome_Objects_Expanded_Data'
         TableStyle    = 'Light5'
-        Title         = 'From Json'
+        Title         = 'Biome_Objects with columns expanded as multiple rows'
         AutoSize      = $True
     }
 
@@ -970,7 +974,7 @@ function md.Export.TechTree.TechTree {
         $Rows | %{
             $record = $_
             $record = md.Convert.BlankPropsToEmpty $Record
-            $record = md.Convert.KeyNames $Record
+            $record = md.Convert.KeyNames $Record -StartWith 'Group', 'Tier', 'Order'
             # coerce blankables into empty strings for json
             # $record.'pickups'             = md.Parse.IngredientsFromCsv $record.'pickups'
             # $record.'exchange_types'      = md.Parse.ItemsFromList $record.'exchange_types'

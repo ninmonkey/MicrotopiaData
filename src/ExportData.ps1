@@ -59,26 +59,27 @@ $Paths.json_TechTree_TechTree        = Join-Path $Paths.ExportRoot_CurrentVersio
 $Paths.json_WorkbookSchema           = Join-Path $Paths.ExportRoot_CurrentVersion 'json/workbook-schema.json'
 $Paths.xlsx_WorkbookSchema           = Join-Path $Paths.ExportRoot_CurrentVersion 'workbook-schema.xlsx'
 
+$build = $null
 $Build ??= [ordered]@{ # auto 'show' certain files. nullish op lets you override defaults
     AutoOpen = [ordered]@{
         Biome_Objects            = $false
-        Biome_Objects_Expanded   = $true
+        Biome_Objects_Expanded   = $false
         Biome_Plants             = $false
         Loc                      = $false
         Prefabs_Crusher          = $false
-        TechTree_ResearchRecipes = $false
+        TechTree_ResearchRecipes = $true
         TechTree_TechTree        = $false
         WorkbookSchema           = $false
     }
     Export = [ordered]@{
-        Biome_Objects            = $true
-        Biome_Objects_Expanded   = $true
-        Biome_Plants             = $true
-        Loc                      = $true
-        Prefabs_Crusher          = $true
+        Biome_Objects            = $false
+        Biome_Objects_Expanded   = $false
+        Biome_Plants             = $false
+        Loc                      = $false
+        Prefabs_Crusher          = $false
         TechTree_ResearchRecipes = $true
         TechTree_TechTree        = $true
-        WorkbookSchema           = $true
+        WorkbookSchema           = $false
 
     }
 }
