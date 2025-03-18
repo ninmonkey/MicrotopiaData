@@ -188,6 +188,11 @@ function md.Export.Changelog {
     $Paths.Csv_ChangeLog | md.Log.WroteFile
 
     @(
+        '## Microtopia version: {0}' -f ( $paths.ExportRoot_CurrentVersion | Split-path -Leaf )
+        ''
+        '- Search the [changelog.csv](./csv/changelog.csv)'
+        '- or [Go Back](./..)'
+        ''
         '| Version | Code | English | '
         '| - | - | - |'
         @(foreach($x in $forJson) {
@@ -197,7 +202,11 @@ function md.Export.Changelog {
                 $x.English
             )}
         )
-    ) | Set-Content -Path $Paths.Md_ChangeLog -Encoding utf8
+    )
+        | Join-String -sep "`n"
+        | Set-Content -Path $Paths.Md_ChangeLog -Encoding utf8
+
+
 
     $Paths.Md_ChangeLog | md.Log.WroteFile
 
