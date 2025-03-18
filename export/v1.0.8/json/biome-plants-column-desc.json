@@ -1,0 +1,19 @@
+{
+  "CODE": "//",
+  "MASS": "hoeveel een plant telt qua energieverdeling",
+  "DOMINANCE": "dominantie tussen planten",
+  "SPREAD_DELAY": "als er meer moet groeien, tijd tussen elke nieuwe plant",
+  "WILT_DELAY": "als er planten moeten afsterven, tijd tussen elke plant sterfte",
+  "GROW_TIME": "hoe lang het duurt van sapling naar grown",
+  "WILT_TIME": "hoe lang het duurt van dood naar weg",
+  "CLUSTERING": "kans dat nieuwe plant naast bestaande plant komt (%)",
+  "EVEN_CLUSTER": "Clusters worden gelijkmatig over bosjes verdeeld",
+  "DIST_MIN": "minimale afstand tot andere planten/objecten (rnd min)",
+  "DIST_MAX": "minimale afstand tot andere planten/objecten (rnd max)",
+  "POLLUTION_MIN": "plant heeft liever niet dat pollution hieronder komt (%)",
+  "POLLUTION_MAX": "plant heeft liever niet dat pollution hierboven komt (%)",
+  "POLLUTION_TOLERANCE": "als pollution zo ver buiten min/max: alle planten dood (%)",
+  "SCALE_MIN": "random",
+  "SCALE_MAX": "random",
+  "IGNORE GROOVES": null
+}
