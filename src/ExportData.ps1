@@ -68,7 +68,7 @@ $Build ??= [ordered]@{ # auto 'show' certain files. nullish op lets you override
         Biome_Plants             = $false
         Loc                      = $false
         Prefabs_Crusher          = $false
-        TechTree_ResearchRecipes = $true
+        TechTree_ResearchRecipes = $false
         TechTree_TechTree        = $false
         WorkbookSchema           = $false
     }
@@ -95,12 +95,12 @@ $Build ??= [ordered]@{ # auto 'show' certain files. nullish op lets you override
 # never cache
 Remove-Item $Paths.Xlsx_Biome -ea 'Ignore'
 Clear-Content -path $Paths.Log -ea Ignore
-
 # <nyi>: md.Export.Instinct -Paths $Paths -Verbose
 $Paths.Log
     | Join-String -f 'See log for a list of changed files: "{0}"'
     | Write-Host -fg 'skyblue'
 
+# main entry point for the script
 if( $Build.Export.Biome_Objects ) {
     md.Export.Biome.Biome_Objects -Paths $Paths -Verbose
 }
@@ -127,6 +127,18 @@ if($Build.Export.WorkbookSchema) {
 }
 
 md.Export.Readme.FileListing -Path $Paths.ExportRoot_CurrentVersion
+
+# log config at tail of log
+$build
+    | ConvertTo-Json -Depth 1
+    | Join-string -op "`nBuildConfig: `n" -sep "`n"
+    | Add-Content -path $paths.Log
+
+$Paths
+    | ConvertTo-Json -Depth 0
+    | Join-string -op "`nPaths: `n" -sep "`n"
+    | Add-Content -path $paths.Log
+
 
 'Done' | Write-Host -fg 'darkblue'
 return
