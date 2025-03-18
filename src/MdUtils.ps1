@@ -1499,11 +1499,14 @@ function md.Export.Readme.FileListing {
 
     $Destination = Join-Path $Path 'readme.md'
 
-
-
     @(
         Markdown.Write.Header -Depth 2 -Text "About"
-        "Files generated on: $( (get-date).tostring('yyyy-MM-dd') )"
+        "Files generated on: $(
+            # (get-date).tostring('yyyy-MM-dd')
+            (get-date).tostring() )"
+        "For version: $( $Paths.ExportRoot_CurrentVersion| split-path -Leaf )"
+
+
         Markdown.Write.Header -Depth 2 -Text "Files by Type"
 
         Markdown.Write.Header -Depth 3 -Text "Json"

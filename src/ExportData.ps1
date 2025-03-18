@@ -21,6 +21,7 @@ if( -not $function:Hr ) {
 $paths.Log = Join-Path $Paths.ExportRoot '../log.log'
 $Paths.ExportRoot_CurrentVersion = Join-Path $Paths.ExportRoot 'v1.0.6a'
 $Paths.ExportRoot_CurrentVersion = Join-Path $Paths.ExportRoot 'v1.0.7a'
+$Paths.ExportRoot_CurrentVersion = Join-Path $Paths.ExportRoot 'v1.0.8'
 
 md.EnsureSubdirsExist -Path $paths.ExportRoot_CurrentVersion -verbose
 
@@ -73,14 +74,14 @@ $Build ??= [ordered]@{ # auto 'show' certain files. nullish op lets you override
         WorkbookSchema           = $false
     }
     Export = [ordered]@{
-        Biome_Objects            = $true
-        Biome_Objects_Expanded   = $true
-        Biome_Plants             = $true
-        Loc                      = $true
-        Prefabs_Crusher          = $true
-        TechTree_ResearchRecipes = $true
-        TechTree_TechTree        = $true
-        WorkbookSchema           = $true
+        Biome_Objects            = $true # $false
+        Biome_Objects_Expanded   = $true # $false
+        Biome_Plants             = $true # $false
+        Loc                      = $true # $false
+        Prefabs_Crusher          = $true # $false
+        TechTree_ResearchRecipes = $true # $false
+        TechTree_TechTree        = $true # $false
+        WorkbookSchema           = $false # $false
 
     }
 }
