@@ -1469,6 +1469,14 @@ function Markdown.Format.LinksAsUL {
         [string[]] $Lines
     )
     if( $Lines.Count -eq 0 ) { return }
+
+    # fd -e json --path-separator=/ --strip-cwd-prefix=never | %{
+    #     Markdown.Write.Href 'foo' -Link (
+    #         $_ -replace './json/', "./${curVersionPath}/json/"
+    #     )
+    # }
+
+
     Markdown.write.UL @(
         $Lines
         | %{
@@ -1490,14 +1498,27 @@ function md.Export.Readme.FileListing {
     param(
         # Root path to search
         [Parameter(Mandatory)]
-        $Path
+        $Paths
     )
     $PSCmdlet.MyInvocation.MyCommand.Name
         | Join-String -f 'Enter: {0}' | Write-verbose
 
     pushd -StackName 'export' $Paths.ExportRoot_CurrentVersion
 
-    $Destination = Join-Path $Path 'readme.md'
+
+    $Destination = Join-Path $Paths.ExportRoot_CurrentVersion 'readme.md'
+    $curVersionPath = $paths.ExportRoot_CurrentVersion | Split-path -Leaf
+
+    filter Re.AddVersionFolderPrefix {
+        <#
+        .example
+            fd -e json --path-separator=/ --strip-cwd-prefix=never | Re.AddVersionFolderPrefix
+        #>
+        # $curVersionPath = $paths.ExportRoot_CurrentVersion | Split-path -Leaf
+        $_ -replace './json/', "./export/${curVersionPath}/json/"
+    }
+
+
 
     @(
         Markdown.Write.Header -Depth 2 -Text "About"
@@ -1510,16 +1531,16 @@ function md.Export.Readme.FileListing {
         Markdown.Write.Header -Depth 2 -Text "Files by Type"
 
         Markdown.Write.Header -Depth 3 -Text "Json"
-        Markdown.Format.LinksAsUL -Lines @(md.Invoke.FdFind -Extension json -PathsAsMarkdown -UsingNoIgnore)
+        Markdown.Format.LinksAsUL -Lines @(md.Invoke.FdFind -Extension json -PathsAsMarkdown -UsingNoIgnore )
 
         Markdown.Write.Header -Depth 3 -Text "Xlsx"
-        Markdown.Format.LinksAsUL -Lines @(md.Invoke.FdFind -Extension xlsx -PathsAsMarkdown -UsingNoIgnore)
+        Markdown.Format.LinksAsUL -Lines @(md.Invoke.FdFind -Extension xlsx -PathsAsMarkdown -UsingNoIgnore )
 
         Markdown.Write.Header -Depth 3 -Text "Csv"
-        Markdown.Format.LinksAsUL -Lines @(md.Invoke.FdFind -Extension csv -PathsAsMarkdown -UsingNoIgnore)
+        Markdown.Format.LinksAsUL -Lines @(md.Invoke.FdFind -Extension csv -PathsAsMarkdown -UsingNoIgnore )
 
         Markdown.Write.Header -Depth 3 -Text "Md"
-        Markdown.Format.LinksAsUL -Lines @(md.Invoke.FdFind -Extension md -PathsAsMarkdown -UsingNoIgnore)
+        Markdown.Format.LinksAsUL -Lines @(md.Invoke.FdFind -Extension md -PathsAsMarkdown -UsingNoIgnore )
 
         # Markdown.Write.Header -Depth 3 -Text "Log"
         # Markdown.Format.LinksAsUL -Lines @(md.Invoke.FdFind -Extension log -PathsAsMarkdown -UsingNoIgnore)
@@ -1527,7 +1548,111 @@ function md.Export.Readme.FileListing {
     ) | Join-String -sep "`n" | Set-Content -Path $Destination
     $Destination | md.Log.WroteFile
 
+    ## cleanup: temporarily duplicate logic, to ensure regex subdir is correct in both locations
+    $fileListingMarkup = @(
+        Markdown.Write.Header -Depth 2 -Text "About"
+        "Files generated on: $(
+            # (get-date).tostring('yyyy-MM-dd')
+            (get-date).tostring() )"
+        "For version: $( $Paths.ExportRoot_CurrentVersion| split-path -Leaf )"
+
+
+        Markdown.Write.Header -Depth 2 -Text "Files by Type"
+
+        Markdown.Write.Header -Depth 3 -Text "Json"
+        Markdown.Format.LinksAsUL -Lines @(md.Invoke.FdFind -Extension json -PathsAsMarkdown -UsingNoIgnore | Re.AddVersionFolderPrefix )
+
+        Markdown.Write.Header -Depth 3 -Text "Xlsx"
+        Markdown.Format.LinksAsUL -Lines @(md.Invoke.FdFind -Extension xlsx -PathsAsMarkdown -UsingNoIgnore | Re.AddVersionFolderPrefix )
+
+        Markdown.Write.Header -Depth 3 -Text "Csv"
+        Markdown.Format.LinksAsUL -Lines @(md.Invoke.FdFind -Extension csv -PathsAsMarkdown -UsingNoIgnore | Re.AddVersionFolderPrefix )
+
+        Markdown.Write.Header -Depth 3 -Text "Md"
+        Markdown.Format.LinksAsUL -Lines @(md.Invoke.FdFind -Extension md -PathsAsMarkdown -UsingNoIgnore | Re.AddVersionFolderPrefix )
+
+        # Markdown.Write.Header -Depth 3 -Text "Log"
+        # Markdown.Format.LinksAsUL -Lines @(md.Invoke.FdFind -Extension log -PathsAsMarkdown -UsingNoIgnore)
+
+    ) | Join-String -sep "`n"
+
+    $templateStr = Get-Content -Raw $paths.Template_Readme
+    $tokens = @{
+        '{{folder_version}}'      = $paths.ExportRoot_CurrentVersion | Split-path -Leaf
+        '{{file_listing_markup}}' = $fileListingMarkup
+    }
+
+    md.Template.ReplaceTokens -TemplateString $TemplateStr -TokensToReplace $tokens
+        | Set-Content -Path $paths.Markdown_RootReadme
+
+    $paths.Markdown_RootReadme | md.log.WroteFile
+
+
+    # $token = [regex]::Escape('{{folder_version}}')
+    # $rawStr -replace $token, $value
+    # $value = $paths.ExportRoot_CurrentVersion | Split-path -Leaf
+
     # md.Invoke.FdFind -WhatIf -Extension 'json' -ArgsList $Shared -PathsAsMarkdown -UsingNoIgnore
 
     popd -StackName 'export'
+}
+
+function md.Template.ReplaceTokens {
+    <#
+    .SYNOPSIS
+        Replace tokens in a template string
+    .EXAMPLE
+        md.Template.ReplaceTokens -TokensToReplace @{ '{{Now}}' = (Get-Date) } -TemplateString @'
+            hi world
+            Now it is => {{Now}}
+        '@
+        ## outputs:
+            hi world
+            Now it is => 03/18/2025 09:05:13
+
+    .EXAMPLE
+        $templateStr = Get-Content -Raw $paths.Template_Readme
+        $tokens = @{
+            '{{folder_version}}'      = $paths.ExportRoot_CurrentVersion | Split-path -Leaf
+            '{{file_listing_markup}}' = (Get-content -Raw $Destination)
+        }
+
+        md.Template.ReplaceTokens -TemplateString $TemplateStr -TokensToReplace $tokens
+            | Set-Content -Path $paths.Markdown_RootReadme
+    #>
+    [CmdletBinding()]
+    param(
+        [Alias('Content', 'Body', 'Str', 'Text')]
+        [string] $TemplateString,
+
+        # key-value pairs of tokens like:  @{ folder_version = '1.0.0' }
+        # key names are
+        [hashtable] $TokensToReplace,
+
+        # add '{{' and '}}' to all keys, dynamically ? otherwise it requires an explicit one
+        # either way, Keys are escaped as regex literals
+        # [Alias('KeysAsLiterals')]
+        [switch] $AutoWrapKeys
+    )
+
+    [string] $Accum = $TemplateString
+
+    foreach ($rawKey in $TokensToReplace.Keys?.Clone()) {
+
+        $keyName = if($AutoWrapKeys) {
+            '{{', $rawKey, '}}'
+        } else {
+            $rawKey
+        }
+        $asLiteral = [Regex]::Escape($KeyName)
+        if( $Accum -notmatch $asLiteral ) {
+            throw "InvalidTemplate: Key was not found in template! Using key: '$rawKey', regex: '$asLiteral'"
+        }
+        $Accum = $Accum -replace $asLiteral, $TokensToReplace[ $rawKey ]
+    }
+    if ( $Accum.length -eq 0 -or $Accum.count -eq 0 ) {
+        throw "InvalidTemplate: Final state was empty"
+    }
+
+    return $Accum
 }

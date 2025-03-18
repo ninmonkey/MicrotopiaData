@@ -1,10 +1,8 @@
 
 ## About
 
-```yml
-Files generated on: 2025-03-18 8:17:58 AM
-For version: v1.0.7a
-```
+Files generated on: 2025-03-18 9:30:44 AM
+For version: v1.0.8
 
 ## Files by Type
 
@@ -20,8 +18,6 @@ For version: v1.0.7a
 - [crusher-output.json](./json/crusher-output.json)
 - [loc-objects.json](./json/loc-objects.json)
 - [loc-ui.json](./json/loc-ui.json)
-- [techtree-researchrecipes-expanded.json](./json/techtree-researchrecipes-expanded.json)
-- [techtree-researchrecipes.json](./json/techtree-researchrecipes.json)
 - [techtree-techtree-expanded.json](./json/techtree-techtree-expanded.json)
 - [techtree-techtree.json](./json/techtree-techtree.json)
 - [workbook-schema.json](./json/workbook-schema.json)

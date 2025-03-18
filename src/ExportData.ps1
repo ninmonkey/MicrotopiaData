@@ -61,6 +61,9 @@ $Paths.json_TechTree_TechTree        = Join-Path $Paths.ExportRoot_CurrentVersio
 $Paths.json_WorkbookSchema           = Join-Path $Paths.ExportRoot_CurrentVersion 'json/workbook-schema.json'
 $Paths.xlsx_WorkbookSchema           = Join-Path $Paths.ExportRoot_CurrentVersion 'workbook-schema.xlsx'
 
+$Paths.Template_Readme = Join-Path $Paths.AppRoot './readme.template.md'
+$Paths.Markdown_RootReadme = join-path $paths.AppRoot '../readme.md'
+
 $build = $null
 $Build ??= [ordered]@{ # auto 'show' certain files. nullish op lets you override defaults
     AutoOpen = [ordered]@{
@@ -74,15 +77,15 @@ $Build ??= [ordered]@{ # auto 'show' certain files. nullish op lets you override
         WorkbookSchema           = $false
     }
     Export = [ordered]@{
-        Biome_Objects            = $true # $false
-        Biome_Objects_Expanded   = $true # $false
-        Biome_Plants             = $true # $false
-        Loc                      = $true # $false
-        Prefabs_Crusher          = $true # $false
-        TechTree_ResearchRecipes = $true # $false
-        TechTree_TechTree        = $true # $false
+        Changelog                = $true
+        Biome_Objects            = $false # $false
+        Biome_Objects_Expanded   = $false # $false
+        Biome_Plants             = $false # $false
+        Loc                      = $false # $false
+        Prefabs_Crusher          = $false # $false
+        TechTree_ResearchRecipes = $false # $false
+        TechTree_TechTree        = $false # $false
         WorkbookSchema           = $false # $false
-
     }
 }
 # $Paths.Game = [ordered]@{
@@ -127,7 +130,7 @@ if($Build.Export.WorkbookSchema) {
     md.Export.WorkbookSchema.Xlsx -Paths $Paths -Verbose
 }
 
-md.Export.Readme.FileListing -Path $Paths.ExportRoot_CurrentVersion
+md.Export.Readme.FileListing -Path $Paths
 
 # log config at tail of log
 $build
@@ -140,8 +143,9 @@ $Paths
     | Join-string -op "`nPaths: `n" -sep "`n"
     | Add-Content -path $paths.Log
 
-
-'Done' | Write-Host -fg 'darkblue'
+$Paths.Log
+    | Join-String -f 'Done. See log for a list of changed files: "{0}"'
+    | Write-Host -fg 'skyblue'
 return
 
 # $pkg = Open-ExcelPackage -Path $Paths.Xlsx_Prefabs
