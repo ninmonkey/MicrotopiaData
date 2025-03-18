@@ -431,6 +431,7 @@ function md.Convert.BlankPropsToEmpty {
         $InputObject.PSObject.Properties  | % {
             if( $_.Name -eq '' ) {
                 write-error 'Property name was null?'
+                return
             }
             if( [string]::IsNullOrWhiteSpace( $_.Value ) ) {
                 $InputObject.($_.Name) = ""
@@ -467,11 +468,12 @@ function md.Convert.KeyNames {
             }
         }
         if( $null -eq $allNames ) {
-            write-warning 'should never reach'
-            $null = 10
+            throw 'should never reach'
+            # $null = 10
+            return
         }
         if( $null -eq $InputObject ) {
-            write-error "Unhandled null input"
+            throw "Unhandled null input"
             return
         }
         $sortedNames.AddRange( $allnames )
@@ -479,8 +481,8 @@ function md.Convert.KeyNames {
 
 
         $sortedNames |  %{
-            $curName = $_
-            $record = $InputObject.psobject.properties[ $curName ]
+            $curName         = $_
+            $record          = $InputObject.psobject.properties[ $curName ]
             $newName         = $record.Name -replace '[ ]+', '_'
             $newName         = $newName.toLower()
             $newObj.$newName = $record.Value
@@ -594,7 +596,7 @@ md.Table.ExpandListColumn -InputObject $new -PropertyName 'exchange_types'
                     # }
                 } else {
                     write-warning "Unexpected missing property: '${PropertyName}'"
-                    $x = 10
+                    # $x = 10
                     # wait-debugger
                 }
                 $obj
@@ -998,82 +1000,107 @@ function md.Export.TechTree.TechTree {
         Property = 'tier', 'group', 'code'
     }
 
-    $forJson = @(
+    # $forJson = @(
+    #     $Rows | %{
+    #         $record = $_
+    #         # $record = md.Convert.BlankPropsToEmpty $Record
+    #         $record = md.Convert.KeyNames $Record -StartWith 'Tier', 'Group', 'Order'
+    #         # coerce blankables into empty strings for json
+    #         # $record.'pickups'             = md.Parse.IngredientsFromCsv $record.'pickups'
+    #         # $record.'exchange_types'      = md.Parse.ItemsFromList $record.'exchange_types'
+    #         # $record.'ignore_grooves'         = md.Parse.Checkbox $record.'ignore_grooves'
+    #         # $record.'even_cluster'         = md.Parse.Checkbox $record.'even_cluster'
+    #         # $record.'trails_pass_through' = md.Parse.Checkbox $record.'trails_pass_through'
+    #         $record
+    #     }
+    # )
+    # # | Sort-Object @sort_splat
+
+    # $forJson
+    #     | ? { $true -ne $_ }
+    #     | ConvertTo-Json -depth 9
+    #     | Set-Content -path $Paths.json_TechTree_TechTree # -Confirm
+
+    $forJson3 = @(
         $Rows | %{
-            $record = $_
-            $record = md.Convert.BlankPropsToEmpty $Record
-            $record = md.Convert.KeyNames $Record -StartWith 'Tier', 'Group', 'Order'
-            # coerce blankables into empty strings for json
-            # $record.'pickups'             = md.Parse.IngredientsFromCsv $record.'pickups'
-            # $record.'exchange_types'      = md.Parse.ItemsFromList $record.'exchange_types'
-            # $record.'ignore_grooves'         = md.Parse.Checkbox $record.'ignore_grooves'
-            # $record.'even_cluster'         = md.Parse.Checkbox $record.'even_cluster'
-            # $record.'trails_pass_through' = md.Parse.Checkbox $record.'trails_pass_through'
-            $record
-        }
-    ) | Sort-Object @sort_splat
-
-    $forJson
-        | ConvertTo-Json -depth 9
-        | Set-Content -path $Paths.json_TechTree_TechTree # -Confirm
-
-    $Paths.json_TechTree_TechTree | md.Log.WroteFile
-
-    $forJson = @(
-        $forJson | %{
-
-            $record = $_
-            $record = md.Convert.BlankPropsToEmpty $Record
-            # $record = md.Convert.KeyNames $Record -StartWith 'cost', 'Order'
-            # $record
-            #     | md.Table.ExpandListColumn -PropertyName 'cost'
-            #     | md.Table.ExpandListColumn -PropertyName 'unlock_buildings'
-            $record
+            $rec = $_
+            $rec = md.Convert.BlankPropsToEmpty $rec
+            $rec = md.Convert.KeyNames $rec -StartWith 'tier', 'group', 'order'
+            $rec
         }
     )
 
-    $forJson
-        | ConvertTo-Json -depth 9
-        | Set-Content -path $Paths.json_TechTree_TechTree_Expanded # -Confirm
+    $forJson3 | json -Depth 9  | Set-Content $Paths.json_TechTree_TechTree
 
-    $Paths.json_TechTree_TechTree_Expanded | md.Log.WroteFile
+    $Paths.json_TechTree_TechTree | md.Log.WroteFile
 
-    $exportExcel_Splat = @{
-        InputObject   = @( $forJson )
-        Path          = $Paths.Xlsx_TechTree
-        Show          = $false # moved to end
-        WorksheetName = 'TechTree_Expanded'
-        TableName     = 'TechTree_Expanded_Data'
-        TableStyle    = 'Light5'
-        Title         = 'TechTree with columns expanded as multiple rows'
-        AutoSize      = $true
-    }
+    if( -not $build.Export.TechTree_TechTree_Expanded ) {
+        write-warning 'Skipping TechTree.Expanded, nyi validating that it expands correctly'
+    } else {
 
-    Export-Excel @exportExcel_Splat
+        $forJson2 = @(
+            $forJson | %{
 
-    $Paths.Xlsx_TechTree | md.Log.WroteFile
-
-    # section worksheet: TechTree.Research_Recipes
-    $importExcel_Splat = @{
-        ExcelPackage  = $pkg
-        WorksheetName = 'Research Recipes'
-
-    }
-    $rows2 =  Import-Excel @importExcel_Splat
-
-    $exportExcel_Splat = @{
-        InputObject   = @(
-            $rows2
+                $record = $_
+                # $record = md.Convert.BlankPropsToEmpty $Record
+                # $record = md.Convert.KeyNames $Record -StartWith 'cost', 'Order'
+                $record
+                    | md.Table.ExpandListColumn -PropertyName 'cost'
+                #     | md.Table.ExpandListColumn -PropertyName 'unlock_buildings'
+                # $record
+            }
         )
-        Path          = $Paths.Xlsx_TechTree
-        Show          = $false # moved to end
-        WorksheetName = 'ResearchRecipes'
-        TableName     = 'ResearchRecipes_Data'
-        TableStyle    = 'Light5'
-        AutoSize      = $True
+
+        $forJson2
+            | ConvertTo-Json -depth 9
+            | Set-Content -path $Paths.json_TechTree_TechTree_Expanded # -Confirm
+
+        $Paths.json_TechTree_TechTree_Expanded | md.Log.WroteFile
+
+        $exportExcel_Splat = @{
+            InputObject   = @( $forJson2 )
+            Path          = $Paths.Xlsx_TechTree
+            Show          = $false # moved to end
+            WorksheetName = 'TechTree_Expanded'
+            TableName     = 'TechTree_Expanded_Data'
+            TableStyle    = 'Light5'
+            Title         = 'TechTree with columns expanded as multiple rows'
+            AutoSize      = $true
+        }
+
+        Export-Excel @exportExcel_Splat
+
+        $Paths.Xlsx_TechTree | md.Log.WroteFile
+
     }
 
-    Export-Excel @exportExcel_Splat
+
+    if( -not $build.Export.TechTree_ResearchRecipes ) {
+        write-warning 'Skipping TechTree.Expanded, nyi validating that it expands correctly'
+    } else {
+
+        # section worksheet: TechTree.Research_Recipes
+        $importExcel_Splat = @{
+            ExcelPackage  = $pkg
+            WorksheetName = 'Research Recipes'
+
+        }
+        $rows2 =  Import-Excel @importExcel_Splat
+
+        $exportExcel_Splat = @{
+            InputObject   = @(
+                $rows2
+            )
+            Path          = $Paths.Xlsx_TechTree
+            Show          = $false # moved to end
+            WorksheetName = 'ResearchRecipes'
+            TableName     = 'ResearchRecipes_Data'
+            TableStyle    = 'Light5'
+            AutoSize      = $True
+        }
+
+        Export-Excel @exportExcel_Splat
+    }
 
     if( $Build.AutoOpen.TechTree_TechTree -or $Build.AutoOpen.TechTree_ResearchRecipes ) {
         Get-Item $Paths.Xlsx_TechTree | Invoke-Item

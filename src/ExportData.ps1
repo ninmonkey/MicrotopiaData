@@ -73,18 +73,19 @@ $Build ??= [ordered]@{ # auto 'show' certain files. nullish op lets you override
         Loc                      = $false
         Prefabs_Crusher          = $false
         TechTree_ResearchRecipes = $false
-        TechTree_TechTree        = $false
+        TechTree_TechTree        = $true
         WorkbookSchema           = $false
     }
     Export = [ordered]@{
         Changelog                = $true
-        Biome_Objects            = $false # $false
-        Biome_Objects_Expanded   = $false # $false
-        Biome_Plants             = $false # $false
-        Loc                      = $false # $false
-        Prefabs_Crusher          = $false # $false
-        TechTree_ResearchRecipes = $false # $false
-        TechTree_TechTree        = $false # $false
+        Biome_Objects            = $false # $true # $false
+        Biome_Objects_Expanded   = $false # $true # $false
+        Biome_Plants             = $false # $true # $false
+        Loc                      = $false # $true # $false
+        Prefabs_Crusher          = $false # $true # $false
+        TechTree_ResearchRecipes = $true # $false
+        TechTree_TechTree        = $true # $false
+        TechTree_TechTree_Expanded        = $true # $false
         WorkbookSchema           = $false # $false
     }
 }
