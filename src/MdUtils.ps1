@@ -1130,7 +1130,7 @@ function md.Export.Prefabs.Prefabs {
         # isTierNumber     = '^\s*//\s+tier\s+\d+'
         isGroupName      = '^\s*//' # '^\s*//\s*w\+' #  '^\s*//'
         toIgnoreHeader   = '//\s*unique\s*code'
-        stripSlashPrefix = '\s*//\s+'
+        stripSlashPrefix = '\s*//\s*'
         toIgnoreBuildHeaderMessage   = '//.*not in buildmenu'
     }
 
@@ -1239,16 +1239,20 @@ function md.Export.Prefabs.Prefabs {
     #     | ConvertTo-Json -depth 9
     #     | Set-Content -path $Paths.json_Prefabs # -Confirm
 
-    $forJson3 = @(
+    $forJson_buildings = @(
         $Rows | %{
             $rec = $_
             $rec = md.Convert.BlankPropsToEmpty $rec
-            # $rec = md.Convert.KeyNames $rec -StartWith 'tier', 'group', 'order'
-            $rec.'AUTO RECIPE' = md.Parse.Checkbox $rec.'AUTO RECIPE'
+            $rec = md.Convert.KeyNames $rec # -StartWith 'tier', 'group', 'order'
+
+            $rec.'auto_recipe' = md.Parse.Checkbox $rec.'auto_recipe'
+            $rec.'no_demolish' = md.Parse.Checkbox $rec.'no_demolish'
+            $rec.'in_demo'     = md.Parse.Checkbox $rec.'in_demo'
+            $rec
         }
     )
 
-    $forJson3 | ConvertTo-Json -Depth 9  | Set-Content $Paths.json_Prefabs_Buildings
+    $forJson_buildings | ConvertTo-Json -Depth 9  | Set-Content $Paths.json_Prefabs_Buildings
 
     $Paths.json_Prefabs_Buildings | md.Log.WroteFile
 

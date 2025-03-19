@@ -1,7 +1,7 @@
 
 ## About
 
-Files generated on: 2025-03-18 9:36:01 AM
+Files generated on: 2025-03-19 2:04:58 PM
 For version: v1.0.8
 
 ## Files by Type
@@ -18,6 +18,7 @@ For version: v1.0.8
 - [crusher-output.json](./json/crusher-output.json)
 - [loc-objects.json](./json/loc-objects.json)
 - [loc-ui.json](./json/loc-ui.json)
+- [prefabs-buildings.json](./json/prefabs-buildings.json)
 - [techtree-techtree-expanded.json](./json/techtree-techtree-expanded.json)
 - [techtree-techtree.json](./json/techtree-techtree.json)
 - [workbook-schema.json](./json/workbook-schema.json)

@@ -16,7 +16,7 @@ Check out the [Discord Server](https://discord.gg/F8GKVrxcWN)
 
 ## About
 
-Files generated on: 2025-03-19 12:41:29 PM
+Files generated on: 2025-03-19 2:04:58 PM
 For version: v1.0.8
 
 ## Files by Type
@@ -33,6 +33,7 @@ For version: v1.0.8
 - [crusher-output.json](./export/v1.0.8/json/crusher-output.json)
 - [loc-objects.json](./export/v1.0.8/json/loc-objects.json)
 - [loc-ui.json](./export/v1.0.8/json/loc-ui.json)
+- [prefabs-buildings.json](./export/v1.0.8/json/prefabs-buildings.json)
 - [techtree-techtree-expanded.json](./export/v1.0.8/json/techtree-techtree-expanded.json)
 - [techtree-techtree.json](./export/v1.0.8/json/techtree-techtree.json)
 - [workbook-schema.json](./export/v1.0.8/json/workbook-schema.json)
