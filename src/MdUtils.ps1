@@ -887,9 +887,6 @@ function md.Export.Biome.Plants {
 
     $Paths.json_Biome_Plants | md.Log.WroteFile
 
-
-
-
     # also emit expanded records
     $forJson = @(
         $Rows | %{
@@ -940,7 +937,6 @@ function md.Export.TechTree.TechTree {
     # column descriptions are inline
     # $description = $rows | ? Code -Match '^\s*//\s*$' | Select -First 1
     # $description | ConvertTo-Json | Set-Content -path $Paths.json_Biome_Plants_ColumnDesc
-
     # $paths.json_Biome_Plants_ColumnDesc | md.Log.WroteFile
 
     # skip empty and non-data rows
@@ -979,8 +975,6 @@ function md.Export.TechTree.TechTree {
             | ? { -not [string]::IsNullOrWhiteSpace( $_.CODE ) }
     )
 
-
-
     $exportExcel_Splat = @{
         InputObject   = @(
             $rows
@@ -1000,28 +994,7 @@ function md.Export.TechTree.TechTree {
         Property = 'tier', 'group', 'code'
     }
 
-    # $forJson = @(
-    #     $Rows | %{
-    #         $record = $_
-    #         # $record = md.Convert.BlankPropsToEmpty $Record
-    #         $record = md.Convert.KeyNames $Record -StartWith 'Tier', 'Group', 'Order'
-    #         # coerce blankables into empty strings for json
-    #         # $record.'pickups'             = md.Parse.IngredientsFromCsv $record.'pickups'
-    #         # $record.'exchange_types'      = md.Parse.ItemsFromList $record.'exchange_types'
-    #         # $record.'ignore_grooves'         = md.Parse.Checkbox $record.'ignore_grooves'
-    #         # $record.'even_cluster'         = md.Parse.Checkbox $record.'even_cluster'
-    #         # $record.'trails_pass_through' = md.Parse.Checkbox $record.'trails_pass_through'
-    #         $record
-    #     }
-    # )
-    # # | Sort-Object @sort_splat
-
-    # $forJson
-    #     | ? { $true -ne $_ }
-    #     | ConvertTo-Json -depth 9
-    #     | Set-Content -path $Paths.json_TechTree_TechTree # -Confirm
-
-    $forJson3 = @(
+    $forJson_techTree_TechTree = @(
         $Rows | %{
             $rec = $_
             $rec = md.Convert.BlankPropsToEmpty $rec
@@ -1030,7 +1003,7 @@ function md.Export.TechTree.TechTree {
         }
     )
 
-    $forJson3 | json -Depth 9  | Set-Content $Paths.json_TechTree_TechTree
+    $forJson_techTree_TechTree | json -Depth 9  | Set-Content $Paths.json_TechTree_TechTree
 
     $Paths.json_TechTree_TechTree | md.Log.WroteFile
 
@@ -1071,9 +1044,7 @@ function md.Export.TechTree.TechTree {
         Export-Excel @exportExcel_Splat
 
         $Paths.Xlsx_TechTree | md.Log.WroteFile
-
     }
-
 
     if( -not $build.Export.TechTree_ResearchRecipes ) {
         write-warning 'Skipping TechTree.Expanded, nyi validating that it expands correctly'
@@ -1155,7 +1126,6 @@ function md.Export.Prefabs.Prefabs {
 
     # skip empty and non-data rows
     $curGroupName = 'missing'
-    # $curTierNumber = 'missing'
     $curOrder = -1
     $rows = @(
         $rows
@@ -1167,25 +1137,9 @@ function md.Export.Prefabs.Prefabs {
                     $curGroupName = $record.Code -replace $regex.stripSlashPrefix, ''
                     return
                 }
-
-
-
-                # if ($record.Code -match $Regex.isTierNumber) {
-                #     $curTierNumber = $record.Code  -replace $regex.StripSlashPrefix, ''
-                #     return
-                # } elseif ( $record.Code -match $Regex.isGroupName ) {
-                #     $curGroupName = $record.Code -replace $regex.stripSlashPrefix, ''
-                #     return
-                # } elseif ( $record.Code -match $Regex.toIgnoreHeader ) {
-                #     return
-                # }
-
                 $record.PSObject.Properties.Add( [psnoteproperty]::new(
                     'Group', $curGroupName
                 ), $true )
-                # $record.PSObject.Properties.Add( [psnoteproperty]::new(
-                #     'Tier', $curTierNumber
-                # ), $true )
                 $record.PSObject.Properties.Add( [psnoteproperty]::new(
                     'RowOrder', $curOrder
                 ), $true )
@@ -1197,12 +1151,8 @@ function md.Export.Prefabs.Prefabs {
             | ? { -not [string]::IsNullOrWhiteSpace( $_.CODE ) }
     )
 
-
-
     $exportExcel_Splat = @{
-        InputObject   = @(
-            $rows
-        )
+        InputObject   = @($ rows )
         Path          = $Paths.Xlsx_Prefabs
         Show          = $false # moved to end
         WorksheetName = 'Buildings'
@@ -1218,27 +1168,6 @@ function md.Export.Prefabs.Prefabs {
         Property = 'tier', 'group', 'code'
     }
 
-    # $forJson = @(
-    #     $Rows | %{
-    #         $record = $_
-    #         # $record = md.Convert.BlankPropsToEmpty $Record
-    #         $record = md.Convert.KeyNames $Record -StartWith 'Tier', 'Group', 'Order'
-    #         # coerce blankables into empty strings for json
-    #         # $record.'pickups'             = md.Parse.IngredientsFromCsv $record.'pickups'
-    #         # $record.'exchange_types'      = md.Parse.ItemsFromList $record.'exchange_types'
-    #         # $record.'ignore_grooves'         = md.Parse.Checkbox $record.'ignore_grooves'
-    #         # $record.'even_cluster'         = md.Parse.Checkbox $record.'even_cluster'
-    #         # $record.'trails_pass_through' = md.Parse.Checkbox $record.'trails_pass_through'
-    #         $record
-    #     }
-    # )
-    # # | Sort-Object @sort_splat
-
-    # $forJson
-    #     | ? { $true -ne $_ }
-    #     | ConvertTo-Json -depth 9
-    #     | Set-Content -path $Paths.json_Prefabs # -Confirm
-
     $forJson_buildings = @(
         $Rows | %{
             $rec = $_
@@ -1248,6 +1177,7 @@ function md.Export.Prefabs.Prefabs {
             $rec.'auto_recipe' = md.Parse.Checkbox $rec.'auto_recipe'
             $rec.'no_demolish' = md.Parse.Checkbox $rec.'no_demolish'
             $rec.'in_demo'     = md.Parse.Checkbox $rec.'in_demo'
+            $rec.'cost'        = md.Parse.IngredientsFromCsv $rec.'cost'
             $rec
         }
     )
@@ -1257,51 +1187,9 @@ function md.Export.Prefabs.Prefabs {
     $Paths.json_Prefabs_Buildings | md.Log.WroteFile
 
     write-warning 'Skipping Prefabs.Expanded, nyi validating that it expands correctly'
-    # if( $true ) { # } -not $build.Export.Prefabs_Expanded ) {
-    #     write-warning 'Skipping Prefabs.Expanded, nyi validating that it expands correctly'
-    # } else {
-
-    #     $forJson2 = @(
-    #         $forJson | %{
-
-    #             $record = $_
-    #             # $record = md.Convert.BlankPropsToEmpty $Record
-    #             # $record = md.Convert.KeyNames $Record -StartWith 'cost', 'Order'
-    #             $record
-    #                 | md.Table.ExpandListColumn -PropertyName 'cost'
-    #             #     | md.Table.ExpandListColumn -PropertyName 'unlock_buildings'
-    #             # $record
-    #         }
-    #     )
-
-    #     $forJson2
-    #         | ConvertTo-Json -depth 9
-    #         | Set-Content -path $Paths.json_Prefabs_Expanded # -Confirm
-
-    #     $Paths.json_Prefabs_Expanded | md.Log.WroteFile
-
-    #     $exportExcel_Splat = @{
-    #         InputObject   = @( $forJson2 )
-    #         Path          = $Paths.Xlsx_Prefabs
-    #         Show          = $false # moved to end
-    #         WorksheetName = 'Prefabs_Expanded'
-    #         TableName     = 'Prefabs_Expanded_Data'
-    #         TableStyle    = 'Light5'
-    #         Title         = 'Prefabs with columns expanded as multiple rows'
-    #         AutoSize      = $true
-    #     }
-
-    #     Export-Excel @exportExcel_Splat
-
-    #     $Paths.Xlsx_Prefabs | md.Log.WroteFile
-
-    # }
-
-
     if( -not $build.Export.Prefabs_ResearchRecipes ) {
         write-warning 'Skipping Prefabs.Expanded, nyi validating that it expands correctly'
     } else {
-
         # section worksheet: Prefabs.Research_Recipes
         $importExcel_Splat = @{
             ExcelPackage  = $pkg
@@ -1325,7 +1213,7 @@ function md.Export.Prefabs.Prefabs {
         Export-Excel @exportExcel_Splat
     }
 
-    if( $Build.AutoOpen.Prefabs -or $Build.AutoOpen.Prefabs_ResearchRecipes ) {
+    if( $Build.AutoOpen.Prefabs ) {
         Get-Item $Paths.Xlsx_Prefabs | Invoke-Item
     }
 

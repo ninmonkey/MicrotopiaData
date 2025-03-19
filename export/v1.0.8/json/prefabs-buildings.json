@@ -3,7 +3,7 @@
     "ants": "",
     "auto_recipe": false,
     "code": "STOCKPILE2",
-    "cost": "",
+    "cost": [],
     "description": "BUILD_STOCKPILE_DESC",
     "energy_capacity": "",
     "energy_consumption": "",
@@ -23,7 +23,7 @@
     "ants": "",
     "auto_recipe": false,
     "code": "STOCKPILE_LARGE",
-    "cost": "",
+    "cost": [],
     "description": "BUILD_STOCKPILELARGE_DESC ",
     "energy_capacity": "",
     "energy_consumption": "",
@@ -43,7 +43,7 @@
     "ants": "",
     "auto_recipe": false,
     "code": "STOCKPILE_COLOSSAL",
-    "cost": "",
+    "cost": [],
     "description": "BUILD_STOCKPILECOL_DESC ",
     "energy_capacity": "",
     "energy_consumption": "",
@@ -63,7 +63,16 @@
     "ants": "",
     "auto_recipe": false,
     "code": "LARVA_STORAGE",
-    "cost": "IRON_PLATE 2, FABRIC 5",
+    "cost": [
+      {
+        "Name": "IRON_PLATE",
+        "Quantity": "2"
+      },
+      {
+        "Name": "FABRIC",
+        "Quantity": "5"
+      }
+    ],
     "description": "BUILD_LARVASTORAGE_DESC",
     "energy_capacity": "",
     "energy_consumption": "",
@@ -83,7 +92,20 @@
     "ants": "",
     "auto_recipe": false,
     "code": "FLUID_CONTAINER",
-    "cost": "IRON_PLATE 8, GLASS 8, RESIN 10",
+    "cost": [
+      {
+        "Name": "IRON_PLATE",
+        "Quantity": "8"
+      },
+      {
+        "Name": "GLASS",
+        "Quantity": "8"
+      },
+      {
+        "Name": "RESIN",
+        "Quantity": "10"
+      }
+    ],
     "description": "BUILD_BASIN_DESC ",
     "energy_capacity": "",
     "energy_consumption": "",
@@ -103,7 +125,16 @@
     "ants": "",
     "auto_recipe": false,
     "code": "BATTERY_BUILDING_SMALL",
-    "cost": "IRON_PLATE 1, COPPER_BAR 10",
+    "cost": [
+      {
+        "Name": "IRON_PLATE",
+        "Quantity": "1"
+      },
+      {
+        "Name": "COPPER_BAR",
+        "Quantity": "10"
+      }
+    ],
     "description": "BUILD_BATTERYSMALL_DESC",
     "energy_capacity": "",
     "energy_consumption": "",
@@ -123,7 +154,20 @@
     "ants": "",
     "auto_recipe": false,
     "code": "BATTERY_BUILDING",
-    "cost": "IRON_PLATE 4, COPPER_BAR 50, BATTERY 4",
+    "cost": [
+      {
+        "Name": "IRON_PLATE",
+        "Quantity": "4"
+      },
+      {
+        "Name": "COPPER_BAR",
+        "Quantity": "50"
+      },
+      {
+        "Name": "BATTERY",
+        "Quantity": "4"
+      }
+    ],
     "description": "BUILD_BATTERY_DESC ",
     "energy_capacity": "",
     "energy_consumption": "",
@@ -143,7 +187,7 @@
     "ants": "",
     "auto_recipe": false,
     "code": "DISPENSER",
-    "cost": "",
+    "cost": [],
     "description": "BUILD_DISPENSER_DESC",
     "energy_capacity": "",
     "energy_consumption": "",
@@ -163,7 +207,16 @@
     "ants": "",
     "auto_recipe": false,
     "code": "DISPENSER_SMART",
-    "cost": "COPPER_BAR 10, LED 1",
+    "cost": [
+      {
+        "Name": "COPPER_BAR",
+        "Quantity": "10"
+      },
+      {
+        "Name": "LED",
+        "Quantity": "1"
+      }
+    ],
     "description": "BUILD_SMARTDISPENSER_DESC",
     "energy_capacity": "",
     "energy_consumption": "",
@@ -183,7 +236,12 @@
     "ants": "",
     "auto_recipe": false,
     "code": "TRASH_CAN",
-    "cost": "IRON_PLATE 4",
+    "cost": [
+      {
+        "Name": "IRON_PLATE",
+        "Quantity": "4"
+      }
+    ],
     "description": "BUILD_TRASHCAN_DESC",
     "energy_capacity": "",
     "energy_consumption": "",
@@ -203,7 +261,16 @@
     "ants": "",
     "auto_recipe": false,
     "code": "CATAPULT_SMALL",
-    "cost": "IRON_BAR 5, SCREW 20",
+    "cost": [
+      {
+        "Name": "IRON_BAR",
+        "Quantity": "5"
+      },
+      {
+        "Name": "SCREW",
+        "Quantity": "20"
+      }
+    ],
     "description": "BUILD_CATAPULT_SMALL_DESC",
     "energy_capacity": "",
     "energy_consumption": "",
@@ -223,7 +290,24 @@
     "ants": "",
     "auto_recipe": false,
     "code": "CATAPULT",
-    "cost": "IRON_BAR 10, SCREW 10, COPPER_BAR 10, COPPER_WIRE 10",
+    "cost": [
+      {
+        "Name": "IRON_BAR",
+        "Quantity": "10"
+      },
+      {
+        "Name": "SCREW",
+        "Quantity": "10"
+      },
+      {
+        "Name": "COPPER_BAR",
+        "Quantity": "10"
+      },
+      {
+        "Name": "COPPER_WIRE",
+        "Quantity": "10"
+      }
+    ],
     "description": "BUILD_CATAPULT_DESC",
     "energy_capacity": "",
     "energy_consumption": "",
@@ -243,7 +327,12 @@
     "ants": "",
     "auto_recipe": true,
     "code": "SMELTER",
-    "cost": "IRON_RAW 15",
+    "cost": [
+      {
+        "Name": "IRON_RAW",
+        "Quantity": "15"
+      }
+    ],
     "description": "BUILD_SMELTER_DESC",
     "energy_capacity": 0.0,
     "energy_consumption": "",
@@ -263,7 +352,12 @@
     "ants": "",
     "auto_recipe": true,
     "code": "WORKSHOP",
-    "cost": "IRON_BAR 10",
+    "cost": [
+      {
+        "Name": "IRON_BAR",
+        "Quantity": "10"
+      }
+    ],
     "description": "BUILD_WORKSHOP_DESC",
     "energy_capacity": 0.0,
     "energy_consumption": "",
@@ -283,7 +377,24 @@
     "ants": "",
     "auto_recipe": true,
     "code": "FACILITY",
-    "cost": "IRON_BAR 10, COPPER_BAR 10, GLASS 10, FABRIC 10",
+    "cost": [
+      {
+        "Name": "IRON_BAR",
+        "Quantity": "10"
+      },
+      {
+        "Name": "COPPER_BAR",
+        "Quantity": "10"
+      },
+      {
+        "Name": "GLASS",
+        "Quantity": "10"
+      },
+      {
+        "Name": "FABRIC",
+        "Quantity": "10"
+      }
+    ],
     "description": "BUILD_FACILITY_DESC",
     "energy_capacity": "",
     "energy_consumption": "",
@@ -303,7 +414,24 @@
     "ants": "",
     "auto_recipe": true,
     "code": "FACTORY2",
-    "cost": "IRON_PLATE 6, COPPER_WIRE 12, DIODE 10, RESIN 10",
+    "cost": [
+      {
+        "Name": "IRON_PLATE",
+        "Quantity": "6"
+      },
+      {
+        "Name": "COPPER_WIRE",
+        "Quantity": "12"
+      },
+      {
+        "Name": "DIODE",
+        "Quantity": "10"
+      },
+      {
+        "Name": "RESIN",
+        "Quantity": "10"
+      }
+    ],
     "description": "BUILD_FACTORY_DESC",
     "energy_capacity": "",
     "energy_consumption": "",
@@ -323,7 +451,24 @@
     "ants": "",
     "auto_recipe": true,
     "code": "FACTORY3",
-    "cost": "IRON_PLATE 4, COPPER_WIRE 10, DIODE 5, RESIN 10",
+    "cost": [
+      {
+        "Name": "IRON_PLATE",
+        "Quantity": "4"
+      },
+      {
+        "Name": "COPPER_WIRE",
+        "Quantity": "10"
+      },
+      {
+        "Name": "DIODE",
+        "Quantity": "5"
+      },
+      {
+        "Name": "RESIN",
+        "Quantity": "10"
+      }
+    ],
     "description": "BUILD_FACTORY_DESC",
     "energy_capacity": "",
     "energy_consumption": "",
@@ -343,7 +488,24 @@
     "ants": "",
     "auto_recipe": true,
     "code": "GRINDER2",
-    "cost": "IRON_PLATE 4, SCREW 6, CONCRETE 10, GLASS 6",
+    "cost": [
+      {
+        "Name": "IRON_PLATE",
+        "Quantity": "4"
+      },
+      {
+        "Name": "SCREW",
+        "Quantity": "6"
+      },
+      {
+        "Name": "CONCRETE",
+        "Quantity": "10"
+      },
+      {
+        "Name": "GLASS",
+        "Quantity": "6"
+      }
+    ],
     "description": "BUILD_GRINDER_DESC",
     "energy_capacity": "",
     "energy_consumption": "",
@@ -363,7 +525,24 @@
     "ants": "",
     "auto_recipe": true,
     "code": "ACID_REFINERY",
-    "cost": "IRON_BAR 10, IRON_PLATE 2, CONCRETE 15, RESISTOR 2",
+    "cost": [
+      {
+        "Name": "IRON_BAR",
+        "Quantity": "10"
+      },
+      {
+        "Name": "IRON_PLATE",
+        "Quantity": "2"
+      },
+      {
+        "Name": "CONCRETE",
+        "Quantity": "15"
+      },
+      {
+        "Name": "RESISTOR",
+        "Quantity": "2"
+      }
+    ],
     "description": "BUILD_ACIDREFINERY_DESC ",
     "energy_capacity": "",
     "energy_consumption": "",
@@ -383,7 +562,20 @@
     "ants": "",
     "auto_recipe": true,
     "code": "DISSOLVER",
-    "cost": "IRON_PLATE 1, GLASS 20, ACID 5",
+    "cost": [
+      {
+        "Name": "IRON_PLATE",
+        "Quantity": "1"
+      },
+      {
+        "Name": "GLASS",
+        "Quantity": "20"
+      },
+      {
+        "Name": "ACID",
+        "Quantity": "5"
+      }
+    ],
     "description": "BUILD_DISSOLVER_DESC",
     "energy_capacity": "",
     "energy_consumption": "",
@@ -403,7 +595,24 @@
     "ants": "",
     "auto_recipe": true,
     "code": "REACTOR",
-    "cost": "IRON_BAR 10, IRON_PLATE 2, GLASS 10, DIODE 3",
+    "cost": [
+      {
+        "Name": "IRON_BAR",
+        "Quantity": "10"
+      },
+      {
+        "Name": "IRON_PLATE",
+        "Quantity": "2"
+      },
+      {
+        "Name": "GLASS",
+        "Quantity": "10"
+      },
+      {
+        "Name": "DIODE",
+        "Quantity": "3"
+      }
+    ],
     "description": "BUILD_REACTOR_DESC ",
     "energy_capacity": "",
     "energy_consumption": "",
@@ -423,7 +632,36 @@
     "ants": "",
     "auto_recipe": true,
     "code": "REACTOR_LARGE",
-    "cost": "IRON_PLATE 4, COPPER_BAR 10, GLASS 10, RESIN 10, MICROCHIP 1, TRANSISTOR 1, CAPACITOR 1",
+    "cost": [
+      {
+        "Name": "IRON_PLATE",
+        "Quantity": "4"
+      },
+      {
+        "Name": "COPPER_BAR",
+        "Quantity": "10"
+      },
+      {
+        "Name": "GLASS",
+        "Quantity": "10"
+      },
+      {
+        "Name": "RESIN",
+        "Quantity": "10"
+      },
+      {
+        "Name": "MICROCHIP",
+        "Quantity": "1"
+      },
+      {
+        "Name": "TRANSISTOR",
+        "Quantity": "1"
+      },
+      {
+        "Name": "CAPACITOR",
+        "Quantity": "1"
+      }
+    ],
     "description": "BUILD_REACTORLARGE_DESC ",
     "energy_capacity": "",
     "energy_consumption": "",
@@ -443,7 +681,12 @@
     "ants": "",
     "auto_recipe": true,
     "code": "GENERATOR",
-    "cost": "IRON_BAR 33",
+    "cost": [
+      {
+        "Name": "IRON_BAR",
+        "Quantity": "33"
+      }
+    ],
     "description": "BUILD_GENERATOR_DESC ",
     "energy_capacity": "",
     "energy_consumption": "",
@@ -463,7 +706,7 @@
     "ants": "",
     "auto_recipe": false,
     "code": "DYNAMO",
-    "cost": "",
+    "cost": [],
     "description": "BUILD_DYNAMO_DESC",
     "energy_capacity": "",
     "energy_consumption": "",
@@ -483,7 +726,28 @@
     "ants": "",
     "auto_recipe": false,
     "code": "ELECTROLYZER_LARGE",
-    "cost": "IRON_PLATE 1, COPPER_BAR 10, COPPER_WIRE 10, DIODE 5, BATTERY 5",
+    "cost": [
+      {
+        "Name": "IRON_PLATE",
+        "Quantity": "1"
+      },
+      {
+        "Name": "COPPER_BAR",
+        "Quantity": "10"
+      },
+      {
+        "Name": "COPPER_WIRE",
+        "Quantity": "10"
+      },
+      {
+        "Name": "DIODE",
+        "Quantity": "5"
+      },
+      {
+        "Name": "BATTERY",
+        "Quantity": "5"
+      }
+    ],
     "description": "BUILD_ELECTROLYZERLARGE_DESC",
     "energy_capacity": "",
     "energy_consumption": "",
@@ -503,7 +767,28 @@
     "ants": "",
     "auto_recipe": false,
     "code": "ELECTROLYZER",
-    "cost": "IRON_PLATE 1, COPPER_BAR 10, COPPER_WIRE 10, CAPACITOR 1, BIOFUEL 5",
+    "cost": [
+      {
+        "Name": "IRON_PLATE",
+        "Quantity": "1"
+      },
+      {
+        "Name": "COPPER_BAR",
+        "Quantity": "10"
+      },
+      {
+        "Name": "COPPER_WIRE",
+        "Quantity": "10"
+      },
+      {
+        "Name": "CAPACITOR",
+        "Quantity": "1"
+      },
+      {
+        "Name": "BIOFUEL",
+        "Quantity": "5"
+      }
+    ],
     "description": "BUILD_ELECTROLYZER_DESC",
     "energy_capacity": "",
     "energy_consumption": "",
@@ -523,7 +808,12 @@
     "ants": "",
     "auto_recipe": true,
     "code": "SEED_MAKER",
-    "cost": "IRON_BAR 10",
+    "cost": [
+      {
+        "Name": "IRON_BAR",
+        "Quantity": "10"
+      }
+    ],
     "description": "BUILD_SEED_MAKER_DESC",
     "energy_capacity": "",
     "energy_consumption": "",
@@ -543,7 +833,12 @@
     "ants": "",
     "auto_recipe": false,
     "code": "PLANT_POT",
-    "cost": "IRON_BAR 2",
+    "cost": [
+      {
+        "Name": "IRON_BAR",
+        "Quantity": "2"
+      }
+    ],
     "description": "BUILD_PLANT_POT_DESC",
     "energy_capacity": "",
     "energy_consumption": "",
@@ -563,7 +858,24 @@
     "ants": "",
     "auto_recipe": true,
     "code": "DECONSTRUCTOR",
-    "cost": "IRON_PLATE 4, CONCRETE 10, COPPER_WIRE 10, LIGHTBULB 4",
+    "cost": [
+      {
+        "Name": "IRON_PLATE",
+        "Quantity": "4"
+      },
+      {
+        "Name": "CONCRETE",
+        "Quantity": "10"
+      },
+      {
+        "Name": "COPPER_WIRE",
+        "Quantity": "10"
+      },
+      {
+        "Name": "LIGHTBULB",
+        "Quantity": "4"
+      }
+    ],
     "description": "BUILD_DECONSTRUCTOR_DESC",
     "energy_capacity": "",
     "energy_consumption": "",
@@ -583,7 +895,7 @@
     "ants": "",
     "auto_recipe": false,
     "code": "QUEEN",
-    "cost": "",
+    "cost": [],
     "description": "BUILD_QUEEN_DESC",
     "energy_capacity": 10.0,
     "energy_consumption": "",
@@ -603,7 +915,12 @@
     "ants": "",
     "auto_recipe": true,
     "code": "NEST",
-    "cost": "IRON_RAW 10",
+    "cost": [
+      {
+        "Name": "IRON_RAW",
+        "Quantity": "10"
+      }
+    ],
     "description": "BUILD_INCUBATOR_DESC",
     "energy_capacity": 0.0,
     "energy_consumption": "",
@@ -623,7 +940,20 @@
     "ants": "",
     "auto_recipe": true,
     "code": "COMBINER",
-    "cost": "IRON_BAR 2, IRON_PLATE 2, SCREW 5",
+    "cost": [
+      {
+        "Name": "IRON_BAR",
+        "Quantity": "2"
+      },
+      {
+        "Name": "IRON_PLATE",
+        "Quantity": "2"
+      },
+      {
+        "Name": "SCREW",
+        "Quantity": "5"
+      }
+    ],
     "description": "BUILD_COMBINER_DESC",
     "energy_capacity": "",
     "energy_consumption": "",
@@ -643,7 +973,20 @@
     "ants": "",
     "auto_recipe": true,
     "code": "COMBINER2",
-    "cost": "IRON_BAR 2, IRON_PLATE 2, SCREW 5",
+    "cost": [
+      {
+        "Name": "IRON_BAR",
+        "Quantity": "2"
+      },
+      {
+        "Name": "IRON_PLATE",
+        "Quantity": "2"
+      },
+      {
+        "Name": "SCREW",
+        "Quantity": "5"
+      }
+    ],
     "description": "BUILD_COMBINER_DESC",
     "energy_capacity": "",
     "energy_consumption": "",
@@ -663,7 +1006,20 @@
     "ants": "",
     "auto_recipe": true,
     "code": "ASSEMBLER",
-    "cost": "IRON_PLATE 10, SCREW 10, FABRIC 20",
+    "cost": [
+      {
+        "Name": "IRON_PLATE",
+        "Quantity": "10"
+      },
+      {
+        "Name": "SCREW",
+        "Quantity": "10"
+      },
+      {
+        "Name": "FABRIC",
+        "Quantity": "20"
+      }
+    ],
     "description": "BUILD_ASSEMBLER_DESC",
     "energy_capacity": 0.0,
     "energy_consumption": "",
@@ -683,7 +1039,28 @@
     "ants": "",
     "auto_recipe": true,
     "code": "LARVA_BOOSTER",
-    "cost": "IRON_BAR 10, COPPER_WIRE 5, GLASS 10, RESIN 5, CASING 2",
+    "cost": [
+      {
+        "Name": "IRON_BAR",
+        "Quantity": "10"
+      },
+      {
+        "Name": "COPPER_WIRE",
+        "Quantity": "5"
+      },
+      {
+        "Name": "GLASS",
+        "Quantity": "10"
+      },
+      {
+        "Name": "RESIN",
+        "Quantity": "5"
+      },
+      {
+        "Name": "CASING",
+        "Quantity": "2"
+      }
+    ],
     "description": "BUILD_LARVABOOSTER_DESC",
     "energy_capacity": "",
     "energy_consumption": "",
@@ -703,7 +1080,7 @@
     "ants": "",
     "auto_recipe": false,
     "code": "FEEDINGSTATION",
-    "cost": "",
+    "cost": [],
     "description": "BUILD_FEEDINGSTATION_DESC",
     "energy_capacity": "",
     "energy_consumption": "",
@@ -723,7 +1100,7 @@
     "ants": "",
     "auto_recipe": true,
     "code": "HIVE",
-    "cost": "",
+    "cost": [],
     "description": "BUILD_HIVE_DESC",
     "energy_capacity": "",
     "energy_consumption": "",
@@ -743,7 +1120,20 @@
     "ants": "",
     "auto_recipe": true,
     "code": "CRUSHER",
-    "cost": "IRON_PLATE 4, CONCRETE 10, COPPER_WIRE 10",
+    "cost": [
+      {
+        "Name": "IRON_PLATE",
+        "Quantity": "4"
+      },
+      {
+        "Name": "CONCRETE",
+        "Quantity": "10"
+      },
+      {
+        "Name": "COPPER_WIRE",
+        "Quantity": "10"
+      }
+    ],
     "description": "BUILD_CRUSHER_DESC",
     "energy_capacity": "",
     "energy_consumption": "",
@@ -763,7 +1153,7 @@
     "ants": "",
     "auto_recipe": true,
     "code": "ROYAL_PALACE",
-    "cost": "",
+    "cost": [],
     "description": "BUILD_ROYALPALACE_DESC",
     "energy_capacity": "",
     "energy_consumption": "",
@@ -783,7 +1173,12 @@
     "ants": "",
     "auto_recipe": false,
     "code": "FLIGHT_PAD_LAUNCH",
-    "cost": "IRON_PLATE 2",
+    "cost": [
+      {
+        "Name": "IRON_PLATE",
+        "Quantity": "2"
+      }
+    ],
     "description": "BUILD_FLIGHT_PAD_LAUNCH_DESC",
     "energy_capacity": "",
     "energy_consumption": "",
@@ -803,7 +1198,7 @@
     "ants": "",
     "auto_recipe": false,
     "code": "FLIGHT_PAD_LAND",
-    "cost": "",
+    "cost": [],
     "description": "BUILD_FLIGHT_PAD_LAND_DESC",
     "energy_capacity": "",
     "energy_consumption": "",
@@ -823,7 +1218,16 @@
     "ants": "",
     "auto_recipe": false,
     "code": "BRIDGE_SMALL",
-    "cost": "CONCRETE 10, COPPER_WIRE 3",
+    "cost": [
+      {
+        "Name": "CONCRETE",
+        "Quantity": "10"
+      },
+      {
+        "Name": "COPPER_WIRE",
+        "Quantity": "3"
+      }
+    ],
     "description": "BUILD_BRIDGESMALL_DESC ",
     "energy_capacity": "",
     "energy_consumption": "",
@@ -843,7 +1247,20 @@
     "ants": "",
     "auto_recipe": false,
     "code": "BRIDGE_MEDIUM",
-    "cost": "CONCRETE 25, COPPER_WIRE 5, RESIN 15",
+    "cost": [
+      {
+        "Name": "CONCRETE",
+        "Quantity": "25"
+      },
+      {
+        "Name": "COPPER_WIRE",
+        "Quantity": "5"
+      },
+      {
+        "Name": "RESIN",
+        "Quantity": "15"
+      }
+    ],
     "description": "BUILD_BRIDGEMEDIUM_DESC ",
     "energy_capacity": "",
     "energy_consumption": "",
@@ -863,7 +1280,24 @@
     "ants": "",
     "auto_recipe": false,
     "code": "BRIDGE_LARGE",
-    "cost": "CONCRETE 50, CASING 10, SCREW 10, GOLD 1",
+    "cost": [
+      {
+        "Name": "CONCRETE",
+        "Quantity": "50"
+      },
+      {
+        "Name": "CASING",
+        "Quantity": "10"
+      },
+      {
+        "Name": "SCREW",
+        "Quantity": "10"
+      },
+      {
+        "Name": "GOLD",
+        "Quantity": "1"
+      }
+    ],
     "description": "BUILD_BRIDGELARGE_DESC ",
     "energy_capacity": "",
     "energy_consumption": "",
@@ -883,7 +1317,20 @@
     "ants": "",
     "auto_recipe": false,
     "code": "ANT_LAUNCHER",
-    "cost": "IRON_PLATE 4, COPPER_BAR 15, DIODE 3",
+    "cost": [
+      {
+        "Name": "IRON_PLATE",
+        "Quantity": "4"
+      },
+      {
+        "Name": "COPPER_BAR",
+        "Quantity": "15"
+      },
+      {
+        "Name": "DIODE",
+        "Quantity": "3"
+      }
+    ],
     "description": "BUILD_ANTCANNON_DESC ",
     "energy_capacity": "",
     "energy_consumption": "",
@@ -903,7 +1350,20 @@
     "ants": "",
     "auto_recipe": false,
     "code": "LAUNCH_TOWER",
-    "cost": "IRON_PLATE 8, COPPER_BAR 30, BIOFUEL 1",
+    "cost": [
+      {
+        "Name": "IRON_PLATE",
+        "Quantity": "8"
+      },
+      {
+        "Name": "COPPER_BAR",
+        "Quantity": "30"
+      },
+      {
+        "Name": "BIOFUEL",
+        "Quantity": "1"
+      }
+    ],
     "description": "BUILD_LAUNCHTOWER_DESC",
     "energy_capacity": "",
     "energy_consumption": "",
@@ -923,7 +1383,16 @@
     "ants": "",
     "auto_recipe": false,
     "code": "BEACON_SMALL",
-    "cost": "COPPER_WIRE 1, LIGHTBULB 1",
+    "cost": [
+      {
+        "Name": "COPPER_WIRE",
+        "Quantity": "1"
+      },
+      {
+        "Name": "LIGHTBULB",
+        "Quantity": "1"
+      }
+    ],
     "description": "BUILD_BEACON_DESC",
     "energy_capacity": "",
     "energy_consumption": "",
@@ -943,7 +1412,16 @@
     "ants": "",
     "auto_recipe": false,
     "code": "BEACON_MEDIUM_INPUT",
-    "cost": "COPPER_BAR 10, LIGHTBULB 4",
+    "cost": [
+      {
+        "Name": "COPPER_BAR",
+        "Quantity": "10"
+      },
+      {
+        "Name": "LIGHTBULB",
+        "Quantity": "4"
+      }
+    ],
     "description": "BUILD_BEACONPOLE2_DESC",
     "energy_capacity": "",
     "energy_consumption": "",
@@ -963,7 +1441,16 @@
     "ants": "",
     "auto_recipe": false,
     "code": "BEACON_MEDIUM",
-    "cost": "LED 4, BATTERY 1",
+    "cost": [
+      {
+        "Name": "LED",
+        "Quantity": "4"
+      },
+      {
+        "Name": "BATTERY",
+        "Quantity": "1"
+      }
+    ],
     "description": "BUILD_BEACONPOLE_DESC ",
     "energy_capacity": "",
     "energy_consumption": "",
@@ -983,7 +1470,20 @@
     "ants": "",
     "auto_recipe": false,
     "code": "BEACON_LARGE",
-    "cost": "IRON_PLATE 4, GLASS 10, MICROCHIP 1",
+    "cost": [
+      {
+        "Name": "IRON_PLATE",
+        "Quantity": "4"
+      },
+      {
+        "Name": "GLASS",
+        "Quantity": "10"
+      },
+      {
+        "Name": "MICROCHIP",
+        "Quantity": "1"
+      }
+    ],
     "description": "BUILD_BEACONTOWER_DESC ",
     "energy_capacity": "",
     "energy_consumption": "",
@@ -1003,7 +1503,12 @@
     "ants": "",
     "auto_recipe": false,
     "code": "FLOORTILE_IRON",
-    "cost": "IRON_PLATE 1",
+    "cost": [
+      {
+        "Name": "IRON_PLATE",
+        "Quantity": "1"
+      }
+    ],
     "description": "BUILD_FLOORIRON_DESC ",
     "energy_capacity": "",
     "energy_consumption": "",
@@ -1023,7 +1528,12 @@
     "ants": "",
     "auto_recipe": false,
     "code": "FLOORTILE_CONCRETECORE",
-    "cost": "CONCRETE 50",
+    "cost": [
+      {
+        "Name": "CONCRETE",
+        "Quantity": "50"
+      }
+    ],
     "description": "BUILD_CONCRETECORE_DESC",
     "energy_capacity": "",
     "energy_consumption": "",
@@ -1043,7 +1553,7 @@
     "ants": "",
     "auto_recipe": false,
     "code": "FLOORTILE_CONCRETE",
-    "cost": "",
+    "cost": [],
     "description": "BUILD_FLOORCONCRETE_DESC",
     "energy_capacity": "",
     "energy_consumption": "",
@@ -1063,7 +1573,12 @@
     "ants": "",
     "auto_recipe": false,
     "code": "CONCRETE_FLOOR",
-    "cost": "CONCRETE 1",
+    "cost": [
+      {
+        "Name": "CONCRETE",
+        "Quantity": "1"
+      }
+    ],
     "description": "BUILD_CONCRETE_FLOOR_DESC",
     "energy_capacity": "",
     "energy_consumption": "",
@@ -1083,7 +1598,16 @@
     "ants": "",
     "auto_recipe": false,
     "code": "INVENTOR_PAD",
-    "cost": "IRON_PLATE 1, SCREW 4",
+    "cost": [
+      {
+        "Name": "IRON_PLATE",
+        "Quantity": "1"
+      },
+      {
+        "Name": "SCREW",
+        "Quantity": "4"
+      }
+    ],
     "description": "BUILD_INVENTOR_PAD_DESC",
     "energy_capacity": "",
     "energy_consumption": "",
@@ -1103,7 +1627,24 @@
     "ants": "",
     "auto_recipe": false,
     "code": "INVENTOR_PAD_AUTO",
-    "cost": "IRON_PLATE 4, COPPER_WIRE 10, LED 2, RESISTOR 2",
+    "cost": [
+      {
+        "Name": "IRON_PLATE",
+        "Quantity": "4"
+      },
+      {
+        "Name": "COPPER_WIRE",
+        "Quantity": "10"
+      },
+      {
+        "Name": "LED",
+        "Quantity": "2"
+      },
+      {
+        "Name": "RESISTOR",
+        "Quantity": "2"
+      }
+    ],
     "description": "BUILD_INVENTOR_FARM_DESC",
     "energy_capacity": "",
     "energy_consumption": "",
@@ -1123,7 +1664,24 @@
     "ants": "",
     "auto_recipe": false,
     "code": "RADAR_TOWER",
-    "cost": "IRON_BAR 12, IRON_PLATE 8, SCREW 10, ENERGY_POD 30",
+    "cost": [
+      {
+        "Name": "IRON_BAR",
+        "Quantity": "12"
+      },
+      {
+        "Name": "IRON_PLATE",
+        "Quantity": "8"
+      },
+      {
+        "Name": "SCREW",
+        "Quantity": "10"
+      },
+      {
+        "Name": "ENERGY_POD",
+        "Quantity": "30"
+      }
+    ],
     "description": "BUILD_RADAR_TOWER_DESC",
     "energy_capacity": "",
     "energy_consumption": "",
@@ -1143,7 +1701,24 @@
     "ants": "",
     "auto_recipe": false,
     "code": "RADAR_UPGRADE1",
-    "cost": "IRON_PLATE 20, COPPER_WIRE 30, LIGHTBULB 10, DIODE 25",
+    "cost": [
+      {
+        "Name": "IRON_PLATE",
+        "Quantity": "20"
+      },
+      {
+        "Name": "COPPER_WIRE",
+        "Quantity": "30"
+      },
+      {
+        "Name": "LIGHTBULB",
+        "Quantity": "10"
+      },
+      {
+        "Name": "DIODE",
+        "Quantity": "25"
+      }
+    ],
     "description": "BUILD_RADAR_UPGRADE1_DESC",
     "energy_capacity": "",
     "energy_consumption": "",
@@ -1163,7 +1738,32 @@
     "ants": "",
     "auto_recipe": false,
     "code": "RADAR_UPGRADE2",
-    "cost": "IRON_PLATE 30, COPPER_WIRE 50, GLASS 50, CASING 20, LED 40, ENERGY_POD3 50",
+    "cost": [
+      {
+        "Name": "IRON_PLATE",
+        "Quantity": "30"
+      },
+      {
+        "Name": "COPPER_WIRE",
+        "Quantity": "50"
+      },
+      {
+        "Name": "GLASS",
+        "Quantity": "50"
+      },
+      {
+        "Name": "CASING",
+        "Quantity": "20"
+      },
+      {
+        "Name": "LED",
+        "Quantity": "40"
+      },
+      {
+        "Name": "ENERGY_POD3",
+        "Quantity": "50"
+      }
+    ],
     "description": "BUILD_RADAR_UPGRADE2_DESC",
     "energy_capacity": "",
     "energy_consumption": "",
@@ -1183,7 +1783,24 @@
     "ants": "",
     "auto_recipe": false,
     "code": "ISLAND_SCANNER1",
-    "cost": "CONCRETE 40, COPPER_WIRE 25, LIGHTBULB 10, ENERGY_POD2 10",
+    "cost": [
+      {
+        "Name": "CONCRETE",
+        "Quantity": "40"
+      },
+      {
+        "Name": "COPPER_WIRE",
+        "Quantity": "25"
+      },
+      {
+        "Name": "LIGHTBULB",
+        "Quantity": "10"
+      },
+      {
+        "Name": "ENERGY_POD2",
+        "Quantity": "10"
+      }
+    ],
     "description": "BUILD_ISLANDSCANNERFLORAL_DESC ",
     "energy_capacity": "",
     "energy_consumption": "",
@@ -1203,7 +1820,32 @@
     "ants": "",
     "auto_recipe": false,
     "code": "ISLAND_SCANNER2",
-    "cost": "IRON_PLATE 30, COPPER_WIRE 50, GLASS 50, CASING 20, LED 40, ENERGY_POD3 50",
+    "cost": [
+      {
+        "Name": "IRON_PLATE",
+        "Quantity": "30"
+      },
+      {
+        "Name": "COPPER_WIRE",
+        "Quantity": "50"
+      },
+      {
+        "Name": "GLASS",
+        "Quantity": "50"
+      },
+      {
+        "Name": "CASING",
+        "Quantity": "20"
+      },
+      {
+        "Name": "LED",
+        "Quantity": "40"
+      },
+      {
+        "Name": "ENERGY_POD3",
+        "Quantity": "50"
+      }
+    ],
     "description": "BUILD_ISLANDSCANNERPOLLUTED_DESC",
     "energy_capacity": "",
     "energy_consumption": "",
@@ -1223,7 +1865,28 @@
     "ants": "",
     "auto_recipe": false,
     "code": "ISLAND_SCANNER3",
-    "cost": "IRON_PLATE 30, COPPER_WIRE 50, GLASS 20, RESISTOR 40, ENERGY_POD4 50",
+    "cost": [
+      {
+        "Name": "IRON_PLATE",
+        "Quantity": "30"
+      },
+      {
+        "Name": "COPPER_WIRE",
+        "Quantity": "50"
+      },
+      {
+        "Name": "GLASS",
+        "Quantity": "20"
+      },
+      {
+        "Name": "RESISTOR",
+        "Quantity": "40"
+      },
+      {
+        "Name": "ENERGY_POD4",
+        "Quantity": "50"
+      }
+    ],
     "description": "BUILD_ISLANDSCANNERRANDOM_DESC",
     "energy_capacity": "",
     "energy_consumption": "",
@@ -1243,7 +1906,32 @@
     "ants": "",
     "auto_recipe": false,
     "code": "ISLAND_SCANNER4",
-    "cost": "IRON_PLATE 30, COPPER_WIRE 50, LED 20, RESISTOR 20, BIOFUEL 20, ENERGY_POD5 30",
+    "cost": [
+      {
+        "Name": "IRON_PLATE",
+        "Quantity": "30"
+      },
+      {
+        "Name": "COPPER_WIRE",
+        "Quantity": "50"
+      },
+      {
+        "Name": "LED",
+        "Quantity": "20"
+      },
+      {
+        "Name": "RESISTOR",
+        "Quantity": "20"
+      },
+      {
+        "Name": "BIOFUEL",
+        "Quantity": "20"
+      },
+      {
+        "Name": "ENERGY_POD5",
+        "Quantity": "30"
+      }
+    ],
     "description": "BUILD_ISLANDSCANNERRANDOM_DESC",
     "energy_capacity": "",
     "energy_consumption": "",
@@ -1263,7 +1951,32 @@
     "ants": "",
     "auto_recipe": false,
     "code": "ISLAND_SCANNER5",
-    "cost": "IRON_PLATE 40, COPPER_WIRE 50, BATTERY 30, CAPACITOR 20, TRANSISTOR 20, ENERGY_POD6 30",
+    "cost": [
+      {
+        "Name": "IRON_PLATE",
+        "Quantity": "40"
+      },
+      {
+        "Name": "COPPER_WIRE",
+        "Quantity": "50"
+      },
+      {
+        "Name": "BATTERY",
+        "Quantity": "30"
+      },
+      {
+        "Name": "CAPACITOR",
+        "Quantity": "20"
+      },
+      {
+        "Name": "TRANSISTOR",
+        "Quantity": "20"
+      },
+      {
+        "Name": "ENERGY_POD6",
+        "Quantity": "30"
+      }
+    ],
     "description": "BUILD_ISLANDSCANNERANCIENT_DESC",
     "energy_capacity": "",
     "energy_consumption": "",
@@ -1283,7 +1996,28 @@
     "ants": "",
     "auto_recipe": false,
     "code": "ISLAND_SCANNER6",
-    "cost": "IRON_PLATE 50, COPPER_WIRE 50, LED 50, MICROCHIP 50, ENERGY_POD6 50",
+    "cost": [
+      {
+        "Name": "IRON_PLATE",
+        "Quantity": "50"
+      },
+      {
+        "Name": "COPPER_WIRE",
+        "Quantity": "50"
+      },
+      {
+        "Name": "LED",
+        "Quantity": "50"
+      },
+      {
+        "Name": "MICROCHIP",
+        "Quantity": "50"
+      },
+      {
+        "Name": "ENERGY_POD6",
+        "Quantity": "50"
+      }
+    ],
     "description": "BUILD_ISLANDSCANNERTARGET_DESC ",
     "energy_capacity": "",
     "energy_consumption": "",
@@ -1303,7 +2037,28 @@
     "ants": "",
     "auto_recipe": false,
     "code": "ISLAND_SCANNER7",
-    "cost": "IRON_PLATE 50, COPPER_WIRE 50, LED 50, MICROCHIP 50, ENERGY_POD6 50",
+    "cost": [
+      {
+        "Name": "IRON_PLATE",
+        "Quantity": "50"
+      },
+      {
+        "Name": "COPPER_WIRE",
+        "Quantity": "50"
+      },
+      {
+        "Name": "LED",
+        "Quantity": "50"
+      },
+      {
+        "Name": "MICROCHIP",
+        "Quantity": "50"
+      },
+      {
+        "Name": "ENERGY_POD6",
+        "Quantity": "50"
+      }
+    ],
     "description": "BUILD_ISLANDSCANNERTARGET_DESC ",
     "energy_capacity": "",
     "energy_consumption": "",
@@ -1323,7 +2078,28 @@
     "ants": "",
     "auto_recipe": false,
     "code": "ISLAND_SCANNER8",
-    "cost": "IRON_PLATE 50, COPPER_WIRE 50, LED 50, MICROCHIP 50, ENERGY_POD6 50",
+    "cost": [
+      {
+        "Name": "IRON_PLATE",
+        "Quantity": "50"
+      },
+      {
+        "Name": "COPPER_WIRE",
+        "Quantity": "50"
+      },
+      {
+        "Name": "LED",
+        "Quantity": "50"
+      },
+      {
+        "Name": "MICROCHIP",
+        "Quantity": "50"
+      },
+      {
+        "Name": "ENERGY_POD6",
+        "Quantity": "50"
+      }
+    ],
     "description": "BUILD_ISLANDSCANNERTARGET_DESC ",
     "energy_capacity": "",
     "energy_consumption": "",
@@ -1343,7 +2119,12 @@
     "ants": "",
     "auto_recipe": false,
     "code": "CONCRETE_MONUMENT",
-    "cost": "CONCRETE 50",
+    "cost": [
+      {
+        "Name": "CONCRETE",
+        "Quantity": "50"
+      }
+    ],
     "description": "BUILD_CONCRETE_MONUMENT_DESC",
     "energy_capacity": "",
     "energy_consumption": "",
@@ -1363,7 +2144,24 @@
     "ants": "",
     "auto_recipe": false,
     "code": "LED_TERMINAL",
-    "cost": "IRON_BAR 30, IRON_PLATE 5, COPPER_WIRE 15, LED 10",
+    "cost": [
+      {
+        "Name": "IRON_BAR",
+        "Quantity": "30"
+      },
+      {
+        "Name": "IRON_PLATE",
+        "Quantity": "5"
+      },
+      {
+        "Name": "COPPER_WIRE",
+        "Quantity": "15"
+      },
+      {
+        "Name": "LED",
+        "Quantity": "10"
+      }
+    ],
     "description": "BUILD_LEDTERMINAL_DESC",
     "energy_capacity": "",
     "energy_consumption": "",
@@ -1383,7 +2181,24 @@
     "ants": "",
     "auto_recipe": false,
     "code": "LIGHTHOUSE",
-    "cost": "IRON_BAR 10, CONCRETE 50, LIGHTBULB 20, CHEM_WASTE 20",
+    "cost": [
+      {
+        "Name": "IRON_BAR",
+        "Quantity": "10"
+      },
+      {
+        "Name": "CONCRETE",
+        "Quantity": "50"
+      },
+      {
+        "Name": "LIGHTBULB",
+        "Quantity": "20"
+      },
+      {
+        "Name": "CHEM_WASTE",
+        "Quantity": "20"
+      }
+    ],
     "description": "BUILD_LIGHTHOUSE_DESC",
     "energy_capacity": "",
     "energy_consumption": "",
@@ -1403,7 +2218,48 @@
     "ants": "",
     "auto_recipe": false,
     "code": "MONUMENT1",
-    "cost": "IRON_BAR 200, COPPER_BAR 100, CONCRETE 150,  RESIN 40, IRON_PLATE 25, SCREW 50, COPPER_WIRE 50, DIODE 20, LED 10, ENERGY_POD3 25",
+    "cost": [
+      {
+        "Name": "IRON_BAR",
+        "Quantity": "200"
+      },
+      {
+        "Name": "COPPER_BAR",
+        "Quantity": "100"
+      },
+      {
+        "Name": "CONCRETE",
+        "Quantity": "150"
+      },
+      {
+        "Name": "RESIN",
+        "Quantity": "40"
+      },
+      {
+        "Name": "IRON_PLATE",
+        "Quantity": "25"
+      },
+      {
+        "Name": "SCREW",
+        "Quantity": "50"
+      },
+      {
+        "Name": "COPPER_WIRE",
+        "Quantity": "50"
+      },
+      {
+        "Name": "DIODE",
+        "Quantity": "20"
+      },
+      {
+        "Name": "LED",
+        "Quantity": "10"
+      },
+      {
+        "Name": "ENERGY_POD3",
+        "Quantity": "25"
+      }
+    ],
     "description": "BUILD_MONUMENT1_DESC ",
     "energy_capacity": "",
     "energy_consumption": "",
@@ -1423,7 +2279,40 @@
     "ants": "",
     "auto_recipe": false,
     "code": "MONUMENT2",
-    "cost": "IRON_BAR 500, SCREW 250, CONCRETE 300,  RESIN 100, TRANSISTOR 25, CAPACITOR 25, BIOFUEL 100, ENERGY_POD6 50",
+    "cost": [
+      {
+        "Name": "IRON_BAR",
+        "Quantity": "500"
+      },
+      {
+        "Name": "SCREW",
+        "Quantity": "250"
+      },
+      {
+        "Name": "CONCRETE",
+        "Quantity": "300"
+      },
+      {
+        "Name": "RESIN",
+        "Quantity": "100"
+      },
+      {
+        "Name": "TRANSISTOR",
+        "Quantity": "25"
+      },
+      {
+        "Name": "CAPACITOR",
+        "Quantity": "25"
+      },
+      {
+        "Name": "BIOFUEL",
+        "Quantity": "100"
+      },
+      {
+        "Name": "ENERGY_POD6",
+        "Quantity": "50"
+      }
+    ],
     "description": "BUILD_MONUMENT2_DESC ",
     "energy_capacity": "",
     "energy_consumption": "",
@@ -1443,7 +2332,24 @@
     "ants": "",
     "auto_recipe": false,
     "code": "GYNE_MAKER",
-    "cost": "IRON_PLATE 20, SCREW 50, GLASS 20, RESIN 50",
+    "cost": [
+      {
+        "Name": "IRON_PLATE",
+        "Quantity": "20"
+      },
+      {
+        "Name": "SCREW",
+        "Quantity": "50"
+      },
+      {
+        "Name": "GLASS",
+        "Quantity": "20"
+      },
+      {
+        "Name": "RESIN",
+        "Quantity": "50"
+      }
+    ],
     "description": "BUILD_GYNEMAKER_DESC",
     "energy_capacity": "",
     "energy_consumption": "",
@@ -1463,7 +2369,16 @@
     "ants": "",
     "auto_recipe": false,
     "code": "GYNE_TOWER",
-    "cost": "IRON_BAR 30, CONCRETE 30",
+    "cost": [
+      {
+        "Name": "IRON_BAR",
+        "Quantity": "30"
+      },
+      {
+        "Name": "CONCRETE",
+        "Quantity": "30"
+      }
+    ],
     "description": "BUILD_GYNETOWER_DESC",
     "energy_capacity": "",
     "energy_consumption": "",
@@ -1483,7 +2398,7 @@
     "ants": "",
     "auto_recipe": false,
     "code": "CHEAT_PICKUPS_SPAWNER",
-    "cost": "",
+    "cost": [],
     "description": "BUILD_CHEAT_PICKUPS_SPAWNER_DESC",
     "energy_capacity": "",
     "energy_consumption": "",
@@ -1503,7 +2418,7 @@
     "ants": "",
     "auto_recipe": false,
     "code": "CHEAT_ANT_SPAWNER",
-    "cost": "",
+    "cost": [],
     "description": "BUILD_CHEAT_ANT_SPAWNER_DESC",
     "energy_capacity": "",
     "energy_consumption": "",
