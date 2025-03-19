@@ -31,7 +31,7 @@ $Paths.Raw_Biome  = md.GetRawPath $Paths.Xlsx_Biome
 $Paths.Xlsx_Prefabs = Join-Path $Paths.ExportRoot_CurrentVersion 'prefabs.xlsx'
 $Paths.Raw_Prefabs  = md.GetRawPath $Paths.Xlsx_Prefabs
 
-$Paths.Xlsx_Instinct = Join-Path $ Paths.ExportRoot_CurrentVersion 'Instinct.xlsx'
+$Paths.Xlsx_Instinct = Join-Path $Paths.ExportRoot_CurrentVersion 'Instinct.xlsx'
 $Paths.Raw_Instinct  = md.GetRawPath $Paths.Xlsx_Instinct
 
 $Paths.Xlsx_TechTree = Join-Path $Paths.ExportRoot_CurrentVersion 'techtree.xlsx'
@@ -48,15 +48,16 @@ $Paths.json_ChangeLog                = Join-Path $Paths.ExportRoot_CurrentVersio
 $Paths.Json_Crusher_Output = Join-Path $Paths.ExportRoot_CurrentVersion 'json/crusher-output.json'
 $Paths.csv_Crusher_Output  = Join-Path $Paths.ExportRoot_CurrentVersion 'csv/crusher-output.csv'
 
-$Paths.json_Biome_Objects            = Join-Path $Paths.ExportRoot_CurrentVersion 'json/biome-objects.json'
-$Paths.json_Biome_Objects_Expanded   = Join-Path $Paths.ExportRoot_CurrentVersion 'json/biome-objects-expanded.json'
-$Paths.json_Biome_Plants             = Join-Path $Paths.ExportRoot_CurrentVersion 'json/biome-plants.json'
-$Paths.json_Biome_Plants_ColumnDesc  = Join-Path $Paths.ExportRoot_CurrentVersion 'json/biome-plants-column-desc.json'
-$Paths.json_Loc_UI                   = Join-Path $Paths.ExportRoot_CurrentVersion 'json/loc-ui.json'
-$Paths.json_Loc_Objects                   = Join-Path $Paths.ExportRoot_CurrentVersion 'json/loc-objects.json'
-$Paths.json_TechTree_ResearchRecipes = Join-Path $Paths.ExportRoot_CurrentVersion 'json/techtree-researchrecipes.json'
+$Paths.json_Prefabs_Buildings          = Join-Path $Paths.ExportRoot_CurrentVersion 'json/prefabs-buildings.json'
+$Paths.json_Biome_Objects              = Join-Path $Paths.ExportRoot_CurrentVersion 'json/biome-objects.json'
+$Paths.json_Biome_Objects_Expanded     = Join-Path $Paths.ExportRoot_CurrentVersion 'json/biome-objects-expanded.json'
+$Paths.json_Biome_Plants               = Join-Path $Paths.ExportRoot_CurrentVersion 'json/biome-plants.json'
+$Paths.json_Biome_Plants_ColumnDesc    = Join-Path $Paths.ExportRoot_CurrentVersion 'json/biome-plants-column-desc.json'
+$Paths.json_Loc_UI                     = Join-Path $Paths.ExportRoot_CurrentVersion 'json/loc-ui.json'
+$Paths.json_Loc_Objects                = Join-Path $Paths.ExportRoot_CurrentVersion 'json/loc-objects.json'
+$Paths.json_TechTree_ResearchRecipes   = Join-Path $Paths.ExportRoot_CurrentVersion 'json/techtree-researchrecipes.json'
 $Paths.json_TechTree_TechTree_Expanded = Join-Path $Paths.ExportRoot_CurrentVersion 'json/techtree-techtree-expanded.json'
-$Paths.json_TechTree_TechTree        = Join-Path $Paths.ExportRoot_CurrentVersion 'json/techtree-techtree.json'
+$Paths.json_TechTree_TechTree          = Join-Path $Paths.ExportRoot_CurrentVersion 'json/techtree-techtree.json'
 
 $Paths.json_WorkbookSchema           = Join-Path $Paths.ExportRoot_CurrentVersion 'json/workbook-schema.json'
 $Paths.xlsx_WorkbookSchema           = Join-Path $Paths.ExportRoot_CurrentVersion 'workbook-schema.xlsx'
@@ -73,20 +74,22 @@ $Build ??= [ordered]@{ # auto 'show' certain files. nullish op lets you override
         Loc                      = $false
         Prefabs_Crusher          = $false
         TechTree_ResearchRecipes = $false
-        TechTree_TechTree        = $true
+        TechTree_TechTree        = $false
+        Prefabs                  = $True
         WorkbookSchema           = $false
     }
     Export = [ordered]@{
-        Changelog                = $true
-        Biome_Objects            = $false # $true # $false
-        Biome_Objects_Expanded   = $false # $true # $false
-        Biome_Plants             = $false # $true # $false
-        Loc                      = $false # $true # $false
-        Prefabs_Crusher          = $false # $true # $false
-        TechTree_ResearchRecipes = $true # $false
-        TechTree_TechTree        = $true # $false
-        TechTree_TechTree_Expanded        = $true # $false
-        WorkbookSchema           = $false # $false
+        Changelog                  = $false
+        Biome_Objects              = $false # $true # $false
+        Biome_Objects_Expanded     = $false # $true # $false
+        Biome_Plants               = $false # $true # $false
+        Loc                        = $false # $true # $false
+        Prefabs_Crusher            = $true # $true # $false
+        Prefabs                    = $true
+        TechTree_ResearchRecipes   = $false # $false
+        TechTree_TechTree          = $false # $false
+        TechTree_TechTree_Expanded = $false # $false
+        WorkbookSchema             = $false # $false
     }
 }
 # $Paths.Game = [ordered]@{
@@ -121,6 +124,10 @@ if($Build.Export.TechTree_TechTree) {
 }
 if($Build.Export.Changelog) {
     md.Export.Changelog -Verbose -Path $Paths
+}
+if($Build.Export.Prefabs) {
+    Remove-Item $Paths.Xlsx_Prefabs -ea 'Ignore'
+    md.Export.Prefabs.Prefabs -Paths $Paths -Verbose
 }
 if($Build.Export.Prefabs_Crusher) {
     md.Export.Prefabs.Crusher -Paths $Paths -Verbose
