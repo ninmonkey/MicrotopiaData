@@ -1551,7 +1551,12 @@ function md.Export.Readme.FileListing {
             fd -e json --path-separator=/ --strip-cwd-prefix=never | Re.AddVersionFolderPrefix
         #>
         # $curVersionPath = $paths.ExportRoot_CurrentVersion | Split-path -Leaf
-        $_ -replace './json/', "./export/${curVersionPath}/json/"
+        $str = $_
+        $str = $str -replace './json/', "./export/${curVersionPath}/json/"
+        $str = $str -replace './xlsx/', "./export/${curVersionPath}/xlsx/"
+        $str = $str -replace './csv/', "./export/${curVersionPath}/csv/"
+        $str = $str -replace './md/', "./export/${curVersionPath}/md/"
+        $str
     }
 
 
@@ -1599,7 +1604,9 @@ function md.Export.Readme.FileListing {
         Markdown.Format.LinksAsUL -Lines @(md.Invoke.FdFind -Extension json -PathsAsMarkdown -UsingNoIgnore | Re.AddVersionFolderPrefix )
 
         Markdown.Write.Header -Depth 3 -Text "Xlsx"
-        Markdown.Format.LinksAsUL -Lines @(md.Invoke.FdFind -Extension xlsx -PathsAsMarkdown -UsingNoIgnore | Re.AddVersionFolderPrefix )
+        Markdown.Format.LinksAsUL -Lines @(
+            (md.Invoke.FdFind -Extension xlsx -PathsAsMarkdown -UsingNoIgnore ) -replace '\./', "./export/${curVersionPath}/"
+        )
 
         Markdown.Write.Header -Depth 3 -Text "Csv"
         Markdown.Format.LinksAsUL -Lines @(md.Invoke.FdFind -Extension csv -PathsAsMarkdown -UsingNoIgnore | Re.AddVersionFolderPrefix )
