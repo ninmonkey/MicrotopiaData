@@ -1493,6 +1493,7 @@ function md.Export.Prefabs.Crusher {
 
             $record.'product_pickup' = md.Parse.IngredientsFromCsv $record.'product_pickup'
             $record.'cost_ant'       = md.Parse.IngredientsFromCsv $record.'cost_ant'
+            $record.'costs_pickup'   = md.Parse.IngredientsFromCsv $record.'costs_pickup'
             $record.'planned'        = md.Parse.Checkbox $record.'planned'
 
             $record

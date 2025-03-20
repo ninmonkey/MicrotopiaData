@@ -3,7 +3,12 @@
     "always_unlocked": "",
     "buildings": "GRINDER2",
     "cost_ant": [],
-    "costs_pickup": "FIBER_SPIKETREE 1",
+    "costs_pickup": [
+      {
+        "Name": "FIBER_SPIKETREE",
+        "Quantity": "1"
+      }
+    ],
     "energy_cost": "",
     "enum": "GRIND_STARCH",
     "in_demo": "",
@@ -28,7 +33,7 @@
         "Quantity": "1"
       }
     ],
-    "costs_pickup": "",
+    "costs_pickup": [],
     "energy_cost": "",
     "enum": "CRUSHER_BULB5",
     "in_demo": "",
@@ -53,7 +58,7 @@
         "Quantity": "1"
       }
     ],
-    "costs_pickup": "",
+    "costs_pickup": [],
     "energy_cost": "",
     "enum": "CRUSHER_BULB4",
     "in_demo": "",
@@ -78,7 +83,7 @@
         "Quantity": "1"
       }
     ],
-    "costs_pickup": "",
+    "costs_pickup": [],
     "energy_cost": "",
     "enum": "CRUSHER_BULB3",
     "in_demo": "",
@@ -103,7 +108,7 @@
         "Quantity": "1"
       }
     ],
-    "costs_pickup": "",
+    "costs_pickup": [],
     "energy_cost": "",
     "enum": "CRUSHER_BULB2",
     "in_demo": "",
@@ -128,7 +133,7 @@
         "Quantity": "1"
       }
     ],
-    "costs_pickup": "",
+    "costs_pickup": [],
     "energy_cost": "",
     "enum": "CRUSHER_BULB1",
     "in_demo": "",
@@ -153,7 +158,7 @@
         "Quantity": "1"
       }
     ],
-    "costs_pickup": "",
+    "costs_pickup": [],
     "energy_cost": "",
     "enum": "CRUSHER_BULB0",
     "in_demo": "",
@@ -178,7 +183,7 @@
         "Quantity": "1"
       }
     ],
-    "costs_pickup": "",
+    "costs_pickup": [],
     "energy_cost": "",
     "enum": "CRUSHER_T1_IRON",
     "in_demo": "",
@@ -203,7 +208,7 @@
         "Quantity": "1"
       }
     ],
-    "costs_pickup": "",
+    "costs_pickup": [],
     "energy_cost": "",
     "enum": "CRUSHER_MESSENGER",
     "in_demo": "",
@@ -228,7 +233,7 @@
         "Quantity": "1"
       }
     ],
-    "costs_pickup": "",
+    "costs_pickup": [],
     "energy_cost": "",
     "enum": "CRUSHER_GYNE",
     "in_demo": "",
@@ -253,7 +258,7 @@
         "Quantity": "1"
       }
     ],
-    "costs_pickup": "",
+    "costs_pickup": [],
     "energy_cost": "",
     "enum": "CRUSHER_PRINCESS",
     "in_demo": "",
@@ -278,7 +283,7 @@
         "Quantity": "1"
       }
     ],
-    "costs_pickup": "",
+    "costs_pickup": [],
     "energy_cost": "",
     "enum": "CRUSHER_HAZMAT",
     "in_demo": "",
@@ -307,7 +312,7 @@
         "Quantity": "1"
       }
     ],
-    "costs_pickup": "",
+    "costs_pickup": [],
     "energy_cost": "",
     "enum": "CRUSHER_SWARM",
     "in_demo": "",
@@ -332,7 +337,7 @@
         "Quantity": "1"
       }
     ],
-    "costs_pickup": "",
+    "costs_pickup": [],
     "energy_cost": "",
     "enum": "CRUSHER_SENTRY",
     "in_demo": "",
@@ -357,7 +362,7 @@
         "Quantity": "1"
       }
     ],
-    "costs_pickup": "",
+    "costs_pickup": [],
     "energy_cost": "",
     "enum": "CRUSHER_INVENTOR_T3",
     "in_demo": "",
@@ -382,7 +387,7 @@
         "Quantity": "1"
       }
     ],
-    "costs_pickup": "",
+    "costs_pickup": [],
     "energy_cost": "",
     "enum": "CRUSHER_BULB6",
     "in_demo": "",
@@ -407,7 +412,7 @@
         "Quantity": "1"
       }
     ],
-    "costs_pickup": "",
+    "costs_pickup": [],
     "energy_cost": "",
     "enum": "CRUSHER_INVENTOR_T2",
     "in_demo": "",
@@ -432,7 +437,7 @@
         "Quantity": "1"
       }
     ],
-    "costs_pickup": "",
+    "costs_pickup": [],
     "energy_cost": "",
     "enum": "CRUSHER_DIGGER",
     "in_demo": "",
@@ -457,7 +462,7 @@
         "Quantity": "1"
       }
     ],
-    "costs_pickup": "",
+    "costs_pickup": [],
     "energy_cost": "",
     "enum": "CRUSHER_DIGGERSMALL",
     "in_demo": "",
@@ -482,7 +487,7 @@
         "Quantity": "1"
       }
     ],
-    "costs_pickup": "",
+    "costs_pickup": [],
     "energy_cost": "",
     "enum": "CRUSHER_DRONE_T2",
     "in_demo": "",
@@ -511,7 +516,7 @@
         "Quantity": "1"
       }
     ],
-    "costs_pickup": "",
+    "costs_pickup": [],
     "energy_cost": "",
     "enum": "CRUSHER_DRONE",
     "in_demo": "",
@@ -536,7 +541,7 @@
         "Quantity": "1"
       }
     ],
-    "costs_pickup": "",
+    "costs_pickup": [],
     "energy_cost": "",
     "enum": "CRUSHER_REGULAR_T3",
     "in_demo": "",
@@ -569,7 +574,7 @@
         "Quantity": "1"
       }
     ],
-    "costs_pickup": "",
+    "costs_pickup": [],
     "energy_cost": "",
     "enum": "CRUSHER_REGULAR_T2",
     "in_demo": "",
@@ -598,7 +603,7 @@
         "Quantity": "1"
       }
     ],
-    "costs_pickup": "",
+    "costs_pickup": [],
     "energy_cost": "",
     "enum": "CRUSHER_REGULAR",
     "in_demo": "",
@@ -623,7 +628,7 @@
         "Quantity": "1"
       }
     ],
-    "costs_pickup": "",
+    "costs_pickup": [],
     "energy_cost": "",
     "enum": "CRUSHER_SMALL_T3",
     "in_demo": "",
@@ -656,7 +661,7 @@
         "Quantity": "1"
       }
     ],
-    "costs_pickup": "",
+    "costs_pickup": [],
     "energy_cost": "",
     "enum": "CRUSHER_SMALL_T2",
     "in_demo": "",
@@ -685,7 +690,7 @@
         "Quantity": "1"
       }
     ],
-    "costs_pickup": "",
+    "costs_pickup": [],
     "energy_cost": "",
     "enum": "CRUSHER_SMALL",
     "in_demo": "",
@@ -705,7 +710,12 @@
     "always_unlocked": "",
     "buildings": "GRINDER2",
     "cost_ant": [],
-    "costs_pickup": "GOLD 1",
+    "costs_pickup": [
+      {
+        "Name": "GOLD",
+        "Quantity": "1"
+      }
+    ],
     "energy_cost": "",
     "enum": "GRIND_GOLD",
     "in_demo": "",
@@ -725,7 +735,12 @@
     "always_unlocked": "",
     "buildings": "GRINDER2",
     "cost_ant": [],
-    "costs_pickup": "CRYSTAL_RAW 1",
+    "costs_pickup": [
+      {
+        "Name": "CRYSTAL_RAW",
+        "Quantity": "1"
+      }
+    ],
     "energy_cost": "",
     "enum": "GRIND_CRYSTAL",
     "in_demo": "",
@@ -745,7 +760,12 @@
     "always_unlocked": "",
     "buildings": "GRINDER2",
     "cost_ant": [],
-    "costs_pickup": "GLASS 1",
+    "costs_pickup": [
+      {
+        "Name": "GLASS",
+        "Quantity": "1"
+      }
+    ],
     "energy_cost": "",
     "enum": "GRIND_GLASS",
     "in_demo": "",
@@ -765,7 +785,12 @@
     "always_unlocked": "",
     "buildings": "GRINDER2",
     "cost_ant": [],
-    "costs_pickup": "CONCRETE 1",
+    "costs_pickup": [
+      {
+        "Name": "CONCRETE",
+        "Quantity": "1"
+      }
+    ],
     "energy_cost": "",
     "enum": "GRIND_CONCRETE",
     "in_demo": "",
@@ -790,7 +815,7 @@
         "Quantity": "1"
       }
     ],
-    "costs_pickup": "",
+    "costs_pickup": [],
     "energy_cost": "",
     "enum": "CRUSHER_INVENTOR",
     "in_demo": "",
@@ -815,7 +840,7 @@
         "Quantity": "1"
       }
     ],
-    "costs_pickup": "",
+    "costs_pickup": [],
     "energy_cost": "",
     "enum": "CRUSHER_LED",
     "in_demo": "",
