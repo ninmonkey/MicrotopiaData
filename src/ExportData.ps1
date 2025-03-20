@@ -48,7 +48,9 @@ $Paths.json_ChangeLog                = Join-Path $Paths.ExportRoot_CurrentVersio
 $Paths.Json_Crusher_Output = Join-Path $Paths.ExportRoot_CurrentVersion 'json/crusher-output.json'
 $Paths.csv_Crusher_Output  = Join-Path $Paths.ExportRoot_CurrentVersion 'csv/crusher-output.csv'
 
-$Paths.json_Prefabs_Buildings          = Join-Path $Paths.ExportRoot_CurrentVersion 'json/prefabs-buildings.json'
+$Paths.json_Prefabs_Buildings      = Join-Path $Paths.ExportRoot_CurrentVersion 'json/prefabs-buildings.json'
+$Paths.json_Prefabs_FactoryRecipes = Join-Path $Paths.ExportRoot_CurrentVersion 'json/prefabs-factoryrecipes.json'
+
 $Paths.json_Biome_Objects              = Join-Path $Paths.ExportRoot_CurrentVersion 'json/biome-objects.json'
 $Paths.json_Biome_Objects_Expanded     = Join-Path $Paths.ExportRoot_CurrentVersion 'json/biome-objects-expanded.json'
 $Paths.json_Biome_Plants               = Join-Path $Paths.ExportRoot_CurrentVersion 'json/biome-plants.json'

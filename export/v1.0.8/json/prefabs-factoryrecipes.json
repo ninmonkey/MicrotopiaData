@@ -1,0 +1,3985 @@
+[
+  {
+    "always_unlocked": true,
+    "buildings": [
+      "SMELTER"
+    ],
+    "cost_ant": [],
+    "costs_pickup": [
+      {
+        "Name": "IRON_RAW",
+        "Quantity": "1"
+      }
+    ],
+    "energy_cost": "",
+    "enum": "SMELT_IRON",
+    "in_demo": true,
+    "planned": false,
+    "process_time": 10.0,
+    "product_ant": [],
+    "product_pickup": [
+      {
+        "Name": "IRON_BAR",
+        "Quantity": "1"
+      }
+    ],
+    "roworder": 0,
+    "title": "FACRECIPE_SMELT_IRON"
+  },
+  {
+    "always_unlocked": false,
+    "buildings": [
+      "SMELTER"
+    ],
+    "cost_ant": [],
+    "costs_pickup": [
+      {
+        "Name": "COPPER_RAW",
+        "Quantity": "1"
+      }
+    ],
+    "energy_cost": "",
+    "enum": "SMELT_COPPER",
+    "in_demo": false,
+    "planned": false,
+    "process_time": 10.0,
+    "product_ant": [],
+    "product_pickup": [
+      {
+        "Name": "COPPER_BAR",
+        "Quantity": "1"
+      }
+    ],
+    "roworder": 1,
+    "title": "FACRECIPE_SMELT_COPPER"
+  },
+  {
+    "always_unlocked": false,
+    "buildings": [
+      "SMELTER"
+    ],
+    "cost_ant": [],
+    "costs_pickup": [
+      {
+        "Name": "CONCRETE_RAW",
+        "Quantity": "1"
+      }
+    ],
+    "energy_cost": "",
+    "enum": "SMELT_CONCRETE",
+    "in_demo": false,
+    "planned": false,
+    "process_time": 20.0,
+    "product_ant": [],
+    "product_pickup": [
+      {
+        "Name": "CONCRETE",
+        "Quantity": "1"
+      }
+    ],
+    "roworder": 2,
+    "title": "FACRECIPE_SMELT_CONCRETE"
+  },
+  {
+    "always_unlocked": false,
+    "buildings": [
+      "SMELTER"
+    ],
+    "cost_ant": [],
+    "costs_pickup": [
+      {
+        "Name": "GLASS_RAW",
+        "Quantity": "1"
+      }
+    ],
+    "energy_cost": "",
+    "enum": "SMELT_GLASS",
+    "in_demo": false,
+    "planned": false,
+    "process_time": 10.0,
+    "product_ant": [],
+    "product_pickup": [
+      {
+        "Name": "GLASS",
+        "Quantity": "1"
+      }
+    ],
+    "roworder": 3,
+    "title": "FACRECIPE_SMELT_GLASS"
+  },
+  {
+    "always_unlocked": false,
+    "buildings": [
+      "SMELTER"
+    ],
+    "cost_ant": [],
+    "costs_pickup": [
+      {
+        "Name": "CRYSTAL_DUST",
+        "Quantity": "1"
+      }
+    ],
+    "energy_cost": "",
+    "enum": "SMELT_GLASS_ALT",
+    "in_demo": false,
+    "planned": false,
+    "process_time": 20.0,
+    "product_ant": [],
+    "product_pickup": [
+      {
+        "Name": "GLASS",
+        "Quantity": "1"
+      }
+    ],
+    "roworder": 4,
+    "title": "FACRECIPE_SMELT_GLASS_ALT"
+  },
+  {
+    "always_unlocked": false,
+    "buildings": [
+      "SMELTER"
+    ],
+    "cost_ant": [],
+    "costs_pickup": [
+      {
+        "Name": "GOLD_RAW",
+        "Quantity": "1"
+      }
+    ],
+    "energy_cost": "",
+    "enum": "SMELT_GOLD",
+    "in_demo": false,
+    "planned": false,
+    "process_time": 30.0,
+    "product_ant": [],
+    "product_pickup": [
+      {
+        "Name": "GOLD",
+        "Quantity": "1"
+      }
+    ],
+    "roworder": 5,
+    "title": "FACRECIPE_SMELT_GOLD"
+  },
+  {
+    "always_unlocked": false,
+    "buildings": [
+      "WORKSHOP"
+    ],
+    "cost_ant": [],
+    "costs_pickup": [
+      {
+        "Name": "IRON_BAR",
+        "Quantity": "1"
+      }
+    ],
+    "energy_cost": "",
+    "enum": "WORK_MANDIBLE",
+    "in_demo": true,
+    "planned": false,
+    "process_time": 12.0,
+    "product_ant": [],
+    "product_pickup": [
+      {
+        "Name": "SCREW",
+        "Quantity": "1"
+      }
+    ],
+    "roworder": 7,
+    "title": "FACRECIPE_WORK_SCREW"
+  },
+  {
+    "always_unlocked": false,
+    "buildings": [
+      "WORKSHOP"
+    ],
+    "cost_ant": [],
+    "costs_pickup": [
+      {
+        "Name": "IRON_BAR",
+        "Quantity": "4"
+      }
+    ],
+    "energy_cost": "",
+    "enum": "WORK_ARMOR",
+    "in_demo": true,
+    "planned": false,
+    "process_time": 45.0,
+    "product_ant": [],
+    "product_pickup": [
+      {
+        "Name": "IRON_PLATE",
+        "Quantity": "1"
+      }
+    ],
+    "roworder": 8,
+    "title": "FACRECIPE_WORK_IRONPLATE"
+  },
+  {
+    "always_unlocked": false,
+    "buildings": [
+      "WORKSHOP"
+    ],
+    "cost_ant": [],
+    "costs_pickup": [
+      {
+        "Name": "COPPER_BAR",
+        "Quantity": "1"
+      }
+    ],
+    "energy_cost": "",
+    "enum": "WORK_WIRE",
+    "in_demo": false,
+    "planned": false,
+    "process_time": 25.0,
+    "product_ant": [],
+    "product_pickup": [
+      {
+        "Name": "COPPER_WIRE",
+        "Quantity": "1"
+      }
+    ],
+    "roworder": 9,
+    "title": "FACRECIPE_WORK_WIRE"
+  },
+  {
+    "always_unlocked": false,
+    "buildings": [
+      "WORKSHOP"
+    ],
+    "cost_ant": [],
+    "costs_pickup": [
+      {
+        "Name": "GLASS",
+        "Quantity": "3"
+      }
+    ],
+    "energy_cost": "",
+    "enum": "WORK_BULB",
+    "in_demo": false,
+    "planned": false,
+    "process_time": 20.0,
+    "product_ant": [],
+    "product_pickup": [
+      {
+        "Name": "LIGHTBULB",
+        "Quantity": "1"
+      }
+    ],
+    "roworder": 10,
+    "title": "FACRECIPE_WORK_LIGHTBULB"
+  },
+  {
+    "always_unlocked": false,
+    "buildings": [
+      "WORKSHOP"
+    ],
+    "cost_ant": [],
+    "costs_pickup": [
+      {
+        "Name": "RESIN",
+        "Quantity": "4"
+      }
+    ],
+    "energy_cost": "",
+    "enum": "WORK_CASING",
+    "in_demo": false,
+    "planned": false,
+    "process_time": 80.0,
+    "product_ant": [],
+    "product_pickup": [
+      {
+        "Name": "CASING",
+        "Quantity": "1"
+      }
+    ],
+    "roworder": 11,
+    "title": "FACRECIPE_WORK_CASING"
+  },
+  {
+    "always_unlocked": false,
+    "buildings": [
+      "WORKSHOP"
+    ],
+    "cost_ant": [],
+    "costs_pickup": [
+      {
+        "Name": "FIBER_SPIKETREE",
+        "Quantity": "2"
+      }
+    ],
+    "energy_cost": "",
+    "enum": "WORK_FABRIC",
+    "in_demo": true,
+    "planned": false,
+    "process_time": 20.0,
+    "product_ant": [],
+    "product_pickup": [
+      {
+        "Name": "FABRIC",
+        "Quantity": "1"
+      }
+    ],
+    "roworder": 12,
+    "title": "FACRECIPE_WORK_FABRIC"
+  },
+  {
+    "always_unlocked": false,
+    "buildings": [
+      "WORKSHOP"
+    ],
+    "cost_ant": [],
+    "costs_pickup": [
+      {
+        "Name": "CRYSTAL_RAW",
+        "Quantity": "4"
+      }
+    ],
+    "energy_cost": "",
+    "enum": "WORK_WAFER",
+    "in_demo": false,
+    "planned": false,
+    "process_time": 60.0,
+    "product_ant": [],
+    "product_pickup": [
+      {
+        "Name": "WAFER",
+        "Quantity": "1"
+      }
+    ],
+    "roworder": 13,
+    "title": "FACRECIPE_WORK_WAFER"
+  },
+  {
+    "always_unlocked": false,
+    "buildings": [
+      "FACILITY",
+      "FACTORY2"
+    ],
+    "cost_ant": [],
+    "costs_pickup": [
+      {
+        "Name": "FABRIC",
+        "Quantity": "1"
+      },
+      {
+        "Name": "CONCRETE",
+        "Quantity": "1"
+      }
+    ],
+    "energy_cost": "",
+    "enum": "FACT_RESIN",
+    "in_demo": false,
+    "planned": false,
+    "process_time": 10.0,
+    "product_ant": [],
+    "product_pickup": [
+      {
+        "Name": "RESIN",
+        "Quantity": "1"
+      }
+    ],
+    "roworder": 15,
+    "title": "FACRECIPE_WORK_RESIN"
+  },
+  {
+    "always_unlocked": false,
+    "buildings": [
+      "FACILITY",
+      "FACTORY2"
+    ],
+    "cost_ant": [],
+    "costs_pickup": [
+      {
+        "Name": "STARCH",
+        "Quantity": "1"
+      },
+      {
+        "Name": "CONCRETE_DUST",
+        "Quantity": "1"
+      }
+    ],
+    "energy_cost": "",
+    "enum": "FACT_RESIN_ALT",
+    "in_demo": false,
+    "planned": false,
+    "process_time": 10.0,
+    "product_ant": [],
+    "product_pickup": [
+      {
+        "Name": "RESIN",
+        "Quantity": "1"
+      }
+    ],
+    "roworder": 16,
+    "title": "FACRECIPE_WORK_RESIN_ALT"
+  },
+  {
+    "always_unlocked": false,
+    "buildings": [
+      "FACILITY",
+      "FACTORY2"
+    ],
+    "cost_ant": [],
+    "costs_pickup": [
+      {
+        "Name": "COPPER_WIRE",
+        "Quantity": "1"
+      },
+      {
+        "Name": "SCREW",
+        "Quantity": "1"
+      }
+    ],
+    "energy_cost": "",
+    "enum": "FACT_DIODE",
+    "in_demo": false,
+    "planned": false,
+    "process_time": 15.0,
+    "product_ant": [],
+    "product_pickup": [
+      {
+        "Name": "DIODE",
+        "Quantity": "1"
+      }
+    ],
+    "roworder": 17,
+    "title": "FACRECIPE_WORK_DIODE"
+  },
+  {
+    "always_unlocked": false,
+    "buildings": [
+      "FACILITY",
+      "FACTORY2"
+    ],
+    "cost_ant": [],
+    "costs_pickup": [
+      {
+        "Name": "COPPER_BAR",
+        "Quantity": "1"
+      },
+      {
+        "Name": "ACID",
+        "Quantity": "1"
+      }
+    ],
+    "energy_cost": "",
+    "enum": "FACT_BATTERY",
+    "in_demo": false,
+    "planned": false,
+    "process_time": 30.0,
+    "product_ant": [],
+    "product_pickup": [
+      {
+        "Name": "BATTERY",
+        "Quantity": "1"
+      }
+    ],
+    "roworder": 18,
+    "title": "FACRECIPE_WORK_BATTERY"
+  },
+  {
+    "always_unlocked": false,
+    "buildings": [
+      "FACILITY",
+      "FACTORY2"
+    ],
+    "cost_ant": [],
+    "costs_pickup": [
+      {
+        "Name": "DIODE",
+        "Quantity": "2"
+      },
+      {
+        "Name": "CASING",
+        "Quantity": "1"
+      }
+    ],
+    "energy_cost": "",
+    "enum": "FACT_RESISTOR",
+    "in_demo": false,
+    "planned": false,
+    "process_time": 20.0,
+    "product_ant": [],
+    "product_pickup": [
+      {
+        "Name": "RESISTOR",
+        "Quantity": "1"
+      }
+    ],
+    "roworder": 19,
+    "title": "FACRECIPE_WORK_RESISTOR"
+  },
+  {
+    "always_unlocked": false,
+    "buildings": [
+      "FACILITY"
+    ],
+    "cost_ant": [],
+    "costs_pickup": [
+      {
+        "Name": "RESISTOR",
+        "Quantity": "1"
+      },
+      {
+        "Name": "WAFER",
+        "Quantity": "1"
+      }
+    ],
+    "energy_cost": "",
+    "enum": "FACT_TRANSISTOR",
+    "in_demo": false,
+    "planned": false,
+    "process_time": 40.0,
+    "product_ant": [],
+    "product_pickup": [
+      {
+        "Name": "TRANSISTOR",
+        "Quantity": "1"
+      }
+    ],
+    "roworder": 20,
+    "title": "FACRECIPE_WORK_TRANSISTOR"
+  },
+  {
+    "always_unlocked": false,
+    "buildings": [
+      "FACILITY"
+    ],
+    "cost_ant": [],
+    "costs_pickup": [
+      {
+        "Name": "RESISTOR",
+        "Quantity": "1"
+      },
+      {
+        "Name": "BATTERY",
+        "Quantity": "1"
+      }
+    ],
+    "energy_cost": "",
+    "enum": "FACT_CAPACITOR",
+    "in_demo": false,
+    "planned": false,
+    "process_time": 40.0,
+    "product_ant": [],
+    "product_pickup": [
+      {
+        "Name": "CAPACITOR",
+        "Quantity": "1"
+      }
+    ],
+    "roworder": 21,
+    "title": "FACRECIPE_WORK_CAPACITOR"
+  },
+  {
+    "always_unlocked": false,
+    "buildings": [
+      "FACTORY3"
+    ],
+    "cost_ant": [],
+    "costs_pickup": [
+      {
+        "Name": "DIODE",
+        "Quantity": "1"
+      },
+      {
+        "Name": "LIGHTBULB",
+        "Quantity": "1"
+      },
+      {
+        "Name": "RESIN",
+        "Quantity": "1"
+      }
+    ],
+    "energy_cost": "",
+    "enum": "FACT_LED",
+    "in_demo": false,
+    "planned": false,
+    "process_time": 30.0,
+    "product_ant": [],
+    "product_pickup": [
+      {
+        "Name": "LED",
+        "Quantity": "1"
+      }
+    ],
+    "roworder": 23,
+    "title": "FACRECIPE_WORK_LED"
+  },
+  {
+    "always_unlocked": false,
+    "buildings": [
+      "FACTORY3"
+    ],
+    "cost_ant": [],
+    "costs_pickup": [
+      {
+        "Name": "TRANSISTOR",
+        "Quantity": "1"
+      },
+      {
+        "Name": "CAPACITOR",
+        "Quantity": "1"
+      },
+      {
+        "Name": "GOLD",
+        "Quantity": "1"
+      }
+    ],
+    "energy_cost": "",
+    "enum": "FACT_MICROCHIP",
+    "in_demo": false,
+    "planned": false,
+    "process_time": 60.0,
+    "product_ant": [],
+    "product_pickup": [
+      {
+        "Name": "MICROCHIP",
+        "Quantity": "1"
+      }
+    ],
+    "roworder": 24,
+    "title": "FACRECIPE_WORK_MICROCHIP"
+  },
+  {
+    "always_unlocked": false,
+    "buildings": [
+      "ACID_REFINERY"
+    ],
+    "cost_ant": [],
+    "costs_pickup": [
+      {
+        "Name": "CHEM_WASTE",
+        "Quantity": "15"
+      }
+    ],
+    "energy_cost": "",
+    "enum": "REFINE_ACID",
+    "in_demo": false,
+    "planned": false,
+    "process_time": 120.0,
+    "product_ant": [],
+    "product_pickup": [
+      {
+        "Name": "ACID",
+        "Quantity": "3"
+      }
+    ],
+    "roworder": 26,
+    "title": "FACRECIPE_REFINE_ACID"
+  },
+  {
+    "always_unlocked": false,
+    "buildings": [
+      "DISSOLVER"
+    ],
+    "cost_ant": [],
+    "costs_pickup": [
+      {
+        "Name": "GLASS_DUST",
+        "Quantity": "1"
+      },
+      {
+        "Name": "ACID",
+        "Quantity": "1"
+      }
+    ],
+    "energy_cost": "",
+    "enum": "DISSOLVE_GLASS",
+    "in_demo": false,
+    "planned": false,
+    "process_time": 30.0,
+    "product_ant": [],
+    "product_pickup": [
+      {
+        "Name": "CRYSTAL_SEED",
+        "Quantity": "1"
+      }
+    ],
+    "roworder": 28,
+    "title": "FACRECIPE_DISSOLVE_GLASS"
+  },
+  {
+    "always_unlocked": false,
+    "buildings": [
+      "DISSOLVER"
+    ],
+    "cost_ant": [],
+    "costs_pickup": [
+      {
+        "Name": "STARCH",
+        "Quantity": "1"
+      },
+      {
+        "Name": "ACID",
+        "Quantity": "1"
+      }
+    ],
+    "energy_cost": "",
+    "enum": "DISSOLVE_STARCH",
+    "in_demo": false,
+    "planned": false,
+    "process_time": 10.0,
+    "product_ant": [],
+    "product_pickup": [
+      {
+        "Name": "BIOFUEL",
+        "Quantity": "1"
+      }
+    ],
+    "roworder": 29,
+    "title": "FACRECIPE_DISSOLVE_STARCH"
+  },
+  {
+    "always_unlocked": false,
+    "buildings": [
+      "DISSOLVER"
+    ],
+    "cost_ant": [],
+    "costs_pickup": [
+      {
+        "Name": "GOLD_DUST",
+        "Quantity": "1"
+      },
+      {
+        "Name": "ACID",
+        "Quantity": "1"
+      }
+    ],
+    "energy_cost": "",
+    "enum": "DISSOLVE_GOLD",
+    "in_demo": false,
+    "planned": false,
+    "process_time": 60.0,
+    "product_ant": [],
+    "product_pickup": [
+      {
+        "Name": "ROYAL_JELLY",
+        "Quantity": "1"
+      }
+    ],
+    "roworder": 30,
+    "title": "FACRECIPE_DISSOLVE_GOLD"
+  },
+  {
+    "always_unlocked": false,
+    "buildings": [
+      "GRINDER2"
+    ],
+    "cost_ant": [],
+    "costs_pickup": [
+      {
+        "Name": "FIBER_SPIKETREE",
+        "Quantity": "1"
+      }
+    ],
+    "energy_cost": "",
+    "enum": "GRIND_STARCH",
+    "in_demo": false,
+    "planned": false,
+    "process_time": 15.0,
+    "product_ant": [],
+    "product_pickup": [
+      {
+        "Name": "STARCH",
+        "Quantity": "4"
+      }
+    ],
+    "roworder": 32,
+    "title": "FACRECIPE_GRIND_STARCH"
+  },
+  {
+    "always_unlocked": false,
+    "buildings": [
+      "GRINDER2"
+    ],
+    "cost_ant": [],
+    "costs_pickup": [
+      {
+        "Name": "CONCRETE",
+        "Quantity": "1"
+      }
+    ],
+    "energy_cost": "",
+    "enum": "GRIND_CONCRETE",
+    "in_demo": false,
+    "planned": false,
+    "process_time": 30.0,
+    "product_ant": [],
+    "product_pickup": [
+      {
+        "Name": "CONCRETE_DUST",
+        "Quantity": "4"
+      }
+    ],
+    "roworder": 33,
+    "title": "FACRECIPE_GRIND_CONCRETE"
+  },
+  {
+    "always_unlocked": false,
+    "buildings": [
+      "GRINDER2"
+    ],
+    "cost_ant": [],
+    "costs_pickup": [
+      {
+        "Name": "GLASS",
+        "Quantity": "1"
+      }
+    ],
+    "energy_cost": "",
+    "enum": "GRIND_GLASS",
+    "in_demo": false,
+    "planned": false,
+    "process_time": 20.0,
+    "product_ant": [],
+    "product_pickup": [
+      {
+        "Name": "GLASS_DUST",
+        "Quantity": "4"
+      }
+    ],
+    "roworder": 34,
+    "title": "FACRECIPE_GRIND_GLASS"
+  },
+  {
+    "always_unlocked": false,
+    "buildings": [
+      "GRINDER2"
+    ],
+    "cost_ant": [],
+    "costs_pickup": [
+      {
+        "Name": "CRYSTAL_RAW",
+        "Quantity": "1"
+      }
+    ],
+    "energy_cost": "",
+    "enum": "GRIND_CRYSTAL",
+    "in_demo": false,
+    "planned": false,
+    "process_time": 30.0,
+    "product_ant": [],
+    "product_pickup": [
+      {
+        "Name": "CRYSTAL_DUST",
+        "Quantity": "4"
+      }
+    ],
+    "roworder": 35,
+    "title": "FACRECIPE_GRIND_CRYSTAL"
+  },
+  {
+    "always_unlocked": false,
+    "buildings": [
+      "GRINDER2"
+    ],
+    "cost_ant": [],
+    "costs_pickup": [
+      {
+        "Name": "GOLD",
+        "Quantity": "1"
+      }
+    ],
+    "energy_cost": "",
+    "enum": "GRIND_GOLD",
+    "in_demo": false,
+    "planned": false,
+    "process_time": 10.0,
+    "product_ant": [],
+    "product_pickup": [
+      {
+        "Name": "GOLD_DUST",
+        "Quantity": "4"
+      }
+    ],
+    "roworder": 36,
+    "title": "FACRECIPE_GRIND_GOLD"
+  },
+  {
+    "always_unlocked": true,
+    "buildings": [
+      "REACTOR"
+    ],
+    "cost_ant": [],
+    "costs_pickup": [
+      {
+        "Name": "ENERGY_POD",
+        "Quantity": "2"
+      }
+    ],
+    "energy_cost": "",
+    "enum": "REAC_ENERGY2",
+    "in_demo": false,
+    "planned": false,
+    "process_time": 17.0,
+    "product_ant": [],
+    "product_pickup": [
+      {
+        "Name": "ENERGY_POD2",
+        "Quantity": "1"
+      }
+    ],
+    "roworder": 38,
+    "title": "FACRECIPE_REAC_ENERGY2"
+  },
+  {
+    "always_unlocked": false,
+    "buildings": [
+      "REACTOR"
+    ],
+    "cost_ant": [],
+    "costs_pickup": [
+      {
+        "Name": "ENERGY_POD2",
+        "Quantity": "2"
+      }
+    ],
+    "energy_cost": "",
+    "enum": "REAC_ENERGY3",
+    "in_demo": false,
+    "planned": false,
+    "process_time": 17.0,
+    "product_ant": [],
+    "product_pickup": [
+      {
+        "Name": "ENERGY_POD3",
+        "Quantity": "1"
+      }
+    ],
+    "roworder": 39,
+    "title": "FACRECIPE_REAC_ENERGY3"
+  },
+  {
+    "always_unlocked": false,
+    "buildings": [
+      "REACTOR"
+    ],
+    "cost_ant": [],
+    "costs_pickup": [
+      {
+        "Name": "ENERGY_POD3",
+        "Quantity": "2"
+      }
+    ],
+    "energy_cost": "",
+    "enum": "REAC_ENERGY4",
+    "in_demo": false,
+    "planned": false,
+    "process_time": 17.0,
+    "product_ant": [],
+    "product_pickup": [
+      {
+        "Name": "ENERGY_POD4",
+        "Quantity": "1"
+      }
+    ],
+    "roworder": 40,
+    "title": "FACRECIPE_REAC_ENERGY4"
+  },
+  {
+    "always_unlocked": false,
+    "buildings": [
+      "REACTOR"
+    ],
+    "cost_ant": [],
+    "costs_pickup": [
+      {
+        "Name": "ENERGY_POD4",
+        "Quantity": "2"
+      }
+    ],
+    "energy_cost": "",
+    "enum": "REAC_ENERGY5",
+    "in_demo": false,
+    "planned": false,
+    "process_time": 17.0,
+    "product_ant": [],
+    "product_pickup": [
+      {
+        "Name": "ENERGY_POD5",
+        "Quantity": "1"
+      }
+    ],
+    "roworder": 41,
+    "title": "FACRECIPE_REAC_ENERGY5"
+  },
+  {
+    "always_unlocked": false,
+    "buildings": [
+      "REACTOR"
+    ],
+    "cost_ant": [],
+    "costs_pickup": [
+      {
+        "Name": "ENERGY_POD5",
+        "Quantity": "2"
+      }
+    ],
+    "energy_cost": "",
+    "enum": "REAC_ENERGY6",
+    "in_demo": false,
+    "planned": false,
+    "process_time": 17.0,
+    "product_ant": [],
+    "product_pickup": [
+      {
+        "Name": "ENERGY_POD6",
+        "Quantity": "1"
+      }
+    ],
+    "roworder": 42,
+    "title": "FACRECIPE_REAC_ENERGY6"
+  },
+  {
+    "always_unlocked": false,
+    "buildings": [
+      "REACTOR_LARGE"
+    ],
+    "cost_ant": [],
+    "costs_pickup": [
+      {
+        "Name": "ENERGY_POD6",
+        "Quantity": "2"
+      }
+    ],
+    "energy_cost": "",
+    "enum": "REAC_ENERGY7",
+    "in_demo": false,
+    "planned": true,
+    "process_time": 10.0,
+    "product_ant": [],
+    "product_pickup": [
+      {
+        "Name": "ENERGY_POD7",
+        "Quantity": "1"
+      }
+    ],
+    "roworder": 43,
+    "title": "FACRECIPE_REAC_ENERGY7"
+  },
+  {
+    "always_unlocked": false,
+    "buildings": [
+      "REACTOR_LARGE"
+    ],
+    "cost_ant": [],
+    "costs_pickup": [
+      {
+        "Name": "ENERGY_POD7",
+        "Quantity": "2"
+      }
+    ],
+    "energy_cost": "",
+    "enum": "REAC_ENERGY8",
+    "in_demo": false,
+    "planned": true,
+    "process_time": 10.0,
+    "product_ant": [],
+    "product_pickup": [
+      {
+        "Name": "ENERGY_POD8",
+        "Quantity": "1"
+      }
+    ],
+    "roworder": 44,
+    "title": "FACRECIPE_REAC_ENERGY8"
+  },
+  {
+    "always_unlocked": false,
+    "buildings": [
+      "REACTOR_LARGE"
+    ],
+    "cost_ant": [],
+    "costs_pickup": [
+      {
+        "Name": "ENERGY_POD8",
+        "Quantity": "2"
+      }
+    ],
+    "energy_cost": "",
+    "enum": "REAC_ENERGY9",
+    "in_demo": false,
+    "planned": true,
+    "process_time": 10.0,
+    "product_ant": [],
+    "product_pickup": [
+      {
+        "Name": "ENERGY_POD9",
+        "Quantity": "1"
+      }
+    ],
+    "roworder": 45,
+    "title": "FACRECIPE_REAC_ENERGY9"
+  },
+  {
+    "always_unlocked": false,
+    "buildings": [
+      "REACTOR_LARGE"
+    ],
+    "cost_ant": [],
+    "costs_pickup": [
+      {
+        "Name": "ENERGY_POD9",
+        "Quantity": "2"
+      }
+    ],
+    "energy_cost": "",
+    "enum": "REAC_ENERGY10",
+    "in_demo": false,
+    "planned": true,
+    "process_time": 10.0,
+    "product_ant": [],
+    "product_pickup": [
+      {
+        "Name": "ENERGY_POD10",
+        "Quantity": "1"
+      }
+    ],
+    "roworder": 46,
+    "title": "FACRECIPE_REAC_ENERGY10"
+  },
+  {
+    "always_unlocked": true,
+    "buildings": [
+      "GENERATOR"
+    ],
+    "cost_ant": [],
+    "costs_pickup": [
+      {
+        "Name": "FIBER_SPIKETREE",
+        "Quantity": "1"
+      }
+    ],
+    "energy_cost": "",
+    "enum": "GEN_BURNFIBER",
+    "in_demo": false,
+    "planned": false,
+    "process_time": 10.0,
+    "product_ant": [],
+    "product_pickup": [
+      {
+        "Name": "ENERGY_POD3",
+        "Quantity": "1"
+      }
+    ],
+    "roworder": 48,
+    "title": "FACRECIPE_GEN_BURNFIBER"
+  },
+  {
+    "always_unlocked": true,
+    "buildings": [],
+    "cost_ant": [],
+    "costs_pickup": [
+      {
+        "Name": "CRYSTAL_SEED",
+        "Quantity": "1"
+      }
+    ],
+    "energy_cost": 200.0,
+    "enum": "ELECTROLYSE_CRYSTAL",
+    "in_demo": false,
+    "planned": false,
+    "process_time": "",
+    "product_ant": [],
+    "product_pickup": [
+      {
+        "Name": "CRYSTAL_RAW",
+        "Quantity": "1"
+      }
+    ],
+    "roworder": 50,
+    "title": "FACRECIPE_CHARGE_CRYSTAL"
+  },
+  {
+    "always_unlocked": false,
+    "buildings": [
+      "LARVA_BOOSTER"
+    ],
+    "cost_ant": [],
+    "costs_pickup": [
+      {
+        "Name": "LARVAE_T1",
+        "Quantity": "1"
+      },
+      {
+        "Name": "RESIN",
+        "Quantity": "1"
+      }
+    ],
+    "energy_cost": "",
+    "enum": "LARVAE_TIER2",
+    "in_demo": false,
+    "planned": false,
+    "process_time": 20.0,
+    "product_ant": [],
+    "product_pickup": [
+      {
+        "Name": "LARVAE_T2",
+        "Quantity": "1"
+      }
+    ],
+    "roworder": 52,
+    "title": "FACRECIPE_LARVAE_TIER2"
+  },
+  {
+    "always_unlocked": false,
+    "buildings": [
+      "LARVA_BOOSTER"
+    ],
+    "cost_ant": [],
+    "costs_pickup": [
+      {
+        "Name": "LARVAE_T2",
+        "Quantity": "1"
+      },
+      {
+        "Name": "ROYAL_JELLY",
+        "Quantity": "1"
+      }
+    ],
+    "energy_cost": "",
+    "enum": "LARVAE_TIER3",
+    "in_demo": false,
+    "planned": false,
+    "process_time": 20.0,
+    "product_ant": [],
+    "product_pickup": [
+      {
+        "Name": "LARVAE_T3",
+        "Quantity": "1"
+      }
+    ],
+    "roworder": 53,
+    "title": "FACRECIPE_LARVAE_TIER3"
+  },
+  {
+    "always_unlocked": false,
+    "buildings": [],
+    "cost_ant": [
+      {
+        "Name": "WORKER_SMALL_T1",
+        "Quantity": "1"
+      }
+    ],
+    "costs_pickup": [],
+    "energy_cost": "",
+    "enum": "CRUSHER_SMALL",
+    "in_demo": false,
+    "planned": false,
+    "process_time": 2.0,
+    "product_ant": [],
+    "product_pickup": [
+      {
+        "Name": "IRON_RAW",
+        "Quantity": "1"
+      }
+    ],
+    "roworder": 55,
+    "title": "FACRECIPE_RECYCLE_WORKER_SMALL_T1"
+  },
+  {
+    "always_unlocked": false,
+    "buildings": [],
+    "cost_ant": [
+      {
+        "Name": "WORKER_SMALL_T2",
+        "Quantity": "1"
+      }
+    ],
+    "costs_pickup": [],
+    "energy_cost": "",
+    "enum": "CRUSHER_SMALL_T2",
+    "in_demo": false,
+    "planned": false,
+    "process_time": 2.0,
+    "product_ant": [],
+    "product_pickup": [
+      {
+        "Name": "IRON_RAW",
+        "Quantity": "1"
+      },
+      {
+        "Name": "RESIN",
+        "Quantity": "1"
+      }
+    ],
+    "roworder": 56,
+    "title": "FACRECIPE_RECYCLE_WORKER_SMALL_T2"
+  },
+  {
+    "always_unlocked": false,
+    "buildings": [],
+    "cost_ant": [
+      {
+        "Name": "WORKER_SMALL_T3",
+        "Quantity": "1"
+      }
+    ],
+    "costs_pickup": [],
+    "energy_cost": "",
+    "enum": "CRUSHER_SMALL_T3",
+    "in_demo": false,
+    "planned": false,
+    "process_time": 2.0,
+    "product_ant": [],
+    "product_pickup": [
+      {
+        "Name": "IRON_RAW",
+        "Quantity": "1"
+      },
+      {
+        "Name": "RESIN",
+        "Quantity": "1"
+      },
+      {
+        "Name": "GOLD_DUST",
+        "Quantity": "1"
+      }
+    ],
+    "roworder": 57,
+    "title": "FACRECIPE_RECYCLE_WORKER_SMALL_T3"
+  },
+  {
+    "always_unlocked": false,
+    "buildings": [],
+    "cost_ant": [
+      {
+        "Name": "WORKER_T1",
+        "Quantity": "1"
+      }
+    ],
+    "costs_pickup": [],
+    "energy_cost": "",
+    "enum": "CRUSHER_REGULAR",
+    "in_demo": false,
+    "planned": false,
+    "process_time": 2.0,
+    "product_ant": [],
+    "product_pickup": [
+      {
+        "Name": "IRON_RAW",
+        "Quantity": "1"
+      }
+    ],
+    "roworder": 58,
+    "title": "FACRECIPE_RECYCLE_WORKER_T1"
+  },
+  {
+    "always_unlocked": false,
+    "buildings": [],
+    "cost_ant": [
+      {
+        "Name": "WORKER_T2",
+        "Quantity": "1"
+      }
+    ],
+    "costs_pickup": [],
+    "energy_cost": "",
+    "enum": "CRUSHER_REGULAR_T2",
+    "in_demo": false,
+    "planned": false,
+    "process_time": 2.0,
+    "product_ant": [],
+    "product_pickup": [
+      {
+        "Name": "IRON_RAW",
+        "Quantity": "1"
+      },
+      {
+        "Name": "RESIN",
+        "Quantity": "1"
+      }
+    ],
+    "roworder": 59,
+    "title": "FACRECIPE_RECYCLE_WORKER_T2"
+  },
+  {
+    "always_unlocked": false,
+    "buildings": [],
+    "cost_ant": [
+      {
+        "Name": "WORKER_T3",
+        "Quantity": "1"
+      }
+    ],
+    "costs_pickup": [],
+    "energy_cost": "",
+    "enum": "CRUSHER_REGULAR_T3",
+    "in_demo": false,
+    "planned": false,
+    "process_time": 2.0,
+    "product_ant": [],
+    "product_pickup": [
+      {
+        "Name": "IRON_RAW",
+        "Quantity": "1"
+      },
+      {
+        "Name": "RESIN",
+        "Quantity": "1"
+      },
+      {
+        "Name": "GOLD_DUST",
+        "Quantity": "1"
+      }
+    ],
+    "roworder": 60,
+    "title": "FACRECIPE_RECYCLE_WORKER_T3"
+  },
+  {
+    "always_unlocked": false,
+    "buildings": [],
+    "cost_ant": [
+      {
+        "Name": "DRONE",
+        "Quantity": "1"
+      }
+    ],
+    "costs_pickup": [],
+    "energy_cost": "",
+    "enum": "CRUSHER_DRONE",
+    "in_demo": false,
+    "planned": false,
+    "process_time": 2.0,
+    "product_ant": [],
+    "product_pickup": [
+      {
+        "Name": "IRON_RAW",
+        "Quantity": "1"
+      }
+    ],
+    "roworder": 61,
+    "title": "FACRECIPE_RECYCLE_DRONE"
+  },
+  {
+    "always_unlocked": false,
+    "buildings": [],
+    "cost_ant": [
+      {
+        "Name": "DRONE_T2",
+        "Quantity": "1"
+      }
+    ],
+    "costs_pickup": [],
+    "energy_cost": "",
+    "enum": "CRUSHER_DRONE_T2",
+    "in_demo": false,
+    "planned": false,
+    "process_time": 2.0,
+    "product_ant": [],
+    "product_pickup": [
+      {
+        "Name": "IRON_RAW",
+        "Quantity": "1"
+      },
+      {
+        "Name": "RESIN",
+        "Quantity": "1"
+      }
+    ],
+    "roworder": 62,
+    "title": "FACRECIPE_RECYCLE_DRONE_T2"
+  },
+  {
+    "always_unlocked": false,
+    "buildings": [],
+    "cost_ant": [
+      {
+        "Name": "DIGGER_SMALL",
+        "Quantity": "1"
+      }
+    ],
+    "costs_pickup": [],
+    "energy_cost": "",
+    "enum": "CRUSHER_DIGGERSMALL",
+    "in_demo": false,
+    "planned": false,
+    "process_time": 2.0,
+    "product_ant": [],
+    "product_pickup": [
+      {
+        "Name": "IRON_RAW",
+        "Quantity": "1"
+      }
+    ],
+    "roworder": 63,
+    "title": "FACRECIPE_RECYCLE_DIGGER_SMALL"
+  },
+  {
+    "always_unlocked": false,
+    "buildings": [],
+    "cost_ant": [
+      {
+        "Name": "DIGGER",
+        "Quantity": "1"
+      }
+    ],
+    "costs_pickup": [],
+    "energy_cost": "",
+    "enum": "CRUSHER_DIGGER",
+    "in_demo": false,
+    "planned": false,
+    "process_time": 2.0,
+    "product_ant": [],
+    "product_pickup": [
+      {
+        "Name": "IRON_RAW",
+        "Quantity": "1"
+      }
+    ],
+    "roworder": 64,
+    "title": "FACRECIPE_RECYCLE_DIGGER"
+  },
+  {
+    "always_unlocked": false,
+    "buildings": [],
+    "cost_ant": [
+      {
+        "Name": "INVENTOR_T1",
+        "Quantity": "1"
+      }
+    ],
+    "costs_pickup": [],
+    "energy_cost": "",
+    "enum": "CRUSHER_INVENTOR",
+    "in_demo": false,
+    "planned": false,
+    "process_time": 2.0,
+    "product_ant": [],
+    "product_pickup": [
+      {
+        "Name": "IRON_RAW",
+        "Quantity": "1"
+      }
+    ],
+    "roworder": 65,
+    "title": "FACRECIPE_RECYCLE_INVENTOR_T1"
+  },
+  {
+    "always_unlocked": false,
+    "buildings": [],
+    "cost_ant": [
+      {
+        "Name": "INVENTOR_T2",
+        "Quantity": "1"
+      }
+    ],
+    "costs_pickup": [],
+    "energy_cost": "",
+    "enum": "CRUSHER_INVENTOR_T2",
+    "in_demo": false,
+    "planned": false,
+    "process_time": 2.0,
+    "product_ant": [],
+    "product_pickup": [
+      {
+        "Name": "IRON_RAW",
+        "Quantity": "1"
+      }
+    ],
+    "roworder": 66,
+    "title": "FACRECIPE_RECYCLE_INVENTOR_T2"
+  },
+  {
+    "always_unlocked": false,
+    "buildings": [],
+    "cost_ant": [
+      {
+        "Name": "INVENTOR_T3",
+        "Quantity": "1"
+      }
+    ],
+    "costs_pickup": [],
+    "energy_cost": "",
+    "enum": "CRUSHER_INVENTOR_T3",
+    "in_demo": false,
+    "planned": false,
+    "process_time": 2.0,
+    "product_ant": [],
+    "product_pickup": [
+      {
+        "Name": "IRON_RAW",
+        "Quantity": "1"
+      }
+    ],
+    "roworder": 67,
+    "title": "FACRECIPE_RECYCLE_INVENTOR_T3"
+  },
+  {
+    "always_unlocked": false,
+    "buildings": [],
+    "cost_ant": [
+      {
+        "Name": "SENTRY",
+        "Quantity": "1"
+      }
+    ],
+    "costs_pickup": [],
+    "energy_cost": "",
+    "enum": "CRUSHER_SENTRY",
+    "in_demo": false,
+    "planned": false,
+    "process_time": 2.0,
+    "product_ant": [],
+    "product_pickup": [
+      {
+        "Name": "GOLD_RAW",
+        "Quantity": "1"
+      }
+    ],
+    "roworder": 68,
+    "title": "FACRECIPE_RECYCLE_SENTRY"
+  },
+  {
+    "always_unlocked": false,
+    "buildings": [],
+    "cost_ant": [
+      {
+        "Name": "SWARM",
+        "Quantity": "1"
+      }
+    ],
+    "costs_pickup": [],
+    "energy_cost": "",
+    "enum": "CRUSHER_SWARM",
+    "in_demo": false,
+    "planned": true,
+    "process_time": 2.0,
+    "product_ant": [],
+    "product_pickup": [
+      {
+        "Name": "IRON_RAW",
+        "Quantity": "1"
+      }
+    ],
+    "roworder": 69,
+    "title": "FACRECIPE_RECYCLE_SWARM"
+  },
+  {
+    "always_unlocked": false,
+    "buildings": [],
+    "cost_ant": [
+      {
+        "Name": "HAZMAT",
+        "Quantity": "1"
+      }
+    ],
+    "costs_pickup": [],
+    "energy_cost": "",
+    "enum": "CRUSHER_HAZMAT",
+    "in_demo": false,
+    "planned": false,
+    "process_time": 2.0,
+    "product_ant": [],
+    "product_pickup": [
+      {
+        "Name": "IRON_RAW",
+        "Quantity": "1"
+      },
+      {
+        "Name": "RESIN",
+        "Quantity": "1"
+      }
+    ],
+    "roworder": 70,
+    "title": "FACRECIPE_RECYCLE_HAZMAT"
+  },
+  {
+    "always_unlocked": false,
+    "buildings": [],
+    "cost_ant": [
+      {
+        "Name": "PRINCESS",
+        "Quantity": "1"
+      }
+    ],
+    "costs_pickup": [],
+    "energy_cost": "",
+    "enum": "CRUSHER_PRINCESS",
+    "in_demo": false,
+    "planned": false,
+    "process_time": 2.0,
+    "product_ant": [],
+    "product_pickup": [
+      {
+        "Name": "GOLD_RAW",
+        "Quantity": "1"
+      }
+    ],
+    "roworder": 71,
+    "title": "FACRECIPE_RECYCLE_PRINCESS"
+  },
+  {
+    "always_unlocked": false,
+    "buildings": [],
+    "cost_ant": [
+      {
+        "Name": "GYNE",
+        "Quantity": "1"
+      }
+    ],
+    "costs_pickup": [],
+    "energy_cost": "",
+    "enum": "CRUSHER_GYNE",
+    "in_demo": false,
+    "planned": false,
+    "process_time": 2.0,
+    "product_ant": [],
+    "product_pickup": [
+      {
+        "Name": "GOLD_RAW",
+        "Quantity": "1"
+      }
+    ],
+    "roworder": 72,
+    "title": "FACRECIPE_RECYCLE_GYNE"
+  },
+  {
+    "always_unlocked": false,
+    "buildings": [],
+    "cost_ant": [
+      {
+        "Name": "MESSENGER",
+        "Quantity": "1"
+      }
+    ],
+    "costs_pickup": [],
+    "energy_cost": "",
+    "enum": "CRUSHER_MESSENGER",
+    "in_demo": false,
+    "planned": false,
+    "process_time": 2.0,
+    "product_ant": [],
+    "product_pickup": [
+      {
+        "Name": "GLASS_RAW",
+        "Quantity": "1"
+      }
+    ],
+    "roworder": 73,
+    "title": "FACRECIPE_RECYCLE_MESSENGER"
+  },
+  {
+    "always_unlocked": false,
+    "buildings": [],
+    "cost_ant": [
+      {
+        "Name": "WORKER_T1_IRON",
+        "Quantity": "1"
+      }
+    ],
+    "costs_pickup": [],
+    "energy_cost": "",
+    "enum": "CRUSHER_T1_IRON",
+    "in_demo": false,
+    "planned": false,
+    "process_time": 2.0,
+    "product_ant": [],
+    "product_pickup": [
+      {
+        "Name": "IRON_RAW",
+        "Quantity": "1"
+      }
+    ],
+    "roworder": 74,
+    "title": "FACRECIPE_CRUSHER_T1_IRON"
+  },
+  {
+    "always_unlocked": false,
+    "buildings": [],
+    "cost_ant": [
+      {
+        "Name": "WORKER_BULB0",
+        "Quantity": "1"
+      }
+    ],
+    "costs_pickup": [],
+    "energy_cost": "",
+    "enum": "CRUSHER_BULB0",
+    "in_demo": false,
+    "planned": false,
+    "process_time": 2.0,
+    "product_ant": [],
+    "product_pickup": [
+      {
+        "Name": "GLASS_RAW",
+        "Quantity": "1"
+      }
+    ],
+    "roworder": 75,
+    "title": "FACRECIPE_CRUSHER_BULB0"
+  },
+  {
+    "always_unlocked": false,
+    "buildings": [],
+    "cost_ant": [
+      {
+        "Name": "WORKER_BULB1",
+        "Quantity": "1"
+      }
+    ],
+    "costs_pickup": [],
+    "energy_cost": "",
+    "enum": "CRUSHER_BULB1",
+    "in_demo": false,
+    "planned": false,
+    "process_time": 2.0,
+    "product_ant": [],
+    "product_pickup": [
+      {
+        "Name": "GLASS_RAW",
+        "Quantity": "1"
+      }
+    ],
+    "roworder": 76,
+    "title": "FACRECIPE_CRUSHER_BULB1"
+  },
+  {
+    "always_unlocked": false,
+    "buildings": [],
+    "cost_ant": [
+      {
+        "Name": "WORKER_BULB2",
+        "Quantity": "1"
+      }
+    ],
+    "costs_pickup": [],
+    "energy_cost": "",
+    "enum": "CRUSHER_BULB2",
+    "in_demo": false,
+    "planned": false,
+    "process_time": 2.0,
+    "product_ant": [],
+    "product_pickup": [
+      {
+        "Name": "GLASS_RAW",
+        "Quantity": "1"
+      }
+    ],
+    "roworder": 77,
+    "title": "FACRECIPE_CRUSHER_BULB2"
+  },
+  {
+    "always_unlocked": false,
+    "buildings": [],
+    "cost_ant": [
+      {
+        "Name": "WORKER_BULB3",
+        "Quantity": "1"
+      }
+    ],
+    "costs_pickup": [],
+    "energy_cost": "",
+    "enum": "CRUSHER_BULB3",
+    "in_demo": false,
+    "planned": false,
+    "process_time": 2.0,
+    "product_ant": [],
+    "product_pickup": [
+      {
+        "Name": "GLASS_RAW",
+        "Quantity": "1"
+      }
+    ],
+    "roworder": 78,
+    "title": "FACRECIPE_CRUSHER_BULB3"
+  },
+  {
+    "always_unlocked": false,
+    "buildings": [],
+    "cost_ant": [
+      {
+        "Name": "WORKER_BULB4",
+        "Quantity": "1"
+      }
+    ],
+    "costs_pickup": [],
+    "energy_cost": "",
+    "enum": "CRUSHER_BULB4",
+    "in_demo": false,
+    "planned": false,
+    "process_time": 2.0,
+    "product_ant": [],
+    "product_pickup": [
+      {
+        "Name": "GLASS_RAW",
+        "Quantity": "1"
+      }
+    ],
+    "roworder": 79,
+    "title": "FACRECIPE_CRUSHER_BULB4"
+  },
+  {
+    "always_unlocked": false,
+    "buildings": [],
+    "cost_ant": [
+      {
+        "Name": "WORKER_BULB5",
+        "Quantity": "1"
+      }
+    ],
+    "costs_pickup": [],
+    "energy_cost": "",
+    "enum": "CRUSHER_BULB5",
+    "in_demo": false,
+    "planned": false,
+    "process_time": 2.0,
+    "product_ant": [],
+    "product_pickup": [
+      {
+        "Name": "GLASS_RAW",
+        "Quantity": "1"
+      }
+    ],
+    "roworder": 80,
+    "title": "FACRECIPE_CRUSHER_BULB5"
+  },
+  {
+    "always_unlocked": false,
+    "buildings": [],
+    "cost_ant": [
+      {
+        "Name": "WORKER_BULB6",
+        "Quantity": "1"
+      }
+    ],
+    "costs_pickup": [],
+    "energy_cost": "",
+    "enum": "CRUSHER_BULB6",
+    "in_demo": false,
+    "planned": false,
+    "process_time": 2.0,
+    "product_ant": [],
+    "product_pickup": [
+      {
+        "Name": "GLASS_RAW",
+        "Quantity": "1"
+      }
+    ],
+    "roworder": 81,
+    "title": "FACRECIPE_CRUSHER_BULB6"
+  },
+  {
+    "always_unlocked": false,
+    "buildings": [],
+    "cost_ant": [
+      {
+        "Name": "WORKER_LED",
+        "Quantity": "1"
+      }
+    ],
+    "costs_pickup": [],
+    "energy_cost": "",
+    "enum": "CRUSHER_LED",
+    "in_demo": false,
+    "planned": false,
+    "process_time": 2.0,
+    "product_ant": [],
+    "product_pickup": [
+      {
+        "Name": "IRON_RAW",
+        "Quantity": "1"
+      },
+      {
+        "Name": "RESIN",
+        "Quantity": "1"
+      }
+    ],
+    "roworder": 82,
+    "title": "FACRECIPE_CRUSHER_LED"
+  },
+  {
+    "always_unlocked": true,
+    "buildings": [
+      "HIVE"
+    ],
+    "cost_ant": [
+      {
+        "Name": "WORKER_SMALL_T1",
+        "Quantity": "1"
+      }
+    ],
+    "costs_pickup": [],
+    "energy_cost": "",
+    "enum": "HIVE_WORKERSMALL",
+    "in_demo": false,
+    "planned": false,
+    "process_time": 2.0,
+    "product_ant": [
+      {
+        "Name": "SWARM",
+        "Quantity": "2"
+      }
+    ],
+    "product_pickup": [],
+    "roworder": 84,
+    "title": "FACRECIPE_HIVE_WORKERSMALL"
+  },
+  {
+    "always_unlocked": true,
+    "buildings": [
+      "HIVE"
+    ],
+    "cost_ant": [
+      {
+        "Name": "WORKER_T1",
+        "Quantity": "1"
+      }
+    ],
+    "costs_pickup": [],
+    "energy_cost": "",
+    "enum": "HIVE_WORKER",
+    "in_demo": false,
+    "planned": false,
+    "process_time": 2.0,
+    "product_ant": [
+      {
+        "Name": "SWARM",
+        "Quantity": "5"
+      }
+    ],
+    "product_pickup": [],
+    "roworder": 85,
+    "title": "FACRECIPE_HIVE_WORKER"
+  },
+  {
+    "always_unlocked": true,
+    "buildings": [
+      "HIVE"
+    ],
+    "cost_ant": [
+      {
+        "Name": "DRONE_SMALL",
+        "Quantity": "1"
+      }
+    ],
+    "costs_pickup": [],
+    "energy_cost": "",
+    "enum": "HIVE_DRONESMALL",
+    "in_demo": false,
+    "planned": false,
+    "process_time": 2.0,
+    "product_ant": [
+      {
+        "Name": "SWARM",
+        "Quantity": "2"
+      }
+    ],
+    "product_pickup": [],
+    "roworder": 86,
+    "title": "FACRECIPE_HIVE_DRONESMALL"
+  },
+  {
+    "always_unlocked": true,
+    "buildings": [
+      "HIVE"
+    ],
+    "cost_ant": [
+      {
+        "Name": "DRONE",
+        "Quantity": "1"
+      }
+    ],
+    "costs_pickup": [],
+    "energy_cost": "",
+    "enum": "HIVE_DRONE",
+    "in_demo": false,
+    "planned": false,
+    "process_time": 2.0,
+    "product_ant": [
+      {
+        "Name": "SWARM",
+        "Quantity": "5"
+      }
+    ],
+    "product_pickup": [],
+    "roworder": 87,
+    "title": "FACRECIPE_HIVE_DRONE"
+  },
+  {
+    "always_unlocked": true,
+    "buildings": [
+      "HIVE"
+    ],
+    "cost_ant": [
+      {
+        "Name": "DIGGER_SMALL",
+        "Quantity": "1"
+      }
+    ],
+    "costs_pickup": [],
+    "energy_cost": "",
+    "enum": "HIVE_DIGGERSMALL",
+    "in_demo": false,
+    "planned": false,
+    "process_time": 2.0,
+    "product_ant": [
+      {
+        "Name": "SWARM",
+        "Quantity": "2"
+      }
+    ],
+    "product_pickup": [],
+    "roworder": 88,
+    "title": "FACRECIPE_HIVE_DIGGERSMALL"
+  },
+  {
+    "always_unlocked": true,
+    "buildings": [
+      "HIVE"
+    ],
+    "cost_ant": [
+      {
+        "Name": "DIGGER",
+        "Quantity": "1"
+      }
+    ],
+    "costs_pickup": [],
+    "energy_cost": "",
+    "enum": "HIVE_DIGGER",
+    "in_demo": false,
+    "planned": false,
+    "process_time": 2.0,
+    "product_ant": [
+      {
+        "Name": "SWARM",
+        "Quantity": "5"
+      }
+    ],
+    "product_pickup": [],
+    "roworder": 89,
+    "title": "FACRECIPE_HIVE_DIGGER"
+  },
+  {
+    "always_unlocked": true,
+    "buildings": [
+      "HIVE"
+    ],
+    "cost_ant": [
+      {
+        "Name": "INVENTOR_T1",
+        "Quantity": "1"
+      }
+    ],
+    "costs_pickup": [],
+    "energy_cost": "",
+    "enum": "HIVE_INVENTOR",
+    "in_demo": false,
+    "planned": false,
+    "process_time": 2.0,
+    "product_ant": [
+      {
+        "Name": "SWARM",
+        "Quantity": "12"
+      }
+    ],
+    "product_pickup": [],
+    "roworder": 90,
+    "title": "FACRECIPE_HIVE_INVENTOR"
+  },
+  {
+    "always_unlocked": true,
+    "buildings": [
+      "HIVE"
+    ],
+    "cost_ant": [
+      {
+        "Name": "SENTRY",
+        "Quantity": "1"
+      }
+    ],
+    "costs_pickup": [],
+    "energy_cost": "",
+    "enum": "HIVE_SENTRY",
+    "in_demo": false,
+    "planned": false,
+    "process_time": 2.0,
+    "product_ant": [
+      {
+        "Name": "SWARM",
+        "Quantity": "25"
+      }
+    ],
+    "product_pickup": [],
+    "roworder": 91,
+    "title": "FACRECIPE_HIVE_SENTRY"
+  },
+  {
+    "always_unlocked": true,
+    "buildings": [
+      "NEST"
+    ],
+    "cost_ant": [],
+    "costs_pickup": [
+      {
+        "Name": "LARVAE_T1",
+        "Quantity": "1"
+      }
+    ],
+    "energy_cost": "",
+    "enum": "GROW_LARVAE_T1",
+    "in_demo": true,
+    "planned": false,
+    "process_time": 10.0,
+    "product_ant": [
+      {
+        "Name": "WORKER_SMALL_T1",
+        "Quantity": "1"
+      }
+    ],
+    "product_pickup": [],
+    "roworder": 93,
+    "title": "FACRECIPE_GROW_LARVAE_T1"
+  },
+  {
+    "always_unlocked": false,
+    "buildings": [
+      "NEST"
+    ],
+    "cost_ant": [],
+    "costs_pickup": [
+      {
+        "Name": "LARVAE_T2",
+        "Quantity": "1"
+      }
+    ],
+    "energy_cost": "",
+    "enum": "GROW_LARVAE_T2",
+    "in_demo": false,
+    "planned": false,
+    "process_time": 10.0,
+    "product_ant": [
+      {
+        "Name": "WORKER_SMALL_T2",
+        "Quantity": "1"
+      }
+    ],
+    "product_pickup": [],
+    "roworder": 94,
+    "title": "FACRECIPE_GROW_LARVAE_T2"
+  },
+  {
+    "always_unlocked": false,
+    "buildings": [
+      "NEST"
+    ],
+    "cost_ant": [],
+    "costs_pickup": [
+      {
+        "Name": "LARVAE_T3",
+        "Quantity": "1"
+      }
+    ],
+    "energy_cost": "",
+    "enum": "GROW_LARVAE_T3",
+    "in_demo": false,
+    "planned": false,
+    "process_time": 10.0,
+    "product_ant": [
+      {
+        "Name": "WORKER_SMALL_T3",
+        "Quantity": "1"
+      }
+    ],
+    "product_pickup": [],
+    "roworder": 95,
+    "title": "FACRECIPE_GROW_LARVAE_T3"
+  },
+  {
+    "always_unlocked": true,
+    "buildings": [
+      "COMBINER",
+      "COMBINER2"
+    ],
+    "cost_ant": [
+      {
+        "Name": "WORKER_SMALL_T1",
+        "Quantity": "2"
+      }
+    ],
+    "costs_pickup": [],
+    "energy_cost": "",
+    "enum": "COMBINE_WORKER_T1",
+    "in_demo": true,
+    "planned": false,
+    "process_time": 5.0,
+    "product_ant": [
+      {
+        "Name": "WORKER_T1",
+        "Quantity": "1"
+      }
+    ],
+    "product_pickup": [],
+    "roworder": 97,
+    "title": "FACRECIPE_ANT_WORKER_COMBINE"
+  },
+  {
+    "always_unlocked": false,
+    "buildings": [
+      "COMBINER",
+      "COMBINER2"
+    ],
+    "cost_ant": [
+      {
+        "Name": "WORKER_SMALL_T2",
+        "Quantity": "2"
+      }
+    ],
+    "costs_pickup": [],
+    "energy_cost": "",
+    "enum": "COMBINE_WORKER_T2",
+    "in_demo": false,
+    "planned": false,
+    "process_time": 10.0,
+    "product_ant": [
+      {
+        "Name": "WORKER_T2",
+        "Quantity": "1"
+      }
+    ],
+    "product_pickup": [],
+    "roworder": 98,
+    "title": "FACRECIPE_COMBINE_WORKER_T2"
+  },
+  {
+    "always_unlocked": false,
+    "buildings": [
+      "COMBINER",
+      "COMBINER2"
+    ],
+    "cost_ant": [
+      {
+        "Name": "WORKER_SMALL_T3",
+        "Quantity": "2"
+      }
+    ],
+    "costs_pickup": [],
+    "energy_cost": "",
+    "enum": "COMBINE_WORKER_T3",
+    "in_demo": false,
+    "planned": false,
+    "process_time": 30.0,
+    "product_ant": [
+      {
+        "Name": "WORKER_T3",
+        "Quantity": "1"
+      }
+    ],
+    "product_pickup": [],
+    "roworder": 99,
+    "title": "FACRECIPE_COMBINE_WORKER_T3"
+  },
+  {
+    "always_unlocked": false,
+    "buildings": [
+      "COMBINER",
+      "COMBINER2"
+    ],
+    "cost_ant": [
+      {
+        "Name": "DIGGER_SMALL",
+        "Quantity": "2"
+      }
+    ],
+    "costs_pickup": [],
+    "energy_cost": "",
+    "enum": "COMBINE_DIGGER",
+    "in_demo": false,
+    "planned": false,
+    "process_time": 30.0,
+    "product_ant": [
+      {
+        "Name": "DIGGER",
+        "Quantity": "1"
+      }
+    ],
+    "product_pickup": [],
+    "roworder": 100,
+    "title": "FACRECIPE_COMBINE_DIGGER"
+  },
+  {
+    "always_unlocked": false,
+    "buildings": [
+      "COMBINER",
+      "COMBINER2"
+    ],
+    "cost_ant": [
+      {
+        "Name": "WORKER_T1",
+        "Quantity": "2"
+      }
+    ],
+    "costs_pickup": [],
+    "energy_cost": "",
+    "enum": "COMBINE_INVENTOR_T1",
+    "in_demo": true,
+    "planned": false,
+    "process_time": 30.0,
+    "product_ant": [
+      {
+        "Name": "INVENTOR_T1",
+        "Quantity": "1"
+      }
+    ],
+    "product_pickup": [],
+    "roworder": 101,
+    "title": "FACRECIPE_ANT_INVENTOR_COMBINE"
+  },
+  {
+    "always_unlocked": false,
+    "buildings": [
+      "COMBINER",
+      "COMBINER2"
+    ],
+    "cost_ant": [
+      {
+        "Name": "WORKER_T1_IRON",
+        "Quantity": "2"
+      }
+    ],
+    "costs_pickup": [],
+    "energy_cost": "",
+    "enum": "COMBINE_INVENTOR_T1_ALT",
+    "in_demo": false,
+    "planned": false,
+    "process_time": 30.0,
+    "product_ant": [
+      {
+        "Name": "INVENTOR_T1",
+        "Quantity": "1"
+      }
+    ],
+    "product_pickup": [],
+    "roworder": 102,
+    "title": "FACRECIPE_ANT_INVENTOR_COMBINE"
+  },
+  {
+    "always_unlocked": false,
+    "buildings": [
+      "COMBINER",
+      "COMBINER2"
+    ],
+    "cost_ant": [
+      {
+        "Name": "INVENTOR_T1",
+        "Quantity": "1"
+      },
+      {
+        "Name": "WORKER_LED",
+        "Quantity": "1"
+      }
+    ],
+    "costs_pickup": [],
+    "energy_cost": "",
+    "enum": "COMBINE_INVENTOR_T2",
+    "in_demo": false,
+    "planned": false,
+    "process_time": 50.0,
+    "product_ant": [
+      {
+        "Name": "INVENTOR_T2",
+        "Quantity": "1"
+      }
+    ],
+    "product_pickup": [],
+    "roworder": 103,
+    "title": "FACRECIPE_COMBINE_INVENTOR_T2"
+  },
+  {
+    "always_unlocked": false,
+    "buildings": [
+      "COMBINER",
+      "COMBINER2"
+    ],
+    "cost_ant": [
+      {
+        "Name": "INVENTOR_T2",
+        "Quantity": "1"
+      },
+      {
+        "Name": "WORKER_HEAVY",
+        "Quantity": "1"
+      }
+    ],
+    "costs_pickup": [],
+    "energy_cost": "",
+    "enum": "COMBINE_INVENTOR_T3",
+    "in_demo": false,
+    "planned": false,
+    "process_time": 50.0,
+    "product_ant": [
+      {
+        "Name": "INVENTOR_T3",
+        "Quantity": "1"
+      }
+    ],
+    "product_pickup": [],
+    "roworder": 104,
+    "title": "FACRECIPE_COMBINE_INVENTOR_T3"
+  },
+  {
+    "always_unlocked": false,
+    "buildings": [
+      "COMBINER",
+      "COMBINER2"
+    ],
+    "cost_ant": [
+      {
+        "Name": "WORKER_T2",
+        "Quantity": "2"
+      }
+    ],
+    "costs_pickup": [],
+    "energy_cost": "",
+    "enum": "COMBINE_WORKERBIG",
+    "in_demo": false,
+    "planned": true,
+    "process_time": 60.0,
+    "product_ant": [
+      {
+        "Name": "WORKER_BIG",
+        "Quantity": "1"
+      }
+    ],
+    "product_pickup": [],
+    "roworder": 105,
+    "title": "FACRECIPE_COMBINE_WORKERBIG"
+  },
+  {
+    "always_unlocked": false,
+    "buildings": [],
+    "cost_ant": [
+      {
+        "Name": "WORKER_T3",
+        "Quantity": "2"
+      }
+    ],
+    "costs_pickup": [],
+    "energy_cost": "",
+    "enum": "COMBINE_PRINCESS",
+    "in_demo": false,
+    "planned": true,
+    "process_time": 90.0,
+    "product_ant": [
+      {
+        "Name": "PRINCESS",
+        "Quantity": "1"
+      }
+    ],
+    "product_pickup": [],
+    "roworder": 106,
+    "title": "FACRECIPE_COMBINE_PRINCESS"
+  },
+  {
+    "always_unlocked": false,
+    "buildings": [
+      "COMBINER",
+      "COMBINER2"
+    ],
+    "cost_ant": [
+      {
+        "Name": "DRONE",
+        "Quantity": "1"
+      },
+      {
+        "Name": "INVENTOR_T1",
+        "Quantity": "1"
+      }
+    ],
+    "costs_pickup": [],
+    "energy_cost": "",
+    "enum": "COMBINE_PRINCESS_T1",
+    "in_demo": false,
+    "planned": false,
+    "process_time": 60.0,
+    "product_ant": [
+      {
+        "Name": "PRINCESS",
+        "Quantity": "1"
+      }
+    ],
+    "product_pickup": [],
+    "roworder": 107,
+    "title": "FACRECIPE_COMBINE_PRINCESS"
+  },
+  {
+    "always_unlocked": false,
+    "buildings": [
+      "ASSEMBLER"
+    ],
+    "cost_ant": [
+      {
+        "Name": "WORKER_SMALL_T1",
+        "Quantity": "1"
+      }
+    ],
+    "costs_pickup": [
+      {
+        "Name": "IRON_BAR",
+        "Quantity": "1"
+      }
+    ],
+    "energy_cost": "",
+    "enum": "ASSEMBLE_WORKER_T1",
+    "in_demo": false,
+    "planned": false,
+    "process_time": 10.0,
+    "product_ant": [
+      {
+        "Name": "WORKER_T1_IRON",
+        "Quantity": "1"
+      }
+    ],
+    "product_pickup": [],
+    "roworder": 109,
+    "title": "FACRECIPE_ASSEMBLE_WORKERIRON"
+  },
+  {
+    "always_unlocked": false,
+    "buildings": [
+      "ASSEMBLER"
+    ],
+    "cost_ant": [
+      {
+        "Name": "WORKER_SMALL_T2",
+        "Quantity": "1"
+      }
+    ],
+    "costs_pickup": [
+      {
+        "Name": "BATTERY",
+        "Quantity": "1"
+      }
+    ],
+    "energy_cost": "",
+    "enum": "ASSEMBLE_WORKER_T2_ALT",
+    "in_demo": false,
+    "planned": false,
+    "process_time": 10.0,
+    "product_ant": [
+      {
+        "Name": "WORKER_T2_ION",
+        "Quantity": "1"
+      }
+    ],
+    "product_pickup": [],
+    "roworder": 110,
+    "title": "FACRECIPE_ASSEMBLE_WORKER_T2_ALT"
+  },
+  {
+    "always_unlocked": false,
+    "buildings": [
+      "ASSEMBLER"
+    ],
+    "cost_ant": [
+      {
+        "Name": "WORKER_SMALL_T3",
+        "Quantity": "1"
+      }
+    ],
+    "costs_pickup": [
+      {
+        "Name": "GOLD",
+        "Quantity": "1"
+      }
+    ],
+    "energy_cost": "",
+    "enum": "ASSEMBLE_WORKER_T3_ALT",
+    "in_demo": false,
+    "planned": false,
+    "process_time": 60.0,
+    "product_ant": [
+      {
+        "Name": "WORKER_T3_ROYAL",
+        "Quantity": "1"
+      }
+    ],
+    "product_pickup": [],
+    "roworder": 111,
+    "title": "FACRECIPE_ASSEMBLE_WORKER_T3_ALT"
+  },
+  {
+    "always_unlocked": false,
+    "buildings": [
+      "ASSEMBLER"
+    ],
+    "cost_ant": [
+      {
+        "Name": "WORKER_T1",
+        "Quantity": "1"
+      }
+    ],
+    "costs_pickup": [
+      {
+        "Name": "FABRIC",
+        "Quantity": "1"
+      }
+    ],
+    "energy_cost": "",
+    "enum": "ASSEMBLE_DRONE",
+    "in_demo": true,
+    "planned": false,
+    "process_time": 15.0,
+    "product_ant": [
+      {
+        "Name": "DRONE",
+        "Quantity": "1"
+      }
+    ],
+    "product_pickup": [],
+    "roworder": 112,
+    "title": "FACRECIPE_ASSEMBLE_DRONE"
+  },
+  {
+    "always_unlocked": false,
+    "buildings": [
+      "ASSEMBLER"
+    ],
+    "cost_ant": [
+      {
+        "Name": "WORKER_T1_IRON",
+        "Quantity": "1"
+      }
+    ],
+    "costs_pickup": [
+      {
+        "Name": "FABRIC",
+        "Quantity": "1"
+      }
+    ],
+    "energy_cost": "",
+    "enum": "ASSEMBLE_DRONE_ALT",
+    "in_demo": false,
+    "planned": false,
+    "process_time": 15.0,
+    "product_ant": [
+      {
+        "Name": "DRONE",
+        "Quantity": "1"
+      }
+    ],
+    "product_pickup": [],
+    "roworder": 113,
+    "title": "FACRECIPE_ASSEMBLE_DRONE_ALT"
+  },
+  {
+    "always_unlocked": false,
+    "buildings": [
+      "ASSEMBLER"
+    ],
+    "cost_ant": [
+      {
+        "Name": "WORKER_T2",
+        "Quantity": "1"
+      }
+    ],
+    "costs_pickup": [
+      {
+        "Name": "DIODE",
+        "Quantity": "1"
+      }
+    ],
+    "energy_cost": "",
+    "enum": "ASSEMBLE_DRONE_T2",
+    "in_demo": false,
+    "planned": false,
+    "process_time": 20.0,
+    "product_ant": [
+      {
+        "Name": "DRONE_T2",
+        "Quantity": "1"
+      }
+    ],
+    "product_pickup": [],
+    "roworder": 114,
+    "title": "FACRECIPE_ASSEMBLE_DRONE_T2"
+  },
+  {
+    "always_unlocked": false,
+    "buildings": [
+      "ASSEMBLER"
+    ],
+    "cost_ant": [
+      {
+        "Name": "WORKER_T2_ION",
+        "Quantity": "1"
+      }
+    ],
+    "costs_pickup": [
+      {
+        "Name": "DIODE",
+        "Quantity": "1"
+      }
+    ],
+    "energy_cost": "",
+    "enum": "ASSEMBLE_DRONE_T2_ALT",
+    "in_demo": false,
+    "planned": false,
+    "process_time": 20.0,
+    "product_ant": [
+      {
+        "Name": "DRONE_T2",
+        "Quantity": "1"
+      }
+    ],
+    "product_pickup": [],
+    "roworder": 115,
+    "title": "FACRECIPE_ASSEMBLE_DRONE_T2_ALT"
+  },
+  {
+    "always_unlocked": false,
+    "buildings": [
+      "ASSEMBLER"
+    ],
+    "cost_ant": [
+      {
+        "Name": "WORKER_T3",
+        "Quantity": "1"
+      }
+    ],
+    "costs_pickup": [
+      {
+        "Name": "BIOFUEL",
+        "Quantity": "1"
+      }
+    ],
+    "energy_cost": "",
+    "enum": "ASSEMBLE_DRONE_T3",
+    "in_demo": false,
+    "planned": false,
+    "process_time": 30.0,
+    "product_ant": [
+      {
+        "Name": "DRONE_T3",
+        "Quantity": "1"
+      }
+    ],
+    "product_pickup": [],
+    "roworder": 116,
+    "title": "FACRECIPE_ASSEMBLE_DRONE_T3"
+  },
+  {
+    "always_unlocked": false,
+    "buildings": [
+      "ASSEMBLER"
+    ],
+    "cost_ant": [
+      {
+        "Name": "WORKER_T3_ROYAL",
+        "Quantity": "1"
+      }
+    ],
+    "costs_pickup": [
+      {
+        "Name": "BIOFUEL",
+        "Quantity": "1"
+      }
+    ],
+    "energy_cost": "",
+    "enum": "ASSEMBLE_DRONE_T3_ALT",
+    "in_demo": false,
+    "planned": false,
+    "process_time": 30.0,
+    "product_ant": [
+      {
+        "Name": "DRONE_T3",
+        "Quantity": "1"
+      }
+    ],
+    "product_pickup": [],
+    "roworder": 117,
+    "title": "FACRECIPE_ASSEMBLE_DRONE_T3_ALT"
+  },
+  {
+    "always_unlocked": false,
+    "buildings": [
+      "ASSEMBLER"
+    ],
+    "cost_ant": [
+      {
+        "Name": "WORKER_SMALL_T1",
+        "Quantity": "1"
+      }
+    ],
+    "costs_pickup": [
+      {
+        "Name": "SCREW",
+        "Quantity": "1"
+      }
+    ],
+    "energy_cost": "",
+    "enum": "ASSEMBLE_DIGGERSMALL",
+    "in_demo": false,
+    "planned": false,
+    "process_time": 10.0,
+    "product_ant": [
+      {
+        "Name": "DIGGER_SMALL",
+        "Quantity": "1"
+      }
+    ],
+    "product_pickup": [],
+    "roworder": 118,
+    "title": "FACRECIPE_ASSEMBLE_DIGGERSMALL"
+  },
+  {
+    "always_unlocked": false,
+    "buildings": [
+      "ASSEMBLER"
+    ],
+    "cost_ant": [
+      {
+        "Name": "DIGGER_SMALL",
+        "Quantity": "1"
+      }
+    ],
+    "costs_pickup": [
+      {
+        "Name": "DIODE",
+        "Quantity": "1"
+      }
+    ],
+    "energy_cost": "",
+    "enum": "ASSEMBLE_DIGGER",
+    "in_demo": false,
+    "planned": false,
+    "process_time": 30.0,
+    "product_ant": [
+      {
+        "Name": "DIGGER",
+        "Quantity": "1"
+      }
+    ],
+    "product_pickup": [],
+    "roworder": 119,
+    "title": "FACRECIPE_ASSEMBLE_DIGGER"
+  },
+  {
+    "always_unlocked": false,
+    "buildings": [],
+    "cost_ant": [
+      {
+        "Name": "WORKER_SMALL_T1",
+        "Quantity": "1"
+      }
+    ],
+    "costs_pickup": [
+      {
+        "Name": "LIGHTBULB",
+        "Quantity": "1"
+      }
+    ],
+    "energy_cost": "",
+    "enum": "ASSEMBLE_MESSENGER",
+    "in_demo": false,
+    "planned": true,
+    "process_time": 30.0,
+    "product_ant": [
+      {
+        "Name": "MESSENGER",
+        "Quantity": "1"
+      }
+    ],
+    "product_pickup": [],
+    "roworder": 120,
+    "title": "FACRECIPE_ASSEMBLE_MESSENGER"
+  },
+  {
+    "always_unlocked": false,
+    "buildings": [],
+    "cost_ant": [
+      {
+        "Name": "WORKER_T2",
+        "Quantity": "1"
+      }
+    ],
+    "costs_pickup": [
+      {
+        "Name": "IRON_PLATE",
+        "Quantity": "5"
+      }
+    ],
+    "energy_cost": "",
+    "enum": "ASSEMBLE_CARGO",
+    "in_demo": false,
+    "planned": true,
+    "process_time": 120.0,
+    "product_ant": [
+      {
+        "Name": "CARGO",
+        "Quantity": "1"
+      }
+    ],
+    "product_pickup": [],
+    "roworder": 121,
+    "title": "FACRECIPE_ASSEMBLE_CARGO"
+  },
+  {
+    "always_unlocked": false,
+    "buildings": [
+      "ASSEMBLER"
+    ],
+    "cost_ant": [
+      {
+        "Name": "WORKER_T2",
+        "Quantity": "1"
+      }
+    ],
+    "costs_pickup": [
+      {
+        "Name": "RESISTOR",
+        "Quantity": "1"
+      }
+    ],
+    "energy_cost": "",
+    "enum": "ASSEMBLE_HAZMAT",
+    "in_demo": false,
+    "planned": false,
+    "process_time": 90.0,
+    "product_ant": [
+      {
+        "Name": "HAZMAT",
+        "Quantity": "1"
+      }
+    ],
+    "product_pickup": [],
+    "roworder": 122,
+    "title": "FACRECIPE_ASSEMBLE_HAZMAT"
+  },
+  {
+    "always_unlocked": false,
+    "buildings": [
+      "ASSEMBLER"
+    ],
+    "cost_ant": [
+      {
+        "Name": "WORKER_T1",
+        "Quantity": "1"
+      }
+    ],
+    "costs_pickup": [
+      {
+        "Name": "LED",
+        "Quantity": "1"
+      }
+    ],
+    "energy_cost": "",
+    "enum": "ASSEMBLE_INVENTOR_ALT",
+    "in_demo": false,
+    "planned": false,
+    "process_time": 30.0,
+    "product_ant": [
+      {
+        "Name": "INVENTOR_T1",
+        "Quantity": "1"
+      }
+    ],
+    "product_pickup": [],
+    "roworder": 123,
+    "title": "FACRECIPE_ASSEMBLE_INVENTOR_ALT"
+  },
+  {
+    "always_unlocked": false,
+    "buildings": [
+      "ASSEMBLER"
+    ],
+    "cost_ant": [
+      {
+        "Name": "INVENTOR_T1",
+        "Quantity": "1"
+      }
+    ],
+    "costs_pickup": [
+      {
+        "Name": "LED",
+        "Quantity": "4"
+      }
+    ],
+    "energy_cost": "",
+    "enum": "ASSEMBLE_INVENTOR_T2",
+    "in_demo": false,
+    "planned": false,
+    "process_time": 60.0,
+    "product_ant": [
+      {
+        "Name": "INVENTOR_T2",
+        "Quantity": "1"
+      }
+    ],
+    "product_pickup": [],
+    "roworder": 124,
+    "title": "FACRECIPE_ASSEMBLE_INVENTOR_T2"
+  },
+  {
+    "always_unlocked": false,
+    "buildings": [
+      "ASSEMBLER"
+    ],
+    "cost_ant": [
+      {
+        "Name": "INVENTOR_T2",
+        "Quantity": "1"
+      }
+    ],
+    "costs_pickup": [
+      {
+        "Name": "MICROCHIP",
+        "Quantity": "1"
+      }
+    ],
+    "energy_cost": "",
+    "enum": "ASSEMBLE_INVENTOR_T3",
+    "in_demo": false,
+    "planned": false,
+    "process_time": 60.0,
+    "product_ant": [
+      {
+        "Name": "INVENTOR_T3",
+        "Quantity": "1"
+      }
+    ],
+    "product_pickup": [],
+    "roworder": 125,
+    "title": "FACRECIPE_ASSEMBLE_INVENTOR_T3"
+  },
+  {
+    "always_unlocked": false,
+    "buildings": [
+      "ASSEMBLER"
+    ],
+    "cost_ant": [
+      {
+        "Name": "WORKER_SMALL_T1",
+        "Quantity": "1"
+      }
+    ],
+    "costs_pickup": [
+      {
+        "Name": "LIGHTBULB",
+        "Quantity": "1"
+      }
+    ],
+    "energy_cost": "",
+    "enum": "ASSEMBLE_BULB0",
+    "in_demo": false,
+    "planned": false,
+    "process_time": 30.0,
+    "product_ant": [
+      {
+        "Name": "WORKER_BULB0",
+        "Quantity": "1"
+      }
+    ],
+    "product_pickup": [],
+    "roworder": 126,
+    "title": "FACRECIPE_ASSEMBLE_BULB0"
+  },
+  {
+    "always_unlocked": false,
+    "buildings": [
+      "ASSEMBLER"
+    ],
+    "cost_ant": [
+      {
+        "Name": "WORKER_BULB0",
+        "Quantity": "1"
+      }
+    ],
+    "costs_pickup": [
+      {
+        "Name": "ENERGY_POD",
+        "Quantity": "1"
+      }
+    ],
+    "energy_cost": "",
+    "enum": "ASSEMBLE_BULB1",
+    "in_demo": false,
+    "planned": false,
+    "process_time": 10.0,
+    "product_ant": [
+      {
+        "Name": "WORKER_BULB1",
+        "Quantity": "1"
+      }
+    ],
+    "product_pickup": [],
+    "roworder": 127,
+    "title": "FACRECIPE_ASSEMBLE_BULB1"
+  },
+  {
+    "always_unlocked": false,
+    "buildings": [
+      "ASSEMBLER"
+    ],
+    "cost_ant": [
+      {
+        "Name": "WORKER_BULB0",
+        "Quantity": "1"
+      }
+    ],
+    "costs_pickup": [
+      {
+        "Name": "ENERGY_POD2",
+        "Quantity": "1"
+      }
+    ],
+    "energy_cost": "",
+    "enum": "ASSEMBLE_BULB2",
+    "in_demo": false,
+    "planned": false,
+    "process_time": 10.0,
+    "product_ant": [
+      {
+        "Name": "WORKER_BULB2",
+        "Quantity": "1"
+      }
+    ],
+    "product_pickup": [],
+    "roworder": 128,
+    "title": "FACRECIPE_ASSEMBLE_BULB2"
+  },
+  {
+    "always_unlocked": false,
+    "buildings": [
+      "ASSEMBLER"
+    ],
+    "cost_ant": [
+      {
+        "Name": "WORKER_BULB0",
+        "Quantity": "1"
+      }
+    ],
+    "costs_pickup": [
+      {
+        "Name": "ENERGY_POD3",
+        "Quantity": "1"
+      }
+    ],
+    "energy_cost": "",
+    "enum": "ASSEMBLE_BULB3",
+    "in_demo": false,
+    "planned": false,
+    "process_time": 10.0,
+    "product_ant": [
+      {
+        "Name": "WORKER_BULB3",
+        "Quantity": "1"
+      }
+    ],
+    "product_pickup": [],
+    "roworder": 129,
+    "title": "FACRECIPE_ASSEMBLE_BULB3"
+  },
+  {
+    "always_unlocked": false,
+    "buildings": [
+      "ASSEMBLER"
+    ],
+    "cost_ant": [
+      {
+        "Name": "WORKER_BULB0",
+        "Quantity": "1"
+      }
+    ],
+    "costs_pickup": [
+      {
+        "Name": "ENERGY_POD4",
+        "Quantity": "1"
+      }
+    ],
+    "energy_cost": "",
+    "enum": "ASSEMBLE_BULB4",
+    "in_demo": false,
+    "planned": false,
+    "process_time": 10.0,
+    "product_ant": [
+      {
+        "Name": "WORKER_BULB4",
+        "Quantity": "1"
+      }
+    ],
+    "product_pickup": [],
+    "roworder": 130,
+    "title": "FACRECIPE_ASSEMBLE_BULB4"
+  },
+  {
+    "always_unlocked": false,
+    "buildings": [
+      "ASSEMBLER"
+    ],
+    "cost_ant": [
+      {
+        "Name": "WORKER_BULB0",
+        "Quantity": "1"
+      }
+    ],
+    "costs_pickup": [
+      {
+        "Name": "ENERGY_POD5",
+        "Quantity": "1"
+      }
+    ],
+    "energy_cost": "",
+    "enum": "ASSEMBLE_BULB5",
+    "in_demo": false,
+    "planned": false,
+    "process_time": 10.0,
+    "product_ant": [
+      {
+        "Name": "WORKER_BULB5",
+        "Quantity": "1"
+      }
+    ],
+    "product_pickup": [],
+    "roworder": 131,
+    "title": "FACRECIPE_ASSEMBLE_BULB5"
+  },
+  {
+    "always_unlocked": false,
+    "buildings": [
+      "ASSEMBLER"
+    ],
+    "cost_ant": [
+      {
+        "Name": "WORKER_BULB0",
+        "Quantity": "1"
+      }
+    ],
+    "costs_pickup": [
+      {
+        "Name": "ENERGY_POD6",
+        "Quantity": "1"
+      }
+    ],
+    "energy_cost": "",
+    "enum": "ASSEMBLE_BULB6",
+    "in_demo": false,
+    "planned": false,
+    "process_time": 10.0,
+    "product_ant": [
+      {
+        "Name": "WORKER_BULB6",
+        "Quantity": "1"
+      }
+    ],
+    "product_pickup": [],
+    "roworder": 132,
+    "title": "FACRECIPE_ASSEMBLE_BULB6"
+  },
+  {
+    "always_unlocked": false,
+    "buildings": [
+      "ASSEMBLER"
+    ],
+    "cost_ant": [
+      {
+        "Name": "WORKER_T1_IRON",
+        "Quantity": "1"
+      }
+    ],
+    "costs_pickup": [
+      {
+        "Name": "LED",
+        "Quantity": "1"
+      }
+    ],
+    "energy_cost": "",
+    "enum": "ASSEMBLE_LED",
+    "in_demo": false,
+    "planned": false,
+    "process_time": 30.0,
+    "product_ant": [
+      {
+        "Name": "WORKER_LED",
+        "Quantity": "1"
+      }
+    ],
+    "product_pickup": [],
+    "roworder": 133,
+    "title": "FACRECIPE_ASSEMBLE_LED"
+  },
+  {
+    "always_unlocked": false,
+    "buildings": [
+      "ASSEMBLER"
+    ],
+    "cost_ant": [
+      {
+        "Name": "WORKER_T2_ION",
+        "Quantity": "1"
+      }
+    ],
+    "costs_pickup": [
+      {
+        "Name": "TRANSISTOR",
+        "Quantity": "1"
+      }
+    ],
+    "energy_cost": "",
+    "enum": "ASSEMBLE_HEAVY",
+    "in_demo": false,
+    "planned": false,
+    "process_time": 60.0,
+    "product_ant": [
+      {
+        "Name": "WORKER_HEAVY",
+        "Quantity": "1"
+      }
+    ],
+    "product_pickup": [],
+    "roworder": 134,
+    "title": "FACRECIPE_ASSEMBLE_HEAVY"
+  },
+  {
+    "always_unlocked": false,
+    "buildings": [
+      "ASSEMBLER"
+    ],
+    "cost_ant": [
+      {
+        "Name": "WORKER_T3_ROYAL",
+        "Quantity": "1"
+      }
+    ],
+    "costs_pickup": [
+      {
+        "Name": "MICROCHIP",
+        "Quantity": "1"
+      }
+    ],
+    "energy_cost": "",
+    "enum": "ASSEMBLE_SENTINEL",
+    "in_demo": false,
+    "planned": false,
+    "process_time": 120.0,
+    "product_ant": [
+      {
+        "Name": "SENTINEL",
+        "Quantity": "1"
+      }
+    ],
+    "product_pickup": [],
+    "roworder": 135,
+    "title": "FACRECIPE_ASSEMBLE_SENTINEL"
+  },
+  {
+    "always_unlocked": false,
+    "buildings": [
+      "GYNE_MAKER"
+    ],
+    "cost_ant": [
+      {
+        "Name": "PRINCESS",
+        "Quantity": "1"
+      },
+      {
+        "Name": "WORKER_T1",
+        "Quantity": "15"
+      },
+      {
+        "Name": "WORKER_T1_IRON",
+        "Quantity": "15"
+      },
+      {
+        "Name": "DRONE",
+        "Quantity": "10"
+      },
+      {
+        "Name": "WORKER_BULB1",
+        "Quantity": "5"
+      },
+      {
+        "Name": "WORKER_BULB2",
+        "Quantity": "5"
+      }
+    ],
+    "costs_pickup": [],
+    "energy_cost": "",
+    "enum": "GYNE_LESSER",
+    "in_demo": false,
+    "planned": false,
+    "process_time": 18.0,
+    "product_ant": [
+      {
+        "Name": "GYNE",
+        "Quantity": "1"
+      }
+    ],
+    "product_pickup": [],
+    "roworder": 137,
+    "title": "FACRECIPE_GYNE_LESSER"
+  },
+  {
+    "always_unlocked": false,
+    "buildings": [
+      "GYNE_MAKER"
+    ],
+    "cost_ant": [
+      {
+        "Name": "PRINCESS",
+        "Quantity": "1"
+      },
+      {
+        "Name": "WORKER_T2",
+        "Quantity": "5"
+      },
+      {
+        "Name": "WORKER_T2_ION",
+        "Quantity": "5"
+      },
+      {
+        "Name": "DRONE_T2",
+        "Quantity": "5"
+      },
+      {
+        "Name": "WORKER_BULB4",
+        "Quantity": "5"
+      },
+      {
+        "Name": "WORKER_BULB5",
+        "Quantity": "5"
+      }
+    ],
+    "costs_pickup": [],
+    "energy_cost": "",
+    "enum": "GYNE_REGAL",
+    "in_demo": false,
+    "planned": false,
+    "process_time": 18.0,
+    "product_ant": [
+      {
+        "Name": "GYNE_T2",
+        "Quantity": "1"
+      }
+    ],
+    "product_pickup": [],
+    "roworder": 138,
+    "title": "FACRECIPE_GYNE_REGAL"
+  },
+  {
+    "always_unlocked": false,
+    "buildings": [
+      "GYNE_MAKER"
+    ],
+    "cost_ant": [
+      {
+        "Name": "PRINCESS",
+        "Quantity": "1"
+      },
+      {
+        "Name": "WORKER_T3",
+        "Quantity": "2"
+      },
+      {
+        "Name": "WORKER_T3_ROYAL",
+        "Quantity": "2"
+      },
+      {
+        "Name": "WORKER_LED",
+        "Quantity": "2"
+      },
+      {
+        "Name": "WORKER_HEAVY",
+        "Quantity": "2"
+      },
+      {
+        "Name": "SENTINEL",
+        "Quantity": "2"
+      }
+    ],
+    "costs_pickup": [],
+    "energy_cost": "",
+    "enum": "GYNE_ROYAL",
+    "in_demo": false,
+    "planned": false,
+    "process_time": 18.0,
+    "product_ant": [
+      {
+        "Name": "GYNE_T3",
+        "Quantity": "1"
+      }
+    ],
+    "product_pickup": [],
+    "roworder": 139,
+    "title": "FACRECIPE_GYNE_ROYAL"
+  },
+  {
+    "always_unlocked": false,
+    "buildings": [
+      "ROYAL_PALACE"
+    ],
+    "cost_ant": [
+      {
+        "Name": "PRINCESS",
+        "Quantity": "1"
+      }
+    ],
+    "costs_pickup": [
+      {
+        "Name": "MICROCHIP",
+        "Quantity": "1"
+      },
+      {
+        "Name": "TRANSISTOR",
+        "Quantity": "1"
+      },
+      {
+        "Name": "CAPACITOR",
+        "Quantity": "1"
+      },
+      {
+        "Name": "LED",
+        "Quantity": "1"
+      }
+    ],
+    "energy_cost": "",
+    "enum": "PALACE_GYNE",
+    "in_demo": false,
+    "planned": false,
+    "process_time": "",
+    "product_ant": [
+      {
+        "Name": "GYNE",
+        "Quantity": "1"
+      }
+    ],
+    "product_pickup": [],
+    "roworder": 141,
+    "title": "FACRECIPE_PALACE_GYNE"
+  },
+  {
+    "always_unlocked": false,
+    "buildings": [],
+    "cost_ant": [
+      {
+        "Name": "WORKER_SMALL_T1",
+        "Quantity": "1"
+      }
+    ],
+    "costs_pickup": [
+      {
+        "Name": "IRON_BAR",
+        "Quantity": "1"
+      }
+    ],
+    "energy_cost": "",
+    "enum": "ANT_WORKER",
+    "in_demo": false,
+    "planned": false,
+    "process_time": 60.0,
+    "product_ant": [
+      {
+        "Name": "WORKER_T1",
+        "Quantity": "1"
+      }
+    ],
+    "product_pickup": [],
+    "roworder": 143,
+    "title": "FACRECIPE_ANT_WORKER"
+  },
+  {
+    "always_unlocked": false,
+    "buildings": [],
+    "cost_ant": [
+      {
+        "Name": "WORKER_SMALL_T1",
+        "Quantity": "1"
+      }
+    ],
+    "costs_pickup": [
+      {
+        "Name": "FIBER_SPIKETREE",
+        "Quantity": "1"
+      }
+    ],
+    "energy_cost": "",
+    "enum": "ANT_DRONESMALL",
+    "in_demo": false,
+    "planned": false,
+    "process_time": 30.0,
+    "product_ant": [
+      {
+        "Name": "DRONE_SMALL",
+        "Quantity": "1"
+      }
+    ],
+    "product_pickup": [],
+    "roworder": 144,
+    "title": "FACRECIPE_ANT_DRONESMALL"
+  },
+  {
+    "always_unlocked": false,
+    "buildings": [],
+    "cost_ant": [
+      {
+        "Name": "WORKER_T1",
+        "Quantity": "1"
+      }
+    ],
+    "costs_pickup": [
+      {
+        "Name": "RESIN",
+        "Quantity": "2"
+      }
+    ],
+    "energy_cost": "",
+    "enum": "ANT_DRONE",
+    "in_demo": false,
+    "planned": false,
+    "process_time": 40.0,
+    "product_ant": [
+      {
+        "Name": "DRONE",
+        "Quantity": "1"
+      }
+    ],
+    "product_pickup": [],
+    "roworder": 145,
+    "title": "FACRECIPE_ANT_DRONE"
+  },
+  {
+    "always_unlocked": false,
+    "buildings": [],
+    "cost_ant": [
+      {
+        "Name": "WORKER_SMALL_T1",
+        "Quantity": "1"
+      }
+    ],
+    "costs_pickup": [
+      {
+        "Name": "SCREW",
+        "Quantity": "1"
+      }
+    ],
+    "energy_cost": "",
+    "enum": "ANT_SMALLDIGGER",
+    "in_demo": false,
+    "planned": false,
+    "process_time": 5.0,
+    "product_ant": [
+      {
+        "Name": "DIGGER_SMALL",
+        "Quantity": "1"
+      }
+    ],
+    "product_pickup": [],
+    "roworder": 146,
+    "title": "FACRECIPE_ANT_SMALLDIGGER"
+  },
+  {
+    "always_unlocked": false,
+    "buildings": [],
+    "cost_ant": [
+      {
+        "Name": "WORKER_T1",
+        "Quantity": "1"
+      }
+    ],
+    "costs_pickup": [
+      {
+        "Name": "DIODE",
+        "Quantity": "1"
+      }
+    ],
+    "energy_cost": "",
+    "enum": "ANT_DIGGER",
+    "in_demo": false,
+    "planned": false,
+    "process_time": 5.0,
+    "product_ant": [
+      {
+        "Name": "DIGGER",
+        "Quantity": "1"
+      }
+    ],
+    "product_pickup": [],
+    "roworder": 147,
+    "title": "FACRECIPE_ANT_DIGGER"
+  },
+  {
+    "always_unlocked": false,
+    "buildings": [],
+    "cost_ant": [
+      {
+        "Name": "WORKER_SMALL_T1",
+        "Quantity": "1"
+      }
+    ],
+    "costs_pickup": [],
+    "energy_cost": "",
+    "enum": "ANT_CARGO",
+    "in_demo": false,
+    "planned": false,
+    "process_time": 10.0,
+    "product_ant": [
+      {
+        "Name": "CARGO",
+        "Quantity": "1"
+      }
+    ],
+    "product_pickup": [],
+    "roworder": 148,
+    "title": "FACRECIPE_ANT_CARGO"
+  },
+  {
+    "always_unlocked": false,
+    "buildings": [],
+    "cost_ant": [
+      {
+        "Name": "CARGO",
+        "Quantity": "1"
+      },
+      {
+        "Name": "CARGO",
+        "Quantity": "1"
+      }
+    ],
+    "costs_pickup": [],
+    "energy_cost": "",
+    "enum": "ANT_CARGO_TRAIN",
+    "in_demo": false,
+    "planned": false,
+    "process_time": 10.0,
+    "product_ant": [
+      {
+        "Name": "CARGO_TRAIN",
+        "Quantity": "1"
+      }
+    ],
+    "product_pickup": [],
+    "roworder": 149,
+    "title": "FACRECIPE_ANT_CARGO_TRAIN"
+  },
+  {
+    "always_unlocked": false,
+    "buildings": [],
+    "cost_ant": [
+      {
+        "Name": "CARGO_TRAIN",
+        "Quantity": "1"
+      },
+      {
+        "Name": "CARGO",
+        "Quantity": "1"
+      }
+    ],
+    "costs_pickup": [],
+    "energy_cost": "",
+    "enum": "ANT_CARGO_TRAIN_EXTEND",
+    "in_demo": false,
+    "planned": false,
+    "process_time": 10.0,
+    "product_ant": [
+      {
+        "Name": "CARGO_TRAIN",
+        "Quantity": "1"
+      }
+    ],
+    "product_pickup": [],
+    "roworder": 150,
+    "title": "FACRECIPE_ANT_CARGO_TRAIN_EXTEND"
+  },
+  {
+    "always_unlocked": false,
+    "buildings": [],
+    "cost_ant": [
+      {
+        "Name": "WORKER_SMALL_T1",
+        "Quantity": "2"
+      }
+    ],
+    "costs_pickup": [],
+    "energy_cost": "",
+    "enum": "ANT_WORKER_COMBINE",
+    "in_demo": false,
+    "planned": false,
+    "process_time": 5.0,
+    "product_ant": [
+      {
+        "Name": "WORKER_T1",
+        "Quantity": "1"
+      }
+    ],
+    "product_pickup": [],
+    "roworder": 151,
+    "title": "FACRECIPE_ANT_WORKER_COMBINE"
+  },
+  {
+    "always_unlocked": false,
+    "buildings": [],
+    "cost_ant": [
+      {
+        "Name": "WORKER_T1",
+        "Quantity": "2"
+      }
+    ],
+    "costs_pickup": [],
+    "energy_cost": "",
+    "enum": "ANT_INVENTOR_COMBINE",
+    "in_demo": false,
+    "planned": false,
+    "process_time": 60.0,
+    "product_ant": [
+      {
+        "Name": "INVENTOR_T1",
+        "Quantity": "1"
+      }
+    ],
+    "product_pickup": [],
+    "roworder": 152,
+    "title": "FACRECIPE_ANT_INVENTOR_COMBINE"
+  },
+  {
+    "always_unlocked": false,
+    "buildings": [],
+    "cost_ant": [],
+    "costs_pickup": [
+      {
+        "Name": "FIBER_SPIKETREE",
+        "Quantity": "1"
+      }
+    ],
+    "energy_cost": "",
+    "enum": "SEED_SPIKETREE",
+    "in_demo": false,
+    "planned": false,
+    "process_time": 20.0,
+    "product_ant": [],
+    "product_pickup": [
+      {
+        "Name": "SEED_BERRY",
+        "Quantity": "1"
+      }
+    ],
+    "roworder": 154,
+    "title": "FACRECIPE_SEED_SPIKETREE"
+  },
+  {
+    "always_unlocked": false,
+    "buildings": [],
+    "cost_ant": [
+      {
+        "Name": "WORKER_T1",
+        "Quantity": "2"
+      }
+    ],
+    "costs_pickup": [],
+    "energy_cost": "",
+    "enum": "ANT_SWARM",
+    "in_demo": false,
+    "planned": false,
+    "process_time": 10.0,
+    "product_ant": [
+      {
+        "Name": "SWARM",
+        "Quantity": "1"
+      }
+    ],
+    "product_pickup": [],
+    "roworder": 155,
+    "title": "FACRECIPE_ANT_SWARM"
+  }
+]
