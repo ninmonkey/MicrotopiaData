@@ -1009,6 +1009,8 @@ function md.Export.TechTree.TechTree {
             $rec.'desc_in_demo'     = md.Parse.Checkbox $rec.'desc_in_demo'
             $rec.'unlock_recipes'   = md.Parse.ItemsFromList -Text $rec.'unlock_recipes'
             $rec.'unlock_buildings' = md.Parse.ItemsFromList -Text $rec.'unlock_buildings'
+
+
             $rec
         }
     )
@@ -1188,6 +1190,8 @@ function md.Export.Prefabs.Prefabs {
             $rec.'no_demolish' = md.Parse.Checkbox $rec.'no_demolish'
             $rec.'in_demo'     = md.Parse.Checkbox $rec.'in_demo'
             $rec.'cost'        = md.Parse.IngredientsFromCsv $rec.'cost'
+            $rec.'description' = $rec.'description'.trim()
+            $rec.'title'       = $rec.'title'.trim()
             $rec
         }
     )

@@ -16,7 +16,7 @@ Check out the [Discord Server](https://discord.gg/F8GKVrxcWN)
 
 ## About
 
-Files generated on: 2025-03-19 2:08:04 PM
+Files generated on: 2025-03-19 10:39:08 PM
 For version: v1.0.8
 
 ## Files by Type
@@ -44,6 +44,7 @@ For version: v1.0.8
 - [Changelog-raw.xlsx](./export/v1.0.8/Changelog-raw.xlsx)
 - [Instinct-raw.xlsx](./export/v1.0.8/Instinct-raw.xlsx)
 - [biome-raw.xlsx](./export/v1.0.8/biome-raw.xlsx)
+- [biome.xlsx](./export/v1.0.8/biome.xlsx)
 - [loc-raw.xlsx](./export/v1.0.8/loc-raw.xlsx)
 - [loc.xlsx](./export/v1.0.8/loc.xlsx)
 - [prefabs-raw.xlsx](./export/v1.0.8/prefabs-raw.xlsx)

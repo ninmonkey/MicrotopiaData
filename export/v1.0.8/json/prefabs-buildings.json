@@ -24,7 +24,7 @@
     "auto_recipe": false,
     "code": "STOCKPILE_LARGE",
     "cost": [],
-    "description": "BUILD_STOCKPILELARGE_DESC ",
+    "description": "BUILD_STOCKPILELARGE_DESC",
     "energy_capacity": "",
     "energy_consumption": "",
     "group": "storage",
@@ -44,7 +44,7 @@
     "auto_recipe": false,
     "code": "STOCKPILE_COLOSSAL",
     "cost": [],
-    "description": "BUILD_STOCKPILECOL_DESC ",
+    "description": "BUILD_STOCKPILECOL_DESC",
     "energy_capacity": "",
     "energy_consumption": "",
     "group": "storage",
@@ -56,7 +56,7 @@
     "prefab": "StockpileColossal",
     "roworder": 4,
     "storage_capacity": 1771.0,
-    "title": "BUILD_STOCKPILECOL ",
+    "title": "BUILD_STOCKPILECOL",
     "tutorial": ""
   },
   {
@@ -106,7 +106,7 @@
         "Quantity": "10"
       }
     ],
-    "description": "BUILD_BASIN_DESC ",
+    "description": "BUILD_BASIN_DESC",
     "energy_capacity": "",
     "energy_consumption": "",
     "group": "BASIN",
@@ -168,7 +168,7 @@
         "Quantity": "4"
       }
     ],
-    "description": "BUILD_BATTERY_DESC ",
+    "description": "BUILD_BATTERY_DESC",
     "energy_capacity": "",
     "energy_consumption": "",
     "group": "BASIN",
@@ -407,7 +407,7 @@
     "prefab": "Facility",
     "roworder": 20,
     "storage_capacity": "",
-    "title": "BUILD_FACILITY ",
+    "title": "BUILD_FACILITY",
     "tutorial": ""
   },
   {
@@ -543,7 +543,7 @@
         "Quantity": "2"
       }
     ],
-    "description": "BUILD_ACIDREFINERY_DESC ",
+    "description": "BUILD_ACIDREFINERY_DESC",
     "energy_capacity": "",
     "energy_consumption": "",
     "group": "GRINDER",
@@ -555,7 +555,7 @@
     "prefab": "Acid Refinery",
     "roworder": 27,
     "storage_capacity": "",
-    "title": "BUILD_ACIDREFINERY ",
+    "title": "BUILD_ACIDREFINERY",
     "tutorial": ""
   },
   {
@@ -613,7 +613,7 @@
         "Quantity": "3"
       }
     ],
-    "description": "BUILD_REACTOR_DESC ",
+    "description": "BUILD_REACTOR_DESC",
     "energy_capacity": "",
     "energy_consumption": "",
     "group": "MIXER",
@@ -625,7 +625,7 @@
     "prefab": "Reactor",
     "roworder": 30,
     "storage_capacity": "",
-    "title": "BUILD_REACTOR ",
+    "title": "BUILD_REACTOR",
     "tutorial": ""
   },
   {
@@ -662,7 +662,7 @@
         "Quantity": "1"
       }
     ],
-    "description": "BUILD_REACTORLARGE_DESC ",
+    "description": "BUILD_REACTORLARGE_DESC",
     "energy_capacity": "",
     "energy_consumption": "",
     "group": "MIXER",
@@ -674,7 +674,7 @@
     "prefab": "Reactor Large",
     "roworder": 31,
     "storage_capacity": "",
-    "title": "BUILD_REACTORLARGE ",
+    "title": "BUILD_REACTORLARGE",
     "tutorial": ""
   },
   {
@@ -687,7 +687,7 @@
         "Quantity": "33"
       }
     ],
-    "description": "BUILD_GENERATOR_DESC ",
+    "description": "BUILD_GENERATOR_DESC",
     "energy_capacity": "",
     "energy_consumption": "",
     "group": "MIXER",
@@ -699,7 +699,7 @@
     "prefab": "Generator",
     "roworder": 32,
     "storage_capacity": "",
-    "title": "BUILD_GENERATOR ",
+    "title": "BUILD_GENERATOR",
     "tutorial": ""
   },
   {
@@ -1093,7 +1093,7 @@
     "prefab": "Feeding Station",
     "roworder": 46,
     "storage_capacity": "",
-    "title": "BUILD_FEEDINGSTATION ",
+    "title": "BUILD_FEEDINGSTATION",
     "tutorial": ""
   },
   {
@@ -1228,7 +1228,7 @@
         "Quantity": "3"
       }
     ],
-    "description": "BUILD_BRIDGESMALL_DESC ",
+    "description": "BUILD_BRIDGESMALL_DESC",
     "energy_capacity": "",
     "energy_consumption": "",
     "group": "transport",
@@ -1261,7 +1261,7 @@
         "Quantity": "15"
       }
     ],
-    "description": "BUILD_BRIDGEMEDIUM_DESC ",
+    "description": "BUILD_BRIDGEMEDIUM_DESC",
     "energy_capacity": "",
     "energy_consumption": "",
     "group": "transport",
@@ -1273,7 +1273,7 @@
     "prefab": "Bridge Medium",
     "roworder": 54,
     "storage_capacity": "",
-    "title": "BUILD_BRIDGEMEDIUM ",
+    "title": "BUILD_BRIDGEMEDIUM",
     "tutorial": ""
   },
   {
@@ -1298,7 +1298,7 @@
         "Quantity": "1"
       }
     ],
-    "description": "BUILD_BRIDGELARGE_DESC ",
+    "description": "BUILD_BRIDGELARGE_DESC",
     "energy_capacity": "",
     "energy_consumption": "",
     "group": "transport",
@@ -1310,7 +1310,7 @@
     "prefab": "Bridge Large",
     "roworder": 55,
     "storage_capacity": "",
-    "title": "BUILD_BRIDGELARGE ",
+    "title": "BUILD_BRIDGELARGE",
     "tutorial": ""
   },
   {
@@ -1331,7 +1331,7 @@
         "Quantity": "3"
       }
     ],
-    "description": "BUILD_ANTCANNON_DESC ",
+    "description": "BUILD_ANTCANNON_DESC",
     "energy_capacity": "",
     "energy_consumption": "",
     "group": "transport",
@@ -1343,7 +1343,7 @@
     "prefab": "Ant Launcher",
     "roworder": 56,
     "storage_capacity": "",
-    "title": "BUILD_ANTCANNON ",
+    "title": "BUILD_ANTCANNON",
     "tutorial": ""
   },
   {
@@ -1451,7 +1451,7 @@
         "Quantity": "1"
       }
     ],
-    "description": "BUILD_BEACONPOLE_DESC ",
+    "description": "BUILD_BEACONPOLE_DESC",
     "energy_capacity": "",
     "energy_consumption": "",
     "group": "CARGO_PLATFORM",
@@ -1463,7 +1463,7 @@
     "prefab": "Beacon Medium",
     "roworder": 62,
     "storage_capacity": "",
-    "title": "BUILD_BEACONPOLE ",
+    "title": "BUILD_BEACONPOLE",
     "tutorial": ""
   },
   {
@@ -1484,7 +1484,7 @@
         "Quantity": "1"
       }
     ],
-    "description": "BUILD_BEACONTOWER_DESC ",
+    "description": "BUILD_BEACONTOWER_DESC",
     "energy_capacity": "",
     "energy_consumption": "",
     "group": "CARGO_PLATFORM",
@@ -1496,7 +1496,7 @@
     "prefab": "Beacon Large",
     "roworder": 63,
     "storage_capacity": "",
-    "title": "BUILD_BEACONTOWER ",
+    "title": "BUILD_BEACONTOWER",
     "tutorial": ""
   },
   {
@@ -1509,7 +1509,7 @@
         "Quantity": "1"
       }
     ],
-    "description": "BUILD_FLOORIRON_DESC ",
+    "description": "BUILD_FLOORIRON_DESC",
     "energy_capacity": "",
     "energy_consumption": "",
     "group": "foundation",
@@ -1521,7 +1521,7 @@
     "prefab": "Floortile Iron",
     "roworder": 65,
     "storage_capacity": "",
-    "title": "BUILD_FLOORIRON ",
+    "title": "BUILD_FLOORIRON",
     "tutorial": ""
   },
   {
@@ -1801,7 +1801,7 @@
         "Quantity": "10"
       }
     ],
-    "description": "BUILD_ISLANDSCANNERFLORAL_DESC ",
+    "description": "BUILD_ISLANDSCANNERFLORAL_DESC",
     "energy_capacity": "",
     "energy_consumption": "",
     "group": "progression",
@@ -1813,7 +1813,7 @@
     "prefab": "Island Scanner 1",
     "roworder": 78,
     "storage_capacity": "",
-    "title": "BUILD_ISLANDSCANNERFLORAL ",
+    "title": "BUILD_ISLANDSCANNERFLORAL",
     "tutorial": ""
   },
   {
@@ -1858,7 +1858,7 @@
     "prefab": "Island Scanner 2",
     "roworder": 79,
     "storage_capacity": "",
-    "title": "BUILD_ISLANDSCANNERPOLLUTED ",
+    "title": "BUILD_ISLANDSCANNERPOLLUTED",
     "tutorial": ""
   },
   {
@@ -1899,7 +1899,7 @@
     "prefab": "Island Scanner 3",
     "roworder": 80,
     "storage_capacity": "",
-    "title": "BUILD_ISLANDSCANNERRANDOM ",
+    "title": "BUILD_ISLANDSCANNERRANDOM",
     "tutorial": ""
   },
   {
@@ -1944,7 +1944,7 @@
     "prefab": "Island Scanner 4",
     "roworder": 81,
     "storage_capacity": "",
-    "title": "BUILD_ISLANDSCANNERRANDOM ",
+    "title": "BUILD_ISLANDSCANNERRANDOM",
     "tutorial": ""
   },
   {
@@ -2018,7 +2018,7 @@
         "Quantity": "50"
       }
     ],
-    "description": "BUILD_ISLANDSCANNERTARGET_DESC ",
+    "description": "BUILD_ISLANDSCANNERTARGET_DESC",
     "energy_capacity": "",
     "energy_consumption": "",
     "group": "progression",
@@ -2030,7 +2030,7 @@
     "prefab": "Island Scanner 6",
     "roworder": 83,
     "storage_capacity": "",
-    "title": "BUILD_ISLANDSCANNERTARGET ",
+    "title": "BUILD_ISLANDSCANNERTARGET",
     "tutorial": ""
   },
   {
@@ -2059,7 +2059,7 @@
         "Quantity": "50"
       }
     ],
-    "description": "BUILD_ISLANDSCANNERTARGET_DESC ",
+    "description": "BUILD_ISLANDSCANNERTARGET_DESC",
     "energy_capacity": "",
     "energy_consumption": "",
     "group": "progression",
@@ -2071,7 +2071,7 @@
     "prefab": "Island Scanner 7",
     "roworder": 84,
     "storage_capacity": "",
-    "title": "BUILD_ISLANDSCANNERTARGET ",
+    "title": "BUILD_ISLANDSCANNERTARGET",
     "tutorial": ""
   },
   {
@@ -2100,7 +2100,7 @@
         "Quantity": "50"
       }
     ],
-    "description": "BUILD_ISLANDSCANNERTARGET_DESC ",
+    "description": "BUILD_ISLANDSCANNERTARGET_DESC",
     "energy_capacity": "",
     "energy_consumption": "",
     "group": "progression",
@@ -2112,7 +2112,7 @@
     "prefab": "Island Scanner 8",
     "roworder": 85,
     "storage_capacity": "",
-    "title": "BUILD_ISLANDSCANNERTARGET ",
+    "title": "BUILD_ISLANDSCANNERTARGET",
     "tutorial": ""
   },
   {
@@ -2260,7 +2260,7 @@
         "Quantity": "25"
       }
     ],
-    "description": "BUILD_MONUMENT1_DESC ",
+    "description": "BUILD_MONUMENT1_DESC",
     "energy_capacity": "",
     "energy_consumption": "",
     "group": "progression",
@@ -2272,7 +2272,7 @@
     "prefab": "Monument1",
     "roworder": 89,
     "storage_capacity": "",
-    "title": "BUILD_MONUMENT1 ",
+    "title": "BUILD_MONUMENT1",
     "tutorial": ""
   },
   {
@@ -2313,7 +2313,7 @@
         "Quantity": "50"
       }
     ],
-    "description": "BUILD_MONUMENT2_DESC ",
+    "description": "BUILD_MONUMENT2_DESC",
     "energy_capacity": "",
     "energy_consumption": "",
     "group": "progression",
@@ -2325,7 +2325,7 @@
     "prefab": "Monument2",
     "roworder": 90,
     "storage_capacity": "",
-    "title": "BUILD_MONUMENT2 ",
+    "title": "BUILD_MONUMENT2",
     "tutorial": ""
   },
   {
