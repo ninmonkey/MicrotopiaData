@@ -1,0 +1,1518 @@
+[
+  {
+    "can_be_carried": true,
+    "can_do": "",
+    "caste": "SENTRY",
+    "components": [
+      {
+        "Name": "GOLD_RAW",
+        "Quantity": "10"
+      }
+    ],
+    "corpse": "CORPSE_ANT_SENTRY",
+    "death_spawn": "",
+    "description": "ANTCASTE_SENTRY_DESC",
+    "energy": "",
+    "energy_extra": "",
+    "exchange_types": [
+      "PICKUP",
+      "FORAGE"
+    ],
+    "flight_speed": "",
+    "flying": false,
+    "gyne": false,
+    "hidden": false,
+    "immunities": [],
+    "in_demo": true,
+    "mine_forever": "",
+    "mine_speed": "",
+    "old_time": "",
+    "order": 0.0,
+    "prefab": "Sentry",
+    "roworder": 0,
+    "speed": 12.0,
+    "strength": 2.0,
+    "title": "ANTCASTE_SENTRY"
+  },
+  {
+    "can_be_carried": true,
+    "can_do": "",
+    "caste": "WORKER_SMALL_T1",
+    "components": [
+      {
+        "Name": "IRON_RAW",
+        "Quantity": "1"
+      }
+    ],
+    "corpse": "CORPSE_ANT_WEAK",
+    "death_spawn": "",
+    "description": "ANTCASTE_WORKERSMALL_DESC",
+    "energy": 300.0,
+    "energy_extra": "",
+    "exchange_types": [
+      "PICKUP",
+      "FORAGE"
+    ],
+    "flight_speed": "",
+    "flying": false,
+    "gyne": false,
+    "hidden": false,
+    "immunities": [],
+    "in_demo": true,
+    "mine_forever": "",
+    "mine_speed": "",
+    "old_time": 100.0,
+    "order": 1.0,
+    "prefab": "WorkerSmallT1",
+    "roworder": 1,
+    "speed": 12.0,
+    "strength": 1.0,
+    "title": "ANTCASTE_WORKERSMALL"
+  },
+  {
+    "can_be_carried": true,
+    "can_do": "",
+    "caste": "WORKER_T1",
+    "components": [
+      {
+        "Name": "IRON_RAW",
+        "Quantity": "2"
+      }
+    ],
+    "corpse": "CORPSE_ANT_WORKER",
+    "death_spawn": "",
+    "description": "ANTCASTE_WORKER_DESC",
+    "energy": 600.0,
+    "energy_extra": "",
+    "exchange_types": [
+      "PICKUP",
+      "FORAGE",
+      "PLANT_CUT"
+    ],
+    "flight_speed": "",
+    "flying": false,
+    "gyne": false,
+    "hidden": false,
+    "immunities": [],
+    "in_demo": true,
+    "mine_forever": "",
+    "mine_speed": "",
+    "old_time": 120.0,
+    "order": 2.0,
+    "prefab": "WorkerT1",
+    "roworder": 2,
+    "speed": 12.0,
+    "strength": 3.0,
+    "title": "ANTCASTE_WORKER"
+  },
+  {
+    "can_be_carried": true,
+    "can_do": "",
+    "caste": "WORKER_T1_IRON",
+    "components": [
+      {
+        "Name": "IRON_RAW",
+        "Quantity": "2"
+      }
+    ],
+    "corpse": "",
+    "death_spawn": "",
+    "description": "ANTCASTE_WORKER_T1_IRON_DESC",
+    "energy": 660.0,
+    "energy_extra": "",
+    "exchange_types": [
+      "PICKUP",
+      "FORAGE",
+      "PLANT_CUT"
+    ],
+    "flight_speed": "",
+    "flying": false,
+    "gyne": false,
+    "hidden": false,
+    "immunities": [],
+    "in_demo": false,
+    "mine_forever": "",
+    "mine_speed": "",
+    "old_time": 120.0,
+    "order": 3.0,
+    "prefab": "WorkerIron",
+    "roworder": 3,
+    "speed": 12.0,
+    "strength": 3.0,
+    "title": "ANTCASTE_WORKER_T1_IRON"
+  },
+  {
+    "can_be_carried": true,
+    "can_do": "",
+    "caste": "WORKER_SMALL_T2",
+    "components": [
+      {
+        "Name": "IRON_RAW",
+        "Quantity": "1"
+      },
+      {
+        "Name": "RESIN",
+        "Quantity": "1"
+      }
+    ],
+    "corpse": "",
+    "death_spawn": "",
+    "description": "ANTCASTE_WORKERSMALL2_DESC",
+    "energy": 450.0,
+    "energy_extra": "",
+    "exchange_types": [
+      "PICKUP",
+      "FORAGE",
+      "PLANT_CUT"
+    ],
+    "flight_speed": "",
+    "flying": false,
+    "gyne": false,
+    "hidden": false,
+    "immunities": [],
+    "in_demo": false,
+    "mine_forever": "",
+    "mine_speed": "",
+    "old_time": 120.0,
+    "order": 4.0,
+    "prefab": "WorkerSmallT2",
+    "roworder": 4,
+    "speed": 14.0,
+    "strength": 3.0,
+    "title": "ANTCASTE_WORKERSMALL2"
+  },
+  {
+    "can_be_carried": true,
+    "can_do": "",
+    "caste": "WORKER_T2",
+    "components": [
+      {
+        "Name": "IRON_RAW",
+        "Quantity": "1"
+      },
+      {
+        "Name": "RESIN",
+        "Quantity": "2"
+      }
+    ],
+    "corpse": "",
+    "death_spawn": "",
+    "description": "ANTCASTE_WORKER2_DESC",
+    "energy": 900.0,
+    "energy_extra": "",
+    "exchange_types": [
+      "PICKUP",
+      "FORAGE",
+      "PLANT_CUT"
+    ],
+    "flight_speed": "",
+    "flying": false,
+    "gyne": false,
+    "hidden": false,
+    "immunities": [],
+    "in_demo": false,
+    "mine_forever": "",
+    "mine_speed": "",
+    "old_time": 120.0,
+    "order": 5.0,
+    "prefab": "WorkerT2",
+    "roworder": 5,
+    "speed": 14.0,
+    "strength": 6.0,
+    "title": "ANTCASTE_WORKER2"
+  },
+  {
+    "can_be_carried": true,
+    "can_do": "",
+    "caste": "WORKER_T2_ION",
+    "components": [
+      {
+        "Name": "IRON_RAW",
+        "Quantity": "1"
+      },
+      {
+        "Name": "RESIN",
+        "Quantity": "2"
+      },
+      {
+        "Name": "COPPER_RAW",
+        "Quantity": "1"
+      },
+      {
+        "Name": "ACID",
+        "Quantity": "1"
+      }
+    ],
+    "corpse": "",
+    "death_spawn": "",
+    "description": "ANTCASTE_WORKERION_DESC",
+    "energy": 1020.0,
+    "energy_extra": "",
+    "exchange_types": [
+      "PICKUP",
+      "FORAGE",
+      "PLANT_CUT"
+    ],
+    "flight_speed": "",
+    "flying": false,
+    "gyne": false,
+    "hidden": false,
+    "immunities": [],
+    "in_demo": false,
+    "mine_forever": "",
+    "mine_speed": "",
+    "old_time": 120.0,
+    "order": 6.0,
+    "prefab": "WorkerIon",
+    "roworder": 6,
+    "speed": 14.0,
+    "strength": "",
+    "title": "ANTCASTE_WORKERION"
+  },
+  {
+    "can_be_carried": true,
+    "can_do": "",
+    "caste": "WORKER_SMALL_T3",
+    "components": [
+      {
+        "Name": "IRON_RAW",
+        "Quantity": "1"
+      },
+      {
+        "Name": "RESIN",
+        "Quantity": "1"
+      },
+      {
+        "Name": "ROYAL_JELLY",
+        "Quantity": "1"
+      }
+    ],
+    "corpse": "",
+    "death_spawn": "",
+    "description": "ANTCASTE_WORKERSMALL3_DESC",
+    "energy": 900.0,
+    "energy_extra": "",
+    "exchange_types": [
+      "PICKUP",
+      "FORAGE",
+      "PLANT_CUT",
+      "MINE"
+    ],
+    "flight_speed": "",
+    "flying": false,
+    "gyne": false,
+    "hidden": false,
+    "immunities": [],
+    "in_demo": false,
+    "mine_forever": "",
+    "mine_speed": 2.0,
+    "old_time": 120.0,
+    "order": 7.0,
+    "prefab": "WorkerSmallT3",
+    "roworder": 7,
+    "speed": 16.0,
+    "strength": 5.0,
+    "title": "ANTCASTE_WORKERSMALL3"
+  },
+  {
+    "can_be_carried": true,
+    "can_do": "",
+    "caste": "WORKER_T3",
+    "components": [
+      {
+        "Name": "IRON_RAW",
+        "Quantity": "1"
+      },
+      {
+        "Name": "RESIN",
+        "Quantity": "2"
+      },
+      {
+        "Name": "ROYAL_JELLY",
+        "Quantity": "2"
+      }
+    ],
+    "corpse": "",
+    "death_spawn": "",
+    "description": "ANTCASTE_WORKER3_DESC",
+    "energy": 1800.0,
+    "energy_extra": "",
+    "exchange_types": [
+      "PICKUP",
+      "FORAGE",
+      "PLANT_CUT",
+      "MINE"
+    ],
+    "flight_speed": "",
+    "flying": false,
+    "gyne": false,
+    "hidden": false,
+    "immunities": [],
+    "in_demo": false,
+    "mine_forever": "",
+    "mine_speed": 2.0,
+    "old_time": 120.0,
+    "order": 8.0,
+    "prefab": "WorkerT3",
+    "roworder": 8,
+    "speed": 16.0,
+    "strength": 9.0,
+    "title": "ANTCASTE_WORKER3"
+  },
+  {
+    "can_be_carried": true,
+    "can_do": "",
+    "caste": "WORKER_T3_ROYAL",
+    "components": [
+      {
+        "Name": "IRON_RAW",
+        "Quantity": "1"
+      },
+      {
+        "Name": "RESIN",
+        "Quantity": "1"
+      },
+      {
+        "Name": "GOLD_RAW",
+        "Quantity": "1"
+      },
+      {
+        "Name": "ROYAL_JELLY",
+        "Quantity": "1"
+      }
+    ],
+    "corpse": "",
+    "death_spawn": "",
+    "description": "ANTCASTE_WORKERROYAL_DESC",
+    "energy": 1980.0,
+    "energy_extra": "",
+    "exchange_types": [
+      "PICKUP",
+      "FORAGE",
+      "PLANT_CUT",
+      "MINE"
+    ],
+    "flight_speed": "",
+    "flying": false,
+    "gyne": false,
+    "hidden": false,
+    "immunities": [],
+    "in_demo": false,
+    "mine_forever": "",
+    "mine_speed": 3.0,
+    "old_time": 120.0,
+    "order": 9.0,
+    "prefab": "WorkerRoyal",
+    "roworder": 9,
+    "speed": 16.0,
+    "strength": "",
+    "title": "ANTCASTE_WORKERROYAL"
+  },
+  {
+    "can_be_carried": true,
+    "can_do": "",
+    "caste": "WORKER_LED",
+    "components": [
+      {
+        "Name": "IRON_RAW",
+        "Quantity": "3"
+      },
+      {
+        "Name": "COPPER_RAW",
+        "Quantity": "1"
+      },
+      {
+        "Name": "GLASS_RAW",
+        "Quantity": "3"
+      },
+      {
+        "Name": "RESIN",
+        "Quantity": "1"
+      }
+    ],
+    "corpse": "",
+    "death_spawn": "",
+    "description": "ANTCASTE_LED_DESC",
+    "energy": 1200.0,
+    "energy_extra": "",
+    "exchange_types": [
+      "PICKUP",
+      "FORAGE",
+      "PLANT_CUT"
+    ],
+    "flight_speed": "",
+    "flying": false,
+    "gyne": false,
+    "hidden": false,
+    "immunities": [],
+    "in_demo": false,
+    "mine_forever": "",
+    "mine_speed": "",
+    "old_time": 120.0,
+    "order": 10.0,
+    "prefab": "WorkerLED",
+    "roworder": 10,
+    "speed": 16.0,
+    "strength": 1.0,
+    "title": "ANTCASTE_LED"
+  },
+  {
+    "can_be_carried": true,
+    "can_do": "",
+    "caste": "WORKER_HEAVY",
+    "components": [
+      {
+        "Name": "IRON_RAW",
+        "Quantity": "4"
+      },
+      {
+        "Name": "COPPER_RAW",
+        "Quantity": "4"
+      },
+      {
+        "Name": "RESIN",
+        "Quantity": "5"
+      },
+      {
+        "Name": "CRYSTAL_RAW",
+        "Quantity": "4"
+      },
+      {
+        "Name": "ACID",
+        "Quantity": "1"
+      }
+    ],
+    "corpse": "",
+    "death_spawn": "",
+    "description": "ANTCASTE_WORKERHEAVY_DESC",
+    "energy": 3000.0,
+    "energy_extra": "",
+    "exchange_types": [
+      "PICKUP",
+      "FORAGE",
+      "PLANT_CUT"
+    ],
+    "flight_speed": "",
+    "flying": false,
+    "gyne": false,
+    "hidden": false,
+    "immunities": [],
+    "in_demo": false,
+    "mine_forever": "",
+    "mine_speed": "",
+    "old_time": 120.0,
+    "order": 11.0,
+    "prefab": "WorkerHeavy",
+    "roworder": 11,
+    "speed": 14.0,
+    "strength": "",
+    "title": "ANTCASTE_WORKERHEAVY"
+  },
+  {
+    "can_be_carried": true,
+    "can_do": "",
+    "caste": "SENTINEL",
+    "components": [
+      {
+        "Name": "GOLD_RAW",
+        "Quantity": "30"
+      }
+    ],
+    "corpse": "",
+    "death_spawn": "",
+    "description": "ANTCASTE_SENTINEL_ANT",
+    "energy": "",
+    "energy_extra": "",
+    "exchange_types": [
+      "PICKUP",
+      "FORAGE",
+      "PLANT_CUT",
+      "MINE"
+    ],
+    "flight_speed": "",
+    "flying": false,
+    "gyne": false,
+    "hidden": false,
+    "immunities": [],
+    "in_demo": false,
+    "mine_forever": "",
+    "mine_speed": 3.0,
+    "old_time": "",
+    "order": 12.0,
+    "prefab": "Sentinel",
+    "roworder": 12,
+    "speed": 16.0,
+    "strength": "",
+    "title": "ANTCASTE_SENTINEL"
+  },
+  {
+    "can_be_carried": true,
+    "can_do": "",
+    "caste": "WORKER_BULB0",
+    "components": [
+      {
+        "Name": "IRON_RAW",
+        "Quantity": "1"
+      },
+      {
+        "Name": "GLASS_RAW",
+        "Quantity": "3"
+      }
+    ],
+    "corpse": "",
+    "death_spawn": "",
+    "description": "ANTCASTE_BULB_EMPTY_DESC",
+    "energy": 150.0,
+    "energy_extra": "",
+    "exchange_types": [
+      "PICKUP",
+      "FORAGE"
+    ],
+    "flight_speed": "",
+    "flying": false,
+    "gyne": false,
+    "hidden": false,
+    "immunities": [],
+    "in_demo": false,
+    "mine_forever": "",
+    "mine_speed": "",
+    "old_time": 150.0,
+    "order": 13.0,
+    "prefab": "WorkerBulbEmpty",
+    "roworder": 13,
+    "speed": 10.0,
+    "strength": 0.0,
+    "title": "ANTCASTE_BULB_EMPTY"
+  },
+  {
+    "can_be_carried": true,
+    "can_do": "",
+    "caste": "WORKER_BULB1",
+    "components": [
+      {
+        "Name": "IRON_RAW",
+        "Quantity": "1"
+      },
+      {
+        "Name": "GLASS_RAW",
+        "Quantity": "3"
+      }
+    ],
+    "corpse": "",
+    "death_spawn": "WORKER_BULB0",
+    "description": "ANTCASTE_BULB_1_DESC",
+    "energy": 300.0,
+    "energy_extra": "",
+    "exchange_types": [
+      "PICKUP",
+      "FORAGE",
+      "PLANT_CUT"
+    ],
+    "flight_speed": "",
+    "flying": false,
+    "gyne": false,
+    "hidden": false,
+    "immunities": [],
+    "in_demo": false,
+    "mine_forever": "",
+    "mine_speed": "",
+    "old_time": 30.0,
+    "order": 14.0,
+    "prefab": "WorkerBulb1",
+    "roworder": 14,
+    "speed": 12.0,
+    "strength": 1.0,
+    "title": "ANTCASTE_BULB_1"
+  },
+  {
+    "can_be_carried": true,
+    "can_do": "",
+    "caste": "WORKER_BULB2",
+    "components": [
+      {
+        "Name": "IRON_RAW",
+        "Quantity": "1"
+      },
+      {
+        "Name": "GLASS_RAW",
+        "Quantity": "3"
+      }
+    ],
+    "corpse": "",
+    "death_spawn": "WORKER_BULB0",
+    "description": "ANTCASTE_BULB_1_DESC",
+    "energy": 450.0,
+    "energy_extra": "",
+    "exchange_types": [
+      "PICKUP",
+      "FORAGE",
+      "PLANT_CUT"
+    ],
+    "flight_speed": "",
+    "flying": false,
+    "gyne": false,
+    "hidden": false,
+    "immunities": [],
+    "in_demo": false,
+    "mine_forever": "",
+    "mine_speed": "",
+    "old_time": 30.0,
+    "order": 15.0,
+    "prefab": "WorkerBulb2",
+    "roworder": 15,
+    "speed": 14.0,
+    "strength": 1.0,
+    "title": "ANTCASTE_BULB_2"
+  },
+  {
+    "can_be_carried": true,
+    "can_do": "",
+    "caste": "WORKER_BULB3",
+    "components": [
+      {
+        "Name": "IRON_RAW",
+        "Quantity": "1"
+      },
+      {
+        "Name": "GLASS_RAW",
+        "Quantity": "3"
+      }
+    ],
+    "corpse": "",
+    "death_spawn": "WORKER_BULB0",
+    "description": "ANTCASTE_BULB_1_DESC",
+    "energy": 600.0,
+    "energy_extra": "",
+    "exchange_types": [
+      "PICKUP",
+      "FORAGE",
+      "PLANT_CUT"
+    ],
+    "flight_speed": "",
+    "flying": false,
+    "gyne": false,
+    "hidden": false,
+    "immunities": [],
+    "in_demo": false,
+    "mine_forever": "",
+    "mine_speed": "",
+    "old_time": 30.0,
+    "order": 16.0,
+    "prefab": "WorkerBulb3",
+    "roworder": 16,
+    "speed": 16.0,
+    "strength": 1.0,
+    "title": "ANTCASTE_BULB_3"
+  },
+  {
+    "can_be_carried": true,
+    "can_do": "",
+    "caste": "WORKER_BULB4",
+    "components": [
+      {
+        "Name": "IRON_RAW",
+        "Quantity": "1"
+      },
+      {
+        "Name": "GLASS_RAW",
+        "Quantity": "3"
+      }
+    ],
+    "corpse": "",
+    "death_spawn": "WORKER_BULB0",
+    "description": "ANTCASTE_BULB_1_DESC",
+    "energy": 750.0,
+    "energy_extra": "",
+    "exchange_types": [
+      "PICKUP",
+      "FORAGE",
+      "PLANT_CUT"
+    ],
+    "flight_speed": "",
+    "flying": false,
+    "gyne": false,
+    "hidden": false,
+    "immunities": [],
+    "in_demo": false,
+    "mine_forever": "",
+    "mine_speed": "",
+    "old_time": 30.0,
+    "order": 17.0,
+    "prefab": "WorkerBulb4",
+    "roworder": 17,
+    "speed": 18.0,
+    "strength": 1.0,
+    "title": "ANTCASTE_BULB_4"
+  },
+  {
+    "can_be_carried": true,
+    "can_do": "",
+    "caste": "WORKER_BULB5",
+    "components": [
+      {
+        "Name": "IRON_RAW",
+        "Quantity": "1"
+      },
+      {
+        "Name": "GLASS_RAW",
+        "Quantity": "3"
+      }
+    ],
+    "corpse": "",
+    "death_spawn": "WORKER_BULB0",
+    "description": "ANTCASTE_BULB_1_DESC",
+    "energy": 900.0,
+    "energy_extra": "",
+    "exchange_types": [
+      "PICKUP",
+      "FORAGE",
+      "PLANT_CUT"
+    ],
+    "flight_speed": "",
+    "flying": false,
+    "gyne": false,
+    "hidden": false,
+    "immunities": [],
+    "in_demo": false,
+    "mine_forever": "",
+    "mine_speed": "",
+    "old_time": 30.0,
+    "order": 18.0,
+    "prefab": "WorkerBulb5",
+    "roworder": 18,
+    "speed": 20.0,
+    "strength": 1.0,
+    "title": "ANTCASTE_BULB_5"
+  },
+  {
+    "can_be_carried": true,
+    "can_do": "",
+    "caste": "WORKER_BULB6",
+    "components": [
+      {
+        "Name": "IRON_RAW",
+        "Quantity": "1"
+      },
+      {
+        "Name": "GLASS_RAW",
+        "Quantity": "3"
+      }
+    ],
+    "corpse": "",
+    "death_spawn": "WORKER_BULB0",
+    "description": "ANTCASTE_BULB_1_DESC",
+    "energy": 1050.0,
+    "energy_extra": "",
+    "exchange_types": [
+      "PICKUP",
+      "FORAGE",
+      "PLANT_CUT"
+    ],
+    "flight_speed": "",
+    "flying": false,
+    "gyne": false,
+    "hidden": false,
+    "immunities": [],
+    "in_demo": false,
+    "mine_forever": "",
+    "mine_speed": "",
+    "old_time": 30.0,
+    "order": 19.0,
+    "prefab": "WorkerBulb6",
+    "roworder": 19,
+    "speed": 22.0,
+    "strength": 1.0,
+    "title": "ANTCASTE_BULB_6"
+  },
+  {
+    "can_be_carried": true,
+    "can_do": "",
+    "caste": "WORKER_BIG",
+    "components": [],
+    "corpse": "",
+    "death_spawn": "",
+    "description": "ANTCASTE_WORKERBIG_DESC",
+    "energy": 1800.0,
+    "energy_extra": "",
+    "exchange_types": [
+      "PICKUP",
+      "FORAGE",
+      "PLANT_CUT",
+      "MINE"
+    ],
+    "flight_speed": "",
+    "flying": false,
+    "gyne": false,
+    "hidden": false,
+    "immunities": [],
+    "in_demo": false,
+    "mine_forever": "",
+    "mine_speed": "",
+    "old_time": 120.0,
+    "order": "",
+    "prefab": "WorkerBig",
+    "roworder": 20,
+    "speed": 12.0,
+    "strength": 10.0,
+    "title": "ANTCASTE_WORKERBIG"
+  },
+  {
+    "can_be_carried": true,
+    "can_do": "INVENTING",
+    "caste": "INVENTOR_T1",
+    "components": [
+      {
+        "Name": "IRON_RAW",
+        "Quantity": "4"
+      },
+      {
+        "Name": "ENERGY_POD3",
+        "Quantity": "1"
+      }
+    ],
+    "corpse": "CORPSE_ANT_DRONE",
+    "death_spawn": "",
+    "description": "ANTCASTE_INVENTOR_DESC",
+    "energy": 480.0,
+    "energy_extra": "",
+    "exchange_types": [],
+    "flight_speed": "",
+    "flying": false,
+    "gyne": false,
+    "hidden": false,
+    "immunities": [],
+    "in_demo": true,
+    "mine_forever": "",
+    "mine_speed": "",
+    "old_time": 90.0,
+    "order": 20.0,
+    "prefab": "InventorT1",
+    "roworder": 21,
+    "speed": 8.0,
+    "strength": 0.0,
+    "title": "ANTCASTE_INVENTOR"
+  },
+  {
+    "can_be_carried": true,
+    "can_do": "INVENTING",
+    "caste": "INVENTOR_T2",
+    "components": [
+      {
+        "Name": "IRON_RAW",
+        "Quantity": "4"
+      },
+      {
+        "Name": "ENERGY_POD4",
+        "Quantity": "1"
+      }
+    ],
+    "corpse": "",
+    "death_spawn": "",
+    "description": "ANTCASTE_INVENTOR2_DESC",
+    "energy": 480.0,
+    "energy_extra": "",
+    "exchange_types": [],
+    "flight_speed": "",
+    "flying": false,
+    "gyne": false,
+    "hidden": false,
+    "immunities": [],
+    "in_demo": false,
+    "mine_forever": "",
+    "mine_speed": "",
+    "old_time": 90.0,
+    "order": 21.0,
+    "prefab": "InventorT2",
+    "roworder": 22,
+    "speed": 8.0,
+    "strength": 0.0,
+    "title": "ANTCASTE_INVENTOR2"
+  },
+  {
+    "can_be_carried": true,
+    "can_do": "INVENTING",
+    "caste": "INVENTOR_T3",
+    "components": [
+      {
+        "Name": "IRON_RAW",
+        "Quantity": "4"
+      },
+      {
+        "Name": "ENERGY_POD5",
+        "Quantity": "1"
+      }
+    ],
+    "corpse": "",
+    "death_spawn": "",
+    "description": "ANTCASTE_INVENTOR3_DESC",
+    "energy": 480.0,
+    "energy_extra": "",
+    "exchange_types": [],
+    "flight_speed": "",
+    "flying": false,
+    "gyne": false,
+    "hidden": false,
+    "immunities": [],
+    "in_demo": false,
+    "mine_forever": "",
+    "mine_speed": "",
+    "old_time": 90.0,
+    "order": 22.0,
+    "prefab": "InventorT3",
+    "roworder": 23,
+    "speed": 8.0,
+    "strength": 0.0,
+    "title": "ANTCASTE_INVENTOR3"
+  },
+  {
+    "can_be_carried": true,
+    "can_do": "FLYING",
+    "caste": "DRONE",
+    "components": [
+      {
+        "Name": "IRON_RAW",
+        "Quantity": "1"
+      },
+      {
+        "Name": "FABRIC",
+        "Quantity": "1"
+      }
+    ],
+    "corpse": "CORPSE_ANT_DRONE",
+    "death_spawn": "",
+    "description": "ANTCASTE_DRONE_DESC",
+    "energy": 600.0,
+    "energy_extra": "",
+    "exchange_types": [
+      "PICKUP",
+      "FORAGE"
+    ],
+    "flight_speed": 1.75,
+    "flying": true,
+    "gyne": false,
+    "hidden": false,
+    "immunities": [],
+    "in_demo": true,
+    "mine_forever": "",
+    "mine_speed": "",
+    "old_time": 120.0,
+    "order": 23.0,
+    "prefab": "Drone",
+    "roworder": 24,
+    "speed": 10.0,
+    "strength": 2.0,
+    "title": "ANTCASTE_DRONE"
+  },
+  {
+    "can_be_carried": true,
+    "can_do": "FLYING",
+    "caste": "DRONE_T2",
+    "components": [
+      {
+        "Name": "IRON_RAW",
+        "Quantity": "2"
+      },
+      {
+        "Name": "RESIN",
+        "Quantity": "2"
+      },
+      {
+        "Name": "COPPER_RAW",
+        "Quantity": "1"
+      }
+    ],
+    "corpse": "",
+    "death_spawn": "",
+    "description": "ANTCASTE_HELIDRONE_DESC",
+    "energy": 900.0,
+    "energy_extra": "",
+    "exchange_types": [
+      "PICKUP",
+      "FORAGE"
+    ],
+    "flight_speed": 3.0,
+    "flying": true,
+    "gyne": false,
+    "hidden": false,
+    "immunities": [],
+    "in_demo": false,
+    "mine_forever": "",
+    "mine_speed": "",
+    "old_time": 120.0,
+    "order": 24.0,
+    "prefab": "DroneT2",
+    "roworder": 25,
+    "speed": 8.0,
+    "strength": 2.0,
+    "title": "ANTCASTE_HELIDRONE"
+  },
+  {
+    "can_be_carried": true,
+    "can_do": "FLYING",
+    "caste": "DRONE_T3",
+    "components": [
+      {
+        "Name": "IRON_RAW",
+        "Quantity": "1"
+      },
+      {
+        "Name": "RESIN",
+        "Quantity": "2"
+      },
+      {
+        "Name": "ROYAL_JELLY",
+        "Quantity": "2"
+      },
+      {
+        "Name": "BIOFUEL",
+        "Quantity": "1"
+      }
+    ],
+    "corpse": "",
+    "death_spawn": "",
+    "description": "ANTCASTE_DRONEJET_DESC",
+    "energy": 1800.0,
+    "energy_extra": "",
+    "exchange_types": [
+      "PICKUP",
+      "FORAGE",
+      "PLANT_CUT"
+    ],
+    "flight_speed": 10.0,
+    "flying": true,
+    "gyne": false,
+    "hidden": false,
+    "immunities": [],
+    "in_demo": false,
+    "mine_forever": "",
+    "mine_speed": "",
+    "old_time": 120.0,
+    "order": 25.0,
+    "prefab": "DroneT3",
+    "roworder": 26,
+    "speed": 8.0,
+    "strength": "",
+    "title": "ANTCASTE_DRONEJET"
+  },
+  {
+    "can_be_carried": true,
+    "can_do": "",
+    "caste": "DIGGER_SMALL",
+    "components": [
+      {
+        "Name": "IRON_RAW",
+        "Quantity": "2"
+      }
+    ],
+    "corpse": "CORPSE_ANT_WEAK",
+    "death_spawn": "",
+    "description": "ANTCASTE_DIGGERSMALL_DESC",
+    "energy": 300.0,
+    "energy_extra": "",
+    "exchange_types": [
+      "PICKUP",
+      "MINE"
+    ],
+    "flight_speed": "",
+    "flying": false,
+    "gyne": false,
+    "hidden": false,
+    "immunities": [],
+    "in_demo": false,
+    "mine_forever": "",
+    "mine_speed": 1.0,
+    "old_time": 50.0,
+    "order": 26.0,
+    "prefab": "SmallDigger",
+    "roworder": 27,
+    "speed": 12.0,
+    "strength": 0.0,
+    "title": "ANTCASTE_DIGGERSMALL"
+  },
+  {
+    "can_be_carried": true,
+    "can_do": "",
+    "caste": "DIGGER",
+    "components": [
+      {
+        "Name": "IRON_RAW",
+        "Quantity": "3"
+      },
+      {
+        "Name": "COPPER_RAW",
+        "Quantity": "1"
+      }
+    ],
+    "corpse": "CORPSE_ANT_WORKER",
+    "death_spawn": "",
+    "description": "ANTCASTE_DIGGER_DESC",
+    "energy": 600.0,
+    "energy_extra": "",
+    "exchange_types": [
+      "PICKUP",
+      "MINE"
+    ],
+    "flight_speed": "",
+    "flying": false,
+    "gyne": false,
+    "hidden": false,
+    "immunities": [],
+    "in_demo": false,
+    "mine_forever": "",
+    "mine_speed": 2.0,
+    "old_time": 120.0,
+    "order": 27.0,
+    "prefab": "Digger",
+    "roworder": 28,
+    "speed": 12.0,
+    "strength": 0.0,
+    "title": "ANTCASTE_DIGGER"
+  },
+  {
+    "can_be_carried": true,
+    "can_do": "",
+    "caste": "MESSENGER",
+    "components": [],
+    "corpse": "",
+    "death_spawn": "",
+    "description": "ANTCASTE_MESSENGER_DESC",
+    "energy": 600.0,
+    "energy_extra": "",
+    "exchange_types": [
+      "PICKUP",
+      "FORAGE",
+      "PLANT_CUT"
+    ],
+    "flight_speed": "",
+    "flying": false,
+    "gyne": false,
+    "hidden": true,
+    "immunities": [],
+    "in_demo": false,
+    "mine_forever": "",
+    "mine_speed": "",
+    "old_time": 120.0,
+    "order": "",
+    "prefab": "Messenger",
+    "roworder": 29,
+    "speed": 16.0,
+    "strength": 1.0,
+    "title": "ANTCASTE_MESSENGER"
+  },
+  {
+    "can_be_carried": true,
+    "can_do": "",
+    "caste": "SWARM",
+    "components": [],
+    "corpse": "CORPSE_ANT_WORKER",
+    "death_spawn": "",
+    "description": "ANTCASTE_SWARM_DESC",
+    "energy": 120.0,
+    "energy_extra": "",
+    "exchange_types": [
+      "PICKUP",
+      "FORAGE",
+      "PLANT_CUT"
+    ],
+    "flight_speed": "",
+    "flying": false,
+    "gyne": false,
+    "hidden": false,
+    "immunities": [],
+    "in_demo": false,
+    "mine_forever": "",
+    "mine_speed": "",
+    "old_time": 30.0,
+    "order": "",
+    "prefab": "Swarm",
+    "roworder": 30,
+    "speed": 20.0,
+    "strength": 1.0,
+    "title": "ANTCASTE_SWARM"
+  },
+  {
+    "can_be_carried": true,
+    "can_do": "",
+    "caste": "HAZMAT",
+    "components": [
+      {
+        "Name": "IRON_RAW",
+        "Quantity": "2"
+      },
+      {
+        "Name": "RESIN",
+        "Quantity": "6"
+      },
+      {
+        "Name": "COPPER_RAW",
+        "Quantity": "1"
+      }
+    ],
+    "corpse": "",
+    "death_spawn": "",
+    "description": "ANTCASTE_HAZMAT_DESC",
+    "energy": 900.0,
+    "energy_extra": "",
+    "exchange_types": [
+      "PICKUP",
+      "FORAGE",
+      "PLANT_CUT"
+    ],
+    "flight_speed": "",
+    "flying": false,
+    "gyne": false,
+    "hidden": false,
+    "immunities": [
+      "RADIATION",
+      "RADIATED_LIGHT",
+      "RADIATED_MEDIUM",
+      "RADIATED_HEAVY"
+    ],
+    "in_demo": false,
+    "mine_forever": "",
+    "mine_speed": "",
+    "old_time": 120.0,
+    "order": 28.0,
+    "prefab": "Hazmat",
+    "roworder": 31,
+    "speed": 8.0,
+    "strength": 3.0,
+    "title": "ANTCASTE_HAZMAT"
+  },
+  {
+    "can_be_carried": false,
+    "can_do": "",
+    "caste": "CARGO",
+    "components": [],
+    "corpse": "CORPSE_ANT_WORKER",
+    "death_spawn": "",
+    "description": "ANTCASTE_CARGO_DESC",
+    "energy": 1000.0,
+    "energy_extra": 100.0,
+    "exchange_types": [],
+    "flight_speed": "",
+    "flying": false,
+    "gyne": false,
+    "hidden": false,
+    "immunities": [],
+    "in_demo": false,
+    "mine_forever": "",
+    "mine_speed": "",
+    "old_time": 120.0,
+    "order": "",
+    "prefab": "Cargo",
+    "roworder": 32,
+    "speed": 10.0,
+    "strength": 10.0,
+    "title": "ANTCASTE_CARGO"
+  },
+  {
+    "can_be_carried": false,
+    "can_do": "",
+    "caste": "CARGO_TRAIN",
+    "components": [],
+    "corpse": "CORPSE_ANT_WORKER",
+    "death_spawn": "",
+    "description": "ANTCASTE_CARGO_DESC",
+    "energy": 1000.0,
+    "energy_extra": 100.0,
+    "exchange_types": [],
+    "flight_speed": "",
+    "flying": false,
+    "gyne": false,
+    "hidden": true,
+    "immunities": [],
+    "in_demo": false,
+    "mine_forever": "",
+    "mine_speed": "",
+    "old_time": 120.0,
+    "order": "",
+    "prefab": "Cargo",
+    "roworder": 33,
+    "speed": 10.0,
+    "strength": 10.0,
+    "title": "ANTCASTE_CARGO"
+  },
+  {
+    "can_be_carried": true,
+    "can_do": "FLYING",
+    "caste": "PRINCESS",
+    "components": [
+      {
+        "Name": "IRON_RAW",
+        "Quantity": "1"
+      }
+    ],
+    "corpse": "",
+    "death_spawn": "",
+    "description": "ANTCASTE_PRINCESS_DESC",
+    "energy": 1200.0,
+    "energy_extra": "",
+    "exchange_types": [],
+    "flight_speed": 1.0,
+    "flying": true,
+    "gyne": false,
+    "hidden": false,
+    "immunities": [],
+    "in_demo": false,
+    "mine_forever": "",
+    "mine_speed": "",
+    "old_time": 120.0,
+    "order": 29.0,
+    "prefab": "Princess",
+    "roworder": 34,
+    "speed": 8.0,
+    "strength": 0.0,
+    "title": "ANTCASTE_PRINCESS"
+  },
+  {
+    "can_be_carried": false,
+    "can_do": "FLYING",
+    "caste": "GYNE",
+    "components": [
+      {
+        "Name": "GOLD_RAW",
+        "Quantity": "5"
+      }
+    ],
+    "corpse": "",
+    "death_spawn": "",
+    "description": "ANTCASTE_GYNE_DESC",
+    "energy": "",
+    "energy_extra": "",
+    "exchange_types": [],
+    "flight_speed": 1.0,
+    "flying": true,
+    "gyne": true,
+    "hidden": false,
+    "immunities": [],
+    "in_demo": false,
+    "mine_forever": "",
+    "mine_speed": "",
+    "old_time": "",
+    "order": 30.0,
+    "prefab": "Gyne",
+    "roworder": 35,
+    "speed": 8.0,
+    "strength": 0.0,
+    "title": "ANTCASTE_GYNE"
+  },
+  {
+    "can_be_carried": false,
+    "can_do": "FLYING",
+    "caste": "GYNE_T2",
+    "components": [
+      {
+        "Name": "GOLD_RAW",
+        "Quantity": "25"
+      }
+    ],
+    "corpse": "",
+    "death_spawn": "",
+    "description": "ANTCASTE_GYNE2_DESC",
+    "energy": "",
+    "energy_extra": "",
+    "exchange_types": [],
+    "flight_speed": 1.0,
+    "flying": true,
+    "gyne": true,
+    "hidden": false,
+    "immunities": [],
+    "in_demo": false,
+    "mine_forever": "",
+    "mine_speed": "",
+    "old_time": "",
+    "order": 31.0,
+    "prefab": "GyneT2",
+    "roworder": 36,
+    "speed": 8.0,
+    "strength": 0.0,
+    "title": "ANTCASTE_GYNE2"
+  },
+  {
+    "can_be_carried": false,
+    "can_do": "FLYING",
+    "caste": "GYNE_T3",
+    "components": [
+      {
+        "Name": "GOLD_RAW",
+        "Quantity": "50"
+      }
+    ],
+    "corpse": "",
+    "death_spawn": "",
+    "description": "ANTCASTE_GYNE3_DESC",
+    "energy": "",
+    "energy_extra": "",
+    "exchange_types": [],
+    "flight_speed": 1.0,
+    "flying": true,
+    "gyne": true,
+    "hidden": false,
+    "immunities": [],
+    "in_demo": false,
+    "mine_forever": "",
+    "mine_speed": "",
+    "old_time": "",
+    "order": 32.0,
+    "prefab": "GyneT3",
+    "roworder": 37,
+    "speed": 8.0,
+    "strength": 0.0,
+    "title": "ANTCASTE_GYNE3"
+  },
+  {
+    "can_be_carried": false,
+    "can_do": "FLYING",
+    "caste": "ALATE",
+    "components": [],
+    "corpse": "",
+    "death_spawn": "",
+    "description": "ANTCASTE_ALATE_DESC",
+    "energy": "",
+    "energy_extra": "",
+    "exchange_types": [],
+    "flight_speed": 1.75,
+    "flying": true,
+    "gyne": false,
+    "hidden": false,
+    "immunities": [],
+    "in_demo": true,
+    "mine_forever": "",
+    "mine_speed": "",
+    "old_time": "",
+    "order": "",
+    "prefab": "Alates",
+    "roworder": 38,
+    "speed": 8.0,
+    "strength": 12.0,
+    "title": "ANTCASTE_ALATE"
+  },
+  {
+    "can_be_carried": false,
+    "can_do": "",
+    "caste": "",
+    "components": [],
+    "corpse": "",
+    "death_spawn": "",
+    "description": "",
+    "energy": "",
+    "energy_extra": "",
+    "exchange_types": [],
+    "flight_speed": "",
+    "flying": false,
+    "gyne": false,
+    "hidden": false,
+    "immunities": [],
+    "in_demo": false,
+    "mine_forever": "",
+    "mine_speed": "",
+    "old_time": "",
+    "order": "",
+    "prefab": "",
+    "roworder": 39,
+    "speed": "",
+    "strength": "",
+    "title": ""
+  }
+]

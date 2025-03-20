@@ -50,6 +50,8 @@ $Paths.csv_Crusher_Output  = Join-Path $Paths.ExportRoot_CurrentVersion 'csv/cru
 
 $Paths.json_Prefabs_Buildings      = Join-Path $Paths.ExportRoot_CurrentVersion 'json/prefabs-buildings.json'
 $Paths.json_Prefabs_FactoryRecipes = Join-Path $Paths.ExportRoot_CurrentVersion 'json/prefabs-factoryrecipes.json'
+$Paths.json_Prefabs_AntCastes = Join-Path $Paths.ExportRoot_CurrentVersion 'json/prefabs-antcastes.json'
+
 
 $Paths.json_Biome_Objects              = Join-Path $Paths.ExportRoot_CurrentVersion 'json/biome-objects.json'
 $Paths.json_Biome_Objects_Expanded     = Join-Path $Paths.ExportRoot_CurrentVersion 'json/biome-objects-expanded.json'

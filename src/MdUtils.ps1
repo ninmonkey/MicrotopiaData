@@ -1231,6 +1231,7 @@ function md.Export.Prefabs.Prefabs {
     Close-ExcelPackage -ExcelPackage $pkg -NoSave
 
     md.Export.Prefabs.FactoryRecipes -Paths $Paths -Verbose
+    md.Export.Prefabs.AntCastes -Paths $Paths -Verbose
 
     if( $Build.AutoOpen.Prefabs ) {
         Get-Item $Paths.Xlsx_Prefabs | Invoke-Item
@@ -1383,6 +1384,133 @@ function md.Export.Prefabs.FactoryRecipes {
     if( $Build.AutoOpen.Prefabs ) {
         Get-Item $Paths.Xlsx_Prefabs | Invoke-Item
     }
+
+    Close-ExcelPackage -ExcelPackage $pkg -NoSave
+}
+function md.Export.Prefabs.AntCastes {
+    <#
+    .SYNOPSIS
+        Parses and exports 'Prefabs.xlsx/AntCastes'
+    #>
+    [CmdletBinding()]
+    param(
+        # Paths hashtable
+        [Parameter(Mandatory)] $Paths,
+
+        # always write a fresh export
+        [ValidateScript({throw 'nyi'})]
+        [switch] $Force
+    )
+    $PSCmdlet.MyInvocation.MyCommand.Name
+        | Join-String -f 'Enter: {0}' | Write-verbose
+
+    $Regex = @{
+        # isTierNumber     = '^\s*//\s+tier\s+\d+'
+        # isGroupName      = '^\s*//' # '^\s*//\s*w\+' #  '^\s*//'
+        # toIgnoreHeader   = '//\s*unique\s*code'
+        # stripSlashPrefix = '\s*//\s*'
+        # toIgnoreBuildHeaderMessage   = '//.*not in buildmenu'
+    }
+
+    # Section: Export item: biome/Plants
+    $pkg = Open-ExcelPackage -Path $Paths.Raw_Prefabs
+    $book = $pkg.Workbook
+    md.Workbook.ListItems $Book
+
+    # remove-item $Paths.Xlsx_Prefabs -ea 'Ignore'
+    $importExcel_Splat = @{
+        ExcelPackage  = $pkg
+        WorksheetName = 'Ant Castes'
+
+    }
+    $rows =  Import-Excel @importExcel_Splat # -ea 'break'
+
+    # column descriptions are inline
+    # $description = $rows | ? Code -Match '^\s*//\s*$' | Select -First 1
+    # $description | ConvertTo-Json | Set-Content -path $Paths.json_Biome_Plants_ColumnDesc
+
+    # $paths.json_Biome_Plants_ColumnDesc | md.Log.WroteFile
+
+    # skip empty and non-data rows
+    # $curGroupName = 'missing'
+    $curOrder = -1
+    $rows = @(
+        $rows
+            | % { # note: empty [Order] column means it's not in the build menu
+                $record = $_
+                $curOrder++
+                # capture grouping records, else add them to the data
+                # if ( $record.Code -match $Regex.isGroupName ) {
+                #     $curGroupName = $record.Code -replace $regex.stripSlashPrefix, ''
+                #     return
+                # }
+                # $record.PSObject.Properties.Add( [psnoteproperty]::new(
+                #     'Group', $curGroupName
+                # ), $true )
+                $record.PSObject.Properties.Add( [psnoteproperty]::new(
+                    'RowOrder', $curOrder
+                ), $true )
+
+                $record
+            }
+            # | ? { $_.ORDER -notmatch $Regex.toIgnoreBuildHeaderMessage  }
+            # | ? { $_.Code -notmatch $Regex.toIgnoreHeader }
+            # | ? { -not [string]::IsNullOrWhiteSpace( $_.ENUM ) }
+    )
+
+    $exportExcel_Splat = @{
+        InputObject   = @( $rows )
+        Path          = $Paths.Xlsx_Prefabs
+        Show          = $false # moved to end
+        WorksheetName = 'AntCastes'
+        TableName     = 'AntCastes_Data'
+        TableStyle    = 'Light5'
+        AutoSize      = $True
+    }
+
+    Export-Excel @exportExcel_Splat
+
+     # json specific transforms
+    $sort_splat = @{
+        Property = 'tier', 'group', 'code'
+    }
+
+    $forJson_AntCastes = @(
+        $Rows | %{
+            $rec = $_
+            $rec = md.Convert.BlankPropsToEmpty $rec
+            $rec = md.Convert.KeyNames $rec # -StartWith 'tier', 'group', 'order'
+
+            # $rec.'auto_recipe' = md.Parse.Checkbox $rec.'auto_recipe'
+            # $rec.'no_demolish' = md.Parse.Checkbox $rec.'no_demolish'
+            # $rec.'cost'        = md.Parse.IngredientsFromCsv $rec.'cost'
+
+            # $rec.'in_demo'         = md.Parse.Checkbox $rec.'in_demo'
+            # $rec.'planned'         = md.Parse.Checkbox $rec.'planned'
+            # $rec.'always_unlocked' = md.Parse.Checkbox $rec.'always_unlocked'
+            # $rec.'costs_pickup'    = md.Parse.IngredientsFromCsv $rec.'costs_pickup'
+            # $rec.'product_pickup'  = md.Parse.IngredientsFromCsv $rec.'product_pickup'
+            # $rec.'product_ant'     = md.Parse.IngredientsFromCsv $rec.'product_ant'
+            # $rec.'cost_ant'        = md.Parse.IngredientsFromCsv $rec.'cost_ant'
+
+            $rec.'components'     = md.Parse.IngredientsFromCsv $rec.'components'
+            $rec.'flying'         = md.Parse.Checkbox $rec.'flying'
+            $rec.'gyne'           = md.Parse.Checkbox $rec.'gyne'
+            $rec.'can_be_carried' = md.Parse.Checkbox $rec.'can_be_carried'
+            $rec.'in_demo'        = md.Parse.Checkbox $rec.'in_demo'
+            $rec.'hidden'         = md.Parse.Checkbox $rec.'hidden'
+            $rec.'exchange_types' = md.Parse.ItemsFromList $rec.'exchange_types'
+            $rec.'immunities'     = md.Parse.ItemsFromList $rec.'immunities'
+            $rec.'description'    = $rec.'description'.trim()
+            $rec.'title'          = $rec.'title'.trim()
+            $rec
+        }
+    )
+
+    $forJson_AntCastes | ConvertTo-Json -Depth 9
+        | Set-Content $Paths.json_Prefabs_AntCastes
+
+    $Paths.json_Prefabs_AntCastes | md.Log.WroteFile
 
     Close-ExcelPackage -ExcelPackage $pkg -NoSave
 }
