@@ -16,7 +16,7 @@ Check out the [Discord Server](https://discord.gg/F8GKVrxcWN)
 
 ## About
 
-Files generated on: 2025-03-19 11:05:40 PM
+Files generated on: 2025-03-19 11:30:41 PM
 For version: v1.0.8
 
 ## Files by Type
@@ -36,6 +36,7 @@ For version: v1.0.8
 - [prefabs-antcastes.json](./export/v1.0.8/json/prefabs-antcastes.json)
 - [prefabs-buildings.json](./export/v1.0.8/json/prefabs-buildings.json)
 - [prefabs-factoryrecipes.json](./export/v1.0.8/json/prefabs-factoryrecipes.json)
+- [prefabs-pickups.json](./export/v1.0.8/json/prefabs-pickups.json)
 - [techtree-techtree.json](./export/v1.0.8/json/techtree-techtree.json)
 - [workbook-schema.json](./export/v1.0.8/json/workbook-schema.json)
 

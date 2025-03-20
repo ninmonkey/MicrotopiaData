@@ -50,7 +50,8 @@ $Paths.csv_Crusher_Output  = Join-Path $Paths.ExportRoot_CurrentVersion 'csv/cru
 
 $Paths.json_Prefabs_Buildings      = Join-Path $Paths.ExportRoot_CurrentVersion 'json/prefabs-buildings.json'
 $Paths.json_Prefabs_FactoryRecipes = Join-Path $Paths.ExportRoot_CurrentVersion 'json/prefabs-factoryrecipes.json'
-$Paths.json_Prefabs_AntCastes = Join-Path $Paths.ExportRoot_CurrentVersion 'json/prefabs-antcastes.json'
+$Paths.json_Prefabs_AntCastes      = Join-Path $Paths.ExportRoot_CurrentVersion 'json/prefabs-antcastes.json'
+$Paths.json_Prefabs_Pickups      = Join-Path $Paths.ExportRoot_CurrentVersion 'json/prefabs-pickups.json'
 
 
 $Paths.json_Biome_Objects              = Join-Path $Paths.ExportRoot_CurrentVersion 'json/biome-objects.json'
@@ -79,7 +80,7 @@ $Build ??= [ordered]@{ # auto 'show' certain files. nullish op lets you override
         Prefabs_Crusher          = $false
         TechTree_ResearchRecipes = $false
         TechTree_TechTree        = $false
-        Prefabs                  = $True
+        Prefabs                  = $true
         WorkbookSchema           = $false
     }
     Export = [ordered]@{
@@ -133,9 +134,7 @@ if($Build.Export.Prefabs) {
     Remove-Item $Paths.Xlsx_Prefabs -ea 'Ignore'
     md.Export.Prefabs.Prefabs -Paths $Paths -Verbose
 }
-if($Build.Export.Prefabs_Crusher) {
-    md.Export.Prefabs.Crusher -Paths $Paths -Verbose
-}
+
 # final exports. Ran last to iterate all new exports
 if($Build.Export.WorkbookSchema) {
     md.Export.WorkbookSchema -verbose # -Force #  -Paths $Paths -Verbose # -Force
