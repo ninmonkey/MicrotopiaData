@@ -5,7 +5,7 @@
     "exchange_types": "PLANT_CUT",
     "fruit": "ENERGY_POD2",
     "hardness": "",
-    "infinite": "",
+    "infinite": false,
     "order": 17,
     "pickups": {
       "Name": "FIBER_SPIKETREE",
@@ -23,7 +23,7 @@
     "exchange_types": "FORAGE",
     "fruit": "ENERGY_POD2",
     "hardness": "",
-    "infinite": "",
+    "infinite": false,
     "order": 17,
     "pickups": {
       "Name": "FIBER_SPIKETREE",
@@ -41,7 +41,7 @@
     "exchange_types": "PLANT_CUT",
     "fruit": "ENERGY_POD2",
     "hardness": "",
-    "infinite": "",
+    "infinite": false,
     "order": 6,
     "pickups": {
       "Name": "FIBER_SPIKETREE",
@@ -59,7 +59,7 @@
     "exchange_types": "FORAGE",
     "fruit": "ENERGY_POD2",
     "hardness": "",
-    "infinite": "",
+    "infinite": false,
     "order": 6,
     "pickups": {
       "Name": "FIBER_SPIKETREE",
@@ -77,7 +77,7 @@
     "exchange_types": "PLANT_CUT",
     "fruit": "",
     "hardness": "",
-    "infinite": "",
+    "infinite": false,
     "order": 16,
     "pickups": {
       "Name": "RESIN",
@@ -95,7 +95,7 @@
     "exchange_types": "PLANT_CUT",
     "fruit": "",
     "hardness": "",
-    "infinite": "",
+    "infinite": false,
     "order": 16,
     "pickups": {
       "Name": "FIBER_SPIKETREE",
@@ -113,7 +113,7 @@
     "exchange_types": "MINE",
     "fruit": "",
     "hardness": 25.0,
-    "infinite": "",
+    "infinite": false,
     "order": 39,
     "pickups": {
       "Name": "IRON_RAW",
@@ -131,7 +131,7 @@
     "exchange_types": "MINE",
     "fruit": "ENERGY_POD4",
     "hardness": 5.0,
-    "infinite": "",
+    "infinite": false,
     "order": 22,
     "pickups": {
       "Name": "IRON_RAW",
@@ -149,7 +149,7 @@
     "exchange_types": "FORAGE",
     "fruit": "ENERGY_POD4",
     "hardness": 5.0,
-    "infinite": "",
+    "infinite": false,
     "order": 22,
     "pickups": {
       "Name": "IRON_RAW",
@@ -167,7 +167,7 @@
     "exchange_types": "MINE",
     "fruit": "ENERGY_POD4",
     "hardness": 5.0,
-    "infinite": "",
+    "infinite": false,
     "order": 21,
     "pickups": {
       "Name": "IRON_RAW",
@@ -185,7 +185,7 @@
     "exchange_types": "MINE",
     "fruit": "",
     "hardness": 10.0,
-    "infinite": "",
+    "infinite": false,
     "order": 40,
     "pickups": {
       "Name": "COPPER_RAW",
@@ -203,7 +203,7 @@
     "exchange_types": "PICKUP",
     "fruit": "",
     "hardness": 1.0,
-    "infinite": "",
+    "infinite": false,
     "order": 33,
     "pickups": {
       "Name": "COPPER_RAW",
@@ -221,7 +221,7 @@
     "exchange_types": "PLANT_CUT",
     "fruit": "",
     "hardness": "",
-    "infinite": "",
+    "infinite": false,
     "order": 4,
     "pickups": {
       "Name": "FIBER_SPIKETREE",
@@ -239,7 +239,7 @@
     "exchange_types": "MINE",
     "fruit": "",
     "hardness": 25.0,
-    "infinite": "",
+    "infinite": false,
     "order": 44,
     "pickups": {
       "Name": "GLASS_RAW",
@@ -257,7 +257,7 @@
     "exchange_types": "MINE",
     "fruit": "",
     "hardness": 25.0,
-    "infinite": "",
+    "infinite": false,
     "order": 45,
     "pickups": {
       "Name": "GLASS_RAW",
@@ -275,7 +275,7 @@
     "exchange_types": "PICKUP",
     "fruit": "",
     "hardness": 1.0,
-    "infinite": "",
+    "infinite": false,
     "order": 34,
     "pickups": {
       "Name": "GLASS_RAW",
@@ -293,7 +293,7 @@
     "exchange_types": "MINE",
     "fruit": "",
     "hardness": 10.0,
-    "infinite": "",
+    "infinite": false,
     "order": 48,
     "pickups": {
       "Name": "GOLD_RAW",
@@ -311,7 +311,7 @@
     "exchange_types": "MINE",
     "fruit": "",
     "hardness": 50.0,
-    "infinite": "",
+    "infinite": false,
     "order": 49,
     "pickups": {
       "Name": "IRON_PLATE",
@@ -329,7 +329,7 @@
     "exchange_types": "MINE",
     "fruit": "",
     "hardness": 50.0,
-    "infinite": "",
+    "infinite": false,
     "order": 49,
     "pickups": {
       "Name": "SCREW",
@@ -347,7 +347,7 @@
     "exchange_types": "MINE",
     "fruit": "",
     "hardness": 50.0,
-    "infinite": "",
+    "infinite": false,
     "order": 49,
     "pickups": {
       "Name": "COPPER_BAR",
@@ -365,7 +365,7 @@
     "exchange_types": "MINE",
     "fruit": "",
     "hardness": 50.0,
-    "infinite": "",
+    "infinite": false,
     "order": 49,
     "pickups": {
       "Name": "COPPER_WIRE",
@@ -383,7 +383,7 @@
     "exchange_types": "MINE",
     "fruit": "",
     "hardness": 50.0,
-    "infinite": "",
+    "infinite": false,
     "order": 49,
     "pickups": {
       "Name": "DIODE",
@@ -401,7 +401,7 @@
     "exchange_types": "MINE",
     "fruit": "",
     "hardness": 50.0,
-    "infinite": "",
+    "infinite": false,
     "order": 49,
     "pickups": {
       "Name": "GOLD_RAW",
@@ -419,7 +419,7 @@
     "exchange_types": "MINE",
     "fruit": "",
     "hardness": 50.0,
-    "infinite": "",
+    "infinite": false,
     "order": 49,
     "pickups": {
       "Name": "MICROCHIP",
@@ -437,7 +437,7 @@
     "exchange_types": "MINE",
     "fruit": "",
     "hardness": 50.0,
-    "infinite": "",
+    "infinite": false,
     "order": 49,
     "pickups": {
       "Name": "CHEM_WASTE",
@@ -455,7 +455,7 @@
     "exchange_types": "PICKUP",
     "fruit": "",
     "hardness": 1.0,
-    "infinite": "",
+    "infinite": false,
     "order": 35,
     "pickups": {
       "Name": "GOLD_RAW",
@@ -473,7 +473,7 @@
     "exchange_types": "PLANT_CUT",
     "fruit": "",
     "hardness": "",
-    "infinite": "",
+    "infinite": false,
     "order": 3,
     "pickups": {
       "Name": "FIBER_SPIKETREE",
@@ -491,7 +491,7 @@
     "exchange_types": "MINE",
     "fruit": "",
     "hardness": 15.0,
-    "infinite": "",
+    "infinite": false,
     "order": 36,
     "pickups": {
       "Name": "IRON_RAW",
@@ -509,7 +509,7 @@
     "exchange_types": "MINE",
     "fruit": "",
     "hardness": 15.0,
-    "infinite": "",
+    "infinite": false,
     "order": 37,
     "pickups": {
       "Name": "IRON_RAW",
@@ -527,7 +527,7 @@
     "exchange_types": "MINE",
     "fruit": "",
     "hardness": 15.0,
-    "infinite": "",
+    "infinite": false,
     "order": 38,
     "pickups": {
       "Name": "IRON_RAW",
@@ -545,7 +545,7 @@
     "exchange_types": "PICKUP",
     "fruit": "",
     "hardness": 1.0,
-    "infinite": "",
+    "infinite": false,
     "order": 32,
     "pickups": {
       "Name": "IRON_RAW",
@@ -563,7 +563,7 @@
     "exchange_types": "PLANT_CUT",
     "fruit": "",
     "hardness": "",
-    "infinite": "",
+    "infinite": false,
     "order": 12,
     "pickups": {
       "Name": "FIBER_SPIKETREE",
@@ -581,7 +581,7 @@
     "exchange_types": "PLANT_CUT",
     "fruit": "",
     "hardness": "",
-    "infinite": "",
+    "infinite": false,
     "order": 12,
     "pickups": {
       "Name": "CONCRETE_RAW",
@@ -599,7 +599,7 @@
     "exchange_types": "PLANT_CUT",
     "fruit": "",
     "hardness": "",
-    "infinite": "",
+    "infinite": false,
     "order": 30,
     "pickups": {
       "Name": "FIBER_SPIKETREE",
@@ -617,7 +617,7 @@
     "exchange_types": "PLANT_CUT",
     "fruit": "",
     "hardness": "",
-    "infinite": "",
+    "infinite": false,
     "order": 30,
     "pickups": {
       "Name": "CONCRETE_RAW",
@@ -635,7 +635,7 @@
     "exchange_types": "MINE",
     "fruit": "",
     "hardness": 20.0,
-    "infinite": "",
+    "infinite": false,
     "order": 47,
     "pickups": {
       "Name": "IRON_RAW",
@@ -653,7 +653,7 @@
     "exchange_types": "MINE",
     "fruit": "",
     "hardness": 20.0,
-    "infinite": "",
+    "infinite": false,
     "order": 47,
     "pickups": {
       "Name": "COPPER_RAW",
@@ -671,7 +671,7 @@
     "exchange_types": "MINE",
     "fruit": "",
     "hardness": 20.0,
-    "infinite": "",
+    "infinite": false,
     "order": 47,
     "pickups": {
       "Name": "GLASS_RAW",
@@ -689,7 +689,7 @@
     "exchange_types": "MINE",
     "fruit": "",
     "hardness": 20.0,
-    "infinite": "",
+    "infinite": false,
     "order": 47,
     "pickups": {
       "Name": "GOLD_RAW",
@@ -707,7 +707,7 @@
     "exchange_types": "PLANT_CUT",
     "fruit": "",
     "hardness": "",
-    "infinite": "",
+    "infinite": false,
     "order": 11,
     "pickups": {
       "Name": "FIBER_SPIKETREE",
@@ -725,7 +725,7 @@
     "exchange_types": "PLANT_CUT",
     "fruit": "",
     "hardness": "",
-    "infinite": "",
+    "infinite": false,
     "order": 29,
     "pickups": {
       "Name": "FIBER_SPIKETREE",
@@ -743,7 +743,7 @@
     "exchange_types": "PLANT_CUT",
     "fruit": "ENERGY_POD2",
     "hardness": "",
-    "infinite": "",
+    "infinite": false,
     "order": 15,
     "pickups": {
       "Name": "FIBER_SPIKETREE",
@@ -761,7 +761,7 @@
     "exchange_types": "FORAGE",
     "fruit": "ENERGY_POD2",
     "hardness": "",
-    "infinite": "",
+    "infinite": false,
     "order": 15,
     "pickups": {
       "Name": "FIBER_SPIKETREE",
@@ -779,7 +779,7 @@
     "exchange_types": "PLANT_CUT",
     "fruit": "",
     "hardness": "",
-    "infinite": "",
+    "infinite": false,
     "order": 13,
     "pickups": {
       "Name": "FIBER_SPIKETREE",
@@ -797,7 +797,7 @@
     "exchange_types": "PLANT_CUT",
     "fruit": "",
     "hardness": "",
-    "infinite": "",
+    "infinite": false,
     "order": 31,
     "pickups": {
       "Name": "FIBER_SPIKETREE",
@@ -815,7 +815,7 @@
     "exchange_types": "PLANT_CUT",
     "fruit": "",
     "hardness": "",
-    "infinite": "",
+    "infinite": false,
     "order": 14,
     "pickups": {
       "Name": "FIBER_SPIKETREE",
@@ -833,7 +833,7 @@
     "exchange_types": "PLANT_CUT",
     "fruit": "",
     "hardness": "",
-    "infinite": "",
+    "infinite": false,
     "order": 19,
     "pickups": {
       "Name": "FIBER_SPIKETREE",
@@ -851,7 +851,7 @@
     "exchange_types": "PLANT_CUT",
     "fruit": "",
     "hardness": "",
-    "infinite": "",
+    "infinite": false,
     "order": 5,
     "pickups": {
       "Name": "FIBER_SPIKETREE",
@@ -869,7 +869,7 @@
     "exchange_types": "MINE",
     "fruit": "",
     "hardness": 1.0,
-    "infinite": "",
+    "infinite": false,
     "order": 50,
     "pickups": {
       "Name": "CLAY",
@@ -887,7 +887,7 @@
     "exchange_types": "MINE",
     "fruit": "",
     "hardness": 30.0,
-    "infinite": "",
+    "infinite": false,
     "order": 41,
     "pickups": {
       "Name": "CONCRETE_RAW",
@@ -905,7 +905,7 @@
     "exchange_types": "MINE",
     "fruit": "",
     "hardness": 30.0,
-    "infinite": "",
+    "infinite": false,
     "order": 42,
     "pickups": {
       "Name": "CONCRETE_RAW",
@@ -923,7 +923,7 @@
     "exchange_types": "MINE",
     "fruit": "",
     "hardness": 30.0,
-    "infinite": "X",
+    "infinite": true,
     "order": 43,
     "pickups": {
       "Name": "CONCRETE_RAW",
@@ -941,7 +941,7 @@
     "exchange_types": "MINE",
     "fruit": "",
     "hardness": 30.0,
-    "infinite": "X",
+    "infinite": true,
     "order": 51,
     "pickups": {
       "Name": "CONCRETE_RAW",
@@ -959,7 +959,7 @@
     "exchange_types": "MINE",
     "fruit": "",
     "hardness": 30.0,
-    "infinite": "X",
+    "infinite": true,
     "order": 52,
     "pickups": {
       "Name": "CONCRETE_RAW",
@@ -977,7 +977,7 @@
     "exchange_types": "MINE",
     "fruit": "",
     "hardness": 30.0,
-    "infinite": "X",
+    "infinite": true,
     "order": 53,
     "pickups": {
       "Name": "CONCRETE_RAW",
@@ -995,7 +995,7 @@
     "exchange_types": "MINE",
     "fruit": "",
     "hardness": 30.0,
-    "infinite": "X",
+    "infinite": true,
     "order": 54,
     "pickups": {
       "Name": "CONCRETE_RAW",
@@ -1013,7 +1013,7 @@
     "exchange_types": "PLANT_CUT",
     "fruit": "ENERGY_POD",
     "hardness": "",
-    "infinite": "",
+    "infinite": false,
     "order": 1,
     "pickups": {
       "Name": "FIBER_SPIKETREE",
@@ -1031,7 +1031,7 @@
     "exchange_types": "FORAGE",
     "fruit": "ENERGY_POD",
     "hardness": "",
-    "infinite": "",
+    "infinite": false,
     "order": 1,
     "pickups": {
       "Name": "FIBER_SPIKETREE",
@@ -1049,7 +1049,7 @@
     "exchange_types": "PLANT_CUT",
     "fruit": "ENERGY_POD",
     "hardness": "",
-    "infinite": "",
+    "infinite": false,
     "order": 0,
     "pickups": {
       "Name": "FIBER_SPIKETREE",
@@ -1067,7 +1067,7 @@
     "exchange_types": "FORAGE",
     "fruit": "ENERGY_POD",
     "hardness": "",
-    "infinite": "",
+    "infinite": false,
     "order": 0,
     "pickups": {
       "Name": "FIBER_SPIKETREE",
@@ -1085,7 +1085,7 @@
     "exchange_types": "MINE",
     "fruit": "",
     "hardness": 40.0,
-    "infinite": "",
+    "infinite": false,
     "order": 46,
     "pickups": {
       "Name": "CHEM_WASTE",
@@ -1103,7 +1103,7 @@
     "exchange_types": "PLANT_CUT",
     "fruit": "",
     "hardness": 1.0,
-    "infinite": "",
+    "infinite": false,
     "order": 18,
     "pickups": {
       "Name": "CHEM_WASTE",
@@ -1121,7 +1121,7 @@
     "exchange_types": "PLANT_CUT",
     "fruit": "ENERGY_POD",
     "hardness": "",
-    "infinite": "",
+    "infinite": false,
     "order": 7,
     "pickups": {
       "Name": "FIBER_SPIKETREE",
@@ -1139,7 +1139,7 @@
     "exchange_types": "FORAGE",
     "fruit": "ENERGY_POD",
     "hardness": "",
-    "infinite": "",
+    "infinite": false,
     "order": 7,
     "pickups": {
       "Name": "FIBER_SPIKETREE",
@@ -1157,7 +1157,7 @@
     "exchange_types": "PLANT_CUT",
     "fruit": "",
     "hardness": "",
-    "infinite": "",
+    "infinite": false,
     "order": 10,
     "pickups": {
       "Name": "FIBER_SPIKETREE",
@@ -1175,7 +1175,7 @@
     "exchange_types": "FORAGE",
     "fruit": "",
     "hardness": "",
-    "infinite": "",
+    "infinite": false,
     "order": 10,
     "pickups": {
       "Name": "FIBER_SPIKETREE",
@@ -1193,7 +1193,7 @@
     "exchange_types": "PLANT_CUT",
     "fruit": "ENERGY_POD",
     "hardness": "",
-    "infinite": "",
+    "infinite": false,
     "order": 8,
     "pickups": {
       "Name": "FIBER_SPIKETREE",
@@ -1211,7 +1211,7 @@
     "exchange_types": "FORAGE",
     "fruit": "ENERGY_POD",
     "hardness": "",
-    "infinite": "",
+    "infinite": false,
     "order": 8,
     "pickups": {
       "Name": "FIBER_SPIKETREE",
@@ -1229,7 +1229,7 @@
     "exchange_types": "PLANT_CUT",
     "fruit": "ENERGY_POD",
     "hardness": "",
-    "infinite": "",
+    "infinite": false,
     "order": 9,
     "pickups": {
       "Name": "FIBER_SPIKETREE",
@@ -1247,7 +1247,7 @@
     "exchange_types": "FORAGE",
     "fruit": "ENERGY_POD",
     "hardness": "",
-    "infinite": "",
+    "infinite": false,
     "order": 9,
     "pickups": {
       "Name": "FIBER_SPIKETREE",
@@ -1265,7 +1265,7 @@
     "exchange_types": "PLANT_CUT",
     "fruit": "",
     "hardness": "",
-    "infinite": "",
+    "infinite": false,
     "order": 2,
     "pickups": {
       "Name": "FIBER_SPIKETREE",

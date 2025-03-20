@@ -80,16 +80,16 @@ $Build ??= [ordered]@{ # auto 'show' certain files. nullish op lets you override
     }
     Export = [ordered]@{
         Changelog                  = $false
-        Biome_Objects              = $false # $true # $false
+        Biome_Objects              = $true # $true # $false
         Biome_Objects_Expanded     = $false # $true # $false
         Biome_Plants               = $false # $true # $false
         Loc                        = $false # $true # $false
         Prefabs_Crusher            = $true # $true # $false
-        Prefabs                    = $true
-        TechTree_ResearchRecipes   = $false # $false
-        TechTree_TechTree          = $false # $false
-        TechTree_TechTree_Expanded = $false # $false
-        WorkbookSchema             = $false # $false
+        Prefabs                    = $false
+        TechTree_ResearchRecipes   = $true # $false
+        TechTree_TechTree          = $true  # $false
+        TechTree_TechTree_Expanded = $false  # $false
+        WorkbookSchema             = $false  # $false
     }
 }
 # $Paths.Game = [ordered]@{

@@ -735,6 +735,7 @@ function md.Export.Biome.Biome_Objects {
             $record.'pickups'             = md.Parse.IngredientsFromCsv $record.'pickups'
             $record.'exchange_types'      = md.Parse.ItemsFromList $record.'exchange_types'
             $record.'unclickable'         = md.Parse.Checkbox $record.'unclickable'
+            $record.'infinite'            = md.Parse.Checkbox $record.'infinite'
             $record.'trails_pass_through' = md.Parse.Checkbox $record.'trails_pass_through'
 
             $record
@@ -999,6 +1000,15 @@ function md.Export.TechTree.TechTree {
             $rec = $_
             $rec = md.Convert.BlankPropsToEmpty $rec
             $rec = md.Convert.KeyNames $rec -StartWith 'tier', 'group', 'order'
+
+            $rec.'cost'             = md.Parse.IngredientsFromCsv $rec.'cost'
+            $rec.'in_demo'          = md.Parse.Checkbox $rec.'in_demo'
+            $rec.'give_island'      = md.Parse.Checkbox $rec.'give_island'
+            $rec.'auto_done'        = md.Parse.Checkbox $rec.'auto_done'
+            $rec.'hidden'           = md.Parse.Checkbox $rec.'hidden'
+            $rec.'desc_in_demo'     = md.Parse.Checkbox $rec.'desc_in_demo'
+            $rec.'unlock_recipes'   = md.Parse.ItemsFromList -Text $rec.'unlock_recipes'
+            $rec.'unlock_buildings' = md.Parse.ItemsFromList -Text $rec.'unlock_buildings'
             $rec
         }
     )
@@ -1152,7 +1162,7 @@ function md.Export.Prefabs.Prefabs {
     )
 
     $exportExcel_Splat = @{
-        InputObject   = @($ rows )
+        InputObject   = @( $rows )
         Path          = $Paths.Xlsx_Prefabs
         Show          = $false # moved to end
         WorksheetName = 'Buildings'
@@ -1471,8 +1481,15 @@ function md.Export.Prefabs.Crusher {
         $Rows | %{
             $record = $_
             # coerce blankables into empty strings for json
+
+            # $rec.'cost'        = md.Parse.IngredientsFromCsv $rec.'cost'
+
             $record = md.Convert.BlankPropsToEmpty $Record
             $record = md.Convert.KeyNames $Record
+
+            $record.'product_pickup' = md.Parse.IngredientsFromCsv $record.'product_pickup'
+            $record.'cost_ant'       = md.Parse.IngredientsFromCsv $record.'cost_ant'
+            $record.'planned'        = md.Parse.Checkbox $record.'planned'
 
             $record
         }

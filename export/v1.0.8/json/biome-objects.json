@@ -8,7 +8,7 @@
     ],
     "fruit": "ENERGY_POD2",
     "hardness": "",
-    "infinite": "",
+    "infinite": false,
     "order": 17,
     "pickups": [
       {
@@ -31,7 +31,7 @@
     ],
     "fruit": "ENERGY_POD2",
     "hardness": "",
-    "infinite": "",
+    "infinite": false,
     "order": 6,
     "pickups": [
       {
@@ -53,7 +53,7 @@
     ],
     "fruit": "",
     "hardness": "",
-    "infinite": "",
+    "infinite": false,
     "order": 16,
     "pickups": [
       {
@@ -79,7 +79,7 @@
     ],
     "fruit": "",
     "hardness": 25.0,
-    "infinite": "",
+    "infinite": false,
     "order": 39,
     "pickups": [
       {
@@ -102,7 +102,7 @@
     ],
     "fruit": "ENERGY_POD4",
     "hardness": 5.0,
-    "infinite": "",
+    "infinite": false,
     "order": 22,
     "pickups": [
       {
@@ -124,7 +124,7 @@
     ],
     "fruit": "ENERGY_POD4",
     "hardness": 5.0,
-    "infinite": "",
+    "infinite": false,
     "order": 21,
     "pickups": [
       {
@@ -146,7 +146,7 @@
     ],
     "fruit": "",
     "hardness": 10.0,
-    "infinite": "",
+    "infinite": false,
     "order": 40,
     "pickups": [
       {
@@ -168,7 +168,7 @@
     ],
     "fruit": "",
     "hardness": 1.0,
-    "infinite": "",
+    "infinite": false,
     "order": 33,
     "pickups": [
       {
@@ -188,7 +188,7 @@
     "exchange_types": [],
     "fruit": "",
     "hardness": "",
-    "infinite": "",
+    "infinite": false,
     "order": 28,
     "pickups": [],
     "pollution": "",
@@ -205,7 +205,7 @@
     ],
     "fruit": "",
     "hardness": "",
-    "infinite": "",
+    "infinite": false,
     "order": 4,
     "pickups": [
       {
@@ -227,7 +227,7 @@
     ],
     "fruit": "",
     "hardness": 25.0,
-    "infinite": "",
+    "infinite": false,
     "order": 44,
     "pickups": [
       {
@@ -249,7 +249,7 @@
     ],
     "fruit": "",
     "hardness": 25.0,
-    "infinite": "",
+    "infinite": false,
     "order": 45,
     "pickups": [
       {
@@ -271,7 +271,7 @@
     ],
     "fruit": "",
     "hardness": 1.0,
-    "infinite": "",
+    "infinite": false,
     "order": 34,
     "pickups": [
       {
@@ -293,7 +293,7 @@
     ],
     "fruit": "",
     "hardness": 10.0,
-    "infinite": "",
+    "infinite": false,
     "order": 48,
     "pickups": [
       {
@@ -315,7 +315,7 @@
     ],
     "fruit": "",
     "hardness": 50.0,
-    "infinite": "",
+    "infinite": false,
     "order": 49,
     "pickups": [
       {
@@ -365,7 +365,7 @@
     ],
     "fruit": "",
     "hardness": 1.0,
-    "infinite": "",
+    "infinite": false,
     "order": 35,
     "pickups": [
       {
@@ -385,7 +385,7 @@
     "exchange_types": [],
     "fruit": "",
     "hardness": "",
-    "infinite": "",
+    "infinite": false,
     "order": 23,
     "pickups": [],
     "pollution": "",
@@ -402,7 +402,7 @@
     ],
     "fruit": "",
     "hardness": "",
-    "infinite": "",
+    "infinite": false,
     "order": 3,
     "pickups": [
       {
@@ -424,7 +424,7 @@
     ],
     "fruit": "",
     "hardness": 15.0,
-    "infinite": "",
+    "infinite": false,
     "order": 36,
     "pickups": [
       {
@@ -446,7 +446,7 @@
     ],
     "fruit": "",
     "hardness": 15.0,
-    "infinite": "",
+    "infinite": false,
     "order": 37,
     "pickups": [
       {
@@ -468,7 +468,7 @@
     ],
     "fruit": "",
     "hardness": 15.0,
-    "infinite": "",
+    "infinite": false,
     "order": 38,
     "pickups": [
       {
@@ -490,7 +490,7 @@
     ],
     "fruit": "",
     "hardness": 1.0,
-    "infinite": "",
+    "infinite": false,
     "order": 32,
     "pickups": [
       {
@@ -512,7 +512,7 @@
     ],
     "fruit": "",
     "hardness": "",
-    "infinite": "",
+    "infinite": false,
     "order": 12,
     "pickups": [
       {
@@ -538,7 +538,7 @@
     ],
     "fruit": "",
     "hardness": "",
-    "infinite": "",
+    "infinite": false,
     "order": 30,
     "pickups": [
       {
@@ -564,7 +564,7 @@
     ],
     "fruit": "",
     "hardness": 20.0,
-    "infinite": "",
+    "infinite": false,
     "order": 47,
     "pickups": [
       {
@@ -598,7 +598,7 @@
     ],
     "fruit": "",
     "hardness": "",
-    "infinite": "",
+    "infinite": false,
     "order": 11,
     "pickups": [
       {
@@ -620,7 +620,7 @@
     ],
     "fruit": "",
     "hardness": "",
-    "infinite": "",
+    "infinite": false,
     "order": 29,
     "pickups": [
       {
@@ -643,7 +643,7 @@
     ],
     "fruit": "ENERGY_POD2",
     "hardness": "",
-    "infinite": "",
+    "infinite": false,
     "order": 15,
     "pickups": [
       {
@@ -665,7 +665,7 @@
     ],
     "fruit": "",
     "hardness": "",
-    "infinite": "",
+    "infinite": false,
     "order": 13,
     "pickups": [
       {
@@ -687,7 +687,7 @@
     ],
     "fruit": "",
     "hardness": "",
-    "infinite": "",
+    "infinite": false,
     "order": 31,
     "pickups": [
       {
@@ -709,7 +709,7 @@
     ],
     "fruit": "",
     "hardness": "",
-    "infinite": "",
+    "infinite": false,
     "order": 14,
     "pickups": [
       {
@@ -729,7 +729,7 @@
     "exchange_types": [],
     "fruit": "",
     "hardness": "",
-    "infinite": "",
+    "infinite": false,
     "order": 27,
     "pickups": [],
     "pollution": "",
@@ -744,7 +744,7 @@
     "exchange_types": [],
     "fruit": "",
     "hardness": "",
-    "infinite": "",
+    "infinite": false,
     "order": 24,
     "pickups": [],
     "pollution": "",
@@ -761,7 +761,7 @@
     ],
     "fruit": "",
     "hardness": "",
-    "infinite": "",
+    "infinite": false,
     "order": 19,
     "pickups": [
       {
@@ -783,7 +783,7 @@
     ],
     "fruit": "",
     "hardness": "",
-    "infinite": "",
+    "infinite": false,
     "order": 20,
     "pickups": [],
     "pollution": "",
@@ -800,7 +800,7 @@
     ],
     "fruit": "",
     "hardness": "",
-    "infinite": "",
+    "infinite": false,
     "order": 26,
     "pickups": [],
     "pollution": "",
@@ -817,7 +817,7 @@
     ],
     "fruit": "",
     "hardness": "",
-    "infinite": "",
+    "infinite": false,
     "order": 5,
     "pickups": [
       {
@@ -839,7 +839,7 @@
     ],
     "fruit": "",
     "hardness": 1.0,
-    "infinite": "",
+    "infinite": false,
     "order": 50,
     "pickups": [
       {
@@ -859,7 +859,7 @@
     "exchange_types": [],
     "fruit": "",
     "hardness": "",
-    "infinite": "",
+    "infinite": false,
     "order": 65,
     "pickups": [],
     "pollution": "",
@@ -874,7 +874,7 @@
     "exchange_types": [],
     "fruit": "",
     "hardness": "",
-    "infinite": "",
+    "infinite": false,
     "order": 63,
     "pickups": [],
     "pollution": "",
@@ -889,7 +889,7 @@
     "exchange_types": [],
     "fruit": "",
     "hardness": "",
-    "infinite": "",
+    "infinite": false,
     "order": 62,
     "pickups": [],
     "pollution": "",
@@ -906,7 +906,7 @@
     ],
     "fruit": "",
     "hardness": "",
-    "infinite": "",
+    "infinite": false,
     "order": 59,
     "pickups": [],
     "pollution": "",
@@ -923,7 +923,7 @@
     ],
     "fruit": "",
     "hardness": "",
-    "infinite": "",
+    "infinite": false,
     "order": 55,
     "pickups": [],
     "pollution": "",
@@ -940,7 +940,7 @@
     ],
     "fruit": "",
     "hardness": "",
-    "infinite": "",
+    "infinite": false,
     "order": 57,
     "pickups": [],
     "pollution": "",
@@ -957,7 +957,7 @@
     ],
     "fruit": "",
     "hardness": "",
-    "infinite": "",
+    "infinite": false,
     "order": 58,
     "pickups": [],
     "pollution": "",
@@ -974,7 +974,7 @@
     ],
     "fruit": "",
     "hardness": "",
-    "infinite": "",
+    "infinite": false,
     "order": 56,
     "pickups": [],
     "pollution": "",
@@ -989,7 +989,7 @@
     "exchange_types": [],
     "fruit": "",
     "hardness": "",
-    "infinite": "",
+    "infinite": false,
     "order": 64,
     "pickups": [],
     "pollution": "",
@@ -1006,7 +1006,7 @@
     ],
     "fruit": "",
     "hardness": "",
-    "infinite": "",
+    "infinite": false,
     "order": 60,
     "pickups": [],
     "pollution": "",
@@ -1023,7 +1023,7 @@
     ],
     "fruit": "",
     "hardness": "",
-    "infinite": "",
+    "infinite": false,
     "order": 61,
     "pickups": [],
     "pollution": "",
@@ -1040,7 +1040,7 @@
     ],
     "fruit": "",
     "hardness": 30.0,
-    "infinite": "",
+    "infinite": false,
     "order": 41,
     "pickups": [
       {
@@ -1062,7 +1062,7 @@
     ],
     "fruit": "",
     "hardness": 30.0,
-    "infinite": "",
+    "infinite": false,
     "order": 42,
     "pickups": [
       {
@@ -1084,7 +1084,7 @@
     ],
     "fruit": "",
     "hardness": 30.0,
-    "infinite": "X",
+    "infinite": true,
     "order": 43,
     "pickups": [
       {
@@ -1106,7 +1106,7 @@
     ],
     "fruit": "",
     "hardness": 30.0,
-    "infinite": "X",
+    "infinite": true,
     "order": 51,
     "pickups": [
       {
@@ -1128,7 +1128,7 @@
     ],
     "fruit": "",
     "hardness": 30.0,
-    "infinite": "X",
+    "infinite": true,
     "order": 52,
     "pickups": [
       {
@@ -1150,7 +1150,7 @@
     ],
     "fruit": "",
     "hardness": 30.0,
-    "infinite": "X",
+    "infinite": true,
     "order": 53,
     "pickups": [
       {
@@ -1172,7 +1172,7 @@
     ],
     "fruit": "",
     "hardness": 30.0,
-    "infinite": "X",
+    "infinite": true,
     "order": 54,
     "pickups": [
       {
@@ -1195,7 +1195,7 @@
     ],
     "fruit": "ENERGY_POD",
     "hardness": "",
-    "infinite": "",
+    "infinite": false,
     "order": 1,
     "pickups": [
       {
@@ -1218,7 +1218,7 @@
     ],
     "fruit": "ENERGY_POD",
     "hardness": "",
-    "infinite": "",
+    "infinite": false,
     "order": 0,
     "pickups": [
       {
@@ -1238,7 +1238,7 @@
     "exchange_types": [],
     "fruit": "",
     "hardness": "",
-    "infinite": "",
+    "infinite": false,
     "order": 25,
     "pickups": [],
     "pollution": "",
@@ -1255,7 +1255,7 @@
     ],
     "fruit": "",
     "hardness": 40.0,
-    "infinite": "",
+    "infinite": false,
     "order": 46,
     "pickups": [
       {
@@ -1277,7 +1277,7 @@
     ],
     "fruit": "",
     "hardness": 1.0,
-    "infinite": "",
+    "infinite": false,
     "order": 18,
     "pickups": [
       {
@@ -1300,7 +1300,7 @@
     ],
     "fruit": "ENERGY_POD",
     "hardness": "",
-    "infinite": "",
+    "infinite": false,
     "order": 7,
     "pickups": [
       {
@@ -1323,7 +1323,7 @@
     ],
     "fruit": "",
     "hardness": "",
-    "infinite": "",
+    "infinite": false,
     "order": 10,
     "pickups": [
       {
@@ -1346,7 +1346,7 @@
     ],
     "fruit": "ENERGY_POD",
     "hardness": "",
-    "infinite": "",
+    "infinite": false,
     "order": 8,
     "pickups": [
       {
@@ -1369,7 +1369,7 @@
     ],
     "fruit": "ENERGY_POD",
     "hardness": "",
-    "infinite": "",
+    "infinite": false,
     "order": 9,
     "pickups": [
       {
@@ -1391,7 +1391,7 @@
     ],
     "fruit": "",
     "hardness": "",
-    "infinite": "",
+    "infinite": false,
     "order": 2,
     "pickups": [
       {
