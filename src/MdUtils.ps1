@@ -1506,11 +1506,13 @@ function md.Export.Prefabs.Crusher {
 
     $Paths.Json_Crusher_Output | md.Log.WroteFile
 
-    $forJson
-        | ConvertTo-Csv
-        | Set-Content -path $Paths.Csv_Crusher_Output # -Confirm
+    if($false) { # disable nested format for now
+        $forJson
+            | ConvertTo-Csv
+            | Set-Content -path $Paths.Csv_Crusher_Output # -Confirm
 
-    $Paths.Csv_Crusher_Output | md.Log.WroteFile
+        $Paths.Csv_Crusher_Output | md.Log.WroteFile
+    }
 
 
     # also emit expanded records
