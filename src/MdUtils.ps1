@@ -1847,6 +1847,16 @@ function md.Export.Loc {
     # $description | ConvertTo-Json | Set-Content -path $Paths.json_Biome_Plants_ColumnDesc
     # $paths.json_Biome_Plants_ColumnDesc | md.Log.WroteFile
 
+    # Before anything, copy the "LEGEND" as-is
+    $copyExcelWorkSheetSplat = @{
+        SourceObject         = $paths.Raw_Loc
+        SourceWorksheet      = 'LEGEND'
+        DestinationWorkbook  = $paths.xlsx_loc
+        DestinationWorksheet = 'LEGEND'
+    }
+
+    Copy-ExcelWorkSheet @copyExcelWorkSheetSplat
+
     # skip empty and non-data rows
     $curOrder = -1
     $rows = @(
