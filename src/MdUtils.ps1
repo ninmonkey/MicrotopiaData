@@ -993,6 +993,16 @@ function md.Export.TechTree.TechTree {
             | ? { -not [string]::IsNullOrWhiteSpace( $_.CODE ) }
     )
 
+
+     $newConditionalTextSplat = @{
+        Text                 = 'x'
+        ConditionalType      = 'Equal' # ContainsText
+        ConditionalTextColor = [System.Drawing.Color]::DarkGreen
+        BackgroundColor      = [System.Drawing.Color]::LightGreen
+        PatternType          = [OfficeOpenXml.Style.ExcelFillStyle]::Solid
+        Verbose              = $true
+    }
+
     $exportExcel_Splat = @{
         InputObject   = @(
             $rows
@@ -1003,9 +1013,13 @@ function md.Export.TechTree.TechTree {
         TableName     = 'TechTree_Data'
         TableStyle    = 'Light5'
         AutoSize      = $True
+        ConditionalText = @(
+            New-ConditionalText @newConditionalTextSplat
+        )
     }
 
     Export-Excel @exportExcel_Splat
+
 
      # json specific transforms
     $sort_splat = @{
@@ -1102,11 +1116,11 @@ function md.Export.TechTree.TechTree {
         Export-Excel @exportExcel_Splat
     }
 
-    if( $Build.AutoOpen.TechTree_TechTree -or $Build.AutoOpen.TechTree_ResearchRecipes ) {
-        Get-Item $Paths.Xlsx_TechTree | Invoke-Item
-    }
-
     Close-ExcelPackage -ExcelPackage $pkg -NoSave
+
+    if( $Build.AutoOpen.TechTree_TechTree -or $Build.AutoOpen.TechTree_ResearchRecipes ) {
+        md.ShowCopyOfWorkbook -InputPath $Paths.Xlsx_TechTree -CopyWithoutOpen
+    }
 }
 
 function md.Export.Prefabs.Prefabs {
@@ -1693,7 +1707,7 @@ function md.ShowCopyOfWorkbook {
         [Parameter(Mandatory)]
         $InputPath,
 
-        [string] $ExportRoot = 'H:\temp_dump\ExportExcel',
+        [string] $ExportRoot = 'G:\SessionStuff', # 'H:\temp_dump\ExportExcel',
 
         # if you want dynamic names but don't run it yet.
         # return path without running the file.
