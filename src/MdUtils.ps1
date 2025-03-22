@@ -317,7 +317,7 @@ function md.Export.WorkbookSchema.Xlsx {
         AutoSize      = $true
         TableName     = 'Schema_data'
         TableStyle    = 'Light5'
-        Show          = $Build.AutoOpen.WorkBookSchema ?? $false
+        Show          = $false
         Title         = 'Summary of xlsx schemas by file'
     }
 
@@ -333,6 +333,10 @@ function md.Export.WorkbookSchema.Xlsx {
     | Export-Excel @exportExcelSplat
 
     md.Log.WroteFile $exportExcelSplat.Path
+
+    if( $Build.AutoOpen.WorkbookSchema ) {
+        md.ShowCopyOfWorkbook -InputPath $Paths.xlsx_WorkbookSchema
+    }
 }
 
 function md.EnsureSubdirsExist {
@@ -712,7 +716,7 @@ function md.Export.Biome.Biome_Objects {
     $exportExcel_Splat = @{
         InputObject   = @( $rows )
         Path          = $Paths.Xlsx_Biome
-        Show          = $Build.AutoOpen.Biome_Objects ?? $false
+        Show          = $false
         WorksheetName = 'Biome_Objects'
         TableName     = 'Biome_Objects_Data'
         TableStyle    = 'Light5'
@@ -798,7 +802,7 @@ function md.Export.Biome.Biome_Objects {
     $exportExcel_Splat = @{
         InputObject   = @( $forJson )
         Path          = $Paths.Xlsx_Biome
-        Show          = $Build.AutoOpen.Biome_Objects_Expanded ?? $false
+        Show          = $false
         WorksheetName = 'Biome_Objects_Expanded'
         TableName     = 'Biome_Objects_Expanded_Data'
         TableStyle    = 'Light5'
@@ -811,6 +815,11 @@ function md.Export.Biome.Biome_Objects {
     $Paths.Xlsx_Biome | md.Log.WroteFile
 
     Close-ExcelPackage -ExcelPackage $pkg -NoSave
+
+    if( $Build.AutoOpen.Biome_Objects -or
+        $Build.AutoOpen.Biome_Objects_Expanded ) {
+        md.ShowCopyOfWorkbook -InputPath $paths.Xlsx_Biome
+    }
 }
 
 function md.Export.Biome.Plants {
@@ -853,7 +862,7 @@ function md.Export.Biome.Plants {
     $exportExcel_Splat = @{
         InputObject   = @( $rows )
         Path          = $Paths.Xlsx_Biome
-        Show          = $Build.AutoOpen.Biome_Plants ?? $false
+        Show          = $false
         WorksheetName = 'Plants'
         TableName     = 'Plants_Data'
         TableStyle    = 'Light5'
@@ -897,6 +906,14 @@ function md.Export.Biome.Plants {
     )| Sort-Object @sort_splat
 
     Close-ExcelPackage -ExcelPackage $pkg -NoSave
+
+
+    if( $Build.AutoOpen.Biome_Plants) {
+        # Get-Item $Paths.Xlsx_Prefabs | Invoke-Item
+        md.ShowCopyOfWorkbook -InputPath $paths.Xlsx_Biome # $pkg.File -ea 'break'
+
+    }
+
 }
 function md.Export.TechTree.TechTree {
     <#
@@ -1237,7 +1254,9 @@ function md.Export.Prefabs.Prefabs {
     md.Export.Prefabs.Crusher -Paths $Paths -Verbose
 
     if( $Build.AutoOpen.Prefabs ) {
-        Get-Item $Paths.Xlsx_Prefabs | Invoke-Item
+        # Get-Item $Paths.Xlsx_Prefabs | Invoke-Item
+        md.ShowCopyOfWorkbook -InputPath $paths.Xlsx_Prefabs # $pkg.File -ea 'break'
+
     }
 }
 function md.Export.Prefabs.FactoryRecipes {
@@ -1642,6 +1661,61 @@ function md.Export.Prefabs.Pickups {
     Close-ExcelPackage -ExcelPackage $pkg -NoSave
 }
 
+function md.New-SafeFileTimeString {
+
+    <#
+    .SYNOPSIS
+        use time now for safe filepaths: "2022-08-17_12-46-47Z"
+    .notes
+        distinct values to the level of a full second
+    #>
+    [CmdletBinding()]
+    param(
+        [string] $FileNameSuffix = 'export',
+        [string] $Extension = '.xlsx'
+    )
+
+    $now = (Get-Date).ToString('u') -replace '\s+', '_' -replace ':', '-'
+    "${now}_${FileNameSuffix}${extension}"
+}
+
+function md.ShowCopyOfWorkbook {
+    <#
+    .SYNOPSIS
+        Save a copy of the sheet with a unique name, so you can keep it open without write permission errors
+    .EXAMPLE
+
+    #>
+    [Alias('md.ShowCopy')]
+    [CmdletBinding()]
+    param(
+        [Alias('Path', 'InputObject', 'File',  'FullName')]
+        [Parameter(Mandatory)]
+        $InputPath,
+
+        [string] $ExportRoot = 'H:\temp_dump\ExportExcel',
+
+        # if you want dynamic names but don't run it yet.
+        # return path without running the file.
+        [Alias('PassThru')]
+        [switch]$CopyWithoutOpen
+    )
+    $OriginalFile = Get-Item -ea 'stop' $InputPath
+    if( -not $OriginalFile ) { throw "Invalid path" }
+
+    $dynamicName = md.New-SafeFileTimeString -FileNameSuffix $OriginalFile.BaseName -Extension $OriginalFile.Extension
+    $Dest = Join-Path $ExportRoot $dynamicName
+    Copy-Item -Path $OriginalFile -Destination $Dest -Force
+    $OriginalFile | Join-String -f 'Original File: "{0}"' -p FullName | Write-verbose
+    $Dest | md.Log.WroteFile
+
+    if( $PassThru ) {
+        return $Dest
+    }
+
+    Get-Item $Dest | Invoke-Item
+}
+
 function md.Export.Loc {
     <#
     .SYNOPSIS
@@ -1700,7 +1774,7 @@ function md.Export.Loc {
     $exportExcel_Splat = @{
         InputObject   = @( $rows )
         Path          = $Paths.Xlsx_Loc
-        Show          = $Build.AutoOpen.Loc ?? $false
+        Show          = $false # $Build.AutoOpen.Loc ?? $false
         WorksheetName = 'UI'
         TableName     = 'UI_Data'
         TableStyle    = 'Light5'
@@ -1755,8 +1829,7 @@ function md.Export.Loc {
             $rows2
         )
         Path          = $Paths.Xlsx_Loc
-        # Show          = $true
-        Show          = $Build.AutoOpen.Loc ?? $false
+        Show          = $false #  $Build.AutoOpen.Loc ?? $false
         WorksheetName = 'ResearchRecipes'
         TableName     = 'ResearchRecipes_Data'
         TableStyle    = 'Light5'
@@ -1812,6 +1885,10 @@ function md.Export.Loc {
     # )| Sort-Object @sort_splat
 
     Close-ExcelPackage -ExcelPackage $pkg -NoSave
+
+    if( $Build.AutoOpen.Loc  ) {
+        md.ShowCopyOfWorkbook -InputPath $paths.Xlsx_loc
+    }
 }
 function md.Export.Prefabs.Crusher {
     <#
@@ -1932,6 +2009,11 @@ function md.Export.Prefabs.Crusher {
     # )| Sort-Object @sort_splat
 
     Close-ExcelPackage -ExcelPackage $pkg -NoSave
+
+    if( $Build.AutoOpen.Prefabs_Crusher ) {
+        md.ShowCopyOfWorkbook -InputPath $Paths.Xlsx_Prefabs
+    }
+
 }
 
 function md.Invoke.FdFind {
