@@ -319,6 +319,9 @@ function md.Export.WorkbookSchema.Xlsx {
         TableStyle    = 'Light5'
         Show          = $false
         Title         = 'Summary of xlsx schemas by file'
+        ConditionalText = @(
+            md.New-ConditionalTextTemplate -TemplateName 'Checkbox-x.Green'
+        )
     }
 
     @(
@@ -721,6 +724,9 @@ function md.Export.Biome.Biome_Objects {
         TableName     = 'Biome_Objects_Data'
         TableStyle    = 'Light5'
         AutoSize      = $True
+        ConditionalText = @(
+            md.New-ConditionalTextTemplate -TemplateName 'Checkbox-x.Green'
+        )
     }
 
     Export-Excel @exportExcel_Splat
@@ -808,6 +814,10 @@ function md.Export.Biome.Biome_Objects {
         TableStyle    = 'Light5'
         Title         = 'Biome_Objects with columns expanded as multiple rows'
         AutoSize      = $True
+        ConditionalText = @(
+            # md.New-ConditionalTextTemplate -TemplateName 'Checkbox-x.Green'
+            md.New-ConditionalTextTemplate -TemplateName 'TextContains.True'
+        )
     }
 
     Export-Excel @exportExcel_Splat
@@ -867,6 +877,9 @@ function md.Export.Biome.Plants {
         TableName     = 'Plants_Data'
         TableStyle    = 'Light5'
         AutoSize      = $True
+        ConditionalText = @(
+            md.New-ConditionalTextTemplate -TemplateName 'Checkbox-x.Green'
+        )
     }
 
     Export-Excel @exportExcel_Splat
@@ -908,7 +921,7 @@ function md.Export.Biome.Plants {
     Close-ExcelPackage -ExcelPackage $pkg -NoSave
 
 
-    if( $Build.AutoOpen.Biome_Plants) {
+    if( $Build.AutoOpen.Biome_Plants -or $Build.AutoOpen.Biome_Objects ) {
         # Get-Item $Paths.Xlsx_Prefabs | Invoke-Item
         md.ShowCopyOfWorkbook -InputPath $paths.Xlsx_Biome # $pkg.File -ea 'break'
 
@@ -994,15 +1007,6 @@ function md.Export.TechTree.TechTree {
     )
 
 
-     $newConditionalTextSplat = @{
-        Text                 = 'x'
-        ConditionalType      = 'Equal' # ContainsText
-        ConditionalTextColor = [System.Drawing.Color]::DarkGreen
-        BackgroundColor      = [System.Drawing.Color]::LightGreen
-        PatternType          = [OfficeOpenXml.Style.ExcelFillStyle]::Solid
-        Verbose              = $true
-    }
-
     $exportExcel_Splat = @{
         InputObject   = @(
             $rows
@@ -1014,7 +1018,7 @@ function md.Export.TechTree.TechTree {
         TableStyle    = 'Light5'
         AutoSize      = $True
         ConditionalText = @(
-            New-ConditionalText @newConditionalTextSplat
+            md.New-ConditionalTextTemplate -TemplateName 'Checkbox-x.Green'
         )
     }
 
@@ -1082,6 +1086,9 @@ function md.Export.TechTree.TechTree {
             TableStyle    = 'Light5'
             Title         = 'TechTree with columns expanded as multiple rows'
             AutoSize      = $true
+            ConditionalText = @(
+                md.New-ConditionalTextTemplate -TemplateName 'Checkbox-x.Green'
+            )
         }
 
         Export-Excel @exportExcel_Splat
@@ -1111,6 +1118,9 @@ function md.Export.TechTree.TechTree {
             TableName     = 'ResearchRecipes_Data'
             TableStyle    = 'Light5'
             AutoSize      = $True
+            ConditionalText = @(
+                md.New-ConditionalTextTemplate -TemplateName 'Checkbox-x.Green'
+            )
         }
 
         Export-Excel @exportExcel_Splat
@@ -1120,6 +1130,45 @@ function md.Export.TechTree.TechTree {
 
     if( $Build.AutoOpen.TechTree_TechTree -or $Build.AutoOpen.TechTree_ResearchRecipes ) {
         md.ShowCopyOfWorkbook -InputPath $Paths.Xlsx_TechTree -CopyWithoutOpen
+    }
+}
+
+function md.New-ConditionalTextTemplate {
+    param(
+        [ArgumentCompletions(
+             'Checkbox-x.Green', 'TextContains.True' )]
+        [string] $TemplateName,
+        [IDictionary] $TemplateParameters = @{}
+    )
+
+    switch($TemplateName) {
+        'Checkbox-x.Green' {
+            # if the value is exactly the string "X", then render it as a green checkbox
+            $newConditionalTextSplat = @{
+                Text                 = 'x'
+                ConditionalType      = 'Equal' # ContainsText
+                ConditionalTextColor = [System.Drawing.Color]::DarkGreen
+                BackgroundColor      = [System.Drawing.Color]::LightGreen
+                PatternType          = [OfficeOpenXml.Style.ExcelFillStyle]::Solid
+            }
+            New-ConditionalText @newConditionalTextSplat
+            break
+        }
+        'TextContains.True' {
+            # if the value is exactly the string "X", then render it as a green checkbox
+            $newConditionalTextSplat = @{
+                Text                 = 'TRUE'
+                ConditionalType      = 'ContainsText'
+                ConditionalTextColor = [System.Drawing.Color]::DarkGreen
+                BackgroundColor      = [System.Drawing.Color]::LightGreen
+                PatternType          = [OfficeOpenXml.Style.ExcelFillStyle]::Solid
+            }
+            New-ConditionalText @newConditionalTextSplat
+            break
+        }
+        default {
+            throw "Unknown template: $TemplateName"
+        }
     }
 }
 
@@ -1202,6 +1251,9 @@ function md.Export.Prefabs.Prefabs {
         TableName     = 'Buildings_Data'
         TableStyle    = 'Light5'
         AutoSize      = $True
+        ConditionalText = @(
+            md.New-ConditionalTextTemplate -TemplateName 'Checkbox-x.Green'
+        )
     }
 
     Export-Excel @exportExcel_Splat
@@ -1253,6 +1305,9 @@ function md.Export.Prefabs.Prefabs {
             TableName     = 'ResearchRecipes_Data'
             TableStyle    = 'Light5'
             AutoSize      = $True
+            ConditionalText = @(
+                md.New-ConditionalTextTemplate -TemplateName 'Checkbox-x.Green'
+            )
         }
 
         Export-Excel @exportExcel_Splat
@@ -1352,6 +1407,9 @@ function md.Export.Prefabs.FactoryRecipes {
         TableName     = 'FactoryRecipes_Data'
         TableStyle    = 'Light5'
         AutoSize      = $True
+        ConditionalText = @(
+            md.New-ConditionalTextTemplate -TemplateName 'Checkbox-x.Green'
+        )
     }
 
     Export-Excel @exportExcel_Splat
@@ -1412,6 +1470,9 @@ function md.Export.Prefabs.FactoryRecipes {
             TableName     = 'ResearchRecipes_Data'
             TableStyle    = 'Light5'
             AutoSize      = $True
+            ConditionalText = @(
+                md.New-ConditionalTextTemplate -TemplateName 'Checkbox-x.Green'
+            )
         }
 
         Export-Excel @exportExcel_Splat
@@ -1498,6 +1559,9 @@ function md.Export.Prefabs.AntCastes {
         TableName     = 'AntCastes_Data'
         TableStyle    = 'Light5'
         AutoSize      = $True
+        ConditionalText = @(
+            md.New-ConditionalTextTemplate -TemplateName 'Checkbox-x.Green'
+        )
     }
 
     Export-Excel @exportExcel_Splat
@@ -1625,6 +1689,9 @@ function md.Export.Prefabs.Pickups {
         TableName     = 'Pickups_Data'
         TableStyle    = 'Light5'
         AutoSize      = $True
+        ConditionalText = @(
+            md.New-ConditionalTextTemplate -TemplateName 'Checkbox-x.Green'
+        )
     }
 
     Export-Excel @exportExcel_Splat
@@ -1793,6 +1860,9 @@ function md.Export.Loc {
         TableName     = 'UI_Data'
         TableStyle    = 'Light5'
         AutoSize      = $True
+        ConditionalText = @(
+            md.New-ConditionalTextTemplate -TemplateName 'Checkbox-x.Green'
+        )
     }
 
     Export-Excel @exportExcel_Splat
@@ -1848,6 +1918,9 @@ function md.Export.Loc {
         TableName     = 'ResearchRecipes_Data'
         TableStyle    = 'Light5'
         AutoSize      = $True
+        ConditionalText = @(
+            md.New-ConditionalTextTemplate -TemplateName 'Checkbox-x.Green'
+        )
     }
 
     Export-Excel @exportExcel_Splat
@@ -1971,6 +2044,9 @@ function md.Export.Prefabs.Crusher {
         TableName     = 'CrusherOutput_data'
         TableStyle    = 'Light5'
         AutoSize      = $True
+        ConditionalText = @(
+            md.New-ConditionalTextTemplate -TemplateName 'Checkbox-x.Green'
+        )
     }
 
     Export-Excel @exportExcel_Splat
