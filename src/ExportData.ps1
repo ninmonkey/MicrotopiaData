@@ -76,7 +76,7 @@ $Build ??= [ordered]@{ # auto 'show' certain files. nullish op lets you override
         Biome_Objects            = $false
         Biome_Objects_Expanded   = $true
         Biome_Plants             = $true
-        Loc                      = $false
+        Loc                      = $true
         Prefabs_Crusher          = $false
         TechTree_ResearchRecipes = $true
         TechTree_TechTree        = $true
@@ -85,14 +85,14 @@ $Build ??= [ordered]@{ # auto 'show' certain files. nullish op lets you override
     }
     Export = [ordered]@{
         Changelog                  = $false
-        Biome_Objects              = $true # $true # $false
-        Biome_Objects_Expanded     = $true # $true # $false
-        Biome_Plants               = $true # $true # $false
-        Loc                        = $false # $true # $false
+        Biome_Objects              = $false # $true # $false
+        Biome_Objects_Expanded     = $false # $true # $false
+        Biome_Plants               = $false # $true # $false
+        Loc                        = $true # $true # $false
         Prefabs_Crusher            = $false # $false # $false
-        Prefabs                    = $false
-        TechTree_ResearchRecipes   = $true # $false
-        TechTree_TechTree          = $true  # $false
+        Prefabs                    = $true
+        TechTree_ResearchRecipes   = $false # $false
+        TechTree_TechTree          = $false  # $false
         TechTree_TechTree_Expanded = $false  # $false
         WorkbookSchema             = $false  # $false
     }
@@ -113,6 +113,9 @@ $Paths.Log
     | Join-String -f 'See log for a list of changed files: "{0}"'
     | Write-Host -fg 'skyblue'
 
+if( $Build.Export.Loc ) { # run loc first, others depend on it
+    md.Export.Loc -Paths $Paths -Verbose
+}
 # main entry point for the script
 if( $Build.Export.Biome_Objects ) {
     md.Export.Biome.Biome_Objects -Paths $Paths -Verbose
@@ -120,9 +123,7 @@ if( $Build.Export.Biome_Objects ) {
 if( $Build.Export.Biome_Plants ) {
     md.Export.Biome.Plants -Paths $Paths -Verbose
 }
-if( $Build.Export.Loc ) {
-    md.Export.Loc -Paths $Paths -Verbose
-}
+
 if($Build.Export.TechTree_TechTree) {
     Remove-Item $Paths.Xlsx_TechTree -ea 'Ignore'
     md.Export.TechTree.TechTree -Paths $Paths -Verbose

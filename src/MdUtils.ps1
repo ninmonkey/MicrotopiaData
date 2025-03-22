@@ -1215,6 +1215,7 @@ function md.Export.Prefabs.Prefabs {
     # $description | ConvertTo-Json | Set-Content -path $Paths.json_Biome_Plants_ColumnDesc
 
     # $paths.json_Biome_Plants_ColumnDesc | md.Log.WroteFile
+    $query_loc = Get-Content -raw $paths.json_Loc_Objects | ConvertFrom-Json -depth 4
 
     # skip empty and non-data rows
     $curGroupName = 'missing'
@@ -1232,6 +1233,18 @@ function md.Export.Prefabs.Prefabs {
                 $record.PSObject.Properties.Add( [psnoteproperty]::new(
                     'Group', $curGroupName
                 ), $true )
+
+
+                $record.PSObject.Properties.Add( [psnoteproperty]::new(
+                    'Description_English',
+                    ($query_loc | ? Code -eq $record.Description).English
+                ), $true )
+
+                $record.PSObject.Properties.Add( [psnoteproperty]::new(
+                    'Title_English',
+                    ($query_loc | ? Code -eq $record.Title).English
+                ), $true )
+
                 $record.PSObject.Properties.Add( [psnoteproperty]::new(
                     'RowOrder', $curOrder
                 ), $true )

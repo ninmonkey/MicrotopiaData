@@ -5,6 +5,7 @@
     "code": "STOCKPILE2",
     "cost": [],
     "description": "BUILD_STOCKPILE_DESC",
+    "description_english": "A place where materials can be stored. You can set up which materials are allowed, defaulting to the first one given.",
     "energy_capacity": "",
     "energy_consumption": "",
     "group": "storage",
@@ -17,6 +18,7 @@
     "roworder": 2,
     "storage_capacity": 160.0,
     "title": "BUILD_STOCKPILE",
+    "title_english": "Stockpile",
     "tutorial": ""
   },
   {
@@ -25,6 +27,7 @@
     "code": "STOCKPILE_LARGE",
     "cost": [],
     "description": "BUILD_STOCKPILELARGE_DESC",
+    "description_english": "",
     "energy_capacity": "",
     "energy_consumption": "",
     "group": "storage",
@@ -37,6 +40,7 @@
     "roworder": 3,
     "storage_capacity": 392.0,
     "title": "BUILD_STOCKPILELARGE",
+    "title_english": "Large Stockpile",
     "tutorial": ""
   },
   {
@@ -45,6 +49,7 @@
     "code": "STOCKPILE_COLOSSAL",
     "cost": [],
     "description": "BUILD_STOCKPILECOL_DESC",
+    "description_english": "",
     "energy_capacity": "",
     "energy_consumption": "",
     "group": "storage",
@@ -57,6 +62,7 @@
     "roworder": 4,
     "storage_capacity": 1771.0,
     "title": "BUILD_STOCKPILECOL",
+    "title_english": "",
     "tutorial": ""
   },
   {
@@ -74,6 +80,7 @@
       }
     ],
     "description": "BUILD_LARVASTORAGE_DESC",
+    "description_english": "A building where you can store larvae. They will be kept safe here until you decide to incubate them.",
     "energy_capacity": "",
     "energy_consumption": "",
     "group": "storage",
@@ -86,6 +93,7 @@
     "roworder": 5,
     "storage_capacity": 7.0,
     "title": "BUILD_LARVASTORAGE",
+    "title_english": "Larvae Storage",
     "tutorial": ""
   },
   {
@@ -107,6 +115,7 @@
       }
     ],
     "description": "BUILD_BASIN_DESC",
+    "description_english": "",
     "energy_capacity": "",
     "energy_consumption": "",
     "group": "BASIN",
@@ -119,6 +128,7 @@
     "roworder": 7,
     "storage_capacity": 1000.0,
     "title": "BUILD_BASIN",
+    "title_english": "Fluid Container",
     "tutorial": ""
   },
   {
@@ -136,6 +146,7 @@
       }
     ],
     "description": "BUILD_BATTERYSMALL_DESC",
+    "description_english": "A storage unit that stores energy pods as pure energy. Some buildings require energy to operate. If so, they'll automatically take it from an energy storage within range.",
     "energy_capacity": "",
     "energy_consumption": "",
     "group": "BASIN",
@@ -148,6 +159,7 @@
     "roworder": 8,
     "storage_capacity": "",
     "title": "BUILD_BATTERYSMALL",
+    "title_english": "Energy Storage",
     "tutorial": ""
   },
   {
@@ -169,6 +181,7 @@
       }
     ],
     "description": "BUILD_BATTERY_DESC",
+    "description_english": "",
     "energy_capacity": "",
     "energy_consumption": "",
     "group": "BASIN",
@@ -181,6 +194,7 @@
     "roworder": 9,
     "storage_capacity": "",
     "title": "BUILD_BATTERY",
+    "title_english": "Battery Building",
     "tutorial": ""
   },
   {
@@ -189,6 +203,7 @@
     "code": "DISPENSER",
     "cost": [],
     "description": "BUILD_DISPENSER_DESC",
+    "description_english": "Assign this to a stockpile. Allows an ant to take materials from that stockpile.",
     "energy_capacity": "",
     "energy_consumption": "",
     "group": "BASIN",
@@ -201,6 +216,7 @@
     "roworder": 10,
     "storage_capacity": "",
     "title": "BUILD_DISPENSER",
+    "title_english": "Dispenser",
     "tutorial": ""
   },
   {
@@ -218,6 +234,7 @@
       }
     ],
     "description": "BUILD_SMARTDISPENSER_DESC",
+    "description_english": "An advanced type of dispenser. Pick a material and this dispenser will try to grab it from any suitable stockpile available on the island.",
     "energy_capacity": "",
     "energy_consumption": "",
     "group": "BASIN",
@@ -230,6 +247,7 @@
     "roworder": 11,
     "storage_capacity": "",
     "title": "BUILD_SMARTDISPENSER",
+    "title_english": "Smart Dispenser",
     "tutorial": ""
   },
   {
@@ -243,6 +261,7 @@
       }
     ],
     "description": "BUILD_TRASHCAN_DESC",
+    "description_english": "A building that destroys any material it receives. It can serve as a safeguard to prevent an overflow when stockpiles are full.",
     "energy_capacity": "",
     "energy_consumption": "",
     "group": "BASIN",
@@ -255,6 +274,7 @@
     "roworder": 12,
     "storage_capacity": "",
     "title": "BUILD_TRASHCAN",
+    "title_english": "Trashcan",
     "tutorial": ""
   },
   {
@@ -272,6 +292,7 @@
       }
     ],
     "description": "BUILD_CATAPULT_SMALL_DESC",
+    "description_english": "A handy device that can throw materials, enabling ants to put items on a stockpile over a distance.",
     "energy_capacity": "",
     "energy_consumption": "",
     "group": "INSERTER",
@@ -284,6 +305,7 @@
     "roworder": 15,
     "storage_capacity": "",
     "title": "BUILD_CATAPULT_SMALL",
+    "title_english": "Slinger",
     "tutorial": ""
   },
   {
@@ -309,6 +331,7 @@
       }
     ],
     "description": "BUILD_CATAPULT_DESC",
+    "description_english": "A ballistic device that can throw materials onto a stockpile. Materials can even be thrown to another island. Do bear in mind that it has a limited range. It must be assigned to a target stockpile.",
     "energy_capacity": "",
     "energy_consumption": "",
     "group": "INSERTER",
@@ -321,6 +344,7 @@
     "roworder": 16,
     "storage_capacity": "",
     "title": "BUILD_CATAPULT",
+    "title_english": "Catapult",
     "tutorial": ""
   },
   {
@@ -334,6 +358,7 @@
       }
     ],
     "description": "BUILD_SMELTER_DESC",
+    "description_english": "A factory building that uses heat to convert raw scraps into usable ingots.",
     "energy_capacity": 0.0,
     "energy_consumption": "",
     "group": "production",
@@ -346,6 +371,7 @@
     "roworder": 18,
     "storage_capacity": "",
     "title": "BUILD_SMELTER",
+    "title_english": "Smelter",
     "tutorial": ""
   },
   {
@@ -359,6 +385,7 @@
       }
     ],
     "description": "BUILD_WORKSHOP_DESC",
+    "description_english": "A fabrication machine that can create several different goods.",
     "energy_capacity": 0.0,
     "energy_consumption": "",
     "group": "production",
@@ -371,6 +398,7 @@
     "roworder": 19,
     "storage_capacity": "",
     "title": "BUILD_WORKSHOP",
+    "title_english": "Workshop",
     "tutorial": ""
   },
   {
@@ -396,6 +424,7 @@
       }
     ],
     "description": "BUILD_FACILITY_DESC",
+    "description_english": "An upgraded workshop that is capable of producing goods that require two different types of materials.",
     "energy_capacity": "",
     "energy_consumption": "",
     "group": "production",
@@ -408,6 +437,7 @@
     "roworder": 20,
     "storage_capacity": "",
     "title": "BUILD_FACILITY",
+    "title_english": "",
     "tutorial": ""
   },
   {
@@ -433,6 +463,7 @@
       }
     ],
     "description": "BUILD_FACTORY_DESC",
+    "description_english": "The largest of the production buildings, it features three inputs to accommodate recipes requiring three distinct ingredients.",
     "energy_capacity": "",
     "energy_consumption": "",
     "group": "FACTORY",
@@ -445,6 +476,7 @@
     "roworder": 22,
     "storage_capacity": "",
     "title": "BUILD_FACTORY",
+    "title_english": "Factory",
     "tutorial": ""
   },
   {
@@ -470,6 +502,7 @@
       }
     ],
     "description": "BUILD_FACTORY_DESC",
+    "description_english": "The largest of the production buildings, it features three inputs to accommodate recipes requiring three distinct ingredients.",
     "energy_capacity": "",
     "energy_consumption": "",
     "group": "FACTORY",
@@ -482,6 +515,7 @@
     "roworder": 23,
     "storage_capacity": "",
     "title": "BUILD_FACTORY",
+    "title_english": "Factory",
     "tutorial": ""
   },
   {
@@ -507,6 +541,7 @@
       }
     ],
     "description": "BUILD_GRINDER_DESC",
+    "description_english": "A heavy factory that grinds down materials into powder forms.",
     "energy_capacity": "",
     "energy_consumption": "",
     "group": "GRINDER",
@@ -519,6 +554,7 @@
     "roworder": 26,
     "storage_capacity": "",
     "title": "BUILD_GRINDER",
+    "title_english": "Grinder",
     "tutorial": ""
   },
   {
@@ -544,6 +580,7 @@
       }
     ],
     "description": "BUILD_ACIDREFINERY_DESC",
+    "description_english": "",
     "energy_capacity": "",
     "energy_consumption": "",
     "group": "GRINDER",
@@ -556,6 +593,7 @@
     "roworder": 27,
     "storage_capacity": "",
     "title": "BUILD_ACIDREFINERY",
+    "title_english": "",
     "tutorial": ""
   },
   {
@@ -577,6 +615,7 @@
       }
     ],
     "description": "BUILD_DISSOLVER_DESC",
+    "description_english": "A device that looks like a faucet. It can drip acid onto a material to create a solution.",
     "energy_capacity": "",
     "energy_consumption": "",
     "group": "GRINDER",
@@ -589,6 +628,7 @@
     "roworder": 28,
     "storage_capacity": "",
     "title": "BUILD_DISSOLVER",
+    "title_english": "Dissolver",
     "tutorial": ""
   },
   {
@@ -614,6 +654,7 @@
       }
     ],
     "description": "BUILD_REACTOR_DESC",
+    "description_english": "",
     "energy_capacity": "",
     "energy_consumption": "",
     "group": "MIXER",
@@ -626,6 +667,7 @@
     "roworder": 30,
     "storage_capacity": "",
     "title": "BUILD_REACTOR",
+    "title_english": "",
     "tutorial": ""
   },
   {
@@ -663,6 +705,7 @@
       }
     ],
     "description": "BUILD_REACTORLARGE_DESC",
+    "description_english": "",
     "energy_capacity": "",
     "energy_consumption": "",
     "group": "MIXER",
@@ -675,6 +718,7 @@
     "roworder": 31,
     "storage_capacity": "",
     "title": "BUILD_REACTORLARGE",
+    "title_english": "",
     "tutorial": ""
   },
   {
@@ -688,6 +732,7 @@
       }
     ],
     "description": "BUILD_GENERATOR_DESC",
+    "description_english": "",
     "energy_capacity": "",
     "energy_consumption": "",
     "group": "MIXER",
@@ -700,6 +745,7 @@
     "roworder": 32,
     "storage_capacity": "",
     "title": "BUILD_GENERATOR",
+    "title_english": "",
     "tutorial": ""
   },
   {
@@ -708,6 +754,7 @@
     "code": "DYNAMO",
     "cost": [],
     "description": "BUILD_DYNAMO_DESC",
+    "description_english": "Generates energy whenever an ant carrying iron passes through it.",
     "energy_capacity": "",
     "energy_consumption": "",
     "group": "MIXER",
@@ -720,6 +767,7 @@
     "roworder": 33,
     "storage_capacity": "",
     "title": "BUILD_DYNAMO",
+    "title_english": "Dynamo",
     "tutorial": ""
   },
   {
@@ -749,6 +797,7 @@
       }
     ],
     "description": "BUILD_ELECTROLYZERLARGE_DESC",
+    "description_english": "A device that uses energy from battery buildings to alter the molecular structure of certain materials. It can turn crystallite into a crystal. It will activate automatically whenever an ant carrying the material is nearby.",
     "energy_capacity": "",
     "energy_consumption": "",
     "group": "MIXER",
@@ -761,6 +810,7 @@
     "roworder": 34,
     "storage_capacity": "",
     "title": "BUILD_ELECTROLYZERLARGE",
+    "title_english": "Electrolyzer",
     "tutorial": ""
   },
   {
@@ -790,6 +840,7 @@
       }
     ],
     "description": "BUILD_ELECTROLYZER_DESC",
+    "description_english": "A more compact version of the electrolyzer. It has a decreased electrolyzing rate, but it compensates for this by having a higher contact boost. This device is best used in a consecutive layout.",
     "energy_capacity": "",
     "energy_consumption": "",
     "group": "MIXER",
@@ -802,6 +853,7 @@
     "roworder": 35,
     "storage_capacity": "",
     "title": "BUILD_ELECTROLYZER",
+    "title_english": "Electrolyzer Pin",
     "tutorial": ""
   },
   {
@@ -815,6 +867,7 @@
       }
     ],
     "description": "BUILD_SEED_MAKER_DESC",
+    "description_english": "Synthesizes seeds from plants found in the biome. Works better in a clean environment.",
     "energy_capacity": "",
     "energy_consumption": "",
     "group": "MIXER",
@@ -827,6 +880,7 @@
     "roworder": 36,
     "storage_capacity": "",
     "title": "BUILD_SEED_MAKER",
+    "title_english": "Seed Maker",
     "tutorial": ""
   },
   {
@@ -840,6 +894,7 @@
       }
     ],
     "description": "BUILD_PLANT_POT_DESC",
+    "description_english": "Plant a seed in this building and a plant will grow out of it. Use it to create a farm.",
     "energy_capacity": "",
     "energy_consumption": "",
     "group": "MIXER",
@@ -852,6 +907,7 @@
     "roworder": 37,
     "storage_capacity": "",
     "title": "BUILD_PLANT_POT",
+    "title_english": "Plant Pot",
     "tutorial": ""
   },
   {
@@ -877,6 +933,7 @@
       }
     ],
     "description": "BUILD_DECONSTRUCTOR_DESC",
+    "description_english": "Accepts goods and deconstructs them into their raw components.",
     "energy_capacity": "",
     "energy_consumption": "",
     "group": "MIXER",
@@ -889,6 +946,7 @@
     "roworder": 38,
     "storage_capacity": "",
     "title": "BUILD_DECONSTRUCTOR",
+    "title_english": "Deconstructor",
     "tutorial": ""
   },
   {
@@ -897,6 +955,7 @@
     "code": "QUEEN",
     "cost": [],
     "description": "BUILD_QUEEN_DESC",
+    "description_english": "The heart of your colony. Feed her energy so she can produce larvae.",
     "energy_capacity": 10.0,
     "energy_consumption": "",
     "group": "population",
@@ -909,6 +968,7 @@
     "roworder": 40,
     "storage_capacity": "",
     "title": "BUILD_QUEEN",
+    "title_english": "Queen",
     "tutorial": ""
   },
   {
@@ -922,6 +982,7 @@
       }
     ],
     "description": "BUILD_INCUBATOR_DESC",
+    "description_english": "A building where larvae can be grown into small workers.",
     "energy_capacity": 0.0,
     "energy_consumption": "",
     "group": "population",
@@ -934,6 +995,7 @@
     "roworder": 41,
     "storage_capacity": "",
     "title": "BUILD_INCUBATOR",
+    "title_english": "Incubator",
     "tutorial": ""
   },
   {
@@ -955,6 +1017,7 @@
       }
     ],
     "description": "BUILD_COMBINER_DESC",
+    "description_english": "A factory building that uses the components of two smaller ants to combine them into a bigger one. Newly created ants will have a replenished lifespan.",
     "energy_capacity": "",
     "energy_consumption": "",
     "group": "population",
@@ -967,6 +1030,7 @@
     "roworder": 42,
     "storage_capacity": "",
     "title": "BUILD_COMBINER",
+    "title_english": "Combiner",
     "tutorial": ""
   },
   {
@@ -988,6 +1052,7 @@
       }
     ],
     "description": "BUILD_COMBINER_DESC",
+    "description_english": "A factory building that uses the components of two smaller ants to combine them into a bigger one. Newly created ants will have a replenished lifespan.",
     "energy_capacity": "",
     "energy_consumption": "",
     "group": "population",
@@ -1000,6 +1065,7 @@
     "roworder": 43,
     "storage_capacity": "",
     "title": "BUILD_COMBINER",
+    "title_english": "Combiner",
     "tutorial": ""
   },
   {
@@ -1021,6 +1087,7 @@
       }
     ],
     "description": "BUILD_ASSEMBLER_DESC",
+    "description_english": "A large building that upgrades ants by combining them with materials. Should be connected to a stockpile by using a dispenser. Newly created ants will have a replenished lifespan.",
     "energy_capacity": 0.0,
     "energy_consumption": "",
     "group": "population",
@@ -1033,6 +1100,7 @@
     "roworder": 44,
     "storage_capacity": "",
     "title": "BUILD_ASSEMBLER",
+    "title_english": "Assembler",
     "tutorial": "ASSEMBLER"
   },
   {
@@ -1062,6 +1130,7 @@
       }
     ],
     "description": "BUILD_LARVABOOSTER_DESC",
+    "description_english": "A special device that can enhance a larva by combining it with a material. The process takes a while. It needs to be connected to a stockpile via a dispenser.",
     "energy_capacity": "",
     "energy_consumption": "",
     "group": "population",
@@ -1074,6 +1143,7 @@
     "roworder": 45,
     "storage_capacity": "",
     "title": "BUILD_LARVABOOSTER",
+    "title_english": "Larva Booster",
     "tutorial": ""
   },
   {
@@ -1082,6 +1152,7 @@
     "code": "FEEDINGSTATION",
     "cost": [],
     "description": "BUILD_FEEDINGSTATION_DESC",
+    "description_english": "Feeds individual ants energy pods to replenish their energy.",
     "energy_capacity": "",
     "energy_consumption": "",
     "group": "population",
@@ -1094,6 +1165,7 @@
     "roworder": 46,
     "storage_capacity": "",
     "title": "BUILD_FEEDINGSTATION",
+    "title_english": "",
     "tutorial": ""
   },
   {
@@ -1102,6 +1174,7 @@
     "code": "HIVE",
     "cost": [],
     "description": "BUILD_HIVE_DESC",
+    "description_english": "A building that uses ants to split them and create an ant swarm.",
     "energy_capacity": "",
     "energy_consumption": "",
     "group": "population",
@@ -1114,6 +1187,7 @@
     "roworder": 47,
     "storage_capacity": "",
     "title": "BUILD_HIVE",
+    "title_english": "Hive",
     "tutorial": ""
   },
   {
@@ -1135,6 +1209,7 @@
       }
     ],
     "description": "BUILD_CRUSHER_DESC",
+    "description_english": "A building that can recycle ants into raw materials. It is advisable to only use ants at the end of their lifespan for this purpose.",
     "energy_capacity": "",
     "energy_consumption": "",
     "group": "population",
@@ -1147,6 +1222,7 @@
     "roworder": 48,
     "storage_capacity": "",
     "title": "BUILD_CRUSHER",
+    "title_english": "Recycler",
     "tutorial": ""
   },
   {
@@ -1155,6 +1231,7 @@
     "code": "ROYAL_PALACE",
     "cost": [],
     "description": "BUILD_ROYALPALACE_DESC",
+    "description_english": "A gigantic building that is required to develop a princess into a gyne.",
     "energy_capacity": "",
     "energy_consumption": "",
     "group": "population",
@@ -1167,6 +1244,7 @@
     "roworder": 49,
     "storage_capacity": "",
     "title": "BUILD_ROYALPALACE",
+    "title_english": "Royal Palace",
     "tutorial": ""
   },
   {
@@ -1180,6 +1258,7 @@
       }
     ],
     "description": "BUILD_FLIGHT_PAD_LAUNCH_DESC",
+    "description_english": "Assign this to a landing pad. Ants capable of flight can take off and fly to the landing pad.",
     "energy_capacity": "",
     "energy_consumption": "",
     "group": "transport",
@@ -1192,6 +1271,7 @@
     "roworder": 51,
     "storage_capacity": "",
     "title": "BUILD_FLIGHT_PAD_LAUNCH",
+    "title_english": "Launch Pad",
     "tutorial": ""
   },
   {
@@ -1200,6 +1280,7 @@
     "code": "FLIGHT_PAD_LAND",
     "cost": [],
     "description": "BUILD_FLIGHT_PAD_LAND_DESC",
+    "description_english": "Flying ants will fly to this if connected to a launch pad.",
     "energy_capacity": "",
     "energy_consumption": "",
     "group": "transport",
@@ -1212,6 +1293,7 @@
     "roworder": 52,
     "storage_capacity": "",
     "title": "BUILD_FLIGHT_PAD_LAND",
+    "title_english": "Landing Pad",
     "tutorial": ""
   },
   {
@@ -1229,6 +1311,7 @@
       }
     ],
     "description": "BUILD_BRIDGESMALL_DESC",
+    "description_english": "",
     "energy_capacity": "",
     "energy_consumption": "",
     "group": "transport",
@@ -1241,6 +1324,7 @@
     "roworder": 53,
     "storage_capacity": "",
     "title": "BUILD_BRIDGESMALL",
+    "title_english": "Small Bridge",
     "tutorial": ""
   },
   {
@@ -1262,6 +1346,7 @@
       }
     ],
     "description": "BUILD_BRIDGEMEDIUM_DESC",
+    "description_english": "",
     "energy_capacity": "",
     "energy_consumption": "",
     "group": "transport",
@@ -1274,6 +1359,7 @@
     "roworder": 54,
     "storage_capacity": "",
     "title": "BUILD_BRIDGEMEDIUM",
+    "title_english": "",
     "tutorial": ""
   },
   {
@@ -1299,6 +1385,7 @@
       }
     ],
     "description": "BUILD_BRIDGELARGE_DESC",
+    "description_english": "",
     "energy_capacity": "",
     "energy_consumption": "",
     "group": "transport",
@@ -1311,6 +1398,7 @@
     "roworder": 55,
     "storage_capacity": "",
     "title": "BUILD_BRIDGELARGE",
+    "title_english": "",
     "tutorial": ""
   },
   {
@@ -1332,6 +1420,7 @@
       }
     ],
     "description": "BUILD_ANTCANNON_DESC",
+    "description_english": "",
     "energy_capacity": "",
     "energy_consumption": "",
     "group": "transport",
@@ -1344,6 +1433,7 @@
     "roworder": 56,
     "storage_capacity": "",
     "title": "BUILD_ANTCANNON",
+    "title_english": "",
     "tutorial": ""
   },
   {
@@ -1365,6 +1455,7 @@
       }
     ],
     "description": "BUILD_LAUNCHTOWER_DESC",
+    "description_english": "A larger version of the ant launcher that packs more power. Shooting from elevation also helps to achieve greater distances.",
     "energy_capacity": "",
     "energy_consumption": "",
     "group": "transport",
@@ -1377,6 +1468,7 @@
     "roworder": 57,
     "storage_capacity": "",
     "title": "BUILD_LAUNCHTOWER",
+    "title_english": "Launch Tower",
     "tutorial": ""
   },
   {
@@ -1394,6 +1486,7 @@
       }
     ],
     "description": "BUILD_BEACON_DESC",
+    "description_english": "A small lamp to light up the surroundings. Ants within range will move much faster. It requires energy from an energy storage on the same island.",
     "energy_capacity": "",
     "energy_consumption": "",
     "group": "CARGO_PLATFORM",
@@ -1406,6 +1499,7 @@
     "roworder": 60,
     "storage_capacity": "",
     "title": "BUILD_BEACONSMALL",
+    "title_english": "Small Beacon",
     "tutorial": ""
   },
   {
@@ -1423,6 +1517,7 @@
       }
     ],
     "description": "BUILD_BEACONPOLE2_DESC",
+    "description_english": "A lamp to light up its surroundings. Ants within range will move faster. It requires energy from energy pods to operate.",
     "energy_capacity": "",
     "energy_consumption": "",
     "group": "CARGO_PLATFORM",
@@ -1435,6 +1530,7 @@
     "roworder": 61,
     "storage_capacity": "",
     "title": "BUILD_BEACONPOLE2",
+    "title_english": "Beacon Pole",
     "tutorial": ""
   },
   {
@@ -1452,6 +1548,7 @@
       }
     ],
     "description": "BUILD_BEACONPOLE_DESC",
+    "description_english": "",
     "energy_capacity": "",
     "energy_consumption": "",
     "group": "CARGO_PLATFORM",
@@ -1464,6 +1561,7 @@
     "roworder": 62,
     "storage_capacity": "",
     "title": "BUILD_BEACONPOLE",
+    "title_english": "",
     "tutorial": ""
   },
   {
@@ -1485,6 +1583,7 @@
       }
     ],
     "description": "BUILD_BEACONTOWER_DESC",
+    "description_english": "",
     "energy_capacity": "",
     "energy_consumption": "",
     "group": "CARGO_PLATFORM",
@@ -1497,6 +1596,7 @@
     "roworder": 63,
     "storage_capacity": "",
     "title": "BUILD_BEACONTOWER",
+    "title_english": "",
     "tutorial": ""
   },
   {
@@ -1510,6 +1610,7 @@
       }
     ],
     "description": "BUILD_FLOORIRON_DESC",
+    "description_english": "",
     "energy_capacity": "",
     "energy_consumption": "",
     "group": "foundation",
@@ -1522,6 +1623,7 @@
     "roworder": 65,
     "storage_capacity": "",
     "title": "BUILD_FLOORIRON",
+    "title_english": "",
     "tutorial": ""
   },
   {
@@ -1535,6 +1637,7 @@
       }
     ],
     "description": "BUILD_CONCRETECORE_DESC",
+    "description_english": "After building a concrete core, concrete floor tiles can be freely placed in adjacency to this building.",
     "energy_capacity": "",
     "energy_consumption": "",
     "group": "foundation",
@@ -1547,6 +1650,7 @@
     "roworder": 66,
     "storage_capacity": "",
     "title": "BUILD_CONCRETECORE",
+    "title_english": "Concrete Core",
     "tutorial": ""
   },
   {
@@ -1555,6 +1659,7 @@
     "code": "FLOORTILE_CONCRETE",
     "cost": [],
     "description": "BUILD_FLOORCONCRETE_DESC",
+    "description_english": "Access to concrete allows you to build floor tiles more efficiently.",
     "energy_capacity": "",
     "energy_consumption": "",
     "group": "foundation",
@@ -1567,6 +1672,7 @@
     "roworder": 67,
     "storage_capacity": "",
     "title": "BUILD_FLOORCONCRETE",
+    "title_english": "Concrete Floor Tile",
     "tutorial": ""
   },
   {
@@ -1580,6 +1686,7 @@
       }
     ],
     "description": "BUILD_CONCRETE_FLOOR_DESC",
+    "description_english": "A flat surface that you can place other buildings onto. Using floor tiles allows you to build on a grid.",
     "energy_capacity": "",
     "energy_consumption": "",
     "group": "foundation",
@@ -1592,6 +1699,7 @@
     "roworder": 68,
     "storage_capacity": "",
     "title": "BUILD_CONCRETE_FLOOR",
+    "title_english": "Floor Tile",
     "tutorial": ""
   },
   {
@@ -1609,6 +1717,7 @@
       }
     ],
     "description": "BUILD_INVENTOR_PAD_DESC",
+    "description_english": "Inventor ants that are stationed here can be fed by other ants.",
     "energy_capacity": "",
     "energy_consumption": "",
     "group": "progression",
@@ -1621,6 +1730,7 @@
     "roworder": 73,
     "storage_capacity": "",
     "title": "BUILD_INVENTOR_PAD",
+    "title_english": "Inventor Pad",
     "tutorial": ""
   },
   {
@@ -1646,6 +1756,7 @@
       }
     ],
     "description": "BUILD_INVENTOR_FARM_DESC",
+    "description_english": "A more efficient alternative to the inventor pad. Full inventor ants will start producing inventor points at a steady rate, eliminating the need to manually pop them.",
     "energy_capacity": "",
     "energy_consumption": "",
     "group": "progression",
@@ -1658,6 +1769,7 @@
     "roworder": 74,
     "storage_capacity": "",
     "title": "BUILD_INVENTOR_FARM",
+    "title_english": "Inventor Tower",
     "tutorial": "INVENTOR_TOWER"
   },
   {
@@ -1683,6 +1795,7 @@
       }
     ],
     "description": "BUILD_RADAR_TOWER_DESC",
+    "description_english": "A large dish that scans for radio signals from other colonies. Without this building, an ant colony is practically invisible to other colonies.",
     "energy_capacity": "",
     "energy_consumption": "",
     "group": "progression",
@@ -1695,6 +1808,7 @@
     "roworder": 75,
     "storage_capacity": "",
     "title": "BUILD_RADAR_TOWER",
+    "title_english": "Radar Tower",
     "tutorial": ""
   },
   {
@@ -1720,6 +1834,7 @@
       }
     ],
     "description": "BUILD_RADAR_UPGRADE1_DESC",
+    "description_english": "A building that can reveal a new island on the map. Its sensors are tuned to detect a wide variety of plant species.",
     "energy_capacity": "",
     "energy_consumption": "",
     "group": "progression",
@@ -1732,6 +1847,7 @@
     "roworder": 76,
     "storage_capacity": "",
     "title": "BUILD_RADAR_UPGRADE1",
+    "title_english": "Floral Detector",
     "tutorial": ""
   },
   {
@@ -1765,6 +1881,7 @@
       }
     ],
     "description": "BUILD_RADAR_UPGRADE2_DESC",
+    "description_english": "A building that can reveal a new island on the map. It can pickup on toxic fumes coming from afar.",
     "energy_capacity": "",
     "energy_consumption": "",
     "group": "progression",
@@ -1777,6 +1894,7 @@
     "roworder": 77,
     "storage_capacity": "",
     "title": "BUILD_RADAR_UPGRADE2",
+    "title_english": "Toxicity Scanner",
     "tutorial": ""
   },
   {
@@ -1802,6 +1920,7 @@
       }
     ],
     "description": "BUILD_ISLANDSCANNERFLORAL_DESC",
+    "description_english": "",
     "energy_capacity": "",
     "energy_consumption": "",
     "group": "progression",
@@ -1814,6 +1933,7 @@
     "roworder": 78,
     "storage_capacity": "",
     "title": "BUILD_ISLANDSCANNERFLORAL",
+    "title_english": "",
     "tutorial": ""
   },
   {
@@ -1847,6 +1967,7 @@
       }
     ],
     "description": "BUILD_ISLANDSCANNERPOLLUTED_DESC",
+    "description_english": "A scanner that can reveal a new island on the map. It can pickup toxic fumes coming from wastelands rich in glass.",
     "energy_capacity": "",
     "energy_consumption": "",
     "group": "progression",
@@ -1859,6 +1980,7 @@
     "roworder": 79,
     "storage_capacity": "",
     "title": "BUILD_ISLANDSCANNERPOLLUTED",
+    "title_english": "",
     "tutorial": ""
   },
   {
@@ -1888,6 +2010,7 @@
       }
     ],
     "description": "BUILD_ISLANDSCANNERRANDOM_DESC",
+    "description_english": "A scanner that can reveal a new island on the map. Who knows what kind of island it might find?",
     "energy_capacity": "",
     "energy_consumption": "",
     "group": "progression",
@@ -1900,6 +2023,7 @@
     "roworder": 80,
     "storage_capacity": "",
     "title": "BUILD_ISLANDSCANNERRANDOM",
+    "title_english": "",
     "tutorial": ""
   },
   {
@@ -1933,6 +2057,7 @@
       }
     ],
     "description": "BUILD_ISLANDSCANNERRANDOM_DESC",
+    "description_english": "A scanner that can reveal a new island on the map. Who knows what kind of island it might find?",
     "energy_capacity": "",
     "energy_consumption": "",
     "group": "progression",
@@ -1945,6 +2070,7 @@
     "roworder": 81,
     "storage_capacity": "",
     "title": "BUILD_ISLANDSCANNERRANDOM",
+    "title_english": "",
     "tutorial": ""
   },
   {
@@ -1978,6 +2104,7 @@
       }
     ],
     "description": "BUILD_ISLANDSCANNERANCIENT_DESC",
+    "description_english": "A scanner that can reveal a new island on the map. It can feel the vibrations of heavy objects colliding in the distance.",
     "energy_capacity": "",
     "energy_consumption": "",
     "group": "progression",
@@ -1990,6 +2117,7 @@
     "roworder": 82,
     "storage_capacity": "",
     "title": "BUILD_ISLANDSCANNERANCIENT",
+    "title_english": "Ancient Island Scanner",
     "tutorial": ""
   },
   {
@@ -2019,6 +2147,7 @@
       }
     ],
     "description": "BUILD_ISLANDSCANNERTARGET_DESC",
+    "description_english": "",
     "energy_capacity": "",
     "energy_consumption": "",
     "group": "progression",
@@ -2031,6 +2160,7 @@
     "roworder": 83,
     "storage_capacity": "",
     "title": "BUILD_ISLANDSCANNERTARGET",
+    "title_english": "",
     "tutorial": ""
   },
   {
@@ -2060,6 +2190,7 @@
       }
     ],
     "description": "BUILD_ISLANDSCANNERTARGET_DESC",
+    "description_english": "",
     "energy_capacity": "",
     "energy_consumption": "",
     "group": "progression",
@@ -2072,6 +2203,7 @@
     "roworder": 84,
     "storage_capacity": "",
     "title": "BUILD_ISLANDSCANNERTARGET",
+    "title_english": "",
     "tutorial": ""
   },
   {
@@ -2101,6 +2233,7 @@
       }
     ],
     "description": "BUILD_ISLANDSCANNERTARGET_DESC",
+    "description_english": "",
     "energy_capacity": "",
     "energy_consumption": "",
     "group": "progression",
@@ -2113,6 +2246,7 @@
     "roworder": 85,
     "storage_capacity": "",
     "title": "BUILD_ISLANDSCANNERTARGET",
+    "title_english": "",
     "tutorial": ""
   },
   {
@@ -2126,6 +2260,7 @@
       }
     ],
     "description": "BUILD_CONCRETE_MONUMENT_DESC",
+    "description_english": "A sculpture that can act as an expression of civilization. Building this monument shows mastery over the art of bridges.",
     "energy_capacity": "",
     "energy_consumption": "",
     "group": "progression",
@@ -2138,6 +2273,7 @@
     "roworder": 86,
     "storage_capacity": "",
     "title": "BUILD_CONCRETE_MONUMENT",
+    "title_english": "Concrete Monument",
     "tutorial": ""
   },
   {
@@ -2163,6 +2299,7 @@
       }
     ],
     "description": "BUILD_LEDTERMINAL_DESC",
+    "description_english": "A building comprised of many brightly blinking lights, which provides insight into the use of light and color when constructed.",
     "energy_capacity": "",
     "energy_consumption": "",
     "group": "progression",
@@ -2175,6 +2312,7 @@
     "roworder": 87,
     "storage_capacity": "",
     "title": "BUILD_LEDTERMINAL",
+    "title_english": "LED Terminal",
     "tutorial": ""
   },
   {
@@ -2200,6 +2338,7 @@
       }
     ],
     "description": "BUILD_LIGHTHOUSE_DESC",
+    "description_english": "A tall pole emitting a bright light, guiding nearby flying drones during the dark hours. The light is produced through a toxic chemical reaction.",
     "energy_capacity": "",
     "energy_consumption": "",
     "group": "progression",
@@ -2212,6 +2351,7 @@
     "roworder": 88,
     "storage_capacity": "",
     "title": "BUILD_LIGHTHOUSE",
+    "title_english": "Lighthouse",
     "tutorial": ""
   },
   {
@@ -2261,6 +2401,7 @@
       }
     ],
     "description": "BUILD_MONUMENT1_DESC",
+    "description_english": "",
     "energy_capacity": "",
     "energy_consumption": "",
     "group": "progression",
@@ -2273,6 +2414,7 @@
     "roworder": 89,
     "storage_capacity": "",
     "title": "BUILD_MONUMENT1",
+    "title_english": "",
     "tutorial": ""
   },
   {
@@ -2314,6 +2456,7 @@
       }
     ],
     "description": "BUILD_MONUMENT2_DESC",
+    "description_english": "",
     "energy_capacity": "",
     "energy_consumption": "",
     "group": "progression",
@@ -2326,6 +2469,7 @@
     "roworder": 90,
     "storage_capacity": "",
     "title": "BUILD_MONUMENT2",
+    "title_english": "",
     "tutorial": ""
   },
   {
@@ -2351,6 +2495,7 @@
       }
     ],
     "description": "BUILD_GYNEMAKER_DESC",
+    "description_english": "One of the most important buildings in an ant colony where many kinds of ants can be combined to create a large cocoon, resulting in the emergence of a new queen ready to fly out and establish a new colony",
     "energy_capacity": "",
     "energy_consumption": "",
     "group": "progression",
@@ -2363,6 +2508,7 @@
     "roworder": 91,
     "storage_capacity": "",
     "title": "BUILD_GYNEMAKER",
+    "title_english": "Gyne Cocoon",
     "tutorial": ""
   },
   {
@@ -2380,6 +2526,7 @@
       }
     ],
     "description": "BUILD_GYNETOWER_DESC",
+    "description_english": "A high vantage point where a young queen can wait for the next nuptial flight.",
     "energy_capacity": "",
     "energy_consumption": "",
     "group": "progression",
@@ -2392,6 +2539,7 @@
     "roworder": 92,
     "storage_capacity": "",
     "title": "BUILD_GYNETOWER",
+    "title_english": "Gyne Tower",
     "tutorial": ""
   },
   {
@@ -2400,6 +2548,7 @@
     "code": "CHEAT_PICKUPS_SPAWNER",
     "cost": [],
     "description": "BUILD_CHEAT_PICKUPS_SPAWNER_DESC",
+    "description_english": "A nondescript small box that lets you spawn any type of material. Don't ask questions about its origin.",
     "energy_capacity": "",
     "energy_consumption": "",
     "group": "other",
@@ -2412,6 +2561,7 @@
     "roworder": 94,
     "storage_capacity": "",
     "title": "BUILD_CHEAT_PICKUPS_SPAWNER",
+    "title_english": "Material Spawner",
     "tutorial": ""
   },
   {
@@ -2420,6 +2570,7 @@
     "code": "CHEAT_ANT_SPAWNER",
     "cost": [],
     "description": "BUILD_CHEAT_ANT_SPAWNER_DESC",
+    "description_english": "A nondescript large box that lets you spawn any type of ant. This is seen as cheating in many cultures.",
     "energy_capacity": "",
     "energy_consumption": "",
     "group": "other",
@@ -2432,6 +2583,7 @@
     "roworder": 95,
     "storage_capacity": "",
     "title": "BUILD_CHEAT_ANT_SPAWNER",
+    "title_english": "Ant Spawner",
     "tutorial": ""
   }
 ]
