@@ -1859,8 +1859,8 @@ function md.Export.Loc {
 
     # skip empty and non-data rows
     $curOrder = -1
-    $rows = @(
-        $rows
+    $rows_UI = @(
+        $rows_UI
             | % {
                 # capture grouping records, else add them to the data
                 $record = $_
@@ -1876,7 +1876,7 @@ function md.Export.Loc {
     )
 
     $exportExcel_Splat = @{
-        InputObject   = @( $rows )
+        InputObject   = @( $rows_UI )
         Path          = $Paths.Xlsx_Loc
         Show          = $false # $Build.AutoOpen.Loc ?? $false
         WorksheetName = 'UI'
@@ -1895,10 +1895,10 @@ function md.Export.Loc {
         WorksheetName = 'Objects'
 
     }
-    $rows2 =  Import-Excel @importExcel_Splat
+    $rows_Objects =  Import-Excel @importExcel_Splat
     $curOrder = -1
-    $rows2 = @(
-        $rows2
+    $rows_Objects = @(
+        $rows_Objects
             | % {
                 # capture grouping records, else add them to the data
                 $record = $_
@@ -1933,12 +1933,12 @@ function md.Export.Loc {
 
     $exportExcel_Splat = @{
         InputObject   = @(
-            $rows2
+            $rows_Objects
         )
         Path          = $Paths.Xlsx_Loc
         Show          = $false #  $Build.AutoOpen.Loc ?? $false
-        WorksheetName = 'ResearchRecipes'
-        TableName     = 'ResearchRecipes_Data'
+        WorksheetName = 'Objects'
+        TableName     = 'Objects_Data'
         TableStyle    = 'Light5'
         AutoSize      = $True
         ConditionalText = @(
@@ -1953,7 +1953,7 @@ function md.Export.Loc {
         Property = 'code'
     }
 
-    $forJson = @(
+    $forJson_Loc_UI = @(
         $Rows | %{
             $record = $_
             # coerce blankables into empty strings for json
@@ -1964,14 +1964,14 @@ function md.Export.Loc {
         }
     ) | Sort-Object @sort_splat
 
-    $forJson
+    $forJson_Loc_UI
         | ConvertTo-Json -depth 9
         | Set-Content -path $Paths.Json_Loc_UI # -Confirm
 
     $Paths.Json_Loc_UI | md.Log.WroteFile
 
-    $forJson2 = @(
-        $Rows2 | %{
+    $forJson_Loc_Objects = @(
+        $rows_Objects | %{
             $record = $_
             $record = md.Convert.BlankPropsToEmpty $Record
             $record = md.Convert.KeyNames $Record
@@ -1979,7 +1979,7 @@ function md.Export.Loc {
         }
     ) | Sort-Object @sort_splat
 
-    $forJson2
+    $forJson_Loc_Objects
         | ConvertTo-Json -depth 9
         | Set-Content -path $Paths.Json_Loc_Objects # -Confirm
 
@@ -1988,7 +1988,7 @@ function md.Export.Loc {
 
     # also emit expanded records
     # $forJson = @(
-    #     $Rows2 | %{
+    #     $rows_Objects | %{
     #         $record = $_
     #         $record # md.Convert.ExpandProperty $Record -Prop $expandProp
     #     }
