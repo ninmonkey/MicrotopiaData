@@ -1810,6 +1810,27 @@ function md.ShowCopyOfWorkbook {
     Get-Item $Dest | Invoke-Item
 }
 
+function md.Get-DataVersion {
+    <#
+    .SYNOPSIS
+    which main and minor version numbers were used to build from?
+    .EXAMPLE
+        md.Get-DataVersion
+    #>
+    $changelog = Get-Content -Raw $paths.json_ChangeLog
+        | ConvertFrom-Json -Depth 5
+
+    $mainVersion = $changelog[0].Version
+    $minorVersion = $changelog
+        | ? Version -eq $mainVersion
+        | Select-Object -last 1 | % Code
+
+    [PSCustomObject]@{
+        MainVersion  = $mainVersion
+        MinorVersion = $minorVersion
+    }
+}
+
 function md.Export.Loc {
     <#
     .SYNOPSIS
@@ -1840,7 +1861,7 @@ function md.Export.Loc {
         WorksheetName = 'UI'
 
     }
-    $rows =  Import-Excel @importExcel_Splat
+    $rows_UI =  Import-Excel @importExcel_Splat
 
     # column descriptions are inline
     # $description = $rows | ? Code -Match '^\s*//\s*$' | Select -First 1
@@ -1954,7 +1975,7 @@ function md.Export.Loc {
     }
 
     $forJson_Loc_UI = @(
-        $Rows | %{
+        $Rows_UI | %{
             $record = $_
             # coerce blankables into empty strings for json
             $record = md.Convert.BlankPropsToEmpty $Record
@@ -2356,10 +2377,14 @@ function md.Export.Readme.FileListing {
 
     ) | Join-String -sep "`n"
 
+    $dataVersion = md.Get-DataVersion
     $templateStr = Get-Content -Raw $paths.Template_Readme
     $tokens = @{
         '{{folder_version}}'      = $paths.ExportRoot_CurrentVersion | Split-path -Leaf
         '{{file_listing_markup}}' = $fileListingMarkup
+
+        '{{main_version}}'  = $dataVersion.MainVersion
+        '{{minor_version}}' = $dataVersion.MinorVersion
     }
 
     md.Template.ReplaceTokens -TemplateString $TemplateStr -TokensToReplace $tokens

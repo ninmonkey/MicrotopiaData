@@ -12,11 +12,15 @@ Check out the [Discord Server](https://discord.gg/F8GKVrxcWN)
 - Summary of exported data for [Version v1.0.8](./export/v1.0.8/readme.md)
 - Regular changelog for [Version v1.0.8](./export/v1.0.8/changelog.md) or [Search Changelog](./export/v1.0.8/csv/changelog.csv)
 
+```yml
+mainVersion: 'V1.0.8b'
+minorVersion: 'V1.0.8b_1'
+```
 
 
 ## About
 
-Files generated on: 2025-03-19 11:30:41 PM
+Files generated on: 2025-03-23 12:29:30 PM
 For version: v1.0.8
 
 ## Files by Type

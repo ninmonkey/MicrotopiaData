@@ -12,5 +12,9 @@ Check out the [Discord Server](https://discord.gg/F8GKVrxcWN)
 - Summary of exported data for [Version {{folder_version}}](./export/{{folder_version}}/readme.md)
 - Regular changelog for [Version {{folder_version}}](./export/{{folder_version}}/changelog.md) or [Search Changelog](./export/{{folder_version}}/csv/changelog.csv)
 
+```yml
+mainVersion: '{{main_version}}'
+minorVersion: '{{minor_version}}'
+```
 
 {{file_listing_markup}}
