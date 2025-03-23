@@ -816,7 +816,7 @@ function md.Export.Biome.Biome_Objects {
         AutoSize      = $True
         ConditionalText = @(
             # md.New-ConditionalTextTemplate -TemplateName 'Checkbox-x.Green'
-            md.New-ConditionalTextTemplate -TemplateName 'TextContains.True'
+            md.New-ConditionalTextTemplate -TemplateName 'TextContains.TrueOrFalse'
         )
     }
 
@@ -1136,7 +1136,10 @@ function md.Export.TechTree.TechTree {
 function md.New-ConditionalTextTemplate {
     param(
         [ArgumentCompletions(
-             'Checkbox-x.Green', 'TextContains.True' )]
+             'Checkbox-x.Green',
+            'TextContains.TrueOrFalse',
+            'TextContains.True', 'TextContains.False'
+            )]
         [string] $TemplateName,
         [IDictionary] $TemplateParameters = @{}
     )
@@ -1164,6 +1167,25 @@ function md.New-ConditionalTextTemplate {
                 PatternType          = [OfficeOpenXml.Style.ExcelFillStyle]::Solid
             }
             New-ConditionalText @newConditionalTextSplat
+            break
+        }
+        'TextContains.False' {
+            # if the value is exactly the string "X", then render it as a green checkbox
+            $newConditionalTextSplat = @{
+                Text                 = 'FALSE'
+                ConditionalType      = 'ContainsText'
+                ConditionalTextColor = [System.Drawing.Color]::DarkRed
+                BackgroundColor      = [System.Drawing.Color]::LightCoral
+                PatternType          = [OfficeOpenXml.Style.ExcelFillStyle]::Solid
+            }
+            New-ConditionalText @newConditionalTextSplat
+            break
+        }
+        'TextContains.TrueOrFalse' {
+            @(
+                md.New-ConditionalTextTemplate -TemplateName 'TextContains.True'
+                md.New-ConditionalTextTemplate -TemplateName 'TextContains.False'
+            )
             break
         }
         default {
