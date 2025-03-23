@@ -9,8 +9,8 @@
     "german": "Grundgeschwindigkeit: ^1",
     "japanese": "基本移動速度：^1",
     "korean": "기본 행군 속도: ^1",
-    "order": 526,
     "polish": "Podstawowa szybkość ruchu: ^1",
+    "roworder": 526,
     "russian": "Базовая скорость: ^1"
   },
   {
@@ -23,8 +23,8 @@
     "german": "Kann:",
     "japanese": "担当可能：",
     "korean": "할 수 있는 일:",
-    "order": 117,
     "polish": "Zdolności:",
+    "roworder": 117,
     "russian": "Может:"
   },
   {
@@ -37,8 +37,8 @@
     "german": "Fliegen",
     "japanese": "飛行",
     "korean": "비행",
-    "order": 119,
     "polish": "Latająca",
+    "roworder": 119,
     "russian": "Полет"
   },
   {
@@ -51,8 +51,8 @@
     "german": "Erfinden",
     "japanese": "研究",
     "korean": "연구",
-    "order": 118,
     "polish": "Badanie",
+    "roworder": 118,
     "russian": "Изобретение"
   },
   {
@@ -65,8 +65,8 @@
     "german": "Reproduktion",
     "japanese": "繁殖中",
     "korean": "번식",
-    "order": 470,
     "polish": "Rozmnażanie",
+    "roworder": 470,
     "russian": "Воспроизводство"
   },
   {
@@ -79,8 +79,8 @@
     "german": "",
     "japanese": "",
     "korean": "",
-    "order": 602,
     "polish": "",
+    "roworder": 602,
     "russian": ""
   },
   {
@@ -93,8 +93,8 @@
     "german": "Die Ameise kann nicht eintreten, wenn sie etwas trägt!",
     "japanese": "アリは何かを運んでいると入れません！",
     "korean": "개미가 물건을 들고 있으면 들어갈 수 없습니다!",
-    "order": 601,
     "polish": "Mrówka nie może wejść, gdy niesie coś!",
+    "roworder": 601,
     "russian": "Муравей не может войти, если несёт что-то!"
   },
   {
@@ -107,8 +107,8 @@
     "german": "",
     "japanese": "",
     "korean": "",
-    "order": 604,
     "polish": "",
+    "roworder": 604,
     "russian": ""
   },
   {
@@ -121,8 +121,8 @@
     "german": "Die Ameise kann das Gebäude nicht betreten, falsche Kaste!",
     "japanese": "アリは建物に入れません、間違ったカーストです！",
     "korean": "개미가 건물에 들어갈 수 없습니다, 잘못된 계급입니다!",
-    "order": 603,
     "polish": "Mrówka nie może wejść do budynku, zła kasta!",
+    "roworder": 603,
     "russian": "Муравей не может войти в здание, неверная каста!"
   },
   {
@@ -135,8 +135,8 @@
     "german": "Aktuelle Grundgeschwindigkeit: ^1",
     "japanese": "現在の移動速度：^1",
     "korean": "현재 행군 속도: ^1",
-    "order": 525,
     "polish": "Aktualna szybkość ruchu: ^1",
+    "roworder": 525,
     "russian": "Текущая скорость: ^1"
   },
   {
@@ -149,8 +149,8 @@
     "german": "Tot",
     "japanese": "死亡",
     "korean": "사망",
-    "order": 121,
     "polish": "Nie żyje",
+    "roworder": 121,
     "russian": "Труп"
   },
   {
@@ -163,8 +163,8 @@
     "german": "Durch Bug im Spiel getötet",
     "japanese": "バグによって死んだ",
     "korean": "게임 버그에 의해 사망",
-    "order": 136,
     "polish": "Padła przez błąd w grze",
+    "roworder": 136,
     "russian": "Умер из-за ошибки в игре"
   },
   {
@@ -177,8 +177,8 @@
     "german": "Von Schrottpresse recycelt",
     "japanese": "クラッシャーに回収された",
     "korean": "분쇄기에 회수",
-    "order": 135,
     "polish": "Zmielona przez rozdrabniarkę",
+    "roworder": 135,
     "russian": "Переработан дробилкой"
   },
   {
@@ -191,8 +191,8 @@
     "german": "Von dir getötet",
     "japanese": "殺された",
     "korean": "플레이어에 의해 사망",
-    "order": 133,
     "polish": "Zabita przez gracza",
+    "roworder": 133,
     "russian": "Был убит тобой"
   },
   {
@@ -205,8 +205,8 @@
     "german": "Von Insel gefallen",
     "japanese": "島から落ちて死んだ",
     "korean": "섬에서 추락하여 사망",
-    "order": 131,
     "polish": "Spadła z wyspy",
+    "roworder": 131,
     "russian": "Упал с острова"
   },
   {
@@ -219,8 +219,8 @@
     "german": "Durch Aufprall gestorben",
     "japanese": "衝撃によって死んだ",
     "korean": "충돌하여 사망",
-    "order": 140,
     "polish": "Zginęła od upadku",
+    "roworder": 140,
     "russian": "Умер при столкновении"
   },
   {
@@ -233,8 +233,8 @@
     "german": "Für Punkte explodiert",
     "japanese": "爆破されてポイントとなった",
     "korean": "폭발하여 점수 제공",
-    "order": 134,
     "polish": "Wybuchła dla punktów",
+    "roworder": 134,
     "russian": "Взорван, чтобы получить очки"
   },
   {
@@ -247,8 +247,8 @@
     "german": "Aus unbekannter Ursache gestorben",
     "japanese": "原因不明の死を遂げた",
     "korean": "알 수 없는 이유로 사망",
-    "order": 137,
     "polish": "Padła z nieustalonych przyczyn",
+    "roworder": 137,
     "russian": "Умер по неизвестным причинам"
   },
   {
@@ -261,8 +261,8 @@
     "german": "An Altersschwäche gestorben",
     "japanese": "老いによって死んだ",
     "korean": "자연사로 사망",
-    "order": 130,
     "polish": "Padła ze starości",
+    "roworder": 130,
     "russian": "Умер от старости"
   },
   {
@@ -275,8 +275,8 @@
     "german": "An Schimmelpilzvergiftung gestorben",
     "japanese": "カビ中毒によって死んだ",
     "korean": "곰팡이 중독으로 사망",
-    "order": 138,
     "polish": "Padła od zatrucia pleśnią",
+    "roworder": 138,
     "russian": "Отравился плесенью"
   },
   {
@@ -289,8 +289,8 @@
     "german": "Durch Schimmelpilzvergiftung explodiert",
     "japanese": "カビ中毒による爆発で死んだ",
     "korean": "곰팡이 중독으로 폭발하여 사망",
-    "order": 139,
     "polish": "Wybuchła od zatrucia pleśnią",
+    "roworder": 139,
     "russian": "Взорвался от отравления плесенью"
   },
   {
@@ -303,8 +303,8 @@
     "german": "An Giftmüll gestorben",
     "japanese": "有毒廃棄物によって死んだ",
     "korean": "독성 폐기물에 의해 사망",
-    "order": 132,
     "polish": "Padła od toksycznych opadów",
+    "roworder": 132,
     "russian": "Отравился токсичными отходами"
   },
   {
@@ -317,8 +317,8 @@
     "german": "Ablegen",
     "japanese": "ドロップ",
     "korean": "드롭",
-    "order": 122,
     "polish": "Upuść",
+    "roworder": 122,
     "russian": "Бросить"
   },
   {
@@ -331,8 +331,8 @@
     "german": "Elektrolysefortschritt",
     "japanese": "電解進行度",
     "korean": "전해 진행",
-    "order": 129,
     "polish": "Postęp elektrolizy",
+    "roworder": 129,
     "russian": "Прогресс электролиза"
   },
   {
@@ -345,8 +345,8 @@
     "german": "Energie",
     "japanese": "エナジー",
     "korean": "에너지",
-    "order": 120,
     "polish": "Energia",
+    "roworder": 120,
     "russian": "Энергия"
   },
   {
@@ -359,8 +359,8 @@
     "german": "Gesammelte Energie:",
     "japanese": "収集済みのエナジー：",
     "korean": "수집한 에너지:",
-    "order": 124,
     "polish": "Zgromadzona energia:",
+    "roworder": 124,
     "russian": "Собранная энергия:"
   },
   {
@@ -373,8 +373,8 @@
     "german": "Bewege ihn zu einem Erfinderplatz und füttere ihn.",
     "japanese": "発明プラットフォームに移動させることで食事を与えることができます。",
     "korean": "발명가 플랫폼으로 이동하여 공급을 시작합니다.",
-    "order": 125,
     "polish": "Aby rozpocząć karmienie, przejdź na platformę wynalazcy.",
+    "roworder": 125,
     "russian": "Переместись на площадку ученых, чтобы начать кормление."
   },
   {
@@ -387,8 +387,8 @@
     "german": "Bewege ihn zu einem Erfinderplatz und füttere ihn weiter.",
     "japanese": "発明プラットフォームに移動させることで引き続き食事を与えることができます。",
     "korean": "발명가 플랫폼으로 이동하여 공급을 계속합니다.",
-    "order": 126,
     "polish": "Aby kontynuować karmienie, przejdź na platformę wynalazcy.",
+    "roworder": 126,
     "russian": "Переместись на площадку ученых, чтобы продолжить кормление."
   },
   {
@@ -401,8 +401,8 @@
     "german": "Fortschritt:",
     "japanese": "プロセス：",
     "korean": "진행:",
-    "order": 123,
     "polish": "Postępy:",
+    "roworder": 123,
     "russian": "Прогресс:"
   },
   {
@@ -415,8 +415,8 @@
     "german": "Wartet auf Futter ...",
     "japanese": "食事待ち……",
     "korean": "음식 기다리는 중......",
-    "order": 127,
     "polish": "Oczekiwanie na żywność...",
+    "roworder": 127,
     "russian": "Ждет еду..."
   },
   {
@@ -429,8 +429,8 @@
     "german": "Lebensdauer",
     "japanese": "寿命",
     "korean": "수명",
-    "order": 128,
     "polish": "Żywotność",
+    "roworder": 128,
     "russian": "Срок жизни"
   },
   {
@@ -443,8 +443,8 @@
     "german": "Abbau ...",
     "japanese": "採掘中……",
     "korean": "채광 중...",
-    "order": 345,
     "polish": "Wydobywanie...",
+    "roworder": 345,
     "russian": "Добыча..."
   },
   {
@@ -457,8 +457,8 @@
     "german": "Sammle von hier mit:",
     "japanese": "収集する方法：",
     "korean": "수집 방식:",
-    "order": 181,
     "polish": "Funkcje wymagane do zebrania:",
+    "roworder": 181,
     "russian": "Собрать с помощью:"
   },
   {
@@ -471,8 +471,8 @@
     "german": "Enthält:",
     "japanese": "獲得可能：",
     "korean": "포함:",
-    "order": 180,
     "polish": "Zawartość:",
+    "roworder": 180,
     "russian": "Содержит:"
   },
   {
@@ -485,8 +485,8 @@
     "german": "Früchte:",
     "japanese": "果物：",
     "korean": "과일:",
-    "order": 179,
     "polish": "Owoce:",
+    "roworder": 179,
     "russian": "Фрукты:"
   },
   {
@@ -499,8 +499,8 @@
     "german": "Nimmt auf:",
     "japanese": "受け入れ：",
     "korean": "수령:",
-    "order": 252,
     "polish": "Przyjmuje:",
+    "roworder": 252,
     "russian": "Принимает:"
   },
   {
@@ -513,8 +513,8 @@
     "german": "Klicke, um erlaubtes Material zu bestimmen.",
     "japanese": "クリックして受け入れる素材を選んでください。",
     "korean": "클릭하여 허용할 재료를 확인하세요.",
-    "order": 253,
     "polish": "Kliknij, aby określić dozwolony materiał.",
+    "roworder": 253,
     "russian": "Щелкни, чтобы задать разрешенный материал."
   },
   {
@@ -527,8 +527,8 @@
     "german": "Alle",
     "japanese": "全素材",
     "korean": "임의의 재료",
-    "order": 254,
     "polish": "Dowolny",
+    "roworder": 254,
     "russian": "Любые"
   },
   {
@@ -541,8 +541,8 @@
     "german": "Ziel zuweisen",
     "japanese": "ターゲットへ分配",
     "korean": "목표 배정",
-    "order": 153,
     "polish": "Przypisz cel",
+    "roworder": 153,
     "russian": "Назначить цель"
   },
   {
@@ -555,8 +555,8 @@
     "german": "Gespeicherte Energie:",
     "japanese": "貯蔵エナジー：",
     "korean": "저장한 에너지:",
-    "order": 178,
     "polish": "Zmagazynowana energia:",
+    "roworder": 178,
     "russian": "Собранная энергия:"
   },
   {
@@ -569,8 +569,8 @@
     "german": "Nicht mit Strom versorgt. Benötigt Energie.",
     "japanese": "供給がないため、エナジーが不足しています。",
     "korean": "전기가 공급되지 않았으며, 에너지가 필요합니다.",
-    "order": 402,
     "polish": "Brak zasilania, potrzeba energii.",
+    "roworder": 402,
     "russian": "Не работает, необходима энергия."
   },
   {
@@ -583,8 +583,8 @@
     "german": "Mit Strom versorgt. Bezieht Energie aus Batteriegebäude.",
     "japanese": "エナジー供給済み、バッテリー建築物からエナジーが提供されます。",
     "korean": "전기가 공급되어 배터리 건물에서 에너지를 획득합니다.",
-    "order": 404,
     "polish": "Budynek zasilany z magazynu energii.",
+    "roworder": 404,
     "russian": "Работает, получает энергию от стационарной батареи."
   },
   {
@@ -597,8 +597,8 @@
     "german": "Mit Strom versorgt seit: ^1",
     "japanese": "エナジー供給時間：^1",
     "korean": "전기 공급 시간: ^1",
-    "order": 403,
     "polish": "Zasilanie przez ^1",
+    "roworder": 403,
     "russian": "Энергии на: ^1"
   },
   {
@@ -611,8 +611,8 @@
     "german": "Zum Bauen benötigte Materialien:",
     "japanese": "建設に必要な素材：",
     "korean": "건축 요구 재료:",
-    "order": 148,
     "polish": "Materiały wymagane do budowy:",
+    "roworder": 148,
     "russian": "Материалы для постройки:"
   },
   {
@@ -625,8 +625,8 @@
     "german": "Winkel:",
     "japanese": "角度：",
     "korean": "각도:",
-    "order": 176,
     "polish": "Kąt:",
+    "roworder": 176,
     "russian": "Угол:"
   },
   {
@@ -639,8 +639,8 @@
     "german": "Kraft:",
     "japanese": "力：",
     "korean": "강도:",
-    "order": 177,
     "polish": "Moc:",
+    "roworder": 177,
     "russian": "Мощность:"
   },
   {
@@ -653,8 +653,8 @@
     "german": "Drehung:",
     "japanese": "回転：",
     "korean": "회전:",
-    "order": 175,
     "polish": "Obrót:",
+    "roworder": 175,
     "russian": "Вращение:"
   },
   {
@@ -667,8 +667,8 @@
     "german": "Kein Lagerplatz zugewiesen!",
     "japanese": "配置された倉庫がありません！",
     "korean": "보관 창고를 지정하지 않았습니다!",
-    "order": 329,
     "polish": "Brak przypisanego kopca.",
+    "roworder": 329,
     "russian": "Склад не назначен!"
   },
   {
@@ -681,8 +681,8 @@
     "german": "Flüssigkeiten können nicht geworfen werden!",
     "japanese": "液体を投射できません。",
     "korean": "액체를 투척할 수 없습니다!",
-    "order": 328,
     "polish": "Płynami nie można rzucać!",
+    "roworder": 328,
     "russian": "Жидкости нельзя бросать!"
   },
   {
@@ -695,8 +695,8 @@
     "german": "Zugewiesener Lagerplatz ist voll!",
     "japanese": "この倉庫は満タンです！",
     "korean": "지정한 보관 창고가 가득 찼습니다!",
-    "order": 326,
     "polish": "Przypisany kopiec jest pełny.",
+    "roworder": 326,
     "russian": "Назначенный склад заполнен!"
   },
   {
@@ -709,8 +709,8 @@
     "german": "Larven können nicht geworfen werden!",
     "japanese": "幼虫を投射できません。",
     "korean": "유충을 투척할 수 없습니다!",
-    "order": 327,
     "polish": "Larwami nie można rzucać!",
+    "roworder": 327,
     "russian": "Личинки нельзя бросать!"
   },
   {
@@ -723,8 +723,8 @@
     "german": "Ziel wechseln",
     "japanese": "ターゲットを変更",
     "korean": "목표 변경",
-    "order": 154,
     "polish": "Zmień cel",
+    "roworder": 154,
     "russian": "Изменить цель"
   },
   {
@@ -737,8 +737,8 @@
     "german": "Bitte wähle, was du produzieren möchtest.",
     "japanese": "生産する物を選んでください。",
     "korean": "생산할 품목을 선택해 주세요.",
-    "order": 155,
     "polish": "Wybierz, co ma być wyprodukowane.",
+    "roworder": 155,
     "russian": "Выбери, что ты хочешь производить."
   },
   {
@@ -751,8 +751,8 @@
     "german": "Linke Seite",
     "japanese": "左側",
     "korean": "왼쪽",
-    "order": 458,
     "polish": "Po lewej",
+    "roworder": 458,
     "russian": "Левый вход"
   },
   {
@@ -765,8 +765,8 @@
     "german": "Links",
     "japanese": "左",
     "korean": "왼쪽",
-    "order": 456,
     "polish": "W lewo",
+    "roworder": 456,
     "russian": "Вправо"
   },
   {
@@ -779,8 +779,8 @@
     "german": "Rechte Seite",
     "japanese": "右側",
     "korean": "오른쪽",
-    "order": 459,
     "polish": "Po prawej",
+    "roworder": 459,
     "russian": "Правый вход"
   },
   {
@@ -793,8 +793,8 @@
     "german": "Rechts",
     "japanese": "右",
     "korean": "오른쪽",
-    "order": 457,
     "polish": "W prawo",
+    "roworder": 457,
     "russian": "Влево"
   },
   {
@@ -807,8 +807,8 @@
     "german": "Muss neben einem Betonkern platziert werden!",
     "japanese": "コンクリートコアへ隣接するように配置してください！",
     "korean": "콘크리트 핵에 인접한 곳에 배치해야 합니다!",
-    "order": 464,
     "polish": "Musi przylegać do betonowego rdzenia.",
+    "roworder": 464,
     "russian": "Необходимо разместить рядом с бетонным ядром!"
   },
   {
@@ -821,8 +821,8 @@
     "german": "Entscheidet über Materialankunft",
     "japanese": "素材到着後に決定",
     "korean": "재료 도착 시 결정",
-    "order": 158,
     "polish": "Dostarcz materiały do produkcji",
+    "roworder": 158,
     "russian": "Будет решено, когда поступят материалы"
   },
   {
@@ -835,8 +835,8 @@
     "german": "Zerlege ...",
     "japanese": "分解中…",
     "korean": "해체 중...",
-    "order": 515,
     "polish": "Demontaż...",
+    "roworder": 515,
     "russian": "Разбор...."
   },
   {
@@ -849,8 +849,8 @@
     "german": "Fortschritt:",
     "japanese": "進捗：",
     "korean": "진행:",
-    "order": 516,
     "polish": "Postępy:",
+    "roworder": 516,
     "russian": "Прогресс:"
   },
   {
@@ -863,8 +863,8 @@
     "german": "Warte auf Material zum Zerlegen.",
     "japanese": "素材の分解を待っています。",
     "korean": "재료 해체를 기다리는 중",
-    "order": 514,
     "polish": "Oczekiwanie na materiał do demontażu.",
+    "roworder": 514,
     "russian": "Ожидание материала для разбора."
   },
   {
@@ -877,8 +877,8 @@
     "german": "Die Larven werden auf den Boden geworfen.",
     "japanese": "幼虫は地面に投げられます。",
     "korean": "유충이 지면에 투척됩니다.",
-    "order": 333,
     "polish": "Spowoduje to wyrzucenie larw na ziemię.",
+    "roworder": 333,
     "russian": "Личинка будет брошена на землю."
   },
   {
@@ -891,8 +891,8 @@
     "german": "Es gibt nicht genug Platz, um alle Baumaterialien zu lagern.",
     "japanese": "これらの建築材料を保管するスペースがありません。",
     "korean": "전체 건축 재료를 보관할 충분한 공간이 없습니다.",
-    "order": 152,
     "polish": "Za mało miejsca na przechowanie wszystkich materiałów do budowy.",
+    "roworder": 152,
     "russian": "Недостаточно места для хранения строительных материалов."
   },
   {
@@ -905,8 +905,8 @@
     "german": "Möchtest du das Gebäude \"^1\" wirklich abreißen?",
     "japanese": "建造物\"^1\"を取り壊しますか？",
     "korean": "정말 \"^1\" 건물을 철거하시겠습니까?",
-    "order": 467,
     "polish": "Chcesz zburzyć budynek „^1”?",
+    "roworder": 467,
     "russian": "Точно разрушить здание «^1»?"
   },
   {
@@ -919,8 +919,8 @@
     "german": "Möchtest du diese Gebäude wirklich abreißen?",
     "japanese": "この建造物を取り壊しますか？",
     "korean": "정말 해당 건물을 철거하시겠습니까?",
-    "order": 468,
     "polish": "Chcesz zburzyć te budynki?",
+    "roworder": 468,
     "russian": "Точно разрушить эти здания?"
   },
   {
@@ -933,8 +933,8 @@
     "german": "Möchtest du dieses Gebäude wirklich abreißen?",
     "japanese": "この建物を取りこわしますか？",
     "korean": "해당 건물을 철거하시겠습니까?",
-    "order": 151,
     "polish": "Chcesz zburzyć ten budynek?",
+    "roworder": 151,
     "russian": "Точно разрушить это здание?"
   },
   {
@@ -947,8 +947,8 @@
     "german": "Verbundener Lagerplatz ist leer!",
     "japanese": "繋がっている倉庫が空になりました！",
     "korean": "연결한 보관 창고가 비어있습니다!",
-    "order": 143,
     "polish": "Przyłączony kopiec jest pusty!",
+    "roworder": 143,
     "russian": "Доступный склад пустой!"
   },
   {
@@ -961,8 +961,8 @@
     "german": "Kein Lagerplatz verbunden!",
     "japanese": "倉庫に繋がっていません！",
     "korean": "보관 창고에 연결되지 않았습니다!",
-    "order": 142,
     "polish": "Nie połączono z kopcem!",
+    "roworder": 142,
     "russian": "Нет доступного склада!"
   },
   {
@@ -975,8 +975,8 @@
     "german": "Verteilt:",
     "japanese": "分配：",
     "korean": "배정:",
-    "order": 162,
     "polish": "Wydaje:",
+    "roworder": 162,
     "russian": "Распределяет:"
   },
   {
@@ -989,8 +989,8 @@
     "german": "Material auf dieser Insel nicht vorhanden!",
     "japanese": "この島には素材がありません！",
     "korean": "해당 섬에는 해당 재료가 없습니다!",
-    "order": 341,
     "polish": "Ten materiał nie występuje na tej wyspie!",
+    "roworder": 341,
     "russian": "На этом острове нет нужного материала!"
   },
   {
@@ -1003,8 +1003,8 @@
     "german": "Kein Material ausgewählt!",
     "japanese": "素材を選んでいません！",
     "korean": "재료를 선택하지 않았습니다!",
-    "order": 340,
     "polish": "Nie wybrano materiału.",
+    "roworder": 340,
     "russian": "Материал не выбран!"
   },
   {
@@ -1017,8 +1017,8 @@
     "german": "Elektrolyse ...",
     "japanese": "電解中……",
     "korean": "전해 중...",
-    "order": 355,
     "polish": "Trwa elektroliza...",
+    "roworder": 355,
     "russian": "Электролизация..."
   },
   {
@@ -1031,8 +1031,8 @@
     "german": "Mit Batteriegebäude verbunden. Keine Energie verfügbar.",
     "japanese": "バッテリー建築物に接続しました。使用可能なエナジーがありません。",
     "korean": "배터리 건물에 연결되었습니다. 사용 가능한 에너지가 없습니다.",
-    "order": 401,
     "polish": "Magazyn energii podłączony. Brak dostępnej energii.",
+    "roworder": 401,
     "russian": "Подключено к стационарной батарее. Нет энергии."
   },
   {
@@ -1045,8 +1045,8 @@
     "german": "Mit Strom versorgt. Elektrolysiert passende Objekte in der Nähe.",
     "japanese": "電力が供給されました。周囲の物体を電解します。",
     "korean": "전기가 공급되었습니다. 주위의 적절한 물체를 전해합니다.",
-    "order": 354,
     "polish": "Włączony. Obiekty w polu działania będą poddawane elektrolizie.",
+    "roworder": 354,
     "russian": "Работает. Электролизует подходящие предметы поблизости."
   },
   {
@@ -1059,8 +1059,8 @@
     "german": "Kann nur auf einer Blauaueninsel gebaut werden!",
     "japanese": "碧き草原の島のみに建造できます！",
     "korean": "파란 초원 섬에만 건축할 수 있습니다!",
-    "order": 412,
     "polish": "Można zbudować tylko na wyspie z błękitnymi łąkami.",
+    "roworder": 412,
     "russian": "Можно построить только на острове с голубыми лугами!"
   },
   {
@@ -1073,8 +1073,8 @@
     "german": "Kann nur auf einer Betonfeldinsel gebaut werden!",
     "japanese": "コンクリート島のみに建造できます！",
     "korean": "콘크리트 필드 섬에만 건축할 수 있습니다!",
-    "order": 416,
     "polish": "Można zbudować tylko na wyspie z polami betonu.",
+    "roworder": 416,
     "russian": "Можно построить только на острове с бетонным полем!"
   },
   {
@@ -1087,8 +1087,8 @@
     "german": "Muss neben einem Betonkern platziert werden!",
     "japanese": "コンクリートコアへ隣接するように配置してください！",
     "korean": "콘크리트 핵에 인접한 곳에 배치해야 합니다!",
-    "order": 422,
     "polish": "Musi przylegać do betonowego rdzenia.",
+    "roworder": 422,
     "russian": "Необходимо разместить рядом с бетонным ядром!"
   },
   {
@@ -1101,8 +1101,8 @@
     "german": "Verbindung zu etwas auf einer anderen Insel nicht möglich!",
     "japanese": "よその島にある建築物に接続できません！",
     "korean": "다른 섬의 건물에 연결될 수 없습니다!",
-    "order": 421,
     "polish": "Nie można połączyć z obiektem na innej wyspie!",
+    "roworder": 421,
     "russian": "Невозможно подключить к объекту на другом острове!"
   },
   {
@@ -1115,8 +1115,8 @@
     "german": "Kann nur auf einer Wüsteninsel gebaut werden!",
     "japanese": "砂漠の島のみに建造できます！",
     "korean": "사막 섬에만 건축할 수 있습니다!",
-    "order": 413,
     "polish": "Można zbudować tylko na wyspie z pustynią.",
+    "roworder": 413,
     "russian": "Можно построить только на острове-пустыне!"
   },
   {
@@ -1129,8 +1129,8 @@
     "german": "Verteilung auf eine andere Insel nicht möglich!",
     "japanese": "よその島に分配できません！",
     "korean": "다른 섬에 분배할 수 없습니다!",
-    "order": 420,
     "polish": "Nie można wysłać na inną wyspę!",
+    "roworder": 420,
     "russian": "Нельзя распределить на другой остров!"
   },
   {
@@ -1143,8 +1143,8 @@
     "german": "Kann nicht auf dieser Insel gebaut werden!",
     "japanese": "この島には建造できません！",
     "korean": "이 섬에는 건축할 수 없습니다!",
-    "order": 417,
     "polish": "Nie można zbudować na wyspie.",
+    "roworder": 417,
     "russian": "Невозможно построить на этом острове!"
   },
   {
@@ -1157,8 +1157,8 @@
     "german": "Kann nur auf einer Dschungelinsel gebaut werden!",
     "japanese": "森林の島のみに建造できます！",
     "korean": "정글 섬에만 건축할 수 있습니다!",
-    "order": 414,
     "polish": "Można zbudować tylko na wyspie z lasem.",
+    "roworder": 414,
     "russian": "Можно построить только на острове с джунглями!"
   },
   {
@@ -1171,8 +1171,8 @@
     "german": "Kann nur einmal pro Insel gebaut werden!",
     "japanese": "この建造物は1つの島に1回だけです！",
     "korean": "섬당 한 번만 건축할 수 있습니다!",
-    "order": 418,
     "polish": "Można zbudować tylko raz na danej wyspie.",
+    "roworder": 418,
     "russian": "Можно построить только один раз на каждом острове!"
   },
   {
@@ -1185,8 +1185,8 @@
     "german": "Umzug auf andere Insel nicht möglich!",
     "japanese": "よその島に搬送できません！",
     "korean": "다른 섬으로 이동할 수 없습니다!",
-    "order": 419,
     "polish": "Nie można przenieść na inną wyspę!",
+    "roworder": 419,
     "russian": "Нельзя перенести на другой остров!"
   },
   {
@@ -1199,8 +1199,8 @@
     "german": "Kann nur auf der Startinsel gebaut werden!",
     "japanese": "始まりの島のみに建造できます！",
     "korean": "시작 섬에서만 건축할 수 있습니다!",
-    "order": 411,
     "polish": "Można zbudować tylko na wyspie początkowej.",
+    "roworder": 411,
     "russian": "Можно построить только на начальном острове!"
   },
   {
@@ -1213,8 +1213,8 @@
     "german": "Kann nur auf einer Toxisches-Ödland-Insel gebaut werden!",
     "japanese": "毒荒野の島のみに建造できます！",
     "korean": "독성 황무지 섬에만 건축할 수 있습니다!",
-    "order": 415,
     "polish": "Można zbudować tylko na wyspie z toksycznymi pustkowiami.",
+    "roworder": 415,
     "russian": "Можно построить только на острове с токсичной пустошью!"
   },
   {
@@ -1227,8 +1227,8 @@
     "german": "Hier nehmen Arbeiterinnen Material aus dem Gebäude mit.",
     "japanese": "ここで働きアリが建築物から素材を取り出します。",
     "korean": "일개미는 이곳에서 재료를 건물에서 추출합니다.",
-    "order": 256,
     "polish": "Stąd robotnice będą odbierać materiały z budynku.",
+    "roworder": 256,
     "russian": "Рабочие муравьи будут забирать материалы из этого здания."
   },
   {
@@ -1241,8 +1241,8 @@
     "german": "Nicht genug Material, um Ameise zu verbessern!",
     "japanese": "アリのアップグレードに必要な素材が足りていません！",
     "korean": "개미 레벨업 재료가 부족합니다!",
-    "order": 144,
     "polish": "Masz za mało materiałów na ulepszenie mrówki!",
+    "roworder": 144,
     "russian": "Не хватает материалов для улучшения муравья!"
   },
   {
@@ -1255,8 +1255,8 @@
     "german": "Das Gebäude ist voll und das Produkt muss abgeholt werden.",
     "japanese": "生産キューに空きがありません、アイテムを取り出してください。",
     "korean": "건물이 찼습니다, 제품을 픽업해 가세요.",
-    "order": 156,
     "polish": "Budynek pełny. Trzeba odebrać produkty.",
+    "roworder": 156,
     "russian": "Склад заполнен, необходимо забрать товары."
   },
   {
@@ -1269,8 +1269,8 @@
     "german": "Gebäude mit Ameisenstraßen verbinden.",
     "japanese": "建築をルートに繋げてください。",
     "korean": "건물을 경로에 연결합니다.",
-    "order": 174,
     "polish": "Połącz budynek ze ścieżkami.",
+    "roworder": 174,
     "russian": "Связать здание с тропами."
   },
   {
@@ -1283,8 +1283,8 @@
     "german": "Flüssigkeitskapazität: ^1",
     "japanese": "液体容量：^1",
     "korean": "액체 용량: ^1",
-    "order": 353,
     "polish": "Maksymalna ilość płynów: ^1",
+    "roworder": 353,
     "russian": "Жидкости: ^1"
   },
   {
@@ -1297,8 +1297,8 @@
     "german": "^1 % gefüllt",
     "japanese": "^1%充填",
     "korean": "^1% 참",
-    "order": 454,
     "polish": "Pełny w ^1%",
+    "roworder": 454,
     "russian": "Заполнено ^1%"
   },
   {
@@ -1311,8 +1311,8 @@
     "german": "Hinzufügen neuer Materialien nicht möglich, solange die Ausgabe noch voll ist!",
     "japanese": "出荷口が満タンのときは、新しい素材を追加できません！",
     "korean": "수송 입구가 가득 찼을 때 신규 재료를 추가할 수 없습니다!",
-    "order": 425,
     "polish": "Nie można dodawać nowych materiałów, dopóki ich skład jest pełny!",
+    "roworder": 425,
     "russian": "Невозможно добавить новые материалы, пока вывод не очищен!"
   },
   {
@@ -1325,8 +1325,8 @@
     "german": "Hat Platz für Gyne.",
     "japanese": "繫殖アリ用のスペースがあります。",
     "korean": "번식 개미의 자리가 있습니다.",
-    "order": 472,
     "polish": "Jest miejsce na dojrzałą matkę.",
+    "roworder": 472,
     "russian": "Есть место для матки."
   },
   {
@@ -1339,8 +1339,8 @@
     "german": "Gyne vorhanden. Wartet auf Beginn des Hochzeitsflugs.",
     "japanese": "繁殖アリがいます。婚姻飛行が始まるのを待っています。",
     "korean": "번식 개미가 존재합니다. 혼인 비행이 시작되기를 기다리는 중입니다.",
-    "order": 473,
     "polish": "Dojrzała matka na miejscu. Oczekiwanie na początek lotu godowego.",
+    "roworder": 473,
     "russian": "Матка в наличии. Ждем начала брачного полета."
   },
   {
@@ -1353,8 +1353,8 @@
     "german": "Alle Ameisen im Kokon gehen verloren!",
     "japanese": "繭にいる全アリが消失します！",
     "korean": "고치 안의 모든 개미를 잃습니다!",
-    "order": 466,
     "polish": "Stracisz wszystkie znajdujące się w tym kokonie mrówki!",
+    "roworder": 466,
     "russian": "Все муравьиные коконы будут потеряны!"
   },
   {
@@ -1367,8 +1367,8 @@
     "german": "Erfordert eine Prinzessin, bevor du andere Ameisen hinzufügen kannst!",
     "japanese": "他のアリを加えるには王女アリが必要です！",
     "korean": "공주 개미가 있어야 다른 개미를 추가할 수 있습니다!",
-    "order": 465,
     "polish": "Najpierw wprowadź księżniczkę, a dopiero potem inne mrówki.",
+    "roworder": 465,
     "russian": "Прежде чем добавлять еще муравьев, нужно обзавестись принцессой!"
   },
   {
@@ -1381,8 +1381,8 @@
     "german": "Hier bringen Arbeiterinnen Material zum Gebäude.",
     "japanese": "ここで働きアリが建築物に素材を運び入れます。",
     "korean": "일개미는 이곳에서 재료를 건물에 보관합니다.",
-    "order": 255,
     "polish": "Tu robotnice będą dostarczać materiały do tego budynku.",
+    "roworder": 255,
     "russian": "Рабочие муравьи будут доставлять материалы в это здание."
   },
   {
@@ -1395,8 +1395,8 @@
     "german": "Inventar:",
     "japanese": "倉庫：",
     "korean": "창고:",
-    "order": 149,
     "polish": "Ekwipunek:",
+    "roworder": 149,
     "russian": "Хранится:"
   },
   {
@@ -1409,8 +1409,8 @@
     "german": "Kann bis zu sieben Larven enthalten.",
     "japanese": "最大7体まで幼虫を収容できます。",
     "korean": "유충은 최대 7마리만 허용됩니다.",
-    "order": 332,
     "polish": "Tutaj można przechowywać maksymalnie 7 larw.",
+    "roworder": 332,
     "russian": "Может принять до 7 личинок."
   },
   {
@@ -1423,8 +1423,8 @@
     "german": "Larvenkapazität: ^1",
     "japanese": "幼虫収容数：^1",
     "korean": "유충 용량: ^1",
-    "order": 352,
     "polish": "Maksymalna liczba larw: ^1",
+    "roworder": 352,
     "russian": "Личинок: ^1"
   },
   {
@@ -1437,8 +1437,8 @@
     "german": "Kann nur Larven in einem Larvenlager einlagern!",
     "japanese": "幼虫は幼虫ストレージにのみ保存できます！",
     "korean": "유충 저장 장치에만 유충을 저장할 수 있습니다!",
-    "order": 348,
     "polish": "Larwy można przechowywać tylko w przeznaczonych do tego magazynach.",
+    "roworder": 348,
     "russian": "Хранить личинки можно только в хранилище личинок!"
   },
   {
@@ -1451,8 +1451,8 @@
     "german": "Dem Landeplatz nicht zugewiesen!",
     "japanese": "着陸台が指定されていません！",
     "korean": "착륙대를 지정하지 않았습니다!",
-    "order": 342,
     "polish": "Nie przypisano lądowiska!",
+    "roworder": 342,
     "russian": "Посадочная полоса не задана!"
   },
   {
@@ -1465,8 +1465,8 @@
     "german": "Ziel-Landeplatz ist besetzt!",
     "japanese": "着陸台が使われています！",
     "korean": "타깃 착륙대가 점용되었습니다!",
-    "order": 343,
     "polish": "Lądowisko docelowe jest zajęte!",
+    "roworder": 343,
     "russian": "Посадочная полоса занята!"
   },
   {
@@ -1479,8 +1479,8 @@
     "german": "Kann nur Flüssigkeiten in einem Tank einlagern!",
     "japanese": "液体は液体容器にのみ保存できます！",
     "korean": "액체 용기에만 액체를 저장할 수 있습니다!",
-    "order": 349,
     "polish": "Płyny można przechowywać tylko w naczyniach.",
+    "roworder": 349,
     "russian": "Жидкости можно хранить только в резервуаре для жидкостей!"
   },
   {
@@ -1493,8 +1493,8 @@
     "german": "Material:",
     "japanese": "素材：",
     "korean": "재료:",
-    "order": 150,
     "polish": "Materiał:",
+    "roworder": 150,
     "russian": "Материалы:"
   },
   {
@@ -1507,8 +1507,8 @@
     "german": "",
     "japanese": "",
     "korean": "",
-    "order": 595,
     "polish": "",
+    "roworder": 595,
     "russian": ""
   },
   {
@@ -1521,8 +1521,8 @@
     "german": "",
     "japanese": "",
     "korean": "",
-    "order": 597,
     "polish": "",
+    "roworder": 597,
     "russian": ""
   },
   {
@@ -1535,8 +1535,8 @@
     "german": "Das Gebäude muss mit einem Spender mit Säure verbunden sein!",
     "japanese": "建物は酸の入ったディスペンサーに接続する必要があります！",
     "korean": "건물은 산이 들어있는 디스펜서에 연결되어야 합니다!",
-    "order": 596,
     "polish": "Budynek musi być podłączony do dozownika z kwasem!",
+    "roworder": 596,
     "russian": "Здание должно быть подключено к дозатору с кислотой!"
   },
   {
@@ -1549,8 +1549,8 @@
     "german": "Das Gebäude muss mit einem Spender verbunden sein!",
     "japanese": "建物はディスペンサーに接続する必要があります！",
     "korean": "건물은 디스펜서에 연결되어야 합니다!",
-    "order": 594,
     "polish": "Budynek musi być podłączony do dozownika!",
+    "roworder": 594,
     "russian": "Здание должно быть подключено к дозатору!"
   },
   {
@@ -1563,8 +1563,8 @@
     "german": "Kein Rezept ausgewählt",
     "japanese": "レシピ未選択",
     "korean": "배합 방법을 선택하지 않았습니다",
-    "order": 157,
     "polish": "Nie wybrano przepisu",
+    "roworder": 157,
     "russian": "Рецепт не выбран"
   },
   {
@@ -1577,8 +1577,8 @@
     "german": "Veraltet",
     "japanese": "老朽化",
     "korean": "노후화됨",
-    "order": 548,
     "polish": "Przestarzały",
+    "roworder": 548,
     "russian": "Устарело"
   },
   {
@@ -1591,8 +1591,8 @@
     "german": "Dieses Gebäude ist veraltet. Bitte reiße es ab und platziere es erneut.",
     "japanese": "この建造物は老朽化を迎えています。取り壊し後、建て直して下さい。",
     "korean": "이 건물은 노후화되었습니다. 철거하고 다시 배치하세요.",
-    "order": 549,
     "polish": "Ten budynek jest przestarzały. Zburz go i wybuduj ponownie.",
+    "roworder": 549,
     "russian": "Здание устарело, снеси его и возведи заново."
   },
   {
@@ -1605,8 +1605,8 @@
     "german": "Landeplatz platzieren",
     "japanese": "着陸台を配置する",
     "korean": "착륙대 설치",
-    "order": 429,
     "polish": "Umieść lądowisko",
+    "roworder": 429,
     "russian": "Разместить посадочную полосу"
   },
   {
@@ -1619,8 +1619,8 @@
     "german": "Gebäudebau pausieren",
     "japanese": "建造物の建設を一時停止",
     "korean": "건물 건설 일시 정지",
-    "order": 575,
     "polish": "Wstrzymaj budowę",
+    "roworder": 575,
     "russian": "Приостановить возведение здания"
   },
   {
@@ -1633,8 +1633,8 @@
     "german": "^1 % abgeschlossen",
     "japanese": "^1%完了",
     "korean": "^1% 완료",
-    "order": 147,
     "polish": "Ukończono ^1%",
+    "roworder": 147,
     "russian": "Завершено на ^1%"
   },
   {
@@ -1647,8 +1647,8 @@
     "german": "Verteiler platzieren",
     "japanese": "分配器を設置",
     "korean": "분배기 설치",
-    "order": 172,
     "polish": "Umieść dozownik",
+    "roworder": 172,
     "russian": "Разместить распределитель"
   },
   {
@@ -1661,8 +1661,8 @@
     "german": "Arbeiterinnen bringen Material, warten, bis der Vorgang abgeschlossen ist, und nehmen dann das Produkt mit.",
     "japanese": "ここで働きアリが素材を投入して、加工後の製品を取り出します。",
     "korean": "일개미는 이곳에서 재료를 투입하고 가공 완료한 후 제품을 추출합니다.",
-    "order": 257,
     "polish": "Robotnice będą dostarczać materiały, czekać na zakończenie pracy, po czym odbierać efekty.",
+    "roworder": 257,
     "russian": "Рабочие будут доставлять сюда материалы, ждать окончания обработки и забирать отсюда продукцию."
   },
   {
@@ -1675,8 +1675,8 @@
     "german": "Arbeiterinnen füttern hier die Königin.",
     "japanese": "ここで働きアリが女王アリに食事を持ってきます。",
     "korean": "일개미는 이곳에서 여왕개미에게 먹이를 공급합니다.",
-    "order": 166,
     "polish": "W tym miejscu robotnice będą karmić królową.",
+    "roworder": 166,
     "russian": "Здесь рабочие будут кормить королеву."
   },
   {
@@ -1689,8 +1689,8 @@
     "german": "Larve zur Extraktion bereit.",
     "japanese": "幼虫を取り出せます。",
     "korean": "유충 추출이 준비 완료되었습니다.",
-    "order": 165,
     "polish": "Larwa gotowa do wyciągnięcia.",
+    "roworder": 165,
     "russian": "Королева готова отложить личинку."
   },
   {
@@ -1703,8 +1703,8 @@
     "german": "Larve in Produktion: ^1 %",
     "japanese": "幼虫の出産：^1%。",
     "korean": "생산 중인 유충: ^1%.",
-    "order": 164,
     "polish": "Hodowla larwy: ^1%.",
+    "roworder": 164,
     "russian": "Откладывание личинок: ^1%."
   },
   {
@@ -1717,8 +1717,8 @@
     "german": "Max. Population erreicht. Keine Larve in Produktion.",
     "japanese": "アリ数上限達しました；幼虫は生まれません。",
     "korean": "최대 인구에 달성했습니다. 생산 중인 유충이 없습니다.",
-    "order": 163,
     "polish": "Osiągnięto limit populacji; hodowla larw zatrzymana.",
+    "roworder": 163,
     "russian": "Достигнут лимит населения, откладывание личинок остановлено."
   },
   {
@@ -1731,8 +1731,8 @@
     "german": "Arbeiterinnen bringen Larven der Königin hierher.",
     "japanese": "ここで働きアリが女王アリから幼虫を取り出します。",
     "korean": "이곳에서 일개미가 여왕개미로부터 유충을 픽업합니다.",
-    "order": 167,
     "polish": "Stąd robotnice będą odbierały larwy od królowej.",
+    "roworder": 167,
     "russian": "Сюда рабочие будут доставлять личинки от королевы."
   },
   {
@@ -1745,8 +1745,8 @@
     "german": "Kontakt herstellen",
     "japanese": "コネクトさせる",
     "korean": "연결 구축",
-    "order": 168,
     "polish": "Nawiąż łączność",
+    "roworder": 168,
     "russian": "Установить контакт"
   },
   {
@@ -1759,8 +1759,8 @@
     "german": "Neues Land finden",
     "japanese": "新たな地を発見",
     "korean": "새로운 땅 발견",
-    "order": 169,
     "polish": "Znajdź nowe ziemie",
+    "roworder": 169,
     "russian": "Найти новые территории"
   },
   {
@@ -1773,8 +1773,8 @@
     "german": "Keine Signale gefunden.",
     "japanese": "シグナルがありません。",
     "korean": "신호 없음.",
-    "order": 170,
     "polish": "Nie znaleziono sygnału.",
+    "roworder": 170,
     "russian": "Сигналов не обнаружено."
   },
   {
@@ -1787,8 +1787,8 @@
     "german": "Wartet auf Ende des Hochzeitsflugs.",
     "japanese": "婚姻飛行が終わるまで待つ。",
     "korean": "혼인 비행이 종료되길 기다리세요.",
-    "order": 171,
     "polish": "Oczekiwanie na koniec lotu godowego.",
+    "roworder": 171,
     "russian": "Ждем окончания брачного полета."
   },
   {
@@ -1801,8 +1801,8 @@
     "german": "Recycle ...",
     "japanese": "回収中…",
     "korean": "회수 중...",
-    "order": 518,
     "polish": "Przetwarzanie...",
+    "roworder": 518,
     "russian": "Переработка..."
   },
   {
@@ -1815,8 +1815,8 @@
     "german": "Warte auf Ameise zum Recyceln.",
     "japanese": "アリの回収を待っています。",
     "korean": "개미 회수를 기다리는 중",
-    "order": 517,
     "polish": "Oczekiwanie na mrówkę do przetworzenia.",
+    "roworder": 517,
     "russian": "Ожидание муравья для переработки."
   },
   {
@@ -1829,8 +1829,8 @@
     "german": "Benötigt zum Betrieb ein Batteriegebäude auf derselben Insel!",
     "japanese": "同じ島にバッテリー建築物を建造する必要があります！",
     "korean": "동일한 섬에 배터리 건물을 건축해야만 조작할 수 있습니다!",
-    "order": 347,
     "polish": "Ten budynek wymaga do działania magazynu energii na tej samej wyspie.",
+    "roworder": 347,
     "russian": "Для работы требуется стационарная батарея на этом острове!"
   },
   {
@@ -1843,8 +1843,8 @@
     "german": "Erfordert:",
     "japanese": "材料：",
     "korean": "필요:",
-    "order": 146,
     "polish": "Wymagania:",
+    "roworder": 146,
     "russian": "Требуется:"
   },
   {
@@ -1857,8 +1857,8 @@
     "german": "Für jeden Abschnitt benötigt:",
     "japanese": "パーツごとの材料：",
     "korean": "각 부분 필요량:",
-    "order": 325,
     "polish": "Wymagania poszczególnych części:",
+    "roworder": 325,
     "russian": "Требуется для каждой секции:"
   },
   {
@@ -1869,10 +1869,10 @@
     "english": "Unit capacity: ^1",
     "french": "Capacité (unités) : ^1",
     "german": "Einheitenkapazität: ^1",
-    "japanese": "ユニット収納数：N1",
+    "japanese": "ユニット収納数：^1",
     "korean": "유닛 용량: ^1",
-    "order": 351,
     "polish": "Maksymalna liczba jednostek: ^1",
+    "roworder": 351,
     "russian": "Вместимость: ^1"
   },
   {
@@ -1885,8 +1885,8 @@
     "german": "Flüssigkeiten können nicht auf einem Lagerplatz gelagert werden!",
     "japanese": "倉庫で液体を保管できません！",
     "korean": "보관 창고에 액체를 저장할 수 없습니다!",
-    "order": 331,
     "polish": "W kopcu nie można przechowywać płynów!",
+    "roworder": 331,
     "russian": "Жидкости нельзя хранить на складе!"
   },
   {
@@ -1899,8 +1899,8 @@
     "german": "Lagerplatz ist voll!",
     "japanese": "倉庫が満タンです！",
     "korean": "보관 창고가 가득 찼습니다!",
-    "order": 452,
     "polish": "Kopiec jest pełny.",
+    "roworder": 452,
     "russian": "Склад заполнен!"
   },
   {
@@ -1913,8 +1913,8 @@
     "german": "Larven können nicht auf einem Lagerplatz gelagert werden!",
     "japanese": "倉庫で幼虫を収容できません！",
     "korean": "보관 창고에 유충을 저장할 수 없습니다!",
-    "order": 330,
     "polish": "W kopcu nie można przechowywać larw!",
+    "roworder": 330,
     "russian": "Личинки нельзя хранить на складе!"
   },
   {
@@ -1927,8 +1927,8 @@
     "german": "Lager ist voll!",
     "japanese": "満タンです！",
     "korean": "저장 장치가 가득 찼습니다!",
-    "order": 350,
     "polish": "Magazyn pełny.",
+    "roworder": 350,
     "russian": "Хранилище заполнено!"
   },
   {
@@ -1941,8 +1941,8 @@
     "german": "Zeit bis zum nächsten Hochzeitsflug: ^1",
     "japanese": "次の婚姻飛行まで：",
     "korean": "다음 혼인 비행까지 남은 시간:",
-    "order": 173,
     "polish": "Czas do kolejnego lotu gotowego: ^1",
+    "roworder": 173,
     "russian": "До следующего брачного полета: ^1"
   },
   {
@@ -1955,8 +1955,8 @@
     "german": "Zu weit vom Katapult entfernt!",
     "japanese": "カタパルトから離れすぎています！",
     "korean": "사출기와의 거리가 너무 멉니다!",
-    "order": 444,
     "polish": "Za daleko od katapulty!",
+    "roworder": 444,
     "russian": "Слишком далеко от катапульты!"
   },
   {
@@ -1969,8 +1969,8 @@
     "german": "Zu weit vom Lagerplatz entfernt!",
     "japanese": "倉庫から離れすぎています！",
     "korean": "보관 창고와의 거리가 너무 멉니다!",
-    "order": 445,
     "polish": "Za daleko od kopca!",
+    "roworder": 445,
     "russian": "Слишком далеко от склада!"
   },
   {
@@ -1983,8 +1983,8 @@
     "german": "Andere Ameisen anlocken",
     "japanese": "他のアリを引き寄せる",
     "korean": "기타 개미 흡인",
-    "order": 424,
     "polish": "Zwab inne mrówki",
+    "roworder": 424,
     "russian": "Привлечь других муравьев"
   },
   {
@@ -1997,8 +1997,8 @@
     "german": "Andere Ameisen rufen",
     "japanese": "他のアリを呼ぶ",
     "korean": "기타 개미 호출",
-    "order": 423,
     "polish": "Wezwij inne mrówki",
+    "roworder": 423,
     "russian": "Созвать других муравьев"
   },
   {
@@ -2011,8 +2011,8 @@
     "german": "Gebäude benutzen",
     "japanese": "建築を利用",
     "korean": "건물 사용",
-    "order": 145,
     "polish": "Użyj budynku",
+    "roworder": 145,
     "russian": "Использовать здание"
   },
   {
@@ -2025,8 +2025,8 @@
     "german": "Wartet auf Materialien",
     "japanese": "素材待ち",
     "korean": "재료 대기 중",
-    "order": 160,
     "polish": "Oczekiwanie na materiały",
+    "roworder": 160,
     "russian": "Ждем материалы"
   },
   {
@@ -2039,8 +2039,8 @@
     "german": "Wartet auf Produkt zum Abholen",
     "japanese": "生産物取り出し待ち",
     "korean": "제품 추출 대기 중",
-    "order": 159,
     "polish": "Oczekiwanie na odbiór produktów",
+    "roworder": 159,
     "russian": "Ждем, пока заберут товары"
   },
   {
@@ -2053,8 +2053,8 @@
     "german": "Arbeitet ...",
     "japanese": "仕事中…",
     "korean": "작업 중...",
-    "order": 161,
     "polish": "Przetwarzanie...",
+    "roworder": 161,
     "russian": "Работаем..."
   },
   {
@@ -2067,8 +2067,8 @@
     "german": "",
     "japanese": "",
     "korean": "",
-    "order": 599,
     "polish": "",
+    "roworder": 599,
     "russian": ""
   },
   {
@@ -2081,8 +2081,8 @@
     "german": "Falscher Spender! Säure wird benötigt!",
     "japanese": "間違ったディスペンサー！酸が必要です！",
     "korean": "잘못된 디스펜서입니다! 산이 필요합니다!",
-    "order": 598,
     "polish": "Zły dozownik! Potrzebny jest kwas!",
+    "roworder": 598,
     "russian": "Неправильный дозатор! Нужна кислота!"
   },
   {
@@ -2095,8 +2095,8 @@
     "german": "Komm zu uns auf Discord!",
     "japanese": "Discordにご参加下さい！",
     "korean": "Discord 참여!",
-    "order": 497,
     "polish": "Dołącz do nas na Discordzie!",
+    "roworder": 497,
     "russian": "Присоединяйся к нам в Discord!"
   },
   {
@@ -2109,8 +2109,8 @@
     "german": "Feedback senden",
     "japanese": "フィードバックの送信",
     "korean": "피드백 보내기",
-    "order": 496,
     "polish": "Wyślij opinię",
+    "roworder": 496,
     "russian": "Отправить отзыв"
   },
   {
@@ -2123,8 +2123,8 @@
     "german": "Tutorials",
     "japanese": "チュートリアルログ",
     "korean": "튜토리얼 기록",
-    "order": 495,
     "polish": "Dziennik samouczka",
+    "roworder": 495,
     "russian": "Прогресс обучения"
   },
   {
@@ -2137,8 +2137,8 @@
     "german": "Scrollrad",
     "japanese": "ホイール",
     "korean": "스크롤 휠",
-    "order": 312,
     "polish": "Kółko przewijania",
+    "roworder": 312,
     "russian": "Колесо прокрутки"
   },
   {
@@ -2151,8 +2151,8 @@
     "german": "Verfügbar als Vollversion",
     "japanese": "正式版のみでお楽しみいただけます",
     "korean": "정식 버전에서 이용 가능",
-    "order": 97,
     "polish": "Dostępne w pełnej wersji gry",
+    "roworder": 97,
     "russian": "Доступно в полной версии"
   },
   {
@@ -2165,8 +2165,8 @@
     "german": "Spiel laden",
     "japanese": "ロードする",
     "korean": "게임 로딩",
-    "order": 93,
     "polish": "Wczytaj grę",
+    "roworder": 93,
     "russian": "Загрузить игру"
   },
   {
@@ -2179,8 +2179,8 @@
     "german": "Hauptmenü",
     "japanese": "メインメニュー",
     "korean": "메뉴",
-    "order": 95,
     "polish": "Menu główne",
+    "roworder": 95,
     "russian": "Главное меню"
   },
   {
@@ -2193,8 +2193,8 @@
     "german": "Neu starten",
     "japanese": "リスタート",
     "korean": "다시 시작하기",
-    "order": 92,
     "polish": "Od nowa",
+    "roworder": 92,
     "russian": "Перезапустить"
   },
   {
@@ -2207,8 +2207,8 @@
     "german": "Fortfahren",
     "japanese": "続ける",
     "korean": "계속하기",
-    "order": 91,
     "polish": "Kontynuuj",
+    "roworder": 91,
     "russian": "Продолжить"
   },
   {
@@ -2221,8 +2221,8 @@
     "german": "Spiel speichern",
     "japanese": "セーブする",
     "korean": "게임 저장",
-    "order": 94,
     "polish": "Zapisz grę",
+    "roworder": 94,
     "russian": "Сохранить игру"
   },
   {
@@ -2235,8 +2235,8 @@
     "german": "Energie gefüttert: ^1",
     "japanese": "投入したエナジーの総数：^1",
     "korean": "총 공급한 에너지: ^1",
-    "order": 246,
     "polish": "Skonsumowana energia: ^1",
+    "roworder": 246,
     "russian": "Скормлено энергии: ^1"
   },
   {
@@ -2249,8 +2249,8 @@
     "german": "Verliert ^1 Energie pro Sekunde",
     "japanese": "1秒ごとに^1エナジーを消費",
     "korean": "1초당 에너지 ^1 소모",
-    "order": 247,
     "polish": "Zużywa ^1 p. energii na sekundę",
+    "roworder": 247,
     "russian": "Потребляет ^1 ед. энергии/с"
   },
   {
@@ -2263,8 +2263,8 @@
     "german": "Überladen",
     "japanese": "オーバーロード",
     "korean": "과부하",
-    "order": 245,
     "polish": "Przeładowana",
+    "roworder": 245,
     "russian": "Перенасыщена"
   },
   {
@@ -2277,8 +2277,8 @@
     "german": "Stufe ^1",
     "japanese": "フェーズ^1",
     "korean": "스테이지^1",
-    "order": 244,
     "polish": "Etap ^1",
+    "roworder": 244,
     "russian": "Этап ^1"
   },
   {
@@ -2291,8 +2291,8 @@
     "german": "Klicke auf eine Ameise in der Übersicht links, um ihren Populationsgraphen anzusehen.",
     "japanese": "左側の情報欄に表示されるアリをクリックすると、アリ数グラフを表示",
     "korean": "왼쪽 개요에서 개미를 클릭하여 인구 그래프를 확인하세요",
-    "order": 512,
     "polish": "Kliknij mrówkę w panelu podglądu po lewej, aby wyświetlić wykres jej populacji",
+    "roworder": 512,
     "russian": "Щелкни по муравью в обзорном окне слева, чтобы увидеть график популяции"
   },
   {
@@ -2305,8 +2305,8 @@
     "german": "Instinkt",
     "japanese": "本能",
     "korean": "본능",
-    "order": 98,
     "polish": "Samouczek",
+    "roworder": 98,
     "russian": "Инстинкт"
   },
   {
@@ -2319,8 +2319,8 @@
     "german": "Die Königin produziert ^1 Larven pro Minute.",
     "japanese": "女王アリは1分ごとに幼虫を^1体生み出す",
     "korean": "여왕개미는 1분당 유충을 ^1마리 낳습니다",
-    "order": 251,
     "polish": "Liczba larw na minutę tej królowej: ^1",
+    "roworder": 251,
     "russian": "Королева откладывает ^1 шт. личинок в минуту"
   },
   {
@@ -2333,8 +2333,8 @@
     "german": "Larven / Min",
     "japanese": "幼虫/分",
     "korean": "유충/분",
-    "order": 250,
     "polish": "Larwy/minutę",
+    "roworder": 250,
     "russian": "Личинки/мин."
   },
   {
@@ -2347,8 +2347,8 @@
     "german": "Max. Population",
     "japanese": "総アリ数上限",
     "korean": "최대 인구",
-    "order": 499,
     "polish": "Maks. populacja",
+    "roworder": 499,
     "russian": "Макс. население"
   },
   {
@@ -2361,8 +2361,8 @@
     "german": "Aktuelle Population: ^1",
     "japanese": "現在のアリ数：^1",
     "korean": "현재 인구: ^1",
-    "order": 248,
     "polish": "Aktualna populacja: ^1",
+    "roworder": 248,
     "russian": "Текущее население: ^1"
   },
   {
@@ -2375,8 +2375,8 @@
     "german": "Königin produziert Larven bis: ^1",
     "japanese": "女王アリが幼虫を生み続ける。最大：^1",
     "korean": "여왕개미는 다음까지 유충을 낳습니다: ^1",
-    "order": 249,
     "polish": "Królowa będzie tworzyć larwy do: ^1",
+    "roworder": 249,
     "russian": "Королева будет откладывать личинки до: ^1"
   },
   {
@@ -2389,8 +2389,8 @@
     "german": "Neue Insel enthüllen!",
     "japanese": "新たな島を発見しました！",
     "korean": "새로운 섬 발견!",
-    "order": 100,
     "polish": "Odkryj nową wyspę!",
+    "roworder": 100,
     "russian": "Открой новый остров!"
   },
   {
@@ -2403,8 +2403,8 @@
     "german": "Technologiebaum",
     "japanese": "テクノロジーツリー",
     "korean": "개발 트리",
-    "order": 99,
     "polish": "Drzewko rozwoju",
+    "roworder": 99,
     "russian": "Древо технологий"
   },
   {
@@ -2417,8 +2417,8 @@
     "german": "Klicke, um|Inventartyp zu wechseln!",
     "japanese": "クリックで倉庫タイプを切り替えます！",
     "korean": "클릭하여|창고 유형 전환!",
-    "order": 509,
     "polish": "Kliknij, aby przełączyć|typ ekwipunku!",
+    "roworder": 509,
     "russian": "Щелкни, чтобы сменить|тип инвентаря!"
   },
   {
@@ -2431,8 +2431,8 @@
     "german": "Klicke, um zu Ameiseninventar zu wechseln.",
     "japanese": "クリックでアリ倉庫へ切り替え",
     "korean": "클릭하여 개미 창고로 전환",
-    "order": 510,
     "polish": "Kliknij, aby przełączyć na ekwipunek mrówki",
+    "roworder": 510,
     "russian": "Щелкни, чтобы перейти к инвентарю муравья"
   },
   {
@@ -2445,8 +2445,8 @@
     "german": "Klicke, um zu Materialinventar zu wechseln.",
     "japanese": "クリックで素材倉庫へ切り替え",
     "korean": "클릭하여 재료 창고로 전환",
-    "order": 511,
     "polish": "Kliknij, aby przełączyć na ekwipunek z materiałami",
+    "roworder": 511,
     "russian": "Щелкни, чтобы перейти к материалам"
   },
   {
@@ -2459,8 +2459,8 @@
     "german": "Zutritt, wenn dieses Material dabei:",
     "japanese": "（通過可）運搬中の素材：",
     "korean": "(진입 조건)재료 운반 중:",
-    "order": 215,
     "polish": "Wpuść osobniki, które przenoszą materiał:",
+    "roworder": 215,
     "russian": "Пройдет, если несет материал:"
   },
   {
@@ -2473,8 +2473,8 @@
     "german": "Klicke, um erlaubtes Material auszuwählen.",
     "japanese": "クリックして通過可の素材を選んでください。",
     "korean": "클릭하여 허용할 재료를 선택하세요.",
-    "order": 219,
     "polish": "Kliknij, aby wybrać dozwolony materiał.",
+    "roworder": 219,
     "russian": "Щелкни, чтобы выбрать разрешенный материал."
   },
   {
@@ -2487,8 +2487,8 @@
     "german": "Zutritt, wenn dieses Material nicht dabei:",
     "japanese": "（通過不可）運搬中の素材：",
     "korean": "(진입 조건)재료를 운반하지 않았습니다:",
-    "order": 216,
     "polish": "Wpuść osobniki, które nie przenoszą materiału:",
+    "roworder": 216,
     "russian": "Пройдет, если не несет материал:"
   },
   {
@@ -2501,8 +2501,8 @@
     "german": "Zutritt, wenn von Kaste:",
     "japanese": "（通過可）アリの職種：",
     "korean": "(진입 조건)개미 종류:",
-    "order": 217,
     "polish": "Wpuść osobniki należące do kasty:",
+    "roworder": 217,
     "russian": "Пройдет, если из касты:"
   },
   {
@@ -2515,8 +2515,8 @@
     "german": "Klicke, um erlaubte Kaste auszuwählen.",
     "japanese": "クリックして通過可の職種を選んでください。",
     "korean": "클릭하여 허용할 개미 종류를 선택하세요.",
-    "order": 220,
     "polish": "Kliknij, aby wybrać dopuszczalną kastę.",
+    "roworder": 220,
     "russian": "Щелкни, чтобы выбрать разрешенную касту."
   },
   {
@@ -2529,8 +2529,8 @@
     "german": "Zutritt, wenn nicht von Kaste:",
     "japanese": "（通過不可）アリの職種：",
     "korean": "(진입 금지 조건)개미 종류:",
-    "order": 218,
     "polish": "Wpuść osobniki nienależące do kasty:",
+    "roworder": 218,
     "russian": "Пройдет, если не из касты:"
   },
   {
@@ -2543,8 +2543,8 @@
     "german": "Zählen bis:",
     "japanese": "個数上限：",
     "korean": "최대 카운트:",
-    "order": 211,
     "polish": "Odlicz do:",
+    "roworder": 211,
     "russian": "Лимит до:"
   },
   {
@@ -2557,8 +2557,8 @@
     "german": "Gatter in Schleife!",
     "japanese": "ワークサイクルがオートで稼働中！",
     "korean": "경로 자체 순환 중!",
-    "order": 212,
     "polish": "Bramka się zapętla!",
+    "roworder": 212,
     "russian": "Ворота замкнуты сами на себя!"
   },
   {
@@ -2571,8 +2571,8 @@
     "german": "Zutritt, wenn übrige|Lebensdauer größer ist als:",
     "japanese": "通過可|余剰寿命>",
     "korean": "진입 조건|남은 수명 최소:",
-    "order": 213,
     "polish": "Wpuść, jeśli żywotność|wynosi więcej niż:",
+    "roworder": 213,
     "russian": "Пройдет, если оставшийся|срок жизни выше:"
   },
   {
@@ -2585,8 +2585,8 @@
     "german": "Zutritt, wenn übrige|Lebensdauer kleiner ist als:",
     "japanese": "通過可|余剰寿命<",
     "korean": "진입 조건|남은 수명 최대:",
-    "order": 214,
     "polish": "Wpuść, jeśli żywotność|wynosi mniej niż:",
+    "roworder": 214,
     "russian": "Пройдет, если оставшийся|срок жизни ниже:"
   },
   {
@@ -2599,8 +2599,8 @@
     "german": "Zutritt, wenn alt",
     "japanese": "（通過可）老化アリ",
     "korean": "(진입 조건)연로",
-    "order": 221,
     "polish": "Wpuść tylko stare osobniki",
+    "roworder": 221,
     "russian": "Пройдет, если стар"
   },
   {
@@ -2613,8 +2613,8 @@
     "german": "Zutritt, wenn nicht alt",
     "japanese": "（通過可）老化アリではない",
     "korean": "(진입 조건)연로하지 않음",
-    "order": 222,
     "polish": "Wpuść inne osobniki niż stare",
+    "roworder": 222,
     "russian": "Пройдет, если молод"
   },
   {
@@ -2627,8 +2627,8 @@
     "german": "Zutritt, wenn Grundgeschwindigkeit höher ist als:",
     "japanese": "（通過可）基本移動速度>",
     "korean": "(진입 조건)기본 행군 속도>:",
-    "order": 533,
     "polish": "Wpuść, jeśli podstawowa szybkość ruchu jest większa niż:",
+    "roworder": 533,
     "russian": "Пройдет, если базовая скорость выше, чем:"
   },
   {
@@ -2641,8 +2641,8 @@
     "german": "Grundgeschwindigkeit ist höher als:",
     "japanese": "基本移動速度が次の数値より高い：",
     "korean": "기본 행군 속도>:",
-    "order": 520,
     "polish": "Podstawowa szybkość ruchu większa niż:",
+    "roworder": 520,
     "russian": "Базовая скорость выше, чем:"
   },
   {
@@ -2655,8 +2655,8 @@
     "german": "Zutritt, wenn Grundgeschwindigkeit geringer ist als:",
     "japanese": "（通過可）基本移動速度<",
     "korean": "(진입 조건)기본 행군 속도<:",
-    "order": 534,
     "polish": "Wpuść, jeśli podstawowa szybkość ruchu jest mniejsza niż:",
+    "roworder": 534,
     "russian": "Пройдет, если базовая скорость ниже, чем:"
   },
   {
@@ -2669,8 +2669,8 @@
     "german": "Grundgeschwindigkeit ist geringer als:",
     "japanese": "基本移動速度が次の数値より低い：",
     "korean": "기본 행군 속도<:",
-    "order": 521,
     "polish": "Podstawowa szybkość ruchu mniejsza niż:",
+    "roworder": 521,
     "russian": "Базовая скорость ниже, чем:"
   },
   {
@@ -2683,8 +2683,8 @@
     "german": "Aktuelle Grundgeschwindigkeit ist geringer als:",
     "japanese": "現在の移動速度が次の数値より低い：",
     "korean": "현재 행군 속도<:",
-    "order": 523,
     "polish": "Aktualna szybkość ruchu mniejsza niż:",
+    "roworder": 523,
     "russian": "Текущая скорость ниже, чем:"
   },
   {
@@ -2697,8 +2697,8 @@
     "german": "Zutritt, wenn aktuelle Grundgeschwindigkeit höher ist als:",
     "japanese": "（通過可）現在の移動速度>",
     "korean": "(진입 조건)현재 행군 속도>:",
-    "order": 535,
     "polish": "Wpuść, jeśli aktualna szybkość ruchu jest większa niż:",
+    "roworder": 535,
     "russian": "Пройдет, если текущая скорость выше, чем:"
   },
   {
@@ -2711,8 +2711,8 @@
     "german": "Aktuelle Grundgeschwindigkeit ist höher als:",
     "japanese": "現在の移動速度が次の数値より高い：",
     "korean": "현재 행군 속도>:",
-    "order": 522,
     "polish": "Aktualna szybkość ruchu większa niż:",
+    "roworder": 522,
     "russian": "Текущая скорость выше, чем:"
   },
   {
@@ -2725,8 +2725,8 @@
     "german": "Zutritt, wenn aktuelle Grundgeschwindigkeit geringer ist als:",
     "japanese": "（通過可）現在の移動速度<",
     "korean": "(진입 조건)현재 행군 속도<:",
-    "order": 536,
     "polish": "Wpuść, jeśli aktualna szybkość ruchu jest mniejsza niż:",
+    "roworder": 536,
     "russian": "Пройдет, если текущая скорость ниже, чем:"
   },
   {
@@ -2739,8 +2739,8 @@
     "german": "MODUS",
     "japanese": "モード",
     "korean": "모드",
-    "order": 524,
     "polish": "TRYB",
+    "roworder": 524,
     "russian": "РЕЖИМ"
   },
   {
@@ -2753,8 +2753,8 @@
     "german": "ZUWEISEN",
     "japanese": "割当",
     "korean": "지정",
-    "order": 529,
     "polish": "PRZYPISZ",
+    "roworder": 529,
     "russian": "НАЗНАЧИТЬ"
   },
   {
@@ -2767,8 +2767,8 @@
     "german": "Zutritt, wenn Lagerplatz mehr enthält als:",
     "japanese": "（通過可）倉庫内の数量>",
     "korean": "(진입 조건)보관 창고 보관량>:",
-    "order": 531,
     "polish": "Wpuść, jeśli w kopcu jest więcej niż:",
+    "roworder": 531,
     "russian": "Пройдет, если на складе более:"
   },
   {
@@ -2781,8 +2781,8 @@
     "german": "Zutritt, wenn Lagerplatz weniger enthält als:",
     "japanese": "（通過可）倉庫内の数量<",
     "korean": "(진입 조건)보관 창고 보관량<:",
-    "order": 532,
     "polish": "Wpuść, jeśli w kopcu jest mniej niż:",
+    "roworder": 532,
     "russian": "Пройдет, если на складе менее:"
   },
   {
@@ -2795,8 +2795,8 @@
     "german": "Gatter keinem Lagerplatz zugewiesen!",
     "japanese": "ゲートが倉庫に割り当てられていません！",
     "korean": "게이트가 보관 창고에 지정되어 있지 않습니다!",
-    "order": 537,
     "polish": "Bramka nieprzypisana do kopca!",
+    "roworder": 537,
     "russian": "Ворота не ведут к складу!"
   },
   {
@@ -2809,8 +2809,8 @@
     "german": "Weise dieses Gatter einem Lagerplatz zu.",
     "japanese": "ゲートを倉庫に割り当てます。",
     "korean": "보관 창고로 향하는 게이트를 지정합니다.",
-    "order": 530,
     "polish": "Przypisz bramkę do kopca.",
+    "roworder": 530,
     "russian": "Установи ворота на склад."
   },
   {
@@ -2823,8 +2823,8 @@
     "german": "Zutritt nach Minuten:",
     "japanese": "次の秒数が経過したら通過：",
     "korean": "(진입 조건)다음 분 이후:",
-    "order": 528,
     "polish": "Wpuść po nast. liczbie sekund:",
+    "roworder": 528,
     "russian": "Войдет через (мин.):"
   },
   {
@@ -2837,8 +2837,8 @@
     "german": "Zutritt nach Sekunden:",
     "japanese": "次の分数が経過したら通過：",
     "korean": "(진입 조건)다음 초 이후:",
-    "order": 527,
     "polish": "Wpuść po nast. liczbie minut:",
+    "roworder": 527,
     "russian": "Войдет через (сек.):"
   },
   {
@@ -2851,8 +2851,8 @@
     "german": "!",
     "japanese": "！",
     "korean": "!",
-    "order": 406,
     "polish": "!",
+    "roworder": 406,
     "russian": "!"
   },
   {
@@ -2865,8 +2865,8 @@
     "german": "?",
     "japanese": "？",
     "korean": "?",
-    "order": 407,
     "polish": "?",
+    "roworder": 407,
     "russian": "?"
   },
   {
@@ -2879,8 +2879,8 @@
     "german": "???",
     "japanese": "？？？",
     "korean": "???",
-    "order": 4,
     "polish": "???",
+    "roworder": 4,
     "russian": "???"
   },
   {
@@ -2893,8 +2893,8 @@
     "german": "<",
     "japanese": "＜",
     "korean": "<",
-    "order": 408,
     "polish": "<",
+    "roworder": 408,
     "russian": "<"
   },
   {
@@ -2907,8 +2907,8 @@
     "german": ">",
     "japanese": "＞",
     "korean": ">",
-    "order": 409,
     "polish": ">",
+    "roworder": 409,
     "russian": ">"
   },
   {
@@ -2921,8 +2921,8 @@
     "german": "Zurück",
     "japanese": "戻る",
     "korean": "돌아가기",
-    "order": 12,
     "polish": "Wstecz",
+    "roworder": 12,
     "russian": "Назад"
   },
   {
@@ -2935,8 +2935,8 @@
     "german": "Abbrechen",
     "japanese": "キャンセル",
     "korean": "취소",
-    "order": 3,
     "polish": "Anuluj",
+    "roworder": 3,
     "russian": "Отмена"
   },
   {
@@ -2949,8 +2949,8 @@
     "german": "Ändern",
     "japanese": "変更",
     "korean": "변경",
-    "order": 18,
     "polish": "Zmień",
+    "roworder": 18,
     "russian": "Изменить"
   },
   {
@@ -2963,8 +2963,8 @@
     "german": "Cheat",
     "japanese": "チート",
     "korean": "치트",
-    "order": 21,
     "polish": "Kod",
+    "roworder": 21,
     "russian": "Чит"
   },
   {
@@ -2977,8 +2977,8 @@
     "german": "Schließen",
     "japanese": "閉じる",
     "korean": "닫기",
-    "order": 23,
     "polish": "Zamknij",
+    "roworder": 23,
     "russian": "Закрыть"
   },
   {
@@ -2991,8 +2991,8 @@
     "german": "Abschließen",
     "japanese": "完了",
     "korean": "완료",
-    "order": 19,
     "polish": "Ukończ",
+    "roworder": 19,
     "russian": "Завершить"
   },
   {
@@ -3005,8 +3005,8 @@
     "german": "Demo",
     "japanese": "デモ版",
     "korean": "데모 버전",
-    "order": 239,
     "polish": "Demo",
+    "roworder": 239,
     "russian": "Демо"
   },
   {
@@ -3019,8 +3019,8 @@
     "german": "Discord",
     "japanese": "Discord",
     "korean": "Discord",
-    "order": 385,
     "polish": "Discord",
+    "roworder": 385,
     "russian": "Discord"
   },
   {
@@ -3033,8 +3033,8 @@
     "german": "Fertig",
     "japanese": "既に完了",
     "korean": "완료",
-    "order": 20,
     "polish": "OK",
+    "roworder": 20,
     "russian": "Готово"
   },
   {
@@ -3047,8 +3047,8 @@
     "german": "Runter",
     "japanese": "下",
     "korean": "아래",
-    "order": 7,
     "polish": "W dół",
+    "roworder": 7,
     "russian": "Вниз"
   },
   {
@@ -3061,8 +3061,8 @@
     "german": "Leer",
     "japanese": "空",
     "korean": "비어 있음",
-    "order": 13,
     "polish": "Pusto",
+    "roworder": 13,
     "russian": "Пусто"
   },
   {
@@ -3075,8 +3075,8 @@
     "german": "Menü",
     "japanese": "メニュー",
     "korean": "메뉴",
-    "order": 242,
     "polish": "Menu",
+    "roworder": 242,
     "russian": "Меню"
   },
   {
@@ -3089,8 +3089,8 @@
     "german": "Extrahieren",
     "japanese": "アウトプット",
     "korean": "추출",
-    "order": 17,
     "polish": "Odbierz",
+    "roworder": 17,
     "russian": "Вынуть"
   },
   {
@@ -3103,8 +3103,8 @@
     "german": "Kostenlos",
     "japanese": "無料",
     "korean": "재료 필요 없음",
-    "order": 243,
     "polish": "Za darmo",
+    "roworder": 243,
     "russian": "Бесплатно"
   },
   {
@@ -3117,8 +3117,8 @@
     "german": "Einfügen",
     "japanese": "インプット",
     "korean": "추가",
-    "order": 16,
     "polish": "Dostarcz",
+    "roworder": 16,
     "russian": "Вставить"
   },
   {
@@ -3131,8 +3131,8 @@
     "german": "Links",
     "japanese": "左",
     "korean": "왼쪽",
-    "order": 8,
     "polish": "W lewo",
+    "roworder": 8,
     "russian": "Вправо"
   },
   {
@@ -3145,8 +3145,8 @@
     "german": "Microtopia",
     "japanese": "ミクロトピア",
     "korean": "마이크로토피아",
-    "order": 241,
     "polish": "Microtopia",
+    "roworder": 241,
     "russian": "Microtopia"
   },
   {
@@ -3159,8 +3159,8 @@
     "german": "Weiter",
     "japanese": "次へ",
     "korean": "다음",
-    "order": 11,
     "polish": "Dalej",
+    "roworder": 11,
     "russian": "Далее"
   },
   {
@@ -3173,8 +3173,8 @@
     "german": "Nein",
     "japanese": "いいえ",
     "korean": "아니오",
-    "order": 2,
     "polish": "Nie",
+    "roworder": 2,
     "russian": "Нет"
   },
   {
@@ -3187,8 +3187,8 @@
     "german": "-",
     "japanese": "無し",
     "korean": "없음",
-    "order": 15,
     "polish": "Brak",
+    "roworder": 15,
     "russian": "Нет"
   },
   {
@@ -3201,8 +3201,8 @@
     "german": "Nichts",
     "japanese": "無し",
     "korean": "없음",
-    "order": 14,
     "polish": "–",
+    "roworder": 14,
     "russian": "Ничего"
   },
   {
@@ -3215,8 +3215,8 @@
     "german": "OK",
     "japanese": "決定",
     "korean": "확인",
-    "order": 0,
     "polish": "OK",
+    "roworder": 0,
     "russian": "OK"
   },
   {
@@ -3229,8 +3229,8 @@
     "german": "Öffnen",
     "japanese": "OPEN",
     "korean": "열기",
-    "order": 22,
     "polish": "Otwórz",
+    "roworder": 22,
     "russian": "Открыть"
   },
   {
@@ -3243,8 +3243,8 @@
     "german": "Pause",
     "japanese": "一時停止",
     "korean": "정지",
-    "order": 5,
     "polish": "Pauza",
+    "roworder": 5,
     "russian": "Пауза"
   },
   {
@@ -3257,8 +3257,8 @@
     "german": "^1 %",
     "japanese": "^1%",
     "korean": "^1%",
-    "order": 258,
     "polish": "^1%",
+    "roworder": 258,
     "russian": "^1%"
   },
   {
@@ -3271,8 +3271,8 @@
     "german": "Zurück",
     "japanese": "前へ",
     "korean": "이전",
-    "order": 10,
     "polish": "Wstecz",
+    "roworder": 10,
     "russian": "Назад"
   },
   {
@@ -3285,8 +3285,8 @@
     "german": "Prolog",
     "japanese": "序章",
     "korean": "프롤로그",
-    "order": 240,
     "polish": "Prolog",
+    "roworder": 240,
     "russian": "Пролог"
   },
   {
@@ -3299,8 +3299,8 @@
     "german": "Rechts",
     "japanese": "右",
     "korean": "오른쪽",
-    "order": 9,
     "polish": "W prawo",
+    "roworder": 9,
     "russian": "Влево"
   },
   {
@@ -3313,8 +3313,8 @@
     "german": "Hoch",
     "japanese": "上",
     "korean": "위",
-    "order": 6,
     "polish": "W górę",
+    "roworder": 6,
     "russian": "Вверх"
   },
   {
@@ -3327,8 +3327,8 @@
     "german": "Ja",
     "japanese": "はい",
     "korean": "네",
-    "order": 1,
     "polish": "Tak",
+    "roworder": 1,
     "russian": "Да"
   },
   {
@@ -3341,8 +3341,8 @@
     "german": "Leer",
     "japanese": "空",
     "korean": "비어 있음",
-    "order": 293,
     "polish": "Pusto",
+    "roworder": 293,
     "russian": "Пусто"
   },
   {
@@ -3355,8 +3355,8 @@
     "german": "Letzte Stufe",
     "japanese": "最終フェーズ",
     "korean": "파이널 스테이지",
-    "order": 294,
     "polish": "Ostatnie stadium",
+    "roworder": 294,
     "russian": "Финальная стадия"
   },
   {
@@ -3369,8 +3369,8 @@
     "german": "Stufe 1",
     "japanese": "フェーズ1",
     "korean": "스테이지1",
-    "order": 295,
     "polish": "1. stadium",
+    "roworder": 295,
     "russian": "Стадия 1"
   },
   {
@@ -3383,8 +3383,8 @@
     "german": "Stufe 10",
     "japanese": "フェーズ10",
     "korean": "스테이지10",
-    "order": 304,
     "polish": "10. stadium",
+    "roworder": 304,
     "russian": "Стадия 10"
   },
   {
@@ -3397,8 +3397,8 @@
     "german": "Stufe 11",
     "japanese": "フェーズ11",
     "korean": "스테이지11",
-    "order": 305,
     "polish": "11. stadium",
+    "roworder": 305,
     "russian": "Стадия 11"
   },
   {
@@ -3411,8 +3411,8 @@
     "german": "Stufe 12",
     "japanese": "フェーズ12",
     "korean": "스테이지12",
-    "order": 306,
     "polish": "12. stadium",
+    "roworder": 306,
     "russian": "Стадия 12"
   },
   {
@@ -3425,8 +3425,8 @@
     "german": "Stufe 13",
     "japanese": "フェーズ13",
     "korean": "스테이지13",
-    "order": 307,
     "polish": "13. stadium",
+    "roworder": 307,
     "russian": "Стадия 13"
   },
   {
@@ -3439,8 +3439,8 @@
     "german": "Stufe 14",
     "japanese": "フェーズ14",
     "korean": "스테이지14",
-    "order": 308,
     "polish": "14. stadium",
+    "roworder": 308,
     "russian": "Стадия 14"
   },
   {
@@ -3453,8 +3453,8 @@
     "german": "Stufe 15",
     "japanese": "フェーズ15",
     "korean": "스테이지15",
-    "order": 309,
     "polish": "15. stadium",
+    "roworder": 309,
     "russian": "Стадия 15"
   },
   {
@@ -3467,8 +3467,8 @@
     "german": "Stufe 2",
     "japanese": "フェーズ2",
     "korean": "스테이지2",
-    "order": 296,
     "polish": "2. stadium",
+    "roworder": 296,
     "russian": "Стадия 2"
   },
   {
@@ -3481,8 +3481,8 @@
     "german": "Stufe 3",
     "japanese": "フェーズ3",
     "korean": "스테이지3",
-    "order": 297,
     "polish": "3. stadium",
+    "roworder": 297,
     "russian": "Стадия 3"
   },
   {
@@ -3495,8 +3495,8 @@
     "german": "Stufe 4",
     "japanese": "フェーズ4",
     "korean": "스테이지4",
-    "order": 298,
     "polish": "4. stadium",
+    "roworder": 298,
     "russian": "Стадия 4"
   },
   {
@@ -3509,8 +3509,8 @@
     "german": "Stufe 5",
     "japanese": "フェーズ5",
     "korean": "스테이지5",
-    "order": 299,
     "polish": "5. stadium",
+    "roworder": 299,
     "russian": "Стадия 5"
   },
   {
@@ -3523,8 +3523,8 @@
     "german": "Stufe 6",
     "japanese": "フェーズ6",
     "korean": "스테이지6",
-    "order": 300,
     "polish": "6. stadium",
+    "roworder": 300,
     "russian": "Стадия 6"
   },
   {
@@ -3537,8 +3537,8 @@
     "german": "Stufe 7",
     "japanese": "フェーズ7",
     "korean": "스테이지7",
-    "order": 301,
     "polish": "7. stadium",
+    "roworder": 301,
     "russian": "Стадия 7"
   },
   {
@@ -3551,8 +3551,8 @@
     "german": "Stufe 8",
     "japanese": "フェーズ8",
     "korean": "스테이지8",
-    "order": 302,
     "polish": "8. stadium",
+    "roworder": 302,
     "russian": "Стадия 8"
   },
   {
@@ -3565,8 +3565,8 @@
     "german": "Stufe 9",
     "japanese": "フェーズ9",
     "korean": "스테이지9",
-    "order": 303,
     "polish": "9. stadium",
+    "roworder": 303,
     "russian": "Стадия 9"
   },
   {
@@ -3579,8 +3579,8 @@
     "german": "Stufe ^1",
     "japanese": "フェーズ^1",
     "korean": "스테이지^1",
-    "order": 310,
     "polish": "^1. stadium",
+    "roworder": 310,
     "russian": "Этап ^1"
   },
   {
@@ -3593,8 +3593,8 @@
     "german": "Kamera runter",
     "japanese": "カメラを下へ",
     "korean": "카메라 아래로 이동",
-    "order": 53,
     "polish": "Przesuwanie widoku w dół",
+    "roworder": 53,
     "russian": "Камера вниз"
   },
   {
@@ -3607,8 +3607,8 @@
     "german": "Kamera bewegen",
     "japanese": "カメラ移動",
     "korean": "카메라 드래그",
-    "order": 49,
     "polish": "Przesuwanie widoku",
+    "roworder": 49,
     "russian": "Перетащить камеру"
   },
   {
@@ -3621,8 +3621,8 @@
     "german": "Kamera links",
     "japanese": "カメラを左へ",
     "korean": "카메라 왼쪽으로 이동",
-    "order": 50,
     "polish": "Przesuwanie widoku w lewo",
+    "roworder": 50,
     "russian": "Камера влево"
   },
   {
@@ -3635,8 +3635,8 @@
     "german": "Kamera rechts",
     "japanese": "カメラを右へ",
     "korean": "카메라 오른쪽으로 이동",
-    "order": 51,
     "polish": "Przesuwanie widoku w prawo",
+    "roworder": 51,
     "russian": "Камера вправо"
   },
   {
@@ -3649,8 +3649,8 @@
     "german": "Kamera drehen",
     "japanese": "カメラ回転",
     "korean": "카메라 회전",
-    "order": 54,
     "polish": "Obracanie widoku",
+    "roworder": 54,
     "russian": "Поворот камеры"
   },
   {
@@ -3663,8 +3663,8 @@
     "german": "Kamera drehen (Alt.)",
     "japanese": "カメラ回転（スペア）",
     "korean": "카메라 회전(예비용)",
-    "order": 55,
     "polish": "Obracanie widoku 2",
+    "roworder": 55,
     "russian": "Поворот камеры (вариант)"
   },
   {
@@ -3677,8 +3677,8 @@
     "german": "Kamera nach links drehen",
     "japanese": "カメラの左回転",
     "korean": "카메라 왼쪽으로 회전",
-    "order": 56,
     "polish": "Obracanie widoku w lewo",
+    "roworder": 56,
     "russian": "Поворот камеры влево"
   },
   {
@@ -3691,8 +3691,8 @@
     "german": "Kamera nach rechts drehen",
     "japanese": "カメラの右回転",
     "korean": "카메라 오른쪽으로 회전",
-    "order": 57,
     "polish": "Obracanie widoku w prawo",
+    "roworder": 57,
     "russian": "Поворот камеры вправо"
   },
   {
@@ -3705,8 +3705,8 @@
     "german": "Kamera-Drehgeschwindigkeit",
     "japanese": "カメラ回転ペース",
     "korean": "카메라 회전 속도",
-    "order": 337,
     "polish": "Szybkość obrotu widoku",
+    "roworder": 337,
     "russian": "Скорость поворота камеры"
   },
   {
@@ -3719,8 +3719,8 @@
     "german": "Kamera-Bewegungsgeschwindigkeit",
     "japanese": "カメラ移動ペース",
     "korean": "카메라 이동 속도",
-    "order": 336,
     "polish": "Szybkość ruchu widoku",
+    "roworder": 336,
     "russian": "Скорость движения камеры"
   },
   {
@@ -3733,8 +3733,8 @@
     "german": "Kamera hoch",
     "japanese": "カメラを上へ",
     "korean": "카메라 위로 이동",
-    "order": 52,
     "polish": "Przesuwanie widoku w górę",
+    "roworder": 52,
     "russian": "Камера вверх"
   },
   {
@@ -3747,8 +3747,8 @@
     "german": "Kamerazoom",
     "japanese": "ズーム調整",
     "korean": "카메라 확대/축소",
-    "order": 58,
     "polish": "Powiększanie widoku",
+    "roworder": 58,
     "russian": "Масштаб камеры"
   },
   {
@@ -3761,8 +3761,8 @@
     "german": "Hineinzoomen",
     "japanese": "ズームイン",
     "korean": "카메라 가까워지기",
-    "order": 59,
     "polish": "Zbliżenie widoku",
+    "roworder": 59,
     "russian": "Приближение камеры"
   },
   {
@@ -3775,8 +3775,8 @@
     "german": "Herauszoomen",
     "japanese": "ズームアウト",
     "korean": "카메라 멀어지기",
-    "order": 60,
     "polish": "Oddalenie widoku",
+    "roworder": 60,
     "russian": "Отдаление камеры"
   },
   {
@@ -3789,8 +3789,8 @@
     "german": "Kamera-Zoomgeschwindigkeit",
     "japanese": "カメラズームペース",
     "korean": "카메라 확대/축소 속도",
-    "order": 338,
     "polish": "Szybkość zbliżania / oddalania widoku",
+    "roworder": 338,
     "russian": "Скорость масштабирования камеры"
   },
   {
@@ -3803,8 +3803,8 @@
     "german": "Löschen",
     "japanese": "取り壊す",
     "korean": "삭제",
-    "order": 64,
     "polish": "Usunięcie",
+    "roworder": 64,
     "russian": "Удалить"
   },
   {
@@ -3817,8 +3817,8 @@
     "german": "Auswahl aufheben",
     "japanese": "キャンセル",
     "korean": "선택 취소",
-    "order": 48,
     "polish": "Usuwanie zaznaczenia",
+    "roworder": 48,
     "russian": "Отменить выбор"
   },
   {
@@ -3831,8 +3831,8 @@
     "german": "Auswahl aufheben/Kamera bewegen",
     "japanese": "キャンセル/カメラ移動",
     "korean": "선택 취소/카메라 드래그",
-    "order": 47,
     "polish": "Usuwanie zaznaczenia / Przesuwanie widoku",
+    "roworder": 47,
     "russian": "Отменить выбор/перетащить камеру"
   },
   {
@@ -3845,8 +3845,8 @@
     "german": "Nicht einrasten",
     "japanese": "接地をしない",
     "korean": "바닥에 붙이지 않음",
-    "order": 62,
     "polish": "Bez przyciągania do ziemi",
+    "roworder": 62,
     "russian": "Не привязываться к полю"
   },
   {
@@ -3859,8 +3859,8 @@
     "german": "Material ablegen",
     "japanese": "素材を置く",
     "korean": "재료 놓기",
-    "order": 67,
     "polish": "Upuszczenie materiału",
+    "roworder": 67,
     "russian": "Бросить материал"
   },
   {
@@ -3873,8 +3873,8 @@
     "german": 0.0,
     "japanese": 0.0,
     "korean": 0.0,
-    "order": 68,
     "polish": 0.0,
+    "roworder": 68,
     "russian": 0.0
   },
   {
@@ -3887,8 +3887,8 @@
     "german": "Schneller",
     "japanese": "2倍速",
     "korean": "빨리 감기",
-    "order": 544,
     "polish": "Przyśpiesz",
+    "roworder": 544,
     "russian": "Ускорение"
   },
   {
@@ -3901,8 +3901,8 @@
     "german": "Ameise folgen",
     "japanese": "アリを追跡",
     "korean": "개미 따라다니기",
-    "order": 66,
     "polish": "Śledzenie mrówki",
+    "roworder": 66,
     "russian": "Следовать за муравьем"
   },
   {
@@ -3915,8 +3915,8 @@
     "german": "Nächste Baugruppe",
     "japanese": "次のビルドグループ",
     "korean": "다음 건축 그룹",
-    "order": 546,
     "polish": "Następna grupa budowy",
+    "roworder": 546,
     "russian": "След. вкладка зданий"
   },
   {
@@ -3929,8 +3929,8 @@
     "german": "Pause",
     "japanese": "一時停止",
     "korean": "정지",
-    "order": 61,
     "polish": "Pauza",
+    "roworder": 61,
     "russian": "Пауза"
   },
   {
@@ -3943,8 +3943,8 @@
     "german": "Pipette",
     "japanese": "コピー",
     "korean": "복제",
-    "order": 366,
     "polish": "Wskaż",
+    "roworder": 366,
     "russian": "Копирование"
   },
   {
@@ -3957,8 +3957,8 @@
     "german": "Letzte Baugruppe",
     "japanese": "前のビルドグループ",
     "korean": "이전 건축 그룹",
-    "order": 545,
     "polish": "Poprzednia grupa budowy",
+    "roworder": 545,
     "russian": "Пред. вкладка зданий"
   },
   {
@@ -3971,8 +3971,8 @@
     "german": "Schnellladen",
     "japanese": "クイックロード",
     "korean": "스피드 로딩",
-    "order": 448,
     "polish": "Szybki odczyt",
+    "roworder": 448,
     "russian": "Быстр. загрузка"
   },
   {
@@ -3985,8 +3985,8 @@
     "german": "Schnellspeichern",
     "japanese": "クイックセーブ",
     "korean": "스피드 저장",
-    "order": 447,
     "polish": "Szybki zapis",
+    "roworder": 447,
     "russian": "Быстр. сохранение"
   },
   {
@@ -3999,8 +3999,8 @@
     "german": "Gebäude versetzen",
     "japanese": "建築を移設",
     "korean": "건물 이동",
-    "order": 65,
     "polish": "Przeniesienie budynku",
+    "roworder": 65,
     "russian": "Переместить здание"
   },
   {
@@ -4013,8 +4013,8 @@
     "german": "Auswählen",
     "japanese": "選択",
     "korean": "선택",
-    "order": 46,
     "polish": "Zaznaczanie",
+    "roworder": 46,
     "russian": "Выбрать"
   },
   {
@@ -4027,8 +4027,8 @@
     "german": "Mehrere Gebäude auswählen",
     "japanese": "建築物を複数選ぶ",
     "korean": "여러 개 건물 선택",
-    "order": 63,
     "polish": "Zaznaczenie wielu budynków",
+    "roworder": 63,
     "russian": "Выбрать несколько зданий"
   },
   {
@@ -4041,8 +4041,8 @@
     "german": "Eingabe-Einstellungen",
     "japanese": "入力設定",
     "korean": "입력 설정",
-    "order": 45,
     "polish": "Ustawienia sterowania",
+    "roworder": 45,
     "russian": "Настройки ввода"
   },
   {
@@ -4055,8 +4055,8 @@
     "german": "Kartenmodus ein/aus",
     "japanese": "地図モードの切替",
     "korean": "지도 모드 켜기/끄기",
-    "order": 551,
     "polish": "Tryb mapy",
+    "roworder": 551,
     "russian": "Вкл./выкл. режим карты"
   },
   {
@@ -4069,8 +4069,8 @@
     "german": "Verschieben von Straßen sperren/entsperren",
     "japanese": "ルートドラッギングのロック切替",
     "korean": "경로 끌기 잠금 켜기/끄기",
-    "order": 552,
     "polish": "Blokada przeciągania ścieżek",
+    "roworder": 552,
     "russian": "Вкл./выкл. блокировку троп"
   },
   {
@@ -4083,8 +4083,8 @@
     "german": "Verschieben von Straßen sperren",
     "japanese": "ルートドラッギングのロック",
     "korean": "경로 끌기 잠그기",
-    "order": 553,
     "polish": "Zablokuj przeciąganie ścieżek",
+    "roworder": 553,
     "russian": "Заблокировать перенос тропы"
   },
   {
@@ -4097,8 +4097,8 @@
     "german": "Verschieben von Straßen entsperren",
     "japanese": "ルートドラッギングの解除",
     "korean": "경로 끌기 잠금 해제",
-    "order": 554,
     "polish": "Odblokuj przeciąganie ścieżek",
+    "roworder": 554,
     "russian": "Разблокировать перенос тропы"
   },
   {
@@ -4111,8 +4111,8 @@
     "german": "Instinkt ^1",
     "japanese": "本能^1",
     "korean": "본능^1",
-    "order": 492,
     "polish": "Samouczek ^1",
+    "roworder": 492,
     "russian": "Инстинкт ^1"
   },
   {
@@ -4125,8 +4125,8 @@
     "german": "Einführung",
     "japanese": "紹介",
     "korean": "소개",
-    "order": 493,
     "polish": "Wprowadzenie",
+    "roworder": 493,
     "russian": "Пролог"
   },
   {
@@ -4139,8 +4139,8 @@
     "german": "Abschließen",
     "japanese": "完了",
     "korean": "완료",
-    "order": 141,
     "polish": "Ukończ",
+    "roworder": 141,
     "russian": "Завершить"
   },
   {
@@ -4153,8 +4153,8 @@
     "german": "Königin",
     "japanese": "女王アリ",
     "korean": "여왕개미",
-    "order": 318,
     "polish": "Królowa",
+    "roworder": 318,
     "russian": "Королева"
   },
   {
@@ -4167,8 +4167,8 @@
     "german": "Brut",
     "japanese": "幼虫",
     "korean": "유충",
-    "order": 319,
     "polish": "Wylęgnij",
+    "roworder": 319,
     "russian": "Выводок"
   },
   {
@@ -4181,8 +4181,8 @@
     "german": "Arbeiterinnen",
     "japanese": "働きアリ",
     "korean": "일개미",
-    "order": 320,
     "polish": "Robotnice",
+    "roworder": 320,
     "russian": "Рабочие"
   },
   {
@@ -4195,8 +4195,8 @@
     "german": "Ameisen",
     "japanese": "アリ",
     "korean": "개미",
-    "order": 316,
     "polish": "Mrówki",
+    "roworder": 316,
     "russian": "Муравьи"
   },
   {
@@ -4209,8 +4209,8 @@
     "german": "Ameisen (Global)",
     "japanese": "アリ（全域）",
     "korean": "개미(전역)",
-    "order": 317,
     "polish": "Mrówki (wszędzie)",
+    "roworder": 317,
     "russian": "Муравьи (общ.)"
   },
   {
@@ -4223,8 +4223,8 @@
     "german": "Klicke, um auf Ameise dieser Kaste zu fokussieren.",
     "japanese": "クリックするとこの職種のアリに画面を合わせます。",
     "korean": "클릭해서 이 종류의 개미에 초점을 맞추세요.",
-    "order": 557,
     "polish": "Kliknij, aby zaznaczyć mrówkę z tej kasty.",
+    "roworder": 557,
     "russian": "Щелкни, чтобы сфокусироваться на муравье этой касты."
   },
   {
@@ -4237,8 +4237,8 @@
     "german": "Klicke, um auf Material zu fokussieren.",
     "japanese": "クリックすると素材に画面を合わせます。",
     "korean": "클릭해서 재료에 초점을 맞추세요.",
-    "order": 556,
     "polish": "Kliknij, aby zaznaczyć materiał.",
+    "roworder": 556,
     "russian": "Щелкни, чтобы сфокусироваться на материале."
   },
   {
@@ -4251,8 +4251,8 @@
     "german": "Klicke, um die Population dieser Ameisenkaste zu verfolgen.",
     "japanese": "クリックすると、このアリの総数をトラッキングします。",
     "korean": "클릭해서 이 개미의 인구를 추적하세요.",
-    "order": 558,
     "polish": "Kliknij, aby śledzić liczebność populacji takich mrówek.",
+    "roworder": 558,
     "russian": "Щелкни, чтобы отследить популяцию муравьев этой касты."
   },
   {
@@ -4265,8 +4265,8 @@
     "german": "Enthaltene Energie: ^1",
     "japanese": "含まれるエナジー：^1",
     "korean": "함유 에너지: ^1",
-    "order": 321,
     "polish": "Zgromadzona energia: ^1",
+    "roworder": 321,
     "russian": "Содержит энергии: ^1"
   },
   {
@@ -4279,8 +4279,8 @@
     "german": "Lebensdauer: ^1",
     "japanese": "寿命：^1",
     "korean": "수명: ^1",
-    "order": 322,
     "polish": "Żywotność: ^1",
+    "roworder": 322,
     "russian": "Срок жизни: ^1"
   },
   {
@@ -4293,8 +4293,8 @@
     "german": "Lebensdauer: unbegrenzt",
     "japanese": "寿命：無限",
     "korean": "수명: 무한",
-    "order": 323,
     "polish": "Żywotność: nieskończona",
+    "roworder": 323,
     "russian": "Срок жизни: Вечно"
   },
   {
@@ -4307,8 +4307,8 @@
     "german": "Inventar",
     "japanese": "倉庫",
     "korean": "창고",
-    "order": 314,
     "polish": "Ekwipunek",
+    "roworder": 314,
     "russian": "Инвентарь"
   },
   {
@@ -4321,8 +4321,8 @@
     "german": "Inventar (Global)",
     "japanese": "倉庫（全域）",
     "korean": "창고(전역)",
-    "order": 315,
     "polish": "Ekwipunek (wszędzie)",
+    "roworder": 315,
     "russian": "Инвентарь (общ.)"
   },
   {
@@ -4335,8 +4335,8 @@
     "german": "Spanisch (Español)",
     "japanese": "スペイン語（Español）",
     "korean": "스페인어 (Español)",
-    "order": 228,
     "polish": "Hiszpański (Español)",
+    "roworder": 228,
     "russian": "Испанский (Español)"
   },
   {
@@ -4349,8 +4349,8 @@
     "german": "Vereinfachtes Chinesisch (简体中文)",
     "japanese": "中国語(簡体字)（简体中文）",
     "korean": "중국어 간체 (简体中文)",
-    "order": 231,
     "polish": "Chiński uproszczony (简体中文)",
+    "roworder": 231,
     "russian": "Упрощённый Китайский (简体中文)"
   },
   {
@@ -4363,8 +4363,8 @@
     "german": "Traditionelles Chinesisch (中國傳統的)",
     "japanese": "中国語(繫体字)（繁體中文）",
     "korean": "중국어 번체 (繁體中文)",
-    "order": 232,
     "polish": "Chiński tradycyjny (中國傳統的)",
+    "roworder": 232,
     "russian": "Традиционный Китайский (中國傳統的)"
   },
   {
@@ -4377,8 +4377,8 @@
     "german": "Niederländisch (Nederlands)",
     "japanese": "オランダ語（Nederlands）",
     "korean": "네덜란드어 (Nederlands)",
-    "order": 225,
     "polish": "Holenderski (Nederlands)",
+    "roworder": 225,
     "russian": "Нидерландский (Nederlands)"
   },
   {
@@ -4391,8 +4391,8 @@
     "german": "Englisch",
     "japanese": "英語 (English)",
     "korean": "영어 (English)",
-    "order": 224,
     "polish": "Angielski (English)",
+    "roworder": 224,
     "russian": "Английский (English)"
   },
   {
@@ -4405,8 +4405,8 @@
     "german": "Französisch (Français)",
     "japanese": "フランス語（Français）",
     "korean": "프랑스어 (Français)",
-    "order": 226,
     "polish": "Francuski (Français)",
+    "roworder": 226,
     "russian": "Французский (Français)"
   },
   {
@@ -4419,8 +4419,8 @@
     "german": "Deutsch",
     "japanese": "ドイツ語（Deutsch）",
     "korean": "독일어 (Deutsch)",
-    "order": 227,
     "polish": "Niemiecki (Deutsch)",
+    "roworder": 227,
     "russian": "Немецкий (Deutsch)"
   },
   {
@@ -4433,8 +4433,8 @@
     "german": "Japanisch (日本語)",
     "japanese": "日本語",
     "korean": "일어 (日本語)",
-    "order": 230,
     "polish": "Japoński (日本語)",
+    "roworder": 230,
     "russian": "Японский (日本語)"
   },
   {
@@ -4447,8 +4447,8 @@
     "german": "Koreanisch (한국인)",
     "japanese": "韓国語（한국인）",
     "korean": "한국어",
-    "order": 235,
     "polish": "Koreański (한국인)",
+    "roworder": 235,
     "russian": "Корейский (한국인)"
   },
   {
@@ -4461,8 +4461,8 @@
     "german": "Polnisch (polski)",
     "japanese": "ポーランド語（polski）",
     "korean": "폴란드어 (polski)",
-    "order": 233,
     "polish": "Polski",
+    "roworder": 233,
     "russian": "Польский (polski)"
   },
   {
@@ -4475,8 +4475,8 @@
     "german": "Russisch (pусский)",
     "japanese": "ロシア語（pусский）",
     "korean": "러시아어 (pусский)",
-    "order": 229,
     "polish": "Rosyjski (pусский)",
+    "roworder": 229,
     "russian": "Русский"
   },
   {
@@ -4489,8 +4489,8 @@
     "german": "Türkisch (Türkçe)",
     "japanese": "トルコ語（Türkçe）",
     "korean": "터키어 (Türkçe)",
-    "order": 234,
     "polish": "Turecki (Türkçe)",
+    "roworder": 234,
     "russian": "Турецкий (Türkçe)"
   },
   {
@@ -4503,8 +4503,8 @@
     "german": "Lädt ...",
     "japanese": "ロード中…",
     "korean": "로딩 중...",
-    "order": 30,
     "polish": "Wczytywanie...",
+    "roworder": 30,
     "russian": "Загрузка..."
   },
   {
@@ -4517,8 +4517,8 @@
     "german": "Automatisches Speichern",
     "japanese": "オートセーブ",
     "korean": "자동 저장",
-    "order": 88,
     "polish": "Autozapis",
+    "roworder": 88,
     "russian": "Автосохранение"
   },
   {
@@ -4531,8 +4531,8 @@
     "german": "Dieser Spielstand ist defekt und kann nicht geladen werden.",
     "japanese": "セーブファイルが破損しています、ロードできません。",
     "korean": "저장 데이터가 손상되어 로딩할 수 없습니다.",
-    "order": 83,
     "polish": "Ten plik zapisu jest uszkodzony i nie można go wczytać.",
+    "roworder": 83,
     "russian": "Сохранение повреждено, загрузка невозможна."
   },
   {
@@ -4545,8 +4545,8 @@
     "german": "Datei wurde mit der Vollversion gespeichert und kann in der Demoversion nicht geöffnet werden!",
     "japanese": "このファイルはコンプリートバージョンで保存されています。デモバージョンで開くことはできません！",
     "korean": "풀버전을 사용해 파일을 저장했으므로 데모 버전에서 열 수 없습니다!",
-    "order": 441,
     "polish": "Ten zapis powstał w pełnej wersji gry i nie można go użyć w wersji próbnej!",
+    "roworder": 441,
     "russian": "Файл был сохранен в полной версии игры и не может быть открыт в демоверсии!"
   },
   {
@@ -4559,8 +4559,8 @@
     "german": "Möchtest du die Datei \"^1\" wirklich löschen?",
     "japanese": "ファイル“^1”を削除しますか？",
     "korean": "“^1” 파일을 삭제하시겠습니까?",
-    "order": 85,
     "polish": "Chcesz usunąć plik „^1”?",
+    "roworder": 85,
     "russian": "Точно удалить файл «^1»?"
   },
   {
@@ -4573,8 +4573,8 @@
     "german": "Es gibt bereits eine Datei mit dem Namen \"^1\".|Möchtest du sie überschreiben?",
     "japanese": "ファイル“^1”が既に存在します。|このファイルに上書きしますか？",
     "korean": "파일명 “^1”이(가) 이미 존재합니다.|해당 파일을 덮어쓰시겠습니까?",
-    "order": 80,
     "polish": "Istnieje już plik o nazwie „^1”.|Chcesz go zastąpić?",
+    "roworder": 80,
     "russian": "Файл с именем «^1» уже существует.|Перезаписать этот файл?"
   },
   {
@@ -4587,8 +4587,8 @@
     "german": "Dateinamen eingeben",
     "japanese": "ファイル名を入力",
     "korean": "파일명 입력",
-    "order": 79,
     "polish": "Wpisz nazwę pliku",
+    "roworder": 79,
     "russian": "Укажите имя файла"
   },
   {
@@ -4601,8 +4601,8 @@
     "german": "Zuletzt gespielt: ^1",
     "japanese": "最後にプレイした時間：^1",
     "korean": "마지막 게임 시간: ^1",
-    "order": 82,
     "polish": "Ostatnia gra: ^1",
+    "roworder": 82,
     "russian": "Последняя игра: ^1"
   },
   {
@@ -4615,8 +4615,8 @@
     "german": "Laden",
     "japanese": "ロード",
     "korean": "로딩",
-    "order": 76,
     "polish": "Wczytaj",
+    "roworder": 76,
     "russian": "Загрузить"
   },
   {
@@ -4629,8 +4629,8 @@
     "german": "Spiel konnte nicht geladen werden.",
     "japanese": "ゲームをロードできません",
     "korean": "게임 로딩 불가",
-    "order": 90,
     "polish": "Nie udało się wczytać gry",
+    "roworder": 90,
     "russian": "Игра не может быть загружена"
   },
   {
@@ -4643,8 +4643,8 @@
     "german": "Neuer Spielstand",
     "japanese": "新セーブデータ",
     "korean": "새 저장",
-    "order": 86,
     "polish": "Nowy plik zapisu",
+    "roworder": 86,
     "russian": "Новое сохранение"
   },
   {
@@ -4657,8 +4657,8 @@
     "german": "Neuen Spielstand anlegen",
     "japanese": "新たなセーブデータを作る",
     "korean": "새 저장 생성",
-    "order": 78,
     "polish": "Nowy plik zapisu",
+    "roworder": 78,
     "russian": "Новое сохранение"
   },
   {
@@ -4671,8 +4671,8 @@
     "german": "Möchtest du die Datei \"^1\" wirklich überschreiben?",
     "japanese": "ファイル“^1”に上書きしますか？",
     "korean": "“^1” 파일을 덮어쓰시겠습니까?",
-    "order": 84,
     "polish": "Chcesz zastąpić plik „^1”?",
+    "roworder": 84,
     "russian": "Точно перезаписать файл «^1»?"
   },
   {
@@ -4685,8 +4685,8 @@
     "german": "Spielzeit: ^1",
     "japanese": "プレイ時間：^1",
     "korean": "게임 시간: ^1",
-    "order": 81,
     "polish": "Czas gry: ^1",
+    "roworder": 81,
     "russian": "Всего в игре: ^1"
   },
   {
@@ -4699,8 +4699,8 @@
     "german": "Schnellspeichern",
     "japanese": "クイックセーブ",
     "korean": "빠른 저장",
-    "order": 87,
     "polish": "Szybki zapis",
+    "roworder": 87,
     "russian": "Быстр. сохранение"
   },
   {
@@ -4713,8 +4713,8 @@
     "german": "Speichern",
     "japanese": "セーブ",
     "korean": "저장",
-    "order": 77,
     "polish": "Zapisz",
+    "roworder": 77,
     "russian": "Сохранить"
   },
   {
@@ -4727,8 +4727,8 @@
     "german": "Spiel konnte nicht gespeichert werden.",
     "japanese": "ゲームをセーブできません",
     "korean": "게임 저장 불가",
-    "order": 89,
     "polish": "Nie udało się zapisać gry",
+    "roworder": 89,
     "russian": "Игра не может быть сохранена"
   },
   {
@@ -4741,8 +4741,8 @@
     "german": "Fortfahren",
     "japanese": "続ける",
     "korean": "계속하기",
-    "order": 26,
     "polish": "Kontynuuj",
+    "roworder": 26,
     "russian": "Продолжить"
   },
   {
@@ -4755,8 +4755,8 @@
     "german": "Mitwirkende",
     "japanese": "クレジット",
     "korean": "감사드립니다",
-    "order": 357,
     "polish": "Autorzy",
+    "roworder": 357,
     "russian": "Титры"
   },
   {
@@ -4769,8 +4769,8 @@
     "german": "Spiel laden",
     "japanese": "ロードゲーム",
     "korean": "게임 로딩",
-    "order": 27,
     "polish": "Wczytaj grę",
+    "roworder": 27,
     "russian": "Загрузить игру"
   },
   {
@@ -4783,8 +4783,8 @@
     "german": "Neues Spiel",
     "japanese": "ニューゲーム",
     "korean": "새 게임",
-    "order": 25,
     "polish": "Nowa gra",
+    "roworder": 25,
     "russian": "Новая игра"
   },
   {
@@ -4797,8 +4797,8 @@
     "german": "Zum Fortfahren Taste drücken",
     "japanese": "続けるにはいずれかのキーを押す",
     "korean": "계속하려면 아무 키나 누르세요",
-    "order": 450,
     "polish": "Naciśnij dowolny klawisz",
+    "roworder": 450,
     "russian": "Нажми любую клавишу, чтобы продолжить"
   },
   {
@@ -4811,8 +4811,8 @@
     "german": "Zum Desktop",
     "japanese": "デスクトップに戻る",
     "korean": "데스크톱으로 나가기",
-    "order": 29,
     "polish": "Wyjdź do pulpitu",
+    "roworder": 29,
     "russian": "Выйти из игры"
   },
   {
@@ -4825,8 +4825,8 @@
     "german": "Einstellungen",
     "japanese": "設定",
     "korean": "설정",
-    "order": 28,
     "polish": "Ustawienia",
+    "roworder": 28,
     "russian": "Настройки"
   },
   {
@@ -4839,8 +4839,8 @@
     "german": "Umgebung scannen",
     "japanese": "環境の探知",
     "korean": "환경 스캔",
-    "order": 490,
     "polish": "Przeszukaj okolicę",
+    "roworder": 490,
     "russian": "Сканировать среду"
   },
   {
@@ -4853,8 +4853,8 @@
     "german": "Nach Insel scannen",
     "japanese": "島の探知",
     "korean": "섬 스캔",
-    "order": 489,
     "polish": "Poszukaj wyspy",
+    "roworder": 489,
     "russian": "Искать остров"
   },
   {
@@ -4867,8 +4867,8 @@
     "german": "Insel zum Enthüllen auswählen:",
     "japanese": "発見する島を選んでください:",
     "korean": "발견할 섬 선택:",
-    "order": 579,
     "polish": "Wybierz wyspę, by odkryć:",
+    "roworder": 579,
     "russian": "Выбери остров для открытия:"
   },
   {
@@ -4881,8 +4881,8 @@
     "german": "Berechne ...",
     "japanese": "計算中…",
     "korean": "계산 중...",
-    "order": 507,
     "polish": "Obliczanie...",
+    "roworder": 507,
     "russian": "Подсчитываем..."
   },
   {
@@ -4895,8 +4895,8 @@
     "german": "Hochzeitsflug aktuell aktiv!",
     "japanese": "婚姻飛行が進行中です！",
     "korean": "혼인 비행 활성화됨!",
-    "order": 503,
     "polish": "Obecnie trwa lot godowy.",
+    "roworder": 503,
     "russian": "Идет брачный полет!"
   },
   {
@@ -4909,8 +4909,8 @@
     "german": "Meiste Gynen in einem Flug:",
     "japanese": "一回の飛行に参加した最多繁殖アリ数：",
     "korean": "1회 비행에 참여한 최다 번식 개미:",
-    "order": 505,
     "polish": "Najwięcej d. matek na lot:",
+    "roworder": 505,
     "russian": "Макс. маток за один полет:"
   },
   {
@@ -4923,8 +4923,8 @@
     "german": "Aktuell wartende Gynen:",
     "japanese": "待機中の繁殖アリ数：",
     "korean": "현재 대기 중인 번식 개미:",
-    "order": 506,
     "polish": "Oczekujące dojrzałe matki:",
+    "roworder": 506,
     "russian": "Маток, ожидающих вылета:"
   },
   {
@@ -4937,8 +4937,8 @@
     "german": "Zeit bis zum nächsten Hochzeitsflug:",
     "japanese": "次の婚姻飛行まで残り時間：",
     "korean": "다음 혼인 비행까지 남은 시간:",
-    "order": 502,
     "polish": "Czas do kolejnego lotu gotowego:",
+    "roworder": 502,
     "russian": "До следующего брачного полета:"
   },
   {
@@ -4951,8 +4951,8 @@
     "german": "Hochzeitsflug",
     "japanese": "婚姻飛行",
     "korean": "혼인 비행",
-    "order": 501,
     "polish": "Lot godowy",
+    "roworder": 501,
     "russian": "Брачный полет"
   },
   {
@@ -4965,8 +4965,8 @@
     "german": "Insgesamt ausgeflogene Gynen:",
     "japanese": "飛び立った繁殖アリ合計：",
     "korean": "번식 개미 비행 총계:",
-    "order": 504,
     "polish": "Wszystkie wysłane d. matki:",
+    "roworder": 504,
     "russian": "Всего маток вылетело:"
   },
   {
@@ -4979,8 +4979,8 @@
     "german": "^1 cm",
     "japanese": "^1センチ",
     "korean": "^1cm",
-    "order": 396,
     "polish": "^1 cm",
+    "roworder": 396,
     "russian": "^1 см"
   },
   {
@@ -4993,8 +4993,8 @@
     "german": "^1 g",
     "japanese": "^1グラム",
     "korean": "^1g",
-    "order": 394,
     "polish": "^1 g",
+    "roworder": 394,
     "russian": "^1 г"
   },
   {
@@ -5007,8 +5007,8 @@
     "german": "^1 kg",
     "japanese": "^1キロ",
     "korean": "^1kg",
-    "order": 395,
     "polish": "^1 kg",
+    "roworder": 395,
     "russian": "^1 кг"
   },
   {
@@ -5021,8 +5021,8 @@
     "german": "^1 km",
     "japanese": "^1キロメートル",
     "korean": "^1km",
-    "order": 398,
     "polish": "^1 km",
+    "roworder": 398,
     "russian": "^1 км"
   },
   {
@@ -5035,8 +5035,8 @@
     "german": "^1 m",
     "japanese": "^1メートル",
     "korean": "^1m",
-    "order": 397,
     "polish": "^1 m",
+    "roworder": 397,
     "russian": "^1 м"
   },
   {
@@ -5049,8 +5049,8 @@
     "german": "^1 s",
     "japanese": "^1秒",
     "korean": "^1초",
-    "order": 399,
     "polish": "^1 s",
+    "roworder": 399,
     "russian": "^1 сек."
   },
   {
@@ -5063,8 +5063,8 @@
     "german": "Sammeln mit:",
     "japanese": "収集する方法：",
     "korean": "수집 방법:",
-    "order": 116,
     "polish": "Do zebrania:",
+    "roworder": 116,
     "russian": "Собрать с помощью:"
   },
   {
@@ -5077,8 +5077,8 @@
     "german": "Gewicht:",
     "japanese": "重量：",
     "korean": "무게:",
-    "order": 204,
     "polish": "Waga:",
+    "roworder": 204,
     "russian": "Вес:"
   },
   {
@@ -5091,8 +5091,8 @@
     "german": "Null",
     "japanese": "無し",
     "korean": "없음",
-    "order": 205,
     "polish": "zerowa",
+    "roworder": 205,
     "russian": "-"
   },
   {
@@ -5105,8 +5105,8 @@
     "german": "Leicht",
     "japanese": "軽い",
     "korean": "가벼움",
-    "order": 206,
     "polish": "mała",
+    "roworder": 206,
     "russian": "Легкий"
   },
   {
@@ -5119,8 +5119,8 @@
     "german": "Mittel",
     "japanese": "並",
     "korean": "보통",
-    "order": 207,
     "polish": "średnia",
+    "roworder": 207,
     "russian": "Средний"
   },
   {
@@ -5133,8 +5133,8 @@
     "german": "Schwer",
     "japanese": "重い",
     "korean": "무거움",
-    "order": 208,
     "polish": "duża",
+    "roworder": 208,
     "russian": "Тяжелый"
   },
   {
@@ -5147,8 +5147,8 @@
     "german": "Sehr schwer",
     "japanese": "とても重い",
     "korean": "매우 무거움",
-    "order": 209,
     "polish": "bardzo duża",
+    "roworder": 209,
     "russian": "Очень тяжелый"
   },
   {
@@ -5161,8 +5161,8 @@
     "german": "Extrem schwer",
     "japanese": "極めて重い",
     "korean": "극도로 무거움",
-    "order": 210,
     "polish": "ekstremalnie duża",
+    "roworder": 210,
     "russian": "Жутко тяжелый"
   },
   {
@@ -5175,8 +5175,8 @@
     "german": "Ameisen erschaffen: ^1",
     "japanese": "生成したアリ：^1",
     "korean": "개미 제조: ^1",
-    "order": 481,
     "polish": "Stworzone mrówki: ^1",
+    "roworder": 481,
     "russian": "Муравьев создано: ^1"
   },
   {
@@ -5189,8 +5189,8 @@
     "german": "Hochzeitsflug ^1 abgeschlossen. Die Kolonie wurde von ^2 Drohnen besucht.",
     "japanese": "^1回目の婚姻飛行が終わりました。コロニーに^2基の雄アリがやってきました。",
     "korean": "혼인 비행 #^1 완료. 개미 군락에 수개미 ^2마리가 방문했습니다.",
-    "order": 476,
     "polish": "Lot godowy nr ^1 ukończony, liczba zwabionych do kolonii trutni: ^2.",
+    "roworder": 476,
     "russian": "Завершен брачный полет #^1, колонию посетили дроны: ^2."
   },
   {
@@ -5203,8 +5203,8 @@
     "german": "Erschaffen",
     "japanese": "生成",
     "korean": "제조됨",
-    "order": 482,
     "polish": "Stworzone",
+    "roworder": 482,
     "russian": "Создано"
   },
   {
@@ -5217,8 +5217,8 @@
     "german": "Gestorben",
     "japanese": "死亡",
     "korean": "사망함",
-    "order": 484,
     "polish": "Nieżywe",
+    "roworder": 484,
     "russian": "Умерло"
   },
   {
@@ -5231,8 +5231,8 @@
     "german": "Drohnen angelockt: ^1",
     "japanese": "引き寄せられた雄アリ：^1",
     "korean": "수개미 흡인: ^1",
-    "order": 478,
     "polish": "Zwabione trutnie: ^1",
+    "roworder": 478,
     "russian": "Дронов привлечено: ^1"
   },
   {
@@ -5245,8 +5245,8 @@
     "german": "Erhalten",
     "japanese": "獲得",
     "korean": "획득함",
-    "order": 486,
     "polish": "Zdobyte",
+    "roworder": 486,
     "russian": "Получено"
   },
   {
@@ -5259,8 +5259,8 @@
     "german": "Gynen ausgeflogen: ^1",
     "japanese": "飛び立った繁殖アリ：^1",
     "korean": "번식 개미 비행: ^1",
-    "order": 477,
     "polish": "Wysłane dojrzałe matki: ^1",
+    "roworder": 477,
     "russian": "Маток вылетело: ^1"
   },
   {
@@ -5273,8 +5273,8 @@
     "german": "Material zu Inventar hinzugefügt: ^1",
     "japanese": "倉庫に追加した素材：^1",
     "korean": "창고에 추가된 재료: ^1",
-    "order": 485,
     "polish": "Nowe materiały w ekwipunku: ^1",
+    "roworder": 485,
     "russian": "Материалов добавлено в инвентарь: ^1"
   },
   {
@@ -5287,8 +5287,8 @@
     "german": "Umfunktioniert",
     "japanese": "再利用",
     "korean": "용도 변경됨",
-    "order": 483,
     "polish": "Przetworzone",
+    "roworder": 483,
     "russian": "Преобразовано"
   },
   {
@@ -5301,8 +5301,8 @@
     "german": "Zeit seit letztem Hochzeitsflug: ^1",
     "japanese": "前回の婚姻飛行からの経過時間：^1",
     "korean": "마지막 혼인 비행 후 경과 시간: ^1",
-    "order": 480,
     "polish": "Czas od ostatniego lotu godowego: ^1",
+    "roworder": 480,
     "russian": "С последнего брачного полета: ^1"
   },
   {
@@ -5315,8 +5315,8 @@
     "german": "Zeit seit Startkolonie: ^1",
     "japanese": "コロニーが作られてからの経過時間：^1",
     "korean": "개미 군락 시작 후 경과 시간: ^1",
-    "order": 479,
     "polish": "Czas od założenia kolonii: ^1",
+    "roworder": 479,
     "russian": "Время жизни колонии: ^1"
   },
   {
@@ -5329,8 +5329,8 @@
     "german": "Übersichtsfenster",
     "japanese": "報告画面",
     "korean": "보고 화면",
-    "order": 475,
     "polish": "Raport",
+    "roworder": 475,
     "russian": "Экран отчета"
   },
   {
@@ -5343,8 +5343,8 @@
     "german": "Verwendet",
     "japanese": "使用",
     "korean": "사용함",
-    "order": 487,
     "polish": "Zużyte",
+    "roworder": 487,
     "russian": "Использовано"
   },
   {
@@ -5357,8 +5357,8 @@
     "german": "Transportiert etwas",
     "japanese": "物体を運搬中",
     "korean": "무언가를 운반 중",
-    "order": 102,
     "polish": "Coś niesie",
+    "roworder": 102,
     "russian": "Что-то несет"
   },
   {
@@ -5371,8 +5371,8 @@
     "german": "Transportiert nichts",
     "japanese": "物体を運搬していない",
     "korean": "무언가를 운반하지 않는 중",
-    "order": 103,
     "polish": "Nic nie niesie",
+    "roworder": 103,
     "russian": "Ничего не несет"
   },
   {
@@ -5385,8 +5385,8 @@
     "german": "Transportiert Material",
     "japanese": "素材を運搬中",
     "korean": "재료를 운반 중",
-    "order": 104,
     "polish": "Niesie materiał",
+    "roworder": 104,
     "russian": "Несет материалы"
   },
   {
@@ -5399,8 +5399,8 @@
     "german": "Transportiert kein Material",
     "japanese": "素材を運搬していない",
     "korean": "재료를 운반하지 않는 중",
-    "order": 105,
     "polish": "Nie niesie materiału",
+    "roworder": 105,
     "russian": "Не несет материалы"
   },
   {
@@ -5413,8 +5413,8 @@
     "german": "Gehört zur Ameisenkaste",
     "japanese": "アリコロニー",
     "korean": "개미류 무리",
-    "order": 106,
     "polish": "Należy do kasty",
+    "roworder": 106,
     "russian": "Муравей"
   },
   {
@@ -5427,8 +5427,8 @@
     "german": "Gehört nicht zur Ameisenkaste",
     "japanese": "アリ以外のコロニー",
     "korean": "개미 외 기타 무리",
-    "order": 107,
     "polish": "Nie należy do kasty",
+    "roworder": 107,
     "russian": "Не муравей"
   },
   {
@@ -5441,8 +5441,8 @@
     "german": "Energie ist höher als",
     "japanese": "エナジー>",
     "korean": "에너지>",
-    "order": 108,
     "polish": "Energia większa niż",
+    "roworder": 108,
     "russian": "Уровень энергии выше"
   },
   {
@@ -5455,8 +5455,8 @@
     "german": "Energie ist nicht höher als",
     "japanese": "エナジー≤",
     "korean": "에너지≤",
-    "order": 109,
     "polish": "Energia nie większa niż",
+    "roworder": 109,
     "russian": "Уровень энергии не выше"
   },
   {
@@ -5469,8 +5469,8 @@
     "german": "Energie ist niedriger als",
     "japanese": "エナジー<",
     "korean": "에너지<",
-    "order": 110,
     "polish": "Energia mniejsza niż",
+    "roworder": 110,
     "russian": "Уровень энергии ниже"
   },
   {
@@ -5483,8 +5483,8 @@
     "german": "Energie ist nicht niedriger als",
     "japanese": "エナジー≥",
     "korean": "에너지≥",
-    "order": 111,
     "polish": "Energia nie mniejsza niż",
+    "roworder": 111,
     "russian": "Уровень энергии не ниже"
   },
   {
@@ -5497,8 +5497,8 @@
     "german": "Nicht in allen",
     "japanese": "毎回ではない",
     "korean": "다음에 한 번씩 하지 않음:",
-    "order": 113,
     "polish": "Do upływu",
+    "roworder": 113,
     "russian": "Не каждые"
   },
   {
@@ -5511,8 +5511,8 @@
     "german": "Einmal alle",
     "japanese": "毎回",
     "korean": "다음에 한 번씩:",
-    "order": 112,
     "polish": "Raz na",
+    "roworder": 112,
     "russian": "Каждые"
   },
   {
@@ -5525,8 +5525,8 @@
     "german": "Zufällig",
     "japanese": "ランダム",
     "korean": "무작위",
-    "order": 114,
     "polish": "Losowo",
+    "roworder": 114,
     "russian": "Случайно"
   },
   {
@@ -5539,8 +5539,8 @@
     "german": "Nicht zufällig",
     "japanese": "フィクスト",
     "korean": "무작위로 하지 않음",
-    "order": 115,
     "polish": "Losowo nie",
+    "roworder": 115,
     "russian": "Не случайно"
   },
   {
@@ -5553,8 +5553,8 @@
     "german": "Kamerawinkel entsperren",
     "japanese": "カメラアングルの非固定化",
     "korean": "카메라 각도 해제",
-    "order": 237,
     "polish": "Odblokuj ustalony kąt kamery",
+    "roworder": 237,
     "russian": "Разблокировать угол камеры"
   },
   {
@@ -5567,8 +5567,8 @@
     "german": "Antialiasing",
     "japanese": "アンチエイリアス",
     "korean": "안티앨리어싱",
-    "order": 370,
     "polish": "Antyaliasing",
+    "roworder": 370,
     "russian": "Сглаживание"
   },
   {
@@ -5581,8 +5581,8 @@
     "german": "Übernehmen",
     "japanese": "適用",
     "korean": "어플리케이션",
-    "order": 43,
     "polish": "Zastosuj",
+    "roworder": 43,
     "russian": "Применить"
   },
   {
@@ -5595,8 +5595,8 @@
     "german": "Instinkt automatisch verbergen",
     "japanese": "本能非表示",
     "korean": "본능 자동 숨기기",
-    "order": 367,
     "polish": "Automatyczne ukrywanie samouczka",
+    "roworder": 367,
     "russian": "Скрывать инстинкты"
   },
   {
@@ -5609,8 +5609,8 @@
     "german": "Automatisches Speichern",
     "japanese": "オートセーブ",
     "korean": "자동 저장",
-    "order": 40,
     "polish": "Autozapis",
+    "roworder": 40,
     "russian": "Автосохранение"
   },
   {
@@ -5623,8 +5623,8 @@
     "german": "^1 Minuten",
     "japanese": "^1分ごとにセーブ",
     "korean": "^1분마다 자동 저장",
-    "order": 41,
     "polish": "^1 minut",
+    "roworder": 41,
     "russian": "^1 мин."
   },
   {
@@ -5637,8 +5637,8 @@
     "german": "Nur beim Verlassen",
     "japanese": "ゲームを閉じる前にセーブ",
     "korean": "게임 종료 시에만 저장",
-    "order": 42,
     "polish": "Tylko przy wyjściu",
+    "roworder": 42,
     "russian": "Только при выходе"
   },
   {
@@ -5651,8 +5651,8 @@
     "german": "In der Vollversion verfügbar!",
     "japanese": "コンプリートバージョンでお楽しみいただけます！",
     "korean": "풀버전 게임에서만 사용할 수 있습니다!",
-    "order": 430,
     "polish": "Dostępne w pełnej wersji gry!",
+    "roworder": 430,
     "russian": "Доступно в полной версии!"
   },
   {
@@ -5665,8 +5665,8 @@
     "german": "Bei Pausen schwarz-weiß",
     "japanese": "白黒画面で一時停止を表示",
     "korean": "정지 시 흑백 뷰 표시",
-    "order": 439,
     "polish": "Czarno-biały ekran podczas pauzy",
+    "roworder": 439,
     "russian": "Черно-белый вид во время паузы"
   },
   {
@@ -5679,8 +5679,8 @@
     "german": "Kamera",
     "japanese": "カメラ",
     "korean": "카메라",
-    "order": 588,
     "polish": "Kamera",
+    "roworder": 588,
     "russian": "Камера"
   },
   {
@@ -5693,8 +5693,8 @@
     "german": "Invertiert",
     "japanese": "反転",
     "korean": "반전",
-    "order": 589,
     "polish": "Odwrócona",
+    "roworder": 589,
     "russian": "Перевёрнутая"
   },
   {
@@ -5707,8 +5707,8 @@
     "german": "Normal",
     "japanese": "通常",
     "korean": "보통",
-    "order": 590,
     "polish": "Normalna",
+    "roworder": 590,
     "russian": "Обычная"
   },
   {
@@ -5721,8 +5721,8 @@
     "german": "Cheats",
     "japanese": "チート",
     "korean": "치트",
-    "order": 238,
     "polish": "Kody",
+    "roworder": 238,
     "russian": "Читы"
   },
   {
@@ -5735,8 +5735,8 @@
     "german": "Rand-Scrolling",
     "japanese": "エッジスクロール",
     "korean": "에지 스크롤",
-    "order": 377,
     "polish": "Przewijanie na krawędzi ekranu",
+    "roworder": 377,
     "russian": "Прокрутка с края"
   },
   {
@@ -5749,8 +5749,8 @@
     "german": "Rand-Scrolling-Geschwindigkeit",
     "japanese": "エッジスクロール速度",
     "korean": "에지 스크롤 속도",
-    "order": 378,
     "polish": "Szybkość przewijania na krawędzi ekranu",
+    "roworder": 378,
     "russian": "Скорость прокрутки с края"
   },
   {
@@ -5763,8 +5763,8 @@
     "german": "",
     "japanese": "",
     "korean": "",
-    "order": 592,
     "polish": "",
+    "roworder": 592,
     "russian": ""
   },
   {
@@ -5777,8 +5777,8 @@
     "german": "Nebel",
     "japanese": "霧",
     "korean": "안개",
-    "order": 591,
     "polish": "Mgła",
+    "roworder": 591,
     "russian": "Туман"
   },
   {
@@ -5791,8 +5791,8 @@
     "german": "",
     "japanese": "",
     "korean": "",
-    "order": 585,
     "polish": "",
+    "roworder": 585,
     "russian": ""
   },
   {
@@ -5805,8 +5805,8 @@
     "german": "FPS-Limit",
     "japanese": "FPS制限",
     "korean": "FPS 제한",
-    "order": 584,
     "polish": "Limit FPS",
+    "roworder": 584,
     "russian": "Ограничение FPS"
   },
   {
@@ -5819,8 +5819,8 @@
     "german": "",
     "japanese": "",
     "korean": "",
-    "order": 587,
     "polish": "",
+    "roworder": 587,
     "russian": ""
   },
   {
@@ -5833,8 +5833,8 @@
     "german": "Unbegrenzt",
     "japanese": "無制限",
     "korean": "무제한",
-    "order": 586,
     "polish": "Bez limitu",
+    "roworder": 586,
     "russian": "Без ограничений"
   },
   {
@@ -5847,8 +5847,8 @@
     "german": "Bildschirmmodus",
     "japanese": "画面表示",
     "korean": "화면 모드",
-    "order": 34,
     "polish": "Tryb wyświetlania",
+    "roworder": 34,
     "russian": "Экран"
   },
   {
@@ -5861,8 +5861,8 @@
     "german": "Exklusives Vollbild",
     "japanese": "ウィンドウ・ボーダレス",
     "korean": "테두리 없음",
-    "order": 36,
     "polish": "Pełny ekran (jedyny)",
+    "roworder": 36,
     "russian": "Оконный во весь экран"
   },
   {
@@ -5875,8 +5875,8 @@
     "german": "Vollbild",
     "japanese": "フルスクリーン",
     "korean": "전체 화면",
-    "order": 35,
     "polish": "Pełny ekran",
+    "roworder": 35,
     "russian": "Во весь экран"
   },
   {
@@ -5889,8 +5889,8 @@
     "german": "Fenster",
     "japanese": "ウインドウ",
     "korean": "창",
-    "order": 37,
     "polish": "W oknie",
+    "roworder": 37,
     "russian": "Оконный"
   },
   {
@@ -5903,8 +5903,8 @@
     "german": "Grafikqualität",
     "japanese": "画像クオリティ",
     "korean": "화면 품질",
-    "order": 371,
     "polish": "Jakość grafiki",
+    "roworder": 371,
     "russian": "Качество графики"
   },
   {
@@ -5917,8 +5917,8 @@
     "german": "Gering",
     "japanese": "低",
     "korean": "저화질",
-    "order": 372,
     "polish": "Niska",
+    "roworder": 372,
     "russian": "Низкое"
   },
   {
@@ -5931,8 +5931,8 @@
     "german": "Umgekehrter Zoom",
     "japanese": "逆方向ズーム",
     "korean": "역방향 확대/축소",
-    "order": 379,
     "polish": "Odwrócenie zbliżania / oddalania widoku",
+    "roworder": 379,
     "russian": "Инвертированное масштабирование"
   },
   {
@@ -5945,8 +5945,8 @@
     "german": "Sprache",
     "japanese": "言語",
     "korean": "언어",
-    "order": 31,
     "polish": "Język",
+    "roworder": 31,
     "russian": "Язык"
   },
   {
@@ -5959,8 +5959,8 @@
     "german": "Detailgradentfernung",
     "japanese": "LOD距離",
     "korean": "LOD 거리",
-    "order": 573,
     "polish": "Odległość LOD",
+    "roworder": 573,
     "russian": "Детализация прорисовки"
   },
   {
@@ -5973,8 +5973,8 @@
     "german": "Detailgrade verwenden",
     "japanese": "LODを使用する",
     "korean": "LOD 사용",
-    "order": 572,
     "polish": "Używaj LOD",
+    "roworder": 572,
     "russian": "Использовать уровни детализации"
   },
   {
@@ -5987,8 +5987,8 @@
     "german": "Musiklautstärke",
     "japanese": "BGM音量",
     "korean": "음악 볼륨",
-    "order": 32,
     "polish": "Głośność muzyki",
+    "roworder": 32,
     "russian": "Громкость музыки"
   },
   {
@@ -6001,8 +6001,8 @@
     "german": "Zum Anwenden dieser Einstellungen muss das Spiel neu gestartet werden!",
     "japanese": "設定を適用するにはゲームを再起動する必要があります！",
     "korean": "게임을 다시 실행해야만 해당 설정이 적용됩니다!",
-    "order": 369,
     "polish": "Zastosowanie zmian wymaga ponownego uruchomienia gry.",
+    "roworder": 369,
     "russian": "Для применения настроек необходимо перезапустить игру!"
   },
   {
@@ -6015,8 +6015,8 @@
     "german": "Entfällt",
     "japanese": "使用不可",
     "korean": "사용 불가",
-    "order": 391,
     "polish": "N/D",
+    "roworder": 391,
     "russian": "N/A"
   },
   {
@@ -6029,8 +6029,8 @@
     "german": "Hoch",
     "japanese": "高",
     "korean": "고화질",
-    "order": 374,
     "polish": "Wysoka",
+    "roworder": 374,
     "russian": "Высокое"
   },
   {
@@ -6043,8 +6043,8 @@
     "german": "Mittel",
     "japanese": "並",
     "korean": "일반 화질",
-    "order": 373,
     "polish": "Średnia",
+    "roworder": 373,
     "russian": "Среднее"
   },
   {
@@ -6057,8 +6057,8 @@
     "german": "Ultra",
     "japanese": "超高",
     "korean": "초고화질",
-    "order": 375,
     "polish": "Najwyższa",
+    "roworder": 375,
     "russian": "Ультра"
   },
   {
@@ -6071,8 +6071,8 @@
     "german": "",
     "japanese": "",
     "korean": "",
-    "order": 582,
     "polish": "",
+    "roworder": 582,
     "russian": ""
   },
   {
@@ -6085,8 +6085,8 @@
     "german": "Render-Skalierung",
     "japanese": "レンダースケール",
     "korean": "렌더 스케일",
-    "order": 581,
     "polish": "Skala renderowania",
+    "roworder": 581,
     "russian": "Масштаб рендеринга"
   },
   {
@@ -6099,8 +6099,8 @@
     "german": "Tutorials zurücksetzen",
     "japanese": "リセットのチュートリアル",
     "korean": "튜토리얼 리셋",
-    "order": 442,
     "polish": "Zresetuj samouczki",
+    "roworder": 442,
     "russian": "Сбросить обучение"
   },
   {
@@ -6113,8 +6113,8 @@
     "german": "Auflösung",
     "japanese": "解析度",
     "korean": "해상도",
-    "order": 38,
     "polish": "Rozdzielczość",
+    "roworder": 38,
     "russian": "Разрешение"
   },
   {
@@ -6127,8 +6127,8 @@
     "german": "Im Hintergrund laufen lassen",
     "japanese": "バックグランドで実行",
     "korean": "백그라운드에서 실행",
-    "order": 368,
     "polish": "Działanie w tle",
+    "roworder": 368,
     "russian": "В фоновом режиме"
   },
   {
@@ -6141,8 +6141,8 @@
     "german": "Effektlautstärke",
     "japanese": "SE音量",
     "korean": "효과음 볼륨",
-    "order": 33,
     "polish": "Głośność efektów",
+    "roworder": 33,
     "russian": "Громкость эффектов"
   },
   {
@@ -6155,8 +6155,8 @@
     "german": "Zusammenfassung nach jedem Hochzeitsflug anzeigen.",
     "japanese": "婚姻飛行が終わるごとに情報が表示されます。",
     "korean": "모든 혼인 비행 이후 요약을 표시합니다.",
-    "order": 563,
     "polish": "Wyświetlaj podsumowanie każdego lotu godowego.",
+    "roworder": 563,
     "russian": "Показывать сводку после каждого брачного полета."
   },
   {
@@ -6169,8 +6169,8 @@
     "german": "Straßenqualität",
     "japanese": "ルート載積量",
     "korean": "경로 품질",
-    "order": 376,
     "polish": "Jakość ścieżek",
+    "roworder": 376,
     "russian": "Отображение тропы"
   },
   {
@@ -6183,8 +6183,8 @@
     "german": "UI-Größe",
     "japanese": "UIサイズ",
     "korean": "UI 크기",
-    "order": 39,
     "polish": "Wielkość interfejsu",
+    "roworder": 39,
     "russian": "Масштаб интерфейса"
   },
   {
@@ -6197,8 +6197,8 @@
     "german": "Groß",
     "japanese": "大型",
     "korean": "대형",
-    "order": 390,
     "polish": "Duży",
+    "roworder": 390,
     "russian": "Большой"
   },
   {
@@ -6211,8 +6211,8 @@
     "german": "Normal",
     "japanese": "ノーマル",
     "korean": "일반",
-    "order": 389,
     "polish": "Standardowy",
+    "roworder": 389,
     "russian": "Обычный"
   },
   {
@@ -6225,8 +6225,8 @@
     "german": "Klein",
     "japanese": "小型",
     "korean": "소형",
-    "order": 388,
     "polish": "Mały",
+    "roworder": 388,
     "russian": "Маленький"
   },
   {
@@ -6239,8 +6239,8 @@
     "german": "Winzig",
     "japanese": "ミニ",
     "korean": "초소형",
-    "order": 387,
     "polish": "Najmniejszy",
+    "roworder": 387,
     "russian": "Крошечный"
   },
   {
@@ -6253,8 +6253,8 @@
     "german": "Gesamtlautstärke",
     "japanese": "メイン音量",
     "korean": "마스터 볼륨",
-    "order": 380,
     "polish": "Głośność ogólna",
+    "roworder": 380,
     "russian": "Общая громкость"
   },
   {
@@ -6267,8 +6267,8 @@
     "german": "Oberflächenlautstärke",
     "japanese": "エフェクト音量",
     "korean": "UI 볼륨",
-    "order": 382,
     "polish": "Głośność interfejsu",
+    "roworder": 382,
     "russian": "Громкость UI"
   },
   {
@@ -6281,8 +6281,8 @@
     "german": "Weltlautstärke",
     "japanese": "環境音量",
     "korean": "월드 볼륨",
-    "order": 381,
     "polish": "Głośność efektów świata",
+    "roworder": 381,
     "russian": "Громкость мира"
   },
   {
@@ -6295,8 +6295,8 @@
     "german": "Bildschirmsynchronisation",
     "japanese": "垂直同期",
     "korean": "수직 동기",
-    "order": 583,
     "polish": "Vsync",
+    "roworder": 583,
     "russian": "Вертикальная синхронизация"
   },
   {
@@ -6309,8 +6309,8 @@
     "german": "Audio",
     "japanese": "オーディオ",
     "korean": "소리",
-    "order": 361,
     "polish": "Dźwięk",
+    "roworder": 361,
     "russian": "Аудио"
   },
   {
@@ -6323,8 +6323,8 @@
     "german": "Anzeige",
     "japanese": "表示",
     "korean": "디스플레이",
-    "order": 392,
     "polish": "Wyświetlacz",
+    "roworder": 392,
     "russian": "Картинка"
   },
   {
@@ -6337,8 +6337,8 @@
     "german": "Spiel",
     "japanese": "ゲーム",
     "korean": "게임",
-    "order": 363,
     "polish": "Gra",
+    "roworder": 363,
     "russian": "Игра"
   },
   {
@@ -6351,8 +6351,8 @@
     "german": "Allgemein",
     "japanese": "汎用",
     "korean": "일반",
-    "order": 359,
     "polish": "Ogólne",
+    "roworder": 359,
     "russian": "Общее"
   },
   {
@@ -6365,8 +6365,8 @@
     "german": "Eingabe",
     "japanese": "入力",
     "korean": "입력",
-    "order": 362,
     "polish": "Sterowanie",
+    "roworder": 362,
     "russian": "Ввод"
   },
   {
@@ -6379,8 +6379,8 @@
     "german": "Oberfläche",
     "japanese": "インターフェイス",
     "korean": "화면",
-    "order": 360,
     "polish": "Interfejs",
+    "roworder": 360,
     "russian": "Интерфейс"
   },
   {
@@ -6393,8 +6393,8 @@
     "german": "Taste drücken",
     "japanese": "いずれかのキーを押す",
     "korean": "아무 키나 누르세요",
-    "order": 462,
     "polish": "Naciśnij dowolny klawisz",
+    "roworder": 462,
     "russian": "Нажми клавишу"
   },
   {
@@ -6407,8 +6407,8 @@
     "german": "Drücke eine beliebige Taste",
     "japanese": "いずれかのキーを押す",
     "korean": "아무 키나 누르세요",
-    "order": 461,
     "polish": "Naciśnij dowolny klawisz",
+    "roworder": 461,
     "russian": "Нажмите любую клавишу"
   },
   {
@@ -6421,8 +6421,8 @@
     "german": "Qualität",
     "japanese": "グラフィック",
     "korean": "화질",
-    "order": 364,
     "polish": "Jakość",
+    "roworder": 364,
     "russian": "Качество"
   },
   {
@@ -6435,8 +6435,8 @@
     "german": "Auf Standard zurücksetzen",
     "japanese": "初期化する",
     "korean": "기본값으로 초기화",
-    "order": 383,
     "polish": "Przywróć domyślne",
+    "roworder": 383,
     "russian": "Восстановить настройки по умолчанию"
   },
   {
@@ -6449,8 +6449,8 @@
     "german": "Möchtest du diese Einstellungen wirklich auf die Standardwerte zurücksetzen?",
     "japanese": "設定の初期化を確定しますか？",
     "korean": "해당 설정을 기본값으로 초기화하시겠습니까?",
-    "order": 384,
     "polish": "Chcesz przywrócić ustawienia domyślne?",
+    "roworder": 384,
     "russian": "Вернуться к настройкам по умолчанию?"
   },
   {
@@ -6463,8 +6463,8 @@
     "german": "Aufgeladen",
     "japanese": "チャージ",
     "korean": "충전",
-    "order": 272,
     "polish": "Naładowana",
+    "roworder": 272,
     "russian": "Заряжен"
   },
   {
@@ -6477,8 +6477,8 @@
     "german": "Diese Ameise ist in Reichweite eines Energiemasts, der ihr einen Temposchub verleiht.",
     "japanese": "このアリがビーコンの範囲内にいるため、移動速度が上昇します。",
     "korean": "해당 개미는 비콘 범위 내에 있으므로 이동 버프를 획득했습니다.",
-    "order": 273,
     "polish": "Ta mrówka jest w zasięgu promiennika, który zwiększa jej szybkość.",
+    "roworder": 273,
     "russian": "Этот муравей находится в радиусе действия маяка, скорость его передвижения повышена."
   },
   {
@@ -6491,8 +6491,8 @@
     "german": "Tot",
     "japanese": "死亡",
     "korean": "사망",
-    "order": 270,
     "polish": "Nie żyje",
+    "roworder": 270,
     "russian": "Труп"
   },
   {
@@ -6505,8 +6505,8 @@
     "german": "Diese Ameise ist tot und kann sich nicht mehr bewegen.",
     "japanese": "このアリは死んでいて、動くことができません。",
     "korean": "해당 개미는 이미 사망하였으므로 더 이상 이동할 수 없습니다.",
-    "order": 271,
     "polish": "Ta mrówka nie żyje i nie może się już poruszać.",
+    "roworder": 271,
     "russian": "Этот муравей умер и больше не может двигаться."
   },
   {
@@ -6519,8 +6519,8 @@
     "german": "Verlangsamt",
     "japanese": "減速",
     "korean": "감속",
-    "order": 290,
     "polish": "Spowolnienie",
+    "roworder": 290,
     "russian": "Замедлен"
   },
   {
@@ -6533,8 +6533,8 @@
     "german": "Diese Ameise ist zu jung für eine Ältestenstraße! Sie wird verlangsamt.",
     "japanese": "エルダールートはこの若いアリにふさわしくないため、アリの移動速度が遅くなっています。",
     "korean": "해당 젊은 개미는 아직 연장자의 길에 적절하지 않습니다! 해당 개미의 이동 속도가 감소되었습니다.",
-    "order": 291,
     "polish": "Ta mrówka jest za młoda, by wejść na ścieżkę starszyzny, więc będzie spowolniona.",
+    "roworder": 291,
     "russian": "Этот муравей слишком молод, чтобы идти по тропе для пожилых. Он будет замедлен."
   },
   {
@@ -6547,8 +6547,8 @@
     "german": "Beschleunigt",
     "japanese": "加速",
     "korean": "가속",
-    "order": 287,
     "polish": "Przyśpieszenie",
+    "roworder": 287,
     "russian": "Ускорен"
   },
   {
@@ -6561,8 +6561,8 @@
     "german": "Diese alte Ameise ist auf einer Ältestenstraße. Die Ameisenstraße beschleunigt sie und verlangsamt ihren Alterungsprozess.",
     "japanese": "エルダールートを進んでいる老いたアリです。移動速度が速くなっており、老化の進行も遅くなっています。",
     "korean": "이 연로한 개미는 연장자의 길에 들어섰습니다. 이동 속도가 증가하고 노화 속도가 감소합니다.",
-    "order": 289,
     "polish": "Ze względu na wiek ta mrówka jest na ścieżce starszyzny, która zwiększa jej szybkość ruchu i opóźnia proces starzenia.",
+    "roworder": 289,
     "russian": "Этот старый муравей идет по тропе для пожилых. Она ускоряет его и замедляет скорость старения."
   },
   {
@@ -6575,8 +6575,8 @@
     "german": "Diese ältere Ameise ist auf einer Ältestenstraße. Sie wird schneller und altert langsamer.",
     "japanese": "エルダールートを進むこの老いたアリは、移動速度が早くなっており、老化の進行が遅くなっています。",
     "korean": "이 나이 든 개미는 연장자의 길에 들어섰습니다. 이동 속도가 증가하고 노화 속도가 감소합니다.",
-    "order": 288,
     "polish": "Ze względu na wiek ta mrówka jest na ścieżce starszyzny, która zwiększa jej szybkość ruchu i opóźnia proces starzenia.",
+    "roworder": 288,
     "russian": "Этот старый муравей идет по тропе для пожилых. Она ускоряет его и замедляет скорость старения."
   },
   {
@@ -6589,8 +6589,8 @@
     "german": "Elektrolysiert",
     "japanese": "電解",
     "korean": "전해",
-    "order": 283,
     "polish": "Elektroliza",
+    "roworder": 283,
     "russian": "Электролизован"
   },
   {
@@ -6603,8 +6603,8 @@
     "german": "Diese Ameise ist in Reichweite eines aktiven Elektrolyseurs. Das Material, das sie transportiert, verändert sich, sobald sie genug Energie gesammelt hat.",
     "japanese": "このアリは稼働中の電解装置の範囲内で、運んでいる材料がエナジーを吸収し終えると変化します。",
     "korean": "해당 개미는 활발한 수전해 장치 범위 내에 있습니다. 해당 개미가 소지한 재료는 충분한 에너지를 흡수한 후 변화가 발생합니다.",
-    "order": 284,
     "polish": "Ta mrówka jest w zasięgu aktywnego elektrolizera. Gdy nagromadzi on dość energii, przemieni przenoszony przez mrówkę materiał.",
+    "roworder": 284,
     "russian": "Этот муравей находится в зоне действия работающего электролизатора. Материал, который он несет, изменится, как только он наберет достаточно энергии."
   },
   {
@@ -6617,8 +6617,8 @@
     "german": "Alt",
     "japanese": "老化",
     "korean": "연로",
-    "order": 285,
     "polish": "Starość",
+    "roworder": 285,
     "russian": "Старый"
   },
   {
@@ -6631,8 +6631,8 @@
     "german": "Diese Ameise ist alt und wird bald sterben. Sie sollte umfunktioniert werden, indem sie einer neuen Kaste zugeteilt oder beim Recycler verwertet wird.",
     "japanese": "このアリはまもなく寿命を迎えます。他の職種にアップグレードをして役目を変えるか、回収機を利用しましょう。",
     "korean": "이 연로한 개미는 머지않아 사망합니다. 다른 종류로 업그레이드하거나 회수기를 사용하여 재활용하는 등 용도 변경하는 것이 좋습니다.",
-    "order": 286,
     "polish": "Ta mrówka jest stara i niedługo padnie. Aby zmniejszyć straty, można ją ulepszyć do mrówki z innej kasty lub odzyskać zasoby w przetwórni odpadów.",
+    "roworder": 286,
     "russian": "Этот муравей стар и скоро умрет. Срок его жизни можно продлить, если улучшить его до новой касты или запустить в переработчик."
   },
   {
@@ -6645,8 +6645,8 @@
     "german": "Schwere Schimmelpilzvergiftung",
     "japanese": "カビ中毒（重度）",
     "korean": "중증도 곰팡이 중독",
-    "order": 281,
     "polish": "Ciężkie zatrucie pleśnią",
+    "roworder": 281,
     "russian": "Тяжелое отравление плесенью"
   },
   {
@@ -6659,8 +6659,8 @@
     "german": "Diese Ameise hat die letzte Form der Schimmelpilzvergiftung. Die Energie, die sie durch das Wachstum des Schimmels in ihrem Körper gesammelt hat, verleiht ihr ein stark erhöhtes Bewegungstempo. Die Ameise explodiert, wenn ihr Verstrahlungstimer das Maximum erreicht.",
     "japanese": "このアリはカビ中毒の末期段階にあり、体内に溜まったカビによって移動速度が著しく上昇しています。放射線メーターが最大になると、このアリは爆発します！",
     "korean": "해당 개미는 곰팡이 중독의 말기 단계에 있으며 체내에 누적한 곰팡이 에너지로 인해 이동 속도가 대폭 증가합니다. 방사선 타이머가 최대치에 이를 경우 해당 개미는 폭발합니다!",
-    "order": 282,
     "polish": "Ta mrówka jest w ostatnim stadium zatrucia pleśnią. Nagromadzona przez nadmiar pleśni energia spowalnia ją do minimum. Gdy licznik napromieniowania osiągnie wartość maksymalną, mrówka wybuchnie!",
+    "roworder": 282,
     "russian": "У этого муравья последняя стадия отравления плесенью. Энергия от скопления плесени в его теле приводит к значительному увеличению скорости передвижения. Муравей взорвется, когда насыщение его тела радиацией достигнет максимума."
   },
   {
@@ -6673,8 +6673,8 @@
     "german": "Leichte Schimmelpilzvergiftung",
     "japanese": "カビ中毒（軽度）",
     "korean": "경도 곰팡이 중독",
-    "order": 277,
     "polish": "Lekkie zatrucie pleśnią",
+    "roworder": 277,
     "russian": "Легкое отравление плесенью"
   },
   {
@@ -6687,8 +6687,8 @@
     "german": "Diese Ameise hat eine leichte Form der Schimmelpilzvergiftung, wodurch sie sich langsamer bewegt. Die Ameise stirbt, wenn ihr Verstrahlungstimer das Maximum erreicht.",
     "japanese": "このアリはカビ中毒の初期段階にあり、移動速度が遅くなっています。放射線メーターが最大になると、このアリは死亡します。",
     "korean": "해당 개미는 곰팡이 중독의 초기 단계에 있으며 이동 속도가 감소됩니다. 방사선 타이머가 최대치에 이를 경우 해당 개미는 사망합니다.",
-    "order": 278,
     "polish": "Ta mrówka jest w pierwszym stadium zatrucia pleśnią i porusza się wolniej. Gdy licznik napromieniowania osiągnie wartość maksymalną, mrówka padnie.",
+    "roworder": 278,
     "russian": "У этого муравья первая стадия отравления плесенью, скорость его передвижения снижена. Он умрет, когда насыщение его тела радиацией достигнет максимума."
   },
   {
@@ -6701,8 +6701,8 @@
     "german": "Mittelschwere Schimmelpilzvergiftung",
     "japanese": "カビ中毒（中程度）",
     "korean": "중등도 곰팡이 중독",
-    "order": 279,
     "polish": "Umiarkowane zatrucie pleśnią",
+    "roworder": 279,
     "russian": "Серьезное отравление плесенью"
   },
   {
@@ -6715,8 +6715,8 @@
     "german": "Diese Ameise hat eine mittelschwere Form der Schimmelpilzvergiftung, wodurch sie sich kaum noch bewegen kann. Die Ameise stirbt, wenn ihr Verstrahlungstimer das Maximum erreicht.",
     "japanese": "このアリはカビ中毒の中期段階にあり、移動速度がさらに遅くなっています。放射線メーターが最大になると、このアリは死亡します。",
     "korean": "해당 개미는 곰팡이 중독의 중기 단계에 있으며 이동 속도가 더한층 감소됩니다. 방사선 타이머가 최대치에 이를 경우 해당 개미는 사망합니다.",
-    "order": 280,
     "polish": "Ta mrówka jest w drugim stadium zatrucia pleśnią i porusza się znacznie wolniej. Gdy licznik napromieniowania osiągnie wartość maksymalną, mrówka padnie.",
+    "roworder": 280,
     "russian": "Муравей находится на второй стадии отравления плесенью и двигается еще более медленно. Он умрет, когда насыщение его тела радиацией достигнет максимума."
   },
   {
@@ -6729,8 +6729,8 @@
     "german": "Verstrahlt",
     "japanese": "放射線",
     "korean": "방사선",
-    "order": 274,
     "polish": "Napromieniowana",
+    "roworder": 274,
     "russian": "Облучен"
   },
   {
@@ -6743,8 +6743,8 @@
     "german": "Diese Ameise ist in Reichweite von giftigem Schimmelpilz. In ihrem Körper baut sich Strahlung auf, die zu einer Schimmelpilzvergiftung führt.",
     "japanese": "このアリが有毒カビの影響範囲内に入っています。放射線が体内に溜まり、カビ中毒を引き起こします。",
     "korean": "해당 개미는 독성 곰팡이 범위 내에 있습니다. 방사선은 체내에 누적되어 곰팡이 중독을 유발합니다.",
-    "order": 276,
     "polish": "Ta mrówka znajduje się pod wpływem toksycznej pleśni powodującej coraz większe napromieniowanie, które może doprowadzić do zatrucia pleśnią.",
+    "roworder": 276,
     "russian": "Этот муравей находится в зоне действия токсичной плесени. Его тело будет накапливать радиацию, что в итоге приведет к отравлению плесенью."
   },
   {
@@ -6757,8 +6757,8 @@
     "german": "Verstrahlt x^1",
     "japanese": "放射線x^1",
     "korean": "방사선x^1",
-    "order": 275,
     "polish": "Napromieniowana ^1x",
+    "roworder": 275,
     "russian": "Облучен x^1"
   },
   {
@@ -6771,8 +6771,8 @@
     "german": "Senden",
     "japanese": "送る",
     "korean": "보내기",
-    "order": 565,
     "polish": "Wyślij",
+    "roworder": 565,
     "russian": "Отправить"
   },
   {
@@ -6785,8 +6785,8 @@
     "german": "",
     "japanese": "",
     "korean": "",
-    "order": 568,
     "polish": "",
+    "roworder": 568,
     "russian": ""
   },
   {
@@ -6799,8 +6799,8 @@
     "german": "Dieses Lager hat nicht genug Platz!",
     "japanese": "この貯蔵庫に空きスペースがありません！",
     "korean": "이 저장 장치에 공간이 부족합니다!",
-    "order": 567,
     "polish": "W tym magazynie jest za mało miejsca!",
+    "roworder": 567,
     "russian": "В этом хранилище недостаточно места!"
   },
   {
@@ -6813,8 +6813,8 @@
     "german": "Dieses Lager befindet sich auf einer anderen Insel!",
     "japanese": "この貯蔵庫は別の島にあります！",
     "korean": "이 저장 장치는 다른 섬에 있습니다!",
-    "order": 569,
     "polish": "Ten magazyn znajduje się na innej wyspie!",
+    "roworder": 569,
     "russian": "Это хранилище находится на другом острове!"
   },
   {
@@ -6827,8 +6827,8 @@
     "german": "Gegenstände an anderes Lager senden",
     "japanese": "他の貯蔵庫にアイテムを送ります。",
     "korean": "아이템을 다른 저장 장치에 보냅니다.",
-    "order": 566,
     "polish": "Wyślij przedmioty do innego magazynu",
+    "roworder": 566,
     "russian": "Отправить предметы в другое хранилище"
   },
   {
@@ -6841,8 +6841,8 @@
     "german": "Dieses Lager kann das Material, das du senden möchtest, nicht aufnehmen!",
     "japanese": "この貯蔵庫は今運ぼうとしている素材を受け取れません！",
     "korean": "이 저장 장치는 보내려는 재료를 받을 수 없습니다!",
-    "order": 570,
     "polish": "Ten magazyn nie może przyjąć materiału, który próbujesz wysłać!",
+    "roworder": 570,
     "russian": "Это хранилище не может принять материал, который ты пытаешься отправить!"
   },
   {
@@ -6855,8 +6855,8 @@
     "german": "Dieses Fenster nicht wieder anzeigen.",
     "japanese": "このウィンドウを次から表示しません。",
     "korean": "이 창을 다시 표시하지 않습니다.",
-    "order": 562,
     "polish": "Nie wyświetlaj ponownie.",
+    "roworder": 562,
     "russian": "Больше не показывать."
   },
   {
@@ -6869,8 +6869,8 @@
     "german": "Idee: ^1",
     "japanese": "インスピレーション：^1",
     "korean": "영감: ^1",
-    "order": 268,
     "polish": "Pomysł: ^1",
+    "roworder": 268,
     "russian": "Исследование: ^1"
   },
   {
@@ -6883,8 +6883,8 @@
     "german": "Klicken, um Idee zu verfolgen.",
     "japanese": "クリックしてインスピレーションをトラッキングしましょう",
     "korean": "클릭하여 영감 추적",
-    "order": 188,
     "polish": "Kliknij, aby śledzić pomysł",
+    "roworder": 188,
     "russian": "Нажми, чтобы отслеживать исследование"
   },
   {
@@ -6897,8 +6897,8 @@
     "german": "Klicken zum Freischalten",
     "japanese": "クリックでアンロック",
     "korean": "클릭하여 해제",
-    "order": 186,
     "polish": "Kliknij, aby odblokować",
+    "roworder": 186,
     "russian": "Нажми, чтобы открыть"
   },
   {
@@ -6911,8 +6911,8 @@
     "german": "Abgeschlossen",
     "japanese": "既に完了",
     "korean": "완료",
-    "order": 184,
     "polish": "Ukończone",
+    "roworder": 184,
     "russian": "Завершено"
   },
   {
@@ -6925,8 +6925,8 @@
     "german": "Freischaltkosten:",
     "japanese": "アンロックに必要なポイント：",
     "korean": "해제에 필요한 포인트:",
-    "order": 267,
     "polish": "Koszt odblokowania:",
+    "roworder": 267,
     "russian": "Цена открытия:"
   },
   {
@@ -6939,8 +6939,8 @@
     "german": "Erschaffen in:",
     "japanese": "製造元：",
     "korean": "제조 시간:",
-    "order": 192,
     "polish": "Miejsce stworzenia:",
+    "roworder": 192,
     "russian": "Требуется:"
   },
   {
@@ -6953,8 +6953,8 @@
     "german": "Entwicklung",
     "japanese": "発展",
     "korean": "발전",
-    "order": 260,
     "polish": "Rozwój",
+    "roworder": 260,
     "russian": "Прогресс"
   },
   {
@@ -6967,8 +6967,8 @@
     "german": "Gynenpunkte",
     "japanese": "繁殖アリポイント",
     "korean": "번식 포인트",
-    "order": 539,
     "polish": "Punkty dojrzałej matki",
+    "roworder": 539,
     "russian": "Очки матки"
   },
   {
@@ -6981,8 +6981,8 @@
     "german": "Rang-1-Gynenpunkte",
     "japanese": "繁殖アリポイント ランク1",
     "korean": "1단계 번식 포인트",
-    "order": 540,
     "polish": "Punkty dojrzałej matki rangi 1.",
+    "roworder": 540,
     "russian": "Очки матки 1 ранга"
   },
   {
@@ -6995,8 +6995,8 @@
     "german": "Rang-2-Gynenpunkte",
     "japanese": "繁殖アリポイント ランク2",
     "korean": "2단계 번식 포인트",
-    "order": 541,
     "polish": "Punkty dojrzałej matki rangi 2.",
+    "roworder": 541,
     "russian": "Очки матки 2 ранга"
   },
   {
@@ -7009,8 +7009,8 @@
     "german": "Rang-3-Gynenpunkte",
     "japanese": "繁殖アリポイント ランク3",
     "korean": "3단계 번식 포인트",
-    "order": 542,
     "polish": "Punkty dojrzałej matki rangi 3.",
+    "roworder": 542,
     "russian": "Очки матки 3 ранга"
   },
   {
@@ -7023,8 +7023,8 @@
     "german": "Idee wird verfolgt ...",
     "japanese": "インターフェース内でインスピレーションを探す......",
     "korean": "화면 내에서 영감 추적 중......",
-    "order": 189,
     "polish": "Śledzenie pomysłów w interfejsie...",
+    "roworder": 189,
     "russian": "Отслеживание исследования в интерфейсе..."
   },
   {
@@ -7037,8 +7037,8 @@
     "german": "Produziert",
     "japanese": "進行中",
     "korean": "진행 중",
-    "order": 182,
     "polish": "Postępy",
+    "roworder": 182,
     "russian": "В процессе"
   },
   {
@@ -7051,8 +7051,8 @@
     "german": "Erfinderpunkte",
     "japanese": "発明ポイント",
     "korean": "발명 포인트",
-    "order": 261,
     "polish": "Punkty wynalazcy",
+    "roworder": 261,
     "russian": "Очки науки"
   },
   {
@@ -7065,8 +7065,8 @@
     "german": "Grüne Erfinderpunkte",
     "japanese": "発明ポイント（緑）",
     "korean": "그린 발명 포인트",
-    "order": 266,
     "polish": "Zielone punkty wynalazcy",
+    "roworder": 266,
     "russian": "Зеленые очки науки"
   },
   {
@@ -7079,8 +7079,8 @@
     "german": "Rote Erfinderpunkte",
     "japanese": "発明ポイント（赤）",
     "korean": "레드 발명 포인트",
-    "order": 265,
     "polish": "Czerwone punkty wynalazcy",
+    "roworder": 265,
     "russian": "Красные очки науки"
   },
   {
@@ -7093,8 +7093,8 @@
     "german": "Rang-1-Erfinderpunkte",
     "japanese": "ティア1発明ポイント",
     "korean": "1단계 발명 포인트",
-    "order": 262,
     "polish": "Punkty wynalazcy rangi 1.",
+    "roworder": 262,
     "russian": "Очки науки 1 ранга"
   },
   {
@@ -7107,8 +7107,8 @@
     "german": "Rang-2-Erfinderpunkte",
     "japanese": "ティア2発明ポイント",
     "korean": "2단계 발명 포인트",
-    "order": 263,
     "polish": "Punkty wynalazcy rangi 2.",
+    "roworder": 263,
     "russian": "Очки науки 2 ранга"
   },
   {
@@ -7121,8 +7121,8 @@
     "german": "Rang-3-Erfinderpunkte",
     "japanese": "ティア3発明ポイント",
     "korean": "3단계 발명 포인트",
-    "order": 264,
     "polish": "Punkty wynalazcy rangi 3.",
+    "roworder": 264,
     "russian": "Очки науки 3 ранга"
   },
   {
@@ -7135,8 +7135,8 @@
     "german": "Nicht genug Erfinderpunkte",
     "japanese": "発明ポイントが足りていません",
     "korean": "발명 포인트 부족",
-    "order": 187,
     "polish": "Za mało punktów wynalazcy",
+    "roworder": 187,
     "russian": "Недостаточно очков науки"
   },
   {
@@ -7149,8 +7149,8 @@
     "german": "Schließe andere Forschungen ab, um Zugang zu erhalten.",
     "japanese": "他のリサーチを完成させて、アンロックしてください。",
     "korean": "다른 노드를 완료해야 이 항목을 이용할 수 있습니다",
-    "order": 185,
     "polish": "Dostęp wymaga ukończenia innych węzłów",
+    "roworder": 185,
     "russian": "Чтобы получить доступ, заверши другие исследования"
   },
   {
@@ -7163,8 +7163,8 @@
     "german": "Ziel erreicht! Klicken zum Abschließen.",
     "japanese": "目標を達成しました！クリックして完了。",
     "korean": "목표 달성! 클릭하여 완료하세요.",
-    "order": 190,
     "polish": "Cel osiągnięty. Kliknij, aby ukończyć.",
+    "roworder": 190,
     "russian": "Цель достигнута! Нажми, чтобы завершить."
   },
   {
@@ -7177,8 +7177,8 @@
     "german": "Ziele:",
     "japanese": "目標：",
     "korean": "목표:",
-    "order": 191,
     "polish": "Cele:",
+    "roworder": 191,
     "russian": "Цели:"
   },
   {
@@ -7191,8 +7191,8 @@
     "german": "Freigeschaltet",
     "japanese": "解放済",
     "korean": "미해제",
-    "order": 183,
     "polish": "Odblokowane",
+    "roworder": 183,
     "russian": "Доступно"
   },
   {
@@ -7205,8 +7205,8 @@
     "german": "Schaltet eine neue Ameisenkaste frei",
     "japanese": "アンロック：新たなアリ職種",
     "korean": "해제: 신규 개미 종류",
-    "order": 198,
     "polish": "Odblokowuje nową kastę mrówek",
+    "roworder": 198,
     "russian": "Открывает: Новая каста муравьев"
   },
   {
@@ -7219,8 +7219,8 @@
     "german": "Schaltet neues Gebäude frei",
     "japanese": "アンロック：新たな建築物",
     "korean": "해제: 신규 건물",
-    "order": 193,
     "polish": "Odblokowuje nowy budynek",
+    "roworder": 193,
     "russian": "Открывает: Новое здание"
   },
   {
@@ -7233,8 +7233,8 @@
     "german": "Schließe diese Idee ab, um Zugang zu mehr Forschungen zu erhalten.",
     "japanese": "インスピレーションを完成させてより多くのノードに接することができます",
     "korean": "해당 영감을 완료하여 더 많은 영감 노드를 연결하세요",
-    "order": 200,
     "polish": "Dokończ ten pomysł, by uzyskać dostęp do kolejnych węzłów",
+    "roworder": 200,
     "russian": "Выполни это исследование, чтобы открыть новые узлы на древе технологий"
   },
   {
@@ -7247,8 +7247,8 @@
     "german": "Schaltet eine neue Insel zum Erkunden frei",
     "japanese": "アンロック：新たな島が探索可能",
     "korean": "해제: 탐색 가능한 신규 섬",
-    "order": 199,
     "polish": "Odblokowuje nową wyspę do odkrycia",
+    "roworder": 199,
     "russian": "Открывает: Новый остров для исследования"
   },
   {
@@ -7261,8 +7261,8 @@
     "german": "Schaltet neue Logikstraße frei",
     "japanese": "アンロック：新たなロジックルート",
     "korean": "해제: 신규 논리 경로",
-    "order": 195,
     "polish": "Odblokowuje nową ścieżkę logiczną",
+    "roworder": 195,
     "russian": "Открывает: Новые логические ворота"
   },
   {
@@ -7275,8 +7275,8 @@
     "german": "Schaltet ein neues Rezept zur Herstellung|eines Materials frei",
     "japanese": "アンロック：新たな素材レシピ",
     "korean": "해제: 신규 재료 배합 방법",
-    "order": 196,
     "polish": "Odblokowuje nowy przepis na jeden z materiałów",
+    "roworder": 196,
     "russian": "Открывает: Новый рецепт для создания материала"
   },
   {
@@ -7289,8 +7289,8 @@
     "german": "Schaltet ein alternatives Rezept zur Herstellung von etwas frei",
     "japanese": "アンロック：新たな代用レシピ",
     "korean": "해제: 신규 재료 대체용 배합 방법",
-    "order": 197,
     "polish": "Odblokowuje alternatywny przepis na jeden z produktów",
+    "roworder": 197,
     "russian": "Открывает: Альтернативный рецепт для создания чего-либо"
   },
   {
@@ -7303,8 +7303,8 @@
     "german": "Schaltet neue Ameisenstraßenart frei",
     "japanese": "アンロック：新たなルートタイプ",
     "korean": "해제: 신규 경로 유형",
-    "order": 194,
     "polish": "Odblokowuje nowy typ ścieżki",
+    "roworder": 194,
     "russian": "Открывает: Новый тип тропы"
   },
   {
@@ -7317,8 +7317,8 @@
     "german": "Jetzt auf die Wunschliste!",
     "japanese": "ウィッシュリストに追加！",
     "korean": "찜 목록에 추가!",
-    "order": 96,
     "polish": "Dodaj do listy życzeń!",
+    "roworder": 96,
     "russian": "Добавь в список желаемого!"
   },
   {
@@ -7331,8 +7331,8 @@
     "german": "Ameisen verbergen",
     "japanese": "アリを隠す",
     "korean": "개미 숨기기",
-    "order": 436,
     "polish": "Ukryj mrówki",
+    "roworder": 436,
     "russian": "Скрыть муравьев"
   },
   {
@@ -7345,8 +7345,8 @@
     "german": "Straßen verbergen",
     "japanese": "ルートを隠す",
     "korean": "경로 숨기기",
-    "order": 433,
     "polish": "Ukryj ścieżki",
+    "roworder": 433,
     "russian": "Скрыть тропы"
   },
   {
@@ -7359,8 +7359,8 @@
     "german": "Oberfläche verbergen",
     "japanese": "メニューを隠す",
     "korean": "UI 숨기기",
-    "order": 435,
     "polish": "Ukryj interfejs",
+    "roworder": 435,
     "russian": "Скрыть UI"
   },
   {
@@ -7373,8 +7373,8 @@
     "german": "Lagerplatzinhalte anzeigen",
     "japanese": "倉庫の中身を表示",
     "korean": "보관 창고 내용물 표시",
-    "order": 437,
     "polish": "Wyświetlaj zawartość kopców",
+    "roworder": 437,
     "russian": "Показать содержимое склада"
   },
   {
@@ -7387,8 +7387,8 @@
     "german": "Straßen im Vordergrund bauen",
     "japanese": "ビジョンでルートを描く",
     "korean": "포어그라운드 중 경로 그리기",
-    "order": 432,
     "polish": "Wytyczaj ścieżki na pierwszym planie",
+    "roworder": 432,
     "russian": "Прокладывать тропы на переднем плане"
   },
   {
@@ -7401,8 +7401,8 @@
     "german": "Transparente Umgebungsobjekte",
     "japanese": "透明な周囲にある物体",
     "korean": "투명한 환경 물체",
-    "order": 434,
     "polish": "Przeźroczyste obiekty w otoczeniu",
+    "roworder": 434,
     "russian": "Прозрачные объекты среды"
   },
   {
@@ -7415,8 +7415,8 @@
     "german": "Verbundene Ameisenstraßen verlaufen in entgegengesetzter Richtung.",
     "japanese": "繋げたルートの方向が違います。",
     "korean": "연결한 경로 방향이 반대입니다.",
-    "order": 259,
     "polish": "Połączone ścieżki prowadzą w przeciwnych kierunkach.",
+    "roworder": 259,
     "russian": "Соединенные тропы идут в противоположных направлениях."
   },
   {
@@ -7429,8 +7429,8 @@
     "german": "Ameisenart",
     "japanese": "アリのタイプ",
     "korean": "개미 종류",
-    "order": 71,
     "polish": "Gatunek mrówek",
+    "roworder": 71,
     "russian": "Виды муравьев"
   },
   {
@@ -7443,8 +7443,8 @@
     "german": "Cheats aktiviert",
     "japanese": "チートを使う",
     "korean": "치트 활성화",
-    "order": 73,
     "polish": "Włączenie kodów",
+    "roworder": 73,
     "russian": "Читы включены"
   },
   {
@@ -7457,8 +7457,8 @@
     "german": "Erfolge sind deaktiviert",
     "japanese": "これをONにするとアチーブメントが達成できなくなります",
     "korean": "해당 설정 활성화 시 업적이 사용 금지됩니다",
-    "order": 74,
     "polish": "Spowoduje to wyłączenie osiągnięć",
+    "roworder": 74,
     "russian": "Достижения будут недоступны"
   },
   {
@@ -7471,8 +7471,8 @@
     "german": "Schnellere Introsequenz",
     "japanese": "イントロイベントの高速化",
     "korean": "더 빠른 소개 시퀀스",
-    "order": 577,
     "polish": "Szybsze wprowadzenie",
+    "roworder": 577,
     "russian": "Быстрое прохождение вступления"
   },
   {
@@ -7485,8 +7485,8 @@
     "german": "Schnellere Instinktsequenz",
     "japanese": "クイック本能モード",
     "korean": "스피드 본능 모드",
-    "order": 72,
     "polish": "Przyśpieszony samouczek",
+    "roworder": 72,
     "russian": "Быстрое пробуждение инстинктов"
   },
   {
@@ -7499,8 +7499,8 @@
     "german": "Sandbox",
     "japanese": "サンドボックスモード",
     "korean": "샌드박스",
-    "order": 75,
     "polish": "Tryb dowolny",
+    "roworder": 75,
     "russian": "Песочница"
   },
   {
@@ -7513,8 +7513,8 @@
     "german": "Startwert",
     "japanese": "シード値",
     "korean": "세계 씨앗",
-    "order": 70,
     "polish": "Nasiono świata",
+    "roworder": 70,
     "russian": "Мир"
   },
   {
@@ -7527,8 +7527,8 @@
     "german": "Im Prolog gesperrt",
     "japanese": "プロローグでアンロックされていません",
     "korean": "프롤로그 중 해제되지 않았습니다",
-    "order": 427,
     "polish": "Opcja niedostępna w prologu",
+    "roworder": 427,
     "russian": "Недоступно в прологе"
   },
   {
@@ -7541,8 +7541,8 @@
     "german": "Intro überspringen",
     "japanese": "イントロイベントのスキップ",
     "korean": "소개 시퀀스 건너뛰기",
-    "order": 560,
     "polish": "Pomiń intro",
+    "roworder": 560,
     "russian": "Пропустить заставку"
   },
   {
@@ -7555,8 +7555,8 @@
     "german": "Startbiom",
     "japanese": "コロニーを作る",
     "korean": "군락 건립 시작",
-    "order": 69,
     "polish": "Biom początkowy",
+    "roworder": 69,
     "russian": "Начальная местность"
   },
   {
@@ -7569,8 +7569,8 @@
     "german": "Das Gebäude ist veraltet und muss neu gebaut werden. Bitte abreißen.",
     "japanese": "この建築物は期限が超えていて、再建が必要です。取り壊してください。",
     "korean": "해당 건물은 시간이 초과되어 다시 건축해야 합니다. 철거하세요.",
-    "order": 334,
     "polish": "Ten budynek jest przestarzały i należy go wybudować ponownie. Zburz go.",
+    "roworder": 334,
     "russian": "Здание устарело, его необходимо построить заново, но для начала снести."
   }
 ]

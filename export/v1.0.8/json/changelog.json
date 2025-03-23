@@ -1,5 +1,55 @@
 [
   {
+    "Version": "V1.0.8b",
+    "Code": "V1.0.8b_1",
+    "English": "Fixed the queen being invisible after spawning her in."
+  },
+  {
+    "Version": "V1.0.8a",
+    "Code": "V1.0.8a_1",
+    "English": "Catched several errors causing all ants to stop moving, one in the assembler and one in the catapult."
+  },
+  {
+    "Version": "V1.0.8a",
+    "Code": "V1.0.8a_2",
+    "English": "Renamed \"ion workers\" to \"battery workers\""
+  },
+  {
+    "Version": "V1.0.8a",
+    "Code": "V1.0.8a_3",
+    "English": "Fixed the click UI not working correctly with a very low framerate."
+  },
+  {
+    "Version": "V1.0.8a",
+    "Code": "V1.0.8a_4",
+    "English": "Fixed ants being confused by many action points."
+  },
+  {
+    "Version": "V1.0.8a",
+    "Code": "V1.0.8a_5",
+    "English": "Fixed mismatch in building percentages."
+  },
+  {
+    "Version": "V1.0.8a",
+    "Code": "V1.0.8a_6",
+    "English": "Tweaked facility and smart dispenser collider, can now be placed together more neatly."
+  },
+  {
+    "Version": "V1.0.8a",
+    "Code": "V1.0.8a_7",
+    "English": "Fixed typo in Japanese."
+  },
+  {
+    "Version": "V1.0.8a",
+    "Code": "V1.0.8a_8",
+    "English": "Fixed a few errors with colliders from islands."
+  },
+  {
+    "Version": "V1.0.8a",
+    "Code": "V1.0.8a_9",
+    "English": "Several optimisation fixes."
+  },
+  {
     "Version": "V1.0.8",
     "Code": "V1.0.8_1",
     "English": "If an item has fallen to the ground, you can now click on it to send it to a suitable stockpile (if any)."
@@ -17,7 +67,7 @@
   {
     "Version": "V1.0.8",
     "Code": "V1.0.8_4",
-    "English": "Catapults won't display a warning any longer if the target stockpile can't recieve the item."
+    "English": "Catapults won't display a warning any longer if the target stockpile can't receive the item."
   },
   {
     "Version": "V1.0.8",
@@ -112,7 +162,7 @@
   {
     "Version": "V1.0.8",
     "Code": "V1.0.8_23",
-    "English": "Fixed a few instances where the tooltip didn't properly dissapeared."
+    "English": "Fixed a few instances where the tooltip didn't properly disappear."
   },
   {
     "Version": "V1.0.8",
