@@ -25,7 +25,7 @@ function md.CopyObject {
     .SYNOPSIS
         Create a copy of an object, ensuring it's not a reference
     .LINK
-        md.Convert.KeyNames
+        md.Convert.CleanupKeyNames
     #>
     [CmdletBinding()]
     param(
@@ -36,7 +36,7 @@ function md.CopyObject {
         [switch] $AsAlpha
     )
 
-    # todo: refactor using the same key sorting behavior as md.Convert.KeyNames
+    # todo: refactor using the same key sorting behavior as md.Convert.CleanupKeyNames
 
     $props = [ordered]@{}
     if($true) {
@@ -447,10 +447,10 @@ function md.Convert.BlankPropsToEmpty {
         $InputObject
     }
 }
-function md.Convert.KeyNames {
+function md.Convert.CleanupKeyNames {
      <#
     .synopsis
-        partially sanitize names, making it more json-ic. optionally re-order the names
+        purpose is to partially sanitize names, making it more json friendly. Optionally re-order the names
     .NOTES
     #>
     [CmdletBinding()]
@@ -475,17 +475,14 @@ function md.Convert.KeyNames {
             }
         }
         if( $null -eq $allNames ) {
-            throw 'should never reach'
-            # $null = 10
+            throw 'allNames is null!'
             return
         }
         if( $null -eq $InputObject ) {
-            throw "Unhandled null input"
+            throw "Unhandled null 'InputObject'"
             return
         }
         $sortedNames.AddRange( $allnames )
-
-
 
         $sortedNames |  %{
             $curName         = $_
@@ -504,30 +501,58 @@ function md.Convert.KeyNames {
         [pscustomobject]$newObj
     }
 }
-function md.Convert.RenameKeyName {
+function md.Convert.RenameKeys {
      <#
     .synopsis
-        partially sanitize names, making it more json-ic
-    .NOTES
-        future: [1] coerce casing. Maybe [TextInfo.ToTitleCase] [2] tolower
+        partially sanitize names, making it more json-ic. optionally re-order the names
+    .example
+        $Rows
+        | md.Convert.RenameKeys -RenameMap @{ '//note' = 'note' }
+        | md.Convert.CleanupKeyNames
     #>
     [CmdletBinding()]
     param(
-        [Parameter(ValueFromPipeline, Mandatory)]
+        [AllowNull()]
+        [Parameter(ValueFromPipeline)]
         [object] $InputObject,
 
-        [Parameter(Mandatory)]
-        [string] $OriginalName,
-
-        [Parameter(Mandatory)]
-        [string] $NewName
+        # Renames key-> value pairs
+        [IDictionary] $RenameMap = @{}
     )
 
     process {
         $newObj = [ordered]@{}
-        $InputObject.PSObject.Properties  | % {
-            $newName = ($_.Name -eq $OriginalName) ? $NewName : $_.Name
-            $newObj.$newName = $_.Value
+
+        [List[Object]] $allNames = @( $InputObject.PSObject.Properties.Name <# | Sort-Object #> )
+        [List[Object]] $sortedNames = @()
+        foreach( $curStart in $StartWith ) {
+            if( $allNames.IndexOf( $curStart ) -ne -1 ) {
+                $sortedNames.Add( $curStart )
+                $allNames.remove( $curStart )
+            }
+        }
+        if( $null -eq $allNames ) {
+            throw 'should never reach'
+            # $null = 10
+            return
+        }
+        if( $null -eq $InputObject ) {
+            throw "Unhandled null input"
+            return
+        }
+        $sortedNames.AddRange( $allnames )
+        $oldKeyNames = $RenameMap.Keys.Clone()
+
+        $sortedNames |  %{
+            $oldName = $_
+            $value   = $InputObject.PSObject.Properties[ $oldName ].Value
+
+            if( $oldKeyNames -contains $oldName ) {
+                $newName = $RenameMap[ $oldName ]
+            } else {
+                $newName = $oldName
+            }
+            $newObj.$newName = $value
         }
         [pscustomobject]$newObj
     }
@@ -550,14 +575,6 @@ function _Convert.ExpandSingleProperty {
     }
 }
 
-<#
-$origObject = $record
-@( foreach($inner in $record.exchange_types ) {
-    $obj = md.CopyObject -InputObject $origObject
-    $obj.exchange_types = $inner
-    $obj
- }) |Ft
- #>
 function md.Table.ExpandListColumn {
     <#
     .SYNOPSIS
@@ -740,7 +757,7 @@ function md.Export.Biome.Biome_Objects {
         $Rows | %{
             $record = $_
             $record = md.Convert.BlankPropsToEmpty $Record
-            $record = md.Convert.KeyNames $Record
+            $record = md.Convert.CleanupKeyNames $Record
             # coerce blankables into empty strings for json
             $record.'pickups'             = md.Parse.IngredientsFromCsv $record.'pickups'
             $record.'exchange_types'      = md.Parse.ItemsFromList $record.'exchange_types'
@@ -893,7 +910,7 @@ function md.Export.Biome.Plants {
         $Rows | %{
             $record = $_
             $record = md.Convert.BlankPropsToEmpty $Record
-            $record = md.Convert.KeyNames $Record
+            $record = md.Convert.CleanupKeyNames $Record
             # coerce blankables into empty strings for json
             # $record.'pickups'             = md.Parse.IngredientsFromCsv $record.'pickups'
             # $record.'exchange_types'      = md.Parse.ItemsFromList $record.'exchange_types'
@@ -1034,7 +1051,7 @@ function md.Export.TechTree.TechTree {
         $Rows | %{
             $rec = $_
             $rec = md.Convert.BlankPropsToEmpty $rec
-            $rec = md.Convert.KeyNames $rec -StartWith 'tier', 'group', 'order'
+            $rec = md.Convert.CleanupKeyNames $rec -StartWith 'tier', 'group', 'order'
 
             $rec.'cost'             = md.Parse.IngredientsFromCsv $rec.'cost'
             $rec.'in_demo'          = md.Parse.Checkbox $rec.'in_demo'
@@ -1063,7 +1080,7 @@ function md.Export.TechTree.TechTree {
 
                 $record = $_
                 # $record = md.Convert.BlankPropsToEmpty $Record
-                # $record = md.Convert.KeyNames $Record -StartWith 'cost', 'Order'
+                # $record = md.Convert.CleanupKeyNames $Record -StartWith 'cost', 'Order'
                 $record
                     | md.Table.ExpandListColumn -PropertyName 'cost'
                 #     | md.Table.ExpandListColumn -PropertyName 'unlock_buildings'
@@ -1302,7 +1319,7 @@ function md.Export.Prefabs.Prefabs {
         $Rows | %{
             $rec = $_
             $rec = md.Convert.BlankPropsToEmpty $rec
-            $rec = md.Convert.KeyNames $rec # -StartWith 'tier', 'group', 'order'
+            $rec = md.Convert.CleanupKeyNames $rec # -StartWith 'tier', 'group', 'order'
 
             $rec.'auto_recipe' = md.Parse.Checkbox $rec.'auto_recipe'
             $rec.'no_demolish' = md.Parse.Checkbox $rec.'no_demolish'
@@ -1458,7 +1475,7 @@ function md.Export.Prefabs.FactoryRecipes {
         $Rows | %{
             $rec = $_
             $rec = md.Convert.BlankPropsToEmpty $rec
-            $rec = md.Convert.KeyNames $rec # -StartWith 'tier', 'group', 'order'
+            $rec = md.Convert.CleanupKeyNames $rec # -StartWith 'tier', 'group', 'order'
 
             # $rec.'auto_recipe' = md.Parse.Checkbox $rec.'auto_recipe'
             # $rec.'no_demolish' = md.Parse.Checkbox $rec.'no_demolish'
@@ -1610,7 +1627,7 @@ function md.Export.Prefabs.AntCastes {
         $Rows | %{
             $rec = $_
             $rec = md.Convert.BlankPropsToEmpty $rec
-            $rec = md.Convert.KeyNames $rec # -StartWith 'tier', 'group', 'order'
+            $rec = md.Convert.CleanupKeyNames $rec # -StartWith 'tier', 'group', 'order'
 
             # $rec.'auto_recipe' = md.Parse.Checkbox $rec.'auto_recipe'
             # $rec.'no_demolish' = md.Parse.Checkbox $rec.'no_demolish'
@@ -1740,7 +1757,7 @@ function md.Export.Prefabs.Pickups {
         $Rows | %{
             $rec = $_
             $rec = md.Convert.BlankPropsToEmpty $rec
-            $rec = md.Convert.KeyNames $rec # -StartWith 'tier', 'group', 'order'
+            $rec = md.Convert.CleanupKeyNames $rec # -StartWith 'tier', 'group', 'order'
 
             # $rec.'auto_recipe' = md.Parse.Checkbox $rec.'auto_recipe'
             # $rec.'no_demolish' = md.Parse.Checkbox $rec.'no_demolish'
@@ -1884,6 +1901,11 @@ function md.Export.Loc {
 
     }
     $rows_UI =  Import-Excel @importExcel_Splat
+        | md.Convert.RenameKeys -RenameMap @{
+            '//note' = 'Note'
+        }
+
+        # | md.Convert.CleanupKeyNames
 
     # column descriptions are inline
     # $description = $rows | ? Code -Match '^\s*//\s*$' | Select -First 1
@@ -1939,6 +1961,10 @@ function md.Export.Loc {
 
     }
     $rows_Objects =  Import-Excel @importExcel_Splat
+        | md.Convert.RenameKeys -RenameMap @{
+            '//note' = 'Note'
+        }
+
     $curOrder = -1
     $rows_Objects = @(
         $rows_Objects
@@ -1946,17 +1972,6 @@ function md.Export.Loc {
                 # capture grouping records, else add them to the data
                 $record = $_
                 $curOrder++
-                # if ($record.Code -match $Regex.isTierNumber) {
-                #     $curTierNumber = $record.Code  -replace $regex.StripSlashPrefix, ''
-                #     return
-                # } elseif ( $record.Code -match $Regex.isGroupName ) {
-                #     $curGroupName = $record.Code -replace $regex.stripSlashPrefix, ''
-                #     return
-                # } elseif ( $record.Code -match $Regex.toIgnoreHeader ) {
-                #     return
-                # }
-
-                # $record = md.Convert.RenameKeyName -Inp $Record -OriginalName '//note' -New 'code'
 
                 $record.PSObject.Properties.Add( [psnoteproperty]::new(
                     'RowOrder', $curOrder
@@ -1967,7 +1982,7 @@ function md.Export.Loc {
             | ? { -not [string]::IsNullOrWhiteSpace( $_.CODE ) }
             | ? {
                 -not (
-                    [string]::IsNullOrWhiteSpace( $_.'//note' ) -and
+                    [string]::IsNullOrWhiteSpace( $_.Note ) -and
                     [string]::IsNullOrWhiteSpace( $_.English ) -and
                     [string]::IsNullOrWhiteSpace( $_.Dutch )
                 )
@@ -2001,7 +2016,7 @@ function md.Export.Loc {
             $record = $_
             # coerce blankables into empty strings for json
             $record = md.Convert.BlankPropsToEmpty $Record
-            $record = md.Convert.KeyNames $Record
+            $record = md.Convert.CleanupKeyNames $Record
 
             $record
         }
@@ -2017,7 +2032,7 @@ function md.Export.Loc {
         $rows_Objects | %{
             $record = $_
             $record = md.Convert.BlankPropsToEmpty $Record
-            $record = md.Convert.KeyNames $Record
+            $record = md.Convert.CleanupKeyNames $Record
             $record
         }
     ) | Sort-Object @sort_splat
@@ -2130,7 +2145,7 @@ function md.Export.Prefabs.Crusher {
             # $rec.'cost'        = md.Parse.IngredientsFromCsv $rec.'cost'
 
             $record = md.Convert.BlankPropsToEmpty $Record
-            $record = md.Convert.KeyNames $Record
+            $record = md.Convert.CleanupKeyNames $Record
 
             $record.'product_pickup' = md.Parse.IngredientsFromCsv $record.'product_pickup'
             $record.'cost_ant'       = md.Parse.IngredientsFromCsv $record.'cost_ant'
@@ -2147,29 +2162,13 @@ function md.Export.Prefabs.Crusher {
 
     $Paths.Json_Crusher_Output | md.Log.WroteFile
 
-    if($false) { # disable nested format for now
-        $forJson
-            | ConvertTo-Csv
-            | Set-Content -path $Paths.Csv_Crusher_Output # -Confirm
-
-        $Paths.Csv_Crusher_Output | md.Log.WroteFile
-    }
-
-
-    # also emit expanded records
-    # $forJson = @(
-    #     $Rows2 | %{
-    #         $record = $_
-    #         $record # md.Convert.ExpandProperty $Record -Prop $expandProp
-    #     }
-    # )| Sort-Object @sort_splat
+    # note: disable csv for now $Paths.Csv_Crusher_Output
 
     Close-ExcelPackage -ExcelPackage $pkg -NoSave
 
     if( $Build.AutoOpen.Prefabs_Crusher ) {
         md.ShowCopyOfWorkbook -InputPath $Paths.Xlsx_Prefabs
     }
-
 }
 
 function md.Invoke.FdFind {
