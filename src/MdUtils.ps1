@@ -312,15 +312,16 @@ function md.Export.WorkbookSchema.Xlsx {
     $schema = md.Export.WorkbookSchema -PassThru
     remove-item $Paths.xlsx_WorkbookSchema -ea Ignore
     $exportExcelSplat = @{
-        Path          = $Paths.xlsx_WorkbookSchema
-        WorksheetName = 'Schema'
-        AutoSize      = $true
-        TableName     = 'Schema_data'
-        TableStyle    = 'Light5'
-        Show          = $false
-        Title         = 'Summary of xlsx schemas by file'
+        Path            = $Paths.xlsx_WorkbookSchema
+        WorksheetName   = 'Schema'
+        AutoSize        = $true
+        TableName       = 'Schema_data'
+        TableStyle      = 'Light5'
+        Show            = $false
+        Title           = 'Summary of xlsx schemas by file'
         ConditionalText = @(
             md.New-ConditionalTextTemplate -TemplateName 'Checkbox-x.Green'
+            md.New-ConditionalTextTemplate -TemplateName 'TextContains.TrueOrFalse'
         )
     }
 
@@ -334,6 +335,41 @@ function md.Export.WorkbookSchema.Xlsx {
         | Sort-Object ExcelFile, WorksheetName
     )
     | Export-Excel @exportExcelSplat
+
+
+    # section: Summarize columns
+    $exportExcelSplat = @{
+        Path            = $Paths.xlsx_WorkbookSchema
+        WorksheetName   = 'Property'
+        AutoSize        = $true
+        TableName       = 'Property_data'
+        TableStyle      = 'Light5'
+        Show            = $false
+        Title           = 'Schema.Workbook.Properties'
+        ConditionalText = @(
+            md.New-ConditionalTextTemplate -TemplateName 'Checkbox-x.Green'
+            md.New-ConditionalTextTemplate -TemplateName 'TextContains.TrueOrFalse'
+        )
+    }
+
+    @(
+        $schema
+        | %{
+            $record = $_
+            $record.PropertyNames -split ',\s+' | %{
+                $curProp = $_
+                [pscustomobject]@{
+                    ExcelFile       = $record.ExcelFile
+                    WorksheetName   = $record.WorksheetName
+                    FileIsRawSource = $record.ExcelFile -match '-raw\.xlsx$'
+                    Property        = $curProp
+                }
+            }
+        }
+        | Sort-Object ExcelFile, WorksheetName, Property
+    )
+    | Export-Excel @exportExcelSplat
+
 
     md.Log.WroteFile $exportExcelSplat.Path
 
@@ -1145,6 +1181,46 @@ function md.Export.TechTree.TechTree {
 
         Export-Excel @exportExcel_Splat
     }
+
+    # section: Export worksheet: Exploration_Order
+    $importExcel_Splat = @{
+        ExcelPackage  = $pkg
+        WorksheetName = 'Exploration Order'
+
+    }
+    $rows_Exploration_Order =  Import-Excel @importExcel_Splat
+        | md.Convert.RenameKeys -RenameMap @{
+            '//note' = 'Note'
+        }
+
+    # skip empty and non-data rows
+    $curOrder = -1
+    $rows_Exploration_Order = @(
+        $rows_Exploration_Order
+            | % {
+                # capture grouping records, else add them to the data
+                $record = $_
+                $curOrder++
+
+                $record.PSObject.Properties.Add( [psnoteproperty]::new(
+                    'RowOrder', $curOrder
+                ), $true )
+
+                $record
+            }
+    )
+
+    $exportExcel_Splat = @{
+        InputObject   = @( $rows_Exploration_Order )
+        Path          = $Paths.Xlsx_TechTree
+        Show          = $false # $Build.AutoOpen.Loc ?? $false
+        WorksheetName = 'Exploration_Order'
+        TableName     = 'Exploration_Order_Data'
+        TableStyle    = 'Light5'
+        AutoSize      = $True
+    }
+
+    Export-Excel @exportExcel_Splat
 
     Close-ExcelPackage -ExcelPackage $pkg -NoSave
 

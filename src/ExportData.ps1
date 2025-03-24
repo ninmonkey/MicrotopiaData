@@ -82,9 +82,10 @@ $Build ??= [ordered]@{ # auto 'show' certain files. nullish op lets you override
         TechTree_ResearchRecipes = $false # $true
         TechTree_TechTree        = $false # $true
         Prefabs                  = $false # $true
-        WorkbookSchema           = $false
+        WorkbookSchema           = $true
     }
     Export = [ordered]@{
+        # main
         # Changelog                  = $false # $true # $false
         # Biome_Objects              = $false # $true # $false
         # Biome_Objects_Expanded     = $false # $false # $false1
@@ -96,6 +97,9 @@ $Build ??= [ordered]@{ # auto 'show' certain files. nullish op lets you override
         # TechTree_TechTree          = $false # $true # $false
         # TechTree_TechTree_Expanded = $false # $false # $false
         # WorkbookSchema             = $false # $true # $false
+
+
+        # all on
         Changelog                  = $true
         Biome_Objects              = $true
         Biome_Objects_Expanded     = $true
@@ -107,6 +111,20 @@ $Build ??= [ordered]@{ # auto 'show' certain files. nullish op lets you override
         TechTree_TechTree          = $true
         TechTree_TechTree_Expanded = $true
         WorkbookSchema             = $true
+
+
+        # only schema
+        # Changelog                  = $false
+        # Biome_Objects              = $false
+        # Biome_Objects_Expanded     = $false
+        # Biome_Plants               = $false
+        # Loc                        = $false
+        # Prefabs_Crusher            = $false
+        # Prefabs                    = $false
+        # TechTree_ResearchRecipes   = $false
+        # TechTree_TechTree          = $false
+        # TechTree_TechTree_Expanded = $false
+        # WorkbookSchema             = $true
     }
 }
 # $Paths.Game = [ordered]@{
