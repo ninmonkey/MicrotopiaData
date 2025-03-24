@@ -1,7 +1,7 @@
 
 ## About
 
-Files generated on: 2025-03-23 12:29:30 PM
+Files generated on: 2025-03-24 12:34:56 PM
 For version: v1.0.8
 
 ## Files by Type
@@ -16,6 +16,7 @@ For version: v1.0.8
 - [biome-plants.json](./json/biome-plants.json)
 - [changelog.json](./json/changelog.json)
 - [crusher-output.json](./json/crusher-output.json)
+- [loc-legend.json](./json/loc-legend.json)
 - [loc-objects.json](./json/loc-objects.json)
 - [loc-ui.json](./json/loc-ui.json)
 - [prefabs-antcastes.json](./json/prefabs-antcastes.json)

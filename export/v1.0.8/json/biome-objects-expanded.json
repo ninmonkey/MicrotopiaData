@@ -36,6 +36,474 @@
     "unclickable": false
   },
   {
+    "code": "MUSHROOM_TREE",
+    "description": "",
+    "exchange_types": "PLANT_CUT",
+    "fruit": "",
+    "hardness": "",
+    "infinite": false,
+    "order": 19,
+    "pickups": {
+      "Name": "FIBER_SPIKETREE",
+      "Quantity": "3"
+    },
+    "pollution": "",
+    "prefab": "Mushroom Tree",
+    "title": "BOB_MUSHROOM_TREE",
+    "trails_pass_through": true,
+    "unclickable": false
+  },
+  {
+    "code": "PLUMBER_TREE",
+    "description": "",
+    "exchange_types": "PLANT_CUT",
+    "fruit": "",
+    "hardness": "",
+    "infinite": false,
+    "order": 5,
+    "pickups": {
+      "Name": "FIBER_SPIKETREE",
+      "Quantity": "10"
+    },
+    "pollution": "",
+    "prefab": "PlumberTree",
+    "title": "BOB_PLUMBER_TREE",
+    "trails_pass_through": true,
+    "unclickable": false
+  },
+  {
+    "code": "RUBBLE_DEPOSIT_BLUE",
+    "description": "",
+    "exchange_types": "MINE",
+    "fruit": "",
+    "hardness": 30.0,
+    "infinite": false,
+    "order": 41,
+    "pickups": {
+      "Name": "CONCRETE_RAW",
+      "Quantity": "150"
+    },
+    "pollution": "",
+    "prefab": "Rubble Deposit BlueBiome2",
+    "title": "BOB_RUBBLE_DEPOSIT",
+    "trails_pass_through": false,
+    "unclickable": false
+  },
+  {
+    "code": "RUBBLE_DEPOSIT_CONCRETE",
+    "description": "",
+    "exchange_types": "MINE",
+    "fruit": "",
+    "hardness": 30.0,
+    "infinite": true,
+    "order": 43,
+    "pickups": {
+      "Name": "CONCRETE_RAW",
+      "Quantity": "1"
+    },
+    "pollution": "",
+    "prefab": "Rubble Deposit ConcreteBiome",
+    "title": "BOB_RUBBLE_DEPOSIT_CONCRETE",
+    "trails_pass_through": false,
+    "unclickable": false
+  },
+  {
+    "code": "RUBBLE_DEPOSIT_CONCRETE1",
+    "description": "",
+    "exchange_types": "MINE",
+    "fruit": "",
+    "hardness": 30.0,
+    "infinite": true,
+    "order": 51,
+    "pickups": {
+      "Name": "CONCRETE_RAW",
+      "Quantity": "1"
+    },
+    "pollution": "",
+    "prefab": "Rubble Deposit ConcreteBiome1",
+    "title": "BOB_RUBBLE_DEPOSIT_CONCRETE",
+    "trails_pass_through": false,
+    "unclickable": false
+  },
+  {
+    "code": "RUBBLE_DEPOSIT_CONCRETE2",
+    "description": "",
+    "exchange_types": "MINE",
+    "fruit": "",
+    "hardness": 30.0,
+    "infinite": true,
+    "order": 52,
+    "pickups": {
+      "Name": "CONCRETE_RAW",
+      "Quantity": "1"
+    },
+    "pollution": "",
+    "prefab": "Rubble Deposit ConcreteBiome2",
+    "title": "BOB_RUBBLE_DEPOSIT_CONCRETE",
+    "trails_pass_through": false,
+    "unclickable": false
+  },
+  {
+    "code": "RUBBLE_DEPOSIT_CONCRETE3",
+    "description": "",
+    "exchange_types": "MINE",
+    "fruit": "",
+    "hardness": 30.0,
+    "infinite": true,
+    "order": 53,
+    "pickups": {
+      "Name": "CONCRETE_RAW",
+      "Quantity": "1"
+    },
+    "pollution": "",
+    "prefab": "Rubble Deposit ConcreteBiome3",
+    "title": "BOB_RUBBLE_DEPOSIT_CONCRETE",
+    "trails_pass_through": false,
+    "unclickable": false
+  },
+  {
+    "code": "RUBBLE_DEPOSIT_CONCRETE4",
+    "description": "",
+    "exchange_types": "MINE",
+    "fruit": "",
+    "hardness": 30.0,
+    "infinite": true,
+    "order": 54,
+    "pickups": {
+      "Name": "CONCRETE_RAW",
+      "Quantity": "1"
+    },
+    "pollution": "",
+    "prefab": "Rubble Deposit ConcreteBiome4",
+    "title": "BOB_RUBBLE_DEPOSIT_CONCRETE",
+    "trails_pass_through": false,
+    "unclickable": false
+  },
+  {
+    "code": "RUBBLE_DEPOSIT_SCRAPA",
+    "description": "",
+    "exchange_types": "MINE",
+    "fruit": "",
+    "hardness": 30.0,
+    "infinite": false,
+    "order": 42,
+    "pickups": {
+      "Name": "CONCRETE_RAW",
+      "Quantity": "100"
+    },
+    "pollution": "",
+    "prefab": "Rubble Deposit ScraparaBiome",
+    "title": "BOB_RUBBLE_DEPOSIT",
+    "trails_pass_through": false,
+    "unclickable": false
+  },
+  {
+    "code": "SCRAP_POLES_FRUITPLANT",
+    "description": "",
+    "exchange_types": "MINE",
+    "fruit": "ENERGY_POD4",
+    "hardness": 5.0,
+    "infinite": false,
+    "order": 22,
+    "pickups": {
+      "Name": "IRON_RAW",
+      "Quantity": "25"
+    },
+    "pollution": "",
+    "prefab": "ConcreteScrapPoles Fruitplant",
+    "title": "BOB_CONCRETE_SCRAP_POLES",
+    "trails_pass_through": false,
+    "unclickable": false
+  },
+  {
+    "code": "SCRAP_POLES_FRUITPLANT",
+    "description": "",
+    "exchange_types": "FORAGE",
+    "fruit": "ENERGY_POD4",
+    "hardness": 5.0,
+    "infinite": false,
+    "order": 22,
+    "pickups": {
+      "Name": "IRON_RAW",
+      "Quantity": "25"
+    },
+    "pollution": "",
+    "prefab": "ConcreteScrapPoles Fruitplant",
+    "title": "BOB_CONCRETE_SCRAP_POLES",
+    "trails_pass_through": false,
+    "unclickable": false
+  },
+  {
+    "code": "SCRAP_POLES_PLANT",
+    "description": "",
+    "exchange_types": "MINE",
+    "fruit": "ENERGY_POD4",
+    "hardness": 5.0,
+    "infinite": false,
+    "order": 21,
+    "pickups": {
+      "Name": "IRON_RAW",
+      "Quantity": "20"
+    },
+    "pollution": "",
+    "prefab": "ConcreteScrapPoles Plant",
+    "title": "BOB_CONCRETE_SCRAP_POLES",
+    "trails_pass_through": false,
+    "unclickable": false
+  },
+  {
+    "code": "SCRAPARA_CACTUS",
+    "description": "",
+    "exchange_types": "PLANT_CUT",
+    "fruit": "ENERGY_POD",
+    "hardness": "",
+    "infinite": false,
+    "order": 1,
+    "pickups": {
+      "Name": "FIBER_SPIKETREE",
+      "Quantity": "3"
+    },
+    "pollution": "",
+    "prefab": "Scrapara Cactus",
+    "title": "BOB_SCRAPARA_CACTUS",
+    "trails_pass_through": true,
+    "unclickable": false
+  },
+  {
+    "code": "SCRAPARA_CACTUS",
+    "description": "",
+    "exchange_types": "FORAGE",
+    "fruit": "ENERGY_POD",
+    "hardness": "",
+    "infinite": false,
+    "order": 1,
+    "pickups": {
+      "Name": "FIBER_SPIKETREE",
+      "Quantity": "3"
+    },
+    "pollution": "",
+    "prefab": "Scrapara Cactus",
+    "title": "BOB_SCRAPARA_CACTUS",
+    "trails_pass_through": true,
+    "unclickable": false
+  },
+  {
+    "code": "SPIKE_TREE",
+    "description": "",
+    "exchange_types": "PLANT_CUT",
+    "fruit": "ENERGY_POD",
+    "hardness": "",
+    "infinite": false,
+    "order": 0,
+    "pickups": {
+      "Name": "FIBER_SPIKETREE",
+      "Quantity": "8"
+    },
+    "pollution": "",
+    "prefab": "Spike Tree",
+    "title": "BOB_SPIKE_TREE",
+    "trails_pass_through": true,
+    "unclickable": false
+  },
+  {
+    "code": "SPIKE_TREE",
+    "description": "",
+    "exchange_types": "FORAGE",
+    "fruit": "ENERGY_POD",
+    "hardness": "",
+    "infinite": false,
+    "order": 0,
+    "pickups": {
+      "Name": "FIBER_SPIKETREE",
+      "Quantity": "8"
+    },
+    "pollution": "",
+    "prefab": "Spike Tree",
+    "title": "BOB_SPIKE_TREE",
+    "trails_pass_through": true,
+    "unclickable": false
+  },
+  {
+    "code": "TOXIC_WASTE",
+    "description": "",
+    "exchange_types": "MINE",
+    "fruit": "",
+    "hardness": 40.0,
+    "infinite": false,
+    "order": 46,
+    "pickups": {
+      "Name": "CHEM_WASTE",
+      "Quantity": "250"
+    },
+    "pollution": "",
+    "prefab": "ToxicWaste",
+    "title": "BOB_TOXIC_WASTE",
+    "trails_pass_through": false,
+    "unclickable": false
+  },
+  {
+    "code": "TOXIC_WASTE_BLUBBER",
+    "description": "",
+    "exchange_types": "PLANT_CUT",
+    "fruit": "",
+    "hardness": 1.0,
+    "infinite": false,
+    "order": 18,
+    "pickups": {
+      "Name": "CHEM_WASTE",
+      "Quantity": "100"
+    },
+    "pollution": "",
+    "prefab": "ToxicWaste Blubber",
+    "title": "BOB_TOXIC_WASTE_BLUBBER",
+    "trails_pass_through": false,
+    "unclickable": false
+  },
+  {
+    "code": "WIRE_TREE",
+    "description": "",
+    "exchange_types": "PLANT_CUT",
+    "fruit": "ENERGY_POD",
+    "hardness": "",
+    "infinite": false,
+    "order": 7,
+    "pickups": {
+      "Name": "FIBER_SPIKETREE",
+      "Quantity": "25"
+    },
+    "pollution": "",
+    "prefab": "Wire Tree",
+    "title": "BOB_WIRE_TREE",
+    "trails_pass_through": true,
+    "unclickable": false
+  },
+  {
+    "code": "WIRE_TREE",
+    "description": "",
+    "exchange_types": "FORAGE",
+    "fruit": "ENERGY_POD",
+    "hardness": "",
+    "infinite": false,
+    "order": 7,
+    "pickups": {
+      "Name": "FIBER_SPIKETREE",
+      "Quantity": "25"
+    },
+    "pollution": "",
+    "prefab": "Wire Tree",
+    "title": "BOB_WIRE_TREE",
+    "trails_pass_through": true,
+    "unclickable": false
+  },
+  {
+    "code": "WIRE_TREE_NO_FRUIT",
+    "description": "",
+    "exchange_types": "PLANT_CUT",
+    "fruit": "",
+    "hardness": "",
+    "infinite": false,
+    "order": 10,
+    "pickups": {
+      "Name": "FIBER_SPIKETREE",
+      "Quantity": "25"
+    },
+    "pollution": "",
+    "prefab": "Wire Tree No Fruit",
+    "title": "BOB_WIRE_TREE",
+    "trails_pass_through": true,
+    "unclickable": false
+  },
+  {
+    "code": "WIRE_TREE_NO_FRUIT",
+    "description": "",
+    "exchange_types": "FORAGE",
+    "fruit": "",
+    "hardness": "",
+    "infinite": false,
+    "order": 10,
+    "pickups": {
+      "Name": "FIBER_SPIKETREE",
+      "Quantity": "25"
+    },
+    "pollution": "",
+    "prefab": "Wire Tree No Fruit",
+    "title": "BOB_WIRE_TREE",
+    "trails_pass_through": true,
+    "unclickable": false
+  },
+  {
+    "code": "WIRE_TREE1",
+    "description": "",
+    "exchange_types": "PLANT_CUT",
+    "fruit": "ENERGY_POD",
+    "hardness": "",
+    "infinite": false,
+    "order": 8,
+    "pickups": {
+      "Name": "FIBER_SPIKETREE",
+      "Quantity": "25"
+    },
+    "pollution": "",
+    "prefab": "Wire Tree",
+    "title": "BOB_WIRE_TREE",
+    "trails_pass_through": true,
+    "unclickable": false
+  },
+  {
+    "code": "WIRE_TREE1",
+    "description": "",
+    "exchange_types": "FORAGE",
+    "fruit": "ENERGY_POD",
+    "hardness": "",
+    "infinite": false,
+    "order": 8,
+    "pickups": {
+      "Name": "FIBER_SPIKETREE",
+      "Quantity": "25"
+    },
+    "pollution": "",
+    "prefab": "Wire Tree",
+    "title": "BOB_WIRE_TREE",
+    "trails_pass_through": true,
+    "unclickable": false
+  },
+  {
+    "code": "JUNGLE_WIRECUT_TREE",
+    "description": "",
+    "exchange_types": "PLANT_CUT",
+    "fruit": "",
+    "hardness": "",
+    "infinite": false,
+    "order": 14,
+    "pickups": {
+      "Name": "FIBER_SPIKETREE",
+      "Quantity": "100"
+    },
+    "pollution": "",
+    "prefab": "JungleWireCutTree",
+    "title": "BOB_JUNGLE_WIRECUT_TREE",
+    "trails_pass_through": false,
+    "unclickable": false
+  },
+  {
+    "code": "JUNGLE_STRANGLE_TREE_STATIC",
+    "description": "",
+    "exchange_types": "PLANT_CUT",
+    "fruit": "",
+    "hardness": "",
+    "infinite": false,
+    "order": 31,
+    "pickups": {
+      "Name": "FIBER_SPIKETREE",
+      "Quantity": "100"
+    },
+    "pollution": "",
+    "prefab": "JungleStrangleTree Static",
+    "title": "BOB_JUNGLE_STRANGLE_TREE",
+    "trails_pass_through": false,
+    "unclickable": false
+  },
+  {
     "code": "CABLE_TREE",
     "description": "",
     "exchange_types": "PLANT_CUT",
@@ -108,6 +576,24 @@
     "unclickable": false
   },
   {
+    "code": "CLAY_DEPOSIT",
+    "description": "",
+    "exchange_types": "MINE",
+    "fruit": "",
+    "hardness": 1.0,
+    "infinite": false,
+    "order": 50,
+    "pickups": {
+      "Name": "CLAY",
+      "Quantity": "35"
+    },
+    "pollution": "",
+    "prefab": "Clay Deposit",
+    "title": "BOB_ROCK",
+    "trails_pass_through": false,
+    "unclickable": false
+  },
+  {
     "code": "CONCRETE_SCRAP_POLES",
     "description": "",
     "exchange_types": "MINE",
@@ -121,60 +607,6 @@
     },
     "pollution": "",
     "prefab": "ConcreteScrapPoles",
-    "title": "BOB_CONCRETE_SCRAP_POLES",
-    "trails_pass_through": false,
-    "unclickable": false
-  },
-  {
-    "code": "SCRAP_POLES_FRUITPLANT",
-    "description": "",
-    "exchange_types": "MINE",
-    "fruit": "ENERGY_POD4",
-    "hardness": 5.0,
-    "infinite": false,
-    "order": 22,
-    "pickups": {
-      "Name": "IRON_RAW",
-      "Quantity": "25"
-    },
-    "pollution": "",
-    "prefab": "ConcreteScrapPoles Fruitplant",
-    "title": "BOB_CONCRETE_SCRAP_POLES",
-    "trails_pass_through": false,
-    "unclickable": false
-  },
-  {
-    "code": "SCRAP_POLES_FRUITPLANT",
-    "description": "",
-    "exchange_types": "FORAGE",
-    "fruit": "ENERGY_POD4",
-    "hardness": 5.0,
-    "infinite": false,
-    "order": 22,
-    "pickups": {
-      "Name": "IRON_RAW",
-      "Quantity": "25"
-    },
-    "pollution": "",
-    "prefab": "ConcreteScrapPoles Fruitplant",
-    "title": "BOB_CONCRETE_SCRAP_POLES",
-    "trails_pass_through": false,
-    "unclickable": false
-  },
-  {
-    "code": "SCRAP_POLES_PLANT",
-    "description": "",
-    "exchange_types": "MINE",
-    "fruit": "ENERGY_POD4",
-    "hardness": 5.0,
-    "infinite": false,
-    "order": 21,
-    "pickups": {
-      "Name": "IRON_RAW",
-      "Quantity": "20"
-    },
-    "pollution": "",
-    "prefab": "ConcreteScrapPoles Plant",
     "title": "BOB_CONCRETE_SCRAP_POLES",
     "trails_pass_through": false,
     "unclickable": false
@@ -465,6 +897,42 @@
     "prefab": "Gold Pile",
     "title": "BOB_GOLD_PILE",
     "trails_pass_through": false,
+    "unclickable": false
+  },
+  {
+    "code": "WIRE_TREE2",
+    "description": "",
+    "exchange_types": "PLANT_CUT",
+    "fruit": "ENERGY_POD",
+    "hardness": "",
+    "infinite": false,
+    "order": 9,
+    "pickups": {
+      "Name": "FIBER_SPIKETREE",
+      "Quantity": "25"
+    },
+    "pollution": "",
+    "prefab": "Wire Tree",
+    "title": "BOB_WIRE_TREE",
+    "trails_pass_through": true,
+    "unclickable": false
+  },
+  {
+    "code": "WIRE_TREE2",
+    "description": "",
+    "exchange_types": "FORAGE",
+    "fruit": "ENERGY_POD",
+    "hardness": "",
+    "infinite": false,
+    "order": 9,
+    "pickups": {
+      "Name": "FIBER_SPIKETREE",
+      "Quantity": "25"
+    },
+    "pollution": "",
+    "prefab": "Wire Tree",
+    "title": "BOB_WIRE_TREE",
+    "trails_pass_through": true,
     "unclickable": false
   },
   {
@@ -789,474 +1257,6 @@
     "prefab": "JungleStrangleTree",
     "title": "BOB_JUNGLE_STRANGLE_TREE",
     "trails_pass_through": false,
-    "unclickable": false
-  },
-  {
-    "code": "JUNGLE_STRANGLE_TREE_STATIC",
-    "description": "",
-    "exchange_types": "PLANT_CUT",
-    "fruit": "",
-    "hardness": "",
-    "infinite": false,
-    "order": 31,
-    "pickups": {
-      "Name": "FIBER_SPIKETREE",
-      "Quantity": "100"
-    },
-    "pollution": "",
-    "prefab": "JungleStrangleTree Static",
-    "title": "BOB_JUNGLE_STRANGLE_TREE",
-    "trails_pass_through": false,
-    "unclickable": false
-  },
-  {
-    "code": "JUNGLE_WIRECUT_TREE",
-    "description": "",
-    "exchange_types": "PLANT_CUT",
-    "fruit": "",
-    "hardness": "",
-    "infinite": false,
-    "order": 14,
-    "pickups": {
-      "Name": "FIBER_SPIKETREE",
-      "Quantity": "100"
-    },
-    "pollution": "",
-    "prefab": "JungleWireCutTree",
-    "title": "BOB_JUNGLE_WIRECUT_TREE",
-    "trails_pass_through": false,
-    "unclickable": false
-  },
-  {
-    "code": "MUSHROOM_TREE",
-    "description": "",
-    "exchange_types": "PLANT_CUT",
-    "fruit": "",
-    "hardness": "",
-    "infinite": false,
-    "order": 19,
-    "pickups": {
-      "Name": "FIBER_SPIKETREE",
-      "Quantity": "3"
-    },
-    "pollution": "",
-    "prefab": "Mushroom Tree",
-    "title": "BOB_MUSHROOM_TREE",
-    "trails_pass_through": true,
-    "unclickable": false
-  },
-  {
-    "code": "PLUMBER_TREE",
-    "description": "",
-    "exchange_types": "PLANT_CUT",
-    "fruit": "",
-    "hardness": "",
-    "infinite": false,
-    "order": 5,
-    "pickups": {
-      "Name": "FIBER_SPIKETREE",
-      "Quantity": "10"
-    },
-    "pollution": "",
-    "prefab": "PlumberTree",
-    "title": "BOB_PLUMBER_TREE",
-    "trails_pass_through": true,
-    "unclickable": false
-  },
-  {
-    "code": "CLAY_DEPOSIT",
-    "description": "",
-    "exchange_types": "MINE",
-    "fruit": "",
-    "hardness": 1.0,
-    "infinite": false,
-    "order": 50,
-    "pickups": {
-      "Name": "CLAY",
-      "Quantity": "35"
-    },
-    "pollution": "",
-    "prefab": "Clay Deposit",
-    "title": "BOB_ROCK",
-    "trails_pass_through": false,
-    "unclickable": false
-  },
-  {
-    "code": "RUBBLE_DEPOSIT_BLUE",
-    "description": "",
-    "exchange_types": "MINE",
-    "fruit": "",
-    "hardness": 30.0,
-    "infinite": false,
-    "order": 41,
-    "pickups": {
-      "Name": "CONCRETE_RAW",
-      "Quantity": "150"
-    },
-    "pollution": "",
-    "prefab": "Rubble Deposit BlueBiome2",
-    "title": "BOB_RUBBLE_DEPOSIT",
-    "trails_pass_through": false,
-    "unclickable": false
-  },
-  {
-    "code": "RUBBLE_DEPOSIT_SCRAPA",
-    "description": "",
-    "exchange_types": "MINE",
-    "fruit": "",
-    "hardness": 30.0,
-    "infinite": false,
-    "order": 42,
-    "pickups": {
-      "Name": "CONCRETE_RAW",
-      "Quantity": "100"
-    },
-    "pollution": "",
-    "prefab": "Rubble Deposit ScraparaBiome",
-    "title": "BOB_RUBBLE_DEPOSIT",
-    "trails_pass_through": false,
-    "unclickable": false
-  },
-  {
-    "code": "RUBBLE_DEPOSIT_CONCRETE",
-    "description": "",
-    "exchange_types": "MINE",
-    "fruit": "",
-    "hardness": 30.0,
-    "infinite": true,
-    "order": 43,
-    "pickups": {
-      "Name": "CONCRETE_RAW",
-      "Quantity": "1"
-    },
-    "pollution": "",
-    "prefab": "Rubble Deposit ConcreteBiome",
-    "title": "BOB_RUBBLE_DEPOSIT_CONCRETE",
-    "trails_pass_through": false,
-    "unclickable": false
-  },
-  {
-    "code": "RUBBLE_DEPOSIT_CONCRETE1",
-    "description": "",
-    "exchange_types": "MINE",
-    "fruit": "",
-    "hardness": 30.0,
-    "infinite": true,
-    "order": 51,
-    "pickups": {
-      "Name": "CONCRETE_RAW",
-      "Quantity": "1"
-    },
-    "pollution": "",
-    "prefab": "Rubble Deposit ConcreteBiome1",
-    "title": "BOB_RUBBLE_DEPOSIT_CONCRETE",
-    "trails_pass_through": false,
-    "unclickable": false
-  },
-  {
-    "code": "RUBBLE_DEPOSIT_CONCRETE2",
-    "description": "",
-    "exchange_types": "MINE",
-    "fruit": "",
-    "hardness": 30.0,
-    "infinite": true,
-    "order": 52,
-    "pickups": {
-      "Name": "CONCRETE_RAW",
-      "Quantity": "1"
-    },
-    "pollution": "",
-    "prefab": "Rubble Deposit ConcreteBiome2",
-    "title": "BOB_RUBBLE_DEPOSIT_CONCRETE",
-    "trails_pass_through": false,
-    "unclickable": false
-  },
-  {
-    "code": "RUBBLE_DEPOSIT_CONCRETE3",
-    "description": "",
-    "exchange_types": "MINE",
-    "fruit": "",
-    "hardness": 30.0,
-    "infinite": true,
-    "order": 53,
-    "pickups": {
-      "Name": "CONCRETE_RAW",
-      "Quantity": "1"
-    },
-    "pollution": "",
-    "prefab": "Rubble Deposit ConcreteBiome3",
-    "title": "BOB_RUBBLE_DEPOSIT_CONCRETE",
-    "trails_pass_through": false,
-    "unclickable": false
-  },
-  {
-    "code": "RUBBLE_DEPOSIT_CONCRETE4",
-    "description": "",
-    "exchange_types": "MINE",
-    "fruit": "",
-    "hardness": 30.0,
-    "infinite": true,
-    "order": 54,
-    "pickups": {
-      "Name": "CONCRETE_RAW",
-      "Quantity": "1"
-    },
-    "pollution": "",
-    "prefab": "Rubble Deposit ConcreteBiome4",
-    "title": "BOB_RUBBLE_DEPOSIT_CONCRETE",
-    "trails_pass_through": false,
-    "unclickable": false
-  },
-  {
-    "code": "SCRAPARA_CACTUS",
-    "description": "",
-    "exchange_types": "PLANT_CUT",
-    "fruit": "ENERGY_POD",
-    "hardness": "",
-    "infinite": false,
-    "order": 1,
-    "pickups": {
-      "Name": "FIBER_SPIKETREE",
-      "Quantity": "3"
-    },
-    "pollution": "",
-    "prefab": "Scrapara Cactus",
-    "title": "BOB_SCRAPARA_CACTUS",
-    "trails_pass_through": true,
-    "unclickable": false
-  },
-  {
-    "code": "SCRAPARA_CACTUS",
-    "description": "",
-    "exchange_types": "FORAGE",
-    "fruit": "ENERGY_POD",
-    "hardness": "",
-    "infinite": false,
-    "order": 1,
-    "pickups": {
-      "Name": "FIBER_SPIKETREE",
-      "Quantity": "3"
-    },
-    "pollution": "",
-    "prefab": "Scrapara Cactus",
-    "title": "BOB_SCRAPARA_CACTUS",
-    "trails_pass_through": true,
-    "unclickable": false
-  },
-  {
-    "code": "SPIKE_TREE",
-    "description": "",
-    "exchange_types": "PLANT_CUT",
-    "fruit": "ENERGY_POD",
-    "hardness": "",
-    "infinite": false,
-    "order": 0,
-    "pickups": {
-      "Name": "FIBER_SPIKETREE",
-      "Quantity": "8"
-    },
-    "pollution": "",
-    "prefab": "Spike Tree",
-    "title": "BOB_SPIKE_TREE",
-    "trails_pass_through": true,
-    "unclickable": false
-  },
-  {
-    "code": "SPIKE_TREE",
-    "description": "",
-    "exchange_types": "FORAGE",
-    "fruit": "ENERGY_POD",
-    "hardness": "",
-    "infinite": false,
-    "order": 0,
-    "pickups": {
-      "Name": "FIBER_SPIKETREE",
-      "Quantity": "8"
-    },
-    "pollution": "",
-    "prefab": "Spike Tree",
-    "title": "BOB_SPIKE_TREE",
-    "trails_pass_through": true,
-    "unclickable": false
-  },
-  {
-    "code": "TOXIC_WASTE",
-    "description": "",
-    "exchange_types": "MINE",
-    "fruit": "",
-    "hardness": 40.0,
-    "infinite": false,
-    "order": 46,
-    "pickups": {
-      "Name": "CHEM_WASTE",
-      "Quantity": "250"
-    },
-    "pollution": "",
-    "prefab": "ToxicWaste",
-    "title": "BOB_TOXIC_WASTE",
-    "trails_pass_through": false,
-    "unclickable": false
-  },
-  {
-    "code": "TOXIC_WASTE_BLUBBER",
-    "description": "",
-    "exchange_types": "PLANT_CUT",
-    "fruit": "",
-    "hardness": 1.0,
-    "infinite": false,
-    "order": 18,
-    "pickups": {
-      "Name": "CHEM_WASTE",
-      "Quantity": "100"
-    },
-    "pollution": "",
-    "prefab": "ToxicWaste Blubber",
-    "title": "BOB_TOXIC_WASTE_BLUBBER",
-    "trails_pass_through": false,
-    "unclickable": false
-  },
-  {
-    "code": "WIRE_TREE",
-    "description": "",
-    "exchange_types": "PLANT_CUT",
-    "fruit": "ENERGY_POD",
-    "hardness": "",
-    "infinite": false,
-    "order": 7,
-    "pickups": {
-      "Name": "FIBER_SPIKETREE",
-      "Quantity": "25"
-    },
-    "pollution": "",
-    "prefab": "Wire Tree",
-    "title": "BOB_WIRE_TREE",
-    "trails_pass_through": true,
-    "unclickable": false
-  },
-  {
-    "code": "WIRE_TREE",
-    "description": "",
-    "exchange_types": "FORAGE",
-    "fruit": "ENERGY_POD",
-    "hardness": "",
-    "infinite": false,
-    "order": 7,
-    "pickups": {
-      "Name": "FIBER_SPIKETREE",
-      "Quantity": "25"
-    },
-    "pollution": "",
-    "prefab": "Wire Tree",
-    "title": "BOB_WIRE_TREE",
-    "trails_pass_through": true,
-    "unclickable": false
-  },
-  {
-    "code": "WIRE_TREE_NO_FRUIT",
-    "description": "",
-    "exchange_types": "PLANT_CUT",
-    "fruit": "",
-    "hardness": "",
-    "infinite": false,
-    "order": 10,
-    "pickups": {
-      "Name": "FIBER_SPIKETREE",
-      "Quantity": "25"
-    },
-    "pollution": "",
-    "prefab": "Wire Tree No Fruit",
-    "title": "BOB_WIRE_TREE",
-    "trails_pass_through": true,
-    "unclickable": false
-  },
-  {
-    "code": "WIRE_TREE_NO_FRUIT",
-    "description": "",
-    "exchange_types": "FORAGE",
-    "fruit": "",
-    "hardness": "",
-    "infinite": false,
-    "order": 10,
-    "pickups": {
-      "Name": "FIBER_SPIKETREE",
-      "Quantity": "25"
-    },
-    "pollution": "",
-    "prefab": "Wire Tree No Fruit",
-    "title": "BOB_WIRE_TREE",
-    "trails_pass_through": true,
-    "unclickable": false
-  },
-  {
-    "code": "WIRE_TREE1",
-    "description": "",
-    "exchange_types": "PLANT_CUT",
-    "fruit": "ENERGY_POD",
-    "hardness": "",
-    "infinite": false,
-    "order": 8,
-    "pickups": {
-      "Name": "FIBER_SPIKETREE",
-      "Quantity": "25"
-    },
-    "pollution": "",
-    "prefab": "Wire Tree",
-    "title": "BOB_WIRE_TREE",
-    "trails_pass_through": true,
-    "unclickable": false
-  },
-  {
-    "code": "WIRE_TREE1",
-    "description": "",
-    "exchange_types": "FORAGE",
-    "fruit": "ENERGY_POD",
-    "hardness": "",
-    "infinite": false,
-    "order": 8,
-    "pickups": {
-      "Name": "FIBER_SPIKETREE",
-      "Quantity": "25"
-    },
-    "pollution": "",
-    "prefab": "Wire Tree",
-    "title": "BOB_WIRE_TREE",
-    "trails_pass_through": true,
-    "unclickable": false
-  },
-  {
-    "code": "WIRE_TREE2",
-    "description": "",
-    "exchange_types": "PLANT_CUT",
-    "fruit": "ENERGY_POD",
-    "hardness": "",
-    "infinite": false,
-    "order": 9,
-    "pickups": {
-      "Name": "FIBER_SPIKETREE",
-      "Quantity": "25"
-    },
-    "pollution": "",
-    "prefab": "Wire Tree",
-    "title": "BOB_WIRE_TREE",
-    "trails_pass_through": true,
-    "unclickable": false
-  },
-  {
-    "code": "WIRE_TREE2",
-    "description": "",
-    "exchange_types": "FORAGE",
-    "fruit": "ENERGY_POD",
-    "hardness": "",
-    "infinite": false,
-    "order": 9,
-    "pickups": {
-      "Name": "FIBER_SPIKETREE",
-      "Quantity": "25"
-    },
-    "pollution": "",
-    "prefab": "Wire Tree",
-    "title": "BOB_WIRE_TREE",
-    "trails_pass_through": true,
     "unclickable": false
   },
   {

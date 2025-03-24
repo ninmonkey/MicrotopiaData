@@ -26,557 +26,141 @@
   },
   {
     "always_unlocked": "",
-    "buildings": "",
-    "cost_ant": [
+    "buildings": "GRINDER2",
+    "cost_ant": [],
+    "costs_pickup": [
       {
-        "Name": "WORKER_BULB5",
+        "Name": "CONCRETE",
         "Quantity": "1"
       }
     ],
-    "costs_pickup": [],
     "energy_cost": "",
-    "enum": "CRUSHER_BULB5",
+    "enum": "GRIND_CONCRETE",
     "in_demo": "",
     "planned": false,
-    "process_time": 2.0,
+    "process_time": 30.0,
     "product_ant": "",
     "product_pickup": [
       {
-        "Name": "GLASS_RAW",
-        "Quantity": "1"
+        "Name": "CONCRETE_DUST",
+        "Quantity": "4"
       }
     ],
-    "roworder": 80,
-    "title": "FACRECIPE_CRUSHER_BULB5"
+    "roworder": 33,
+    "title": "FACRECIPE_GRIND_CONCRETE"
   },
   {
     "always_unlocked": "",
-    "buildings": "",
-    "cost_ant": [
+    "buildings": "GRINDER2",
+    "cost_ant": [],
+    "costs_pickup": [
       {
-        "Name": "WORKER_BULB4",
+        "Name": "GLASS",
         "Quantity": "1"
       }
     ],
-    "costs_pickup": [],
     "energy_cost": "",
-    "enum": "CRUSHER_BULB4",
+    "enum": "GRIND_GLASS",
     "in_demo": "",
     "planned": false,
-    "process_time": 2.0,
+    "process_time": 20.0,
     "product_ant": "",
     "product_pickup": [
       {
-        "Name": "GLASS_RAW",
-        "Quantity": "1"
+        "Name": "GLASS_DUST",
+        "Quantity": "4"
       }
     ],
-    "roworder": 79,
-    "title": "FACRECIPE_CRUSHER_BULB4"
+    "roworder": 34,
+    "title": "FACRECIPE_GRIND_GLASS"
   },
   {
     "always_unlocked": "",
-    "buildings": "",
-    "cost_ant": [
+    "buildings": "GRINDER2",
+    "cost_ant": [],
+    "costs_pickup": [
       {
-        "Name": "WORKER_BULB3",
+        "Name": "CRYSTAL_RAW",
         "Quantity": "1"
       }
     ],
-    "costs_pickup": [],
     "energy_cost": "",
-    "enum": "CRUSHER_BULB3",
+    "enum": "GRIND_CRYSTAL",
     "in_demo": "",
     "planned": false,
-    "process_time": 2.0,
+    "process_time": 30.0,
     "product_ant": "",
     "product_pickup": [
       {
-        "Name": "GLASS_RAW",
-        "Quantity": "1"
+        "Name": "CRYSTAL_DUST",
+        "Quantity": "4"
       }
     ],
-    "roworder": 78,
-    "title": "FACRECIPE_CRUSHER_BULB3"
+    "roworder": 35,
+    "title": "FACRECIPE_GRIND_CRYSTAL"
   },
   {
     "always_unlocked": "",
-    "buildings": "",
-    "cost_ant": [
+    "buildings": "GRINDER2",
+    "cost_ant": [],
+    "costs_pickup": [
       {
-        "Name": "WORKER_BULB2",
+        "Name": "GOLD",
         "Quantity": "1"
       }
     ],
-    "costs_pickup": [],
     "energy_cost": "",
-    "enum": "CRUSHER_BULB2",
+    "enum": "GRIND_GOLD",
     "in_demo": "",
     "planned": false,
-    "process_time": 2.0,
+    "process_time": 10.0,
     "product_ant": "",
     "product_pickup": [
-      {
-        "Name": "GLASS_RAW",
-        "Quantity": "1"
-      }
-    ],
-    "roworder": 77,
-    "title": "FACRECIPE_CRUSHER_BULB2"
-  },
-  {
-    "always_unlocked": "",
-    "buildings": "",
-    "cost_ant": [
-      {
-        "Name": "WORKER_BULB1",
-        "Quantity": "1"
-      }
-    ],
-    "costs_pickup": [],
-    "energy_cost": "",
-    "enum": "CRUSHER_BULB1",
-    "in_demo": "",
-    "planned": false,
-    "process_time": 2.0,
-    "product_ant": "",
-    "product_pickup": [
-      {
-        "Name": "GLASS_RAW",
-        "Quantity": "1"
-      }
-    ],
-    "roworder": 76,
-    "title": "FACRECIPE_CRUSHER_BULB1"
-  },
-  {
-    "always_unlocked": "",
-    "buildings": "",
-    "cost_ant": [
-      {
-        "Name": "WORKER_BULB0",
-        "Quantity": "1"
-      }
-    ],
-    "costs_pickup": [],
-    "energy_cost": "",
-    "enum": "CRUSHER_BULB0",
-    "in_demo": "",
-    "planned": false,
-    "process_time": 2.0,
-    "product_ant": "",
-    "product_pickup": [
-      {
-        "Name": "GLASS_RAW",
-        "Quantity": "1"
-      }
-    ],
-    "roworder": 75,
-    "title": "FACRECIPE_CRUSHER_BULB0"
-  },
-  {
-    "always_unlocked": "",
-    "buildings": "",
-    "cost_ant": [
-      {
-        "Name": "WORKER_T1_IRON",
-        "Quantity": "1"
-      }
-    ],
-    "costs_pickup": [],
-    "energy_cost": "",
-    "enum": "CRUSHER_T1_IRON",
-    "in_demo": "",
-    "planned": false,
-    "process_time": 2.0,
-    "product_ant": "",
-    "product_pickup": [
-      {
-        "Name": "IRON_RAW",
-        "Quantity": "1"
-      }
-    ],
-    "roworder": 74,
-    "title": "FACRECIPE_CRUSHER_T1_IRON"
-  },
-  {
-    "always_unlocked": "",
-    "buildings": "",
-    "cost_ant": [
-      {
-        "Name": "MESSENGER",
-        "Quantity": "1"
-      }
-    ],
-    "costs_pickup": [],
-    "energy_cost": "",
-    "enum": "CRUSHER_MESSENGER",
-    "in_demo": "",
-    "planned": false,
-    "process_time": 2.0,
-    "product_ant": "",
-    "product_pickup": [
-      {
-        "Name": "GLASS_RAW",
-        "Quantity": "1"
-      }
-    ],
-    "roworder": 73,
-    "title": "FACRECIPE_RECYCLE_MESSENGER "
-  },
-  {
-    "always_unlocked": "",
-    "buildings": "",
-    "cost_ant": [
-      {
-        "Name": "GYNE",
-        "Quantity": "1"
-      }
-    ],
-    "costs_pickup": [],
-    "energy_cost": "",
-    "enum": "CRUSHER_GYNE",
-    "in_demo": "",
-    "planned": false,
-    "process_time": 2.0,
-    "product_ant": "",
-    "product_pickup": [
-      {
-        "Name": "GOLD_RAW",
-        "Quantity": "1"
-      }
-    ],
-    "roworder": 72,
-    "title": "FACRECIPE_RECYCLE_GYNE "
-  },
-  {
-    "always_unlocked": "",
-    "buildings": "",
-    "cost_ant": [
-      {
-        "Name": "PRINCESS",
-        "Quantity": "1"
-      }
-    ],
-    "costs_pickup": [],
-    "energy_cost": "",
-    "enum": "CRUSHER_PRINCESS",
-    "in_demo": "",
-    "planned": false,
-    "process_time": 2.0,
-    "product_ant": "",
-    "product_pickup": [
-      {
-        "Name": "GOLD_RAW",
-        "Quantity": "1"
-      }
-    ],
-    "roworder": 71,
-    "title": "FACRECIPE_RECYCLE_PRINCESS "
-  },
-  {
-    "always_unlocked": "",
-    "buildings": "",
-    "cost_ant": [
-      {
-        "Name": "HAZMAT",
-        "Quantity": "1"
-      }
-    ],
-    "costs_pickup": [],
-    "energy_cost": "",
-    "enum": "CRUSHER_HAZMAT",
-    "in_demo": "",
-    "planned": false,
-    "process_time": 2.0,
-    "product_ant": "",
-    "product_pickup": [
-      {
-        "Name": "IRON_RAW",
-        "Quantity": "1"
-      },
-      {
-        "Name": "RESIN",
-        "Quantity": "1"
-      }
-    ],
-    "roworder": 70,
-    "title": "FACRECIPE_RECYCLE_HAZMAT "
-  },
-  {
-    "always_unlocked": "",
-    "buildings": "",
-    "cost_ant": [
-      {
-        "Name": "SWARM",
-        "Quantity": "1"
-      }
-    ],
-    "costs_pickup": [],
-    "energy_cost": "",
-    "enum": "CRUSHER_SWARM",
-    "in_demo": "",
-    "planned": true,
-    "process_time": 2.0,
-    "product_ant": "",
-    "product_pickup": [
-      {
-        "Name": "IRON_RAW",
-        "Quantity": "1"
-      }
-    ],
-    "roworder": 69,
-    "title": "FACRECIPE_RECYCLE_SWARM "
-  },
-  {
-    "always_unlocked": "",
-    "buildings": "",
-    "cost_ant": [
-      {
-        "Name": "SENTRY",
-        "Quantity": "1"
-      }
-    ],
-    "costs_pickup": [],
-    "energy_cost": "",
-    "enum": "CRUSHER_SENTRY",
-    "in_demo": "",
-    "planned": false,
-    "process_time": 2.0,
-    "product_ant": "",
-    "product_pickup": [
-      {
-        "Name": "GOLD_RAW",
-        "Quantity": "1"
-      }
-    ],
-    "roworder": 68,
-    "title": "FACRECIPE_RECYCLE_SENTRY "
-  },
-  {
-    "always_unlocked": "",
-    "buildings": "",
-    "cost_ant": [
-      {
-        "Name": "INVENTOR_T3",
-        "Quantity": "1"
-      }
-    ],
-    "costs_pickup": [],
-    "energy_cost": "",
-    "enum": "CRUSHER_INVENTOR_T3",
-    "in_demo": "",
-    "planned": false,
-    "process_time": 2.0,
-    "product_ant": "",
-    "product_pickup": [
-      {
-        "Name": "IRON_RAW",
-        "Quantity": "1"
-      }
-    ],
-    "roworder": 67,
-    "title": "FACRECIPE_RECYCLE_INVENTOR_T3"
-  },
-  {
-    "always_unlocked": "",
-    "buildings": "",
-    "cost_ant": [
-      {
-        "Name": "WORKER_BULB6",
-        "Quantity": "1"
-      }
-    ],
-    "costs_pickup": [],
-    "energy_cost": "",
-    "enum": "CRUSHER_BULB6",
-    "in_demo": "",
-    "planned": false,
-    "process_time": 2.0,
-    "product_ant": "",
-    "product_pickup": [
-      {
-        "Name": "GLASS_RAW",
-        "Quantity": "1"
-      }
-    ],
-    "roworder": 81,
-    "title": "FACRECIPE_CRUSHER_BULB6"
-  },
-  {
-    "always_unlocked": "",
-    "buildings": "",
-    "cost_ant": [
-      {
-        "Name": "INVENTOR_T2",
-        "Quantity": "1"
-      }
-    ],
-    "costs_pickup": [],
-    "energy_cost": "",
-    "enum": "CRUSHER_INVENTOR_T2",
-    "in_demo": "",
-    "planned": false,
-    "process_time": 2.0,
-    "product_ant": "",
-    "product_pickup": [
-      {
-        "Name": "IRON_RAW",
-        "Quantity": "1"
-      }
-    ],
-    "roworder": 66,
-    "title": "FACRECIPE_RECYCLE_INVENTOR_T2"
-  },
-  {
-    "always_unlocked": "",
-    "buildings": "",
-    "cost_ant": [
-      {
-        "Name": "DIGGER",
-        "Quantity": "1"
-      }
-    ],
-    "costs_pickup": [],
-    "energy_cost": "",
-    "enum": "CRUSHER_DIGGER",
-    "in_demo": "",
-    "planned": false,
-    "process_time": 2.0,
-    "product_ant": "",
-    "product_pickup": [
-      {
-        "Name": "IRON_RAW",
-        "Quantity": "1"
-      }
-    ],
-    "roworder": 64,
-    "title": "FACRECIPE_RECYCLE_DIGGER"
-  },
-  {
-    "always_unlocked": "",
-    "buildings": "",
-    "cost_ant": [
-      {
-        "Name": "DIGGER_SMALL",
-        "Quantity": "1"
-      }
-    ],
-    "costs_pickup": [],
-    "energy_cost": "",
-    "enum": "CRUSHER_DIGGERSMALL",
-    "in_demo": "",
-    "planned": false,
-    "process_time": 2.0,
-    "product_ant": "",
-    "product_pickup": [
-      {
-        "Name": "IRON_RAW",
-        "Quantity": "1"
-      }
-    ],
-    "roworder": 63,
-    "title": "FACRECIPE_RECYCLE_DIGGER_SMALL"
-  },
-  {
-    "always_unlocked": "",
-    "buildings": "",
-    "cost_ant": [
-      {
-        "Name": "DRONE_T2",
-        "Quantity": "1"
-      }
-    ],
-    "costs_pickup": [],
-    "energy_cost": "",
-    "enum": "CRUSHER_DRONE_T2",
-    "in_demo": "",
-    "planned": false,
-    "process_time": 2.0,
-    "product_ant": "",
-    "product_pickup": [
-      {
-        "Name": "IRON_RAW",
-        "Quantity": "1"
-      },
-      {
-        "Name": "RESIN",
-        "Quantity": "1"
-      }
-    ],
-    "roworder": 62,
-    "title": "FACRECIPE_RECYCLE_DRONE_T2"
-  },
-  {
-    "always_unlocked": "",
-    "buildings": "",
-    "cost_ant": [
-      {
-        "Name": "DRONE",
-        "Quantity": "1"
-      }
-    ],
-    "costs_pickup": [],
-    "energy_cost": "",
-    "enum": "CRUSHER_DRONE",
-    "in_demo": "",
-    "planned": false,
-    "process_time": 2.0,
-    "product_ant": "",
-    "product_pickup": [
-      {
-        "Name": "IRON_RAW",
-        "Quantity": "1"
-      }
-    ],
-    "roworder": 61,
-    "title": "FACRECIPE_RECYCLE_DRONE"
-  },
-  {
-    "always_unlocked": "",
-    "buildings": "",
-    "cost_ant": [
-      {
-        "Name": "WORKER_T3",
-        "Quantity": "1"
-      }
-    ],
-    "costs_pickup": [],
-    "energy_cost": "",
-    "enum": "CRUSHER_REGULAR_T3",
-    "in_demo": "",
-    "planned": false,
-    "process_time": 2.0,
-    "product_ant": "",
-    "product_pickup": [
-      {
-        "Name": "IRON_RAW",
-        "Quantity": "1"
-      },
-      {
-        "Name": "RESIN",
-        "Quantity": "1"
-      },
       {
         "Name": "GOLD_DUST",
-        "Quantity": "1"
+        "Quantity": "4"
       }
     ],
-    "roworder": 60,
-    "title": "FACRECIPE_RECYCLE_WORKER_T3"
+    "roworder": 36,
+    "title": "FACRECIPE_GRIND_GOLD"
   },
   {
     "always_unlocked": "",
     "buildings": "",
     "cost_ant": [
       {
-        "Name": "WORKER_T2",
+        "Name": "WORKER_SMALL_T1",
         "Quantity": "1"
       }
     ],
     "costs_pickup": [],
     "energy_cost": "",
-    "enum": "CRUSHER_REGULAR_T2",
+    "enum": "CRUSHER_SMALL",
+    "in_demo": "",
+    "planned": false,
+    "process_time": 2.0,
+    "product_ant": "",
+    "product_pickup": [
+      {
+        "Name": "IRON_RAW",
+        "Quantity": "1"
+      }
+    ],
+    "roworder": 55,
+    "title": "FACRECIPE_RECYCLE_WORKER_SMALL_T1"
+  },
+  {
+    "always_unlocked": "",
+    "buildings": "",
+    "cost_ant": [
+      {
+        "Name": "WORKER_SMALL_T2",
+        "Quantity": "1"
+      }
+    ],
+    "costs_pickup": [],
+    "energy_cost": "",
+    "enum": "CRUSHER_SMALL_T2",
     "in_demo": "",
     "planned": false,
     "process_time": 2.0,
@@ -591,33 +175,8 @@
         "Quantity": "1"
       }
     ],
-    "roworder": 59,
-    "title": "FACRECIPE_RECYCLE_WORKER_T2"
-  },
-  {
-    "always_unlocked": "",
-    "buildings": "",
-    "cost_ant": [
-      {
-        "Name": "WORKER_T1",
-        "Quantity": "1"
-      }
-    ],
-    "costs_pickup": [],
-    "energy_cost": "",
-    "enum": "CRUSHER_REGULAR",
-    "in_demo": "",
-    "planned": false,
-    "process_time": 2.0,
-    "product_ant": "",
-    "product_pickup": [
-      {
-        "Name": "IRON_RAW",
-        "Quantity": "1"
-      }
-    ],
-    "roworder": 58,
-    "title": "FACRECIPE_RECYCLE_WORKER_T1"
+    "roworder": 56,
+    "title": "FACRECIPE_RECYCLE_WORKER_SMALL_T2"
   },
   {
     "always_unlocked": "",
@@ -657,13 +216,38 @@
     "buildings": "",
     "cost_ant": [
       {
-        "Name": "WORKER_SMALL_T2",
+        "Name": "WORKER_T1",
         "Quantity": "1"
       }
     ],
     "costs_pickup": [],
     "energy_cost": "",
-    "enum": "CRUSHER_SMALL_T2",
+    "enum": "CRUSHER_REGULAR",
+    "in_demo": "",
+    "planned": false,
+    "process_time": 2.0,
+    "product_ant": "",
+    "product_pickup": [
+      {
+        "Name": "IRON_RAW",
+        "Quantity": "1"
+      }
+    ],
+    "roworder": 58,
+    "title": "FACRECIPE_RECYCLE_WORKER_T1"
+  },
+  {
+    "always_unlocked": "",
+    "buildings": "",
+    "cost_ant": [
+      {
+        "Name": "WORKER_T2",
+        "Quantity": "1"
+      }
+    ],
+    "costs_pickup": [],
+    "energy_cost": "",
+    "enum": "CRUSHER_REGULAR_T2",
     "in_demo": "",
     "planned": false,
     "process_time": 2.0,
@@ -678,21 +262,54 @@
         "Quantity": "1"
       }
     ],
-    "roworder": 56,
-    "title": "FACRECIPE_RECYCLE_WORKER_SMALL_T2"
+    "roworder": 59,
+    "title": "FACRECIPE_RECYCLE_WORKER_T2"
   },
   {
     "always_unlocked": "",
     "buildings": "",
     "cost_ant": [
       {
-        "Name": "WORKER_SMALL_T1",
+        "Name": "WORKER_T3",
         "Quantity": "1"
       }
     ],
     "costs_pickup": [],
     "energy_cost": "",
-    "enum": "CRUSHER_SMALL",
+    "enum": "CRUSHER_REGULAR_T3",
+    "in_demo": "",
+    "planned": false,
+    "process_time": 2.0,
+    "product_ant": "",
+    "product_pickup": [
+      {
+        "Name": "IRON_RAW",
+        "Quantity": "1"
+      },
+      {
+        "Name": "RESIN",
+        "Quantity": "1"
+      },
+      {
+        "Name": "GOLD_DUST",
+        "Quantity": "1"
+      }
+    ],
+    "roworder": 60,
+    "title": "FACRECIPE_RECYCLE_WORKER_T3"
+  },
+  {
+    "always_unlocked": "",
+    "buildings": "",
+    "cost_ant": [
+      {
+        "Name": "DRONE",
+        "Quantity": "1"
+      }
+    ],
+    "costs_pickup": [],
+    "energy_cost": "",
+    "enum": "CRUSHER_DRONE",
     "in_demo": "",
     "planned": false,
     "process_time": 2.0,
@@ -703,108 +320,87 @@
         "Quantity": "1"
       }
     ],
-    "roworder": 55,
-    "title": "FACRECIPE_RECYCLE_WORKER_SMALL_T1"
+    "roworder": 61,
+    "title": "FACRECIPE_RECYCLE_DRONE"
   },
   {
     "always_unlocked": "",
-    "buildings": "GRINDER2",
-    "cost_ant": [],
-    "costs_pickup": [
+    "buildings": "",
+    "cost_ant": [
       {
-        "Name": "GOLD",
+        "Name": "DRONE_T2",
         "Quantity": "1"
       }
     ],
+    "costs_pickup": [],
     "energy_cost": "",
-    "enum": "GRIND_GOLD",
+    "enum": "CRUSHER_DRONE_T2",
     "in_demo": "",
     "planned": false,
-    "process_time": 10.0,
+    "process_time": 2.0,
     "product_ant": "",
     "product_pickup": [
       {
-        "Name": "GOLD_DUST",
-        "Quantity": "4"
+        "Name": "IRON_RAW",
+        "Quantity": "1"
+      },
+      {
+        "Name": "RESIN",
+        "Quantity": "1"
       }
     ],
-    "roworder": 36,
-    "title": "FACRECIPE_GRIND_GOLD"
+    "roworder": 62,
+    "title": "FACRECIPE_RECYCLE_DRONE_T2"
   },
   {
     "always_unlocked": "",
-    "buildings": "GRINDER2",
-    "cost_ant": [],
-    "costs_pickup": [
+    "buildings": "",
+    "cost_ant": [
       {
-        "Name": "CRYSTAL_RAW",
+        "Name": "DIGGER_SMALL",
         "Quantity": "1"
       }
     ],
+    "costs_pickup": [],
     "energy_cost": "",
-    "enum": "GRIND_CRYSTAL",
+    "enum": "CRUSHER_DIGGERSMALL",
     "in_demo": "",
     "planned": false,
-    "process_time": 30.0,
+    "process_time": 2.0,
     "product_ant": "",
     "product_pickup": [
       {
-        "Name": "CRYSTAL_DUST",
-        "Quantity": "4"
+        "Name": "IRON_RAW",
+        "Quantity": "1"
       }
     ],
-    "roworder": 35,
-    "title": "FACRECIPE_GRIND_CRYSTAL"
+    "roworder": 63,
+    "title": "FACRECIPE_RECYCLE_DIGGER_SMALL"
   },
   {
     "always_unlocked": "",
-    "buildings": "GRINDER2",
-    "cost_ant": [],
-    "costs_pickup": [
+    "buildings": "",
+    "cost_ant": [
       {
-        "Name": "GLASS",
+        "Name": "DIGGER",
         "Quantity": "1"
       }
     ],
+    "costs_pickup": [],
     "energy_cost": "",
-    "enum": "GRIND_GLASS",
+    "enum": "CRUSHER_DIGGER",
     "in_demo": "",
     "planned": false,
-    "process_time": 20.0,
+    "process_time": 2.0,
     "product_ant": "",
     "product_pickup": [
       {
-        "Name": "GLASS_DUST",
-        "Quantity": "4"
-      }
-    ],
-    "roworder": 34,
-    "title": "FACRECIPE_GRIND_GLASS"
-  },
-  {
-    "always_unlocked": "",
-    "buildings": "GRINDER2",
-    "cost_ant": [],
-    "costs_pickup": [
-      {
-        "Name": "CONCRETE",
+        "Name": "IRON_RAW",
         "Quantity": "1"
       }
     ],
-    "energy_cost": "",
-    "enum": "GRIND_CONCRETE",
-    "in_demo": "",
-    "planned": false,
-    "process_time": 30.0,
-    "product_ant": "",
-    "product_pickup": [
-      {
-        "Name": "CONCRETE_DUST",
-        "Quantity": "4"
-      }
-    ],
-    "roworder": 33,
-    "title": "FACRECIPE_GRIND_CONCRETE"
+    "roworder": 64,
+    "title": "FACRECIPE_RECYCLE_DIGGER"
   },
   {
     "always_unlocked": "",
@@ -830,6 +426,410 @@
     ],
     "roworder": 65,
     "title": "FACRECIPE_RECYCLE_INVENTOR_T1"
+  },
+  {
+    "always_unlocked": "",
+    "buildings": "",
+    "cost_ant": [
+      {
+        "Name": "INVENTOR_T2",
+        "Quantity": "1"
+      }
+    ],
+    "costs_pickup": [],
+    "energy_cost": "",
+    "enum": "CRUSHER_INVENTOR_T2",
+    "in_demo": "",
+    "planned": false,
+    "process_time": 2.0,
+    "product_ant": "",
+    "product_pickup": [
+      {
+        "Name": "IRON_RAW",
+        "Quantity": "1"
+      }
+    ],
+    "roworder": 66,
+    "title": "FACRECIPE_RECYCLE_INVENTOR_T2"
+  },
+  {
+    "always_unlocked": "",
+    "buildings": "",
+    "cost_ant": [
+      {
+        "Name": "INVENTOR_T3",
+        "Quantity": "1"
+      }
+    ],
+    "costs_pickup": [],
+    "energy_cost": "",
+    "enum": "CRUSHER_INVENTOR_T3",
+    "in_demo": "",
+    "planned": false,
+    "process_time": 2.0,
+    "product_ant": "",
+    "product_pickup": [
+      {
+        "Name": "IRON_RAW",
+        "Quantity": "1"
+      }
+    ],
+    "roworder": 67,
+    "title": "FACRECIPE_RECYCLE_INVENTOR_T3"
+  },
+  {
+    "always_unlocked": "",
+    "buildings": "",
+    "cost_ant": [
+      {
+        "Name": "SENTRY",
+        "Quantity": "1"
+      }
+    ],
+    "costs_pickup": [],
+    "energy_cost": "",
+    "enum": "CRUSHER_SENTRY",
+    "in_demo": "",
+    "planned": false,
+    "process_time": 2.0,
+    "product_ant": "",
+    "product_pickup": [
+      {
+        "Name": "GOLD_RAW",
+        "Quantity": "1"
+      }
+    ],
+    "roworder": 68,
+    "title": "FACRECIPE_RECYCLE_SENTRY "
+  },
+  {
+    "always_unlocked": "",
+    "buildings": "",
+    "cost_ant": [
+      {
+        "Name": "SWARM",
+        "Quantity": "1"
+      }
+    ],
+    "costs_pickup": [],
+    "energy_cost": "",
+    "enum": "CRUSHER_SWARM",
+    "in_demo": "",
+    "planned": true,
+    "process_time": 2.0,
+    "product_ant": "",
+    "product_pickup": [
+      {
+        "Name": "IRON_RAW",
+        "Quantity": "1"
+      }
+    ],
+    "roworder": 69,
+    "title": "FACRECIPE_RECYCLE_SWARM "
+  },
+  {
+    "always_unlocked": "",
+    "buildings": "",
+    "cost_ant": [
+      {
+        "Name": "HAZMAT",
+        "Quantity": "1"
+      }
+    ],
+    "costs_pickup": [],
+    "energy_cost": "",
+    "enum": "CRUSHER_HAZMAT",
+    "in_demo": "",
+    "planned": false,
+    "process_time": 2.0,
+    "product_ant": "",
+    "product_pickup": [
+      {
+        "Name": "IRON_RAW",
+        "Quantity": "1"
+      },
+      {
+        "Name": "RESIN",
+        "Quantity": "1"
+      }
+    ],
+    "roworder": 70,
+    "title": "FACRECIPE_RECYCLE_HAZMAT "
+  },
+  {
+    "always_unlocked": "",
+    "buildings": "",
+    "cost_ant": [
+      {
+        "Name": "PRINCESS",
+        "Quantity": "1"
+      }
+    ],
+    "costs_pickup": [],
+    "energy_cost": "",
+    "enum": "CRUSHER_PRINCESS",
+    "in_demo": "",
+    "planned": false,
+    "process_time": 2.0,
+    "product_ant": "",
+    "product_pickup": [
+      {
+        "Name": "GOLD_RAW",
+        "Quantity": "1"
+      }
+    ],
+    "roworder": 71,
+    "title": "FACRECIPE_RECYCLE_PRINCESS "
+  },
+  {
+    "always_unlocked": "",
+    "buildings": "",
+    "cost_ant": [
+      {
+        "Name": "GYNE",
+        "Quantity": "1"
+      }
+    ],
+    "costs_pickup": [],
+    "energy_cost": "",
+    "enum": "CRUSHER_GYNE",
+    "in_demo": "",
+    "planned": false,
+    "process_time": 2.0,
+    "product_ant": "",
+    "product_pickup": [
+      {
+        "Name": "GOLD_RAW",
+        "Quantity": "1"
+      }
+    ],
+    "roworder": 72,
+    "title": "FACRECIPE_RECYCLE_GYNE "
+  },
+  {
+    "always_unlocked": "",
+    "buildings": "",
+    "cost_ant": [
+      {
+        "Name": "MESSENGER",
+        "Quantity": "1"
+      }
+    ],
+    "costs_pickup": [],
+    "energy_cost": "",
+    "enum": "CRUSHER_MESSENGER",
+    "in_demo": "",
+    "planned": false,
+    "process_time": 2.0,
+    "product_ant": "",
+    "product_pickup": [
+      {
+        "Name": "GLASS_RAW",
+        "Quantity": "1"
+      }
+    ],
+    "roworder": 73,
+    "title": "FACRECIPE_RECYCLE_MESSENGER "
+  },
+  {
+    "always_unlocked": "",
+    "buildings": "",
+    "cost_ant": [
+      {
+        "Name": "WORKER_T1_IRON",
+        "Quantity": "1"
+      }
+    ],
+    "costs_pickup": [],
+    "energy_cost": "",
+    "enum": "CRUSHER_T1_IRON",
+    "in_demo": "",
+    "planned": false,
+    "process_time": 2.0,
+    "product_ant": "",
+    "product_pickup": [
+      {
+        "Name": "IRON_RAW",
+        "Quantity": "1"
+      }
+    ],
+    "roworder": 74,
+    "title": "FACRECIPE_CRUSHER_T1_IRON"
+  },
+  {
+    "always_unlocked": "",
+    "buildings": "",
+    "cost_ant": [
+      {
+        "Name": "WORKER_BULB0",
+        "Quantity": "1"
+      }
+    ],
+    "costs_pickup": [],
+    "energy_cost": "",
+    "enum": "CRUSHER_BULB0",
+    "in_demo": "",
+    "planned": false,
+    "process_time": 2.0,
+    "product_ant": "",
+    "product_pickup": [
+      {
+        "Name": "GLASS_RAW",
+        "Quantity": "1"
+      }
+    ],
+    "roworder": 75,
+    "title": "FACRECIPE_CRUSHER_BULB0"
+  },
+  {
+    "always_unlocked": "",
+    "buildings": "",
+    "cost_ant": [
+      {
+        "Name": "WORKER_BULB1",
+        "Quantity": "1"
+      }
+    ],
+    "costs_pickup": [],
+    "energy_cost": "",
+    "enum": "CRUSHER_BULB1",
+    "in_demo": "",
+    "planned": false,
+    "process_time": 2.0,
+    "product_ant": "",
+    "product_pickup": [
+      {
+        "Name": "GLASS_RAW",
+        "Quantity": "1"
+      }
+    ],
+    "roworder": 76,
+    "title": "FACRECIPE_CRUSHER_BULB1"
+  },
+  {
+    "always_unlocked": "",
+    "buildings": "",
+    "cost_ant": [
+      {
+        "Name": "WORKER_BULB2",
+        "Quantity": "1"
+      }
+    ],
+    "costs_pickup": [],
+    "energy_cost": "",
+    "enum": "CRUSHER_BULB2",
+    "in_demo": "",
+    "planned": false,
+    "process_time": 2.0,
+    "product_ant": "",
+    "product_pickup": [
+      {
+        "Name": "GLASS_RAW",
+        "Quantity": "1"
+      }
+    ],
+    "roworder": 77,
+    "title": "FACRECIPE_CRUSHER_BULB2"
+  },
+  {
+    "always_unlocked": "",
+    "buildings": "",
+    "cost_ant": [
+      {
+        "Name": "WORKER_BULB3",
+        "Quantity": "1"
+      }
+    ],
+    "costs_pickup": [],
+    "energy_cost": "",
+    "enum": "CRUSHER_BULB3",
+    "in_demo": "",
+    "planned": false,
+    "process_time": 2.0,
+    "product_ant": "",
+    "product_pickup": [
+      {
+        "Name": "GLASS_RAW",
+        "Quantity": "1"
+      }
+    ],
+    "roworder": 78,
+    "title": "FACRECIPE_CRUSHER_BULB3"
+  },
+  {
+    "always_unlocked": "",
+    "buildings": "",
+    "cost_ant": [
+      {
+        "Name": "WORKER_BULB4",
+        "Quantity": "1"
+      }
+    ],
+    "costs_pickup": [],
+    "energy_cost": "",
+    "enum": "CRUSHER_BULB4",
+    "in_demo": "",
+    "planned": false,
+    "process_time": 2.0,
+    "product_ant": "",
+    "product_pickup": [
+      {
+        "Name": "GLASS_RAW",
+        "Quantity": "1"
+      }
+    ],
+    "roworder": 79,
+    "title": "FACRECIPE_CRUSHER_BULB4"
+  },
+  {
+    "always_unlocked": "",
+    "buildings": "",
+    "cost_ant": [
+      {
+        "Name": "WORKER_BULB5",
+        "Quantity": "1"
+      }
+    ],
+    "costs_pickup": [],
+    "energy_cost": "",
+    "enum": "CRUSHER_BULB5",
+    "in_demo": "",
+    "planned": false,
+    "process_time": 2.0,
+    "product_ant": "",
+    "product_pickup": [
+      {
+        "Name": "GLASS_RAW",
+        "Quantity": "1"
+      }
+    ],
+    "roworder": 80,
+    "title": "FACRECIPE_CRUSHER_BULB5"
+  },
+  {
+    "always_unlocked": "",
+    "buildings": "",
+    "cost_ant": [
+      {
+        "Name": "WORKER_BULB6",
+        "Quantity": "1"
+      }
+    ],
+    "costs_pickup": [],
+    "energy_cost": "",
+    "enum": "CRUSHER_BULB6",
+    "in_demo": "",
+    "planned": false,
+    "process_time": 2.0,
+    "product_ant": "",
+    "product_pickup": [
+      {
+        "Name": "GLASS_RAW",
+        "Quantity": "1"
+      }
+    ],
+    "roworder": 81,
+    "title": "FACRECIPE_CRUSHER_BULB6"
   },
   {
     "always_unlocked": "",
