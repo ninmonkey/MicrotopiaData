@@ -1888,30 +1888,13 @@ function md.Export.Loc {
         | Join-String -f 'Enter: {0}' | Write-verbose
 
     $Regex = @{}
-
-    # Section: Export item: biome/Plants
     $pkg = Open-ExcelPackage -Path $Paths.Raw_Loc
     $book = $pkg.Workbook
     md.Workbook.ListItems $Book
 
     remove-item $Paths.Xlsx_Loc -ea 'Ignore'
-    $importExcel_Splat = @{
-        ExcelPackage  = $pkg
-        WorksheetName = 'UI'
 
-    }
-    $rows_UI =  Import-Excel @importExcel_Splat
-        | md.Convert.RenameKeys -RenameMap @{
-            '//note' = 'Note'
-        }
-
-        # | md.Convert.CleanupKeyNames
-
-    # column descriptions are inline
-    # $description = $rows | ? Code -Match '^\s*//\s*$' | Select -First 1
-    # $description | ConvertTo-Json | Set-Content -path $Paths.json_Biome_Plants_ColumnDesc
-    # $paths.json_Biome_Plants_ColumnDesc | md.Log.WroteFile
-
+    # section: header or 1-to-1 pages
     # Before anything, copy the "LEGEND" as-is
     $copyExcelWorkSheetSplat = @{
         SourceObject         = $paths.Raw_Loc
@@ -1921,6 +1904,17 @@ function md.Export.Loc {
     }
 
     Copy-ExcelWorkSheet @copyExcelWorkSheetSplat
+
+    # section: Export worksheet: UI
+    $importExcel_Splat = @{
+        ExcelPackage  = $pkg
+        WorksheetName = 'UI'
+
+    }
+    $rows_UI =  Import-Excel @importExcel_Splat
+        | md.Convert.RenameKeys -RenameMap @{
+            '//note' = 'Note'
+        }
 
     # skip empty and non-data rows
     $curOrder = -1
@@ -1954,6 +1948,8 @@ function md.Export.Loc {
     }
 
     Export-Excel @exportExcel_Splat
+
+    # section: Export worksheet: Objects
 
     $importExcel_Splat = @{
         ExcelPackage  = $pkg
@@ -2006,9 +2002,12 @@ function md.Export.Loc {
 
     Export-Excel @exportExcel_Splat
 
-    # json specific transforms
+    # section: Export Json for worksheet: UI
+
+
+    # sort json by RowOrder for cleaner git-diffs
     $sort_splat = @{
-        Property = 'code'
+        Property = 'roworder' # 'code'
     }
 
     $forJson_Loc_UI = @(
@@ -2028,6 +2027,7 @@ function md.Export.Loc {
 
     $Paths.Json_Loc_UI | md.Log.WroteFile
 
+    # section: Export Json for worksheet: Objects
     $forJson_Loc_Objects = @(
         $rows_Objects | %{
             $record = $_
@@ -2042,15 +2042,6 @@ function md.Export.Loc {
         | Set-Content -path $Paths.Json_Loc_Objects # -Confirm
 
     $Paths.Json_Loc_Objects | md.Log.WroteFile
-
-
-    # also emit expanded records
-    # $forJson = @(
-    #     $rows_Objects | %{
-    #         $record = $_
-    #         $record # md.Convert.ExpandProperty $Record -Prop $expandProp
-    #     }
-    # )| Sort-Object @sort_splat
 
     Close-ExcelPackage -ExcelPackage $pkg -NoSave
 
