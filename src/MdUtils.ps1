@@ -2217,9 +2217,20 @@ function md.Export.Loc {
 
     Export-Excel @exportExcel_Splat
 
+    # section: Export Json for worksheet: LEGEND
+
+    $forJson_Legend = Import-Excel $Paths.Raw_Loc -WorksheetName 'LEGEND' -HeaderName Name, Description
+        | ?{
+            -not [string]::IsNullOrWhiteSpace( $_.Name ) -and
+            -not [string]::IsNullOrWhiteSpace(  $_.Description )  }
+
+    $forJson_Legend
+        | ConvertTo-Json
+        | Set-Content -path $Paths.Json_Loc_Legend # -Confirm
+
+
+
     # section: Export Json for worksheet: UI
-
-
     # sort json by RowOrder for cleaner git-diffs
     $sort_splat = @{
         Property = 'roworder' # 'code'

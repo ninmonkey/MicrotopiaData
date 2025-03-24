@@ -1,0 +1,42 @@
+[
+  {
+    "Name": "\"|\"",
+    "Description": "Used to write down a line break. Keep in translation."
+  },
+  {
+    "Name": "\"^1\"",
+    "Description": "Gets replaced with another word in game. Keep in translation."
+  },
+  {
+    "Name": "Instinct",
+    "Description": "Instinct is the name for the in-game progression tasks. Like being an animal told by their instincts on what to do. The tasks act as a tutorial sequence."
+  },
+  {
+    "Name": "Idea",
+    "Description": "A different kind of task (like instinct) given to the player. These are selected in the tech tree in a non-lineair fashion."
+  },
+  {
+    "Name": "Development Tree",
+    "Description": "The in-game name of the tech tree."
+  },
+  {
+    "Name": "Electrolysing",
+    "Description": "Electrolysis is the process where a substance is electrocuted to induce a chemical reaction to change the properties of the substance. The game takes a little liberty on how to process works. Here a solution of glass powder and acid is electrocuted to from a crystal."
+  },
+  {
+    "Name": "Tier or T (T1, T2, T3)",
+    "Description": "The progression of the game is divided into three tiers which contain items that are basically the same but an upgrade of the previous tier."
+  },
+  {
+    "Name": "Nuptial Flight",
+    "Description": "Wedding flight', also called flying ant day. Is a real life event once a year where all gynes fly out from ant colonies to reproduce with drones and start new ant colonies. In game this is a major event that represents the end goal of the player, to make as many gynes as possibles to let them fly out during the nuptial flight."
+  },
+  {
+    "Name": "Gyne",
+    "Description": "A gyne is a young queen yet to be fertilized by males. If the language lacks a direct translation, you can also just use 'young queen'."
+  },
+  {
+    "Name": "Alate",
+    "Description": "A fertile male ant that flies out during the nuptial flight to mate with a gyne."
+  }
+]
