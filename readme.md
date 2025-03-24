@@ -20,7 +20,7 @@ minorVersion: 'V1.0.8b_1'
 
 ## About
 
-Files generated on: 2025-03-24 12:34:56 PM
+Files generated on: 2025-03-24 2:24:51 PM
 For version: v1.0.8
 
 ## Files by Type
@@ -35,8 +35,13 @@ For version: v1.0.8
 - [biome-plants.json](./export/v1.0.8/json/biome-plants.json)
 - [changelog.json](./export/v1.0.8/json/changelog.json)
 - [crusher-output.json](./export/v1.0.8/json/crusher-output.json)
+- [loc-achievements.json](./export/v1.0.8/json/loc-achievements.json)
+- [loc-credits.json](./export/v1.0.8/json/loc-credits.json)
+- [loc-instinct.json](./export/v1.0.8/json/loc-instinct.json)
 - [loc-legend.json](./export/v1.0.8/json/loc-legend.json)
 - [loc-objects.json](./export/v1.0.8/json/loc-objects.json)
+- [loc-techtree.json](./export/v1.0.8/json/loc-techtree.json)
+- [loc-tutorial.json](./export/v1.0.8/json/loc-tutorial.json)
 - [loc-ui.json](./export/v1.0.8/json/loc-ui.json)
 - [prefabs-antcastes.json](./export/v1.0.8/json/prefabs-antcastes.json)
 - [prefabs-buildings.json](./export/v1.0.8/json/prefabs-buildings.json)

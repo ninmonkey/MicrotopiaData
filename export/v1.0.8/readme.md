@@ -1,7 +1,7 @@
 
 ## About
 
-Files generated on: 2025-03-24 12:34:56 PM
+Files generated on: 2025-03-24 2:24:51 PM
 For version: v1.0.8
 
 ## Files by Type
@@ -16,8 +16,13 @@ For version: v1.0.8
 - [biome-plants.json](./json/biome-plants.json)
 - [changelog.json](./json/changelog.json)
 - [crusher-output.json](./json/crusher-output.json)
+- [loc-achievements.json](./json/loc-achievements.json)
+- [loc-credits.json](./json/loc-credits.json)
+- [loc-instinct.json](./json/loc-instinct.json)
 - [loc-legend.json](./json/loc-legend.json)
 - [loc-objects.json](./json/loc-objects.json)
+- [loc-techtree.json](./json/loc-techtree.json)
+- [loc-tutorial.json](./json/loc-tutorial.json)
 - [loc-ui.json](./json/loc-ui.json)
 - [prefabs-antcastes.json](./json/prefabs-antcastes.json)
 - [prefabs-buildings.json](./json/prefabs-buildings.json)

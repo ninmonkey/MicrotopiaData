@@ -58,9 +58,17 @@ $Paths.json_Biome_Objects              = Join-Path $Paths.ExportRoot_CurrentVers
 $Paths.json_Biome_Objects_Expanded     = Join-Path $Paths.ExportRoot_CurrentVersion 'json/biome-objects-expanded.json'
 $Paths.json_Biome_Plants               = Join-Path $Paths.ExportRoot_CurrentVersion 'json/biome-plants.json'
 $Paths.json_Biome_Plants_ColumnDesc    = Join-Path $Paths.ExportRoot_CurrentVersion 'json/biome-plants-column-desc.json'
+
 $Paths.json_Loc_legend                 = Join-Path $Paths.ExportRoot_CurrentVersion 'json/loc-legend.json'
-$Paths.json_Loc_UI                     = Join-Path $Paths.ExportRoot_CurrentVersion 'json/loc-ui.json'
-$Paths.json_Loc_Objects                = Join-Path $Paths.ExportRoot_CurrentVersion 'json/loc-objects.json'
+
+$Paths.json_Loc_UI           = Join-Path $Paths.ExportRoot_CurrentVersion 'json/loc-ui.json'
+$Paths.json_Loc_Objects      = Join-Path $Paths.ExportRoot_CurrentVersion 'json/loc-objects.json'
+$Paths.json_Loc_tutorial     = Join-Path $Paths.ExportRoot_CurrentVersion 'json/loc-tutorial.json'
+$Paths.json_Loc_instinct     = Join-Path $Paths.ExportRoot_CurrentVersion 'json/loc-instinct.json'
+$Paths.json_Loc_techtree     = Join-Path $Paths.ExportRoot_CurrentVersion 'json/loc-techtree.json'
+$Paths.json_Loc_credits      = Join-Path $Paths.ExportRoot_CurrentVersion 'json/loc-credits.json'
+$Paths.json_Loc_Achievements = Join-Path $Paths.ExportRoot_CurrentVersion 'json/loc-achievements.json'
+
 $Paths.json_TechTree_ResearchRecipes   = Join-Path $Paths.ExportRoot_CurrentVersion 'json/techtree-researchrecipes.json'
 $Paths.json_TechTree_TechTree_Expanded = Join-Path $Paths.ExportRoot_CurrentVersion 'json/techtree-techtree-expanded.json'
 $Paths.json_TechTree_TechTree          = Join-Path $Paths.ExportRoot_CurrentVersion 'json/techtree-techtree.json'
@@ -77,12 +85,12 @@ $Build ??= [ordered]@{ # auto 'show' certain files. nullish op lets you override
         Biome_Objects            = $false
         Biome_Objects_Expanded   = $false # $true
         Biome_Plants             = $false # $true
-        Loc                      = $true # $true
+        Loc                      = $false # $true
         Prefabs_Crusher          = $false
         TechTree_ResearchRecipes = $false # $true
         TechTree_TechTree        = $false # $true
         Prefabs                  = $false # $true
-        WorkbookSchema           = $true
+        WorkbookSchema           = $false
     }
     Export = [ordered]@{
         # main
@@ -109,8 +117,8 @@ $Build ??= [ordered]@{ # auto 'show' certain files. nullish op lets you override
         Prefabs                    = $true
         TechTree_ResearchRecipes   = $true
         TechTree_TechTree          = $true
-        TechTree_TechTree_Expanded = $true
-        WorkbookSchema             = $true
+        TechTree_TechTree_Expanded = $false
+        WorkbookSchema             = $false
 
 
         # only schema

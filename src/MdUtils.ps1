@@ -2313,12 +2313,12 @@ function md.Export.Loc {
 
 
 
-    # section: Export Json for worksheet: UI
     # sort json by RowOrder for cleaner git-diffs
     $sort_splat = @{
         Property = 'roworder' # 'code'
     }
 
+    # section: Export Json for worksheet: UI
     $forJson_Loc_UI = @(
         $Rows_UI | %{
             $record = $_
@@ -2335,6 +2335,106 @@ function md.Export.Loc {
         | Set-Content -path $Paths.Json_Loc_UI # -Confirm
 
     $Paths.Json_Loc_UI | md.Log.WroteFile
+
+
+    # section: Export Json for worksheet: Tutorial
+    $forJson_Loc_Tutorial = @(
+        $Rows_Tutorial | %{
+            $record = $_
+            # coerce blankables into empty strings for json
+            $record = md.Convert.BlankPropsToEmpty $Record
+            $record = md.Convert.CleanupKeyNames $Record
+
+            $record
+        }
+    ) | Sort-Object @sort_splat
+
+    $forJson_Loc_Tutorial
+        | ConvertTo-Json -depth 9
+        | Set-Content -path $Paths.Json_Loc_Tutorial
+
+    $Paths.Json_Loc_Tutorial | md.Log.WroteFile
+
+
+
+    # section: Export Json for worksheet: Instinct
+    $forJson_Loc_Instinct = @(
+        $Rows_Instinct | %{
+            $record = $_
+            # coerce blankables into empty strings for json
+            $record = md.Convert.BlankPropsToEmpty $Record
+            $record = md.Convert.CleanupKeyNames $Record
+
+            $record
+        }
+    ) | Sort-Object @sort_splat
+
+    $forJson_Loc_Instinct
+        | ConvertTo-Json -depth 9
+        | Set-Content -path $Paths.Json_Loc_Instinct
+
+    $Paths.Json_Loc_Instinct | md.Log.WroteFile
+
+
+    # section: Export Json for worksheet: TechTree
+    $forJson_Loc_TechTree = @(
+        $Rows_TechTree | %{
+            $record = $_
+            # coerce blankables into empty strings for json
+            $record = md.Convert.BlankPropsToEmpty $Record
+            $record = md.Convert.CleanupKeyNames $Record
+
+            $record
+        }
+    ) | Sort-Object @sort_splat
+
+    $forJson_Loc_TechTree
+        | ConvertTo-Json -depth 9
+        | Set-Content -path $Paths.Json_Loc_TechTree
+
+    $Paths.Json_Loc_TechTree | md.Log.WroteFile
+
+
+
+    # section: Export Json for worksheet: Credits
+    $forJson_Loc_Credits = @(
+        $Rows_Credits | %{
+            $record = $_
+            # coerce blankables into empty strings for json
+            $record = md.Convert.BlankPropsToEmpty $Record
+            $record = md.Convert.CleanupKeyNames $Record
+
+            $record
+        }
+    ) | Sort-Object @sort_splat
+
+    $forJson_Loc_Credits
+        | ConvertTo-Json -depth 9
+        | Set-Content -path $Paths.Json_Loc_Credits
+
+    $Paths.Json_Loc_Credits | md.Log.WroteFile
+
+
+
+    # section: Export Json for worksheet: Achievements
+    $forJson_Loc_Achievements = @(
+        $Rows_Achievements | %{
+            $record = $_
+            # coerce blankables into empty strings for json
+            $record = md.Convert.BlankPropsToEmpty $Record
+            $record = md.Convert.CleanupKeyNames $Record
+
+            $record
+        }
+    ) | Sort-Object @sort_splat
+
+    $forJson_Loc_Achievements
+        | ConvertTo-Json -depth 9
+        | Set-Content -path $Paths.Json_Loc_Achievements
+
+    $Paths.Json_Loc_Achievements | md.Log.WroteFile
+
+
 
     # section: Export Json for worksheet: Objects
     $forJson_Loc_Objects = @(
