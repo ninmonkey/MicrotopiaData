@@ -1948,6 +1948,49 @@ function md.Export.Loc {
     }
 
     Export-Excel @exportExcel_Splat
+    # section: Export worksheet: Tutorial
+    $importExcel_Splat = @{
+        ExcelPackage  = $pkg
+        WorksheetName = 'Tutorial'
+
+    }
+    $rows_tutorial =  Import-Excel @importExcel_Splat
+        | md.Convert.RenameKeys -RenameMap @{
+            '//note' = 'Note'
+        }
+
+    # skip empty and non-data rows
+    $curOrder = -1
+    $rows_tutorial = @(
+        $rows_tutorial
+            | % {
+                # capture grouping records, else add them to the data
+                $record = $_
+                $curOrder++
+
+                $record.PSObject.Properties.Add( [psnoteproperty]::new(
+                    'RowOrder', $curOrder
+                ), $true )
+
+                $record
+            }
+            | ? { -not [string]::IsNullOrWhiteSpace( $_.CODE ) }
+    )
+
+    $exportExcel_Splat = @{
+        InputObject   = @( $rows_tutorial )
+        Path          = $Paths.Xlsx_Loc
+        Show          = $false # $Build.AutoOpen.Loc ?? $false
+        WorksheetName = 'Tutorial'
+        TableName     = 'Tutorial_Data'
+        TableStyle    = 'Light5'
+        AutoSize      = $True
+        ConditionalText = @(
+            md.New-ConditionalTextTemplate -TemplateName 'Checkbox-x.Green'
+        )
+    }
+
+    Export-Excel @exportExcel_Splat
 
     # section: Export worksheet: Objects
 
