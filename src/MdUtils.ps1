@@ -2033,6 +2033,49 @@ function md.Export.Loc {
     }
 
     Export-Excel @exportExcel_Splat
+    # section: Export worksheet: TechTree
+    $importExcel_Splat = @{
+        ExcelPackage  = $pkg
+        WorksheetName = 'TechTree'
+
+    }
+    $rows_TechTree =  Import-Excel @importExcel_Splat
+        | md.Convert.RenameKeys -RenameMap @{
+            '//note' = 'Note'
+        }
+
+    # skip empty and non-data rows
+    $curOrder = -1
+    $rows_TechTree = @(
+        $rows_TechTree
+            | % {
+                # capture grouping records, else add them to the data
+                $record = $_
+                $curOrder++
+
+                $record.PSObject.Properties.Add( [psnoteproperty]::new(
+                    'RowOrder', $curOrder
+                ), $true )
+
+                $record
+            }
+            | ? { -not [string]::IsNullOrWhiteSpace( $_.CODE ) }
+    )
+
+    $exportExcel_Splat = @{
+        InputObject   = @( $rows_TechTree )
+        Path          = $Paths.Xlsx_Loc
+        Show          = $false # $Build.AutoOpen.Loc ?? $false
+        WorksheetName = 'TechTree'
+        TableName     = 'TechTree_Data'
+        TableStyle    = 'Light5'
+        AutoSize      = $True
+        ConditionalText = @(
+            md.New-ConditionalTextTemplate -TemplateName 'Checkbox-x.Green'
+        )
+    }
+
+    Export-Excel @exportExcel_Splat
 
     # section: Export worksheet: Objects
 
