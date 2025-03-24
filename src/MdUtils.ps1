@@ -750,7 +750,8 @@ function md.Export.Biome.Biome_Objects {
 
     # json specific transforms
     $sort_splat = @{
-        Property = 'title', 'code', 'exchange_types'
+        # Property = 'title', 'code', 'exchange_types'
+        Property = 'roworder'
     }
 
     $forJson = @(
@@ -903,7 +904,8 @@ function md.Export.Biome.Plants {
 
     # json specific transforms
     $sort_splat = @{
-        Property = 'code', 'mass'
+        # Property = 'code', 'mass'
+        Property = 'roworder'
     }
 
     $forJson = @(
@@ -1044,7 +1046,8 @@ function md.Export.TechTree.TechTree {
 
      # json specific transforms
     $sort_splat = @{
-        Property = 'tier', 'group', 'code'
+        # Property = 'tier', 'group', 'code'
+        Property = 'roworder'
     }
 
     $forJson_techTree_TechTree = @(
@@ -1312,7 +1315,8 @@ function md.Export.Prefabs.Prefabs {
 
      # json specific transforms
     $sort_splat = @{
-        Property = 'tier', 'group', 'code'
+        # Property = 'tier', 'group', 'code'
+        Property = 'roworder'
     }
 
     $forJson_buildings = @(
@@ -1468,7 +1472,8 @@ function md.Export.Prefabs.FactoryRecipes {
 
      # json specific transforms
     $sort_splat = @{
-        Property = 'tier', 'group', 'code'
+        # Property = 'tier', 'group', 'code'
+        Property = 'roworder'
     }
 
     $forJson_FactoryRecipes = @(
@@ -1620,7 +1625,8 @@ function md.Export.Prefabs.AntCastes {
 
      # json specific transforms
     $sort_splat = @{
-        Property = 'tier', 'group', 'code'
+        # Property = 'tier', 'group', 'code'
+        Property = 'roworder'
     }
 
     $forJson_AntCastes = @(
@@ -1750,7 +1756,8 @@ function md.Export.Prefabs.Pickups {
 
      # json specific transforms
     $sort_splat = @{
-        Property = 'tier', 'group', 'code'
+        # Property = 'tier', 'group', 'code'
+        Property = 'roworder'
     }
 
     $forJson_Pickups = @(
@@ -2351,7 +2358,7 @@ function md.Export.Prefabs.Crusher {
 
     # json specific transforms
     $sort_splat = @{
-        Property = 'code'
+        Property = 'roworder'
     }
 
     $forJson = @(
