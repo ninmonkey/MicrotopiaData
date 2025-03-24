@@ -1948,6 +1948,7 @@ function md.Export.Loc {
     }
 
     Export-Excel @exportExcel_Splat
+
     # section: Export worksheet: Tutorial
     $importExcel_Splat = @{
         ExcelPackage  = $pkg
@@ -1983,6 +1984,47 @@ function md.Export.Loc {
         Show          = $false # $Build.AutoOpen.Loc ?? $false
         WorksheetName = 'Tutorial'
         TableName     = 'Tutorial_Data'
+        TableStyle    = 'Light5'
+        AutoSize      = $True
+        ConditionalText = @(
+            md.New-ConditionalTextTemplate -TemplateName 'Checkbox-x.Green'
+        )
+    }
+    # section: Export worksheet: Instinct
+    $importExcel_Splat = @{
+        ExcelPackage  = $pkg
+        WorksheetName = 'Instinct'
+
+    }
+    $rows_Instinct =  Import-Excel @importExcel_Splat
+        | md.Convert.RenameKeys -RenameMap @{
+            '//note' = 'Note'
+        }
+
+    # skip empty and non-data rows
+    $curOrder = -1
+    $rows_Instinct = @(
+        $rows_Instinct
+            | % {
+                # capture grouping records, else add them to the data
+                $record = $_
+                $curOrder++
+
+                $record.PSObject.Properties.Add( [psnoteproperty]::new(
+                    'RowOrder', $curOrder
+                ), $true )
+
+                $record
+            }
+            | ? { -not [string]::IsNullOrWhiteSpace( $_.CODE ) }
+    )
+
+    $exportExcel_Splat = @{
+        InputObject   = @( $rows_Instinct )
+        Path          = $Paths.Xlsx_Loc
+        Show          = $false # $Build.AutoOpen.Loc ?? $false
+        WorksheetName = 'Instinct'
+        TableName     = 'Instinct_Data'
         TableStyle    = 'Light5'
         AutoSize      = $True
         ConditionalText = @(
