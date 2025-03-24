@@ -2076,6 +2076,93 @@ function md.Export.Loc {
     }
 
     Export-Excel @exportExcel_Splat
+    # section: Export worksheet: Credits
+    $importExcel_Splat = @{
+        ExcelPackage  = $pkg
+        WorksheetName = 'Credits'
+
+    }
+    $rows_Credits =  Import-Excel @importExcel_Splat
+        | md.Convert.RenameKeys -RenameMap @{
+            '//note' = 'Note'
+        }
+
+    # skip empty and non-data rows
+    $curOrder = -1
+    $rows_Credits = @(
+        $rows_Credits
+            | % {
+                # capture grouping records, else add them to the data
+                $record = $_
+                $curOrder++
+
+                $record.PSObject.Properties.Add( [psnoteproperty]::new(
+                    'RowOrder', $curOrder
+                ), $true )
+
+                $record
+            }
+            | ? { -not [string]::IsNullOrWhiteSpace( $_.CODE ) }
+    )
+
+    $exportExcel_Splat = @{
+        InputObject   = @( $rows_Credits )
+        Path          = $Paths.Xlsx_Loc
+        Show          = $false # $Build.AutoOpen.Loc ?? $false
+        WorksheetName = 'Credits'
+        TableName     = 'Credits_Data'
+        TableStyle    = 'Light5'
+        AutoSize      = $True
+        ConditionalText = @(
+            md.New-ConditionalTextTemplate -TemplateName 'Checkbox-x.Green'
+        )
+    }
+
+    Export-Excel @exportExcel_Splat
+
+    # section: Export worksheet: Achievements
+    $importExcel_Splat = @{
+        ExcelPackage  = $pkg
+        WorksheetName = 'Achievements'
+
+    }
+    $rows_Achievements =  Import-Excel @importExcel_Splat
+        | md.Convert.RenameKeys -RenameMap @{
+            '//note' = 'Note'
+        }
+
+    # skip empty and non-data rows
+    $curOrder = -1
+    $rows_Achievements = @(
+        $rows_Achievements
+            | % {
+                # capture grouping records, else add them to the data
+                $record = $_
+                $curOrder++
+
+                $record.PSObject.Properties.Add( [psnoteproperty]::new(
+                    'RowOrder', $curOrder
+                ), $true )
+
+                $record
+            }
+            | ? { -not [string]::IsNullOrWhiteSpace( $_.CODE ) }
+    )
+
+    $exportExcel_Splat = @{
+        InputObject   = @( $rows_Achievements )
+        Path          = $Paths.Xlsx_Loc
+        Show          = $false # $Build.AutoOpen.Loc ?? $false
+        WorksheetName = 'Achievements'
+        TableName     = 'Achievements_Data'
+        TableStyle    = 'Light5'
+        AutoSize      = $True
+        ConditionalText = @(
+            md.New-ConditionalTextTemplate -TemplateName 'Checkbox-x.Green'
+        )
+    }
+
+    Export-Excel @exportExcel_Splat
 
     # section: Export worksheet: Objects
 
