@@ -1,7 +1,7 @@
 
 ## About
 
-Files generated on: 2025-03-24 2:24:51 PM
+Files generated on: 2025-04-06 2:03:55 PM
 For version: v1.0.8
 
 ## Files by Type
@@ -28,6 +28,7 @@ For version: v1.0.8
 - [prefabs-buildings.json](./json/prefabs-buildings.json)
 - [prefabs-factoryrecipes.json](./json/prefabs-factoryrecipes.json)
 - [prefabs-pickups.json](./json/prefabs-pickups.json)
+- [prefabs-trails.json](./json/prefabs-trails.json)
 - [techtree-techtree.json](./json/techtree-techtree.json)
 - [workbook-schema.json](./json/workbook-schema.json)
 

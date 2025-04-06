@@ -1775,24 +1775,24 @@ function md.Export.Prefabs.Pickups {
     md.Workbook.ListItems $Book
 
     # remove-item $Paths.Xlsx_Prefabs -ea 'Ignore'
+    # section: Export worksheet: Pickups
     $importExcel_Splat = @{
         ExcelPackage  = $pkg
         WorksheetName = 'Pickups'
 
     }
-    $rows =  Import-Excel @importExcel_Splat # -ea 'break'
+    $rows_Pickups =  Import-Excel @importExcel_Splat # -ea 'break'
 
     # column descriptions are inline
-    # $description = $rows | ? Code -Match '^\s*//\s*$' | Select -First 1
+    # $description = $rows_Pickups | ? Code -Match '^\s*//\s*$' | Select -First 1
     # $description | ConvertTo-Json | Set-Content -path $Paths.json_Biome_Plants_ColumnDesc
 
     # $paths.json_Biome_Plants_ColumnDesc | md.Log.WroteFile
 
-    # skip empty and non-data rows
-    # $curGroupName = 'missing'
+
     $curOrder = -1
-    $rows = @(
-        $rows
+    $rows_Pickups = @(
+        $rows_Pickups
             | % { # note: empty [Order] column means it's not in the build menu
                 $record = $_
                 $curOrder++
@@ -1812,15 +1812,73 @@ function md.Export.Prefabs.Pickups {
             }
             # | ? { $_.ORDER -notmatch $Regex.toIgnoreBuildHeaderMessage  }
             # | ? { $_.Code -notmatch $Regex.toIgnoreHeader }
-            # | ? { -not [string]::IsNullOrWhiteSpace( $_.ENUM ) }
+            | ? { -not (
+                [string]::IsNullOrWhiteSpace( $_.TYPE ) -and
+                [string]::IsNullOrWhiteSpace( $_.ORDER ) -and
+                [string]::IsNullOrWhiteSpace( $_.TITLE )
+            ) }
     )
 
     $exportExcel_Splat = @{
-        InputObject   = @( $rows )
+        InputObject   = @( $rows_Pickups )
         Path          = $Paths.Xlsx_Prefabs
         Show          = $false # moved to end
         WorksheetName = 'Pickups'
         TableName     = 'Pickups_Data'
+        TableStyle    = 'Light5'
+        AutoSize      = $True
+        ConditionalText = @(
+            md.New-ConditionalTextTemplate -TemplateName 'Checkbox-x.Green'
+        )
+    }
+
+    Export-Excel @exportExcel_Splat
+
+
+
+    # section: Export worksheet: Trails
+    $importExcel_Splat = @{
+        ExcelPackage  = $pkg
+        WorksheetName = 'Trails'
+
+    }
+    $rows_Trails =  Import-Excel @importExcel_Splat # -ea 'break'
+
+    $curOrder = -1
+    $rows_Trails = @(
+        $rows_Trails
+            | % { # note: empty [Order] column means it's not in the build menu
+                $record = $_
+                $curOrder++
+                # capture grouping records, else add them to the data
+                # if ( $record.Code -match $Regex.isGroupName ) {
+                #     $curGroupName = $record.Code -replace $regex.stripSlashPrefix, ''
+                #     return
+                # }
+                # $record.PSObject.Properties.Add( [psnoteproperty]::new(
+                #     'Group', $curGroupName
+                # ), $true )
+                $record.PSObject.Properties.Add( [psnoteproperty]::new(
+                    'RowOrder', $curOrder
+                ), $true )
+
+                $record
+            }
+            # | ? { $_.ORDER -notmatch $Regex.toIgnoreBuildHeaderMessage  }
+            # | ? { $_.Code -notmatch $Regex.toIgnoreHeader }
+            | ? { -not (
+                [string]::IsNullOrWhiteSpace( $_.TYPE ) -and
+                [string]::IsNullOrWhiteSpace( $_.ORDER ) -and
+                [string]::IsNullOrWhiteSpace( $_.TITLE )
+            ) }
+    )
+
+    $exportExcel_Splat = @{
+        InputObject   = @( $rows_Trails )
+        Path          = $Paths.Xlsx_Prefabs
+        Show          = $false # moved to end
+        WorksheetName = 'Trails'
+        TableName     = 'Trails_Data'
         TableStyle    = 'Light5'
         AutoSize      = $True
         ConditionalText = @(
@@ -1836,8 +1894,46 @@ function md.Export.Prefabs.Pickups {
         Property = 'roworder'
     }
 
+    # section: Export json: Trails
+    $forJson_Trails = @(
+        $Rows_Trails | %{
+            $rec = $_
+            $rec = md.Convert.BlankPropsToEmpty $rec
+            $rec = md.Convert.CleanupKeyNames $rec # -StartWith 'tier', 'group', 'order'
+
+            # $rec.'auto_recipe' = md.Parse.Checkbox $rec.'auto_recipe'
+            # $rec.'no_demolish' = md.Parse.Checkbox $rec.'no_demolish'
+            # $rec.'cost'        = md.Parse.IngredientsFromCsv $rec.'cost'
+
+            # $rec.'in_demo'         = md.Parse.Checkbox $rec.'in_demo'
+            # $rec.'planned'         = md.Parse.Checkbox $rec.'planned'
+            # $rec.'always_unlocked' = md.Parse.Checkbox $rec.'always_unlocked'
+            # $rec.'costs_pickup'    = md.Parse.IngredientsFromCsv $rec.'costs_pickup'
+            # $rec.'product_pickup'  = md.Parse.IngredientsFromCsv $rec.'product_pickup'
+            # $rec.'product_ant'     = md.Parse.IngredientsFromCsv $rec.'product_ant'
+            # $rec.'cost_ant'        = md.Parse.IngredientsFromCsv $rec.'cost_ant'
+
+            # $rec.'in_demo'    = md.Parse.Checkbox $rec.'in_demo'
+            # $rec.'planned'    = md.Parse.Checkbox $rec.'planned'
+            # $rec.'components' = md.Parse.IngredientsFromCsv $rec.'components'
+
+            # $rec.'can_be_carried' = md.Parse.Checkbox $rec.'can_be_carried'
+            # $rec.'in_demo'        = md.Parse.Checkbox $rec.'in_demo'
+            # $rec.'hidden'         = md.Parse.Checkbox $rec.'hidden'
+            # $rec.'exchange_types' = md.Parse.ItemsFromList $rec.'exchange_types'
+            # $rec.'immunities'     = md.Parse.ItemsFromList $rec.'immunities'
+            # $rec.'description'    = $rec.'description'.trim()
+            # $rec.'title'          = $rec.'title'.trim()
+            $rec
+        }
+    )
+
+    $forJson_Trails | ConvertTo-Json -Depth 9
+        | Set-Content $Paths.json_Prefabs_Trails
+
+    # section: Export json: Pickups
     $forJson_Pickups = @(
-        $Rows | %{
+        $Rows_Pickups | %{
             $rec = $_
             $rec = md.Convert.BlankPropsToEmpty $rec
             $rec = md.Convert.CleanupKeyNames $rec # -StartWith 'tier', 'group', 'order'

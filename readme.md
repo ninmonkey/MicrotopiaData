@@ -20,7 +20,7 @@ minorVersion: 'V1.0.8b_1'
 
 ## About
 
-Files generated on: 2025-04-06 1:28:52 PM
+Files generated on: 2025-04-06 2:03:55 PM
 For version: v1.0.8
 
 ## Files by Type
@@ -47,6 +47,7 @@ For version: v1.0.8
 - [prefabs-buildings.json](./export/v1.0.8/json/prefabs-buildings.json)
 - [prefabs-factoryrecipes.json](./export/v1.0.8/json/prefabs-factoryrecipes.json)
 - [prefabs-pickups.json](./export/v1.0.8/json/prefabs-pickups.json)
+- [prefabs-trails.json](./export/v1.0.8/json/prefabs-trails.json)
 - [techtree-techtree.json](./export/v1.0.8/json/techtree-techtree.json)
 - [workbook-schema.json](./export/v1.0.8/json/workbook-schema.json)
 
