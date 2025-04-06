@@ -2073,6 +2073,54 @@ function md.Export.Loc {
             md.New-ConditionalTextTemplate -TemplateName 'Checkbox-x.Green'
         )
     }
+
+    Export-Excel @exportExcel_Splat
+
+    # section: Export worksheet: Objects
+    $importExcel_Splat = @{
+        ExcelPackage  = $pkg
+        WorksheetName = 'Objects'
+
+    }
+    $rows_Objects =  Import-Excel @importExcel_Splat
+        | md.Convert.RenameKeys -RenameMap @{
+            '//note' = 'Note'
+        }
+
+    # skip empty and non-data rows
+    $curOrder = -1
+    $rows_Objects = @(
+        $rows_Objects
+            | % {
+                # capture grouping records, else add them to the data
+                $record = $_
+                $curOrder++
+
+                $record.PSObject.Properties.Add( [psnoteproperty]::new(
+                    'RowOrder', $curOrder
+                ), $true )
+
+                $record
+            }
+            | ? { -not [string]::IsNullOrWhiteSpace( $_.CODE ) }
+    )
+
+    $exportExcel_Splat = @{
+        InputObject   = @( $rows_Objects )
+        Path          = $Paths.Xlsx_Loc
+        Show          = $false # $Build.AutoOpen.Loc ?? $false
+        WorksheetName = 'Objects'
+        TableName     = 'Objects_Data'
+        TableStyle    = 'Light5'
+        AutoSize      = $True
+        ConditionalText = @(
+            md.New-ConditionalTextTemplate -TemplateName 'Checkbox-x.Green'
+        )
+    }
+
+    Export-Excel @exportExcel_Splat
+
+
     # section: Export worksheet: Instinct
     $importExcel_Splat = @{
         ExcelPackage  = $pkg
@@ -2247,58 +2295,7 @@ function md.Export.Loc {
 
     Export-Excel @exportExcel_Splat
 
-    # section: Export worksheet: Objects
 
-    $importExcel_Splat = @{
-        ExcelPackage  = $pkg
-        WorksheetName = 'Objects'
-
-    }
-    $rows_Objects =  Import-Excel @importExcel_Splat
-        | md.Convert.RenameKeys -RenameMap @{
-            '//note' = 'Note'
-        }
-
-    $curOrder = -1
-    $rows_Objects = @(
-        $rows_Objects
-            | % {
-                # capture grouping records, else add them to the data
-                $record = $_
-                $curOrder++
-
-                $record.PSObject.Properties.Add( [psnoteproperty]::new(
-                    'RowOrder', $curOrder
-                ), $true )
-
-                $record
-            }
-            | ? { -not [string]::IsNullOrWhiteSpace( $_.CODE ) }
-            | ? {
-                -not (
-                    [string]::IsNullOrWhiteSpace( $_.Note ) -and
-                    [string]::IsNullOrWhiteSpace( $_.English ) -and
-                    [string]::IsNullOrWhiteSpace( $_.Dutch )
-                )
-            }
-    )
-
-    $exportExcel_Splat = @{
-        InputObject   = @(
-            $rows_Objects
-        )
-        Path          = $Paths.Xlsx_Loc
-        Show          = $false #  $Build.AutoOpen.Loc ?? $false
-        WorksheetName = 'Objects'
-        TableName     = 'Objects_Data'
-        TableStyle    = 'Light5'
-        AutoSize      = $True
-        ConditionalText = @(
-            md.New-ConditionalTextTemplate -TemplateName 'Checkbox-x.Green'
-        )
-    }
-
-    Export-Excel @exportExcel_Splat
 
     # section: Export Json for worksheet: LEGEND
 

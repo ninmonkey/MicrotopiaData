@@ -1,5 +1,19 @@
 [
   {
+    "chinese_simplified": "",
+    "code": "ANTCASTE__",
+    "dutch": "",
+    "english": "",
+    "french": "",
+    "german": "",
+    "japanese": "",
+    "korean": "",
+    "note": "",
+    "polish": "",
+    "roworder": 0,
+    "russian": ""
+  },
+  {
     "chinese_simplified": "灯泡工蚁（I）",
     "code": "ANTCASTE_BULB_1_old",
     "dutch": "",
@@ -1736,6 +1750,20 @@
     "russian": "Высшая степень развития муравьиной матки – элита элит. Для инкубации требуется еще меньше муравьев."
   },
   {
+    "chinese_simplified": "",
+    "code": "ANTSPECIES_",
+    "dutch": "",
+    "english": "",
+    "french": "",
+    "german": "",
+    "japanese": "",
+    "korean": "",
+    "note": "",
+    "polish": "",
+    "roworder": 125,
+    "russian": ""
+  },
+  {
     "chinese_simplified": "普通电蚁",
     "code": "ANTSPECIES_DEFAULT",
     "dutch": "Electroformica Vulgaris",
@@ -1776,6 +1804,20 @@
     "polish": "Electroformica Plaga",
     "roworder": 128,
     "russian": "Электроформика Плага"
+  },
+  {
+    "chinese_simplified": "",
+    "code": "BIOME_",
+    "dutch": "",
+    "english": "",
+    "french": "",
+    "german": "",
+    "japanese": "",
+    "korean": "",
+    "note": "",
+    "polish": "",
+    "roworder": 129,
+    "russian": ""
   },
   {
     "chinese_simplified": "蓝色草地",
@@ -1846,6 +1888,20 @@
     "polish": "Toksyczne pustkowia",
     "roworder": 134,
     "russian": "Токсичная пустошь"
+  },
+  {
+    "chinese_simplified": "",
+    "code": "BOB__",
+    "dutch": "",
+    "english": "",
+    "french": "",
+    "german": "",
+    "japanese": "",
+    "korean": "",
+    "note": "",
+    "polish": "",
+    "roworder": 135,
+    "russian": ""
   },
   {
     "chinese_simplified": "瓶装玫瑰",
@@ -2322,6 +2378,20 @@
     "polish": "Sznurnica",
     "roworder": 169,
     "russian": "Струнное дерево"
+  },
+  {
+    "chinese_simplified": "",
+    "code": "BUILD__",
+    "dutch": "",
+    "english": "",
+    "french": "",
+    "german": "",
+    "japanese": "",
+    "korean": "",
+    "note": "",
+    "polish": "",
+    "roworder": 170,
+    "russian": ""
   },
   {
     "chinese_simplified": "压酸机",
@@ -4830,6 +4900,20 @@
     "russian": "Производственный станок, на котором можно создавать различные виды товаров."
   },
   {
+    "chinese_simplified": "",
+    "code": "BUILDGROUP__",
+    "dutch": "",
+    "english": "",
+    "french": "",
+    "german": "",
+    "japanese": "",
+    "korean": "",
+    "note": "",
+    "polish": "",
+    "roworder": 350,
+    "russian": ""
+  },
+  {
     "chinese_simplified": "农业",
     "code": "BUILDGROUP_FARMING",
     "dutch": "Landbouw",
@@ -5024,6 +5108,20 @@
     "polish": "Transport",
     "roworder": 364,
     "russian": "Транспорт"
+  },
+  {
+    "chinese_simplified": "",
+    "code": "FACRECIPE__",
+    "dutch": "",
+    "english": "",
+    "french": "",
+    "german": "",
+    "japanese": "",
+    "korean": "",
+    "note": "",
+    "polish": "",
+    "roworder": 365,
+    "russian": ""
   },
   {
     "chinese_simplified": "装配货运蚁",
@@ -7210,6 +7308,20 @@
     "russian": "Собрать стража"
   },
   {
+    "chinese_simplified": "",
+    "code": "PICKUP__",
+    "dutch": "",
+    "english": "",
+    "french": "",
+    "german": "",
+    "japanese": "",
+    "korean": "",
+    "note": "",
+    "polish": "",
+    "roworder": 522,
+    "russian": ""
+  },
+  {
     "chinese_simplified": "酸液",
     "code": "PICKUP_ACID",
     "dutch": "Zuur",
@@ -8862,6 +8974,20 @@
     "russian": "Очень тонкое кремниевое покрытие для поверхностей. Базовый материал для создания полупроводниковых приборов."
   },
   {
+    "chinese_simplified": "",
+    "code": "PICKUPCAT__",
+    "dutch": "",
+    "english": "",
+    "french": "",
+    "german": "",
+    "japanese": "",
+    "korean": "",
+    "note": "",
+    "polish": "",
+    "roworder": 641,
+    "russian": ""
+  },
+  {
     "chinese_simplified": "粉末",
     "code": "PICKUPCAT_DUST",
     "dutch": "Poedervormen",
@@ -8986,6 +9112,20 @@
     "polish": "Surowce",
     "roworder": 650,
     "russian": "Сырье"
+  },
+  {
+    "chinese_simplified": "",
+    "code": "TECH__",
+    "dutch": "",
+    "english": "",
+    "french": "",
+    "german": "",
+    "japanese": "",
+    "korean": "",
+    "note": "",
+    "polish": "",
+    "roworder": 651,
+    "russian": ""
   },
   {
     "chinese_simplified": "酸性精炼",
@@ -10388,6 +10528,20 @@
     "russian": "Позволяет создавать кремниевые подложки из кристального порошка и кислоты."
   },
   {
+    "chinese_simplified": "",
+    "code": "TRAIL__",
+    "dutch": "",
+    "english": "",
+    "french": "",
+    "german": "",
+    "japanese": "",
+    "korean": "",
+    "note": "",
+    "polish": "",
+    "roworder": 752,
+    "russian": ""
+  },
+  {
     "chinese_simplified": "计数门",
     "code": "TRAIL_ASSIGNER",
     "dutch": "Telpoort",
@@ -11100,6 +11254,34 @@
     "polish": "Ogromny budynek generujący podziemne fale uderzeniowe, dzięki którym kolonie mrówek mogą się ze sobą komunikować. Umożliwia wywoływanie lotów godowych bez konieczności oczekiwania na dopełnienie cyklu. Budowlę tę można wznieść tylko na wyspach z pustynią.",
     "roworder": 804,
     "russian": "Огромное сооружение, производящее мощную ударную волну для связи с другими муравейниками. С помощью этого здания можно инициировать брачный полет, когда вам угодно, не дожидаясь завершения цикла развития. Можно разместить только в пустыне."
+  },
+  {
+    "chinese_simplified": "",
+    "code": "xxANTCASTE_BULB_EMPTY_DESC",
+    "dutch": "",
+    "english": "",
+    "french": "",
+    "german": "",
+    "japanese": "",
+    "korean": "",
+    "note": "",
+    "polish": "",
+    "roworder": 805,
+    "russian": ""
+  },
+  {
+    "chinese_simplified": "",
+    "code": "xxANTCASTE_BULB_1_DESC",
+    "dutch": "",
+    "english": "",
+    "french": "",
+    "german": "",
+    "japanese": "",
+    "korean": "",
+    "note": "",
+    "polish": "",
+    "roworder": 806,
+    "russian": ""
   },
   {
     "chinese_simplified": "胶囊工蚁（I）",
