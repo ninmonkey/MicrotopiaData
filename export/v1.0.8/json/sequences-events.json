@@ -1,0 +1,10 @@
+{
+  "actions": "UNLOCK_BUILDING_POPUP PLANT_POT",
+  "checks": [
+    "N_ANTS_CARRYING_PICKUP_CATEGORY SEED 1"
+  ],
+  "code": "EVE_UNLOCK_POT",
+  "ground": "",
+  "roworder": 1,
+  "text": ""
+}

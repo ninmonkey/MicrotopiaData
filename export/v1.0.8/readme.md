@@ -1,7 +1,7 @@
 
 ## About
 
-Files generated on: 2025-04-06 2:33:16 PM
+Files generated on: 2025-04-06 3:05:06 PM
 For version: v1.0.8
 
 ## Files by Type
@@ -31,6 +31,9 @@ For version: v1.0.8
 - [prefabs-pickups.json](./json/prefabs-pickups.json)
 - [prefabs-statuseffects.json](./json/prefabs-statuseffects.json)
 - [prefabs-trails.json](./json/prefabs-trails.json)
+- [sequences-events.json](./json/sequences-events.json)
+- [sequences-tutorial-old.json](./json/sequences-tutorial-old.json)
+- [sequences-tutorial.json](./json/sequences-tutorial.json)
 - [techtree-techtree.json](./json/techtree-techtree.json)
 - [workbook-schema.json](./json/workbook-schema.json)
 
@@ -46,6 +49,7 @@ For version: v1.0.8
 - [prefabs-raw.xlsx](./prefabs-raw.xlsx)
 - [prefabs.xlsx](./prefabs.xlsx)
 - [sequences-raw.xlsx](./sequences-raw.xlsx)
+- [sequences.xlsx](./sequences.xlsx)
 - [techtree-raw.xlsx](./techtree-raw.xlsx)
 - [techtree.xlsx](./techtree.xlsx)
 - [workbook-schema.xlsx](./workbook-schema.xlsx)

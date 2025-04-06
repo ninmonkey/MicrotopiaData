@@ -94,16 +94,16 @@ $Paths.Markdown_RootReadme = join-path $paths.AppRoot '../readme.md'
 $build = $null
 $Build ??= [ordered]@{ # auto 'show' certain files. nullish op lets you override defaults
     AutoOpen = [ordered]@{
-        Biome_Objects            = $false
-        Biome_Objects_Expanded   = $false # $true
-        Biome_Plants             = $false # $true
-        Loc                      = $false # $true
-        Prefabs_Crusher          = $false
-        TechTree_ResearchRecipes = $false # $true
-        TechTree_TechTree        = $false # $true
-        Prefabs                  = $false # $true
+        Biome_Objects            = $true
+        Biome_Objects_Expanded   = $true # $true
+        Biome_Plants             = $true # $true
+        Loc                      = $true # $true
+        Prefabs_Crusher          = $true
+        TechTree_ResearchRecipes = $true # $true
+        TechTree_TechTree        = $true # $true
+        Prefabs                  = $true # $true
         Sequences                = $true
-        WorkbookSchema           = $false
+        WorkbookSchema           = $true
     }
     Export = [ordered]@{
         # main
@@ -121,17 +121,17 @@ $Build ??= [ordered]@{ # auto 'show' certain files. nullish op lets you override
 
 
         # all on
-        Changelog                  = $false # true
-        Biome_Objects              = $false # true
-        Biome_Objects_Expanded     = $false # true
-        Biome_Plants               = $false # true
+        Changelog                  = $true # true
+        Biome_Objects              = $true # true
+        Biome_Objects_Expanded     = $true # true
+        Biome_Plants               = $true # true
         Loc                        = $true # true
-        Prefabs_Crusher            = $false # true
-        Prefabs                    = $false # true
-        TechTree_ResearchRecipes   = $false # true
-        TechTree_TechTree          = $false # true
-        TechTree_TechTree_Expanded = $false
-        WorkbookSchema             = $false
+        Prefabs_Crusher            = $true # true
+        Prefabs                    = $true # true
+        TechTree_ResearchRecipes   = $true # true
+        TechTree_TechTree          = $true # true
+        TechTree_TechTree_Expanded = $true
+        WorkbookSchema             = $true
         Sequences                  = $True
 
         # only schema

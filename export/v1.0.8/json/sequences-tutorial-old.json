@@ -1,0 +1,342 @@
+[
+  {
+    "actions": "DISABLE_UI TRAIL, DISABLE_UI TRAIL_FORAGING, DISABLE_UI TRAIL_WOODCUTTING, DISABLE_UI TRAIL_NURSING, DISABLE_UI TRAIL_STONECUTTING, DISABLE_UI TRAIL_SINGLEUSE, DISABLE_UI BUILDING, DISABLE_UI FLY_AWAY, SET_PLACE_QUEEN_FALSE",
+    "checks": [],
+    "code": "TUT_STARTUP",
+    "ground": "TUTORIAL0",
+    "roworder": 1,
+    "text": ""
+  },
+  {
+    "actions": "",
+    "checks": [
+      "TIME_MOVED_UP 0.1",
+      "TIME_MOVED_DOWN 0.1",
+      "TIME_MOVED_LEFT 0.1",
+      "TIME_MOVED_RIGHT 0.1"
+    ],
+    "code": "TUT0_MOVE",
+    "ground": "TUTORIAL0",
+    "roworder": 3,
+    "text": "Move the camera with WASD"
+  },
+  {
+    "actions": "",
+    "checks": [
+      "TIME_ZOOMED_IN 0.01",
+      "TIME_ZOOMED_OUT 0.01"
+    ],
+    "code": "TUT0_ZOOM",
+    "ground": "TUTORIAL0",
+    "roworder": 4,
+    "text": "Zoom in and out using the scroll wheel"
+  },
+  {
+    "actions": "",
+    "checks": [
+      "TIME_ROTATED_CAMERA 0.5"
+    ],
+    "code": "TUT0_ROTATE",
+    "ground": "TUTORIAL0",
+    "roworder": 5,
+    "text": "Rotate the camera by clicking and holding the scroll wheel and moving the mouse"
+  },
+  {
+    "actions": "SET_PLACE_QUEEN_TRUE",
+    "checks": [
+      "N_QUEENS 1"
+    ],
+    "code": "TUT1_PLACE_QUEEN",
+    "ground": "TUTORIAL0",
+    "roworder": 7,
+    "text": "Place the queen"
+  },
+  {
+    "actions": "",
+    "checks": [
+      "N_ANTS 1"
+    ],
+    "code": "TUT1_WAIT_QUEEN",
+    "ground": "TUTORIAL0",
+    "roworder": 8,
+    "text": "Wait for the queen"
+  },
+  {
+    "actions": "ENABLE_UI TRAIL",
+    "checks": [
+      "IS_GAMEPLAYMODE TRAIL"
+    ],
+    "code": "TUT1_TRAIL",
+    "ground": "TUTORIAL0",
+    "roworder": 9,
+    "text": "Go into trail mode"
+  },
+  {
+    "actions": "",
+    "checks": [
+      "N_ANTS_WALKING_ON_TRAIL 1"
+    ],
+    "code": "TUT1_DRAW_TRAIL",
+    "ground": "TUTORIAL0",
+    "roworder": 10,
+    "text": "Draw a trail near the worker ant to instruct it to move"
+  },
+  {
+    "actions": "",
+    "checks": [
+      "N_ANTS_CARRYING_PICKUP STONE 1"
+    ],
+    "code": "TUT1_COLLECT_STONE",
+    "ground": "TUTORIAL0",
+    "roworder": 11,
+    "text": "Instruct the ant to collect a stone by using the trail"
+  },
+  {
+    "actions": "",
+    "checks": [
+      "N_PICKUPS_TYPE_IN_RESEARCH STONE 1"
+    ],
+    "code": "TUT2_BRING_STONE",
+    "ground": "TUTORIAL0",
+    "roworder": 12,
+    "text": "Instruct the ant to bring the stone to the monolith to start researching"
+  },
+  {
+    "actions": "",
+    "checks": [
+      "IS_NOT_TRAILING"
+    ],
+    "code": "TUT1_CANCEL",
+    "ground": "TUTORIAL0",
+    "roworder": 13,
+    "text": "Cancel drawing the current trail with right mouse click"
+  },
+  {
+    "actions": "",
+    "checks": [
+      "N_TRAILS_MAX 0"
+    ],
+    "code": "TUT1_NO_TRAILS",
+    "ground": "TUTORIAL0",
+    "roworder": 14,
+    "text": "Remove all the trails by right clicking them"
+  },
+  {
+    "actions": "",
+    "checks": [
+      "N_BUILDINGS_UNLOCKED 1"
+    ],
+    "code": "TUT1_4_STONES",
+    "ground": "TUTORIAL0",
+    "roworder": 15,
+    "text": "Complete the research by drawing new trails so the ant can bring 4 more stones to the monolith"
+  },
+  {
+    "actions": "ENABLE_UI FLY_AWAY, UNLOCK_BUILDING_SILENT HOUSE_STONE_HUT",
+    "checks": [
+      "IS_NOT_GROUNDGROUP TUTORIAL0"
+    ],
+    "code": "TUT1_FLY_AWAY",
+    "ground": "TUTORIAL1",
+    "roworder": 16,
+    "text": "There is nothing left to do here, fly away"
+  },
+  {
+    "actions": "DISABLE_UI FLY_AWAY",
+    "checks": [
+      "N_QUEENS 1"
+    ],
+    "code": "TUT2_PLACE_QUEEN",
+    "ground": "TUTORIAL1",
+    "roworder": 18,
+    "text": "Place the queen"
+  },
+  {
+    "actions": "ENABLE_UI BUILDING",
+    "checks": [
+      "IS_GAMEPLAYMODE BUILDING"
+    ],
+    "code": "TUT2_BUILD",
+    "ground": "TUTORIAL1",
+    "roworder": 19,
+    "text": "Go into build mode"
+  },
+  {
+    "actions": "",
+    "checks": [
+      "N_BUILDINGS_PLACED 1"
+    ],
+    "code": "TUT2_PLACE_BUILDING",
+    "ground": "TUTORIAL1",
+    "roworder": 20,
+    "text": "Place the new building you just unlocked"
+  },
+  {
+    "actions": "",
+    "checks": [
+      "IS_GAMEPLAYMODE TRAIL"
+    ],
+    "code": "TUT2_TRAIL",
+    "ground": "TUTORIAL1",
+    "roworder": 21,
+    "text": "Go back into trail mode"
+  },
+  {
+    "actions": "ENABLE_UI TRAIL_STONECUTTING",
+    "checks": [
+      "IS_TRAILTYPE STONECUTTING"
+    ],
+    "code": "TUT2_STONECUTTING",
+    "ground": "TUTORIAL1",
+    "roworder": 22,
+    "text": "Change the trail type to stone cutting"
+  },
+  {
+    "actions": "",
+    "checks": [
+      "N_ANTS_CARRYING_PICKUP STONE 1"
+    ],
+    "code": "TUT2_COLLECT_STONE",
+    "ground": "TUTORIAL1",
+    "roworder": 23,
+    "text": "Instruct the ant to collect a stone from a rock by using the stone cutting trail"
+  },
+  {
+    "actions": "",
+    "checks": [
+      "N_BUILDINGS_BEING_BUILD 1"
+    ],
+    "code": "TUT2_BRING_STONE",
+    "ground": "TUTORIAL1",
+    "roworder": 24,
+    "text": "Bring the stone to the newly placed building"
+  },
+  {
+    "actions": "",
+    "checks": [
+      "N_BUILDINGS_COMPLETED 1"
+    ],
+    "code": "TUT2_COMPLETE_BUILDING",
+    "ground": "TUTORIAL1",
+    "roworder": 25,
+    "text": "Complete the building"
+  },
+  {
+    "actions": "ENABLE_UI TRAIL_FORAGING",
+    "checks": [
+      "IS_TRAILTYPE FORAGING"
+    ],
+    "code": "TUT2_FORAGING",
+    "ground": "TUTORIAL1",
+    "roworder": 26,
+    "text": "Change the trail type to foraging"
+  },
+  {
+    "actions": "",
+    "checks": [
+      "N_ANTS_CARRYING_PICKUP BERRY 1"
+    ],
+    "code": "TUT2_COLLECT_BERRY",
+    "ground": "TUTORIAL1",
+    "roworder": 27,
+    "text": "Instruct the ant to collect a berry from a plant by using the foraging trail"
+  },
+  {
+    "actions": "",
+    "checks": [
+      "N_QUEENS_GOT_PICKUPS 1"
+    ],
+    "code": "TUT2_BERRY_QUEEN",
+    "ground": "TUTORIAL1",
+    "roworder": 28,
+    "text": "Give the berry to the queen by placing a trail alongside her mouth"
+  },
+  {
+    "actions": "",
+    "checks": [
+      "N_PICKUPS_TYPE LARVAE 1"
+    ],
+    "code": "TUT2_BIRTH_LARVA",
+    "ground": "TUTORIAL1",
+    "roworder": 29,
+    "text": "Keep giving berries to the queen until she births a larva"
+  },
+  {
+    "actions": "ENABLE_UI TRAIL_NURSING",
+    "checks": [
+      "IS_TRAILTYPE NURSING"
+    ],
+    "code": "TUT2_NURSING",
+    "ground": "TUTORIAL1",
+    "roworder": 30,
+    "text": "Change the trail type to nursing"
+  },
+  {
+    "actions": "",
+    "checks": [
+      "N_ANTS_CARRYING_PICKUP LARVAE 1"
+    ],
+    "code": "TUT2_COLLECT_LARVA",
+    "ground": "TUTORIAL1",
+    "roworder": 31,
+    "text": "Pick up the larva"
+  },
+  {
+    "actions": "",
+    "checks": [
+      "N_LARVAE_IN_BUILDING 1"
+    ],
+    "code": "TUT2_BRING_LARVA",
+    "ground": "TUTORIAL1",
+    "roworder": 32,
+    "text": "Bring the larva to the newly created house"
+  },
+  {
+    "actions": "",
+    "checks": [
+      "N_ANTS 2"
+    ],
+    "code": "TUT2_WAIT_LARVA",
+    "ground": "TUTORIAL1",
+    "roworder": 33,
+    "text": "Wait until the larva pupates into an ant"
+  },
+  {
+    "actions": "ENABLE_UI TRAIL_SINGLEUSE",
+    "checks": [
+      "N_ANTS 3"
+    ],
+    "code": "TUT2_2_ANTS",
+    "ground": "TUTORIAL1",
+    "roworder": 34,
+    "text": "Create 2 more ants"
+  },
+  {
+    "actions": "",
+    "checks": [
+      "N_ANTS 4"
+    ],
+    "code": "TUT2_1_ANT",
+    "ground": "TUTORIAL1",
+    "roworder": 35,
+    "text": "Create 1 more ant"
+  },
+  {
+    "actions": "ENABLE_UI FLY_AWAY",
+    "checks": [
+      "IS_NOT_GROUNDGROUP TUTORIAL1"
+    ],
+    "code": "TUT2_FLY_AWAY",
+    "ground": "",
+    "roworder": 36,
+    "text": "Fly away to finish the tutorial"
+  },
+  {
+    "actions": "ENABLE_UI TRAIL_WOODCUTTING, UNLOCK_BUILDING_SILENT COMPUTER_STONE",
+    "checks": [],
+    "code": "TUT_FINISH",
+    "ground": "",
+    "roworder": 38,
+    "text": ""
+  }
+]
