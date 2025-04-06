@@ -21,29 +21,29 @@ The data is cleaned up, then exported to `json`, `csv`, `xlsx` files. The `xlsx`
   - [ ] Instinct_Order
   - [ ] Goals_old
   - [ ] Goals_old2
-- [ ] loc-raw.xlsx
+- [x] loc-raw.xlsx
   - [x] Legend
-  - [ ] UI : `loc-ui.json`
-  - [ ] Objects : `loc-objects.json`
-  - [ ] Tutorial
-  - [ ] Instinct
-  - [ ] TechTree
-  - [ ] Credits
-  - [ ] Achievements
+  - [x] UI : `loc-ui.json`
+  - [x] Objects : `loc-objects.json`
+  - [x] Tutorial
+  - [x] Instinct
+  - [x] TechTree
+  - [x] Credits
+  - [x] Achievements
   - [ ] wip
-- [ ] prefabs-raw.xlsx
-  - [ ] Buildings : `prefabs-buildings.json`
-  - [ ] Factory_Recipes : `prefabs-factoryrecipes.json`
-  - [ ] Ant_Castes : `prefabs-antcastes.json`
-  - [ ] Pickups : `prefabs-pickups.json`
-  - [ ] Trails
-  - [ ] Pickup Categories
-  - [ ] Status Effects
-  - [ ] Hunger
-- [ ] sequences-raw.xlsx
-  - [ ] Tutorial
-  - [ ] Tutorial_old
-  - [ ] Events
+- [x] prefabs-raw.xlsx
+  - [x] Buildings : `prefabs-buildings.json`
+  - [x] Factory_Recipes : `prefabs-factoryrecipes.json`
+  - [x] Ant_Castes : `prefabs-antcastes.json`
+  - [x] Pickups : `prefabs-pickups.json`
+  - [x] Trails
+  - [x] Pickup Categories
+  - [x] Status Effects
+  - [x] Hunger
+- [x] sequences-raw.xlsx
+  - [x] Tutorial
+  - [x] Tutorial_old
+  - [x] Events
 - [ ] techtree-raw.xlsx
   - [ ]  Tech Tree : `techtree-techtree.json`
   - [ ] Research_Recipes

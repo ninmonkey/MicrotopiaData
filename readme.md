@@ -20,7 +20,7 @@ minorVersion: 'V1.0.8b_1'
 
 ## About
 
-Files generated on: 2025-04-06 2:03:55 PM
+Files generated on: 2025-04-06 3:03:00 PM
 For version: v1.0.8
 
 ## Files by Type
@@ -46,8 +46,13 @@ For version: v1.0.8
 - [prefabs-antcastes.json](./export/v1.0.8/json/prefabs-antcastes.json)
 - [prefabs-buildings.json](./export/v1.0.8/json/prefabs-buildings.json)
 - [prefabs-factoryrecipes.json](./export/v1.0.8/json/prefabs-factoryrecipes.json)
+- [prefabs-hunger.json](./export/v1.0.8/json/prefabs-hunger.json)
 - [prefabs-pickups.json](./export/v1.0.8/json/prefabs-pickups.json)
+- [prefabs-statuseffects.json](./export/v1.0.8/json/prefabs-statuseffects.json)
 - [prefabs-trails.json](./export/v1.0.8/json/prefabs-trails.json)
+- [sequences-events.json](./export/v1.0.8/json/sequences-events.json)
+- [sequences-tutorial-old.json](./export/v1.0.8/json/sequences-tutorial-old.json)
+- [sequences-tutorial.json](./export/v1.0.8/json/sequences-tutorial.json)
 - [techtree-techtree.json](./export/v1.0.8/json/techtree-techtree.json)
 - [workbook-schema.json](./export/v1.0.8/json/workbook-schema.json)
 
@@ -57,12 +62,11 @@ For version: v1.0.8
 - [Changelog-raw.xlsx](./export/v1.0.8/Changelog-raw.xlsx)
 - [Instinct-raw.xlsx](./export/v1.0.8/Instinct-raw.xlsx)
 - [biome-raw.xlsx](./export/v1.0.8/biome-raw.xlsx)
-- [biome.xlsx](./export/v1.0.8/biome.xlsx)
 - [loc-raw.xlsx](./export/v1.0.8/loc-raw.xlsx)
 - [loc.xlsx](./export/v1.0.8/loc.xlsx)
 - [prefabs-raw.xlsx](./export/v1.0.8/prefabs-raw.xlsx)
-- [prefabs.xlsx](./export/v1.0.8/prefabs.xlsx)
 - [sequences-raw.xlsx](./export/v1.0.8/sequences-raw.xlsx)
+- [sequences.xlsx](./export/v1.0.8/sequences.xlsx)
 - [techtree-raw.xlsx](./export/v1.0.8/techtree-raw.xlsx)
 - [techtree.xlsx](./export/v1.0.8/techtree.xlsx)
 - [workbook-schema.xlsx](./export/v1.0.8/workbook-schema.xlsx)

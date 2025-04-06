@@ -1289,7 +1289,252 @@ function md.New-ConditionalTextTemplate {
         }
     }
 }
+function md.Export.Sequences {
+    <#
+    .SYNOPSIS
+        Parses and exports 'Sequences.xlsx'
+    #>
+    [CmdletBinding()]
+    param(
+        # Paths hashtable
+        [Parameter(Mandatory)] $Paths,
 
+        # always write a fresh export
+        [ValidateScript({throw 'nyi'})]
+        [switch] $Force
+    )
+    $PSCmdlet.MyInvocation.MyCommand.Name
+        | Join-String -f 'Enter: {0}' | Write-verbose
+
+    $Regex = @{
+        # isTierNumber     = '^\s*//\s+tier\s+\d+'
+        stripSlashPrefix = '\s*//\s*'
+    }
+
+    $pkg = Open-ExcelPackage -Path $Paths.Raw_Sequences
+    $book = $pkg.Workbook
+    md.Workbook.ListItems $Book
+    remove-item $Paths.Xlsx_Sequences -ea 'Ignore'
+
+    # Section: Export item: Sequences/Tutorial
+    $importExcel_Splat = @{
+        ExcelPackage  = $pkg
+        WorksheetName = 'Tutorial'
+
+    }
+    $rows_tutorials =  Import-Excel @importExcel_Splat # -ea 'break'
+
+    $query_loc = Get-Content -raw $paths.json_Loc_Objects | ConvertFrom-Json -depth 4
+
+    # skip empty and non-data rows
+    $curGroupName = 'missing'
+    $curOrder = -1
+    $rows_tutorials = @(
+        $rows_tutorials
+            | % { # note: empty [Order] column means it's not in the build menu
+                $record = $_
+                $curOrder++
+                # $record.PSObject.Properties.Add( [psnoteproperty]::new(
+                #     'Title_English',
+                #     ($query_loc | ? Code -eq $record.Title).English
+                # ), $true )
+
+                $record.PSObject.Properties.Add( [psnoteproperty]::new(
+                    'RowOrder', $curOrder
+                ), $true )
+
+                $record
+            }
+            | ? { -not (
+                [string]::IsNullOrWhiteSpace( $_.CODE ) -and
+                [string]::IsNullOrWhiteSpace( $_.TEXT ) -and
+                [string]::IsNullOrWhiteSpace( $_.ACTIONS )
+            ) }
+    )
+
+    $exportExcel_Splat = @{
+        InputObject   = @( $rows_tutorials )
+        Path          = $Paths.Xlsx_Sequences
+        Show          = $false # moved to end
+        WorksheetName = 'Tutorial'
+        TableName     = 'Tutorial_Data'
+        TableStyle    = 'Light5'
+        AutoSize      = $True
+        ConditionalText = @(
+            md.New-ConditionalTextTemplate -TemplateName 'Checkbox-x.Green'
+        )
+    }
+
+    Export-Excel @exportExcel_Splat
+
+    # Section: Export item: Sequences/TutorialOld
+
+    $importExcel_Splat = @{
+        ExcelPackage  = $pkg
+        WorksheetName = 'Tutorial_Old'
+
+    }
+    $rows_tutorialOld =  Import-Excel @importExcel_Splat # -ea 'break'
+
+    $query_loc = Get-Content -raw $paths.json_Loc_Objects | ConvertFrom-Json -depth 4
+
+    # skip empty and non-data rows
+    $curGroupName = 'missing'
+    $curOrder = -1
+    $rows_tutorialOld = @(
+        $rows_tutorialOld
+            | % { # note: empty [Order] column means it's not in the build menu
+                $record = $_
+                $curOrder++
+                # $record.PSObject.Properties.Add( [psnoteproperty]::new(
+                #     'Title_English',
+                #     ($query_loc | ? Code -eq $record.Title).English
+                # ), $true )
+
+                $record.PSObject.Properties.Add( [psnoteproperty]::new(
+                    'RowOrder', $curOrder
+                ), $true )
+
+                $record
+            }
+            | ? { -not (
+                [string]::IsNullOrWhiteSpace( $_.CODE ) -and
+                [string]::IsNullOrWhiteSpace( $_.TEXT ) -and
+                [string]::IsNullOrWhiteSpace( $_.ACTIONS )
+            ) }
+    )
+
+    $exportExcel_Splat = @{
+        InputObject   = @( $rows_tutorialOld )
+        Path          = $Paths.Xlsx_Sequences
+        Show          = $false # moved to end
+        WorksheetName = 'TutorialOld'
+        TableName     = 'TutorialOld_Data'
+        TableStyle    = 'Light5'
+        AutoSize      = $True
+        ConditionalText = @(
+            md.New-ConditionalTextTemplate -TemplateName 'Checkbox-x.Green'
+        )
+    }
+
+    Export-Excel @exportExcel_Splat
+
+    # Section: Export item: Sequences/Events
+
+    $importExcel_Splat = @{
+        ExcelPackage  = $pkg
+        WorksheetName = 'Events'
+
+    }
+    $rows_Events =  Import-Excel @importExcel_Splat # -ea 'break'
+
+    $query_loc = Get-Content -raw $paths.json_Loc_Objects | ConvertFrom-Json -depth 4
+
+    # skip empty and non-data rows
+    $curGroupName = 'missing'
+    $curOrder = -1
+    $rows_Events = @(
+        $rows_Events
+            | % { # note: empty [Order] column means it's not in the build menu
+                $record = $_
+                $curOrder++
+                # $record.PSObject.Properties.Add( [psnoteproperty]::new(
+                #     'Title_English',
+                #     ($query_loc | ? Code -eq $record.Title).English
+                # ), $true )
+
+                $record.PSObject.Properties.Add( [psnoteproperty]::new(
+                    'RowOrder', $curOrder
+                ), $true )
+
+                $record
+            }
+            | ? { -not (
+                [string]::IsNullOrWhiteSpace( $_.CODE ) -and
+                [string]::IsNullOrWhiteSpace( $_.TEXT ) -and
+                [string]::IsNullOrWhiteSpace( $_.ACTIONS )
+            ) }
+    )
+
+    $exportExcel_Splat = @{
+        InputObject   = @( $rows_Events )
+        Path          = $Paths.Xlsx_Sequences
+        Show          = $false # moved to end
+        WorksheetName = 'Events'
+        TableName     = 'Events_Data'
+        TableStyle    = 'Light5'
+        AutoSize      = $True
+        ConditionalText = @(
+            md.New-ConditionalTextTemplate -TemplateName 'Checkbox-x.Green'
+        )
+    }
+
+    Export-Excel @exportExcel_Splat
+
+
+    $sort_splat = @{
+        # Property = 'tier', 'group', 'code'
+        Property = 'roworder'
+    }
+
+    # section: json Sequences.Tutorial
+    $forJson_Sequences = @(
+        $rows_tutorials | %{
+            $rec = $_
+            $rec = md.Convert.BlankPropsToEmpty $rec
+            $rec = md.Convert.CleanupKeyNames $rec # -StartWith 'tier', 'group', 'order'
+
+            $rec.'checks'       = md.Parse.ItemsFromList $rec.'checks'
+            $rec
+        }
+    )
+
+    $forJson_Sequences | ConvertTo-Json -Depth 9
+        | Set-Content $Paths.json_Sequences_Tutorial
+
+    $Paths.json_Sequences_Tutorial | md.Log.WroteFile
+
+    # section: json Sequences.TutorialOld
+    $forJson_Sequences = @(
+        $rows_tutorialOld | %{
+            $rec = $_
+            $rec = md.Convert.BlankPropsToEmpty $rec
+            $rec = md.Convert.CleanupKeyNames $rec # -StartWith 'tier', 'group', 'order'
+
+            $rec.'checks'       = md.Parse.ItemsFromList $rec.'checks'
+            $rec
+        }
+    )
+
+    $forJson_Sequences | ConvertTo-Json -Depth 9
+        | Set-Content $Paths.json_Sequences_TutorialOld
+
+    $Paths.json_Sequences_TutorialOld | md.Log.WroteFile
+
+    # section: json Sequences.Events
+    $forJson_Events = @(
+        $rows_Events | %{
+            $rec = $_
+            $rec = md.Convert.BlankPropsToEmpty $rec
+            $rec = md.Convert.CleanupKeyNames $rec # -StartWith 'tier', 'group', 'order'
+
+            $rec.'checks'       = md.Parse.ItemsFromList $rec.'checks'
+            $rec
+        }
+    )
+
+    $forJson_Events | ConvertTo-Json -Depth 9
+        | Set-Content $Paths.json_Sequences_Events
+
+    $Paths.json_Sequences_Events | md.Log.WroteFile
+
+    Close-ExcelPackage -ExcelPackage $pkg -NoSave
+    if( $Build.AutoOpen.Sequences ) {
+        # Get-Item $Paths.Xlsx_Sequences | Invoke-Item
+        md.ShowCopyOfWorkbook -InputPath $paths.Xlsx_Sequences # $pkg.File -ea 'break'
+
+    }
+}
 function md.Export.Prefabs.Prefabs {
     <#
     .SYNOPSIS
@@ -1887,6 +2132,134 @@ function md.Export.Prefabs.Pickups {
     }
 
     Export-Excel @exportExcel_Splat
+    # section: Export worksheet: PickupCategories
+    $importExcel_Splat = @{
+        ExcelPackage  = $pkg
+        WorksheetName = 'Pickup Categories'
+
+    }
+    $rows_PickupCategories =  Import-Excel @importExcel_Splat # -ea 'break'
+
+    $curOrder = -1
+    $rows_PickupCategories = @(
+        $rows_PickupCategories
+            | % {
+                $record = $_
+                $curOrder++
+
+                $record.PSObject.Properties.Add( [psnoteproperty]::new(
+                    'RowOrder', $curOrder
+                ), $true )
+
+                $record
+            }
+            # | ? { $_.ORDER -notmatch $Regex.toIgnoreBuildHeaderMessage  }
+            # | ? { $_.Code -notmatch $Regex.toIgnoreHeader }
+            | ? { -not (
+                [string]::IsNullOrWhiteSpace( $_.ENUM ) -and
+                [string]::IsNullOrWhiteSpace( $_.ORDER ) -and
+                [string]::IsNullOrWhiteSpace( $_.TITLE )
+            ) }
+    )
+
+    $exportExcel_Splat = @{
+        InputObject   = @( $rows_PickupCategories )
+        Path          = $Paths.Xlsx_Prefabs
+        Show          = $false # moved to end
+        WorksheetName = 'PickupCategories'
+        TableName     = 'PickupCategories_Data'
+        TableStyle    = 'Light5'
+        AutoSize      = $True
+        ConditionalText = @(
+            md.New-ConditionalTextTemplate -TemplateName 'Checkbox-x.Green'
+        )
+    }
+    Export-Excel @exportExcel_Splat
+
+
+    # section: Export worksheet: StatusEffects
+    $importExcel_Splat = @{
+        ExcelPackage  = $pkg
+        WorksheetName = 'Status Effects'
+
+    }
+    $rows_StatusEffects =  Import-Excel @importExcel_Splat # -ea 'break'
+
+    $curOrder = -1
+    $rows_StatusEffects = @(
+        $rows_StatusEffects
+            | % {
+                $record = $_
+                $curOrder++
+
+                $record.PSObject.Properties.Add( [psnoteproperty]::new(
+                    'RowOrder', $curOrder
+                ), $true )
+
+                $record
+            }
+            # | ? { $_.ORDER -notmatch $Regex.toIgnoreBuildHeaderMessage  }
+            # | ? { $_.Code -notmatch $Regex.toIgnoreHeader }
+            # | ? { -not (
+            #     [string]::IsNullOrWhiteSpace( $_.ENUM ) -and
+            #     [string]::IsNullOrWhiteSpace( $_.ORDER ) -and
+            #     [string]::IsNullOrWhiteSpace( $_.TITLE )
+            # ) }
+    )
+
+    $exportExcel_Splat = @{
+        InputObject   = @( $rows_StatusEffects )
+        Path          = $Paths.Xlsx_Prefabs
+        Show          = $false # moved to end
+        WorksheetName = 'StatusEffects'
+        TableName     = 'StatusEffects_Data'
+        TableStyle    = 'Light5'
+        AutoSize      = $True
+        ConditionalText = @(
+            md.New-ConditionalTextTemplate -TemplateName 'Checkbox-x.Green'
+        )
+    }
+
+    Export-Excel @exportExcel_Splat
+
+    # section: Export worksheet: Hunger
+    $importExcel_Splat = @{
+        ExcelPackage  = $pkg
+        WorksheetName = 'Hunger'
+
+    }
+    $rows_Hunger =  Import-Excel @importExcel_Splat # -ea 'break'
+
+    $curOrder = -1
+    $rows_Hunger = @(
+        $rows_Hunger
+            | % {
+                $record = $_
+                $curOrder++
+
+                $record.PSObject.Properties.Add( [psnoteproperty]::new(
+                    'RowOrder', $curOrder
+                ), $true )
+
+                $record
+            }
+
+    )
+
+    $exportExcel_Splat = @{
+        InputObject   = @( $rows_Hunger )
+        Path          = $Paths.Xlsx_Prefabs
+        Show          = $false # moved to end
+        WorksheetName = 'Hunger'
+        TableName     = 'Hunger_Data'
+        TableStyle    = 'Light5'
+        AutoSize      = $True
+        ConditionalText = @(
+            md.New-ConditionalTextTemplate -TemplateName 'Checkbox-x.Green'
+        )
+    }
+
+    Export-Excel @exportExcel_Splat
 
      # json specific transforms
     $sort_splat = @{
@@ -1969,6 +2342,52 @@ function md.Export.Prefabs.Pickups {
         | Set-Content $Paths.json_Prefabs_Pickups
 
     $Paths.json_Prefabs_Pickups | md.Log.WroteFile
+    # section: Export json: PickupCategories
+    $forJson_PickupCategories = @(
+        $Rows_PickupCategories | %{
+            $rec = $_
+            $rec = md.Convert.BlankPropsToEmpty $rec
+            $rec = md.Convert.CleanupKeyNames $rec # -StartWith 'tier', 'group', 'order'            $rec
+        }
+    )
+
+    $forJson_PickupCategories | ConvertTo-Json -Depth 9
+        | Set-Content $Paths.json_Prefabs_PickupCategories
+
+    $Paths.json_Prefabs_PickupCategories | md.Log.WroteFile
+
+
+
+
+    # section: Export json: StatusEffects
+    $forJson_StatusEffects = @(
+        $Rows_StatusEffects | %{
+            $rec = $_
+            $rec = md.Convert.BlankPropsToEmpty $rec
+            $rec = md.Convert.CleanupKeyNames $rec # -StartWith 'tier', 'group', 'order'
+            $rec
+        }
+    )
+
+    $forJson_StatusEffects | ConvertTo-Json -Depth 9
+        | Set-Content $Paths.json_Prefabs_StatusEffects
+
+    $Paths.json_Prefabs_StatusEffects | md.Log.WroteFile
+
+    # section: Export json: Hunger
+    $forJson_Hunger = @(
+        $Rows_Hunger | %{
+            $rec = $_
+            $rec = md.Convert.BlankPropsToEmpty $rec
+            $rec = md.Convert.CleanupKeyNames $rec # -StartWith 'tier', 'group', 'order'
+            $rec
+        }
+    )
+
+    $forJson_Hunger | ConvertTo-Json -Depth 9
+        | Set-Content $Paths.json_Prefabs_Hunger
+
+    $Paths.json_Prefabs_StatusEffects | md.Log.WroteFile
 
     Close-ExcelPackage -ExcelPackage $pkg -NoSave
 }

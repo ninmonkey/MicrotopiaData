@@ -40,6 +40,9 @@ $Paths.Raw_TechTree  = md.GetRawPath $Paths.Xlsx_TechTree
 $Paths.Xlsx_Loc = Join-Path $Paths.ExportRoot_CurrentVersion 'loc.xlsx'
 $Paths.Raw_Loc  = md.GetRawPath $Paths.Xlsx_Loc
 
+$Paths.Xlsx_Sequences = Join-Path $Paths.ExportRoot_CurrentVersion 'sequences.xlsx'
+$Paths.Raw_Sequences  = md.GetRawPath $Paths.Xlsx_Sequences
+
 $Paths.Xlsx_ChangeLog                = Join-Path $Paths.ExportRoot_CurrentVersion 'changelog.xlsx'
 $Paths.Md_ChangeLog                  = Join-Path $Paths.ExportRoot_CurrentVersion 'changelog.md'
 $Paths.Csv_ChangeLog                 = Join-Path $Paths.ExportRoot_CurrentVersion 'csv/changelog.csv'
@@ -48,11 +51,19 @@ $Paths.json_ChangeLog                = Join-Path $Paths.ExportRoot_CurrentVersio
 $Paths.Json_Crusher_Output = Join-Path $Paths.ExportRoot_CurrentVersion 'json/crusher-output.json'
 $Paths.csv_Crusher_Output  = Join-Path $Paths.ExportRoot_CurrentVersion 'csv/crusher-output.csv'
 
-$Paths.json_Prefabs_Buildings      = Join-Path $Paths.ExportRoot_CurrentVersion 'json/prefabs-buildings.json'
-$Paths.json_Prefabs_FactoryRecipes = Join-Path $Paths.ExportRoot_CurrentVersion 'json/prefabs-factoryrecipes.json'
-$Paths.json_Prefabs_AntCastes      = Join-Path $Paths.ExportRoot_CurrentVersion 'json/prefabs-antcastes.json'
-$Paths.json_Prefabs_Pickups        = Join-Path $Paths.ExportRoot_CurrentVersion 'json/prefabs-pickups.json'
-$Paths.json_Prefabs_Trails         = Join-Path $Paths.ExportRoot_CurrentVersion 'json/prefabs-trails.json'
+$Paths.json_Prefabs_Buildings        = Join-Path $Paths.ExportRoot_CurrentVersion 'json/prefabs-buildings.json'
+$Paths.json_Prefabs_FactoryRecipes   = Join-Path $Paths.ExportRoot_CurrentVersion 'json/prefabs-factoryrecipes.json'
+$Paths.json_Prefabs_AntCastes        = Join-Path $Paths.ExportRoot_CurrentVersion 'json/prefabs-antcastes.json'
+$Paths.json_Prefabs_Pickups          = Join-Path $Paths.ExportRoot_CurrentVersion 'json/prefabs-pickups.json'
+$Paths.json_Prefabs_Trails           = Join-Path $Paths.ExportRoot_CurrentVersion 'json/prefabs-trails.json'
+$Paths.json_Prefabs_PickupCategories = Join-Path $Paths.ExportRoot_CurrentVersion 'json/prefabs-pickupcategories.json'
+$Paths.json_Prefabs_Hunger           = Join-Path $Paths.ExportRoot_CurrentVersion 'json/prefabs-hunger.json'
+$Paths.json_Prefabs_StatusEffects    = Join-Path $Paths.ExportRoot_CurrentVersion 'json/prefabs-statuseffects.json'
+
+
+$Paths.json_Sequences_Tutorial     = Join-Path $Paths.ExportRoot_CurrentVersion 'json/sequences-tutorial.json'
+$Paths.json_Sequences_TutorialOld = Join-Path $Paths.ExportRoot_CurrentVersion 'json/sequences-tutorial-old.json'
+$Paths.json_Sequences_Events       = Join-Path $Paths.ExportRoot_CurrentVersion 'json/sequences-events.json'
 
 
 $Paths.json_Biome_Objects              = Join-Path $Paths.ExportRoot_CurrentVersion 'json/biome-objects.json'
@@ -90,7 +101,8 @@ $Build ??= [ordered]@{ # auto 'show' certain files. nullish op lets you override
         Prefabs_Crusher          = $false
         TechTree_ResearchRecipes = $false # $true
         TechTree_TechTree        = $false # $true
-        Prefabs                  = $true # $true
+        Prefabs                  = $false # $true
+        Sequences                = $true
         WorkbookSchema           = $false
     }
     Export = [ordered]@{
@@ -109,18 +121,18 @@ $Build ??= [ordered]@{ # auto 'show' certain files. nullish op lets you override
 
 
         # all on
-        Changelog                  = $true
-        Biome_Objects              = $true
-        Biome_Objects_Expanded     = $true
-        Biome_Plants               = $true
-        Loc                        = $true
-        Prefabs_Crusher            = $true
-        Prefabs                    = $true
-        TechTree_ResearchRecipes   = $true
-        TechTree_TechTree          = $true
+        Changelog                  = $false # true
+        Biome_Objects              = $false # true
+        Biome_Objects_Expanded     = $false # true
+        Biome_Plants               = $false # true
+        Loc                        = $true # true
+        Prefabs_Crusher            = $false # true
+        Prefabs                    = $false # true
+        TechTree_ResearchRecipes   = $false # true
+        TechTree_TechTree          = $false # true
         TechTree_TechTree_Expanded = $false
         WorkbookSchema             = $false
-
+        Sequences                  = $True
 
         # only schema
         # Changelog                  = $false
@@ -173,6 +185,10 @@ if($Build.Export.Changelog) {
 if($Build.Export.Prefabs) {
     Remove-Item $Paths.Xlsx_Prefabs -ea 'Ignore'
     md.Export.Prefabs.Prefabs -Paths $Paths -Verbose
+}
+if($Build.Export.Sequences) {
+    Remove-Item $Paths.Xlsx_Sequences -ea 'Ignore'
+    md.Export.Sequences -Paths $Paths -Verbose
 }
 
 # final exports. Ran last to iterate all new exports

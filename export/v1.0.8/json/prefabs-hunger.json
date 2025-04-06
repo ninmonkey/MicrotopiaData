@@ -1,0 +1,182 @@
+[
+  {
+    "anim_speed": 1.0,
+    "color": "A6A6A6",
+    "drain": 0.05,
+    "if_below": 0.01,
+    "larva_pm": 0.0,
+    "max_pop": 0.0,
+    "name": "Empty",
+    "roworder": 0
+  },
+  {
+    "anim_speed": 1.0,
+    "color": "D91C1C",
+    "drain": 0.05,
+    "if_below": 10.0,
+    "larva_pm": 10.0,
+    "max_pop": 10.0,
+    "name": "Stage 1",
+    "roworder": 1
+  },
+  {
+    "anim_speed": 1.0,
+    "color": "",
+    "drain": 0.1,
+    "if_below": 50.0,
+    "larva_pm": 10.0,
+    "max_pop": 25.0,
+    "name": "Stage 2",
+    "roworder": 2
+  },
+  {
+    "anim_speed": 1.0,
+    "color": "",
+    "drain": 0.2,
+    "if_below": 100.0,
+    "larva_pm": 10.0,
+    "max_pop": 50.0,
+    "name": "Stage 3",
+    "roworder": 3
+  },
+  {
+    "anim_speed": "",
+    "color": "",
+    "drain": 0.3,
+    "if_below": "",
+    "larva_pm": "",
+    "max_pop": 75.0,
+    "name": "Stage 4",
+    "roworder": 4
+  },
+  {
+    "anim_speed": "",
+    "color": "",
+    "drain": 0.4,
+    "if_below": "",
+    "larva_pm": "",
+    "max_pop": 100.0,
+    "name": "Stage 5",
+    "roworder": 5
+  },
+  {
+    "anim_speed": "",
+    "color": "",
+    "drain": 0.5,
+    "if_below": "",
+    "larva_pm": "",
+    "max_pop": 150.0,
+    "name": "Stage 6",
+    "roworder": 6
+  },
+  {
+    "anim_speed": "",
+    "color": "",
+    "drain": 0.6,
+    "if_below": "",
+    "larva_pm": "",
+    "max_pop": 200.0,
+    "name": "Stage 7",
+    "roworder": 7
+  },
+  {
+    "anim_speed": "",
+    "color": "",
+    "drain": 0.7,
+    "if_below": "",
+    "larva_pm": "",
+    "max_pop": 250.0,
+    "name": "Stage 8",
+    "roworder": 8
+  },
+  {
+    "anim_speed": "",
+    "color": "",
+    "drain": 0.8,
+    "if_below": "",
+    "larva_pm": "",
+    "max_pop": 300.0,
+    "name": "Stage 9",
+    "roworder": 9
+  },
+  {
+    "anim_speed": "",
+    "color": "",
+    "drain": 1.0,
+    "if_below": "",
+    "larva_pm": "",
+    "max_pop": 400.0,
+    "name": "Stage 10",
+    "roworder": 10
+  },
+  {
+    "anim_speed": "",
+    "color": "",
+    "drain": 1.5,
+    "if_below": "",
+    "larva_pm": "",
+    "max_pop": 500.0,
+    "name": "Stage 11",
+    "roworder": 11
+  },
+  {
+    "anim_speed": "",
+    "color": "",
+    "drain": 2.5,
+    "if_below": "",
+    "larva_pm": "",
+    "max_pop": 750.0,
+    "name": "Stage 12",
+    "roworder": 12
+  },
+  {
+    "anim_speed": "",
+    "color": "",
+    "drain": 5.0,
+    "if_below": "",
+    "larva_pm": "",
+    "max_pop": 1000.0,
+    "name": "Stage 13",
+    "roworder": 13
+  },
+  {
+    "anim_speed": "",
+    "color": "",
+    "drain": 25.0,
+    "if_below": "",
+    "larva_pm": "",
+    "max_pop": 1500.0,
+    "name": "Stage 14",
+    "roworder": 14
+  },
+  {
+    "anim_speed": "",
+    "color": "",
+    "drain": 100.0,
+    "if_below": "",
+    "larva_pm": "",
+    "max_pop": 2000.0,
+    "name": "Stage 15",
+    "roworder": 15
+  },
+  {
+    "anim_speed": "",
+    "color": "",
+    "drain": "",
+    "if_below": "",
+    "larva_pm": "",
+    "max_pop": "",
+    "name": "Stage 16",
+    "roworder": 16
+  },
+  {
+    "anim_speed": "",
+    "color": "",
+    "drain": "",
+    "if_below": "",
+    "larva_pm": "",
+    "max_pop": "",
+    "name": "Stage 17",
+    "roworder": 17
+  }
+]
